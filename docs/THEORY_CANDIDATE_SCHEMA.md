@@ -57,6 +57,11 @@ The provenance labels distinguish `DERIVED`, `ASSUMED`, `CALIBRATED`,
 `INPUT`, and `EXPERIMENTAL`. The last one is comparison-only and cannot leak
 back into model derivation.
 
+When a record is executable, `registration.pipeline_ref` binds it to an
+explicit versioned runner. This is an execution contract, not a theory
+selection mechanism; an unknown or missing binding cannot be silently routed
+to a different pipeline.
+
 For the internal circle benchmark, the semantic closure audit records three
 deliberate boundaries:
 

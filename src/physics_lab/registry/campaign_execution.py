@@ -1,11 +1,13 @@
-"""Explicit execution of an audited one-candidate pilot campaign."""
+"""Explicit execution of audited candidate pilot campaigns."""
 
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import multiprocessing as mp
 import queue
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Mapping
@@ -120,17 +122,34 @@ def load_campaign_activation(path: str | Path = DEFAULT_CAMPAIGN_ACTIVATION_PATH
 
 
 def _pilot_worker(candidate_path: str, result_queue: Any) -> None:
+    _candidate_worker(candidate_path, result_queue)
+
+
+def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
     try:
-        result_queue.put({"status": "PASS", "report": run_reference_pipeline(candidate_path=candidate_path)})
+        candidate = load_theory_candidate(candidate_path)
+        pipeline_ref = candidate["registration"].get("pipeline_ref")
+        if pipeline_ref == "circle-reference-v1":
+            report = run_reference_pipeline(candidate_path=candidate_path)
+        else:
+            raise CampaignExecutionError(
+                f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"
+            )
+        result_queue.put({"status": "PASS", "report": report})
     except BaseException as exc:  # noqa: BLE001 - serialize candidate failure for the campaign report
         result_queue.put({"status": "FAIL", "error": f"{type(exc).__name__}: {exc}"})
 
 
-def _execute_candidate(candidate_path: Path, timeout_seconds: float) -> dict[str, Any]:
+def _execute_candidate(
+    candidate_path: Path,
+    timeout_seconds: float,
+    *,
+    start_method: str | None = None,
+) -> dict[str, Any]:
     # Use the platform default: fork on the current Linux runner and spawn on
     # macOS/Windows. The worker is a module-level function, so both modes are
     # supported without sharing model state with the parent process.
-    context = mp.get_context()
+    context = mp.get_context(start_method) if start_method is not None else mp.get_context()
     result_queue = context.Queue()
     process = context.Process(target=_pilot_worker, args=(str(candidate_path), result_queue))
     process.start()
@@ -259,6 +278,208 @@ def run_pilot_campaign(
     return report
 
 
+def _canonical_digest(value: Any) -> str:
+    encoded = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
+
+
+def _write_campaign_json(path: Path, payload: Mapping[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+
+def run_multi_candidate_campaign(
+    activation: Mapping[str, Any] | None = None,
+    *,
+    activation_path: str | Path = DEFAULT_CAMPAIGN_ACTIVATION_PATH,
+    repository_root: str | Path | None = None,
+) -> dict[str, Any]:
+    """Execute an explicitly authorized, bounded multi-candidate pilot.
+
+    This runner exercises parallel execution, per-candidate isolation,
+    checkpointing and resume without selecting, ranking, fitting or comparing
+    candidates against external data.  Each candidate is dispatched through
+    the explicit ``registration.pipeline_ref`` binding in its record.
+    """
+    authorization = load_campaign_activation(activation_path) if activation is None else validate_campaign_activation(activation)
+    if authorization["execution_status"] != "NOT_RUN":
+        raise CampaignActivationError("multi-candidate activation has already been closed")
+    root = Path(repository_root).resolve() if repository_root is not None else Path(__file__).resolve().parents[3]
+    manifest_path = (root / authorization["manifest_path"]).resolve()
+    try:
+        manifest_path.relative_to(root)
+    except ValueError as exc:
+        raise CampaignExecutionError("manifest_path escapes the repository") from exc
+    manifest = load_campaign_manifest(manifest_path)
+    if manifest["campaign_id"] != authorization["campaign_id"]:
+        raise CampaignExecutionError("activation and manifest campaign_id do not match")
+    if len(manifest["candidate_refs"]) < 2:
+        raise CampaignExecutionError("multi-candidate pilot requires at least two candidates")
+    if manifest["execution"]["max_candidates"] != len(manifest["candidate_refs"]):
+        raise CampaignExecutionError("multi-candidate pilot must bound exactly the registered candidates")
+    readiness = audit_campaign_readiness(manifest=manifest, repository_root=root)
+    if readiness["status"] != "READY_FOR_PILOT":
+        raise CampaignExecutionError("campaign readiness audit did not pass")
+
+    execution = manifest["execution"]
+    report_directory = root / execution["report_directory"]
+    checkpoint_path = root / execution["checkpoint_path"]
+    refs = manifest["candidate_refs"]
+    candidates: dict[str, dict[str, Any]] = {}
+    candidate_paths: dict[str, Path] = {}
+    candidate_digests: dict[str, str] = {}
+    for ref in refs:
+        candidate_path = (root / ref["record_path"]).resolve()
+        try:
+            candidate_path.relative_to(root)
+        except ValueError as exc:
+            raise CampaignExecutionError("candidate record escapes the repository") from exc
+        candidate = load_theory_candidate(candidate_path)
+        if candidate["candidate_id"] != ref["candidate_id"]:
+            raise CampaignExecutionError(f"candidate reference mismatch for {ref['candidate_id']!r}")
+        candidates[ref["candidate_id"]] = candidate
+        candidate_paths[ref["candidate_id"]] = candidate_path
+        candidate_digests[ref["candidate_id"]] = _canonical_digest(candidate)
+
+    previous: dict[str, Any] = {}
+    if execution["resume"] and checkpoint_path.exists():
+        try:
+            previous = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise CampaignExecutionError(f"cannot resume from checkpoint: {exc}") from exc
+        if previous.get("campaign_id") != manifest["campaign_id"] or previous.get("activation_id") != authorization["activation_id"]:
+            raise CampaignExecutionError("checkpoint does not belong to this campaign activation")
+
+    results_by_id: dict[str, dict[str, Any]] = {
+        item["candidate_id"]: item
+        for item in previous.get("candidate_results", [])
+        if isinstance(item, Mapping) and isinstance(item.get("candidate_id"), str)
+    }
+    first_by_key: dict[str, str] = {}
+    duplicate_policy = manifest["deduplication"]["on_duplicate"]
+    dedup_key = manifest["deduplication"]["key"]
+    for ref in refs:
+        candidate_id = ref["candidate_id"]
+        key_value = candidate_id if dedup_key == "candidate_id" else candidate_digests[candidate_id]
+        if dedup_key == "canonical_action_digest":
+            key_value = _canonical_digest(candidates[candidate_id]["action"])
+        if key_value in first_by_key:
+            if duplicate_policy == "STOP":
+                raise CampaignExecutionError(f"duplicate candidate detected for {candidate_id!r}")
+            results_by_id[candidate_id] = {
+                "candidate_id": candidate_id,
+                "status": "DUPLICATE",
+                "record_path": ref["record_path"],
+                "record_unchanged": True,
+                "duplicate_of": first_by_key[key_value],
+            }
+        else:
+            first_by_key[key_value] = candidate_id
+
+    pending = [
+        ref for ref in refs
+        if ref["candidate_id"] not in results_by_id
+        or results_by_id[ref["candidate_id"]].get("status") == "FAIL"
+    ]
+    timeout_seconds = float(execution["per_candidate_timeout_seconds"])
+
+    def write_checkpoint(status: str) -> None:
+        ordered = [results_by_id[ref["candidate_id"]] for ref in refs if ref["candidate_id"] in results_by_id]
+        checkpoint = {
+            "execution_version": CAMPAIGN_EXECUTION_VERSION,
+            "campaign_id": manifest["campaign_id"],
+            "activation_id": authorization["activation_id"],
+            "execution_status": status,
+            "completed_candidate_ids": [item["candidate_id"] for item in ordered if item.get("status") in {"PASS", "DUPLICATE"}],
+            "failed_candidate_ids": [item["candidate_id"] for item in ordered if item.get("status") == "FAIL"],
+            "candidate_results": ordered,
+        }
+        _write_campaign_json(checkpoint_path, checkpoint)
+
+    def execute_ref(ref: Mapping[str, Any]) -> dict[str, Any]:
+        candidate_id = ref["candidate_id"]
+        before = candidates[candidate_id]
+        result = _execute_candidate(
+            candidate_paths[candidate_id],
+            timeout_seconds,
+            start_method="spawn",
+        )
+        after = load_theory_candidate(candidate_paths[candidate_id])
+        unchanged = before == after
+        item: dict[str, Any] = {
+            "candidate_id": candidate_id,
+            "status": result["status"],
+            "record_path": ref["record_path"],
+            "record_unchanged": unchanged,
+        }
+        if not unchanged:
+            item["status"] = "FAIL"
+            item["error"] = "candidate record changed during execution"
+        elif result["status"] == "PASS":
+            pipeline_report = result["report"]
+            candidate_report_path = Path(execution["report_directory"]) / f"{candidate_id}.json"
+            item.update(
+                {
+                    "pipeline_status": pipeline_report["pipeline_status"],
+                    "candidate_report_path": str(candidate_report_path),
+                    "controls": pipeline_report["controls"],
+                }
+            )
+            _write_campaign_json(report_directory / f"{candidate_id}.json", pipeline_report)
+        else:
+            item["error"] = result["error"]
+        return item
+
+    write_checkpoint("RUNNING")
+    with ThreadPoolExecutor(max_workers=int(execution["parallelism"])) as pool:
+        futures = {pool.submit(execute_ref, ref): ref for ref in pending}
+        for future in as_completed(futures):
+            item = future.result()
+            results_by_id[item["candidate_id"]] = item
+            write_checkpoint("RUNNING")
+
+    ordered_results = [results_by_id[ref["candidate_id"]] for ref in refs]
+    failed = [item for item in ordered_results if item.get("status") == "FAIL"]
+    max_failures = int(manifest["failure_policy"]["max_failures"])
+    status = "COMPLETE" if len(failed) <= max_failures else "FAILED"
+    write_checkpoint(status)
+    report = {
+        "execution_version": CAMPAIGN_EXECUTION_VERSION,
+        "campaign_id": manifest["campaign_id"],
+        "activation_id": authorization["activation_id"],
+        "execution_status": status,
+        "candidate_count": len(refs),
+        "executed_candidate_count": len(pending),
+        "candidate_results": ordered_results,
+        "checkpoint_path": execution["checkpoint_path"],
+        "report_path": str(Path(execution["report_directory"]) / "campaign_report.json"),
+        "controls": {
+            "explicit_authorization": True,
+            "no_auto_selection": True,
+            "no_ranking": True,
+            "no_search": True,
+            "no_finite_bounds": True,
+            "no_empirical_comparison": True,
+            "no_external_data": True,
+            "candidate_records_unchanged": all(item.get("record_unchanged") is True for item in ordered_results),
+            "checkpoint_written": checkpoint_path.exists(),
+            "execution_isolated": True,
+            "failure_isolation": manifest["failure_policy"]["mode"] == "ISOLATE_AND_CONTINUE",
+            "deduplication_applied": dedup_key in {"candidate_id", "canonical_record_digest", "canonical_action_digest"},
+        },
+        "selection": {
+            "performed": False,
+            "ranking_performed": False,
+            "human_review_required": True,
+        },
+    }
+    _write_campaign_json(report_directory / "campaign_report.json", report)
+    return report
+
+
 def write_completed_activation(
     path: str | Path,
     activation: Mapping[str, Any],
@@ -288,6 +509,7 @@ __all__ = [
     "CampaignExecutionError",
     "DEFAULT_CAMPAIGN_ACTIVATION_PATH",
     "load_campaign_activation",
+    "run_multi_candidate_campaign",
     "run_pilot_campaign",
     "validate_campaign_activation",
     "write_completed_activation",

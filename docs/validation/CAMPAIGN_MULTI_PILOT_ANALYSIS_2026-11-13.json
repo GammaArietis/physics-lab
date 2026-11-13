@@ -1,0 +1,63 @@
+{
+  "analysis_version": "campaign-multi-pilot-analysis-v1",
+  "campaign_id": "circle-reference-multi-pilot",
+  "activation_id": "circle-reference-multi-pilot-activation",
+  "execution_status": "COMPLETE",
+  "verdict": "MULTI_CANDIDATE_INFRASTRUCTURE_PASS",
+  "scale_decision": "HOLD_BEFORE_WIDE_CAMPAIGN",
+  "candidate_findings": [
+    {
+      "candidate_id": "circle-reference-internal-spectrum",
+      "status": "PASS",
+      "pipeline_status": "COMPLETE",
+      "record_unchanged": true,
+      "free_input_parameter_count": 4,
+      "parameter_free_derived_observable_count": 0,
+      "claim_scope": "INTERNAL_ONLY",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "circle-reference-internal-spectrum-r2",
+      "status": "PASS",
+      "pipeline_status": "COMPLETE",
+      "record_unchanged": true,
+      "free_input_parameter_count": 4,
+      "parameter_free_derived_observable_count": 0,
+      "claim_scope": "INTERNAL_ONLY",
+      "empirical_status": "NOT_AUTHORIZED"
+    }
+  ],
+  "execution_controls": {
+    "explicit_authorization": true,
+    "candidate_count": 2,
+    "parallelism": 2,
+    "candidate_records_unchanged": true,
+    "checkpoint_written": true,
+    "execution_isolated": true,
+    "failure_isolation": true,
+    "deduplication_configured": true,
+    "selection_performed": false,
+    "ranking_performed": false,
+    "search_activated": false,
+    "finite_bounds_authorized": false,
+    "external_data_used": false,
+    "empirical_comparison_performed": false
+  },
+  "physical_empirical_gate": {
+    "status": "BLOCKED",
+    "reason": "Current records are internal spectral benchmarks with free inputs and no parameter-free derived observable; no immutable external comparison dataset is registered for these candidates.",
+    "comparison_engine_behavior": "The isolated comparison contract remains available and refuses non-parameter-free observables without fitting or calibration.",
+    "theory_validation_status": "NOT_ESTABLISHED"
+  },
+  "resource_findings": {
+    "local_multi_candidate_execution": "COMPLETED",
+    "target_mac_benchmark_measured": false,
+    "wide_campaign_ready": false
+  },
+  "blockers_before_wide_campaign": [
+    "register at least one concrete physical candidate rather than another internal benchmark variant",
+    "derive and freeze a parameter-free observable or explicitly fix all parameters without calibration",
+    "register an immutable, source-traceable comparison dataset and a separate target-blind authorization",
+    "measure CPU, memory pressure, wall time and resume behavior on the MacBook Air M4 before scaling"
+  ]
+}

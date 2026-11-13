@@ -1,0 +1,56 @@
+{
+  "schema_version": "campaign-manifest-v1",
+  "campaign_id": "circle-reference-multi-pilot",
+  "status": "PILOT_READY",
+  "candidate_refs": [
+    {
+      "candidate_id": "circle-reference-internal-spectrum",
+      "record_path": "schemas/examples/theory_candidate_circle_reference.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    },
+    {
+      "candidate_id": "circle-reference-internal-spectrum-r2",
+      "record_path": "schemas/examples/theory_candidate_circle_reference_r2.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    }
+  ],
+  "scope": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "selection_policy": {
+    "mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "human_review_required": true
+  },
+  "execution": {
+    "max_candidates": 2,
+    "parallelism": 2,
+    "per_candidate_timeout_seconds": 120,
+    "checkpoint_path": "docs/validation/campaign_checkpoints/circle-reference-multi-pilot.json",
+    "report_directory": "docs/validation/campaign_reports/circle-reference-multi-pilot",
+    "resume": true,
+    "deterministic_seed": 0
+  },
+  "deduplication": {
+    "key": "canonical_record_digest",
+    "on_duplicate": "RETAIN_FIRST_WITH_LINK"
+  },
+  "failure_policy": {
+    "mode": "ISOLATE_AND_CONTINUE",
+    "max_failures": 0
+  },
+  "authorization": {
+    "status": "NOT_ACTIVATED",
+    "authorization_ref": null
+  },
+  "execution_status": "NOT_RUN",
+  "notes": [
+    "Two explicit parameterized variants of the internal circle benchmark are used to exercise multi-candidate execution controls.",
+    "This is an infrastructure pilot, not a theory search, physical validation, empirical fit, or ranking campaign."
+  ]
+}

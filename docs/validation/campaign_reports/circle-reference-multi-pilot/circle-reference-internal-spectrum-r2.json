@@ -1,0 +1,700 @@
+{
+  "action": {
+    "expression": "H = p_xi^2",
+    "formulation": "HAMILTONIAN",
+    "instantiated": true,
+    "provenance": "ASSUMED",
+    "runtime_expression": "H = p_xi**2  [ASSUMED]  with  p_xi = -i*hbar*d/dxi"
+  },
+  "candidate_id": "circle-reference-internal-spectrum-r2",
+  "closure_audit": {
+    "audit_version": "circle-reference-closure-v1",
+    "checks": {
+      "discrete_spectrum_is_derived": true,
+      "field_quantization_is_not_claimed": true,
+      "four_explicit_free_inputs": true,
+      "no_calibrated_or_experimental_parameters": true,
+      "observable_provenance_is_explicit": true,
+      "vacuum_not_applicable_by_scope": true
+    },
+    "observables": [
+      {
+        "classification": "DERIVED_FORM_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar"
+        ],
+        "id": "internal-momentum",
+        "provenance": "DERIVED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "DERIVED_FORM_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar"
+        ],
+        "id": "internal-eigenvalue",
+        "provenance": "DERIVED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "ASSUMED_MAP_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar",
+          "charge-coupling"
+        ],
+        "id": "internal-charge",
+        "provenance": "ASSUMED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "ASSUMED_MAP_UNRESOLVED",
+        "free_parameters": [
+          "radius",
+          "hbar",
+          "mass-conversion"
+        ],
+        "id": "internal-mass",
+        "provenance": "ASSUMED",
+        "status": "UNRESOLVED"
+      }
+    ],
+    "parameter_closure": {
+      "all_inputs_explicit": true,
+      "assumed_ids": [],
+      "calibrated_ids": [],
+      "derived_ids": [],
+      "experimental_ids": [],
+      "free_input_ids": [
+        "radius",
+        "hbar",
+        "charge-coupling",
+        "mass-conversion"
+      ],
+      "unresolved_ids": []
+    },
+    "quantization": {
+      "field_quantization_status": "NOT_PERFORMED",
+      "mechanism": "chi(xi + 2*pi*R) = chi(xi) -> k*R = n, n in Z",
+      "status": "DISCRETE_SPECTRUM_DERIVED_SEPARATE_FROM_FIELD_QUANTIZATION"
+    },
+    "status": "SEMANTICALLY_CLOSED_INTERNAL_ONLY",
+    "vacuum": {
+      "reason": "No spacetime action, potential, or vacuum sector is part of this benchmark.",
+      "status": "NOT_APPLICABLE_BY_SCOPE"
+    }
+  },
+  "controls": {
+    "action_instantiated": true,
+    "discrete_spectrum_separate_from_field_quantization": true,
+    "external_comparison_not_authorized": true,
+    "half_integer_rejected": true,
+    "integer_lattice_derived_from_pbc": true,
+    "momentum_eigenfunction_identity": true,
+    "no_experimental_parameters": true,
+    "observable_values_generated": true,
+    "positive_modes_present": true,
+    "vacuum_scope_closed": true,
+    "zero_mode_present": true
+  },
+  "derivation": {
+    "allowed_k": "ImageSet(Lambda(_n, _n/R), Integers)",
+    "display_n_max": 2,
+    "display_window_is_not_a_search_bound": true,
+    "integer_n_derived": true,
+    "method": "analytic:PBC->k=n/R->H=p^2",
+    "n_origin": "derived from PBC",
+    "operator": "H",
+    "quantization_method": "χ(ξ+2πR)/χ(ξ)=exp(i*2*pi*k*R); solveset(cos(2*pi*k*R)-1, k, Reals)"
+  },
+  "observables": [
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "R"
+      ],
+      "formula": "n*hbar/R",
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "name": "momentum[-2]",
+      "notes": [
+        "Derived from PBC → k=n/R → p_ξ = -i ħ d/dξ on χ=exp(i k ξ)."
+      ],
+      "provenance": "DERIVED",
+      "state": "-2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+      "symbolic": "-2*hbar/R",
+      "value": -1.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "R"
+      ],
+      "formula": "n*hbar/R",
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "name": "momentum[-1]",
+      "notes": [
+        "Derived from PBC → k=n/R → p_ξ = -i ħ d/dξ on χ=exp(i k ξ)."
+      ],
+      "provenance": "DERIVED",
+      "state": "-1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+      "symbolic": "-hbar/R",
+      "value": -0.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "R"
+      ],
+      "formula": "n*hbar/R",
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "name": "momentum[0]",
+      "notes": [
+        "Derived from PBC → k=n/R → p_ξ = -i ħ d/dξ on χ=exp(i k ξ)."
+      ],
+      "provenance": "DERIVED",
+      "state": "0",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+      "symbolic": "0",
+      "value": 0.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "R"
+      ],
+      "formula": "n*hbar/R",
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "name": "momentum[1]",
+      "notes": [
+        "Derived from PBC → k=n/R → p_ξ = -i ħ d/dξ on χ=exp(i k ξ)."
+      ],
+      "provenance": "DERIVED",
+      "state": "1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+      "symbolic": "hbar/R",
+      "value": 0.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "R"
+      ],
+      "formula": "n*hbar/R",
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "name": "momentum[2]",
+      "notes": [
+        "Derived from PBC → k=n/R → p_ξ = -i ħ d/dξ on χ=exp(i k ξ)."
+      ],
+      "provenance": "DERIVED",
+      "state": "2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+      "symbolic": "2*hbar/R",
+      "value": 1.0
+    },
+    {
+      "assumption": "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics.",
+      "dependencies": [
+        "lambda_n",
+        "lambda[-2]",
+        "n",
+        "hbar",
+        "R",
+        "C"
+      ],
+      "formula": "sqrt(C * lambda_n)",
+      "free_dependencies": [
+        "hbar",
+        "R",
+        "C"
+      ],
+      "name": "mass[-2]",
+      "notes": [
+        "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics."
+      ],
+      "provenance": "ASSUMED",
+      "state": "-2",
+      "status": "MODEL ASSUMPTION (not derived from known physics)",
+      "symbolic": "2*sqrt(C*hbar**2/R**2)",
+      "value": 1.0
+    },
+    {
+      "assumption": "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics.",
+      "dependencies": [
+        "lambda_n",
+        "lambda[-1]",
+        "n",
+        "hbar",
+        "R",
+        "C"
+      ],
+      "formula": "sqrt(C * lambda_n)",
+      "free_dependencies": [
+        "hbar",
+        "R",
+        "C"
+      ],
+      "name": "mass[-1]",
+      "notes": [
+        "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics."
+      ],
+      "provenance": "ASSUMED",
+      "state": "-1",
+      "status": "MODEL ASSUMPTION (not derived from known physics)",
+      "symbolic": "sqrt(C*hbar**2/R**2)",
+      "value": 0.5
+    },
+    {
+      "assumption": "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics.",
+      "dependencies": [
+        "lambda_n",
+        "lambda[0]",
+        "n",
+        "hbar",
+        "R",
+        "C"
+      ],
+      "formula": "sqrt(C * lambda_n)",
+      "free_dependencies": [
+        "hbar",
+        "R",
+        "C"
+      ],
+      "name": "mass[0]",
+      "notes": [
+        "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics."
+      ],
+      "provenance": "ASSUMED",
+      "state": "0",
+      "status": "MODEL ASSUMPTION (not derived from known physics)",
+      "symbolic": "0",
+      "value": 0.0
+    },
+    {
+      "assumption": "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics.",
+      "dependencies": [
+        "lambda_n",
+        "lambda[1]",
+        "n",
+        "hbar",
+        "R",
+        "C"
+      ],
+      "formula": "sqrt(C * lambda_n)",
+      "free_dependencies": [
+        "hbar",
+        "R",
+        "C"
+      ],
+      "name": "mass[1]",
+      "notes": [
+        "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics."
+      ],
+      "provenance": "ASSUMED",
+      "state": "1",
+      "status": "MODEL ASSUMPTION (not derived from known physics)",
+      "symbolic": "sqrt(C*hbar**2/R**2)",
+      "value": 0.5
+    },
+    {
+      "assumption": "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics.",
+      "dependencies": [
+        "lambda_n",
+        "lambda[2]",
+        "n",
+        "hbar",
+        "R",
+        "C"
+      ],
+      "formula": "sqrt(C * lambda_n)",
+      "free_dependencies": [
+        "hbar",
+        "R",
+        "C"
+      ],
+      "name": "mass[2]",
+      "notes": [
+        "Mass generation mechanism: ASSUMED. The relation m_n^2 = C * lambda_n is a model hypothesis, not derived from known physics."
+      ],
+      "provenance": "ASSUMED",
+      "state": "2",
+      "status": "MODEL ASSUMPTION (not derived from known physics)",
+      "symbolic": "2*sqrt(C*hbar**2/R**2)",
+      "value": 1.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "formula": "q_n = n * hbar * kappa / R",
+      "free_dependencies": [
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "name": "charge[-2]",
+      "notes": [
+        "Charge quantization: DERIVED (q_n proportional to n) if Q is built from the internal momentum. Absolute charge normalization: FREE PARAMETER."
+      ],
+      "provenance": "DERIVED",
+      "state": "-2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, kappa, R",
+      "symbolic": "-2*hbar*kappa/R",
+      "value": -1.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "formula": "q_n = n * hbar * kappa / R",
+      "free_dependencies": [
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "name": "charge[-1]",
+      "notes": [
+        "Charge quantization: DERIVED (q_n proportional to n) if Q is built from the internal momentum. Absolute charge normalization: FREE PARAMETER."
+      ],
+      "provenance": "DERIVED",
+      "state": "-1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, kappa, R",
+      "symbolic": "-hbar*kappa/R",
+      "value": -0.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "formula": "q_n = n * hbar * kappa / R",
+      "free_dependencies": [
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "name": "charge[0]",
+      "notes": [
+        "Charge quantization: DERIVED (q_n proportional to n) if Q is built from the internal momentum. Absolute charge normalization: FREE PARAMETER."
+      ],
+      "provenance": "DERIVED",
+      "state": "0",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, kappa, R",
+      "symbolic": "0",
+      "value": 0.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "formula": "q_n = n * hbar * kappa / R",
+      "free_dependencies": [
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "name": "charge[1]",
+      "notes": [
+        "Charge quantization: DERIVED (q_n proportional to n) if Q is built from the internal momentum. Absolute charge normalization: FREE PARAMETER."
+      ],
+      "provenance": "DERIVED",
+      "state": "1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, kappa, R",
+      "symbolic": "hbar*kappa/R",
+      "value": 0.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "formula": "q_n = n * hbar * kappa / R",
+      "free_dependencies": [
+        "hbar",
+        "kappa",
+        "R"
+      ],
+      "name": "charge[2]",
+      "notes": [
+        "Charge quantization: DERIVED (q_n proportional to n) if Q is built from the internal momentum. Absolute charge normalization: FREE PARAMETER."
+      ],
+      "provenance": "DERIVED",
+      "state": "2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, kappa, R",
+      "symbolic": "2*hbar*kappa/R",
+      "value": 1.0
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "R",
+      "provenance": "INPUT",
+      "unit": null,
+      "used_by": [
+        "spectrum",
+        "momentum_internal",
+        "charge"
+      ],
+      "value": 2.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "hbar",
+      "provenance": "INPUT",
+      "unit": null,
+      "used_by": [
+        "spectrum",
+        "momentum_internal",
+        "charge"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "kappa",
+      "provenance": "INPUT",
+      "unit": null,
+      "used_by": [
+        "charge"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "C",
+      "provenance": "INPUT",
+      "unit": null,
+      "used_by": [
+        "mass"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "circle-reference-v1",
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "spectrum": [
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "R"
+        ],
+        "formula": "(n*hbar/R)**2",
+        "free_dependencies": [
+          "hbar",
+          "R"
+        ],
+        "name": "lambda[-2]",
+        "notes": [
+          "lambda_n derived from p_n after PBC, given the ASSUMED H = p_xi**2."
+        ],
+        "provenance": "DERIVED",
+        "state": "-2",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+        "symbolic": "4*hbar**2/R**2",
+        "value": 1.0
+      },
+      "label": "-2",
+      "quantum_numbers": {
+        "k": -1.0,
+        "n": -2,
+        "n_origin": "derived from PBC"
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "R"
+        ],
+        "formula": "(n*hbar/R)**2",
+        "free_dependencies": [
+          "hbar",
+          "R"
+        ],
+        "name": "lambda[-1]",
+        "notes": [
+          "lambda_n derived from p_n after PBC, given the ASSUMED H = p_xi**2."
+        ],
+        "provenance": "DERIVED",
+        "state": "-1",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+        "symbolic": "hbar**2/R**2",
+        "value": 0.25
+      },
+      "label": "-1",
+      "quantum_numbers": {
+        "k": -0.5,
+        "n": -1,
+        "n_origin": "derived from PBC"
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "R"
+        ],
+        "formula": "(n*hbar/R)**2",
+        "free_dependencies": [
+          "hbar",
+          "R"
+        ],
+        "name": "lambda[0]",
+        "notes": [
+          "lambda_n derived from p_n after PBC, given the ASSUMED H = p_xi**2."
+        ],
+        "provenance": "DERIVED",
+        "state": "0",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+        "symbolic": "0",
+        "value": 0.0
+      },
+      "label": "0",
+      "quantum_numbers": {
+        "k": 0.0,
+        "n": 0,
+        "n_origin": "derived from PBC"
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "R"
+        ],
+        "formula": "(n*hbar/R)**2",
+        "free_dependencies": [
+          "hbar",
+          "R"
+        ],
+        "name": "lambda[1]",
+        "notes": [
+          "lambda_n derived from p_n after PBC, given the ASSUMED H = p_xi**2."
+        ],
+        "provenance": "DERIVED",
+        "state": "1",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+        "symbolic": "hbar**2/R**2",
+        "value": 0.25
+      },
+      "label": "1",
+      "quantum_numbers": {
+        "k": 0.5,
+        "n": 1,
+        "n_origin": "derived from PBC"
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "R"
+        ],
+        "formula": "(n*hbar/R)**2",
+        "free_dependencies": [
+          "hbar",
+          "R"
+        ],
+        "name": "lambda[2]",
+        "notes": [
+          "lambda_n derived from p_n after PBC, given the ASSUMED H = p_xi**2."
+        ],
+        "provenance": "DERIVED",
+        "state": "2",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, R",
+        "symbolic": "4*hbar**2/R**2",
+        "value": 1.0
+      },
+      "label": "2",
+      "quantum_numbers": {
+        "k": 1.0,
+        "n": 2,
+        "n_origin": "derived from PBC"
+      }
+    }
+  ],
+  "validation": {
+    "circle_reference_test_evidence": "tests/test_circle_model.py",
+    "legacy_validator_check_count": 697,
+    "legacy_validator_failures": [],
+    "legacy_validator_status_counts": {
+      "ASSUMED": 1,
+      "PASS": 8,
+      "UNTESTED": 688
+    }
+  }
+}

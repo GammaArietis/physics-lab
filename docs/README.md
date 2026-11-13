@@ -20,6 +20,8 @@ relative path.
   and bounded pilot manifest.
 - [`CAMPAIGN_PILOT.md`](CAMPAIGN_PILOT.md): executed pilot, checkpoint and
   analysis.
+- [`CAMPAIGN_MULTI_PILOT.md`](CAMPAIGN_MULTI_PILOT.md): multi-candidate
+  infrastructure pilot and the physical/empirical gate decision.
 - [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
   conservative resource plan for the 24 GB MacBook Air.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the

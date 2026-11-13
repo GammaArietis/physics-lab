@@ -1,0 +1,22 @@
+{
+  "schema_version": "campaign-activation-v1",
+  "activation_id": "circle-reference-multi-pilot-activation",
+  "campaign_id": "circle-reference-multi-pilot",
+  "manifest_path": "schemas/examples/campaign_manifest_multi_candidate_pilot.json",
+  "authorization": {
+    "status": "AUTHORIZED",
+    "authorization_ref": "giovanni-vitale-phase7-multi-pilot-2026-11-13",
+    "human_confirmation": true,
+    "selection_mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "execution_status": "NOT_RUN",
+  "checkpoint_path": "docs/validation/campaign_checkpoints/circle-reference-multi-pilot.json",
+  "report_path": null,
+  "activated_at": "2026-11-13T20:45:00+01:00",
+  "completed_at": null
+}

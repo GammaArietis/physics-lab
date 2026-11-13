@@ -17,6 +17,7 @@ from physics_lab.registry import (
 
 
 MANIFEST_PATH = "schemas/examples/campaign_manifest_pilot.json"
+MULTI_MANIFEST_PATH = "schemas/examples/campaign_manifest_multi_candidate_pilot.json"
 
 
 def test_pilot_manifest_is_ready_without_execution() -> None:
@@ -29,6 +30,16 @@ def test_pilot_manifest_is_ready_without_execution() -> None:
     assert audit["candidate_count"] == 1
     assert all(audit["checks"].values())
     assert all(audit["controls"].values())
+
+
+def test_multi_candidate_manifest_is_ready_without_execution() -> None:
+    manifest = load_campaign_manifest(MULTI_MANIFEST_PATH)
+    audit = audit_campaign_readiness(manifest=manifest)
+
+    assert audit["status"] == "READY_FOR_PILOT"
+    assert audit["candidate_count"] == 2
+    assert manifest["execution"]["parallelism"] == 2
+    assert all(audit["checks"].values())
 
 
 def test_readiness_report_is_deterministic_and_portable(tmp_path) -> None:

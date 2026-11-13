@@ -175,6 +175,10 @@
             "REFERENCE_TEMPLATE"
           ]
         },
+        "pipeline_ref": {
+          "type": ["string", "null"],
+          "enum": ["circle-reference-v1", null]
+        },
         "decision_ref": {
           "type": ["string", "null"]
         },

@@ -31,6 +31,7 @@ from physics_lab.validation.validator import validate
 
 REFERENCE_PIPELINE_VERSION = "circle-reference-v1"
 REFERENCE_CANDIDATE_ID = "circle-reference-internal-spectrum"
+REFERENCE_PIPELINE_REF = "circle-reference-v1"
 DEFAULT_CANDIDATE_PATH = (
     Path(__file__).resolve().parents[3]
     / "schemas"
@@ -44,11 +45,13 @@ class ReferencePipelineError(RuntimeError):
 
 
 def _require_reference_scope(candidate: Mapping[str, Any]) -> None:
-    if candidate["candidate_id"] != REFERENCE_CANDIDATE_ID:
+    if candidate["registration"].get("pipeline_ref") != REFERENCE_PIPELINE_REF:
         raise ReferencePipelineError(
-            f"Reference pipeline only accepts {REFERENCE_CANDIDATE_ID!r}; "
-            f"received {candidate['candidate_id']!r}."
+            f"Reference pipeline requires pipeline_ref={REFERENCE_PIPELINE_REF!r}."
         )
+    internal_space = candidate["geometry"]["internal_space"]
+    if internal_space.get("type") != "CIRCLE" or internal_space.get("dimension") != 1:
+        raise ReferencePipelineError("Reference pipeline requires a one-dimensional circle internal space.")
     if candidate["registration"]["selected"]:
         raise ReferencePipelineError("The reference benchmark must remain unselected.")
     authorization = candidate["authorization"]
@@ -306,6 +309,7 @@ def write_reference_pipeline_report(
 __all__ = [
     "DEFAULT_CANDIDATE_PATH",
     "REFERENCE_CANDIDATE_ID",
+    "REFERENCE_PIPELINE_REF",
     "REFERENCE_PIPELINE_VERSION",
     "ReferencePipelineError",
     "build_reference_model",

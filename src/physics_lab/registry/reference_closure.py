@@ -15,6 +15,7 @@ from physics_lab.registry.theory_candidate import validate_theory_candidate
 
 REFERENCE_CLOSURE_VERSION = "circle-reference-closure-v1"
 REFERENCE_CANDIDATE_ID = "circle-reference-internal-spectrum"
+REFERENCE_PIPELINE_REF = "circle-reference-v1"
 
 
 class ReferenceClosureError(RuntimeError):
@@ -86,10 +87,9 @@ def _observable_closure(candidate: Mapping[str, Any]) -> list[dict[str, Any]]:
 def audit_reference_closure(candidate: Mapping[str, Any]) -> dict[str, Any]:
     """Return a deterministic semantic-closure report for the circle record."""
     record = validate_theory_candidate(candidate)
-    if record["candidate_id"] != REFERENCE_CANDIDATE_ID:
+    if record["registration"].get("pipeline_ref") != REFERENCE_PIPELINE_REF:
         raise ReferenceClosureError(
-            f"Reference closure only accepts {REFERENCE_CANDIDATE_ID!r}; "
-            f"received {record['candidate_id']!r}."
+            f"Reference closure requires pipeline_ref={REFERENCE_PIPELINE_REF!r}."
         )
 
     parameters = _parameter_closure(record)
@@ -162,6 +162,7 @@ def audit_reference_closure(candidate: Mapping[str, Any]) -> dict[str, Any]:
 __all__ = [
     "REFERENCE_CLOSURE_VERSION",
     "REFERENCE_CANDIDATE_ID",
+    "REFERENCE_PIPELINE_REF",
     "ReferenceClosureError",
     "audit_reference_closure",
 ]

@@ -1,0 +1,55 @@
+{
+  "activation_id": "circle-reference-multi-pilot-activation",
+  "campaign_id": "circle-reference-multi-pilot",
+  "candidate_results": [
+    {
+      "candidate_id": "circle-reference-internal-spectrum",
+      "candidate_report_path": "docs/validation/campaign_reports/circle-reference-multi-pilot/circle-reference-internal-spectrum.json",
+      "controls": {
+        "action_instantiated": true,
+        "discrete_spectrum_separate_from_field_quantization": true,
+        "external_comparison_not_authorized": true,
+        "half_integer_rejected": true,
+        "integer_lattice_derived_from_pbc": true,
+        "momentum_eigenfunction_identity": true,
+        "no_experimental_parameters": true,
+        "observable_values_generated": true,
+        "positive_modes_present": true,
+        "vacuum_scope_closed": true,
+        "zero_mode_present": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_circle_reference.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "circle-reference-internal-spectrum-r2",
+      "candidate_report_path": "docs/validation/campaign_reports/circle-reference-multi-pilot/circle-reference-internal-spectrum-r2.json",
+      "controls": {
+        "action_instantiated": true,
+        "discrete_spectrum_separate_from_field_quantization": true,
+        "external_comparison_not_authorized": true,
+        "half_integer_rejected": true,
+        "integer_lattice_derived_from_pbc": true,
+        "momentum_eigenfunction_identity": true,
+        "no_experimental_parameters": true,
+        "observable_values_generated": true,
+        "positive_modes_present": true,
+        "vacuum_scope_closed": true,
+        "zero_mode_present": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_circle_reference_r2.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "completed_candidate_ids": [
+    "circle-reference-internal-spectrum",
+    "circle-reference-internal-spectrum-r2"
+  ],
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "failed_candidate_ids": []
+}

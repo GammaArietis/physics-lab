@@ -1,0 +1,510 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "circle-reference-internal-spectrum-r2",
+  "title": "Internal circle spectral reference candidate, radius-two variant",
+  "summary": "A second explicit parameterized variant of the internal circle benchmark for multi-candidate execution testing. It is not a claim about external physics and does not activate search or empirical comparison.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "DERIVED_FROM_EXISTING_RECORD",
+    "pipeline_ref": "circle-reference-v1",
+    "decision_ref": "reference-scope-r2",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "phi",
+      "role": "OTHER",
+      "representation": "real internal mode on a circle",
+      "domain_ref": "internal-circle",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "circle-model-code",
+        "circle-geometry-code"
+      ]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "NOT_DEFINED",
+      "dimension": null,
+      "signature": null,
+      "manifold": null,
+      "boundary_conditions": [],
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "internal_space": {
+      "status": "DEFINED",
+      "type": "CIRCLE",
+      "dimension": 1,
+      "group": "U(1)",
+      "bundle": null,
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "circle-model-code",
+        "circle-geometry-code"
+      ]
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "HAMILTONIAN",
+    "expression": "H = p_xi^2",
+    "terms": [
+      {
+        "id": "internal-kinetic",
+        "role": "KINETIC",
+        "expression": "p_xi^2",
+        "provenance": "ASSUMED",
+        "depends_on": [
+          "phi"
+        ],
+        "source_refs": [
+          "circle-model-code"
+        ]
+      }
+    ],
+    "symmetry_refs": [],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": [
+      "circle-model-code"
+    ]
+  },
+  "constraints": [
+    {
+      "id": "circle-periodicity",
+      "kind": "BOUNDARY",
+      "statement": "chi(xi + 2*pi*R) = chi(xi)",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "radius"
+      ],
+      "source_refs": [
+        "circle-model-code",
+        "circle-geometry-code"
+      ]
+    },
+    {
+      "id": "integer-mode-lattice",
+      "kind": "CONSISTENCY",
+      "statement": "k*R = n with n in Z",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": [
+        "radius"
+      ],
+      "source_refs": [
+        "circle-spectrum-code"
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "radius",
+      "symbol": "R",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 2,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "circle-model-code"
+      ]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "circle-model-code"
+      ]
+    },
+    {
+      "id": "charge-coupling",
+      "symbol": "kappa",
+      "role": "COUPLING",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": null,
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "circle-model-code"
+      ]
+    },
+    {
+      "id": "mass-conversion",
+      "symbol": "C",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "mass^2/eigenvalue",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "circle-model-code"
+      ]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "NOT_DEFINED",
+    "source_refs": []
+  },
+  "quantum": {
+    "status": "QUANTIZATION_NOT_PERFORMED",
+    "method": "Internal spectral problem only; no quantum-field quantization performed",
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "NOT_APPLICABLE",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "UNTESTED",
+    "source_refs": [
+      "circle-spectrum-code"
+    ]
+  },
+  "quantization": {
+    "status": "DISCRETE_SPECTRUM_DERIVED",
+    "mechanism": "chi(xi + 2*pi*R) = chi(xi) -> k*R = n, n in Z",
+    "scope": "SPECTRAL_PROBLEM",
+    "integer_lattice_derived": true,
+    "field_quantization_status": "NOT_PERFORMED",
+    "provenance": "DERIVED",
+    "source_refs": [
+      "circle-geometry-code",
+      "circle-spectrum-code"
+    ]
+  },
+  "observables": [
+    {
+      "id": "internal-momentum",
+      "name": "p_xi spectrum",
+      "expression": "p_n = n*hbar/R",
+      "dimension": "momentum",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "radius",
+        "hbar"
+      ],
+      "free_parameters": [
+        "radius",
+        "hbar"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "circle-spectrum-code"
+      ]
+    },
+    {
+      "id": "internal-eigenvalue",
+      "name": "lambda spectrum",
+      "expression": "lambda_n = (n*hbar/R)^2",
+      "dimension": "internal eigenvalue",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "radius",
+        "hbar"
+      ],
+      "free_parameters": [
+        "radius",
+        "hbar"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "circle-spectrum-code"
+      ]
+    },
+    {
+      "id": "internal-charge",
+      "name": "q spectrum",
+      "expression": "q_n = n*hbar*kappa/R",
+      "dimension": "charge-like internal observable",
+      "status": "DERIVED",
+      "provenance": "ASSUMED",
+      "dependencies": [
+        "radius",
+        "hbar",
+        "charge-coupling"
+      ],
+      "free_parameters": [
+        "radius",
+        "hbar",
+        "charge-coupling"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "charge-code"
+      ]
+    },
+    {
+      "id": "internal-mass",
+      "name": "m spectrum",
+      "expression": "m_n = sqrt(C*lambda_n)",
+      "dimension": "mass-like internal observable",
+      "status": "UNRESOLVED",
+      "provenance": "ASSUMED",
+      "dependencies": [
+        "radius",
+        "hbar",
+        "mass-conversion"
+      ],
+      "free_parameters": [
+        "radius",
+        "hbar",
+        "mass-conversion"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "mass-code"
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "circle-model-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/circle_model.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "9f6ad7702919c02565cfaddf783ab184a89cfe4cfb05d186626122457e8a9cd2"
+        },
+        "role": "model construction and observable definitions",
+        "immutable": true,
+        "notes": "Digest is scoped to the repository checkout used by this reference record."
+      },
+      {
+        "source_id": "circle-spectrum-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/dynamics/eigenproblem.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "46b3c35ca03968ffd55ddbd25c0db623fab568433b8bdb26738d5b9e4c838cfe"
+        },
+        "role": "analytic circle spectrum and eigenfunction verification",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "circle-reference-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_circle_model.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "c2298ee54003c5c268ca2716dcca4b2dac9399b8e8b2b653a475624afb155e72"
+        },
+        "role": "independent regression evidence",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "circle-geometry-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/geometry/circle.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "b80d67095b045518247235006fd9d510717bd204b6072b0f5ae22c8d0125f9c7"
+        },
+        "role": "circle identification and PBC quantization",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "charge-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/physics/charge.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "6a5a63243fc5d1ed5f17fbd992e6b1f05a0222f455881a0b9dc499d553ab1426"
+        },
+        "role": "charge observable definition",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "mass-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/physics/mass.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "38321558098ad9692e010e9ab67c16c0c87d426c5e2013613176ff90a96f4de3"
+        },
+        "role": "assumed mass map definition",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-mode-lattice",
+        "operation": "PBC -> k=n/R -> p_n=n*hbar/R",
+        "inputs": [
+          "circle-periodicity"
+        ],
+        "outputs": [
+          "integer-mode-lattice",
+          "internal-momentum"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/geometry/circle.py",
+        "source_refs": [
+          "circle-geometry-code",
+          "circle-spectrum-code"
+        ]
+      },
+      {
+        "id": "derive-eigenvalues",
+        "operation": "H=p_xi^2 -> lambda_n=(n*hbar/R)^2",
+        "inputs": [
+          "internal-kinetic",
+          "internal-momentum"
+        ],
+        "outputs": [
+          "internal-eigenvalue"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/dynamics/eigenproblem.py",
+        "source_refs": [
+          "circle-model-code",
+          "circle-spectrum-code"
+        ]
+      },
+      {
+        "id": "define-charge-map",
+        "operation": "Q=kappa*p_xi -> q_n=n*hbar*kappa/R",
+        "inputs": [
+          "internal-momentum",
+          "charge-coupling"
+        ],
+        "outputs": [
+          "internal-charge"
+        ],
+        "provenance": "ASSUMED",
+        "code_ref": "src/physics_lab/physics/charge.py",
+        "source_refs": [
+          "charge-code"
+        ]
+      },
+      {
+        "id": "define-mass-map",
+        "operation": "m_n=sqrt(C*lambda_n)",
+        "inputs": [
+          "internal-eigenvalue",
+          "mass-conversion"
+        ],
+        "outputs": [
+          "internal-mass"
+        ],
+        "provenance": "ASSUMED",
+        "code_ref": "src/physics_lab/physics/mass.py",
+        "source_refs": [
+          "mass-code"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "reference-scope",
+        "statement": "Run this candidate as an internal benchmark only; do not activate theory search, finite bounds, or empirical comparison.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The pipeline tests the action-to-observable machinery without selecting a speculative physical theory.",
+        "source_refs": [
+          "circle-reference-tests"
+        ]
+      },
+      {
+        "id": "display-window",
+        "statement": "The displayed n range is a report cutoff after deriving the full integer lattice; it is not a search bound or quantization input.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The circle solver derives n in Z before applying the finite display window.",
+        "source_refs": [
+          "circle-spectrum-code"
+        ]
+      },
+      {
+        "id": "vacuum-scope",
+        "statement": "Vacuum selection is NOT_APPLICABLE_BY_SCOPE: this benchmark has no spacetime action, potential, or vacuum sector.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The record tests an internal spectral problem only; NOT_APPLICABLE is not a solved vacuum or a hidden vacuum assumption.",
+        "source_refs": [
+          "circle-model-code"
+        ]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "INTERNAL_ONLY",
+    "validation_refs": [
+      "circle-reference-tests"
+    ]
+  },
+  "open_questions": [
+    {
+      "id": "mass-interpretation",
+      "question": "Can the assumed internal eigenvalue-to-mass map be derived from a larger spacetime theory?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": [
+        "internal-mass",
+        "define-mass-map"
+      ]
+    },
+    {
+      "id": "quantum-field-completion",
+      "question": "What quantum-field completion, if any, should be attached to this internal spectral benchmark?",
+      "blocking": false,
+      "status": "OPEN",
+      "related_refs": [
+        "internal-eigenvalue"
+      ]
+    }
+  ]
+}

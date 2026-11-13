@@ -1,0 +1,27 @@
+{
+  "gate_version": "physical-empirical-gate-v1",
+  "campaign_id": "circle-reference-multi-pilot",
+  "status": "BLOCKED",
+  "candidate_scope": "INTERNAL_BENCHMARK_VARIANTS_ONLY",
+  "candidate_ids": [
+    "circle-reference-internal-spectrum",
+    "circle-reference-internal-spectrum-r2"
+  ],
+  "comparison_authorization": {
+    "status": "NOT_ACTIVATED",
+    "target_blind": true,
+    "fitting": false,
+    "calibration": false,
+    "parameter_updates": false
+  },
+  "checks": {
+    "parameter_free_derived_observable_available": false,
+    "immutable_external_dataset_registered": false,
+    "physical_spacetime_theory_registered": false,
+    "vacuum_and_field_quantization_scope_closed": true,
+    "no_empirical_values_entered_model": true,
+    "no_parameter_fit": true,
+    "no_candidate_ranking": true
+  },
+  "result": "No physical or empirical claim is made. The gate is correctly held until a concrete candidate, parameter-free prediction and traceable comparison dataset exist."
+}

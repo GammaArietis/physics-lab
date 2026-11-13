@@ -19,13 +19,13 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | All possible physics exhausted | No |
 | Current frontier | Phase 18E formalization closure audit |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,524-test isolated suite green |
+| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,526-test isolated suite green |
 | Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 | Theory-candidate registry | Schema v1 and validator complete; neutral template registered but unselected; search not activated |
 | Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; semantic closure audit complete; 0 legacy-validator failures |
 | Experimental comparison gate | Implemented downstream and target-blind; current circle comparison blocked because no parameter-free derived observable is available |
-| Campaign readiness | Phase 7A complete; one-candidate pilot is `READY_FOR_PILOT` and `NOT_RUN` |
-| Campaign pilot | `COMPLETE`; infrastructure pass only; wide campaign held pending multi-candidate and Mac resource measurements |
+| Campaign readiness | Phase 7A complete; original one-candidate readiness manifest preserved |
+| Campaign pilot | Single and multi-candidate pilots `COMPLETE`; infrastructure pass only; wide campaign held pending physical/empirical and Mac resource gates |
 
 ## What has been done
 
@@ -85,14 +85,15 @@ now defined and validated. The benchmark's parameter, vacuum, quantum and
 observable semantics are closed internally without relabelling assumptions as
 derivations: its four parameters remain free inputs, its vacuum is outside
 scope, and its discrete spectrum is kept distinct from field quantization.
-The experimental comparison gate is also implemented, but it does not turn
-the current benchmark into an empirical prediction: no parameter-free derived
-observable is currently eligible for comparison, and no fitting or calibration
-has been performed.
-The phase-7A campaign manifest was explicitly activated for one candidate. The
-pilot completed with an infrastructure-only pass; no theory selection or
-ranking occurred. Wider campaigns remain held until a multi-candidate pilot
-measures resource usage on the target Mac.
+The experimental comparison gate is implemented and remains correctly blocked:
+no parameter-free derived observable or immutable external dataset is currently
+registered, and no fitting or calibration has been performed.
+The phase-7A campaign manifest was explicitly activated for one candidate and
+then a separate multi-candidate activation ran two parameterized internal
+benchmark variants. Both completed with unchanged records; no theory selection
+or ranking occurred. The result validates campaign mechanics only. Wider
+campaigns remain held until a concrete physical candidate, a traceable
+comparison dataset and target-Mac resource measurements exist.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 
