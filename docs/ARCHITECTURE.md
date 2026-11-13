@@ -15,6 +15,7 @@ phase-controlled scientific record.
 | `models` | YAML loading and executable example models |
 | `reporting` | Human-readable reports and scorecards |
 | `validation` | Validation runners and consistency checks |
+| `registry` | Versioned theory-candidate records and provenance gates |
 
 The root `tests/` directory tests the public and phase-level behavior. The
 `examples/` directory contains input models and phase examples.
@@ -44,6 +45,19 @@ model input
 The flow is deliberately not a theory selector. A valid mathematical model is
 not automatically a physical realization, and an experimental comparison is
 kept separate from model derivation.
+
+## Candidate registry
+
+`schemas/theory_candidate.schema.json` is the canonical record format. The
+`registry` package validates that format without an optional third-party
+dependency and applies the laboratory-specific semantic gates. The neutral
+template is registered but unselected, has no physical claim, and leaves
+search and empirical comparison unauthorized.
+
+The registry is therefore a typed boundary, not a theory generator. A future
+runner must consume one registered record, produce derivation steps and
+observables, and write its own validation evidence before batch execution is
+allowed.
 
 ## Repository layout
 

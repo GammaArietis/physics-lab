@@ -1,0 +1,113 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "candidate.template.unselected",
+  "title": "Unselected candidate template",
+  "summary": "Neutral registration template. It is not a physical theory and does not activate any search.",
+  "registration": {
+    "status": "REGISTERED",
+    "selected": false,
+    "origin": "REFERENCE_TEMPLATE",
+    "decision_ref": null,
+    "registered_at": null
+  },
+  "fields": [],
+  "geometry": {
+    "spacetime": {
+      "status": "NOT_DEFINED",
+      "dimension": null,
+      "signature": null,
+      "manifold": null,
+      "boundary_conditions": [],
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "NOT_DEFINED",
+    "formulation": "NOT_DEFINED",
+    "expression": null,
+    "terms": [],
+    "symmetry_refs": [],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": []
+  },
+  "constraints": [],
+  "parameters": [],
+  "vacuum": {
+    "status": "NOT_DEFINED",
+    "selection_status": "NOT_SELECTED",
+    "selection_principle": null,
+    "stationarity_status": "NOT_TESTED",
+    "minimum_status": "NOT_TESTED",
+    "moduli_status": "NOT_TESTED",
+    "parameter_refs": [],
+    "provenance": "NOT_FOUND",
+    "source_refs": []
+  },
+  "quantum": {
+    "status": "CLASSICAL_ONLY",
+    "method": null,
+    "anomalies": "NOT_TESTED",
+    "unitarity": "NOT_TESTED",
+    "renormalization": "NOT_TESTED",
+    "polarizations": null,
+    "provenance": "UNTESTED",
+    "source_refs": []
+  },
+  "observables": [],
+  "provenance": {
+    "sources": [],
+    "derivation_steps": [],
+    "decisions": []
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "NO_CLAIM",
+    "validation_refs": []
+  },
+  "open_questions": [
+    {
+      "id": "define_fields",
+      "question": "Which fields and representations are part of the candidate?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": []
+    },
+    {
+      "id": "define_action",
+      "question": "What action or equivalent dynamical generator is actually defined?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": []
+    },
+    {
+      "id": "define_vacuum_policy",
+      "question": "Which vacuum-selection principle, if any, is authorized?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": []
+    }
+  ]
+}

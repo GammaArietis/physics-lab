@@ -10,6 +10,8 @@ relative path.
 - [`CURRENT_STATUS.md`](CURRENT_STATUS.md): verified project state and the
   current frontier.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): package boundaries and data flow.
+- [`THEORY_CANDIDATE_SCHEMA.md`](THEORY_CANDIDATE_SCHEMA.md): versioned
+  candidate record, provenance gates and validation contract.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):

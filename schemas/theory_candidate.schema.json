@@ -1,0 +1,790 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GammaArietis/physics-lab/blob/main/schemas/theory_candidate.schema.json",
+  "title": "Physics Lab Theory Candidate",
+  "description": "A provenance-preserving registration record for a candidate theory. Registration does not select, authorize, or validate a physical theory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "registration",
+    "fields",
+    "geometry",
+    "action",
+    "constraints",
+    "parameters",
+    "vacuum",
+    "quantum",
+    "observables",
+    "provenance",
+    "authorization",
+    "validation",
+    "open_questions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "theory-candidate-v1"
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 4000
+    },
+    "registration": {
+      "$ref": "#/$defs/registration"
+    },
+    "fields": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/field"
+      }
+    },
+    "geometry": {
+      "$ref": "#/$defs/geometry"
+    },
+    "action": {
+      "$ref": "#/$defs/action"
+    },
+    "constraints": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/constraint"
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/parameter"
+      }
+    },
+    "vacuum": {
+      "$ref": "#/$defs/vacuum"
+    },
+    "quantum": {
+      "$ref": "#/$defs/quantum"
+    },
+    "observables": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/observable"
+      }
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "authorization": {
+      "$ref": "#/$defs/authorization"
+    },
+    "validation": {
+      "$ref": "#/$defs/validation"
+    },
+    "open_questions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/openQuestion"
+      }
+    }
+  },
+  "$defs": {
+    "provenanceLabel": {
+      "type": "string",
+      "enum": [
+        "DERIVED",
+        "ASSUMED",
+        "CALIBRATED",
+        "INPUT",
+        "EXPERIMENTAL",
+        "CONVENTION",
+        "NOT_DEFINED",
+        "NOT_FOUND",
+        "UNTESTED",
+        "METHOD / INTEGRITY CONTROL"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "NOT_DEFINED",
+        "REGISTERED",
+        "SCHEMATIC",
+        "PARTIAL",
+        "COMPLETE",
+        "VERIFIED",
+        "FAILED",
+        "UNTESTED",
+        "UNRESOLVED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{1,127}$"
+    },
+    "refList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9._:/-]{1,255}$"
+      }
+    },
+    "registration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selected", "origin"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "REGISTERED",
+            "FORMALIZATION_PARTIAL",
+            "READY_FOR_DERIVATION",
+            "DERIVATION_COMPLETE",
+            "SELECTED_FOR_REFERENCE_PIPELINE",
+            "REJECTED",
+            "SUPERSEDED"
+          ]
+        },
+        "selected": {
+          "type": "boolean"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "PHASE_18E_REGISTRY",
+            "HUMAN_REGISTRATION",
+            "DERIVED_FROM_EXISTING_RECORD",
+            "REFERENCE_TEMPLATE"
+          ]
+        },
+        "decision_ref": {
+          "type": ["string", "null"]
+        },
+        "registered_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "status", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["MATTER", "GAUGE", "GEOMETRY", "AUXILIARY", "GHOST", "OBSERVABLE", "OTHER"]
+        },
+        "representation": {
+          "type": ["string", "null"]
+        },
+        "domain_ref": {
+          "type": ["string", "null"]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spacetime", "internal_space", "connections"],
+      "properties": {
+        "spacetime": {
+          "$ref": "#/$defs/spacetime"
+        },
+        "internal_space": {
+          "$ref": "#/$defs/internalSpace"
+        },
+        "connections": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/connection"
+          }
+        }
+      }
+    },
+    "spacetime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "provenance"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "DEFINED", "ASSUMED", "DERIVED", "PARTIAL", "VERIFIED"]
+        },
+        "dimension": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "signature": {
+          "type": ["string", "null"]
+        },
+        "manifold": {
+          "type": ["string", "null"]
+        },
+        "boundary_conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "internalSpace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "provenance"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "DEFINED", "ASSUMED", "DERIVED", "PARTIAL", "VERIFIED"]
+        },
+        "type": {
+          "type": ["string", "null"]
+        },
+        "dimension": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "group": {
+          "type": ["string", "null"]
+        },
+        "bundle": {
+          "type": ["string", "null"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "status", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["GAUGE", "AFFINE", "SPIN", "CHRISTOFFEL", "OTHER"]
+        },
+        "acts_on": {
+          "$ref": "#/$defs/refList"
+        },
+        "curvature": {
+          "type": ["string", "null"]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "formulation", "terms", "frozen"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "SCHEMATIC", "PARTIAL", "COMPLETE", "DERIVED", "ASSUMED", "REFERENCE"]
+        },
+        "formulation": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "LAGRANGIAN", "HAMILTONIAN", "PATH_INTEGRAL", "GENERATOR", "CONSTRAINED_ACTION"]
+        },
+        "expression": {
+          "type": ["string", "null"]
+        },
+        "terms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/actionTerm"
+          }
+        },
+        "symmetry_refs": {
+          "$ref": "#/$defs/refList"
+        },
+        "action_hash": {
+          "type": ["string", "null"],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "frozen": {
+          "type": "boolean"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "actionTerm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "expression", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["KINETIC", "POTENTIAL", "INTERACTION", "TOPOLOGICAL", "GAUGE_FIXING", "GHOST", "BOUNDARY", "OTHER"]
+        },
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "depends_on": {
+          "$ref": "#/$defs/refList"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "constraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "statement", "status", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["GAUGE", "PRIMARY", "SECONDARY", "PRESERVATION", "BOUNDARY", "REGULARITY", "CONSISTENCY", "OTHER"]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "NOT_TESTED", "DEFINED", "VERIFIED", "FAILED", "NOT_APPLICABLE"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "depends_on": {
+          "$ref": "#/$defs/refList"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "symbol", "role", "status", "provenance", "dependencies"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "symbol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "enum": ["COUPLING", "MASS", "SCALE", "GEOMETRY", "NORMALIZATION", "BOUNDARY", "INITIAL_CONDITION", "OTHER"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["FREE", "FIXED", "DERIVED", "CALIBRATED", "ASSUMED", "UNRESOLVED"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "value": {},
+        "unit": {
+          "type": ["string", "null"]
+        },
+        "formula": {
+          "type": ["string", "null"]
+        },
+        "dependencies": {
+          "$ref": "#/$defs/refList"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "vacuum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selection_status", "stationarity_status", "minimum_status", "moduli_status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "PARTIAL", "DEFINED", "VERIFIED", "SELECTED"]
+        },
+        "selection_status": {
+          "type": "string",
+          "enum": ["NOT_FOUND", "NOT_SELECTED", "SELECTED", "NOT_APPLICABLE"]
+        },
+        "selection_principle": {
+          "type": ["string", "null"]
+        },
+        "stationarity_status": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "NOT_STATIONARY", "STATIONARY", "UNRESOLVED", "NOT_APPLICABLE"]
+        },
+        "minimum_status": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "LOCAL_MINIMUM", "GLOBAL_MINIMUM", "NOT_A_MINIMUM", "UNRESOLVED", "NOT_APPLICABLE"]
+        },
+        "moduli_status": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "STABILIZED", "UNSTABILIZED", "UNRESOLVED", "NOT_APPLICABLE"]
+        },
+        "parameter_refs": {
+          "$ref": "#/$defs/refList"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "quantum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "anomalies", "unitarity", "renormalization"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_ASSESSED", "CLASSICAL_ONLY", "QUANTIZATION_NOT_PERFORMED", "PARTIAL", "VERIFIED"]
+        },
+        "method": {
+          "type": ["string", "null"]
+        },
+        "anomalies": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "ABSENT_WITHIN_SCOPE", "PRESENT", "UNRESOLVED", "NOT_APPLICABLE"]
+        },
+        "unitarity": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "PARTIAL", "VERIFIED", "FAILED", "NOT_APPLICABLE"]
+        },
+        "renormalization": {
+          "type": "string",
+          "enum": ["NOT_TESTED", "PARTIAL", "VERIFIED", "FAILED", "NOT_APPLICABLE"]
+        },
+        "polarizations": {
+          "type": ["string", "null"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "observable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "status", "provenance", "dependencies", "free_parameters", "comparison_status"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression": {
+          "type": ["string", "null"]
+        },
+        "dimension": {
+          "type": ["string", "null"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "DERIVED", "PREDICTED", "CALIBRATED", "EXPERIMENTAL_COMPARISON", "UNRESOLVED"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "dependencies": {
+          "$ref": "#/$defs/refList"
+        },
+        "free_parameters": {
+          "$ref": "#/$defs/refList"
+        },
+        "uncertainty_status": {
+          "type": "string",
+          "enum": ["NOT_ASSESSED", "SYMBOLIC_ONLY", "DERIVED", "EXPERIMENTAL_INPUT", "UNRESOLVED"]
+        },
+        "comparison_status": {
+          "type": "string",
+          "enum": ["NOT_AUTHORIZED", "NOT_RUN", "INTERNAL_ONLY", "COMPLETE", "INCOMPATIBLE", "UNRESOLVED"]
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "kind", "immutable"],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["REPOSITORY_ARTIFACT", "HISTORICAL_ARTIFACT", "CODE", "HUMAN_INPUT", "LITERATURE", "EXPERIMENTAL_DATA", "OTHER"]
+        },
+        "repository_path": {
+          "type": ["string", "null"],
+          "pattern": "^(?!/)(?![A-Za-z]:[\\\\/])[^\\u0000]+$"
+        },
+        "uri": {
+          "type": ["string", "null"]
+        },
+        "digest": {
+          "$ref": "#/$defs/digest"
+        },
+        "role": {
+          "type": ["string", "null"]
+        },
+        "immutable": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "digest": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {
+          "const": "sha256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources", "derivation_steps", "decisions"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "derivation_steps": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/derivationStep"
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/decision"
+          }
+        }
+      }
+    },
+    "derivationStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "operation", "inputs", "outputs", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "operation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputs": {
+          "$ref": "#/$defs/refList"
+        },
+        "outputs": {
+          "$ref": "#/$defs/refList"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "code_ref": {
+          "type": ["string", "null"]
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "status", "provenance"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["OPEN", "RESOLVED", "DEFERRED", "REJECTED"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "rationale": {
+          "type": ["string", "null"]
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_status", "finite_bounds", "empirical_comparison", "external_data_used", "target_blind"],
+      "properties": {
+        "search_status": {
+          "type": "string",
+          "enum": ["NOT_ACTIVATED", "AUTHORIZED", "RUNNING", "COMPLETE", "BLOCKED", "NOT_APPLICABLE"]
+        },
+        "finite_bounds": {
+          "type": "string",
+          "enum": ["NOT_AUTHORIZED", "AUTHORIZED", "RUNNING", "COMPLETE", "BLOCKED", "NOT_APPLICABLE"]
+        },
+        "empirical_comparison": {
+          "type": "string",
+          "enum": ["NOT_AUTHORIZED", "AUTHORIZED", "RUNNING", "COMPLETE", "BLOCKED", "NOT_APPLICABLE"]
+        },
+        "external_data_used": {
+          "type": "boolean"
+        },
+        "target_blind": {
+          "type": "boolean"
+        },
+        "authorization_ref": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_status", "mathematical_consistency", "reproducibility", "provenance_audit", "physical_claim_status"],
+      "properties": {
+        "schema_status": {
+          "type": "string",
+          "enum": ["DRAFT", "VALID", "INVALID"]
+        },
+        "mathematical_consistency": {
+          "type": "string",
+          "enum": ["NOT_RUN", "PASS", "PARTIAL", "FAIL"]
+        },
+        "reproducibility": {
+          "type": "string",
+          "enum": ["NOT_RUN", "PASS", "PARTIAL", "FAIL"]
+        },
+        "provenance_audit": {
+          "type": "string",
+          "enum": ["NOT_RUN", "PASS", "FAIL"]
+        },
+        "physical_claim_status": {
+          "type": "string",
+          "enum": ["NO_CLAIM", "INTERNAL_ONLY", "QUANTITATIVE_CLAIM_PENDING_COMPARISON", "COMPARISON_COMPLETE"]
+        },
+        "validation_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "openQuestion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "question", "blocking", "status"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blocking": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["OPEN", "DEFERRED", "RESOLVED"]
+        },
+        "related_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    }
+  }
+}
