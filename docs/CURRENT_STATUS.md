@@ -19,9 +19,10 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | All possible physics exhausted | No |
 | Current frontier | Phase 18E formalization closure audit |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,495-test isolated suite green |
+| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,500-test isolated suite green |
 | Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 | Theory-candidate registry | Schema v1 and validator complete; neutral template registered but unselected; search not activated |
+| Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; 0 legacy-validator failures |
 
 ## What has been done
 
@@ -76,11 +77,11 @@ requires all newly generated checkpoint references to be repository-relative.
 
 ## Next controlled step
 
-The candidate-theory schema is now defined and validated. Before a finite
-dynamical search can be authorized, one reference candidate must be run
-through the registry, derivation and observable gates. The three formulations
-that still
-require an explicit theory-level choice are:
+The candidate-theory schema and one complete internal reference pipeline are
+now defined and validated. Before a finite dynamical search can be authorized,
+the benchmark's open parameter, vacuum, quantum and observable semantics must
+be closed, and no assumption may be relabelled as a derivation. The three
+formulations that still require an explicit theory-level choice are:
 
 - `g17b1.riemann_cartan__constrained_action__1`;
 - `g17b1.characteristic_class__local_action_functional__0`;

@@ -59,6 +59,12 @@ runner must consume one registered record, produce derivation steps and
 observables, and write its own validation evidence before batch execution is
 allowed.
 
+Phase 4 provides that runner for one internal-circle benchmark. It validates
+the record, instantiates the existing Hamiltonian model, runs the spectral
+derivation, evaluates observables, and emits a portable evidence record. The
+runner rejects selection, search activation and experimental sources at its
+boundary.
+
 ## Repository layout
 
 ```text

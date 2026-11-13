@@ -11,8 +11,10 @@ from physics_lab.core.provenance import Provenance
 from physics_lab.models.loader import load_model
 from physics_lab.reporting.audit import audit_parameters
 from physics_lab.registry import (
+    ReferencePipelineError,
     TheoryCandidateValidationError,
     load_theory_candidate,
+    run_reference_pipeline,
     validate_theory_candidate,
 )
 from physics_lab.validation.validator import validate as validate
@@ -27,6 +29,8 @@ __all__ = [
     "validate",
     "TheoryCandidateValidationError",
     "load_theory_candidate",
+    "ReferencePipelineError",
+    "run_reference_pipeline",
     "validate_theory_candidate",
 ]
 __version__ = "0.1.0"

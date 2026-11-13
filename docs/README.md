@@ -12,6 +12,8 @@ relative path.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): package boundaries and data flow.
 - [`THEORY_CANDIDATE_SCHEMA.md`](THEORY_CANDIDATE_SCHEMA.md): versioned
   candidate record, provenance gates and validation contract.
+- [`REFERENCE_PIPELINE.md`](REFERENCE_PIPELINE.md): Phase 4 action-to-observable
+  reference pipeline and its evidence record.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):
