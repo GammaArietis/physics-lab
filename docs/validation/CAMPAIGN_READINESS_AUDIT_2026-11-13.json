@@ -1,0 +1,50 @@
+{
+  "audit_version": "campaign-readiness-v1",
+  "campaign_id": "circle-reference-pilot",
+  "candidate_audits": [
+    {
+      "candidate_id": "circle-reference-internal-spectrum",
+      "candidate_record_digest": "905e869c2e30af2c7f4880d16b48c0f630e9c43c4573134747a47fd13364db90",
+      "id_matches": true,
+      "record_path": "schemas/examples/theory_candidate_circle_reference.json",
+      "registration_matches": true,
+      "registration_status": "READY_FOR_DERIVATION",
+      "scope_closed": true,
+      "selected": false,
+      "status": "PASS"
+    }
+  ],
+  "candidate_count": 1,
+  "candidate_ids": [
+    "circle-reference-internal-spectrum"
+  ],
+  "checks": {
+    "candidate_limit_bounded": true,
+    "candidate_records_valid": true,
+    "candidate_refs_unique": true,
+    "candidates_unselected": true,
+    "checkpoint_resumable": true,
+    "deduplication_configured": true,
+    "empirical_comparison_not_authorized": true,
+    "execution_not_started": true,
+    "external_data_disabled": true,
+    "failure_isolation_configured": true,
+    "finite_bounds_not_authorized": true,
+    "human_review_required": true,
+    "manifest_scope_closed": true,
+    "no_auto_selection": true,
+    "parallelism_bounded": true,
+    "search_not_activated": true,
+    "timeout_bounded": true
+  },
+  "controls": {
+    "failure_isolation": true,
+    "no_auto_selection": true,
+    "no_candidate_execution": true,
+    "no_external_data": true,
+    "no_ranking": true,
+    "resumable": true
+  },
+  "execution_status": "NOT_RUN",
+  "status": "READY_FOR_PILOT"
+}

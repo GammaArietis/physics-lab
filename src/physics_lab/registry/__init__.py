@@ -32,6 +32,17 @@ from physics_lab.registry.experimental_comparison import (
     validate_experimental_dataset,
     write_isolated_comparison_report,
 )
+from physics_lab.registry.campaign import (
+    CAMPAIGN_MANIFEST_VERSION,
+    CAMPAIGN_READINESS_VERSION,
+    CampaignManifestError,
+    CampaignReadinessError,
+    DEFAULT_CAMPAIGN_MANIFEST_PATH,
+    audit_campaign_readiness,
+    load_campaign_manifest,
+    validate_campaign_manifest,
+    write_campaign_readiness_report,
+)
 
 __all__ = [
     "SCHEMA_PATH",
@@ -58,4 +69,13 @@ __all__ = [
     "run_isolated_experimental_comparison",
     "validate_experimental_dataset",
     "write_isolated_comparison_report",
+    "CAMPAIGN_MANIFEST_VERSION",
+    "CAMPAIGN_READINESS_VERSION",
+    "CampaignManifestError",
+    "CampaignReadinessError",
+    "DEFAULT_CAMPAIGN_MANIFEST_PATH",
+    "audit_campaign_readiness",
+    "load_campaign_manifest",
+    "validate_campaign_manifest",
+    "write_campaign_readiness_report",
 ]

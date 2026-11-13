@@ -71,6 +71,12 @@ authorization; it rejects fitting, calibration, parameter updates and
 experimental values inside the model report. The comparison result is a
 downstream observation, never a new model input.
 
+Phase 7A adds a campaign layer above the single-candidate runner. Its manifest
+defines candidate references, timeouts, checkpoint/resume, deduplication and
+failure isolation. The readiness audit validates these controls without
+executing a candidate or activating selection, search, bounds or empirical
+comparison.
+
 ## Repository layout
 
 ```text

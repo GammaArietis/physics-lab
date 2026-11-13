@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GammaArietis/physics-lab/blob/main/schemas/campaign_manifest.schema.json",
+  "title": "Physics Lab Campaign Manifest",
+  "description": "A bounded, resumable and provenance-preserving plan for a pilot or batch campaign. A manifest does not select a theory or authorize empirical fitting.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "campaign_id", "status", "candidate_refs", "scope", "selection_policy", "execution", "deduplication", "failure_policy", "authorization", "execution_status"],
+  "properties": {
+    "schema_version": {
+      "const": "campaign-manifest-v1"
+    },
+    "campaign_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "PILOT_READY", "RUNNING", "COMPLETE", "BLOCKED", "REJECTED"]
+    },
+    "candidate_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/candidateRef"
+      }
+    },
+    "scope": {
+      "$ref": "#/$defs/scope"
+    },
+    "selection_policy": {
+      "$ref": "#/$defs/selectionPolicy"
+    },
+    "execution": {
+      "$ref": "#/$defs/execution"
+    },
+    "deduplication": {
+      "$ref": "#/$defs/deduplication"
+    },
+    "failure_policy": {
+      "$ref": "#/$defs/failurePolicy"
+    },
+    "authorization": {
+      "$ref": "#/$defs/authorization"
+    },
+    "execution_status": {
+      "const": "NOT_RUN"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "relativePath": {
+      "type": "string",
+      "pattern": "^(?!/)(?![A-Za-z]:[\\\\/])[^\\u0000]+$"
+    },
+    "candidateRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "record_path", "expected_selected"],
+      "properties": {
+        "candidate_id": {
+          "$ref": "#/$defs/id"
+        },
+        "record_path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "expected_selected": {
+          "const": false
+        },
+        "expected_registration_status": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["search_status", "finite_bounds", "empirical_comparison", "external_data_used"],
+      "properties": {
+        "search_status": {
+          "const": "NOT_ACTIVATED"
+        },
+        "finite_bounds": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "empirical_comparison": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "external_data_used": {
+          "const": false
+        }
+      }
+    },
+    "selectionPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "ranking"],
+      "properties": {
+        "mode": {
+          "const": "NO_AUTO_SELECTION"
+        },
+        "ranking": {
+          "const": "DISABLED"
+        },
+        "human_review_required": {
+          "const": true
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_candidates", "parallelism", "per_candidate_timeout_seconds", "checkpoint_path", "report_directory", "resume", "deterministic_seed"],
+      "properties": {
+        "max_candidates": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "parallelism": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "per_candidate_timeout_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "checkpoint_path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "report_directory": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "resume": {
+          "const": true
+        },
+        "deterministic_seed": {
+          "type": ["integer", "null"]
+        }
+      }
+    },
+    "deduplication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "on_duplicate"],
+      "properties": {
+        "key": {
+          "enum": ["candidate_id", "canonical_record_digest", "canonical_action_digest"]
+        },
+        "on_duplicate": {
+          "enum": ["RETAIN_FIRST_WITH_LINK", "MERGE_WITH_PROVENANCE", "STOP"]
+        }
+      }
+    },
+    "failurePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "max_failures"],
+      "properties": {
+        "mode": {
+          "const": "ISOLATE_AND_CONTINUE"
+        },
+        "max_failures": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authorization_ref"],
+      "properties": {
+        "status": {
+          "const": "NOT_ACTIVATED"
+        },
+        "authorization_ref": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,8 @@ relative path.
   reference pipeline and its evidence record.
 - [`EXPERIMENTAL_COMPARISON.md`](EXPERIMENTAL_COMPARISON.md): Phase 6 isolated
   comparison gate and its evidence record.
+- [`CAMPAIGN_READINESS.md`](CAMPAIGN_READINESS.md): Phase 7A readiness audit
+  and bounded pilot manifest.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):
