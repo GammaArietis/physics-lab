@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GammaArietis/physics-lab/blob/main/schemas/campaign_activation.schema.json",
+  "title": "Physics Lab Campaign Activation",
+  "description": "An explicit human authorization to execute one previously audited campaign manifest. It does not authorize theory selection, ranking, fitting, or empirical comparison.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "activation_id", "campaign_id", "manifest_path", "authorization", "execution_status", "checkpoint_path", "report_path", "activated_at", "completed_at"],
+  "properties": {
+    "schema_version": {
+      "const": "campaign-activation-v1"
+    },
+    "activation_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "campaign_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "manifest_path": {
+      "type": "string",
+      "pattern": "^(?!/)(?![A-Za-z]:[\\\\/])[^\\u0000]+$"
+    },
+    "authorization": {
+      "$ref": "#/$defs/authorization"
+    },
+    "execution_status": {
+      "enum": ["NOT_RUN", "RUNNING", "COMPLETE", "PARTIAL", "BLOCKED", "FAILED"]
+    },
+    "checkpoint_path": {
+      "type": "string",
+      "pattern": "^(?!/)(?![A-Za-z]:[\\\\/])[^\\u0000]+$"
+    },
+    "report_path": {
+      "type": ["string", "null"],
+      "pattern": "^(?!/)(?![A-Za-z]:[\\\\/])[^\\u0000]+$"
+    },
+    "activated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authorization_ref", "human_confirmation", "selection_mode", "ranking", "search_status", "finite_bounds", "empirical_comparison", "external_data_used"],
+      "properties": {
+        "status": {
+          "const": "AUTHORIZED"
+        },
+        "authorization_ref": {
+          "type": "string",
+          "minLength": 3
+        },
+        "human_confirmation": {
+          "const": true
+        },
+        "selection_mode": {
+          "const": "NO_AUTO_SELECTION"
+        },
+        "ranking": {
+          "const": "DISABLED"
+        },
+        "search_status": {
+          "const": "NOT_ACTIVATED"
+        },
+        "finite_bounds": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "empirical_comparison": {
+          "const": "NOT_AUTHORIZED"
+        },
+        "external_data_used": {
+          "const": false
+        }
+      }
+    }
+  }
+}

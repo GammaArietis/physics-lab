@@ -1,0 +1,43 @@
+{
+  "analysis_version": "campaign-pilot-analysis-v1",
+  "campaign_id": "circle-reference-pilot",
+  "activation_id": "circle-reference-pilot-activation",
+  "execution_status": "COMPLETE",
+  "verdict": "PILOT_PASS_INFRASTRUCTURE_ONLY",
+  "scale_decision": "HOLD_BEFORE_WIDE_CAMPAIGN",
+  "checks": {
+    "candidate_completed": true,
+    "action_to_observables_complete": true,
+    "candidate_record_unchanged": true,
+    "no_legacy_validator_failures": true,
+    "no_selection": true,
+    "no_ranking": true,
+    "no_search": true,
+    "no_finite_bounds": true,
+    "no_empirical_comparison": true,
+    "no_external_data": true,
+    "checkpoint_written": true
+  },
+  "scientific_findings": {
+    "claim_scope": "INTERNAL_ONLY",
+    "free_input_parameter_count": 4,
+    "parameter_free_derived_observable_count": 0,
+    "vacuum_status": "NOT_APPLICABLE_BY_SCOPE",
+    "discrete_spectrum_status": "DERIVED_FROM_PBC",
+    "field_quantization_status": "NOT_PERFORMED",
+    "empirical_status": "NOT_AUTHORIZED"
+  },
+  "resource_findings": {
+    "candidate_count": 1,
+    "parallelism": 1,
+    "per_worker_memory_measured": false,
+    "target_mac_benchmark_measured": false,
+    "wide_campaign_ready": false
+  },
+  "blockers_before_wide_campaign": [
+    "Register or formalize more concrete candidates for a multi-candidate pilot.",
+    "Measure per-worker CPU and memory on the target Mac before increasing parallelism.",
+    "Exercise deduplication and failure isolation with more than one candidate.",
+    "Keep empirical comparison closed until a parameter-free derived observable exists."
+  ]
+}

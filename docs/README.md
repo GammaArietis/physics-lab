@@ -18,6 +18,10 @@ relative path.
   comparison gate and its evidence record.
 - [`CAMPAIGN_READINESS.md`](CAMPAIGN_READINESS.md): Phase 7A readiness audit
   and bounded pilot manifest.
+- [`CAMPAIGN_PILOT.md`](CAMPAIGN_PILOT.md): executed pilot, checkpoint and
+  analysis.
+- [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
+  conservative resource plan for the 24 GB MacBook Air.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):

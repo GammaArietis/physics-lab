@@ -43,6 +43,17 @@ from physics_lab.registry.campaign import (
     validate_campaign_manifest,
     write_campaign_readiness_report,
 )
+from physics_lab.registry.campaign_execution import (
+    CAMPAIGN_ACTIVATION_VERSION,
+    CAMPAIGN_EXECUTION_VERSION,
+    CampaignActivationError,
+    CampaignExecutionError,
+    DEFAULT_CAMPAIGN_ACTIVATION_PATH,
+    load_campaign_activation,
+    run_pilot_campaign,
+    validate_campaign_activation,
+    write_completed_activation,
+)
 
 __all__ = [
     "SCHEMA_PATH",
@@ -78,4 +89,13 @@ __all__ = [
     "load_campaign_manifest",
     "validate_campaign_manifest",
     "write_campaign_readiness_report",
+    "CAMPAIGN_ACTIVATION_VERSION",
+    "CAMPAIGN_EXECUTION_VERSION",
+    "CampaignActivationError",
+    "CampaignExecutionError",
+    "DEFAULT_CAMPAIGN_ACTIVATION_PATH",
+    "load_campaign_activation",
+    "run_pilot_campaign",
+    "validate_campaign_activation",
+    "write_completed_activation",
 ]

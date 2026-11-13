@@ -12,12 +12,13 @@ and the gates must close in order before a large theory campaign is useful.
 | Structural phase history through Phase 17 TIER 1 | Preserved and internally sealed where checked |
 | Dynamical catalogues 18A–18D | Implemented and audited |
 | Phase 18E closure audit | Complete as an audit; no theory selected |
-| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,520-test isolated suite green |
+| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,524-test isolated suite green |
 | Historical integrity and portability | Versioned hash resolution created; legacy files preserved; new checkpoint paths are repository-relative |
 | Theory candidate registry | Schema v1, standard-library validator and neutral unselected template; no search activated |
 | Reference candidate pipeline | Circle benchmark runs from `H = p_xi^2` through spectrum and observables; parameter/vacuum/quantization/observable closure audited; 0 legacy-validator failures |
 | Experimental comparison gate | Isolated dataset validator and downstream comparator implemented; current circle comparison remains blocked without parameter-free derived observables |
 | Campaign readiness | Phase 7A manifest and readiness audit complete; one-candidate pilot prepared but not executed |
+| Campaign pilot | Explicitly authorized pilot complete; infrastructure passed, wide scaling held pending multi-candidate/resource measurements |
 
 ## Still required before a theory avalanche
 
@@ -33,9 +34,9 @@ and the gates must close in order before a large theory campaign is useful.
 ## Controlled order of work
 
 1. Decide whether one registered Phase 18E formulation can be formalized without mixing assumptions and derivations.
-2. Activate and review the bounded one-candidate pilot.
+2. Build and review a multi-candidate pilot with measured resource usage on the target Mac.
 3. Close one dynamical law and its explicit free/assumed/derived parameter map.
-4. Add larger batch execution only after the pilot is auditable for that formulation.
+4. Add larger batch execution only after the multi-candidate pilot is auditable.
 5. Expand to many candidates and compare only derived observables with external data.
 
 The current project is therefore still far from claiming a theory of all
