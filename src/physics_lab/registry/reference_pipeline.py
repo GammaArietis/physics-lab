@@ -25,6 +25,7 @@ from physics_lab.registry.theory_candidate import (
     load_theory_candidate,
     validate_theory_candidate,
 )
+from physics_lab.registry.reference_closure import audit_reference_closure
 from physics_lab.validation.validator import validate
 
 
@@ -176,6 +177,7 @@ def run_reference_pipeline(
     else:
         candidate = validate_theory_candidate(candidate)
     _require_reference_scope(candidate)
+    closure_audit = audit_reference_closure(candidate)
 
     model = build_reference_model(
         candidate,
@@ -212,6 +214,11 @@ def run_reference_pipeline(
         ]
         == "NOT_AUTHORIZED",
         "observable_values_generated": bool(result.quantities),
+        "vacuum_scope_closed": closure_audit["checks"]["vacuum_not_applicable_by_scope"],
+        "discrete_spectrum_separate_from_field_quantization": closure_audit["checks"][
+            "discrete_spectrum_is_derived"
+        ]
+        and closure_audit["checks"]["field_quantization_is_not_claimed"],
     }
     if not all(checks.values()):
         failed = [name for name, passed in checks.items() if not passed]
@@ -267,6 +274,7 @@ def run_reference_pipeline(
             "display_window_is_not_a_search_bound": True,
         },
         "parameters": [_parameter_record(parameter) for parameter in result.parameters],
+        "closure_audit": closure_audit,
         "spectrum": spectrum,
         "observables": [_quantity_record(quantity) for quantity in result.quantities],
         "controls": checks,

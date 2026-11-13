@@ -65,6 +65,15 @@
     "provenance": "UNTESTED",
     "source_refs": []
   },
+  "quantization": {
+    "status": "NOT_DEFINED",
+    "mechanism": null,
+    "scope": "NOT_APPLICABLE",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_PERFORMED",
+    "provenance": "UNTESTED",
+    "source_refs": []
+  },
   "observables": [],
   "provenance": {
     "sources": [],

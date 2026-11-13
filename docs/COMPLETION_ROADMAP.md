@@ -12,10 +12,10 @@ and the gates must close in order before a large theory campaign is useful.
 | Structural phase history through Phase 17 TIER 1 | Preserved and internally sealed where checked |
 | Dynamical catalogues 18A–18D | Implemented and audited |
 | Phase 18E closure audit | Complete as an audit; no theory selected |
-| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,500-test isolated suite green |
+| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,506-test isolated suite green |
 | Historical integrity and portability | Versioned hash resolution created; legacy files preserved; new checkpoint paths are repository-relative |
 | Theory candidate registry | Schema v1, standard-library validator and neutral unselected template; no search activated |
-| Reference candidate pipeline | Circle benchmark runs from `H = p_xi^2` through spectrum and observables; 0 legacy-validator failures |
+| Reference candidate pipeline | Circle benchmark runs from `H = p_xi^2` through spectrum and observables; parameter/vacuum/quantization/observable closure audited; 0 legacy-validator failures |
 
 ## Still required before a theory avalanche
 
@@ -29,9 +29,9 @@ and the gates must close in order before a large theory campaign is useful.
 
 ## Controlled order of work
 
-1. Close the reference candidate's parameter, vacuum, quantum and observable semantics.
-2. Decide whether one registered Phase 18E formulation can be formalized without mixing assumptions and derivations.
-3. Add batch execution only after the single-candidate pipeline is auditable.
+1. Decide whether one registered Phase 18E formulation can be formalized without mixing assumptions and derivations.
+2. Close one dynamical law and its explicit free/assumed/derived parameter map.
+3. Add batch execution only after the single-candidate pipeline is auditable for that formulation.
 4. Expand to many candidates and compare only derived observables with external data.
 
 The current project is therefore still far from claiming a theory of all

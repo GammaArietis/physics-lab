@@ -16,6 +16,7 @@
     "parameters",
     "vacuum",
     "quantum",
+    "quantization",
     "observables",
     "provenance",
     "authorization",
@@ -74,6 +75,9 @@
     },
     "quantum": {
       "$ref": "#/$defs/quantum"
+    },
+    "quantization": {
+      "$ref": "#/$defs/quantization"
     },
     "observables": {
       "type": "array",
@@ -462,7 +466,7 @@
       "properties": {
         "status": {
           "type": "string",
-          "enum": ["NOT_DEFINED", "PARTIAL", "DEFINED", "VERIFIED", "SELECTED"]
+          "enum": ["NOT_DEFINED", "NOT_APPLICABLE", "PARTIAL", "DEFINED", "VERIFIED", "SELECTED"]
         },
         "selection_status": {
           "type": "string",
@@ -520,6 +524,37 @@
         },
         "polarizations": {
           "type": ["string", "null"]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenanceLabel"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/refList"
+        }
+      }
+    },
+    "quantization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "mechanism", "scope", "integer_lattice_derived", "field_quantization_status", "provenance"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["NOT_DEFINED", "DISCRETE_SPECTRUM_DERIVED", "FIELD_QUANTIZATION_NOT_PERFORMED", "PARTIAL", "VERIFIED", "NOT_APPLICABLE"]
+        },
+        "mechanism": {
+          "type": ["string", "null"]
+        },
+        "scope": {
+          "type": "string",
+          "enum": ["SPECTRAL_PROBLEM", "QUANTUM_MECHANICS", "QUANTUM_FIELD", "NOT_APPLICABLE"]
+        },
+        "integer_lattice_derived": {
+          "type": "boolean"
+        },
+        "field_quantization_status": {
+          "type": "string",
+          "enum": ["NOT_APPLICABLE", "NOT_PERFORMED", "PARTIAL", "VERIFIED"]
         },
         "provenance": {
           "$ref": "#/$defs/provenanceLabel"

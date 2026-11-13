@@ -29,6 +29,7 @@ def test_neutral_template_is_valid_and_unselected() -> None:
     assert record["registration"]["selected"] is False
     assert record["authorization"]["search_status"] == "NOT_ACTIVATED"
     assert record["validation"]["physical_claim_status"] == "NO_CLAIM"
+    assert record["quantization"]["status"] == "NOT_DEFINED"
 
 
 def test_repository_sources_must_use_relative_paths() -> None:

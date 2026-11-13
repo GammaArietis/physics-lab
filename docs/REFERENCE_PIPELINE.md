@@ -41,6 +41,16 @@ the reference model. The charge operator and mass conversion are explicitly
 labelled assumptions. `R`, `hbar`, `kappa` and `C` remain free `INPUT`
 parameters; no external datum calibrates them.
 
+The closure audit makes the remaining boundaries machine-readable:
+
+- the vacuum is `NOT_APPLICABLE_BY_SCOPE`, not an uncomputed or selected
+  vacuum;
+- the integer lattice and discrete spectrum are derived from periodicity;
+- this is distinct from field quantization, which remains
+  `NOT_PERFORMED`;
+- momentum and the eigenvalue are derived forms, while charge is an assumed
+  map and mass remains an unresolved assumed map.
+
 ## Reproducible command
 
 ```bash
@@ -61,13 +71,15 @@ Complete:
 - analytic spectrum generation;
 - momentum, charge and mass observable generation;
 - legacy validator execution with zero failures;
+- semantic closure audit for parameters, vacuum, quantization and observables;
 - portable, deterministic JSON evidence.
 
 Still open:
 
 - the mass map has no derivation from a larger spacetime theory;
 - the charge normalization remains free;
-- no vacuum or quantum-field completion is supplied;
+- no quantum-field completion is supplied; the vacuum is explicitly outside
+  this benchmark's scope rather than silently left ambiguous;
 - no empirical comparison is authorized.
 
 Those open items are recorded in the candidate itself rather than silently

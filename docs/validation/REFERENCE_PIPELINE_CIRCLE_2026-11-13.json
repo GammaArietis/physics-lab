@@ -7,8 +7,88 @@
     "runtime_expression": "H = p_xi**2  [ASSUMED]  with  p_xi = -i*hbar*d/dxi"
   },
   "candidate_id": "circle-reference-internal-spectrum",
+  "closure_audit": {
+    "audit_version": "circle-reference-closure-v1",
+    "checks": {
+      "discrete_spectrum_is_derived": true,
+      "field_quantization_is_not_claimed": true,
+      "four_explicit_free_inputs": true,
+      "no_calibrated_or_experimental_parameters": true,
+      "observable_provenance_is_explicit": true,
+      "vacuum_not_applicable_by_scope": true
+    },
+    "observables": [
+      {
+        "classification": "DERIVED_FORM_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar"
+        ],
+        "id": "internal-momentum",
+        "provenance": "DERIVED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "DERIVED_FORM_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar"
+        ],
+        "id": "internal-eigenvalue",
+        "provenance": "DERIVED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "ASSUMED_MAP_WITH_FREE_PARAMETERS",
+        "free_parameters": [
+          "radius",
+          "hbar",
+          "charge-coupling"
+        ],
+        "id": "internal-charge",
+        "provenance": "ASSUMED",
+        "status": "DERIVED"
+      },
+      {
+        "classification": "ASSUMED_MAP_UNRESOLVED",
+        "free_parameters": [
+          "radius",
+          "hbar",
+          "mass-conversion"
+        ],
+        "id": "internal-mass",
+        "provenance": "ASSUMED",
+        "status": "UNRESOLVED"
+      }
+    ],
+    "parameter_closure": {
+      "all_inputs_explicit": true,
+      "assumed_ids": [],
+      "calibrated_ids": [],
+      "derived_ids": [],
+      "experimental_ids": [],
+      "free_input_ids": [
+        "radius",
+        "hbar",
+        "charge-coupling",
+        "mass-conversion"
+      ],
+      "unresolved_ids": []
+    },
+    "quantization": {
+      "field_quantization_status": "NOT_PERFORMED",
+      "mechanism": "chi(xi + 2*pi*R) = chi(xi) -> k*R = n, n in Z",
+      "status": "DISCRETE_SPECTRUM_DERIVED_SEPARATE_FROM_FIELD_QUANTIZATION"
+    },
+    "status": "SEMANTICALLY_CLOSED_INTERNAL_ONLY",
+    "vacuum": {
+      "reason": "No spacetime action, potential, or vacuum sector is part of this benchmark.",
+      "status": "NOT_APPLICABLE_BY_SCOPE"
+    }
+  },
   "controls": {
     "action_instantiated": true,
+    "discrete_spectrum_separate_from_field_quantization": true,
     "external_comparison_not_authorized": true,
     "half_integer_rejected": true,
     "integer_lattice_derived_from_pbc": true,
@@ -16,6 +96,7 @@
     "no_experimental_parameters": true,
     "observable_values_generated": true,
     "positive_modes_present": true,
+    "vacuum_scope_closed": true,
     "zero_mode_present": true
   },
   "derivation": {

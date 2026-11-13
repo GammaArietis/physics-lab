@@ -132,7 +132,7 @@
     }
   ],
   "vacuum": {
-    "status": "NOT_DEFINED",
+    "status": "NOT_APPLICABLE",
     "selection_status": "NOT_APPLICABLE",
     "selection_principle": null,
     "stationarity_status": "NOT_APPLICABLE",
@@ -151,6 +151,15 @@
     "polarizations": null,
     "provenance": "UNTESTED",
     "source_refs": ["circle-spectrum-code"]
+  },
+  "quantization": {
+    "status": "DISCRETE_SPECTRUM_DERIVED",
+    "mechanism": "chi(xi + 2*pi*R) = chi(xi) -> k*R = n, n in Z",
+    "scope": "SPECTRAL_PROBLEM",
+    "integer_lattice_derived": true,
+    "field_quantization_status": "NOT_PERFORMED",
+    "provenance": "DERIVED",
+    "source_refs": ["circle-geometry-code", "circle-spectrum-code"]
   },
   "observables": [
     {
@@ -341,6 +350,14 @@
         "provenance": "CONVENTION",
         "rationale": "The circle solver derives n in Z before applying the finite display window.",
         "source_refs": ["circle-spectrum-code"]
+      },
+      {
+        "id": "vacuum-scope",
+        "statement": "Vacuum selection is NOT_APPLICABLE_BY_SCOPE: this benchmark has no spacetime action, potential, or vacuum sector.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The record tests an internal spectral problem only; NOT_APPLICABLE is not a solved vacuum or a hidden vacuum assumption.",
+        "source_refs": ["circle-model-code"]
       }
     ]
   },

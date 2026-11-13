@@ -17,6 +17,11 @@ from physics_lab.registry.reference_pipeline import (
     run_reference_pipeline,
     write_reference_pipeline_report,
 )
+from physics_lab.registry.reference_closure import (
+    REFERENCE_CLOSURE_VERSION,
+    ReferenceClosureError,
+    audit_reference_closure,
+)
 
 __all__ = [
     "SCHEMA_PATH",
@@ -32,4 +37,7 @@ __all__ = [
     "build_reference_model",
     "run_reference_pipeline",
     "write_reference_pipeline_report",
+    "REFERENCE_CLOSURE_VERSION",
+    "ReferenceClosureError",
+    "audit_reference_closure",
 ]

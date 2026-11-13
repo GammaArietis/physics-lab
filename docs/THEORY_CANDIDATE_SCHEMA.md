@@ -10,6 +10,7 @@ validation.
 - [`schemas/theory_candidate.schema.json`](../schemas/theory_candidate.schema.json): JSON Schema Draft 2020-12, version `theory-candidate-v1`.
 - [`schemas/examples/theory_candidate_template.json`](../schemas/examples/theory_candidate_template.json): neutral, unselected template.
 - [`src/physics_lab/registry/theory_candidate.py`](../src/physics_lab/registry/theory_candidate.py): standard-library validator and file loader.
+- [`src/physics_lab/registry/reference_closure.py`](../src/physics_lab/registry/reference_closure.py): semantic closure audit for the internal reference candidate.
 - [`tests/test_theory_candidate_registry.py`](../tests/test_theory_candidate_registry.py): contract tests for the gates below.
 
 The template is intentionally not a physical theory. It contains no fields,
@@ -27,6 +28,7 @@ action, parameters, vacuum, observables, or external data and has
 | `parameters` | Free, fixed, derived, calibrated and unresolved quantities | A parameter fit |
 | `vacuum` | Selection state, stationarity, minima and moduli | A selected vacuum |
 | `quantum` | Quantization status and quantum consistency checks | Quantum completeness |
+| `quantization` | Whether a discrete spectrum was derived and what kind of quantization it represents | Quantization of a field when only a spectral problem was solved |
 | `observables` | Expressions, dependencies, free parameters and comparison status | A prediction when inputs remain free |
 | `provenance` | Sources, derivation steps and decisions | Permission to use experimental data in derivation |
 | `authorization` | Explicit gates for search, bounds and comparison | Authorization merely by registration |
@@ -52,6 +54,17 @@ The validator enforces the following controls in addition to the JSON Schema:
 The provenance labels distinguish `DERIVED`, `ASSUMED`, `CALIBRATED`,
 `INPUT`, and `EXPERIMENTAL`. The last one is comparison-only and cannot leak
 back into model derivation.
+
+For the internal circle benchmark, the semantic closure audit records three
+deliberate boundaries:
+
+- `R`, `hbar`, `kappa` and `C` are explicit free `INPUT` parameters; none is
+  calibrated or imported from experimental data.
+- The vacuum is `NOT_APPLICABLE` by scope because the benchmark has no
+  spacetime action, potential or vacuum sector. This is not a solved vacuum.
+- Periodicity derives a discrete integer spectrum in the spectral problem;
+  `quantum.status: QUANTIZATION_NOT_PERFORMED` remains unchanged because no
+  quantum field has been quantized.
 
 ## Validation from a checkout
 

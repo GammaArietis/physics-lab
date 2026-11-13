@@ -44,18 +44,19 @@
     "v23_pdf": "RESOLVED_SCOPED_REPOSITORY_COPY_AUTHORITY",
     "v22_cross_check_in_v23": "RESOLVED_BY_NEW_RECORD_LEGACY_PRESERVED",
     "absolute_paths_in_historical_artifacts": "24_DOCUMENTED_IMMUTABLE_EXCEPTIONS_NEW_GENERATORS_PORTABLE",
-    "full_test_suite": "CERTIFIED_ISOLATED_1500_TESTS_EXIT_0",
+    "full_test_suite": "CERTIFIED_ISOLATED_1506_TESTS_EXIT_0",
     "phase14_symbolic_profile": "INNER_PRODUCT_TRIGONOMETRIC_SIMPLIFICATION",
     "phase14_parent_replay": "STORED_ARTIFACT_VERIFICATION_WITH_EXPLICIT_NO_REPLAY_FLAG",
     "historical_integrity_record": "docs/validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json",
     "portability_helper": "src/physics_lab/physics/portability.py",
     "theory_candidate_schema": "SCHEMA_V1_VALIDATED_TEMPLATE_UNSELECTED",
     "theory_candidate_registry": "REGISTERED_NOT_SELECTED_NO_SEARCH",
-    "reference_pipeline": "CIRCLE_ACTION_TO_OBSERVABLES_COMPLETE_INTERNAL_ONLY"
+    "reference_pipeline": "CIRCLE_ACTION_TO_OBSERVABLES_AND_SEMANTIC_CLOSURE_COMPLETE_INTERNAL_ONLY",
+    "reference_semantic_closure": "PARAMETERS_VACUUM_QUANTIZATION_OBSERVABLES_CLOSED_INTERNAL_ONLY"
   },
   "next_controlled_steps": [
-    "close_reference_parameter_vacuum_quantum_observable_semantics",
     "choose_one_registered_formulation_or_prove_the_choice_forced",
+    "close_one_dynamical_law_and_its_parameter_map",
     "close_one_dynamical_law_before_any_empirical_comparison"
   ]
 }

@@ -236,6 +236,43 @@ def _check_semantics(candidate: Mapping[str, Any], errors: list[str]) -> None:
     if registration["status"] == "SELECTED_FOR_REFERENCE_PIPELINE" and not registration["selected"]:
         errors.append("registration: SELECTED_FOR_REFERENCE_PIPELINE requires selected=true")
 
+    vacuum = candidate["vacuum"]
+    if vacuum["status"] == "NOT_APPLICABLE":
+        required_not_applicable = (
+            "selection_status",
+            "stationarity_status",
+            "minimum_status",
+            "moduli_status",
+        )
+        for field in required_not_applicable:
+            if vacuum[field] != "NOT_APPLICABLE":
+                errors.append(
+                    f"vacuum.{field}: must be NOT_APPLICABLE when vacuum.status is NOT_APPLICABLE"
+                )
+
+    quantization = candidate["quantization"]
+    if quantization["status"] == "DISCRETE_SPECTRUM_DERIVED":
+        if quantization["scope"] != "SPECTRAL_PROBLEM":
+            errors.append(
+                "quantization.scope: a DISCRETE_SPECTRUM_DERIVED record must use SPECTRAL_PROBLEM"
+            )
+        if not quantization["integer_lattice_derived"]:
+            errors.append(
+                "quantization.integer_lattice_derived: required for DISCRETE_SPECTRUM_DERIVED"
+            )
+        if quantization["provenance"] != "DERIVED":
+            errors.append(
+                "quantization.provenance: DISCRETE_SPECTRUM_DERIVED requires DERIVED provenance"
+            )
+        if not quantization.get("mechanism"):
+            errors.append(
+                "quantization.mechanism: required for DISCRETE_SPECTRUM_DERIVED"
+            )
+    if quantization["field_quantization_status"] == "VERIFIED" and quantization["scope"] != "QUANTUM_FIELD":
+        errors.append(
+            "quantization.scope: VERIFIED field quantization requires QUANTUM_FIELD scope"
+        )
+
 def validate_theory_candidate(candidate: Mapping[str, Any]) -> dict[str, Any]:
     """Validate and return a detached, JSON-compatible candidate record.
 
