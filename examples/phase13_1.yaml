@@ -1,0 +1,9 @@
+name: phase13_1
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase13_1

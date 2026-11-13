@@ -1,0 +1,5 @@
+name: phase14c2
+description: Phase 14C.2 P2 chiral gauge-matter structure.
+signature: mostly_plus
+model:
+  type: phase14c2

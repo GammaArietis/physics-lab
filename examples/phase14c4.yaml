@@ -1,0 +1,5 @@
+name: phase14c4
+description: Phase 14C.4 P4 known-model reference comparison only.
+signature: mostly_plus
+model:
+  type: phase14c4

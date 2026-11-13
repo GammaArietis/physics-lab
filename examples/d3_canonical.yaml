@@ -1,0 +1,7 @@
+name: d3_canonical
+
+geometry:
+  type: D3
+
+dynamics:
+  type: group_algebra_catalog

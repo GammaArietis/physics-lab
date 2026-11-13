@@ -1,0 +1,1 @@
+{"branch_a":"ALGEBRAIC_RESPONSE","branch_a_generic_jacobian":"4 when Z and <K Phi, K Phi> are nonzero","branch_b_principal":"Z_A (box A^nu - d^nu d_alpha A^alpha)","branch_b_time_component":"NO_SECOND_TIME_DERIVATIVE","divergence_identity":"d_nu d_mu F^{mu nu} = 0","physical_dof_count":"NOT_PERFORMED","zero_charge_branch":"FIELD-DEPENDENT BRANCH"}

@@ -1,0 +1,30 @@
+name: c3_model
+
+geometry:
+  type: circle
+  radius: 1.0
+
+dynamics:
+  type: periodic_potential
+  potential: c3_cosine
+  V0: 0.2
+
+spectrum:
+  n_states: 12
+
+parameters:
+  V0:
+    value: 0.2
+    provenance: INPUT
+  hbar:
+    value: 1.0
+    provenance: INPUT
+  C:
+    value: 1.0
+    provenance: ASSUMED
+  n_points:
+    value: 129
+    provenance: INPUT
+
+observables:
+  - mass

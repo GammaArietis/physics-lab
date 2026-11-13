@@ -1,0 +1,5 @@
+name: phase14c5h3
+description: Phase 14C.5H.3 P5H.3 one-loop 4-point amplitudes and two-particle cuts.
+signature: mostly_plus
+model:
+  type: phase14c5h3

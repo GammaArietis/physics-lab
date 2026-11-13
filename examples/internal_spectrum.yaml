@@ -1,0 +1,9 @@
+name: internal_spectrum
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: internal_spectrum

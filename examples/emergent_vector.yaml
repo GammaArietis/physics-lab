@@ -1,0 +1,32 @@
+name: s1_c3_emergent_vector
+
+geometry:
+  type: circle
+  radius: 1.0
+
+dynamics:
+  type: laplacian
+
+spectrum:
+  n_max: 5
+
+options:
+  include_c3: true
+
+parameters:
+  R:
+    value: 1.0
+    provenance: INPUT
+  hbar:
+    value: 1.0
+    provenance: INPUT
+  Z_B:
+    value: 2.0
+    provenance: INPUT
+    description: Maxwell coefficient of B_mu. Not produced by |DPsi|^2.
+  C:
+    value: 1.0
+    provenance: INPUT
+
+observables:
+  - mass

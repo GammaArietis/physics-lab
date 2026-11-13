@@ -1,0 +1,12 @@
+# Keep reproducibility records diffable.
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+
+# Reports and source documents are binary artifacts.
+*.pdf binary
+*.docx binary

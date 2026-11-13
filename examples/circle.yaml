@@ -1,0 +1,30 @@
+name: circle_model
+
+geometry:
+  type: circle
+  radius: 1.0
+
+dynamics:
+  type: laplacian
+
+spectrum:
+  n_max: 5
+
+parameters:
+  R:
+    value: 1.0
+    provenance: INPUT
+  hbar:
+    value: 1.0
+    provenance: INPUT
+  kappa:
+    value: 1.0
+    provenance: INPUT
+  C:
+    value: 1.0
+    provenance: INPUT
+
+observables:
+  - momentum_internal
+  - mass
+  - charge

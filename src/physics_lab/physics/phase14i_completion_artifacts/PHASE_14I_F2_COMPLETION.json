@@ -1,0 +1,1 @@
+{"dependency":"DECLARED","f_definition":"F_mu_nu = d_mu mathcalA_nu - d_nu mathcalA_mu","provenance":"DERIVED GIVEN ABELIAN CONNECTION DEFINITION","term":"integral sqrt(-g) [- Z_A/4 F_mu_nu F^mu_nu]"}

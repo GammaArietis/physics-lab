@@ -1,0 +1,1 @@
+{"f2":{"fields_declared":["F_mu_nu"],"fields_defined":[],"fields_undefined":["F_mu_nu"],"fields_used":["F_mu_nu"]},"gauge":{"connection_status":"PRESENT_IN_DEFINITION_AND_FRAGMENTS","fields_declared":["Phi"],"fields_defined":["Phi"],"fields_undefined":["mathcalA_mu"],"fields_used":["Phi","mathcalA_mu"],"metric_status":"PRESENT_IN_GRAVITY_FORMULA"}}

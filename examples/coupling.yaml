@@ -1,0 +1,32 @@
+name: s1_c3_coupling
+
+geometry:
+  type: circle
+  radius: 1.0
+
+dynamics:
+  type: laplacian
+
+spectrum:
+  n_max: 5
+
+options:
+  include_c3: true
+
+parameters:
+  R:
+    value: 1.0
+    provenance: INPUT
+  hbar:
+    value: 1.0
+    provenance: INPUT
+  g:
+    value: 1.0
+    provenance: INPUT
+    description: Internal-field coupling coefficient. Not a charge.
+  C:
+    value: 1.0
+    provenance: INPUT
+
+observables:
+  - mass

@@ -1,0 +1,9 @@
+name: phase10b10
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase10b10

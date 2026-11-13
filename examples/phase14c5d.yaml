@@ -1,0 +1,5 @@
+name: phase14c5d
+description: Phase 14C.5D P5D autonomous gauge dynamics test extension.
+signature: mostly_plus
+model:
+  type: phase14c5d

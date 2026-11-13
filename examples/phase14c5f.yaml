@@ -1,0 +1,5 @@
+name: phase14c5f
+description: Phase 14C.5F P5F G6 autonomous gauge dynamics test extension.
+signature: mostly_plus
+model:
+  type: phase14c5f

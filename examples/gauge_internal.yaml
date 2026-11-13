@@ -1,0 +1,9 @@
+name: gauge_internal
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: gauge_internal

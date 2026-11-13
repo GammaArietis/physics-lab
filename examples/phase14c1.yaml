@@ -1,0 +1,5 @@
+name: phase14c1
+description: Phase 14C.1 P1 QFT structural consistency.
+signature: mostly_plus
+model:
+  type: phase14c1

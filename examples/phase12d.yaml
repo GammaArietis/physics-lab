@@ -1,0 +1,9 @@
+name: phase12d
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase12d

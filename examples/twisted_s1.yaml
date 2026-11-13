@@ -1,0 +1,29 @@
+name: twisted_s1
+
+geometry:
+  type: circle
+  radius: 1.0
+
+dynamics:
+  type: laplacian
+
+spectrum:
+  n_max: 5
+
+parameters:
+  R:
+    value: 1.0
+    provenance: INPUT
+  hbar:
+    value: 1.0
+    provenance: INPUT
+  phi:
+    value: 0.0
+    provenance: INPUT
+    description: Twist angle. Free INPUT; not set to 2*pi/3.
+  C:
+    value: 1.0
+    provenance: INPUT
+
+observables:
+  - mass

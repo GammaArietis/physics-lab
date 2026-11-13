@@ -1,0 +1,1 @@
+{"frontiers":[{"frontier_id":"mathcalA_mu_in_materialized_expression","status":"OMITTED_FROM_ACTION_EXPRESSION"},{"frontier_id":"F2_A_MU_DEPENDENCY","status":"UNDECLARED"},{"frontier_id":"EOM","status":"EOM_PRECONDITION_NOT_SATISFIED"},{"frontier_id":"T09","status":"REQUIRES_HUMAN_INPUT"},{"frontier_id":"T10","status":"REQUIRES_HUMAN_INPUT"}]}

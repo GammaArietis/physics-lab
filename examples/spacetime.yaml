@@ -1,0 +1,9 @@
+name: spacetime
+
+geometry:
+  type: Minkowski
+
+signature: mostly_plus
+
+dynamics:
+  type: spacetime_scalar

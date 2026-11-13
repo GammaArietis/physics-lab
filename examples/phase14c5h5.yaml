@@ -1,0 +1,5 @@
+name: phase14c5h5
+description: Phase 14C.5H.5 P5H.5 Q04 tree-level unitarity parameter-domain audit.
+signature: mostly_plus
+model:
+  type: phase14c5h5

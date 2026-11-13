@@ -1,0 +1,5 @@
+name: phase14c5g1
+description: Phase 14C.5G.1 P5G.1 beta provenance and sign audit.
+signature: mostly_plus
+model:
+  type: phase14c5g1

@@ -1,0 +1,5 @@
+name: phase14c5h1
+description: Phase 14C.5H.1 P5H.1 IR-safe tree-unitarity scope audit.
+signature: mostly_plus
+model:
+  type: phase14c5h1

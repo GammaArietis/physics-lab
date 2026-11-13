@@ -1,0 +1,5 @@
+name: phase14c5h2
+description: Phase 14C.5H.2 P5H.2 optical theorem / two-particle cuts.
+signature: mostly_plus
+model:
+  type: phase14c5h2

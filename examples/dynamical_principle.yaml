@@ -1,0 +1,21 @@
+name: dynamical_principle
+
+geometry:
+  type: T2_rectangular
+
+dynamics:
+  type: modulus_lagrangian
+
+parameters:
+  c2:
+    value: 1.0
+    provenance: INPUT
+    description: Even quadratic coefficient. Test input. Sign not selected by the principles.
+  c4:
+    value: 1.0
+    provenance: INPUT
+    description: Even quartic coefficient. Test input.
+  M_kin:
+    value: 1.0
+    provenance: INPUT
+    description: Kinetic coefficient. Test input.

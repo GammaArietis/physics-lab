@@ -1,0 +1,12 @@
+{
+  "PHASE16C_RECONCILIATION_STATUS": "VERIFIED",
+  "controlling_execution_evidence": [
+    "src/physics_lab/physics/phase16c_batch_search_artifacts/PHASE_16C_BATCH_CATALOG.json",
+    "src/physics_lab/physics/phase16c_batch_search_artifacts/PHASE_16C_SEARCH_MANIFEST.json"
+  ],
+  "historical_status_file_rewritten": false,
+  "manifest_id": "64ba487d16824877b84b77f9c981cb2e24cd6f7ab79df5fb4c5818dc707f8ea6",
+  "reason": "STATUS.json is the unauthorized-call sentinel and has no manifest id. The catalog and manifest share the TIER_1 manifest id cited by Phase 16D and Phase 16E. The unauthorized branch does not delete those execution records.",
+  "status_file": "src/physics_lab/physics/phase16c_batch_search_artifacts/PHASE_16C_STATUS.json",
+  "status_file_state": "NOT_AUTHORIZED"
+}

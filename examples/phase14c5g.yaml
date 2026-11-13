@@ -1,0 +1,5 @@
+name: phase14c5g
+description: Phase 14C.5G P5G full-candidate one-loop renormalization / RG audit.
+signature: mostly_plus
+model:
+  type: phase14c5g

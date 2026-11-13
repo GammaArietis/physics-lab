@@ -1,0 +1,7 @@
+name: kinetic_structure
+
+geometry:
+  type: T2_rectangular
+
+dynamics:
+  type: kinetic_structure

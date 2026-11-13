@@ -1,0 +1,5 @@
+name: phase14c5q
+description: Phase 14C.5Q P5Q free-field quantum machinery.
+signature: mostly_plus
+model:
+  type: phase14c5q

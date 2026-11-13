@@ -1,0 +1,1 @@
+{"algebraic":"(c_H H_int + kappa I) Phi","component":"-2 Z D_mu D^mu Phi + (c_H H_int + kappa I) Phi = 0","covariant_reformulation":"2 Z D_mu D^mu Phi = (c_H H_int + kappa I) Phi","kinetic":"-2 Z D_mu D^mu Phi","order":"SECOND_ORDER","reformulation":"EQUIVALENT REFORMULATION"}

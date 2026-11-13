@@ -1,0 +1,9 @@
+name: dynamical_metric
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: dynamical_metric

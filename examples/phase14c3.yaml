@@ -1,0 +1,5 @@
+name: phase14c3
+description: Phase 14C.3 P3 qualitative matter-sector structure.
+signature: mostly_plus
+model:
+  type: phase14c3

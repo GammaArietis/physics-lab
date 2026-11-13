@@ -1,0 +1,7 @@
+name: dynamical_principle_phase2
+
+geometry:
+  type: T2_rectangular
+
+dynamics:
+  type: modulus_lagrangian_class

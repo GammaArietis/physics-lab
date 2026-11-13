@@ -1,0 +1,5 @@
+name: phase14c0
+description: Phase 14C.0 known-physics structural catalog and P0 profile.
+signature: mostly_plus
+model:
+  type: phase14c0

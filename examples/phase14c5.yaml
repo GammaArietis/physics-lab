@@ -1,0 +1,5 @@
+name: phase14c5
+description: Phase 14C.5 P5 quantum consistency core.
+signature: mostly_plus
+model:
+  type: phase14c5

@@ -1,0 +1,5 @@
+name: phase14c5j
+description: Phase 14C.5J P5J RG / tree-level unitarity compatibility audit.
+signature: mostly_plus
+model:
+  type: phase14c5j

@@ -1,0 +1,5 @@
+name: phase14c5h4
+description: Phase 14C.5H.4 P5H.4 IR-safe inclusive observables (virtual + real).
+signature: mostly_plus
+model:
+  type: phase14c5h4

@@ -1,0 +1,21 @@
+name: pure_c3
+
+geometry:
+  type: C3
+
+dynamics:
+  type: group_algebra
+
+parameters:
+  a:
+    value: 0.0
+    provenance: INPUT
+    description: Coefficient of I. Test input, not a prediction.
+  b:
+    value: 1.0
+    provenance: INPUT
+    description: Coefficient of T+Tdag. Test input, not a prediction.
+  c:
+    value: 1.0
+    provenance: INPUT
+    description: Coefficient of i(T-Tdag). Test input, not a prediction.

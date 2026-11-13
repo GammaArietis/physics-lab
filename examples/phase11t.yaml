@@ -1,0 +1,9 @@
+name: phase11t
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase11t

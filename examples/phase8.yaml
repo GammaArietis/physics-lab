@@ -1,0 +1,9 @@
+name: phase8
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase8

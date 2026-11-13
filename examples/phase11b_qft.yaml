@@ -1,0 +1,9 @@
+name: phase11b_qft
+
+geometry:
+  type: LorentzianManifold
+
+signature: mostly_plus
+
+dynamics:
+  type: phase11b_qft

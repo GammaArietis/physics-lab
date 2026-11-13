@@ -1,0 +1,21 @@
+name: d3
+
+geometry:
+  type: D3
+
+dynamics:
+  type: group_algebra
+
+parameters:
+  l_triv:
+    value: 0.0
+    provenance: INPUT
+    description: Schur scalar on the trivial irrep. Test input.
+  l_sign:
+    value: 1.0
+    provenance: INPUT
+    description: Schur scalar on the sign irrep. Test input.
+  l_std:
+    value: 4.0
+    provenance: INPUT
+    description: Schur scalar on the 2-dim irrep. Test input.

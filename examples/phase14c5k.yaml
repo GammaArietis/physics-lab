@@ -1,0 +1,5 @@
+name: phase14c5k
+description: Phase 14C.5K P5K two-loop RG stability and parameter-domain audit.
+signature: mostly_plus
+model:
+  type: phase14c5k

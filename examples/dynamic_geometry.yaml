@@ -1,0 +1,7 @@
+name: dynamic_geometry
+
+geometry:
+  type: T2_rectangular
+
+dynamics:
+  type: shape_laplacian

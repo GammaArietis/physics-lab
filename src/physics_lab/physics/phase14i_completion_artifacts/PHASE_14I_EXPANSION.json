@@ -1,0 +1,1 @@
+{"current_coefficient":2,"current_formula":"j^mu = 2 Z <nabla^mu Phi, K Phi>","k_antisymmetric":true,"linear_term":"- mathcalA_mu j^mu","match":true,"ordinary_kinetic":"Z g^{mu nu} <d_mu Phi, d_nu Phi>","prefactor":1,"quadratic_term":"Z mathcalA_mu mathcalA^mu <K Phi, K Phi>","status":"EXACT"}
