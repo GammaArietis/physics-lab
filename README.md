@@ -3,13 +3,15 @@
 Python laboratory for exploring candidate structures of fundamental physics
 while keeping derivation, assumption, calibration and experiment separate.
 
-The project is not currently a completed theory. Its latest verified state is
-the Phase 17 TIER 1 structural search, with Phase 18A-18D used to catalogue
-and audit the missing dynamical formalization. The current frontier is Phase
-18E, which is not started or authorized.
+The project is not currently a completed theory. Its latest historical report
+is the Phase 17 TIER 1 structural search with Phase 18A-18D used to catalogue
+the missing dynamical formalization. A post-v23 Phase 18E closure audit is
+stored in the repository, but it did not select a theory or activate a search.
 
-Read [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) for the verified state
-and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the repository map.
+Read [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md) for the synchronized
+state, [`docs/AUDIT_BASELINE_2026-11-13.md`](docs/AUDIT_BASELINE_2026-11-13.md)
+for the audit findings, and [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for
+the repository map.
 The cleanup also found one historical v23 PDF hash mismatch documented in
 [`docs/INTEGRITY_AUDIT.md`](docs/INTEGRITY_AUDIT.md).
 

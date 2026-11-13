@@ -1,6 +1,7 @@
 # Current laboratory status
 
-Status baseline: report v23, dated 26 October 2026.
+Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
+18E audit recorded in `docs/AUDIT_BASELINE_2026-11-13.md`.
 
 ## Executive state
 
@@ -17,7 +18,8 @@ Status baseline: report v23, dated 26 October 2026.
 | Dynamical parameter closure | Not tested |
 | All possible physics exhausted | No |
 | Current frontier | Phase 18E formalization closure audit |
-| Phase 18E | Not started and not authorized |
+| Phase 18E audit | Complete; no search or authorization activated |
+| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,486-test isolated suite green |
 
 ## What has been done
 
@@ -29,6 +31,8 @@ Status baseline: report v23, dated 26 October 2026.
 - Phase 18C separated mathematical definition, finite search authorization,
   physical interpretation and vacuum selection.
 - Phase 18D classified the missing formalization requirements by class.
+- Phase 18E completed the closure audit without selecting a theory, action,
+  vacuum, parameter, or numerical bound.
 
 ## What has not been established
 
@@ -39,10 +43,42 @@ Status baseline: report v23, dated 26 October 2026.
 - The project has not demonstrated impossibility; it has exhausted only the
   registered search windows.
 
+## Synchronization note
+
+The v23 report is preserved as a historical snapshot and says Phase 18E was
+not started. A later stored Phase 18E artifact records that the formalization
+closure audit completed, while keeping all physical-selection gates closed.
+The two states must not be conflated; the next report version must integrate
+the later audit explicitly.
+
+## Machine-readable snapshot
+
+The synchronized state is also recorded in
+`docs/status/STATUS_SNAPSHOT_2026-11-13_PHASE18E.json`. It is a new status
+record and does not rewrite the historical v23 files.
+
+The remaining implementation gates are tracked in
+`docs/COMPLETION_ROADMAP.md`; the 14L–14N runtime diagnosis is in
+`docs/PERFORMANCE_PHASE14.md`.
+
+The 14L–14N execution gate is now closed with an explicit distinction: 14L
+retains the full symbolic replay, while 14M and 14N validate committed parent
+artifacts without claiming an independent replay. The result is recorded by
+the `STORED_ARTIFACT` and `NOT_PERFORMED` fields in the phase outputs.
+
 ## Next controlled step
 
-Before a finite dynamical search can be authorized, Phase 18E must classify
-each missing requirement as one of:
+Before a finite dynamical search can be authorized, the historical integrity
+findings must receive a new versioned validation record and the portability
+gate must be addressed. The three formulations that
+still require an explicit theory-level choice are:
+
+- `g17b1.riemann_cartan__constrained_action__1`;
+- `g17b1.characteristic_class__local_action_functional__0`;
+- `g17b1.finite_algebra__not_yet_specifiable__0`.
+
+For any selected formulation, each missing requirement must be classified as
+one of:
 
 1. derived from the registered structure;
 2. explicitly assumed;
@@ -50,5 +86,6 @@ each missing requirement as one of:
 4. a new physical input; or
 5. undecided.
 
-Until that audit is complete, a new batch would mix formalization with
-physical selection and would not be a comparable continuation of the record.
+Until this synchronization and closure step is complete, a new batch would
+mix formalization with physical selection and would not be a comparable
+continuation of the record.

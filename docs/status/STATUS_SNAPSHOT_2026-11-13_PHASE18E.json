@@ -1,0 +1,57 @@
+{
+  "schema_version": "laboratory_status_snapshot_v1",
+  "snapshot_id": "2026-11-13-post-v23-phase18e-audit",
+  "historical_baseline": {
+    "report": "v23",
+    "date": "2026-10-26",
+    "role": "HISTORICAL_SNAPSHOT_NOT_REWRITTEN"
+  },
+  "post_v23_audit": {
+    "phase": "PHASE_18E",
+    "status": "AUDIT_COMPLETE",
+    "validation_status": "INTERNAL_CHECKS_PASSED",
+    "search_status": "NOT_STARTED",
+    "search_active": false
+  },
+  "scientific_state": {
+    "theory_selected": false,
+    "action_selected": false,
+    "vacuum_selected": false,
+    "structural_pfr": "NONE_VERIFIED",
+    "dynamical_pfr": "NOT_TESTED",
+    "structural_parameter_closure": "OPEN",
+    "dynamical_parameter_closure": "NOT_TESTED",
+    "numerical_bounds_introduced": false,
+    "all_possible_physics_exhausted": false
+  },
+  "formalization": {
+    "formulations_total": 47,
+    "formulations_complete": 0,
+    "formulations_partial": 34,
+    "formulations_unresolved": 9,
+    "formulations_not_yet_specifiable": 4,
+    "ready_for_finite_bounding": 0,
+    "theory_selection_required": 3,
+    "undecided": 44
+  },
+  "authorization": {
+    "bound_authorization": "NOT_AUTHORIZED",
+    "next_allowed_phase": "NOT_ACTIVATED"
+  },
+  "integrity": {
+    "phase17a_to_phase18d": "VERIFIED",
+    "v23_docx": "VERIFIED",
+    "v23_pdf": "UNVERIFIED_HASH_MISMATCH",
+    "v22_cross_check_in_v23": "UNVERIFIED_TRANSCRIPTION_MISMATCH",
+    "absolute_paths_in_historical_artifacts": "PRESENT_NONPORTABLE",
+    "full_test_suite": "CERTIFIED_ISOLATED_1486_TESTS_EXIT_0",
+    "phase14_symbolic_profile": "INNER_PRODUCT_TRIGONOMETRIC_SIMPLIFICATION",
+    "phase14_parent_replay": "STORED_ARTIFACT_VERIFICATION_WITH_EXPLICIT_NO_REPLAY_FLAG"
+  },
+  "next_controlled_steps": [
+    "record_phase14_reproducibility_result",
+    "issue_a_new_versioned_validation_record",
+    "choose_one_registered_formulation_or_prove_the_choice_forced",
+    "close_one_dynamical_law_before_any_empirical_comparison"
+  ]
+}

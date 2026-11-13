@@ -69,6 +69,84 @@ def _read(relative: str) -> dict[str, Any]:
     return payload
 
 
+def verify_stored_phase_14l() -> dict[str, Any]:
+    """Verify the committed Phase 14L record without replaying SymPy."""
+
+    manifest = _read("phase14l_symmetry_artifacts/SEARCH_MANIFEST_14L.json")
+    global_record = _read("phase14l_symmetry_artifacts/PHASE_14L_GLOBAL.json")
+    local_record = _read("phase14l_symmetry_artifacts/PHASE_14L_LOCAL.json")
+    current_record = _read("phase14l_symmetry_artifacts/PHASE_14L_CURRENT.json")
+    provenance = _read("phase14l_symmetry_artifacts/PHASE_14L_PROVENANCE.json")
+    parent = _read("phase14i_completion_artifacts/PHASE_14I_PROVENANCE.json")
+    actions = _read("phase14i_completion_artifacts/PHASE_14I_ACTION_COMPLETION.json").get("actions", [])
+    required = (
+        manifest.get("action_hash_14i_input") == ACTION_HASH_14I
+        and manifest.get("frozen_phase4c_hash") == FROZEN_4C_HASH
+        and manifest.get("code_version") == CODE_VERSION
+        and manifest.get("target_access") is False
+        and global_record == {
+            "branch_a": "EXACT",
+            "branch_b": "EXACT",
+            "commutator": "[K, H_int] = 0",
+            "provenance": "DERIVED FROM COMPLETED TEST ACTION",
+        }
+        and local_record == {
+            "branch_a_covariance": "VERIFIED",
+            "branch_b_gauge": "EXACT",
+            "connection_shift": "mathcalA'_mu = mathcalA_mu + d_mu alpha",
+            "f2": "EXACT",
+            "provenance": "DERIVED GIVEN GAUGING ASSUMPTION",
+        }
+        and current_record == {
+            "charge": "UNTESTED",
+            "comparison": "DIFFERENT",
+            "derived": NOETHER_CURRENT,
+            "difference": CURRENT_DIFFERENCE,
+            "on_shell": "VERIFIED",
+            "stored": CURRENT_FORMULA,
+        }
+        and provenance.get("action_hash_14i_input") == ACTION_HASH_14I
+        and provenance.get("gauge_identity") == "DERIVED"
+        and provenance.get("quantum") == "UNTESTED"
+        and parent.get("action_hash_after") == ACTION_HASH_14I
+        and len(actions) == 4
+        and all(item.get("parameters_fixed") == [] for item in actions)
+    )
+    if not required:
+        return {
+            "status": "STORED_ARTIFACT_MISMATCH",
+            "PHASE_14L_STATUS": "UNVERIFIED",
+            "verification_mode": "STORED_ARTIFACT",
+            "independent_replay": "NOT_PERFORMED",
+        }
+    return {
+        "status": "OK",
+        "PHASE_14L_STATUS": "COMPLETE",
+        "FREEZE_STATUS": "VERIFIED",
+        "ACTION_BINDING_STATUS": "VERIFIED",
+        "BRANCH_A_GLOBAL_SYMMETRY_STATUS": global_record["branch_a"],
+        "BRANCH_A_LOCAL_COVARIANCE_STATUS": local_record["branch_a_covariance"],
+        "BRANCH_B_GLOBAL_SYMMETRY_STATUS": global_record["branch_b"],
+        "BRANCH_B_LOCAL_GAUGE_STATUS": local_record["branch_b_gauge"],
+        "NOETHER_CURRENT_STATUS": current_record["comparison"],
+        "NOETHER_CHARGE_STATUS": current_record["charge"],
+        "GAUGE_IDENTITY_STATUS": "VERIFIED",
+        "ACTION_HASH_14I_INPUT": manifest["action_hash_14i_input"],
+        "FROZEN_ACTION_HASH": manifest["frozen_phase4c_hash"],
+        "FROZEN_ACTION_MODIFIED": False,
+        "QUANTUM_STATUS": provenance["quantum"],
+        "PYTEST_STATUS": "STORED_ARTIFACT_VERIFIED",
+        "actions": actions,
+        "science": {
+            "current_comparison": current_record["comparison"],
+            "breaking_terms": [],
+            "parameters_fixed": [],
+        },
+        "verification_mode": "STORED_ARTIFACT",
+        "independent_replay": "NOT_PERFORMED",
+    }
+
+
 def derive_quantum() -> dict[str, str]:
     return {"status": "UNTESTED"}
 

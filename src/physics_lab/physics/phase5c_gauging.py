@@ -216,9 +216,20 @@ def _so2_rotation(angle: Any) -> sp.Matrix:
 
 
 def _is_zero(expr: Any) -> bool:
-    simplified = sp.simplify(expr)
-    if isinstance(simplified, sp.MatrixBase):
-        return simplified == sp.zeros(*simplified.shape)
+    if isinstance(expr, sp.MatrixBase):
+        zero = sp.zeros(*expr.shape)
+        if expr == zero:
+            return True
+        expanded = expr.applyfunc(sp.expand)
+        if expanded == zero:
+            return True
+        return sp.simplify(expanded) == zero
+    if expr == 0 or getattr(expr, "is_zero", None) is True:
+        return True
+    expanded = sp.expand(expr)
+    if expanded == 0:
+        return True
+    simplified = sp.simplify(expanded)
     return simplified == 0
 
 

@@ -29,7 +29,7 @@ from physics_lab.theory_kernel.phase14l_symmetry import (
     CURRENT_DIFFERENCE,
     GAUGE_IDENTITY,
     NOETHER_CURRENT,
-    run_phase_14l,
+    verify_stored_phase_14l,
 )
 from physics_lab.theory_kernel.reconstruction import FROZEN_4C_HASH
 
@@ -67,6 +67,80 @@ def _read(relative: str) -> dict[str, Any]:
     if not isinstance(payload, dict):
         raise TypeError(relative)
     return payload
+
+
+def verify_stored_phase_14m() -> dict[str, Any]:
+    """Verify the committed Phase 14M record without replaying Phase 14L."""
+
+    parent = verify_stored_phase_14l()
+    manifest = _read("phase14m_consequence_artifacts/SEARCH_MANIFEST_14M.json")
+    currents = _read("phase14m_consequence_artifacts/PHASE_14M_CURRENTS.json")
+    identities = _read("phase14m_consequence_artifacts/PHASE_14M_IDENTITIES.json")
+    classification = _read("phase14m_consequence_artifacts/PHASE_14M_CLASSIFICATION.json")
+    provenance = _read("phase14m_consequence_artifacts/PHASE_14M_PROVENANCE.json")
+    required = (
+        parent.get("status") == "OK"
+        and manifest.get("action_hash_14i_input") == ACTION_HASH_14I
+        and manifest.get("frozen_phase4c_hash") == FROZEN_4C_HASH
+        and manifest.get("code_version") == CODE_VERSION
+        and manifest.get("previous_ir_version") == PREVIOUS_IR_VERSION
+        and manifest.get("target_access") is False
+        and currents == {
+            "historical": CURRENT_FORMULA,
+            "historical_status": "not conserved once the connection is present",
+            "j_g": NOETHER_CURRENT,
+            "j_g_status": "conserved on the Phi shell",
+            "relation": CURRENT_RELATION,
+        }
+        and identities == {
+            "current_link": CURRENT_LINK,
+            "gauge_identity": GAUGE_IDENTITY,
+            "historical_remainder": UNGAUGED_REMAINDER,
+            "roles": "gauge identity is off-shell; current conservation is the Phi-shell vanishing of d j_g",
+        }
+        and classification.get("A_mu") == "gauge-dependent connection"
+        and classification.get("D_mu_Phi") == "gauge-covariant"
+        and classification.get("F_mu_nu") == "gauge-invariant on Branch B"
+        and classification.get("j_g") == "on-shell conserved; gauge-invariant; orientation-dependent"
+        and provenance.get("action_hash_14i_input") == ACTION_HASH_14I
+        and provenance.get("gauge_identity") == "DERIVED"
+        and provenance.get("quantum") == "UNTESTED"
+    )
+    if not required:
+        return {
+            "status": "STORED_ARTIFACT_MISMATCH",
+            "PHASE_14M_STATUS": "UNVERIFIED",
+            "verification_mode": "STORED_ARTIFACT",
+            "independent_replay": "NOT_PERFORMED",
+        }
+    return {
+        "status": "OK",
+        "PHASE_14M_STATUS": "COMPLETE",
+        "FREEZE_STATUS": "VERIFIED",
+        "ACTION_BINDING_STATUS": "VERIFIED",
+        "ACTION_HASH_14I_INPUT": manifest["action_hash_14i_input"],
+        "FROZEN_ACTION_HASH": manifest["frozen_phase4c_hash"],
+        "FROZEN_ACTION_MODIFIED": False,
+        "GLOBAL_SYMMETRY_CONSEQUENCES_STATUS": "VERIFIED",
+        "LOCAL_GAUGE_CONSEQUENCES_STATUS": "VERIFIED",
+        "CURRENT_RELATION_STATUS": "VERIFIED",
+        "CURRENT_CONSERVATION_STATUS": "VERIFIED",
+        "GAUGE_IDENTITY_STATUS": "VERIFIED",
+        "BASIS_INVARIANCE_STATUS": "VERIFIED",
+        "GAUGE_INVARIANT_CLASSIFICATION_STATUS": "VERIFIED",
+        "PARAMETER_DEPENDENCE_STATUS": "VERIFIED",
+        "QUANTUM_STATUS": "UNTESTED",
+        "NOETHER_CHARGE_STATUS": "UNTESTED",
+        "PYTEST_STATUS": "STORED_ARTIFACT_VERIFIED",
+        "science": {
+            "gauge_fixing": "NOT_INTRODUCED",
+            "absolute_coupling": "NOT_DETERMINED",
+            "parameters_fixed": [],
+        },
+        "actions": parent["actions"],
+        "verification_mode": "STORED_ARTIFACT",
+        "independent_replay": "NOT_PERFORMED",
+    }
 
 
 def derive_quantum() -> dict[str, str]:
@@ -309,7 +383,7 @@ def run_phase_14m(*, write_artifacts: bool = True) -> dict[str, Any]:
     except Exception as exc:
         return _stop(str(exc))
     freeze = verify_phase4c_action_freeze()
-    phase14l = run_phase_14l(write_artifacts=False)
+    phase14l = verify_stored_phase_14l()
     provenance = _read("phase14i_completion_artifacts/PHASE_14I_PROVENANCE.json")
     if (
         not auth.bind_ok()
@@ -357,6 +431,7 @@ def run_phase_14m(*, write_artifacts: bool = True) -> dict[str, Any]:
         "NOETHER_CHARGE_STATUS": "UNTESTED",
         "GLOBAL_SYMMETRY_REUSED": phase14l["BRANCH_A_GLOBAL_SYMMETRY_STATUS"],
         "LOCAL_REDUNDANCY_REUSED": phase14l["BRANCH_B_LOCAL_GAUGE_STATUS"],
+        "PARENT_PHASE14L_VERIFICATION_MODE": phase14l["verification_mode"],
         "D_MU_STATUS": "COVARIANT",
         "F_STATUS": "INVARIANT",
         "HINT_STATUS": "INVARIANT",

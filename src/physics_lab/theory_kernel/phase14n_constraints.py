@@ -25,7 +25,7 @@ from physics_lab.theory_kernel.phase14a_lexicon import LEXICON_ID
 from physics_lab.theory_kernel.phase14c_authorization import EXPECTED_LEXICON_HASH
 from physics_lab.theory_kernel.phase14j_eom import F2_TERM, _el_scalar, _lagrangians
 from physics_lab.theory_kernel.phase14k_consistency import ACTION_HASH_14I
-from physics_lab.theory_kernel.phase14m_consequences import run_phase_14m
+from physics_lab.theory_kernel.phase14m_consequences import verify_stored_phase_14m
 from physics_lab.theory_kernel.reconstruction import FROZEN_4C_HASH
 
 PHASE = "PHASE_14N"
@@ -57,6 +57,87 @@ def _unchanged(snapshot: dict[str, str]) -> dict[str, str]:
 
 def _physics_dir() -> Path:
     return Path(__file__).resolve().parents[1] / "physics"
+
+
+def _read(relative: str) -> dict[str, Any]:
+    payload = json.loads((_physics_dir() / relative).read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise TypeError(relative)
+    return payload
+
+
+def verify_stored_phase_14n() -> dict[str, Any]:
+    """Verify the committed Phase 14N record without replaying Phase 14M."""
+
+    parent = verify_stored_phase_14m()
+    manifest = _read("phase14n_constraint_artifacts/SEARCH_MANIFEST_14N.json")
+    hessian = _read("phase14n_constraint_artifacts/PHASE_14N_HESSIAN.json")
+    constraints = _read("phase14n_constraint_artifacts/PHASE_14N_CONSTRAINTS.json")
+    propagation = _read("phase14n_constraint_artifacts/PHASE_14N_PROPAGATION.json")
+    provenance = _read("phase14n_constraint_artifacts/PHASE_14N_PROVENANCE.json")
+    required = (
+        parent.get("status") == "OK"
+        and manifest.get("action_hash_14i_input") == ACTION_HASH_14I
+        and manifest.get("frozen_phase4c_hash") == FROZEN_4C_HASH
+        and manifest.get("code_version") == CODE_VERSION
+        and manifest.get("previous_ir_version") == PREVIOUS_IR_VERSION
+        and manifest.get("target_access") is False
+        and hessian == {
+            "branch_a_connection": "rank 0",
+            "branch_b_connection": BRANCH_B_HESSIAN,
+            "phi": PHI_HESSIAN,
+            "pi_0": MOMENTUM_A0,
+            "pi_i": MOMENTUM_AI,
+        }
+        and constraints == {
+            "multiplier": "A_0 has no second time derivative",
+            "preservation": "d_t E^0 vanishes on the Phi shell and the spatial connection shell",
+            "spatial_evolution": "the spatial connection equations contain d_t^2 A_i",
+        }
+        and propagation == {
+            "configuration_count": CONFIGURATION_COUNT,
+            "dirac_reduction": "NOT_PERFORMED",
+            "gauge_fixing": "NOT_INTRODUCED",
+            "quantum_polarizations": "NOT_COUNTED",
+            "scope": "MOSTLY_PLUS_PROBE",
+        }
+        and provenance.get("action_hash_14i_input") == ACTION_HASH_14I
+        and provenance.get("constraint_structure") == "DERIVED FROM COMPLETED TEST ACTION"
+        and provenance.get("quantum") == "UNTESTED"
+    )
+    if not required:
+        return {
+            "status": "STORED_ARTIFACT_MISMATCH",
+            "PHASE_14N_STATUS": "UNVERIFIED",
+            "verification_mode": "STORED_ARTIFACT",
+            "independent_replay": "NOT_PERFORMED",
+        }
+    return {
+        "status": "OK",
+        "PHASE_14N_STATUS": "COMPLETE",
+        "FREEZE_STATUS": "VERIFIED",
+        "ACTION_BINDING_STATUS": "VERIFIED",
+        "ACTION_HASH_14I_INPUT": manifest["action_hash_14i_input"],
+        "FROZEN_ACTION_HASH": manifest["frozen_phase4c_hash"],
+        "FROZEN_ACTION_MODIFIED": False,
+        "PHI_SECTOR_STATUS": "VERIFIED",
+        "BRANCH_A_PROPAGATION_STATUS": "NON_PROPAGATING",
+        "BRANCH_B_PROPAGATION_STATUS": "CONSTRAINT_PLUS_EVOLUTION",
+        "CONSTRAINT_PRESERVATION": "PRESERVED",
+        "CONFIGURATION_COUNT_STATUS": "QUALIFIED",
+        "QUANTUM_STATUS": "UNTESTED",
+        "CURVED_CONSERVATION_STATUS": "UNTESTED",
+        "NOETHER_CHARGE_STATUS": "UNTESTED",
+        "PYTEST_STATUS": "STORED_ARTIFACT_VERIFIED",
+        "science": {
+            "gauge_fixing": "NOT_INTRODUCED",
+            "dirac_reduction": "NOT_PERFORMED",
+            "parameters_fixed": [],
+        },
+        "actions": parent["actions"],
+        "verification_mode": "STORED_ARTIFACT",
+        "independent_replay": "NOT_PERFORMED",
+    }
 
 
 def derive_quantum() -> dict[str, str]:
@@ -229,7 +310,7 @@ def run_phase_14n(*, write_artifacts: bool = True) -> dict[str, Any]:
     except Exception as exc:
         return _stop(str(exc))
     freeze = verify_phase4c_action_freeze()
-    phase14m = run_phase_14m(write_artifacts=False)
+    phase14m = verify_stored_phase_14m()
     if (
         not auth.bind_ok()
         or freeze.get("status") != "VERIFIED"
@@ -277,6 +358,7 @@ def run_phase_14n(*, write_artifacts: bool = True) -> dict[str, Any]:
         "SEARCH_EXECUTED": False,
         "T09_STATUS": "DISABLED",
         "T10_STATUS": "DISABLED",
+        "PARENT_PHASE14M_VERIFICATION_MODE": phase14m["verification_mode"],
         "actions": phase14m["actions"],
         "science": science,
         "digest": digest,
