@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/GammaArietis/physics-lab/blob/main/schemas/experimental_comparison.schema.json",
+  "title": "Physics Lab Experimental Comparison Dataset",
+  "description": "An immutable comparison-only dataset. It is not an input to derivation, fitting, calibration, or candidate selection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset_id", "dataset_version", "kind", "immutable", "source", "observations"],
+  "properties": {
+    "schema_version": {
+      "const": "experimental-comparison-v1"
+    },
+    "dataset_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+    },
+    "dataset_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "kind": {
+      "const": "EXPERIMENTAL_DATA"
+    },
+    "immutable": {
+      "const": true
+    },
+    "source": {
+      "$ref": "#/$defs/source"
+    },
+    "observations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "digest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {
+          "const": "sha256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "uri", "digest", "role"],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+        },
+        "uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "digest": {
+          "$ref": "#/$defs/digest"
+        },
+        "role": {
+          "const": "comparison-only"
+        },
+        "retrieved_at": {
+          "type": ["string", "null"]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observation_id", "observable", "value", "uncertainty", "unit", "provenance"],
+      "properties": {
+        "observation_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{2,127}$"
+        },
+        "observable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "number"
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": ["string", "null"]
+        },
+        "provenance": {
+          "const": "EXPERIMENTAL"
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

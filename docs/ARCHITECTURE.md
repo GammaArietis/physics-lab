@@ -15,7 +15,7 @@ phase-controlled scientific record.
 | `models` | YAML loading and executable example models |
 | `reporting` | Human-readable reports and scorecards |
 | `validation` | Validation runners and consistency checks |
-| `registry` | Versioned theory-candidate records and provenance gates |
+| `registry` | Versioned theory-candidate records, provenance gates and isolated comparison |
 
 The root `tests/` directory tests the public and phase-level behavior. The
 `examples/` directory contains input models and phase examples.
@@ -64,6 +64,12 @@ the record, instantiates the existing Hamiltonian model, runs the spectral
 derivation, evaluates observables, and emits a portable evidence record. The
 runner rejects selection, search activation and experimental sources at its
 boundary.
+
+Phase 6 consumes that evidence only after derivation. The isolated comparison
+engine accepts an immutable `EXPERIMENTAL_DATA` record and a separate
+authorization; it rejects fitting, calibration, parameter updates and
+experimental values inside the model report. The comparison result is a
+downstream observation, never a new model input.
 
 ## Repository layout
 

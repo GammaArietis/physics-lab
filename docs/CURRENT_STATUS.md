@@ -19,10 +19,11 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | All possible physics exhausted | No |
 | Current frontier | Phase 18E formalization closure audit |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,506-test isolated suite green |
+| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,513-test isolated suite green |
 | Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 | Theory-candidate registry | Schema v1 and validator complete; neutral template registered but unselected; search not activated |
 | Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; semantic closure audit complete; 0 legacy-validator failures |
+| Experimental comparison gate | Implemented downstream and target-blind; current circle comparison blocked because no parameter-free derived observable is available |
 
 ## What has been done
 
@@ -82,6 +83,10 @@ now defined and validated. The benchmark's parameter, vacuum, quantum and
 observable semantics are closed internally without relabelling assumptions as
 derivations: its four parameters remain free inputs, its vacuum is outside
 scope, and its discrete spectrum is kept distinct from field quantization.
+The experimental comparison gate is also implemented, but it does not turn
+the current benchmark into an empirical prediction: no parameter-free derived
+observable is currently eligible for comparison, and no fitting or calibration
+has been performed.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 

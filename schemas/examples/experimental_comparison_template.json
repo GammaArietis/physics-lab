@@ -1,0 +1,22 @@
+{
+  "schema_version": "experimental-comparison-v1",
+  "dataset_id": "dataset.template.experimental",
+  "dataset_version": "unpopulated",
+  "kind": "EXPERIMENTAL_DATA",
+  "immutable": true,
+  "source": {
+    "source_id": "source.template.experimental",
+    "uri": "urn:physics-lab:experimental-dataset-template",
+    "digest": {
+      "algorithm": "sha256",
+      "value": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "role": "comparison-only",
+    "retrieved_at": null,
+    "notes": "Template only; no observation is authorized by this record."
+  },
+  "observations": [],
+  "notes": [
+    "Experimental values may be read only by the isolated comparison stage."
+  ]
+}

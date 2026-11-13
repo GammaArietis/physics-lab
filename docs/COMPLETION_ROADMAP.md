@@ -12,10 +12,11 @@ and the gates must close in order before a large theory campaign is useful.
 | Structural phase history through Phase 17 TIER 1 | Preserved and internally sealed where checked |
 | Dynamical catalogues 18A–18D | Implemented and audited |
 | Phase 18E closure audit | Complete as an audit; no theory selected |
-| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,506-test isolated suite green |
+| Phase 14L–14N reproducibility | Phase 14L full replay retained; 14M–14N stored-artifact verification added; 1,513-test isolated suite green |
 | Historical integrity and portability | Versioned hash resolution created; legacy files preserved; new checkpoint paths are repository-relative |
 | Theory candidate registry | Schema v1, standard-library validator and neutral unselected template; no search activated |
 | Reference candidate pipeline | Circle benchmark runs from `H = p_xi^2` through spectrum and observables; parameter/vacuum/quantization/observable closure audited; 0 legacy-validator failures |
+| Experimental comparison gate | Isolated dataset validator and downstream comparator implemented; current circle comparison remains blocked without parameter-free derived observables |
 
 ## Still required before a theory avalanche
 
@@ -25,7 +26,7 @@ and the gates must close in order before a large theory campaign is useful.
 | Vacuum sector | Define the selection policy or explicitly keep it open |
 | Quantum sector | Mark classical-only results and implement quantization tests where authorized |
 | Observable layer | Produce dimensionful/dimensionless predictions with uncertainty and dependency traces |
-| Empirical comparison | Add a final, isolated data-comparison gate that cannot feed values back into derivation |
+| Empirical comparison | Activate only an explicitly authorized dataset against parameter-free derived observables; fitting and calibration remain forbidden |
 
 ## Controlled order of work
 

@@ -1,0 +1,51 @@
+{
+  "authorization": {
+    "authorization_ref": "phase6-contract-authorization",
+    "calibration": false,
+    "fitting": false,
+    "parameter_updates": false,
+    "status": "AUTHORIZED",
+    "target_blind": true
+  },
+  "blocked_result_count": 1,
+  "candidate_id": "circle-reference-internal-spectrum",
+  "comparable_result_count": 0,
+  "comparison_status": "BLOCKED",
+  "comparison_version": "experimental-comparison-v1",
+  "controls": {
+    "comparison_only_data": true,
+    "dataset_immutable": true,
+    "model_report_unchanged": true,
+    "no_calibration": true,
+    "no_candidate_ranking": true,
+    "no_experimental_values_in_model": true,
+    "no_parameter_fit": true,
+    "no_parameter_updates": true,
+    "target_blind": true
+  },
+  "dataset": {
+    "dataset_id": "phase6-contract-experimental-fixture",
+    "dataset_version": "v1",
+    "kind": "EXPERIMENTAL_DATA",
+    "observation_count": 1,
+    "source_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "fit": {
+    "calibration_performed": false,
+    "parameter_updates": [],
+    "performed": false
+  },
+  "model_report_digest": "e63f85ba29c2f111fe753c8204b3093b6f519e0015183250c69ba83a3e497db5",
+  "results": [
+    {
+      "free_dependencies": [
+        "hbar",
+        "R"
+      ],
+      "model_observable": "momentum[1]",
+      "model_provenance": "DERIVED",
+      "observation_id": "momentum-one-observation",
+      "status": "BLOCKED_NOT_PARAMETER_FREE_DERIVED"
+    }
+  ]
+}

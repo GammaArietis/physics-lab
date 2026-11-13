@@ -8,6 +8,7 @@ validation.
 ## Canonical files
 
 - [`schemas/theory_candidate.schema.json`](../schemas/theory_candidate.schema.json): JSON Schema Draft 2020-12, version `theory-candidate-v1`.
+- [`schemas/experimental_comparison.schema.json`](../schemas/experimental_comparison.schema.json): immutable comparison-only dataset contract, version `experimental-comparison-v1`.
 - [`schemas/examples/theory_candidate_template.json`](../schemas/examples/theory_candidate_template.json): neutral, unselected template.
 - [`src/physics_lab/registry/theory_candidate.py`](../src/physics_lab/registry/theory_candidate.py): standard-library validator and file loader.
 - [`src/physics_lab/registry/reference_closure.py`](../src/physics_lab/registry/reference_closure.py): semantic closure audit for the internal reference candidate.

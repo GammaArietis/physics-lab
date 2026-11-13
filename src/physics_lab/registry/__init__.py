@@ -22,6 +22,16 @@ from physics_lab.registry.reference_closure import (
     ReferenceClosureError,
     audit_reference_closure,
 )
+from physics_lab.registry.experimental_comparison import (
+    ComparisonAuthorizationError,
+    DATASET_SCHEMA_VERSION,
+    EXPERIMENTAL_COMPARISON_VERSION,
+    ExperimentalComparisonError,
+    load_experimental_dataset,
+    run_isolated_experimental_comparison,
+    validate_experimental_dataset,
+    write_isolated_comparison_report,
+)
 
 __all__ = [
     "SCHEMA_PATH",
@@ -40,4 +50,12 @@ __all__ = [
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",
+    "ComparisonAuthorizationError",
+    "DATASET_SCHEMA_VERSION",
+    "EXPERIMENTAL_COMPARISON_VERSION",
+    "ExperimentalComparisonError",
+    "load_experimental_dataset",
+    "run_isolated_experimental_comparison",
+    "validate_experimental_dataset",
+    "write_isolated_comparison_report",
 ]
