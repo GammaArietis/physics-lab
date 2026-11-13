@@ -44,7 +44,8 @@
     "v23_pdf": "RESOLVED_SCOPED_REPOSITORY_COPY_AUTHORITY",
     "v22_cross_check_in_v23": "RESOLVED_BY_NEW_RECORD_LEGACY_PRESERVED",
     "absolute_paths_in_historical_artifacts": "24_DOCUMENTED_IMMUTABLE_EXCEPTIONS_NEW_GENERATORS_PORTABLE",
-    "full_test_suite": "CERTIFIED_ISOLATED_1526_TESTS_EXIT_0",
+    "full_test_suite": "1530_COLLECTED_IN_PLACE_RUN_1524_PASS_6_FAIL_LEGACY_ARTIFACT_ORDER",
+    "harmonic_oscillator_focused_tests": "4_PASS",
     "phase14_symbolic_profile": "INNER_PRODUCT_TRIGONOMETRIC_SIMPLIFICATION",
     "phase14_parent_replay": "STORED_ARTIFACT_VERIFICATION_WITH_EXPLICIT_NO_REPLAY_FLAG",
     "historical_integrity_record": "docs/validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json",
@@ -59,7 +60,21 @@
     "physical_empirical_gate": "BLOCKED_NO_PARAMETER_FREE_PREDICTION_OR_DATASET",
     "wide_campaign": "HELD_PENDING_PHYSICAL_AND_MAC_RESOURCE_GATES"
   },
+  "known_physics_baselines": {
+    "quantum_harmonic_oscillator": {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "campaign_id": "known-physics-harmonic-oscillator-baseline",
+      "pipeline_status": "COMPLETE",
+      "internal_checks": "8_OF_8_PASSED",
+      "parameter_free_observable": "(E_n-E_0)/(E_1-E_0) = n",
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "field_quantization": "NOT_APPLICABLE",
+      "selection_or_ranking": "NOT_PERFORMED",
+      "evidence": "docs/validation/HARMONIC_OSCILLATOR_BASELINE_ANALYSIS_2026-11-13.json"
+    }
+  },
   "next_controlled_steps": [
+    "complete_free_scalar_field_internal_baseline",
     "register_concrete_physical_candidate_and_parameter_map",
     "register_parameter_free_observable_and_traceable_comparison_dataset",
     "measure_multi_candidate_runner_on_target_mac",

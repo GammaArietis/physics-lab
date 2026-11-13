@@ -22,6 +22,9 @@ relative path.
   analysis.
 - [`CAMPAIGN_MULTI_PILOT.md`](CAMPAIGN_MULTI_PILOT.md): multi-candidate
   infrastructure pilot and the physical/empirical gate decision.
+- [`KNOWN_PHYSICS_HARMONIC_OSCILLATOR.md`](KNOWN_PHYSICS_HARMONIC_OSCILLATOR.md):
+  first complete known-physics candidate from action to a parameter-free
+  observable.
 - [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
   conservative resource plan for the 24 GB MacBook Air.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the

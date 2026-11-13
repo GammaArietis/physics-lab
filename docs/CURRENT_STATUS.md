@@ -1,13 +1,14 @@
 # Current laboratory status
 
 Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
-18E audit recorded in `docs/AUDIT_BASELINE_2026-11-13.md`.
+18E audit and the known-physics harmonic-oscillator baseline recorded on
+13 November 2026.
 
 ## Executive state
 
 | Item | Verified value |
 | --- | --- |
-| Latest executed search | Phase 17 TIER 1 |
+| Latest executed search | Phase 17 TIER 1; no new search activated |
 | Search active | No |
 | Theory selected | No |
 | Dynamical action selected | No |
@@ -17,15 +18,18 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Structural parameter closure | Open |
 | Dynamical parameter closure | Not tested |
 | All possible physics exhausted | No |
-| Current frontier | Phase 18E formalization closure audit |
+| Current frontier | Free scalar field internal baseline |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,526-test isolated suite green |
+| Phase 14L–14N reproducibility | Historical stored-artifact policy preserved; current checkout collects 1,530 tests, with six legacy artifact-order failures in an in-place full run |
 | Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 | Theory-candidate registry | Schema v1 and validator complete; neutral template registered but unselected; search not activated |
 | Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; semantic closure audit complete; 0 legacy-validator failures |
 | Experimental comparison gate | Implemented downstream and target-blind; current circle comparison blocked because no parameter-free derived observable is available |
 | Campaign readiness | Phase 7A complete; original one-candidate readiness manifest preserved |
 | Campaign pilot | Single and multi-candidate pilots `COMPLETE`; infrastructure pass only; wide campaign held pending physical/empirical and Mac resource gates |
+| Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
+| Oscillator empirical comparison | Not authorized; no external dataset entered |
+| Oscillator focused tests | 4/4 passed; campaign regression set 9/9 passed |
 
 ## What has been done
 
@@ -80,20 +84,21 @@ requires all newly generated checkpoint references to be repository-relative.
 
 ## Next controlled step
 
-The candidate-theory schema and one complete internal reference pipeline are
-now defined and validated. The benchmark's parameter, vacuum, quantum and
-observable semantics are closed internally without relabelling assumptions as
-derivations: its four parameters remain free inputs, its vacuum is outside
-scope, and its discrete spectrum is kept distinct from field quantization.
-The experimental comparison gate is implemented and remains correctly blocked:
-no parameter-free derived observable or immutable external dataset is currently
-registered, and no fitting or calibration has been performed.
-The phase-7A campaign manifest was explicitly activated for one candidate and
-then a separate multi-candidate activation ran two parameterized internal
-benchmark variants. Both completed with unchanged records; no theory selection
-or ranking occurred. The result validates campaign mechanics only. Wider
-campaigns remain held until a concrete physical candidate, a traceable
-comparison dataset and target-Mac resource measurements exist.
+The candidate-theory schema and complete internal reference pipelines are now
+defined and validated. The circle benchmark remains an internal structural
+reference. The quantum harmonic oscillator is the first concrete known-physics
+candidate whose action, canonical quantization, vacuum, exact spectrum and
+parameter-free gap-ratio observable close in one executable chain. Its mass,
+frequency and `hbar` inputs remain explicit; no empirical value has entered the
+model, and no fitting or calibration has been performed.
+
+The oscillator campaign was explicitly activated for one candidate and
+completed with an unchanged record. No theory selection or ranking occurred.
+The empirical comparison gate remains closed because no immutable comparison
+dataset has been registered. The next controlled step is the free scalar field
+baseline, with its field quantization and vacuum sector kept distinct from the
+quantum-mechanical oscillator. Wider campaigns remain held until the known-
+physics baselines and the separate empirical gate are reviewed.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 

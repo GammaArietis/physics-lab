@@ -18,6 +18,15 @@ from physics_lab.registry.reference_pipeline import (
     run_reference_pipeline,
     write_reference_pipeline_report,
 )
+from physics_lab.registry.harmonic_oscillator_pipeline import (
+    DEFAULT_HO_CANDIDATE_PATH,
+    HO_CANDIDATE_ID,
+    HO_PIPELINE_REF,
+    HO_PIPELINE_VERSION,
+    HarmonicOscillatorPipelineError,
+    run_harmonic_oscillator_pipeline,
+    write_harmonic_oscillator_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -72,6 +81,13 @@ __all__ = [
     "build_reference_model",
     "run_reference_pipeline",
     "write_reference_pipeline_report",
+    "DEFAULT_HO_CANDIDATE_PATH",
+    "HO_CANDIDATE_ID",
+    "HO_PIPELINE_REF",
+    "HO_PIPELINE_VERSION",
+    "HarmonicOscillatorPipelineError",
+    "run_harmonic_oscillator_pipeline",
+    "write_harmonic_oscillator_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

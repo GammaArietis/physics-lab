@@ -1,0 +1,493 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "known-physics-quantum-harmonic-oscillator",
+  "title": "Known-physics quantum harmonic oscillator baseline",
+  "summary": "A one-dimensional non-relativistic quantum harmonic oscillator used as the first complete physical baseline. It formalizes the Lagrangian, canonical quantization, ground-state vacuum and exact spectrum without activating search or empirical comparison.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "quantum-harmonic-oscillator-v1",
+    "decision_ref": "known-physics-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "position",
+      "role": "OTHER",
+      "representation": "one-dimensional configuration coordinate",
+      "domain_ref": "real-line",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "ho-known-physics-scope",
+        "ho-action-code"
+      ]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 1,
+      "signature": "time-only",
+      "manifold": "R_t",
+      "boundary_conditions": [],
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral dt [m*xdot^2/2 - m*omega^2*x^2/2]",
+    "terms": [
+      {
+        "id": "kinetic",
+        "role": "KINETIC",
+        "expression": "m*xdot^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": [
+          "mass"
+        ],
+        "source_refs": [
+          "ho-action-code"
+        ]
+      },
+      {
+        "id": "potential",
+        "role": "POTENTIAL",
+        "expression": "m*omega^2*x^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": [
+          "mass",
+          "omega",
+          "position"
+        ],
+        "source_refs": [
+          "ho-action-code"
+        ]
+      }
+    ],
+    "symmetry_refs": [
+      "time-translation"
+    ],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": [
+      "ho-known-physics-scope",
+      "ho-action-code"
+    ]
+  },
+  "constraints": [
+    {
+      "id": "canonical-momentum",
+      "kind": "CONSISTENCY",
+      "statement": "p = m*xdot",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": [
+        "mass"
+      ],
+      "source_refs": [
+        "ho-pipeline-code"
+      ]
+    },
+    {
+      "id": "positive-parameters",
+      "kind": "CONSISTENCY",
+      "statement": "m > 0, omega > 0, hbar > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "mass",
+        "omega",
+        "hbar"
+      ],
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    },
+    {
+      "id": "canonical-commutator",
+      "kind": "PRIMARY",
+      "statement": "[x,p] = i*hbar",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "hbar"
+      ],
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "mass",
+      "symbol": "m",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1.0,
+      "unit": "mass",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    },
+    {
+      "id": "omega",
+      "symbol": "omega",
+      "role": "SCALE",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1.0,
+      "unit": "angular_frequency",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1.0,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "ho-known-physics-scope"
+      ]
+    }
+  ],
+  "vacuum": {
+    "status": "SELECTED",
+    "selection_status": "SELECTED",
+    "selection_principle": "global minimum of the exact Hamiltonian spectrum",
+    "stationarity_status": "STATIONARY",
+    "minimum_status": "GLOBAL_MINIMUM",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [
+      "mass",
+      "omega",
+      "hbar"
+    ],
+    "provenance": "DERIVED",
+    "source_refs": [
+      "ho-pipeline-code"
+    ]
+  },
+  "quantum": {
+    "status": "VERIFIED",
+    "method": "canonical quantization with [x,p] = i*hbar and ladder operators",
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "VERIFIED",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "DERIVED",
+    "source_refs": [
+      "ho-pipeline-code"
+    ]
+  },
+  "quantization": {
+    "status": "VERIFIED",
+    "mechanism": "[x,p] = i*hbar -> H = hbar*omega*(a^dagger*a + 1/2)",
+    "scope": "QUANTUM_MECHANICS",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "DERIVED",
+    "source_refs": [
+      "ho-pipeline-code"
+    ]
+  },
+  "observables": [
+    {
+      "id": "energy-spectrum",
+      "name": "energy spectrum",
+      "expression": "E_n = hbar*omega*(n + 1/2)",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "quantum-number",
+        "hbar",
+        "omega"
+      ],
+      "free_parameters": [
+        "hbar",
+        "omega"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "ho-pipeline-code"
+      ]
+    },
+    {
+      "id": "energy-gap",
+      "name": "energy gap",
+      "expression": "Delta E_n = E_n - E_0 = n*hbar*omega",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "quantum-number",
+        "hbar",
+        "omega"
+      ],
+      "free_parameters": [
+        "hbar",
+        "omega"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "ho-pipeline-code"
+      ]
+    },
+    {
+      "id": "dimensionless-gap-ratio",
+      "name": "dimensionless gap ratio",
+      "expression": "(E_n - E_0)/(E_1 - E_0) = n",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "quantum-number"
+      ],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "ho-pipeline-code"
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "ho-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the known-physics baseline",
+        "immutable": true,
+        "notes": "Controlled reproduction baseline, not a new physical claim."
+      },
+      {
+        "source_id": "ho-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "7534673e3436cd0ed56e7b7fb0a7c4490559ec7b9b8a0068b2c82417949ac314"
+        },
+        "role": "quadratic action, exact spectrum and observables",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "ho-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/harmonic_oscillator_pipeline.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "a955131f1d232bbb8bc93f04dbf5861600069add68aa8def2271d7811208780a"
+        },
+        "role": "candidate scope, derivation runner and closure checks",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "ho-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_harmonic_oscillator_pipeline.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "646968f1e3022e29aac7ea32e1cdd44bb5350a775394ebf9abd7f3e648558bfd"
+        },
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-eom",
+        "operation": "Euler-Lagrange variation of the quadratic action",
+        "inputs": [
+          "kinetic",
+          "potential"
+        ],
+        "outputs": [
+          "eom"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "source_refs": [
+          "ho-action-code",
+          "ho-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-hamiltonian",
+        "operation": "Legendre transform p=m*xdot -> H=p^2/(2*m)+m*omega^2*x^2/2",
+        "inputs": [
+          "eom",
+          "canonical-momentum"
+        ],
+        "outputs": [
+          "hamiltonian"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "source_refs": [
+          "ho-action-code",
+          "ho-pipeline-code"
+        ]
+      },
+      {
+        "id": "canonical-quantization",
+        "operation": "[x,p]=i*hbar and ladder-operator construction",
+        "inputs": [
+          "hamiltonian",
+          "canonical-commutator"
+        ],
+        "outputs": [
+          "quantization",
+          "vacuum"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "source_refs": [
+          "ho-known-physics-scope",
+          "ho-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-spectrum",
+        "operation": "H=hbar*omega*(a^dagger*a+1/2) -> E_n=hbar*omega*(n+1/2)",
+        "inputs": [
+          "hamiltonian",
+          "quantization"
+        ],
+        "outputs": [
+          "energy-spectrum",
+          "energy-gap"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "source_refs": [
+          "ho-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-gap-ratio",
+        "operation": "(E_n-E_0)/(E_1-E_0) -> n",
+        "inputs": [
+          "energy-spectrum",
+          "energy-gap"
+        ],
+        "outputs": [
+          "dimensionless-gap-ratio"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+        "source_refs": [
+          "ho-pipeline-code"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "known-physics-scope",
+        "statement": "Use the quantum harmonic oscillator as a known-physics reproduction baseline before any speculative theory.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The baseline isolates action, vacuum, quantization and a parameter-free observable.",
+        "source_refs": [
+          "ho-known-physics-scope"
+        ]
+      },
+      {
+        "id": "vacuum-selection",
+        "statement": "Select n=0 as the vacuum because it is the global minimum of the exact Hamiltonian spectrum for positive parameters.",
+        "status": "RESOLVED",
+        "provenance": "DERIVED",
+        "rationale": "The exact spectrum is bounded below and strictly increasing for omega>0.",
+        "source_refs": [
+          "ho-pipeline-code"
+        ]
+      },
+      {
+        "id": "display-window",
+        "statement": "The displayed n range is a report cutoff after deriving the spectrum; it is not a search bound.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The analytic formula is defined for all n in N_0 before the finite report window.",
+        "source_refs": [
+          "ho-pipeline-code"
+        ]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": [
+      "tests/test_harmonic_oscillator_pipeline.py"
+    ]
+  },
+  "open_questions": [
+    {
+      "id": "baseline-comparison-dataset",
+      "question": "Which immutable real-world oscillator dataset will be registered for the separate target-blind comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": [
+        "dimensionless-gap-ratio"
+      ]
+    },
+    {
+      "id": "field-theory-extension",
+      "question": "How should this quantum-mechanical baseline be extended to the free scalar field without conflating particle and field quantization?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": [
+        "quantization"
+      ]
+    }
+  ]
+}

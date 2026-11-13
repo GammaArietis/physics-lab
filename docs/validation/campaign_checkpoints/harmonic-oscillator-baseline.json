@@ -1,0 +1,30 @@
+{
+  "activation_id": "known-physics-harmonic-oscillator-baseline-activation",
+  "campaign_id": "known-physics-harmonic-oscillator-baseline",
+  "candidate_results": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "candidate_report_path": "docs/validation/campaign_reports/harmonic-oscillator-baseline/known-physics-quantum-harmonic-oscillator.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "vacuum_selected_by_spectrum_minimum": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "completed_candidate_ids": [
+    "known-physics-quantum-harmonic-oscillator"
+  ],
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "failed_candidate_ids": []
+}

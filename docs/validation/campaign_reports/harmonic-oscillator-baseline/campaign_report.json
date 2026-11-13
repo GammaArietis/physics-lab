@@ -1,0 +1,46 @@
+{
+  "activation_id": "known-physics-harmonic-oscillator-baseline-activation",
+  "campaign_id": "known-physics-harmonic-oscillator-baseline",
+  "candidate_count": 1,
+  "candidate_results": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "candidate_report_path": "docs/validation/campaign_reports/harmonic-oscillator-baseline/known-physics-quantum-harmonic-oscillator.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "vacuum_selected_by_spectrum_minimum": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "checkpoint_path": "docs/validation/campaign_checkpoints/harmonic-oscillator-baseline.json",
+  "controls": {
+    "candidate_records_unchanged": true,
+    "checkpoint_written": true,
+    "execution_isolated": true,
+    "explicit_authorization": true,
+    "no_auto_selection": true,
+    "no_empirical_comparison": true,
+    "no_external_data": true,
+    "no_finite_bounds": true,
+    "no_ranking": true,
+    "no_search": true
+  },
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "report_path": "docs/validation/campaign_reports/harmonic-oscillator-baseline/campaign_report.json",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}

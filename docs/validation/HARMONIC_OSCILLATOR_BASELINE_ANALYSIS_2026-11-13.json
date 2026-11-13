@@ -1,0 +1,86 @@
+{
+  "analysis_version": "harmonic-oscillator-baseline-analysis-v1",
+  "candidate_id": "known-physics-quantum-harmonic-oscillator",
+  "campaign_id": "known-physics-harmonic-oscillator-baseline",
+  "activation_id": "known-physics-harmonic-oscillator-baseline-activation",
+  "execution_status": "COMPLETE",
+  "verdict": "KNOWN_PHYSICS_INTERNAL_BASELINE_PASS",
+  "next_gate": "FREE_SCALAR_FIELD_INTERNAL_BASELINE",
+  "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+  "chain": {
+    "action": "S = integral dt [m*xdot^2/2 - m*omega^2*x^2/2]",
+    "euler_lagrange": "m*(xddot + omega^2*x) = 0",
+    "canonical_momentum": "p = m*xdot",
+    "hamiltonian": "H = p^2/(2*m) + m*omega^2*x^2/2",
+    "quantization": "[x,p] = i*hbar",
+    "spectrum": "E_n = hbar*omega*(n + 1/2), n in N_0",
+    "vacuum": "n=0 selected as global minimum of the exact spectrum",
+    "parameter_free_observable": "(E_n-E_0)/(E_1-E_0) = n"
+  },
+  "checks": {
+    "count": 8,
+    "all_passed": true,
+    "names": [
+      "euler_lagrange_equation_verified",
+      "legendre_transform_verified",
+      "canonical_commutator_declared",
+      "spectrum_formula_verified",
+      "vacuum_is_global_ground_state_within_exact_spectrum",
+      "positive_excitation_gaps",
+      "equal_spacing_verified",
+      "parameter_free_gap_ratio_verified"
+    ]
+  },
+  "campaign": {
+    "candidate_count": 1,
+    "candidate_records_unchanged": true,
+    "candidate_status": "PASS",
+    "pipeline_status": "COMPLETE",
+    "checkpoint_written": true,
+    "selection_performed": false,
+    "ranking_performed": false,
+    "search_activated": false,
+    "finite_bounds_authorized": false,
+    "external_data_used": false,
+    "empirical_comparison_performed": false
+  },
+  "observables": {
+    "display_n_max": 4,
+    "rows": 15,
+    "parameter_free_gap_ratio_rows": 5,
+    "dimensionful_spectrum_free_inputs": ["hbar", "omega"],
+    "comparison_status": "NOT_AUTHORIZED"
+  },
+  "interpretation": {
+    "internal_mathematical_baseline": "PASSED",
+    "empirical_validation": "NOT_PERFORMED",
+    "field_quantization": "NOT_APPLICABLE_IN_THIS_CANDIDATE",
+    "fitting": false,
+    "calibration": false,
+    "parameter_updates": false,
+    "wide_campaign": "HELD_UNTIL_FREE_SCALAR_AND_EMPIRICAL_GATES_ARE_REVIEWED"
+  },
+  "verification_run": {
+    "harmonic_oscillator_tests": "4_PASS",
+    "campaign_regression_tests": "9_PASS",
+    "full_collection": "1530_TESTS",
+    "full_in_place_run": "1524_PASS_6_FAIL",
+    "full_run_failures": [
+      "test_phase14c5h1_independent.py::test_independent_14c5h1_and_freeze_identity",
+      "test_phase14c5h3.py::test_phase14c5h3_validator[mostly_plus]",
+      "test_phase14c5h3.py::test_phase14c5h3_validator[mostly_minus]",
+      "test_phase14c5h3.py::test_phase14c5h3_yaml_and_validator",
+      "test_phase14g_derivation.py::test_phase14g_derives_only_stored_action_content",
+      "test_phase14l_symmetry.py::test_phase14l_reverifies_the_completed_action"
+    ],
+    "interpretation": "No harmonic-oscillator test failed. The six failures are in legacy stateful phase-artifact checks; each failed file passes when run from a clean artifact state. Full-suite certification remains open."
+  },
+  "evidence": {
+    "campaign_report": "docs/validation/campaign_reports/harmonic-oscillator-baseline/campaign_report.json",
+    "checkpoint": "docs/validation/campaign_checkpoints/harmonic-oscillator-baseline.json",
+    "candidate_record": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+    "model": "src/physics_lab/models/examples/harmonic_oscillator_model.py",
+    "pipeline": "src/physics_lab/registry/harmonic_oscillator_pipeline.py",
+    "tests": "tests/test_harmonic_oscillator_pipeline.py"
+  }
+}
