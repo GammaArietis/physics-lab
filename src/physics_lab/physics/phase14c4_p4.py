@@ -11,6 +11,8 @@ import re
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 from physics_lab.physics.phase4c_action_freeze import (
     FREEZE_ID,
     FreezeIntegrityError,
@@ -1254,7 +1256,7 @@ def analyze_phase14c4_p4(auth: Phase5B0Authorization, *, signature: str = MOSTLY
             "G6_EXECUTED": True,
             "REPRODUCIBILITY_STATUS": "VERIFIED",
             "ENGINE_VERSION": ENGINE_VERSION,
-            "checkpoint_path": str(p4_checkpoint_path()),
+            "checkpoint_path": portable_path(p4_checkpoint_path()),
             "checkpoint_digest": ckpt_payload["checkpoint_digest"],
             "PHASE_14C3_STATUS": s14c3.get("PHASE_14C3_STATUS"),
             "PHASE_14C2_STATUS": s14c2.get("PHASE_14C2_STATUS"),

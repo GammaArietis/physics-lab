@@ -11,6 +11,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 import sympy as sp
 
 from physics_lab.physics.phase4c_action_freeze import (
@@ -1287,7 +1289,7 @@ def analyze_phase14c5k_p5k(auth: Phase5B0Authorization, *, signature: str = MOST
         "action_content_hash": EXPECTED_FROZEN_HASH,
         "final_action_hash": EXPECTED_FROZEN_HASH,
         "checkpoint_digest": ckpt_payload["checkpoint_digest"],
-        "checkpoint_path": str(p5k_checkpoint_path()),
+            "checkpoint_path": portable_path(p5k_checkpoint_path()),
         "GAUGED_MATTER_TEST_ACTION_ID": GAUGED_MATTER_TEST_ACTION_ID,
         "historical_corpus": corpus,
         "p5k_generation_blocked": True,

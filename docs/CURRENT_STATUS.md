@@ -19,7 +19,8 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | All possible physics exhausted | No |
 | Current frontier | Phase 18E formalization closure audit |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,486-test isolated suite green |
+| Phase 14L–14N reproducibility | Complete under the stored-artifact policy; 1,489-test isolated suite green |
+| Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 
 ## What has been done
 
@@ -66,12 +67,17 @@ retains the full symbolic replay, while 14M and 14N validate committed parent
 artifacts without claiming an independent replay. The result is recorded by
 the `STORED_ARTIFACT` and `NOT_PERFORMED` fields in the phase outputs.
 
+Historical hash discrepancies and machine-specific paths are resolved by
+`docs/validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`. That
+record scopes the repository copy of the v23 PDF as authoritative for this
+checkout, corrects the v22 cross-check without rewriting v22/v23 files, and
+requires all newly generated checkpoint references to be repository-relative.
+
 ## Next controlled step
 
-Before a finite dynamical search can be authorized, the historical integrity
-findings must receive a new versioned validation record and the portability
-gate must be addressed. The three formulations that
-still require an explicit theory-level choice are:
+Before a finite dynamical search can be authorized, the candidate-theory
+schema must be defined and validated. The three formulations that still
+require an explicit theory-level choice are:
 
 - `g17b1.riemann_cartan__constrained_action__1`;
 - `g17b1.characteristic_class__local_action_functional__0`;
@@ -86,6 +92,6 @@ one of:
 4. a new physical input; or
 5. undecided.
 
-Until this synchronization and closure step is complete, a new batch would
-mix formalization with physical selection and would not be a comparable
+Until this schema and closure step is complete, a new batch would mix
+formalization with physical selection and would not be a comparable
 continuation of the record.

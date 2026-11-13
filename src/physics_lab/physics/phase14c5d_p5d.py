@@ -12,6 +12,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 from physics_lab.physics.phase4c_action_freeze import (
     FREEZE_ID,
     FreezeIntegrityError,
@@ -1218,7 +1220,7 @@ def analyze_phase14c5d_p5d(auth: Phase5B0Authorization, *, signature: str = MOST
         "action_content_hash": EXPECTED_FROZEN_HASH,
         "final_action_hash": EXPECTED_FROZEN_HASH,
         "checkpoint_digest": ckpt_payload["checkpoint_digest"],
-        "checkpoint_path": str(p5d_checkpoint_path()),
+            "checkpoint_path": portable_path(p5d_checkpoint_path()),
         "provenance_schema": provenance_schema(),
         "PHASE_14C5Q_STATUS": "CLOSED",
         "PHASE_14C5_STATUS": "CLOSED",

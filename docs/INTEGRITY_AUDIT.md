@@ -38,3 +38,13 @@ Before the first public release, decide whether to:
    which PDF is authoritative.
 
 The second option must not overwrite the v23 record.
+
+## Point 2 resolution
+
+The publication gate is resolved by the versioned record
+`docs/validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`.
+It preserves the v22/v23 files, scopes the PDF authority to the repository
+copy present in this snapshot, records the corrected v22 digest, and declares
+the 24 legacy JSON files with absolute paths as immutable historical
+exceptions. New checkpoint references are generated as repository-relative
+POSIX paths by `src/physics_lab/physics/portability.py`.

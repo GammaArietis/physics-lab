@@ -2,7 +2,7 @@
 
 ## Current result
 
-The full test collection contains 1,486 tests. After separating parent-phase
+The full test collection contains 1,489 tests. After separating parent-phase
 verification from child-phase replay, the complete suite reaches 100% with
 exit code 0 in the isolated environment. The 14L symbolic replay remains the
 expensive part; 14M and 14N now verify their committed parent artifacts and
@@ -75,8 +75,10 @@ activated by this performance work.
 
 ## Verification result
 
-- Full suite: 1,486 tests collected, 100% completion, exit code 0.
+- Full suite: 1,489 tests collected, 100% completion, exit code 0.
 - Phase 14K–14N chain: completed successfully after parent-artifact reuse.
 - Fast stored-artifact checks: 3 tests included in the full suite, all passing.
+- Historical-integrity and portability checks: 3 tests included in the full
+  suite, all passing.
 - Remaining warning: pytest reports a non-blocking compatibility warning from
   the installed `anyio` plugin.

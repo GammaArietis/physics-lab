@@ -10,8 +10,10 @@ relative path.
 - [`CURRENT_STATUS.md`](CURRENT_STATUS.md): verified project state and the
   current frontier.
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): package boundaries and data flow.
-- [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): cleanup checks and the unresolved
-  v23 PDF hash discrepancy.
+- [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
+  preserved historical findings.
+- [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):
+  versioned resolution of hashes and portability policy.
 - [`CONTRIBUTING.md`](../CONTRIBUTING.md): rules for changing code and
   scientific records.
 - [`history/`](history/): chronological reports and sealed historical

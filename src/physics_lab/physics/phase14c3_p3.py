@@ -9,6 +9,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 from physics_lab.physics.phase4c_action_freeze import (
     FREEZE_ID,
     FreezeIntegrityError,
@@ -1289,7 +1291,7 @@ def analyze_phase14c3_p3(auth: Phase5B0Authorization, *, signature: str = MOSTLY
                 "phase14c2_artifacts_unchanged": True,
                 "grammar_hash_12A_unchanged": grammar_hash_12a() == EXPECTED_12A_GRAMMAR_HASH,
             },
-            "checkpoint_path": str(ckpt_path),
+            "checkpoint_path": portable_path(ckpt_path),
             "checkpoint_digest": ckpt_payload["checkpoint_digest"],
             "AUTHORIZED_EXTENSION_CHAIN": list(AUTHORIZED_PHYSICS_CHAIN),
             "search_bounds": dict(G6_SEARCH_BOUNDS),

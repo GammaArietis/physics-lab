@@ -11,6 +11,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 from physics_lab.physics.action_serializer import canonical_json_bytes
 from physics_lab.physics.phase4c_action_freeze import (
     FREEZE_ID,
@@ -1414,8 +1416,8 @@ def run_synthetic_dry_run(root: Path) -> dict[str, Any]:
         "P0_consequences": p0_cons,
         "P1_consequences": p1_cons,
         "cross_profile_difference": diff,
-        "checkpoint_p0": str(engine.checkpoint_path("14C_DRY_P0")),
-        "checkpoint_p1": str(engine.checkpoint_path("14C_DRY_P1")),
+        "checkpoint_p0": portable_path(engine.checkpoint_path("14C_DRY_P0"), anchor=dry_root),
+        "checkpoint_p1": portable_path(engine.checkpoint_path("14C_DRY_P1"), anchor=dry_root),
         "deterministic_parallel": serial_stats["candidate_hashes"] == parallel_stats["candidate_hashes"],
         "physical_conclusions_authorized": False,
         "provenance": "METHOD / INTEGRITY CONTROL",
@@ -1768,7 +1770,7 @@ def analyze_phase14c0_known_physics(auth: Phase5B0Authorization, *, signature: s
                 "phase14b6_artifacts_unchanged": snapshot_prior_artifact_hashes()["phase14b6"] == hashes_before["phase14b6"],
                 "grammar_hash_12A_unchanged": grammar_hash_12a() == EXPECTED_12A_GRAMMAR_HASH,
             },
-            "checkpoint_path": str(ckpt_path),
+            "checkpoint_path": portable_path(ckpt_path),
             "checkpoint_digest": checkpoint_payload["checkpoint_digest"],
             "AUTHORIZED_EXTENSION_CHAIN": list(AUTHORIZED_PHYSICS_CHAIN),
             "search_bounds": dict(G6_SEARCH_BOUNDS),

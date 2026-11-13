@@ -1,0 +1,82 @@
+{
+  "schema_version": "historical_integrity_portability_v1",
+  "record_id": "POINT_2_HISTORICAL_INTEGRITY_AND_PORTABILITY",
+  "record_date": "2026-11-13",
+  "scope": "reorganized repository snapshot",
+  "historical_policy": {
+    "source_files_immutable": true,
+    "historical_documents_immutable": true,
+    "legacy_validation_records_immutable": true,
+    "mismatches_resolved_by_new_record": true
+  },
+  "hash_resolution": {
+    "v23_docx": {
+      "repository_path": "docs/history/26Ottobre2026/rapporto_laboratorio_struttura_interna_FINAL_v23_TOPDOWN_QFT_CUMULATIVE.docx",
+      "observed_sha256": "cd587b4fd90259f264392ccfb1bcdbb013a4c38076bf401f646a07e8b92cc5b0",
+      "legacy_record_sha256": "cd587b4fd90259f264392ccfb1bcdbb013a4c38076bf401f646a07e8b92cc5b0",
+      "status": "VERIFIED"
+    },
+    "v23_pdf": {
+      "repository_path": "docs/history/26Ottobre2026/rapporto_laboratorio_struttura_interna_FINAL_v23_TOPDOWN_QFT_CUMULATIVE.pdf",
+      "observed_sha256": "638993a1e6e8e217a35ac9a074d491b585a5a6a85c31c10982aeca8c38ab2b84",
+      "legacy_record_sha256": "94da0bff455883ff1f5b520547bf931dc39809c79e0b8c9d3bda88b702656ba6",
+      "authority_scope": "THIS_REPOSITORY_SNAPSHOT_ONLY",
+      "status": "REPOSITORY_COPY_AUTHORITY_SCOPED",
+      "legacy_mismatch": "PRESERVED",
+      "overwrite_legacy_file": false
+    },
+    "v22_docx": {
+      "repository_path": "docs/history/20Ottobre2026/rapporto_laboratorio_struttura_interna_FINAL_v22_TOPDOWN_QFT_CUMULATIVE.docx",
+      "observed_sha256": "7f9441709705c336d369f9944837c445e790696295df82c0be1cd70033275c1b",
+      "v22_record_sha256": "7f9441709705c336d369f9944837c445e790696295df82c0be1cd70033275c1b",
+      "status": "VERIFIED"
+    },
+    "v22_cross_check_copied_into_v23": {
+      "v23_validation_path": "docs/history/26Ottobre2026/REPORT_V23_VALIDATION.json",
+      "copied_sha256": "7f9441709705c336d369f9944837c445e79069629582df82c0be1cd70033275c1b",
+      "correct_sha256": "7f9441709705c336d369f9944837c445e790696295df82c0be1cd70033275c1b",
+      "status": "CORRECTED_IN_THIS_RECORD_ONLY",
+      "overwrite_legacy_file": false
+    }
+  },
+  "portability": {
+    "status": "CLOSED_FOR_NEW_GENERATED_ARTIFACTS_WITH_HISTORICAL_EXCEPTIONS",
+    "generator_policy": "NEW_CHECKPOINT_REFERENCES_ARE_REPOSITORY_RELATIVE_POSIX_PATHS",
+    "portable_helper": "src/physics_lab/physics/portability.py",
+    "scan_roots": [
+      "src/physics_lab/physics/**/*.json",
+      "docs/history/20Ottobre2026/REPORT_V22_VALIDATION.json"
+    ],
+    "historical_absolute_path_json_count": 24,
+    "historical_absolute_path_files": [
+      "docs/history/20Ottobre2026/REPORT_V22_VALIDATION.json",
+      "src/physics_lab/physics/phase14c0_artifacts/KNOWN_PHYSICS_STRUCTURAL_CLOSURE_REPORT.json",
+      "src/physics_lab/physics/phase14c0_artifacts/PHASE_14C0_SUMMARY.json",
+      "src/physics_lab/physics/phase14c1_artifacts/PHASE_14C1_SUMMARY.json",
+      "src/physics_lab/physics/phase14c2_artifacts/PHASE_14C2_SUMMARY.json",
+      "src/physics_lab/physics/phase14c3_artifacts/PHASE_14C3_SUMMARY.json",
+      "src/physics_lab/physics/phase14c4_artifacts/PHASE_14C4_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5_artifacts/PHASE_14C5_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5d_artifacts/PHASE_14C5D_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5e1_artifacts/PHASE_14C5E1_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5e_artifacts/PHASE_14C5E_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5f_artifacts/PHASE_14C5F_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5g1_artifacts/PHASE_14C5G1_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5g_artifacts/PHASE_14C5G_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h1_artifacts/PHASE_14C5H1_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h2_artifacts/PHASE_14C5H2_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h3_artifacts/PHASE_14C5H3_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h4_artifacts/PHASE_14C5H4_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h5_artifacts/PHASE_14C5H5_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5h_artifacts/PHASE_14C5H_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5i_artifacts/PHASE_14C5I_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5j_artifacts/PHASE_14C5J_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5k_artifacts/PHASE_14C5K_SUMMARY.json",
+      "src/physics_lab/physics/phase14c5q_artifacts/PHASE_14C5Q_SUMMARY.json"
+    ],
+    "legacy_exceptions_are": "DOCUMENTED_AND_NOT_REWRITTEN",
+    "new_artifact_requirement": "NO_MACHINE_SPECIFIC_ABSOLUTE_PATHS"
+  },
+  "scientific_effect": "NONE",
+  "physical_selection_activated": false
+}

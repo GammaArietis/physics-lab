@@ -12,6 +12,8 @@ from math import gcd
 from pathlib import Path
 from typing import Any
 
+from physics_lab.physics.portability import portable_path
+
 import sympy as sp
 
 from physics_lab.physics.phase4c_action_freeze import (
@@ -895,7 +897,7 @@ def analyze_phase14c5g1_p5g1(auth: Phase5B0Authorization, *, signature: str = MO
         "action_content_hash": EXPECTED_FROZEN_HASH,
         "final_action_hash": EXPECTED_FROZEN_HASH,
         "checkpoint_digest": ckpt_payload["checkpoint_digest"],
-        "checkpoint_path": str(p5g1_checkpoint_path()),
+            "checkpoint_path": portable_path(p5g1_checkpoint_path()),
         "GAUGED_MATTER_TEST_ACTION_ID": GAUGED_MATTER_TEST_ACTION_ID,
         "historical_corpus": corpus,
         "p5g1_generation_blocked": True,
