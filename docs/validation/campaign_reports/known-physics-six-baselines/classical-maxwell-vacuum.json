@@ -1,0 +1,176 @@
+{
+  "action": {
+    "bianchi_identity": "partial_[mu F_(nu rho)] = 0",
+    "expression": "S = integral d^4x [-F_(mu nu)*F^(mu nu)/4], source-free U(1) vacuum",
+    "field_equation": "partial_mu F^(mu nu) = 0",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "classical-maxwell-vacuum",
+  "checks": {
+    "bianchi_identity_declared": true,
+    "dispersion_relation_verified": true,
+    "gauge_invariance_declared": true,
+    "no_longitudinal_physical_mode": true,
+    "parameter_free_dispersion_ratio_verified": true,
+    "positive_input": true,
+    "source_free_field_equation_declared": true,
+    "transverse_polarization_verified": true,
+    "two_physical_polarizations_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "dispersion_relation_verified": true,
+    "external_comparison_not_authorized": true,
+    "gauge_invariance_declared": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "source_free_field_equation_declared": true,
+    "two_physical_polarizations_verified": true
+  },
+  "derivation": {
+    "bianchi_identity": "partial_[mu F_(nu rho)] = 0",
+    "dispersion": "omega^2 = |k|^2 in units c=1",
+    "field_equation": "partial_mu F^(mu nu) = 0",
+    "field_strength": "F_(mu nu) = partial_mu A_nu - partial_nu A_mu",
+    "gauge_condition": "k.epsilon = 0",
+    "gauge_transformation": "A_mu -> A_mu + partial_mu Lambda",
+    "physical_polarizations": [
+      "transverse_x",
+      "transverse_y"
+    ],
+    "plane_wave_ansatz": "A_mu = epsilon_mu exp(i*(k.x - omega*t))"
+  },
+  "modes": [
+    {
+      "angular_frequency": 1.0,
+      "dispersion_ratio": 1.0,
+      "label": "transverse_x",
+      "polarization": "transverse_x",
+      "transverse": true,
+      "wave_number": 1.0
+    },
+    {
+      "angular_frequency": 1.0,
+      "dispersion_ratio": 1.0,
+      "label": "transverse_y",
+      "polarization": "transverse_y",
+      "transverse": true,
+      "wave_number": 1.0
+    }
+  ],
+  "observables": [
+    {
+      "dependencies": [
+        "wave_number"
+      ],
+      "formula": "omega^2 = |k|^2 in units c=1",
+      "free_dependencies": [
+        "wave_number"
+      ],
+      "name": "angular_frequency[transverse_x]",
+      "provenance": "DERIVED",
+      "state_label": "transverse_x",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "omega^2/|k|^2 = 1",
+      "free_dependencies": [],
+      "name": "dispersion_ratio[transverse_x]",
+      "provenance": "DERIVED",
+      "state_label": "transverse_x",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [
+        "wave_number"
+      ],
+      "formula": "omega^2 = |k|^2 in units c=1",
+      "free_dependencies": [
+        "wave_number"
+      ],
+      "name": "angular_frequency[transverse_y]",
+      "provenance": "DERIVED",
+      "state_label": "transverse_y",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "omega^2/|k|^2 = 1",
+      "free_dependencies": [],
+      "name": "dispersion_ratio[transverse_y]",
+      "provenance": "DERIVED",
+      "state_label": "transverse_y",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "two transverse polarizations after gauge reduction",
+      "free_dependencies": [],
+      "name": "physical_polarization_count",
+      "provenance": "DERIVED",
+      "state_label": "source-free plane wave",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 2
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "id": "wave_number",
+      "parameter_id": "wave_number",
+      "provenance": "INPUT",
+      "symbol": "|k|",
+      "unit": "inverse_length",
+      "used_by": [
+        "angular-frequency",
+        "dispersion-ratio"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "maxwell-vacuum-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical field theory; quantization is a separate K4 baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "charges_and_currents": "OUT_OF_SCOPE",
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "matter_coupling": "OUT_OF_SCOPE",
+    "model_scope": "CLASSICAL_SOURCE_FREE_U1_MAXWELL_FIELD_IN_MINKOWSKI_SPACE",
+    "quantization": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: classical source-free sector is not a quantum vacuum selection"
+  },
+  "validation": {
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "maxwell_check_count": 9,
+    "maxwell_failures": [],
+    "parameter_free_observable_count": 3
+  }
+}
