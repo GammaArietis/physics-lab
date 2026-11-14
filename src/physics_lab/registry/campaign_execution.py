@@ -26,6 +26,9 @@ from physics_lab.registry.pauli_spin_half_pipeline import run_pauli_spin_half_pi
 from physics_lab.registry.maxwell_vacuum_pipeline import run_maxwell_vacuum_pipeline
 from physics_lab.registry.newtonian_gravity_pipeline import run_newtonian_gravity_pipeline
 from physics_lab.registry.einstein_hilbert_vacuum_pipeline import run_einstein_hilbert_vacuum_pipeline
+from physics_lab.registry.free_dirac_field_pipeline import run_free_dirac_field_pipeline
+from physics_lab.registry.free_proca_field_pipeline import run_free_proca_field_pipeline
+from physics_lab.registry.quantized_maxwell_pipeline import run_quantized_maxwell_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -155,6 +158,12 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_newtonian_gravity_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "einstein-hilbert-vacuum-v1":
             report = run_einstein_hilbert_vacuum_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "free-dirac-field-v1":
+            report = run_free_dirac_field_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "free-proca-field-v1":
+            report = run_free_proca_field_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "quantized-maxwell-u1-v1":
+            report = run_quantized_maxwell_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

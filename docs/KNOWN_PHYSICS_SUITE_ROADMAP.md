@@ -44,6 +44,15 @@ explicit record of what remains outside each baseline.
   exterior and parameter-free Kretschmann-curvature ratio. Matter coupling,
   cosmological constant, quantum gravity and cosmological backgrounds remain
   separate scopes.
+- Free Dirac field: quantized free fermion action, Clifford algebra,
+  canonical anticommutators, Fock vacuum, particle-antiparticle sector and
+  parameter-free mass-shell ratio. Interactions remain separate.
+- Free Proca field: quantized massive-vector action, Proca equation, Lorenz
+  constraint, three physical polarizations, Fock vacuum and parameter-free
+  mass-shell ratio. Non-Abelian and matter couplings remain separate.
+- Quantized Maxwell U(1): Coulomb-gauge field quantization, photon Fock
+  vacuum, two transverse polarizations and parameter-free photon dispersion.
+  Charges, matter and QED interactions remain separate.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -93,12 +102,12 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The K1 particle-in-a-box baseline, the two K2 baselines and all three K3
-baselines are now implemented and validated internally. The next controlled
-step is the eight-candidate real campaign combining the oscillator, free
-scalar field, particle in a box, hydrogen Coulomb, Pauli spin-half, classical
-Maxwell, Newtonian gravity and Einstein-Hilbert vacuum runners. Only after
-that campaign has been reviewed will the suite advance to K4.
+The K1 particle-in-a-box baseline, the two K2 baselines, all three K3
+baselines and all three K4 baselines are now implemented and validated
+internally. The next controlled step is the eleven-candidate real campaign
+combining the existing eight baselines with free Dirac, free Proca and
+quantized Maxwell U(1). Only after that campaign has been reviewed will the
+suite advance to K5.
 
 Machine-readable inventory:
 

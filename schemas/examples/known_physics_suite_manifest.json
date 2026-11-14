@@ -84,6 +84,33 @@
       "status": "COMPLETE",
       "runner_status": "VALIDATED",
       "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "free-dirac-field",
+      "domain": "quantum_field_theory",
+      "scope": "quantized free Dirac spinor field on four-dimensional Minkowski spacetime",
+      "pipeline_ref": "free-dirac-field-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "free-proca-field",
+      "domain": "quantum_field_theory",
+      "scope": "quantized free massive Proca vector field on four-dimensional Minkowski spacetime",
+      "pipeline_ref": "free-proca-field-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "quantized-maxwell-u1",
+      "domain": "quantum_field_theory",
+      "scope": "quantized free U(1) Maxwell field with two transverse photon modes",
+      "pipeline_ref": "quantized-maxwell-u1-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
     }
   ],
   "planned": [
@@ -100,33 +127,6 @@
       "candidate_id": "classical-kepler-problem",
       "domain": "classical_mechanics",
       "wave": "K1",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "free-dirac-field",
-      "domain": "quantum_field_theory",
-      "wave": "K4",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "free-proca-field",
-      "domain": "quantum_field_theory",
-      "wave": "K4",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "quantized-maxwell-u1",
-      "domain": "quantum_field_theory",
-      "wave": "K4",
       "status": "PLANNED",
       "runner_status": "MISSING",
       "empirical_status": "NOT_AUTHORIZED",
@@ -217,12 +217,12 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 8,
+    "next_batch_size": 11,
     "next_parallelism": 8,
-    "scale_to_32_or_64_after": "review of the first eight-candidate real expansion batch",
+    "scale_to_32_or_64_after": "review of the first eleven-candidate real expansion batch",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-eight-baselines"
+    "next_campaign_id": "known-physics-eleven-baselines"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",

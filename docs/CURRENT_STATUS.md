@@ -37,7 +37,10 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics Maxwell vacuum baseline | `COMPLETE` internally; source-free U(1) action, gauge symmetry, field equation, Bianchi identity, two transverse polarizations and parameter-free dispersion verified; quantization out of scope |
 | Known-physics Newtonian gravity baseline | `COMPLETE` internally; static field action, Poisson equation, point-source potential, attractive inverse-square acceleration and parameter-free radial ratios verified; relativity and orbital dynamics out of scope |
 | Known-physics Einstein-Hilbert vacuum baseline | `COMPLETE` internally; classical Lambda=0 action, vacuum Einstein equation, Bianchi identity, Ricci-flat asymptotically flat Schwarzschild exterior and parameter-free Kretschmann-curvature ratio verified; matter, cosmology and quantum gravity out of scope |
-| Known-physics suite expansion | Roadmap registered; 8 executable baselines complete, eight-candidate real expansion campaign prepared; no empirical gate activated |
+| Known-physics free Dirac baseline | `COMPLETE` internally; free Dirac action, Clifford algebra, fermionic canonical anticommutator, Fock vacuum, particle-antiparticle sector and parameter-free mass-shell ratio verified; interactions out of scope |
+| Known-physics free Proca baseline | `COMPLETE` internally; free massive-vector action, Proca equation, Lorenz constraint, three physical polarizations, Fock vacuum and parameter-free mass-shell ratio verified; interactions out of scope |
+| Known-physics quantized Maxwell baseline | `COMPLETE` internally; quantized U(1) action, gauge reduction, Coulomb-gauge field quantization, photon Fock vacuum, two transverse polarizations and parameter-free dispersion verified; charges and QED interactions out of scope |
+| Known-physics suite expansion | Roadmap registered; 11 executable baselines complete, eleven-candidate real expansion campaign prepared; no empirical gate activated |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
 | Free scalar-field focused tests | 4/4 passed; pre-hydrogen full suite baseline was 1,536/1,536 |
 | Hydrogen Coulomb focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
@@ -45,6 +48,9 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Maxwell vacuum focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Newtonian gravity focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Einstein-Hilbert vacuum focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
+| Free Dirac focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
+| Free Proca focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
+| Quantized Maxwell focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
@@ -123,8 +129,10 @@ internal Pauli spin-half runner, the internal Maxwell vacuum runner and the
 internal Newtonian gravity runner are now complete. The Einstein-Hilbert
 vacuum runner now closes K3 with the classical Lambda=0 Ricci-flat
 Schwarzschild exterior and a normalized Kretschmann-curvature observable. The
-next controlled step is the bounded eight-candidate campaign described in
-`docs/CAMPAIGN_KNOWN_PHYSICS_EIGHT.md`. It remains limited to the eight
+free Dirac, free Proca and quantized Maxwell runners now close K4 with their
+respective free-field quantization controls. The next controlled step is the
+bounded eleven-candidate campaign described in
+`docs/CAMPAIGN_KNOWN_PHYSICS_ELEVEN.md`. It remains limited to the eleven
 validated known-physics baselines; empirical comparison, fitting, selection and
 ranking remain separate closed gates.
 Before a finite dynamical search can be authorized, the three
