@@ -27,6 +27,15 @@ def test_frozen_h2_dataset_is_experimental_and_source_digest_is_registered() -> 
     assert dataset["kind"] == "EXPERIMENTAL_DATA"
     assert dataset["source"]["role"] == "comparison-only"
     assert dataset["source"]["digest"]["algorithm"] == "sha256"
+    assert dataset["dataset_version"] == "corrected-allowed-j1-2026-11-14"
+    observations = {item["observation_id"]: item for item in dataset["observations"]}
+    observation_ids = set(observations)
+    assert "h2-q1-1-wavenumber" in observation_ids
+    assert "h2-q2-1-wavenumber" in observation_ids
+    assert "h2-q1-0-wavenumber" not in observation_ids
+    assert "h2-q2-0-wavenumber" not in observation_ids
+    assert observations["h2-q1-1-wavenumber"]["value"] == 4155.254
+    assert observations["h2-q2-1-wavenumber"]["value"] == 8075.3074
     assert len(dataset["observations"]) == 3
 
 

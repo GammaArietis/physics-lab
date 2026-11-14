@@ -1,51 +1,52 @@
 {
   "schema_version": "experimental-comparison-v1",
   "dataset_id": "h2-vibrational-gap-ratio-control",
-  "dataset_version": "frozen-2026-11-14",
+  "dataset_version": "corrected-allowed-j1-2026-11-14",
   "kind": "EXPERIMENTAL_DATA",
   "immutable": true,
   "source": {
-    "source_id": "h2-vibrational-transitions-primary-source-set",
-    "uri": "urn:physics-lab:source-set:h2-vibrational-transitions-v1",
+    "source_id": "h2-allowed-j1-vibrational-transitions-primary-source-set",
+    "uri": "urn:physics-lab:source-set:h2-allowed-j1-vibrational-transitions-v1",
     "digest": {
       "algorithm": "sha256",
-      "value": "af7eae2fc5e1af2c4bf6e6970fc9af3bbdeb044d2db2df55762dedfd04dfaa03"
+      "value": "4f43423eba9d2b0d3a70e7a833a66494ff051ca86ff90b7447e1b7e638854693"
     },
     "role": "comparison-only",
     "retrieved_at": "2026-11-14T06:00:00+01:00",
-    "notes": "Frozen extraction manifest for the primary source set: DOI 10.1103/PhysRevLett.110.193601 for H2 v=0 to 1 and DOI 10.1039/D4CP02605E, Table 1, for the H2 v=0 to 2 Q2(0) line. The digest covers the source identifiers, frozen values, uncertainty convention and transformation, not a replacement of the cited publications."
+    "notes": "Corrected frozen extraction manifest for allowed transitions with the same rotational quantum number J=1: DOI 10.1016/j.jms.2014.03.011 for the H2 v=0 to 1 Q(1) line and DOI 10.1039/C1CP22912E for the H2 v=0 to 2 Q2(1) line. The digest covers the source identifiers, frozen values, uncertainty convention and transformation, not a replacement of the cited publications. The previously registered Q2(0) entry is withdrawn: the cited symmetry discussion identifies it as forbidden and only gives a reference position."
   },
   "observations": [
     {
-      "observation_id": "h2-q1-0-wavenumber",
-      "observable": "h2.vibrational_wavenumber.q1_0",
-      "value": 4161.16632,
-      "uncertainty": 0.00018,
+      "observation_id": "h2-q1-1-wavenumber",
+      "observable": "h2.vibrational_wavenumber.q1_1",
+      "value": 4155.254,
+      "uncertainty": 0.00021,
       "unit": "cm^-1",
       "provenance": "EXPERIMENTAL",
-      "notes": "Rotationless H2 fundamental vibrational splitting v=0 to 1, Q(0), from the cited precision spectroscopy source."
+      "notes": "Allowed H2 fundamental vibrational splitting v=0 to 1, Q(1), with ground-state rotational quantum number J=1, from the cited precision spectroscopy source."
     },
     {
-      "observation_id": "h2-q2-0-wavenumber",
-      "observable": "h2.vibrational_wavenumber.q2_0",
-      "value": 8087.003,
-      "uncertainty": 0.0005,
+      "observation_id": "h2-q2-1-wavenumber",
+      "observable": "h2.vibrational_wavenumber.q2_1",
+      "value": 8075.3074,
+      "uncertainty": 0.0017,
       "unit": "cm^-1",
       "provenance": "EXPERIMENTAL",
-      "notes": "H2 first-overtone Q2(0) line position reported to 0.001 cm^-1. The uncertainty is a conservative half-last-reported-digit bound because the cited table does not state a full uncertainty budget."
+      "notes": "Allowed H2 first-overtone Q2(1) line with ground-state rotational quantum number J=1, reported as 8075.3074(17) cm^-1 in the cited source."
     },
     {
       "observation_id": "h2-vibrational-gap-ratio-2",
       "observable": "gap_ratio[2]",
-      "value": 1.9434462307192757,
-      "uncertainty": 1.46647529268507e-7,
+      "value": 1.943396817619332,
+      "uncertainty": 4.207446837193362e-7,
       "unit": null,
       "provenance": "EXPERIMENTAL",
-      "notes": "Comparison-only ratio computed from the two frozen experimental line positions: Q2(0)/Q1(0), with first-order independent uncertainty propagation. No model parameter, fit or calibration was used."
+      "notes": "Comparison-only ratio computed from the two corrected frozen experimental line positions: Q2(1)/Q1(1), with the same rotational quantum number J=1 and first-order independent uncertainty propagation. No model parameter, fit or calibration was used."
     }
   ],
   "notes": [
-    "The record was frozen before the isolated comparison was executed; no observation was removed or selected after inspecting residuals.",
+    "This corrected record was frozen before the isolated comparison was executed; the forbidden/reference-only Q2(0) entry was withdrawn on physical-scope grounds, not after inspecting the corrected residual.",
+    "Both retained lines are allowed transitions with the same ground-state rotational quantum number J=1: Q(1) for v=0 to 1 and Q2(1) for v=0 to 2.",
     "This is an empirical scope-control dataset for the ideal quantum harmonic-oscillator baseline, not a claim that molecular H2 is an exactly harmonic oscillator.",
     "A deviation from gap_ratio[2]=2 is therefore interpreted as an observed molecular anharmonicity/control outcome, not by itself as a failure of the ideal baseline in its declared scope."
   ]

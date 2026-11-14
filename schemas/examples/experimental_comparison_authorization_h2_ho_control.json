@@ -8,5 +8,5 @@
   "dataset_id": "h2-vibrational-gap-ratio-control",
   "candidate_id": "known-physics-quantum-harmonic-oscillator",
   "selection_or_ranking": false,
-  "notes": "Separate comparison-only authorization. The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal."
+  "notes": "Separate comparison-only authorization for the corrected allowed J=1 pair Q(1) and Q2(1). The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal. No selection, ranking, fitting or calibration is performed."
 }

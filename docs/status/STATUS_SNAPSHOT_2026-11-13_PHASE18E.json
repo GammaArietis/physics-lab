@@ -72,6 +72,7 @@
       "field_quantization": "NOT_APPLICABLE",
       "selection_or_ranking": "NOT_PERFORMED",
       "empirical_control_dataset": "h2-vibrational-gap-ratio-control",
+      "empirical_control_dataset_version": "corrected-allowed-j1-2026-11-14",
       "empirical_control_result": "OUTSIDE_UNCERTAINTY_SCOPE_CONTROL_NOT_DIRECT_VALIDATION",
       "direct_empirical_comparison": "PENDING_SCOPE_MATCHED_DATASET",
       "evidence": "docs/validation/HARMONIC_OSCILLATOR_BASELINE_ANALYSIS_2026-11-13.json"

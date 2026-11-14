@@ -32,7 +32,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics free scalar-field baseline | `COMPLETE` internally; Klein–Gordon action, field quantization, Fock vacuum, dispersion and parameter-free squared-frequency ratio verified |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
 | Free scalar-field focused tests | 4/4 passed; current full suite passes 1,536/1,536 |
-| H₂ empirical scope-control dataset | Registered immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
+| H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
 
@@ -101,10 +101,11 @@ ranking occurred. The free-scalar field quantization, Fock vacuum, periodic
 mode spectrum and parameter-free ratio are verified only within the declared
 1+1-dimensional baseline; the absolute zero-point sum is deliberately not
 assigned a finite value. The empirical gate has now been exercised with a
-frozen target-blind H₂ scope-control dataset. Its outside-uncertainty result
-is not a direct claim against the ideal oscillator because molecular
-anharmonicity is outside that baseline. The next controlled step is the Mac
-resource benchmark; a scope-matched direct validation dataset remains open.
+corrected frozen target-blind H₂ scope-control dataset using the allowed
+same-J=1 Q(1)/Q₂(1) pair. Its outside-uncertainty result is not a direct claim
+against the ideal oscillator because molecular anharmonicity is outside that
+baseline. The next controlled step is the Mac resource benchmark; a
+scope-matched direct validation dataset remains open.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 

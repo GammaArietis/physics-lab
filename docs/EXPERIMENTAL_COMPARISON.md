@@ -33,8 +33,11 @@ blocked comparison and proves that the isolated gate does not mutate the
 derivation report or update any parameter.
 
 The first real dataset has now exercised the gate with the known-physics
-oscillator. It uses independent H₂ vibrational line measurements and returns
-`OUTSIDE_UNCERTAINTY` for the ideal gap ratio. Because H₂ is not an exact
-harmonic oscillator, this is recorded as a scope-control result rather than a
-direct validation or falsification claim for the ideal baseline. A
-scope-matched empirical dataset remains open.
+oscillator. The corrected record uses the allowed H₂ Q(1) and Q₂(1) vibrational
+lines with the same rotational quantum number J=1 and returns
+`OUTSIDE_UNCERTAINTY` for the ideal gap ratio. The earlier Q₂(0) entry was
+withdrawn because that transition is forbidden by symmetry and its tabulated
+position was not a clean direct measurement. Because H₂ is not an exact
+harmonic oscillator, the corrected result remains a scope-control outcome
+rather than a direct validation or falsification claim for the ideal baseline.
+A scope-matched empirical dataset remains open.

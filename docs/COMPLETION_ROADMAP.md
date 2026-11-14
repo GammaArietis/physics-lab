@@ -32,12 +32,12 @@ and the gates must close in order before a large theory campaign is useful.
 | Observable layer | Produce dimensionful/dimensionless predictions with uncertainty and dependency traces |
 | Empirical comparison | Activate only an explicitly authorized dataset against parameter-free derived observables; fitting and calibration remain forbidden |
 | Campaign execution | Multi-candidate checkpoint, deduplication and failure-isolation evidence complete; Mac benchmark and physical-candidate gate remain |
-| Separate empirical gate | First immutable target-blind H₂ scope-control dataset registered and compared; scope-matched direct validation remains open; fitting and calibration remain forbidden |
+| Separate empirical gate | Corrected immutable target-blind H₂ scope-control dataset uses allowed same-J=1 Q(1)/Q₂(1) transitions; scope-matched direct validation remains open; fitting and calibration remain forbidden |
 
 ## Controlled order of work
 
 1. Review the completed oscillator and free-scalar baselines without conflating their quantum-mechanical and field-theoretic scopes.
-2. Register a parameter-free derived observable and an immutable, traceable comparison dataset for a separate target-blind comparison gate; the first H₂ scope-control record is complete, while direct scope-matched validation remains open.
+2. Register a parameter-free derived observable and an immutable, traceable comparison dataset for a separate target-blind comparison gate; the corrected H₂ scope-control record is complete, while direct scope-matched validation remains open.
 3. Measure the multi-candidate runner on the target Mac before authorizing larger batches.
 4. Decide whether one registered Phase 18E formulation can be formalized without mixing assumptions and derivations.
 5. Expand to many candidates only after the physical/empirical gate and resource audit pass.

@@ -5,7 +5,7 @@
     "candidate_id": "known-physics-quantum-harmonic-oscillator",
     "dataset_id": "h2-vibrational-gap-ratio-control",
     "fitting": false,
-    "notes": "Separate comparison-only authorization. The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal.",
+    "notes": "Separate comparison-only authorization for the corrected allowed J=1 pair Q(1) and Q2(1). The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal. No selection, ranking, fitting or calibration is performed.",
     "parameter_updates": false,
     "selection_or_ranking": false,
     "status": "AUTHORIZED",
@@ -29,10 +29,10 @@
   },
   "dataset": {
     "dataset_id": "h2-vibrational-gap-ratio-control",
-    "dataset_version": "frozen-2026-11-14",
+    "dataset_version": "corrected-allowed-j1-2026-11-14",
     "kind": "EXPERIMENTAL_DATA",
     "observation_count": 3,
-    "source_digest": "af7eae2fc5e1af2c4bf6e6970fc9af3bbdeb044d2db2df55762dedfd04dfaa03"
+    "source_digest": "4f43423eba9d2b0d3a70e7a833a66494ff051ca86ff90b7447e1b7e638854693"
   },
   "fit": {
     "calibration_performed": false,
@@ -42,13 +42,13 @@
   "model_report_digest": "3e87a6b6035b183141f6a912da0d2d24cd05451028fda81d7e668d6b3c46d859",
   "results": [
     {
-      "experimental_uncertainty": 1.46647529268507e-07,
-      "experimental_value": 1.9434462307192757,
+      "experimental_uncertainty": 4.207446837193362e-07,
+      "experimental_value": 1.943396817619332,
       "model_observable": "gap_ratio[2]",
       "model_value": 2.0,
-      "normalized_residual": 385644.2011864799,
+      "normalized_residual": 134530.95088523102,
       "observation_id": "h2-vibrational-gap-ratio-2",
-      "residual": 0.05655376928072431,
+      "residual": 0.05660318238066808,
       "status": "OUTSIDE_UNCERTAINTY",
       "unit": null
     }
