@@ -1,0 +1,191 @@
+{
+  "action": {
+    "expression": "S = integral d^4x sqrt(-g)*R/(16*pi*G), Lambda=0, vacuum",
+    "field_equation": "G_(mu nu) = R_(mu nu) - g_(mu nu)*R/2 = 0",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE",
+    "vacuum_reduction": "R_(mu nu) = 0 in four-dimensional vacuum"
+  },
+  "candidate_id": "einstein-hilbert-vacuum",
+  "checks": {
+    "action_to_einstein_equation_verified": true,
+    "asymptotic_flatness_verified": true,
+    "bianchi_identity_declared": true,
+    "exterior_domain_verified": true,
+    "kretschmann_invariant_verified": true,
+    "parameter_free_curvature_ratio_verified": true,
+    "positive_inputs": true,
+    "ricci_flat_exterior_verified": true,
+    "schwarzschild_metric_declared": true,
+    "vacuum_equation_reduction_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "curvature_invariant_verified": true,
+    "external_comparison_not_authorized": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "ricci_flat_exterior_verified": true,
+    "schwarzschild_exterior_verified": true,
+    "vacuum_einstein_equation_verified": true
+  },
+  "derivation": {
+    "bianchi_identity": "nabla_mu G^(mu nu) = 0",
+    "boundary_condition": "asymptotically flat as r -> infinity",
+    "curvature_invariant": "K(r) = R_(mu nu rho sigma)R^(mu nu rho sigma) = 48*G^2*M^2/r^6",
+    "curvature_ratio": "K(r)/K(r_ref) = (r_ref/r)^6",
+    "domain": "r > 2*G*M",
+    "field_equation": "G_(mu nu) = R_(mu nu) - g_(mu nu)*R/2 = 0",
+    "metric": "ds^2 = -(1-2*G*M/r)dt^2 + (1-2*G*M/r)^(-1)dr^2 + r^2*dOmega^2",
+    "vacuum_reduction": "R_(mu nu) = 0 in four-dimensional vacuum"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "gravitational_constant",
+        "mass_parameter",
+        "radius"
+      ],
+      "formula": "2*G*M/r",
+      "free_dependencies": [
+        "gravitational_constant",
+        "mass_parameter",
+        "radius"
+      ],
+      "name": "schwarzschild_compactness",
+      "provenance": "DERIVED",
+      "state_label": "dimensionless compactness",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 0.5
+    },
+    {
+      "dependencies": [
+        "gravitational_constant",
+        "mass_parameter",
+        "radius"
+      ],
+      "formula": "K(r) = R_(mu nu rho sigma)R^(mu nu rho sigma) = 48*G^2*M^2/r^6",
+      "free_dependencies": [
+        "gravitational_constant",
+        "mass_parameter",
+        "radius"
+      ],
+      "name": "kretschmann_invariant",
+      "provenance": "DERIVED",
+      "state_label": "Schwarzschild exterior curvature",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 0.01171875
+    },
+    {
+      "dependencies": [
+        "radius",
+        "reference_radius"
+      ],
+      "formula": "K(r)/K(r_ref) = (r_ref/r)^6",
+      "free_dependencies": [],
+      "name": "kretschmann_ratio",
+      "provenance": "DERIVED",
+      "state_label": "normalized curvature ratio",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 64.0
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "G",
+      "parameter_id": "gravitational_constant",
+      "provenance": "INPUT",
+      "unit": "length^3/(mass*time^2)",
+      "used_by": [
+        "schwarzschild-metric",
+        "kretschmann-invariant",
+        "curvature-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "M",
+      "parameter_id": "mass_parameter",
+      "provenance": "INPUT",
+      "unit": "mass",
+      "used_by": [
+        "schwarzschild-metric",
+        "kretschmann-invariant",
+        "curvature-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "r",
+      "parameter_id": "radius",
+      "provenance": "INPUT",
+      "unit": "length",
+      "used_by": [
+        "schwarzschild-metric",
+        "kretschmann-invariant",
+        "curvature-ratio"
+      ],
+      "value": 4.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "r_ref",
+      "parameter_id": "reference_radius",
+      "provenance": "INPUT",
+      "unit": "length",
+      "used_by": [
+        "schwarzschild-metric",
+        "kretschmann-invariant",
+        "curvature-ratio"
+      ],
+      "value": 8.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "einstein-hilbert-vacuum-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical general relativity; quantum gravity is outside this K3 baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "cosmological_constant": "OUT_OF_SCOPE_AND_SET_TO_ZERO",
+    "cosmology": "OUT_OF_SCOPE",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "matter_sources": "OUT_OF_SCOPE",
+    "model_scope": "CLASSICAL_EINSTEIN_HILBERT_RICCI_FLAT_SCHWARZSCHILD_EXTERIOR",
+    "quantization": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: this is a classical Ricci-flat solution sector, not a quantum vacuum selection"
+  },
+  "validation": {
+    "einstein_hilbert_check_count": 10,
+    "einstein_hilbert_failures": [],
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 1
+  }
+}

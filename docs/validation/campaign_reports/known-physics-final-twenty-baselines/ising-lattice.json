@@ -1,0 +1,152 @@
+{
+  "action": {
+    "expression": "H = -J sum_j s_j*s_(j+1), s_j in {-1,+1}, periodic",
+    "formulation": "HAMILTONIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE",
+    "transfer_matrix_spectrum": "lambda_+ = 2*cosh(beta*J), lambda_- = 2*sinh(beta*J)"
+  },
+  "candidate_id": "ising-lattice",
+  "checks": {
+    "finite_partition_function_verified": true,
+    "finite_periodic_lattice_verified": true,
+    "nearest_neighbor_observable_verified": true,
+    "positive_finite_inputs": true,
+    "thermodynamic_limit_not_claimed": true,
+    "transfer_matrix_spectrum_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "external_comparison_not_authorized": true,
+    "finite_periodic_lattice_verified": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "thermodynamic_limit_not_claimed": true,
+    "transfer_matrix_verified": true
+  },
+  "derivation": {
+    "finite_partition_function": true,
+    "parameter_free_observable": "NONE_REQUIRED: finite thermal observables retain explicit inputs",
+    "periodic_boundary": "s_(j+N)=s_j",
+    "spin_values": [
+      -1,
+      1
+    ],
+    "thermodynamic_limit_claimed": false,
+    "transfer_matrix": "lambda_+ = 2*cosh(beta*J), lambda_- = 2*sinh(beta*J)"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "formula": "lambda_+^N+lambda_-^N",
+      "free_dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "name": "finite_partition_function",
+      "provenance": "DERIVED",
+      "state_label": "finite periodic transfer matrix",
+      "status": "DERIVED",
+      "value": 447840.0094067779
+    },
+    {
+      "dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "formula": "-J*d(log Z)/(N*d(beta*J))",
+      "free_dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "name": "energy_per_site",
+      "provenance": "DERIVED",
+      "state_label": "finite periodic transfer matrix",
+      "status": "DERIVED",
+      "value": -0.4621245184729808
+    },
+    {
+      "dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "formula": "d(log Z)/(N*d(beta*J))",
+      "free_dependencies": [
+        "beta",
+        "coupling",
+        "site_count"
+      ],
+      "name": "nearest_neighbor_correlation",
+      "provenance": "DERIVED",
+      "state_label": "finite periodic lattice",
+      "status": "DERIVED",
+      "value": 0.4621245184729808
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "beta",
+      "name": "beta",
+      "provenance": "INPUT",
+      "unit": "inverse_energy",
+      "value": 0.5
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "coupling",
+      "name": "J",
+      "provenance": "INPUT",
+      "unit": "energy",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "site_count",
+      "name": "N",
+      "provenance": "INPUT",
+      "unit": "count",
+      "value": 16
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "ising-lattice-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical statistical finite-spin transfer matrix; thermodynamic limit is outside this baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_FINITE_ISING_TRANSFER_MATRIX",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "EXACT_FINITE_ONE_DIMENSIONAL_PERIODIC_ISING_LATTICE",
+    "search_status": "NOT_ACTIVATED",
+    "thermodynamic_limit": "NOT_CLAIMED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: finite thermal ensemble"
+  },
+  "validation": {
+    "ising_check_count": 6,
+    "ising_failures": [],
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 0,
+    "thermodynamic_limit": "NOT_CLAIMED"
+  }
+}

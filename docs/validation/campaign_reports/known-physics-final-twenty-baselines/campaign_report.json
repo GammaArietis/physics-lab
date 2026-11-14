@@ -1,0 +1,400 @@
+{
+  "activation_id": "known-physics-final-twenty-baselines-activation",
+  "campaign_id": "known-physics-final-twenty-baselines",
+  "candidate_count": 20,
+  "candidate_results": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/known-physics-quantum-harmonic-oscillator.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "vacuum_selected_by_spectrum_minimum": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/known-physics-free-real-scalar-field.json",
+      "controls": {
+        "absolute_zero_point_energy_not_claimed_finite": true,
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "normal_ordered_vacuum_energy_explicit": true,
+        "parameter_free_observable_generated": true,
+        "periodic_boundary_condition_explicit": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_free_scalar_field.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-quantum-particle-in-box",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/known-physics-quantum-particle-in-box.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "dirichlet_boundary_conditions_explicit": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "ground_state_selected_by_spectrum_minimum": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_particle_in_box.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "quantum-hydrogen-coulomb",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/quantum-hydrogen-coulomb.json",
+      "controls": {
+        "action_instantiated": true,
+        "bound_state_spectrum_verified": true,
+        "central_coulomb_potential_declared": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "principal_quantum_number_degeneracy_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_hydrogen_coulomb.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "quantum-spin-half-pauli",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/quantum-spin-half-pauli.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "ground_state_selected_by_spectrum_minimum": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "pauli_algebra_verified": true,
+        "spin_half_spectrum_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_pauli_spin_half.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "classical-maxwell-vacuum",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/classical-maxwell-vacuum.json",
+      "controls": {
+        "action_instantiated": true,
+        "dispersion_relation_verified": true,
+        "external_comparison_not_authorized": true,
+        "gauge_invariance_declared": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "source_free_field_equation_declared": true,
+        "two_physical_polarizations_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_maxwell_vacuum.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "newtonian-gravity",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/newtonian-gravity.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "inverse_square_acceleration_verified": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "point_source_solution_verified": true,
+        "poisson_equation_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_newtonian_gravity.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "einstein-hilbert-vacuum",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/einstein-hilbert-vacuum.json",
+      "controls": {
+        "action_instantiated": true,
+        "curvature_invariant_verified": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "ricci_flat_exterior_verified": true,
+        "schwarzschild_exterior_verified": true,
+        "vacuum_einstein_equation_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_einstein_hilbert_vacuum.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "free-dirac-field",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/free-dirac-field.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "dispersion_relation_verified": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "particle_antiparticle_sector_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_free_dirac_field.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "free-proca-field",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/free-proca-field.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "dispersion_relation_verified": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "known_physics_scope_explicit": true,
+        "lorenz_constraint_verified": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "three_physical_polarizations_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_free_proca_field.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "quantized-maxwell-u1",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/quantized-maxwell-u1.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "dispersion_relation_verified": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "gauge_invariance_declared": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "two_physical_polarizations_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantized_maxwell_u1.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "scalar-phi4-controlled",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/scalar-phi4-controlled.json",
+      "controls": {
+        "action_instantiated": true,
+        "bounded_potential_verified": true,
+        "continuum_limit_not_claimed": true,
+        "external_comparison_not_authorized": true,
+        "finite_lattice_explicit": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "quartic_interaction_present": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_scalar_phi4_controlled.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "classical-yang-mills",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/classical-yang-mills.json",
+      "controls": {
+        "action_instantiated": true,
+        "bianchi_identity_declared": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "nonabelian_field_strength_verified": true,
+        "parameter_free_observable_generated": true,
+        "su2_algebra_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_classical_yang_mills.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "standard-model-structural-baseline",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/standard-model-structural-baseline.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "gauge_group_verified": true,
+        "known_physics_scope_explicit": true,
+        "matter_content_verified": true,
+        "no_experimental_parameters": true,
+        "no_parameter_fitting": true,
+        "parameter_free_observable_generated": true,
+        "perturbative_anomalies_cancelled": true,
+        "witten_anomaly_absent": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_standard_model_structural.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "ising-lattice",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/ising-lattice.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "finite_periodic_lattice_verified": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "thermodynamic_limit_not_claimed": true,
+        "transfer_matrix_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_ising_lattice.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "harmonic-lattice-phonons",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/harmonic-lattice-phonons.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "finite_periodic_lattice_verified": true,
+        "finite_size_scope_explicit": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "thermodynamic_limit_not_claimed": true,
+        "zero_mode_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_harmonic_lattice_phonons.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "ideal-bose-gas",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/ideal-bose-gas.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "finite_mode_set_verified": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "statistics_distribution_verified": true,
+        "thermodynamic_limit_not_claimed": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_ideal_bose_gas.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "ideal-fermi-gas",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/ideal-fermi-gas.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "finite_mode_set_verified": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "statistics_distribution_verified": true,
+        "thermodynamic_limit_not_claimed": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_ideal_fermi_gas.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "frw-background",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/frw-background.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "flat_frw_metric_verified": true,
+        "friedmann_equation_verified": true,
+        "known_physics_scope_explicit": true,
+        "lambda_zero_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "no_observational_fit": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_frw_background.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "cosmological-perturbations",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/cosmological-perturbations.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "linear_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "no_vacuum_or_power_spectrum_claim": true,
+        "power_law_background_explicit": true,
+        "quadratic_mode_equation_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_cosmological_perturbations.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "checkpoint_path": "docs/validation/campaign_checkpoints/known-physics-final-twenty-baselines.json",
+  "controls": {
+    "candidate_records_unchanged": true,
+    "checkpoint_written": true,
+    "deduplication_applied": true,
+    "execution_isolated": true,
+    "explicit_authorization": true,
+    "failure_isolation": true,
+    "no_auto_selection": true,
+    "no_empirical_comparison": true,
+    "no_external_data": true,
+    "no_finite_bounds": true,
+    "no_ranking": true,
+    "no_search": true
+  },
+  "executed_candidate_count": 20,
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "report_path": "docs/validation/campaign_reports/known-physics-final-twenty-baselines/campaign_report.json",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}

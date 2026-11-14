@@ -1,0 +1,154 @@
+{
+  "action": {
+    "distribution": "n_i = 1/(exp(beta*(epsilon_i-mu))+1)",
+    "expression": "H - mu*N = sum_i (epsilon_i-mu)*n_i",
+    "formulation": "HAMILTONIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE",
+    "statistics": "FERMION"
+  },
+  "candidate_id": "ideal-fermi-gas",
+  "checks": {
+    "bose_chemical_potential_bound_verified": true,
+    "finite_discrete_mode_set_verified": true,
+    "finite_size_scope_explicit": true,
+    "occupation_numbers_finite": true,
+    "statistics_distribution_verified": true,
+    "thermodynamic_limit_not_claimed": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "external_comparison_not_authorized": true,
+    "finite_mode_set_verified": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "statistics_distribution_verified": true,
+    "thermodynamic_limit_not_claimed": true
+  },
+  "derivation": {
+    "chemical_potential_condition": "mu<epsilon_min for bosons; unrestricted finite mu for fermions",
+    "energy_levels": "epsilon_i=i*Delta, i=0,...,M-1",
+    "statistics": "FERMION",
+    "thermodynamic_limit_claimed": false
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "beta",
+        "chemical_potential",
+        "energy_spacing"
+      ],
+      "formula": "n_i = 1/(exp(beta*(epsilon_i-mu))+1)",
+      "free_dependencies": [
+        "beta",
+        "chemical_potential",
+        "energy_spacing"
+      ],
+      "name": "first_mode_occupation",
+      "provenance": "DERIVED",
+      "state_label": "fermion finite mode set",
+      "status": "DERIVED",
+      "value": 0.5
+    },
+    {
+      "dependencies": [
+        "beta",
+        "chemical_potential",
+        "energy_spacing",
+        "mode_count"
+      ],
+      "formula": "sum_i n_i",
+      "free_dependencies": [
+        "beta",
+        "chemical_potential",
+        "energy_spacing",
+        "mode_count"
+      ],
+      "name": "total_finite_mode_occupation",
+      "provenance": "DERIVED",
+      "state_label": "fermion finite mode set",
+      "status": "DERIVED",
+      "value": 0.9355702165696794
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free_dependencies": [
+        "mode_count"
+      ],
+      "name": "finite_mode_count",
+      "provenance": "INPUT",
+      "state_label": "declared finite size",
+      "status": "INPUT",
+      "value": 4
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "beta",
+      "name": "beta",
+      "provenance": "INPUT",
+      "unit": "inverse_energy",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "chemical_potential",
+      "name": "mu",
+      "provenance": "INPUT",
+      "unit": "energy",
+      "value": 0.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "energy_spacing",
+      "name": "Delta",
+      "provenance": "INPUT",
+      "unit": "energy",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "mode_count",
+      "name": "M",
+      "provenance": "INPUT",
+      "unit": "count",
+      "value": 4
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "ideal-quantum-gas-v1",
+  "quantization": {
+    "field_quantization": "PARTIAL",
+    "method": "Finite-mode occupation statistics; thermodynamic limit and interactions are outside this baseline.",
+    "scope": "QUANTUM_FIELD"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_FINITE_MODE_IDEAL_FERMION_GAS",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "FINITE_DISCRETE_GRAND_CANONICAL_MODE_SET",
+    "search_status": "NOT_ACTIVATED",
+    "thermodynamic_limit": "NOT_CLAIMED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: grand-canonical finite thermal occupation"
+  },
+  "validation": {
+    "ideal_gas_check_count": 6,
+    "ideal_gas_failures": [],
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 0,
+    "statistics": "FERMION",
+    "thermodynamic_limit": "NOT_CLAIMED"
+  }
+}
