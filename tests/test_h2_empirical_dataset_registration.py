@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import copy
+import math
+
+import pytest
 
 from physics_lab.registry import (
     load_experimental_dataset,
@@ -36,6 +39,13 @@ def test_frozen_h2_dataset_is_experimental_and_source_digest_is_registered() -> 
     assert "h2-q2-0-wavenumber" not in observation_ids
     assert observations["h2-q1-1-wavenumber"]["value"] == 4155.254
     assert observations["h2-q2-1-wavenumber"]["value"] == 8075.3074
+    ratio = observations["h2-q2-1-wavenumber"]["value"] / observations["h2-q1-1-wavenumber"]["value"]
+    propagated_uncertainty = ratio * math.hypot(
+        observations["h2-q1-1-wavenumber"]["uncertainty"] / observations["h2-q1-1-wavenumber"]["value"],
+        observations["h2-q2-1-wavenumber"]["uncertainty"] / observations["h2-q2-1-wavenumber"]["value"],
+    )
+    assert observations["h2-vibrational-gap-ratio-2"]["value"] == pytest.approx(ratio)
+    assert observations["h2-vibrational-gap-ratio-2"]["uncertainty"] == pytest.approx(propagated_uncertainty)
     assert len(dataset["observations"]) == 3
 
 

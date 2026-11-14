@@ -11,6 +11,7 @@ making the cumulative suite independent of collection order.
 
 from __future__ import annotations
 
+import hashlib
 import shutil
 from pathlib import Path
 
@@ -20,16 +21,20 @@ import pytest
 PHYSICS_ROOT = Path(__file__).resolve().parents[1] / "src" / "physics_lab" / "physics"
 
 
-def _files(root: Path) -> dict[Path, tuple[int, int]]:
-    """Return relative file paths and cheap signatures for a tree."""
+def _files(root: Path) -> dict[Path, tuple[int, int, str]]:
+    """Return relative file paths and content-aware signatures for a tree."""
     return {
-        path.relative_to(root): (path.stat().st_size, path.stat().st_mtime_ns)
+        path.relative_to(root): (
+            path.stat().st_size,
+            path.stat().st_mtime_ns,
+            hashlib.sha256(path.read_bytes()).hexdigest(),
+        )
         for path in root.rglob("*")
         if path.is_file()
     }
 
 
-def _restore_artifacts(backup: Path, baseline: dict[Path, tuple[int, int]]) -> None:
+def _restore_artifacts(backup: Path, baseline: dict[Path, tuple[int, int, str]]) -> None:
     current = _files(PHYSICS_ROOT)
 
     for relative in current.keys() - baseline.keys():
