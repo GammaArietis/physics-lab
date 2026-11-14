@@ -1,7 +1,7 @@
 {
   "schema_version": "known-physics-suite-v1",
   "suite_id": "known-physics-baselines",
-  "status": "PILOT_READY",
+  "status": "FINAL_CAMPAIGN_READY",
   "as_of": "2026-11-14",
   "coverage_not_claimed_exhaustive": true,
   "scope": {
@@ -138,6 +138,60 @@
       "status": "COMPLETE",
       "runner_status": "VALIDATED",
       "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "ising-lattice",
+      "domain": "statistical_physics",
+      "scope": "finite one-dimensional periodic Ising lattice evaluated by exact transfer matrix",
+      "pipeline_ref": "ising-lattice-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "harmonic-lattice-phonons",
+      "domain": "condensed_matter",
+      "scope": "finite one-dimensional periodic harmonic chain normal modes with explicit zero mode",
+      "pipeline_ref": "harmonic-lattice-phonons-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "ideal-bose-gas",
+      "domain": "statistical_physics",
+      "scope": "finite-mode ideal Bose gas occupations in the grand-canonical representation",
+      "pipeline_ref": "ideal-quantum-gas-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "ideal-fermi-gas",
+      "domain": "statistical_physics",
+      "scope": "finite-mode ideal Fermi gas occupations in the grand-canonical representation",
+      "pipeline_ref": "ideal-quantum-gas-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "frw-background",
+      "domain": "cosmology",
+      "scope": "classical spatially flat Lambda=0 FRW background with constant equation of state",
+      "pipeline_ref": "frw-background-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "cosmological-perturbations",
+      "domain": "cosmology",
+      "scope": "single linear scalar perturbation mode on a declared power-law flat FRW background",
+      "pipeline_ref": "cosmological-perturbations-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
     }
   ],
   "planned": [
@@ -158,51 +212,6 @@
       "runner_status": "MISSING",
       "empirical_status": "NOT_AUTHORIZED",
       "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "ising-lattice",
-      "domain": "statistical_physics",
-      "wave": "K6",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "harmonic-lattice-phonons",
-      "domain": "condensed_matter",
-      "wave": "K6",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "ideal-bose-fermi-gas",
-      "domain": "statistical_physics",
-      "wave": "K6",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "frw-background",
-      "domain": "cosmology",
-      "wave": "K7",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "cosmological-perturbations",
-      "domain": "cosmology",
-      "wave": "K7",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
     }
   ],
   "admission_requirements": [
@@ -217,12 +226,12 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 14,
+    "next_batch_size": 20,
     "next_parallelism": 8,
-    "scale_to_32_or_64_after": "review of the first fourteen-candidate real expansion batch",
+    "scale_to_32_or_64_after": "review of the final twenty-candidate known-physics baseline campaign",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-fourteen-baselines"
+    "next_campaign_id": "known-physics-final-twenty-baselines"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",

@@ -25,7 +25,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; semantic closure audit complete; 0 legacy-validator failures |
 | Experimental comparison gate | Implemented downstream and target-blind; first frozen H₂ scope-control comparison complete, direct scope-matched validation remains open |
 | Campaign readiness | Phase 7A complete; original one-candidate readiness manifest preserved |
-| Campaign pilots | Known-physics single/multi-candidate campaigns `COMPLETE`; K4 11-candidate and K5 14-candidate campaigns archived; safety controls preserved; K6 held for human review and admission |
+| Campaign pilots | Known-physics single/multi-candidate campaigns `COMPLETE`; K4 11-candidate and K5 14-candidate campaigns archived; final 20-candidate campaign prepared; safety controls preserved |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
 | Oscillator focused tests | 4/4 passed; campaign regression set 9/9 passed |
@@ -40,7 +40,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics free Dirac baseline | `COMPLETE` internally; free Dirac action, Clifford algebra, fermionic canonical anticommutator, Fock vacuum, particle-antiparticle sector and parameter-free mass-shell ratio verified; interactions out of scope |
 | Known-physics free Proca baseline | `COMPLETE` internally; free massive-vector action, Proca equation, Lorenz constraint, three physical polarizations, Fock vacuum and parameter-free mass-shell ratio verified; interactions out of scope |
 | Known-physics quantized Maxwell baseline | `COMPLETE` internally; quantized U(1) action, gauge reduction, Coulomb-gauge field quantization, photon Fock vacuum, two transverse polarizations and parameter-free dispersion verified; charges and QED interactions out of scope |
-| Known-physics suite expansion | Roadmap registered; 14 executable baselines complete, K4 11-candidate and K5 14-candidate real campaigns complete and archived; no empirical gate activated |
+| Known-physics suite expansion | Roadmap registered; 20 executable baselines complete internally, K4 11-candidate and K5 14-candidate real campaigns archived, final 20-candidate campaign prepared; no empirical gate activated |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
 | Free scalar-field focused tests | 4/4 passed; pre-hydrogen full suite baseline was 1,536/1,536 |
 | Hydrogen Coulomb focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
@@ -57,6 +57,8 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Classical Yang-Mills focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Standard Model structural baseline | `COMPLETE` internally; gauge/matter/Higgs inventory, 12 gauge-boson count and perturbative plus Witten anomaly checks verified; couplings, masses and symmetry breaking out of scope |
 | Standard Model structural focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
+| K6/K7 focused tests | 25/25 passed in the development checkout: finite Ising, harmonic-chain normal modes, finite ideal Bose/Fermi sectors, flat FRW background and linear scalar perturbation |
+| K6/K7 scope boundary | Thermodynamic limits, material calibration, cosmological fits, perturbation vacuum selection and power spectra remain explicitly unclaimed |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
@@ -142,9 +144,11 @@ SU(2) Yang-Mills, and a structural Standard Model/anomaly record. These are
 not claims of quantum phi-four renormalization, quantum Yang-Mills existence,
 confinement, fitted Standard Model parameters or precision agreement. The
 K4's eleven-candidate campaign and K5's fourteen-candidate campaign are now
-complete and archived with their checkpoints and per-candidate reports. The
-next controlled step is a human review of these records followed by the K6
-admission audit; empirical comparison, fitting, selection and ranking remain
+complete and archived with their checkpoints and per-candidate reports. K6
+and K7 now add six finite, explicitly bounded baselines with 25 focused tests
+passing in the development checkout. The next controlled step is the final
+twenty-candidate campaign, containing the 14 archived K1-K5 records and the
+6 K6-K7 records. Empirical comparison, fitting, selection and ranking remain
 separate closed gates.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:

@@ -32,6 +32,11 @@ from physics_lab.registry.quantized_maxwell_pipeline import run_quantized_maxwel
 from physics_lab.registry.scalar_phi4_controlled_pipeline import run_scalar_phi4_controlled_pipeline
 from physics_lab.registry.classical_yang_mills_pipeline import run_classical_yang_mills_pipeline
 from physics_lab.registry.standard_model_structural_pipeline import run_standard_model_structural_pipeline
+from physics_lab.registry.ising_lattice_pipeline import run_ising_lattice_pipeline
+from physics_lab.registry.harmonic_lattice_phonons_pipeline import run_harmonic_lattice_phonon_pipeline
+from physics_lab.registry.ideal_quantum_gas_pipeline import run_ideal_quantum_gas_pipeline
+from physics_lab.registry.frw_background_pipeline import run_frw_background_pipeline
+from physics_lab.registry.cosmological_perturbations_pipeline import run_cosmological_perturbations_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -173,6 +178,16 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_classical_yang_mills_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "standard-model-structural-v1":
             report = run_standard_model_structural_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "ising-lattice-v1":
+            report = run_ising_lattice_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "harmonic-lattice-phonons-v1":
+            report = run_harmonic_lattice_phonon_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "ideal-quantum-gas-v1":
+            report = run_ideal_quantum_gas_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "frw-background-v1":
+            report = run_frw_background_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "cosmological-perturbations-v1":
+            report = run_cosmological_perturbations_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

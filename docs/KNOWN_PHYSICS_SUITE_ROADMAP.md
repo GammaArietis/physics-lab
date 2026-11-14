@@ -64,6 +64,22 @@ explicit record of what remains outside each baseline.
   `SU(3)_C x SU(2)_L x U(1)_Y` gauge group, chiral matter, one Higgs doublet,
   gauge-boson counts and perturbative/global anomaly checks. Couplings,
   masses, symmetry breaking and precision observables remain separate.
+- Finite Ising lattice: exact transfer-matrix partition function, energy and
+  nearest-neighbour correlation for a one-dimensional periodic finite lattice.
+  No thermodynamic limit or critical scaling claim is made.
+- Harmonic lattice and phonons: finite periodic harmonic-chain normal modes,
+  explicit translational zero mode and finite-size dispersion ratio. Phonon
+  field quantization and material-specific calibration remain separate.
+- Ideal Bose and Fermi gases: finite-mode grand-canonical occupation sectors
+  with explicit Bose chemical-potential condition. Thermodynamic limits,
+  interactions and empirical calibration remain separate.
+- Flat FRW background: classical spatially flat Lambda=0 Friedmann equations
+  with constant equation of state and continuity scaling. No cosmological fit
+  or complete matter inventory is claimed.
+- Linear cosmological perturbation: one scalar Fourier mode on a declared
+  power-law FRW background, with local mode coefficients and horizon ratio.
+  Vacuum selection, power spectrum and observational comparison remain out
+  of scope.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -114,11 +130,13 @@ pass the admission requirements below.
 ## Current frontier
 
 The K1 particle-in-a-box baseline, the two K2 baselines, all three K3
-baselines, all three K4 baselines and the three controlled K5 baselines are
-now implemented and validated internally. The eleven-candidate K4 campaign
-and fourteen-candidate K5 campaign are also complete and archived with their
-checkpoints and reports. The next controlled step is human review followed by
-the K6 admission audit; no K6 candidate is activated by this record.
+baselines, all three K4 baselines, the three controlled K5 baselines and the
+six controlled K6-K7 baselines are implemented and validated internally. The
+eleven-candidate K4 campaign and fourteen-candidate K5 campaign are complete
+and archived with their checkpoints and reports. The next controlled step is
+the final twenty-candidate campaign, containing those fourteen archived
+baselines plus the six K6-K7 baselines. It remains a reproducibility run, not
+an empirical comparison or a theory-selection campaign.
 
 Machine-readable inventory:
 
