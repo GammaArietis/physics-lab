@@ -26,6 +26,8 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Experimental comparison gate | Implemented downstream and target-blind; first frozen H₂ scope-control comparison complete, direct scope-matched validation remains open |
 | Campaign readiness | Phase 7A complete; original one-candidate readiness manifest preserved |
 | Campaign pilots | Known-physics single/multi-candidate campaigns `COMPLETE`; K4 11-candidate, K5 14-candidate and final 20-candidate campaigns archived; literature review complete with caveats; safety controls preserved |
+| Alpha-geometry stage-0 pilot | `COMPLETE`; 30 finite grammar records generated, 28 canonical records retained, 2 graph-equivalence duplicates removed; no alpha target, fitting, empirical data, selection or ranking used |
+| Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
 | Oscillator focused tests | 4/4 passed; campaign regression set 9/9 passed |
@@ -113,6 +115,15 @@ checkout, corrects the v22 cross-check without rewriting v22/v23 files, and
 requires all newly generated checkpoint references to be repository-relative.
 
 ## Next controlled step
+
+The first speculative search pilot is now complete at stage 0. It explored
+only a finite grammar of simple graph geometries and graph actions, producing
+structural invariants without pretending that any invariant is the
+fine-structure constant. The next gate is to choose one canonical geometry
+class and attach an explicit U(1) action before reading or comparing any alpha
+target. The protocol and raw report are recorded in
+`docs/ALPHA_GEOMETRY_SEARCH_PROTOCOL.md` and
+`docs/validation/alpha_geometry_stage0_pilot_2026-11-14.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

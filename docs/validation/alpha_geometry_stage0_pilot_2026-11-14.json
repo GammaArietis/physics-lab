@@ -1,0 +1,1544 @@
+{
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "AUTHORIZED",
+    "human_confirmation": true,
+    "search_status": "AUTHORIZED",
+    "status": "AUTHORIZED"
+  },
+  "candidates": [
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n3-quadratic_laplacian",
+      "canonical_key": "complete:3:quadratic_laplacian",
+      "canonical_record_digest": "3b44183ce9c07c6fc5ecbebe800eea91ecf9a9c60cac40ce7eeaec6c5c0fedd7",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2
+        ],
+        "edge_density": 1.0,
+        "edges": 3,
+        "laplacian_spectral_gap": 3.0,
+        "laplacian_spectral_radius": 3.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 3,
+        "vertices": 3
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 3,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:3:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n3-quartic_local",
+      "canonical_key": "complete:3:quartic_local",
+      "canonical_record_digest": "ffb0a9a193b061b1c29065c1ea59208c7b1b118a20d7a4c21aaaf59e33ccf3b0",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2
+        ],
+        "edge_density": 1.0,
+        "edges": 3,
+        "laplacian_spectral_gap": 3.0,
+        "laplacian_spectral_radius": 3.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 3,
+        "vertices": 3
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 3,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:3:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n4-quadratic_laplacian",
+      "canonical_key": "complete:4:quadratic_laplacian",
+      "canonical_record_digest": "1bc2807a577ebdc2f99a24aacd350de4e49992ddd3c7e47ffa63ecd895de9f1e",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "edge_density": 1.0,
+        "edges": 6,
+        "laplacian_spectral_gap": 4.0,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 16,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:4:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n4-quartic_local",
+      "canonical_key": "complete:4:quartic_local",
+      "canonical_record_digest": "8d3d6899c1b7eee6e6c01d0d781aafd313faff97e9a772fe167f7bdd2aae3077",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "edge_density": 1.0,
+        "edges": 6,
+        "laplacian_spectral_gap": 4.0,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 16,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:4:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n5-quadratic_laplacian",
+      "canonical_key": "complete:5:quadratic_laplacian",
+      "canonical_record_digest": "58c3fb5e033cb0f63cc2a15577e0378878ae40b640e7470aa855490a12bee03f",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "edge_density": 1.0,
+        "edges": 10,
+        "laplacian_spectral_gap": 5.0,
+        "laplacian_spectral_radius": 5.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 125,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:5:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n5-quartic_local",
+      "canonical_key": "complete:5:quartic_local",
+      "canonical_record_digest": "3e19bf2e0012f06fb7546b8b5a6b152dea7a6875a5588c35255e8b95c601a881",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "edge_density": 1.0,
+        "edges": 10,
+        "laplacian_spectral_gap": 5.0,
+        "laplacian_spectral_radius": 5.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 125,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:5:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n6-quadratic_laplacian",
+      "canonical_key": "complete:6:quadratic_laplacian",
+      "canonical_record_digest": "a30ff1001305fc6202238a8c05f249d45a3192b0367ca22f037e4e8a98404f85",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "edge_density": 1.0,
+        "edges": 15,
+        "laplacian_spectral_gap": 6.0,
+        "laplacian_spectral_radius": 6.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 1296,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:6:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n6-quartic_local",
+      "canonical_key": "complete:6:quartic_local",
+      "canonical_record_digest": "212949966f48d7c614819a7e2163ad8b8a78e3e2b0335d47dce4a0e670add48c",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "edge_density": 1.0,
+        "edges": 15,
+        "laplacian_spectral_gap": 6.0,
+        "laplacian_spectral_radius": 6.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 1296,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:6:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n7-quadratic_laplacian",
+      "canonical_key": "complete:7:quadratic_laplacian",
+      "canonical_record_digest": "62f81f85d5878c99aad7518bda55f91b0253622a87de64b13a82da9f40a0cb1b",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "edge_density": 1.0,
+        "edges": 21,
+        "laplacian_spectral_gap": 7.0,
+        "laplacian_spectral_radius": 7.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 16807,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:7:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-complete-n7-quartic_local",
+      "canonical_key": "complete:7:quartic_local",
+      "canonical_record_digest": "fa724a2d44aec5d956e48eea80c2a2b27e72c789cb38059a4a14290e90a2a47b",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "edge_density": 1.0,
+        "edges": 21,
+        "laplacian_spectral_gap": 7.0,
+        "laplacian_spectral_radius": 7.0,
+        "normalized_laplacian_gap": 1.0,
+        "self_loops": 0,
+        "spanning_tree_count": 16807,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "complete",
+        "family": "complete",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "complete:7:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n4-quadratic_laplacian",
+      "canonical_key": "cycle:4:quadratic_laplacian",
+      "canonical_record_digest": "9b40000207fe378f111469f9b6026a3c05e11830a4e9b28016f14709d21e1949",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.6666666666666666,
+        "edges": 4,
+        "laplacian_spectral_gap": 1.9999999999999996,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.4999999999999999,
+        "self_loops": 0,
+        "spanning_tree_count": 4,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:4:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n4-quartic_local",
+      "canonical_key": "cycle:4:quartic_local",
+      "canonical_record_digest": "e8fcf2009ded755d77754fd3ad4914dacfcbbcb432481b9cba2668e4cdddfdae",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.6666666666666666,
+        "edges": 4,
+        "laplacian_spectral_gap": 1.9999999999999996,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.4999999999999999,
+        "self_loops": 0,
+        "spanning_tree_count": 4,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:4:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n5-quadratic_laplacian",
+      "canonical_key": "cycle:5:quadratic_laplacian",
+      "canonical_record_digest": "519fccfb7394f22bb04b75089d4f3d3f697ca7bc2a0a02808504bc779c2dd394",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.5,
+        "edges": 5,
+        "laplacian_spectral_gap": 1.381966011250105,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.3454915028125263,
+        "self_loops": 0,
+        "spanning_tree_count": 5,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:5:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n5-quartic_local",
+      "canonical_key": "cycle:5:quartic_local",
+      "canonical_record_digest": "625ff25009432cf6fcf247b6b4c9050d6410e03fe3b9a1d7e7746add5c3ef090",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.5,
+        "edges": 5,
+        "laplacian_spectral_gap": 1.381966011250105,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.3454915028125263,
+        "self_loops": 0,
+        "spanning_tree_count": 5,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:5:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n6-quadratic_laplacian",
+      "canonical_key": "cycle:6:quadratic_laplacian",
+      "canonical_record_digest": "bfdff24c6ca82854ecea013c7f923a56d79e35c9b4afb844aaee19269200cf50",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.4,
+        "edges": 6,
+        "laplacian_spectral_gap": 0.9999999999999998,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.24999999999999994,
+        "self_loops": 0,
+        "spanning_tree_count": 6,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:6:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n6-quartic_local",
+      "canonical_key": "cycle:6:quartic_local",
+      "canonical_record_digest": "ad641822fcd95a512ef6ccc4d6f502815c73fa1f20ce21c9ed08e50ccce83e89",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.4,
+        "edges": 6,
+        "laplacian_spectral_gap": 0.9999999999999998,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.24999999999999994,
+        "self_loops": 0,
+        "spanning_tree_count": 6,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:6:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n7-quadratic_laplacian",
+      "canonical_key": "cycle:7:quadratic_laplacian",
+      "canonical_record_digest": "d8f2f4c4cbb6f4f2665e5df6ad972d79f40c40b12ff1a9351d263e95916449e4",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.3333333333333333,
+        "edges": 7,
+        "laplacian_spectral_gap": 0.7530203962825329,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.18825509907063323,
+        "self_loops": 0,
+        "spanning_tree_count": 7,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:7:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-cycle-n7-quartic_local",
+      "canonical_key": "cycle:7:quartic_local",
+      "canonical_record_digest": "8495f0ccc4f930459df4a1712457c4e55d6ae879e463322a9538eca8a9a9a3e6",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "edge_density": 0.3333333333333333,
+        "edges": 7,
+        "laplacian_spectral_gap": 0.7530203962825329,
+        "laplacian_spectral_radius": 4.0,
+        "normalized_laplacian_gap": 0.18825509907063323,
+        "self_loops": 0,
+        "spanning_tree_count": 7,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "cycle",
+        "family": "cycle",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "cycle:7:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n3-quadratic_laplacian",
+      "canonical_key": "path:3:quadratic_laplacian",
+      "canonical_record_digest": "71e56f6a6f9b803011f066bafb8ea28ff948d5694fbce1fbef55eefc98cc1da6",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          1
+        ],
+        "edge_density": 0.6666666666666666,
+        "edges": 2,
+        "laplacian_spectral_gap": 0.9999999999999998,
+        "laplacian_spectral_radius": 3.0,
+        "normalized_laplacian_gap": 0.33333333333333326,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 3
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 3,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:3:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n3-quartic_local",
+      "canonical_key": "path:3:quartic_local",
+      "canonical_record_digest": "fa85158c658498945a83939c661e07d75859b83a91f301af4316f1ee0350afe4",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          1
+        ],
+        "edge_density": 0.6666666666666666,
+        "edges": 2,
+        "laplacian_spectral_gap": 0.9999999999999998,
+        "laplacian_spectral_radius": 3.0,
+        "normalized_laplacian_gap": 0.33333333333333326,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 3
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 3,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:3:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n4-quadratic_laplacian",
+      "canonical_key": "path:4:quadratic_laplacian",
+      "canonical_record_digest": "261946ab4300dc28d5b86558815c0d8a2d1c4730ec2c598cbef8558d4f20a762",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.5,
+        "edges": 3,
+        "laplacian_spectral_gap": 0.5857864376269049,
+        "laplacian_spectral_radius": 3.414213562373095,
+        "normalized_laplacian_gap": 0.17157287525380988,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:4:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n4-quartic_local",
+      "canonical_key": "path:4:quartic_local",
+      "canonical_record_digest": "9ef7af11dfc8965bce8732277eb3b9ae1f3e872e1b1fb4ebc6ba7b89347ddf36",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.5,
+        "edges": 3,
+        "laplacian_spectral_gap": 0.5857864376269049,
+        "laplacian_spectral_radius": 3.414213562373095,
+        "normalized_laplacian_gap": 0.17157287525380988,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 4
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 4,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:4:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n5-quadratic_laplacian",
+      "canonical_key": "path:5:quadratic_laplacian",
+      "canonical_record_digest": "eb84747f8a6cadd5222311d73f4c52745e6b8a6ab140a8e7a421c50603c6620e",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.4,
+        "edges": 4,
+        "laplacian_spectral_gap": 0.3819660112501051,
+        "laplacian_spectral_radius": 3.618033988749895,
+        "normalized_laplacian_gap": 0.1055728090000841,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:5:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n5-quartic_local",
+      "canonical_key": "path:5:quartic_local",
+      "canonical_record_digest": "ea9321d1cee57b7744227eb501ce4bf854ee6d068b58b4646573d541be546bfb",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.4,
+        "edges": 4,
+        "laplacian_spectral_gap": 0.3819660112501051,
+        "laplacian_spectral_radius": 3.618033988749895,
+        "normalized_laplacian_gap": 0.1055728090000841,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 5
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 5,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:5:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n6-quadratic_laplacian",
+      "canonical_key": "path:6:quadratic_laplacian",
+      "canonical_record_digest": "70600963ec407c24288233e15aa4dffa8823967eec8a9627ac24b7a90a2a21ba",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.3333333333333333,
+        "edges": 5,
+        "laplacian_spectral_gap": 0.2679491924311226,
+        "laplacian_spectral_radius": 3.7320508075688776,
+        "normalized_laplacian_gap": 0.07179676972449078,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:6:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n6-quartic_local",
+      "canonical_key": "path:6:quartic_local",
+      "canonical_record_digest": "d76c567960961de49a4c04831b3ca91061d90f201ffe21f52df85c7a6caa5ba5",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.3333333333333333,
+        "edges": 5,
+        "laplacian_spectral_gap": 0.2679491924311226,
+        "laplacian_spectral_radius": 3.7320508075688776,
+        "normalized_laplacian_gap": 0.07179676972449078,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 6
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 6,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:6:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quadratic_laplacian",
+        "terms": [
+          "field_laplacian_quadratic"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n7-quadratic_laplacian",
+      "canonical_key": "path:7:quadratic_laplacian",
+      "canonical_record_digest": "1cc0e4b4b7771023b7e9b8c4d292ec217e453ea479fb94401b42c8759bcd9823",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.2857142857142857,
+        "edges": 6,
+        "laplacian_spectral_gap": 0.1980622641951617,
+        "laplacian_spectral_radius": 3.801937735804838,
+        "normalized_laplacian_gap": 0.05209508360168702,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:7:quadratic_laplacian",
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "action": {
+        "continuous_parameters": [],
+        "family": "quartic_local",
+        "terms": [
+          "field_laplacian_quadratic",
+          "local_quartic_potential"
+        ]
+      },
+      "alpha_comparison": "NOT_AUTHORIZED",
+      "candidate_id": "alpha-geometry-path-n7-quartic_local",
+      "canonical_key": "path:7:quartic_local",
+      "canonical_record_digest": "915b838d7f5918679245fe9c4113fd95a5e3508438a713f869404376fcf44262",
+      "derived_invariants": {
+        "connected": true,
+        "degree_sequence": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "edge_density": 0.2857142857142857,
+        "edges": 6,
+        "laplacian_spectral_gap": 0.1980622641951617,
+        "laplacian_spectral_radius": 3.801937735804838,
+        "normalized_laplacian_gap": 0.05209508360168702,
+        "self_loops": 0,
+        "spanning_tree_count": 1,
+        "vertices": 7
+      },
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "geometry": {
+        "canonical_family": "path",
+        "family": "path",
+        "size": 7,
+        "topology": "finite_connected_simple_graph"
+      },
+      "hard_filters": {
+        "action_declared": true,
+        "connected": true,
+        "finite_size_bound": true,
+        "no_continuous_fit": true,
+        "simple_graph": true
+      },
+      "provenance": {
+        "action": "ASSUMED_GRAMMAR_ELEMENT",
+        "geometry": "DERIVED_FROM_DECLARED_GRAMMAR",
+        "observables": "DERIVED_GRAPH_INVARIANTS"
+      },
+      "raw_key": "path:7:quartic_local",
+      "status": "STRUCTURAL_PASS"
+    }
+  ],
+  "controls": {
+    "canonical_deduplication_applied": true,
+    "failure_isolation": true,
+    "finite_bounds_enforced": true,
+    "no_alpha_target_read": true,
+    "no_auto_selection": true,
+    "no_empirical_data": true,
+    "no_parameter_fitting": true,
+    "no_ranking": true
+  },
+  "duplicate_count": 2,
+  "duplicates": [
+    {
+      "candidate_id": "alpha-geometry-cycle-n3-quadratic_laplacian",
+      "canonical_key": "complete:3:quadratic_laplacian",
+      "duplicate_of": "alpha-geometry-complete-n3-quadratic_laplacian",
+      "status": "DUPLICATE"
+    },
+    {
+      "candidate_id": "alpha-geometry-cycle-n3-quartic_local",
+      "canonical_key": "complete:3:quartic_local",
+      "duplicate_of": "alpha-geometry-complete-n3-quartic_local",
+      "status": "DUPLICATE"
+    }
+  ],
+  "execution_status": "COMPLETE",
+  "grammar": {
+    "actions": [
+      "quadratic_laplacian",
+      "quartic_local"
+    ],
+    "candidate_bound": 30,
+    "graph_families": [
+      "complete",
+      "cycle",
+      "path"
+    ],
+    "sizes": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "next_gate": "DEFINE_EXPLICIT_U1_ACTION_BEFORE_ANY_ALPHA_COMPARISON",
+  "raw_candidate_count": 30,
+  "search_id": "alpha-geometry-stage0-pilot",
+  "search_version": "alpha-geometry-search-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "STAGE_0_GEOMETRY_ONLY",
+  "unique_candidate_count": 28
+}

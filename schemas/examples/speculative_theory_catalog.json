@@ -1,0 +1,52 @@
+{
+  "schema_version": "speculative-theory-catalog-v1",
+  "catalog_id": "unconfirmed-frameworks-for-future-explicit-candidates",
+  "status": "CATALOG_ONLY",
+  "purpose": "Register families that may later supply explicit candidates without treating the families themselves as executable theories.",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "entries": [
+    {
+      "family_id": "string-theory",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["specific string action", "compactification", "moduli/vacuum choice", "low-energy field content", "observable map"],
+      "reason_blocked": "The family label does not define one dynamical model or one vacuum."
+    },
+    {
+      "family_id": "loop-quantum-gravity",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["specific graph/spin-network state space", "Hamiltonian or covariant dynamics", "constraint treatment", "semiclassical limit", "observable map"],
+      "reason_blocked": "A named framework is not enough to define a unique finite runner."
+    },
+    {
+      "family_id": "causal-dynamical-triangulations",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["finite triangulation ensemble", "measure/action", "causal restrictions", "continuum observable"],
+      "reason_blocked": "A finite triangulation search must specify the ensemble and observable before execution."
+    },
+    {
+      "family_id": "asymptotic-safety",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["truncation ansatz", "beta functions", "fixed-point criterion", "relevant directions", "observable map"],
+      "reason_blocked": "Different truncations are different candidates and cannot be silently merged."
+    },
+    {
+      "family_id": "noncommutative-geometry",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["spectral triple", "Dirac operator", "spectral action", "fermion representation", "observable map"],
+      "reason_blocked": "The geometry and action must be supplied explicitly."
+    },
+    {
+      "family_id": "emergent-gravity",
+      "status": "FAMILY_ONLY",
+      "executable_now": false,
+      "minimum_formalization": ["microscopic degrees of freedom", "dynamics", "emergent metric map", "matter coupling", "falsifiable observable"],
+      "reason_blocked": "The label covers several inequivalent mechanisms rather than one model."
+    }
+  ]
+}
