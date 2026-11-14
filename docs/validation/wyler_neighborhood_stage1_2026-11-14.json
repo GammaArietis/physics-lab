@@ -1,0 +1,493 @@
+{
+  "anchor": {
+    "alpha": 0.007297348130031833,
+    "alpha_inverse": 137.03608244816434,
+    "candidate_id": "wyler-anchor",
+    "comparison_role": "historical_anchor_only",
+    "components": {
+      "domain_exponent": "1/4",
+      "phase_factor": "2*pi",
+      "spin_multiplicity": 4
+    },
+    "equivalent_formula": "9/(8*pi^4)*(pi^5/(2^4*5!))^(1/4)",
+    "formula": "9/(16*pi^3)*(pi/5!)^(1/4)",
+    "free_continuous_parameters": [],
+    "physical_status": "OPEN",
+    "status": "REFERENCE_ANCHOR",
+    "volumes": {
+      "D5": "pi^5/(2^4*5!)",
+      "Q5": "8*pi^3/3",
+      "S4": "8*pi^2/3"
+    }
+  },
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "comparison_status": "AUTHORIZED_AFTER_GENERATION",
+    "external_target_used": true,
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "search_status": "AUTHORIZED",
+    "target_blind_generation": true
+  },
+  "controls": {
+    "all_variants_recorded": true,
+    "anchor_reproduced": true,
+    "comparison_after_generation": true,
+    "finite_grammar": true,
+    "no_auto_selection": true,
+    "no_continuous_fit": true,
+    "no_ranking": true,
+    "physical_admissibility_not_claimed": true,
+    "target_blind_generation": true
+  },
+  "execution_status": "COMPLETE",
+  "grammar": {
+    "candidate_count": 18,
+    "domain_exponent": [
+      0.125,
+      0.25,
+      0.5
+    ],
+    "phase_factor": [
+      "one",
+      "two-pi"
+    ],
+    "spin_multiplicity": [
+      1,
+      2,
+      4
+    ]
+  },
+  "next_gate": "DERIVE_U1_MAXWELL_QED_NORMALIZATION_OR_REJECT_AS_NUMEROLOGY",
+  "search_id": "wyler-neighborhood-stage1",
+  "search_version": "wyler-neighborhood-search-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W0_ANCHOR_PLUS_W1_NORMALIZATION_STRESS_TEST",
+  "target": {
+    "alpha_inverse": 137.035999177,
+    "role": "post_generation_comparison_only",
+    "source_id": "codata-2022-alpha-inverse",
+    "source_uri": "https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf"
+  },
+  "variants": [
+    {
+      "alpha": 0.0003652743602812368,
+      "alpha_inverse": 2737.668198857612,
+      "candidate_id": "wyler-stress-spin1-one-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "one",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 18977730.051222187,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0002903522565892413,
+      "alpha_inverse": 3444.092399167026,
+      "candidate_id": "wyler-stress-spin1-one-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "one",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 24132756.500855867,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.00018345824699760502,
+      "alpha_inverse": 5450.831545409102,
+      "candidate_id": "wyler-stress-spin1-one-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "one",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 38776639.55562973,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.00229508649360849,
+      "alpha_inverse": 435.7134263936748,
+      "candidate_id": "wyler-stress-spin1-two-pi-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 2179554.4894075147,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0018243370325079582,
+      "alpha_inverse": 548.1443297926573,
+      "candidate_id": "wyler-stress-spin1-two-pi-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 3000002.4306361782,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0011527021620162754,
+      "alpha_inverse": 867.5267844130934,
+      "candidate_id": "wyler-stress-spin1-two-pi-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 1
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 5330648.804863082,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0007305487205624736,
+      "alpha_inverse": 1368.834099428806,
+      "candidate_id": "wyler-stress-spin2-one-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "one",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 8988865.025611093,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0005807045131784826,
+      "alpha_inverse": 1722.046199583513,
+      "candidate_id": "wyler-stress-spin2-one-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "one",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 11566378.250427933,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.00036691649399521004,
+      "alpha_inverse": 2725.415772704551,
+      "candidate_id": "wyler-stress-spin2-one-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "one",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 18888319.777814865,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.00459017298721698,
+      "alpha_inverse": 217.8567131968374,
+      "candidate_id": "wyler-stress-spin2-two-pi-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 589777.2447037571,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0036486740650159164,
+      "alpha_inverse": 274.0721648963287,
+      "candidate_id": "wyler-stress-spin2-two-pi-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 1000001.215318089,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.002305404324032551,
+      "alpha_inverse": 433.7633922065467,
+      "candidate_id": "wyler-stress-spin2-two-pi-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 2
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 2165324.402431541,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0014610974411249473,
+      "alpha_inverse": 684.417049714403,
+      "candidate_id": "wyler-stress-spin4-one-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "one",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 3994432.5128055466,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0011614090263569652,
+      "alpha_inverse": 861.0230997917565,
+      "candidate_id": "wyler-stress-spin4-one-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "one",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 5283189.125213967,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.0007338329879904201,
+      "alpha_inverse": 1362.7078863522754,
+      "candidate_id": "wyler-stress-spin4-one-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "one",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 8944159.888907434,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.00918034597443396,
+      "alpha_inverse": 108.9283565984187,
+      "candidate_id": "wyler-stress-spin4-two-pi-power0p125",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.125,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": -205111.37764812142,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.007297348130031833,
+      "alpha_inverse": 137.03608244816434,
+      "candidate_id": "wyler-stress-spin4-two-pi-power0p25",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.25,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "OPEN",
+      "relative_error_ppm": 0.607659044546568,
+      "status": "REFERENCE_ANCHOR",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    },
+    {
+      "alpha": 0.004610808648065102,
+      "alpha_inverse": 216.88169610327336,
+      "candidate_id": "wyler-stress-spin4-two-pi-power0p5",
+      "comparison_role": "post_generation_diagnostic",
+      "comparison_status": "COMPLETE",
+      "components": {
+        "domain_exponent": 0.5,
+        "phase_factor": "two-pi",
+        "spin_multiplicity": 4
+      },
+      "formula": "spin_factor*phase_factor*V(D5)^p/(V(Q5)*V(S4))",
+      "free_continuous_parameters": [],
+      "physical_status": "NOT_ADMISSIBLE_WITHOUT_DERIVATION",
+      "relative_error_ppm": 582662.2012157706,
+      "status": "NORMALIZATION_STRESS_TEST",
+      "target_alpha_inverse": 137.035999177,
+      "volumes": {
+        "D5": "pi^5/(2^4*5!)",
+        "Q5": "8*pi^3/3",
+        "S4": "8*pi^2/3"
+      }
+    }
+  ]
+}

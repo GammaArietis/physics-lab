@@ -27,6 +27,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Campaign readiness | Phase 7A complete; original one-candidate readiness manifest preserved |
 | Campaign pilots | Known-physics single/multi-candidate campaigns `COMPLETE`; K4 11-candidate, K5 14-candidate and final 20-candidate campaigns archived; literature review complete with caveats; safety controls preserved |
 | Alpha-geometry stage-0 pilot | `COMPLETE`; 30 finite grammar records generated, 28 canonical records retained, 2 graph-equivalence duplicates removed; no alpha target, fitting, empirical data, selection or ranking used |
+| Wyler neighborhood stage-1 pilot | `COMPLETE`; exact historical anchor plus 17 pre-registered normalization stress tests; anchor error approximately 0.608 ppm against CODATA 2022; no physical candidate selected |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -124,6 +125,15 @@ class and attach an explicit U(1) action before reading or comparing any alpha
 target. The protocol and raw report are recorded in
 `docs/ALPHA_GEOMETRY_SEARCH_PROTOCOL.md` and
 `docs/validation/alpha_geometry_stage0_pilot_2026-11-14.json`.
+
+The Wyler stage-1 pilot now adds a faithful historical anchor and a finite
+normalization stress test. The anchor reproduces the published numerical
+value, while the surrounding variants are retained as non-admissible
+diagnostics unless an independent derivation supplies their factors. The
+CODATA comparison is post-generation only; no nearest-value selection is
+performed. The protocol and report are recorded in
+`docs/WYLER_NEIGHBORHOOD_PROTOCOL.md` and
+`docs/validation/wyler_neighborhood_stage1_2026-11-14.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

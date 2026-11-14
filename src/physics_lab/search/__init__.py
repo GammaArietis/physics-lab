@@ -8,6 +8,12 @@ from physics_lab.search.alpha_geometry_pilot import (
     run_alpha_geometry_pilot,
     write_alpha_geometry_report,
 )
+from physics_lab.search.wyler_neighborhood import (
+    WYLER_SEARCH_VERSION,
+    run_wyler_neighborhood_pilot,
+    write_wyler_report,
+    wyler_anchor,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -16,4 +22,8 @@ __all__ = [
     "enumerate_alpha_geometry_pilot",
     "run_alpha_geometry_pilot",
     "write_alpha_geometry_report",
+    "WYLER_SEARCH_VERSION",
+    "run_wyler_neighborhood_pilot",
+    "write_wyler_report",
+    "wyler_anchor",
 ]
