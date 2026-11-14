@@ -1,0 +1,202 @@
+{
+  "action": {
+    "expression": "S = integral dt d^3x [-|grad phi|^2/(8*pi*G) - rho*phi], Newtonian field",
+    "field_equation": "nabla^2 phi = 4*pi*G*rho",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "newtonian-gravity",
+  "checks": {
+    "action_to_poisson_equation_verified": true,
+    "attractive_acceleration_verified": true,
+    "inverse_square_acceleration_verified": true,
+    "parameter_free_acceleration_ratio_verified": true,
+    "parameter_free_potential_ratio_verified": true,
+    "positive_inputs": true,
+    "potential_vanishes_at_infinity": true,
+    "spherical_point_source_solution_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "external_comparison_not_authorized": true,
+    "inverse_square_acceleration_verified": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "point_source_solution_verified": true,
+    "poisson_equation_verified": true
+  },
+  "derivation": {
+    "acceleration": "|a(r)| = G*M/r^2",
+    "boundary_condition": "phi(r) -> 0 as r -> infinity",
+    "field_equation": "nabla^2 phi = 4*pi*G*rho",
+    "normalized_acceleration_ratio": "|a(r)|/|a(r_ref)| = (r_ref/r)^2",
+    "point_source_density": "rho(x) = M*delta^3(x)",
+    "point_source_solution": "phi(r) = -G*M/r for a point source at the origin"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "gravitational_constant",
+        "source_mass",
+        "radius"
+      ],
+      "formula": "phi(r) = -G*M/r for a point source at the origin",
+      "free_dependencies": [
+        "gravitational_constant",
+        "source_mass",
+        "radius"
+      ],
+      "name": "gravitational_potential",
+      "provenance": "DERIVED",
+      "state_label": "point-source potential",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": -0.5
+    },
+    {
+      "dependencies": [
+        "gravitational_constant",
+        "source_mass",
+        "radius"
+      ],
+      "formula": "|a(r)| = G*M/r^2",
+      "free_dependencies": [
+        "gravitational_constant",
+        "source_mass",
+        "radius"
+      ],
+      "name": "acceleration_magnitude",
+      "provenance": "DERIVED",
+      "state_label": "radial attractive acceleration",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 0.25
+    },
+    {
+      "dependencies": [
+        "radius",
+        "reference_radius"
+      ],
+      "formula": "phi(r)/phi(r_ref) = r_ref/r",
+      "free_dependencies": [],
+      "name": "potential_ratio",
+      "provenance": "DERIVED",
+      "state_label": "normalized potential",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 0.5
+    },
+    {
+      "dependencies": [
+        "radius",
+        "reference_radius"
+      ],
+      "formula": "|a(r)|/|a(r_ref)| = (r_ref/r)^2",
+      "free_dependencies": [],
+      "name": "acceleration_ratio",
+      "provenance": "DERIVED",
+      "state_label": "inverse-square ratio",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 0.25
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "G",
+      "parameter_id": "gravitational_constant",
+      "provenance": "INPUT",
+      "unit": "length^3/(mass*time^2)",
+      "used_by": [
+        "potential",
+        "acceleration",
+        "potential-ratio",
+        "acceleration-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "M",
+      "parameter_id": "source_mass",
+      "provenance": "INPUT",
+      "unit": "mass",
+      "used_by": [
+        "potential",
+        "acceleration",
+        "potential-ratio",
+        "acceleration-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "r",
+      "parameter_id": "radius",
+      "provenance": "INPUT",
+      "unit": "length",
+      "used_by": [
+        "potential",
+        "acceleration",
+        "potential-ratio",
+        "acceleration-ratio"
+      ],
+      "value": 2.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "r_ref",
+      "parameter_id": "reference_radius",
+      "provenance": "INPUT",
+      "unit": "length",
+      "used_by": [
+        "potential",
+        "acceleration",
+        "potential-ratio",
+        "acceleration-ratio"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "newtonian-gravity-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical field theory; quantization is outside this K3 baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "cosmology": "OUT_OF_SCOPE",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "general_relativity": "OUT_OF_SCOPE",
+    "model_scope": "CLASSICAL_STATIC_NEWTONIAN_POINT_SOURCE_FIELD",
+    "n_body_dynamics": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: this is a classical static field sector, not a quantum vacuum selection"
+  },
+  "validation": {
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "newtonian_check_count": 8,
+    "newtonian_failures": [],
+    "parameter_free_observable_count": 2
+  }
+}

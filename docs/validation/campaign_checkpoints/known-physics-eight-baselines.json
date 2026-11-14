@@ -1,0 +1,168 @@
+{
+  "activation_id": "known-physics-eight-baselines-activation",
+  "campaign_id": "known-physics-eight-baselines",
+  "candidate_results": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/known-physics-quantum-harmonic-oscillator.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "vacuum_selected_by_spectrum_minimum": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/known-physics-free-real-scalar-field.json",
+      "controls": {
+        "absolute_zero_point_energy_not_claimed_finite": true,
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "normal_ordered_vacuum_energy_explicit": true,
+        "parameter_free_observable_generated": true,
+        "periodic_boundary_condition_explicit": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_free_scalar_field.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-quantum-particle-in-box",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/known-physics-quantum-particle-in-box.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "dirichlet_boundary_conditions_explicit": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "ground_state_selected_by_spectrum_minimum": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_particle_in_box.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "quantum-hydrogen-coulomb",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/quantum-hydrogen-coulomb.json",
+      "controls": {
+        "action_instantiated": true,
+        "bound_state_spectrum_verified": true,
+        "central_coulomb_potential_declared": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "principal_quantum_number_degeneracy_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_hydrogen_coulomb.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "quantum-spin-half-pauli",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/quantum-spin-half-pauli.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "ground_state_selected_by_spectrum_minimum": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "pauli_algebra_verified": true,
+        "spin_half_spectrum_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_pauli_spin_half.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "classical-maxwell-vacuum",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/classical-maxwell-vacuum.json",
+      "controls": {
+        "action_instantiated": true,
+        "dispersion_relation_verified": true,
+        "external_comparison_not_authorized": true,
+        "gauge_invariance_declared": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "source_free_field_equation_declared": true,
+        "two_physical_polarizations_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_maxwell_vacuum.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "newtonian-gravity",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/newtonian-gravity.json",
+      "controls": {
+        "action_instantiated": true,
+        "external_comparison_not_authorized": true,
+        "inverse_square_acceleration_verified": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "point_source_solution_verified": true,
+        "poisson_equation_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_newtonian_gravity.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "einstein-hilbert-vacuum",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-eight-baselines/einstein-hilbert-vacuum.json",
+      "controls": {
+        "action_instantiated": true,
+        "curvature_invariant_verified": true,
+        "external_comparison_not_authorized": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "ricci_flat_exterior_verified": true,
+        "schwarzschild_exterior_verified": true,
+        "vacuum_einstein_equation_verified": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_einstein_hilbert_vacuum.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "completed_candidate_ids": [
+    "known-physics-quantum-harmonic-oscillator",
+    "known-physics-free-real-scalar-field",
+    "known-physics-quantum-particle-in-box",
+    "quantum-hydrogen-coulomb",
+    "quantum-spin-half-pauli",
+    "classical-maxwell-vacuum",
+    "newtonian-gravity",
+    "einstein-hilbert-vacuum"
+  ],
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "failed_candidate_ids": []
+}
