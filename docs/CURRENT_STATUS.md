@@ -44,7 +44,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Pauli spin-half focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Maxwell vacuum focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Newtonian gravity focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
-| Einstein-Hilbert vacuum focused tests | 6/6 expected in the development checkout; full-suite confirmation remains a separate regression gate |
+| Einstein-Hilbert vacuum focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
