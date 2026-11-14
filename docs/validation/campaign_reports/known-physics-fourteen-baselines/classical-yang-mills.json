@@ -1,0 +1,131 @@
+{
+  "action": {
+    "bianchi_identity": "D_[mu F^a_(nu rho)] = 0",
+    "expression": "S = integral d^4x [-F^a_(mu nu)*F_a^(mu nu)/4], SU(2) Yang-Mills",
+    "field_equation": "D_mu F_a^(mu nu)=0",
+    "field_strength": "F^a_(mu nu)=partial_mu A^a_nu-partial_nu A^a_mu+g*epsilon^abc*A^b_mu*A^c_nu",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "classical-yang-mills",
+  "checks": {
+    "bianchi_identity_declared": true,
+    "gauge_covariant_equation_declared": true,
+    "nonabelian_field_strength_verified": true,
+    "normalized_commutator_verified": true,
+    "positive_inputs": true,
+    "su2_structure_constants_verified": true,
+    "three_su2_gauge_bosons_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "bianchi_identity_declared": true,
+    "external_comparison_not_authorized": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "nonabelian_field_strength_verified": true,
+    "parameter_free_observable_generated": true,
+    "su2_algebra_verified": true
+  },
+  "derivation": {
+    "bianchi_identity": "D_[mu F^a_(nu rho)] = 0",
+    "declared_ansatz": "A_1^1=A_2^2=A with all other components zero",
+    "field_equation": "D_mu F_a^(mu nu)=0",
+    "field_strength": "F^a_(mu nu)=partial_mu A^a_nu-partial_nu A^a_mu+g*epsilon^abc*A^b_mu*A^c_nu",
+    "gauge_group": "SU(2)",
+    "nonabelian_term": "F_12^3=g*A^2",
+    "structure_constants": "epsilon^abc"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "coupling",
+        "amplitude"
+      ],
+      "formula": "g*A^2",
+      "free_dependencies": [
+        "coupling",
+        "amplitude"
+      ],
+      "name": "nonabelian_commutator_scale",
+      "provenance": "DERIVED",
+      "state_label": "SU(2) homogeneous ansatz",
+      "status": "DERIVED",
+      "value": 1.0
+    },
+    {
+      "dependencies": [
+        "coupling",
+        "amplitude"
+      ],
+      "formula": "[A_1,A_2]/(g*A^2) = 1 for the declared SU(2) homogeneous ansatz",
+      "free_dependencies": [],
+      "name": "normalized_nonabelian_commutator",
+      "provenance": "DERIVED",
+      "state_label": "non-Abelian structure",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "dim su(2)=3",
+      "free_dependencies": [],
+      "name": "su2_gauge_boson_count",
+      "provenance": "DERIVED",
+      "state_label": "SU(2) gauge algebra",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 3
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "coupling",
+      "name": "g",
+      "provenance": "INPUT",
+      "unit": "dimensionless",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "amplitude",
+      "name": "A",
+      "provenance": "INPUT",
+      "unit": "field",
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "classical-yang-mills-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical Yang-Mills control; quantization is outside this baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_CLASSICAL_YANG_MILLS_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "matter_coupling": "OUT_OF_SCOPE",
+    "model_scope": "CLASSICAL_SU2_YANG_MILLS_IN_3_PLUS_1_MINKOWSKI_SPACE",
+    "quantization": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: classical gauge-field ansatz, not a quantum vacuum selection"
+  },
+  "validation": {
+    "classical_ansatz_scope": "EXPLICIT",
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 2,
+    "yang_mills_check_count": 7,
+    "yang_mills_failures": []
+  }
+}

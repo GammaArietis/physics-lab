@@ -1,0 +1,22 @@
+{
+  "activated_at": "2026-11-14T00:00:00+00:00",
+  "activation_id": "known-physics-fourteen-baselines-activation",
+  "authorization": {
+    "authorization_ref": "giovanni-vitale-known-physics-fourteen-baselines-2026-11-14",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "human_confirmation": true,
+    "ranking": "DISABLED",
+    "search_status": "NOT_ACTIVATED",
+    "selection_mode": "NO_AUTO_SELECTION",
+    "status": "AUTHORIZED"
+  },
+  "campaign_id": "known-physics-fourteen-baselines",
+  "checkpoint_path": "docs/validation/campaign_checkpoints/known-physics-fourteen-baselines.json",
+  "completed_at": "2026-11-14T17:31:08+01:00",
+  "execution_status": "COMPLETE",
+  "manifest_path": "schemas/examples/campaign_manifest_known_physics_fourteen.json",
+  "report_path": "docs/validation/campaign_reports/known-physics-fourteen-baselines/campaign_report.json",
+  "schema_version": "campaign-activation-v1"
+}

@@ -1,0 +1,164 @@
+{
+  "action": {
+    "expression": "S = integral dt sum_j a [phidot_j^2/2 - (phi_(j+1)-phi_j)^2/(2*a^2) - m^2*phi_j^2/2 - lambda*phi_j^4/24]",
+    "field_equation": "ddot(phi_j) - laplacian_lattice(phi_j) + m^2*phi_j + lambda*phi_j^3/6 = 0",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "scalar-phi4-controlled",
+  "checks": {
+    "action_to_phi4_equation_verified": true,
+    "continuum_limit_not_claimed": true,
+    "finite_periodic_lattice_verified": true,
+    "positive_lattice_spacing": true,
+    "potential_bounded_below_verified": true,
+    "quartic_force_ratio_verified": true,
+    "quartic_interaction_present": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "bounded_potential_verified": true,
+    "continuum_limit_not_claimed": true,
+    "external_comparison_not_authorized": true,
+    "finite_lattice_explicit": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "quartic_interaction_present": true
+  },
+  "derivation": {
+    "continuum_limit_claimed": false,
+    "field_equation": "ddot(phi_j) - laplacian_lattice(phi_j) + m^2*phi_j + lambda*phi_j^3/6 = 0",
+    "finite_lattice": true,
+    "parameter_free_observable": "NONE_REQUIRED: controlled interaction observable retains explicit inputs",
+    "periodic_boundary": "phi_(j+N)=phi_j",
+    "quartic_potential": "V(phi)=m^2*phi^2/2+lambda*phi^4/24"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "mass",
+        "coupling",
+        "field_amplitude"
+      ],
+      "formula": "m^2*phi^2/2+lambda*phi^4/24",
+      "free_dependencies": [
+        "mass",
+        "coupling",
+        "field_amplitude"
+      ],
+      "name": "potential_energy_density",
+      "provenance": "DERIVED",
+      "state_label": "uniform finite-lattice configuration",
+      "status": "DERIVED",
+      "value": 0.5416666666666666
+    },
+    {
+      "dependencies": [
+        "mass",
+        "coupling",
+        "field_amplitude"
+      ],
+      "formula": "(lambda*phi^3/6)/(m^2*phi) = lambda*phi^2/(6*m^2)",
+      "free_dependencies": [
+        "mass",
+        "coupling",
+        "field_amplitude"
+      ],
+      "name": "quartic_to_quadratic_force_ratio",
+      "provenance": "DERIVED",
+      "state_label": "interaction strength",
+      "status": "DERIVED",
+      "value": 0.16666666666666666
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free_dependencies": [
+        "site_count"
+      ],
+      "name": "finite_lattice_site_count",
+      "provenance": "INPUT",
+      "state_label": "declared control size",
+      "status": "INPUT",
+      "value": 8
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "mass",
+      "name": "m",
+      "provenance": "INPUT",
+      "unit": "mass",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "coupling",
+      "name": "lambda",
+      "provenance": "INPUT",
+      "unit": "dimensionless_lattice_coupling",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "field_amplitude",
+      "name": "phi_0",
+      "provenance": "INPUT",
+      "unit": "field",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "lattice_spacing",
+      "name": "a",
+      "provenance": "INPUT",
+      "unit": "length",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "site_count",
+      "name": "N",
+      "provenance": "INPUT",
+      "unit": "count",
+      "value": 8
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "scalar-phi4-controlled-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "Classical finite-lattice control; quantization and continuum renormalization are outside this baseline.",
+    "scope": "NOT_APPLICABLE"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_CONTROLLED_PHI4_REPRODUCTION",
+    "continuum_limit": "NOT_CLAIMED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "CLASSICAL_FINITE_PERIODIC_ONE_DIMENSIONAL_PHI4_LATTICE",
+    "renormalization": "NOT_CLAIMED",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: finite classical interaction control, not a quantum vacuum selection"
+  },
+  "validation": {
+    "continuum_limit": "NOT_CLAIMED",
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 0,
+    "phi4_check_count": 7,
+    "phi4_failures": []
+  }
+}

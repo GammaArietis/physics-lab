@@ -1,0 +1,324 @@
+{
+  "action": {
+    "expression": "S = integral dt [m*xdot^2/2], 0 < x < L, Dirichlet psi(0)=psi(L)=0",
+    "formulation": "LAGRANGIAN",
+    "hamiltonian": "H = p^2/(2*m) = -hbar^2/(2*m)*d^2/dx^2 on (0,L)",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "known-physics-quantum-particle-in-box",
+  "checks": {
+    "action_to_hamiltonian_verified": true,
+    "dirichlet_boundary_conditions_declared": true,
+    "ground_state_is_global_minimum": true,
+    "n_squared_spectrum_verified": true,
+    "parameter_free_gap_ratio_verified": true,
+    "positive_inputs": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "canonical_quantization_in_scope": true,
+    "dirichlet_boundary_conditions_explicit": true,
+    "external_comparison_not_authorized": true,
+    "field_quantization_not_claimed": true,
+    "ground_state_selected_by_spectrum_minimum": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true
+  },
+  "derivation": {
+    "boundary_conditions": [
+      "psi(0)=0",
+      "psi(L)=0"
+    ],
+    "canonical_momentum": "p = m*xdot",
+    "display_window_is_not_a_search_bound": true,
+    "euler_lagrange_equation": "m*xddot = 0 inside 0 < x < L",
+    "gap_ratio": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+    "n_max": 4,
+    "quantization": "[x,p] = i*hbar on the Dirichlet domain",
+    "spectrum": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "n",
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+      "free_dependencies": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "name": "energy_level[1]",
+      "provenance": "DERIVED",
+      "state_label": "1",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 4.934802200544679
+    },
+    {
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+      "free_dependencies": [],
+      "name": "gap_ratio[1]",
+      "provenance": "DERIVED",
+      "state_label": "1",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 0.0
+    },
+    {
+      "dependencies": [
+        "n",
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+      "free_dependencies": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "name": "energy_level[2]",
+      "provenance": "DERIVED",
+      "state_label": "2",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 19.739208802178716
+    },
+    {
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+      "free_dependencies": [],
+      "name": "gap_ratio[2]",
+      "provenance": "DERIVED",
+      "state_label": "2",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [
+        "n",
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+      "free_dependencies": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "name": "energy_level[3]",
+      "provenance": "DERIVED",
+      "state_label": "3",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 44.41321980490211
+    },
+    {
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+      "free_dependencies": [],
+      "name": "gap_ratio[3]",
+      "provenance": "DERIVED",
+      "state_label": "3",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 2.6666666666666665
+    },
+    {
+      "dependencies": [
+        "n",
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+      "free_dependencies": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "name": "energy_level[4]",
+      "provenance": "DERIVED",
+      "state_label": "4",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 78.95683520871486
+    },
+    {
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+      "free_dependencies": [],
+      "name": "gap_ratio[4]",
+      "provenance": "DERIVED",
+      "state_label": "4",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 5.0
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "m",
+      "parameter_id": "mass",
+      "provenance": "INPUT",
+      "unit": "mass",
+      "used_by": [
+        "energy-spectrum",
+        "dimensionless-gap-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "L",
+      "parameter_id": "length",
+      "provenance": "INPUT",
+      "unit": "length",
+      "used_by": [
+        "energy-spectrum",
+        "dimensionless-gap-ratio"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "hbar",
+      "parameter_id": "hbar",
+      "provenance": "INPUT",
+      "unit": "action",
+      "used_by": [
+        "energy-spectrum",
+        "dimensionless-gap-ratio"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "particle-in-box-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "canonical quantization on the Dirichlet domain",
+    "scope": "QUANTUM_MECHANICS"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "spectrum": [
+    {
+      "eigenvalue": {
+        "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+        "free_dependencies": [
+          "mass",
+          "length",
+          "hbar"
+        ],
+        "name": "energy_level[1]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": 4.934802200544679
+      },
+      "label": "1",
+      "quantum_numbers": {
+        "ground_state": true,
+        "n": 1
+      }
+    },
+    {
+      "eigenvalue": {
+        "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+        "free_dependencies": [
+          "mass",
+          "length",
+          "hbar"
+        ],
+        "name": "energy_level[2]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": 19.739208802178716
+      },
+      "label": "2",
+      "quantum_numbers": {
+        "ground_state": false,
+        "n": 2
+      }
+    },
+    {
+      "eigenvalue": {
+        "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+        "free_dependencies": [
+          "mass",
+          "length",
+          "hbar"
+        ],
+        "name": "energy_level[3]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": 44.41321980490211
+      },
+      "label": "3",
+      "quantum_numbers": {
+        "ground_state": false,
+        "n": 3
+      }
+    },
+    {
+      "eigenvalue": {
+        "formula": "E_n = pi^2*hbar^2*n^2/(2*m*L^2), n in N_+",
+        "free_dependencies": [
+          "mass",
+          "length",
+          "hbar"
+        ],
+        "name": "energy_level[4]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": 78.95683520871486
+      },
+      "label": "4",
+      "quantum_numbers": {
+        "ground_state": false,
+        "n": 4
+      }
+    }
+  ],
+  "vacuum": {
+    "selected_state": "n=1",
+    "selection_principle": "global minimum of the exact Dirichlet Hamiltonian spectrum"
+  },
+  "validation": {
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 4,
+    "particle_in_box_check_count": 6,
+    "particle_in_box_failures": []
+  }
+}

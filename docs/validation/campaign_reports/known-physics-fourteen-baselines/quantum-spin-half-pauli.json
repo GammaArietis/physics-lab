@@ -1,0 +1,220 @@
+{
+  "action": {
+    "expression": "H = (hbar*omega/2)*sigma_z",
+    "formulation": "HAMILTONIAN",
+    "hamiltonian": "H = (hbar*omega/2)*sigma_z",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "quantum-spin-half-pauli",
+  "checks": {
+    "ground_state_is_global_minimum": true,
+    "hamiltonian_spectrum_verified": true,
+    "parameter_free_normalized_spectrum_verified": true,
+    "parameter_free_splitting_verified": true,
+    "pauli_commutator_verified": true,
+    "pauli_square_identity_verified": true,
+    "positive_inputs": true,
+    "spin_projection_lattice_verified": true,
+    "zero_commutator_with_hamiltonian_axis": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "external_comparison_not_authorized": true,
+    "ground_state_selected_by_spectrum_minimum": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "pauli_algebra_verified": true,
+    "spin_half_spectrum_verified": true
+  },
+  "derivation": {
+    "eigenstates": [
+      "spin_down_z",
+      "spin_up_z"
+    ],
+    "hamiltonian": "H = (hbar*omega/2)*sigma_z",
+    "hilbert_space": "C^2",
+    "pauli_algebra": "sigma_i sigma_j = delta_ij I + i epsilon_ijk sigma_k",
+    "pauli_matrices": [
+      "sigma_x",
+      "sigma_y",
+      "sigma_z"
+    ],
+    "spectrum": "E_s = s*hbar*omega/2, s in {-1,+1}",
+    "splitting": "(E_+ - E_-)/(hbar*omega) = 1"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "spin_projection",
+        "omega",
+        "hbar"
+      ],
+      "formula": "E_s = s*hbar*omega/2, s in {-1,+1}",
+      "free_dependencies": [
+        "omega",
+        "hbar"
+      ],
+      "name": "spin_energy[-1]",
+      "provenance": "DERIVED",
+      "state_label": "spin_down_z",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": -0.5
+    },
+    {
+      "dependencies": [
+        "spin_projection"
+      ],
+      "formula": "E_s/(hbar*omega/2) = s",
+      "free_dependencies": [],
+      "name": "normalized_spin_energy[-1]",
+      "provenance": "DERIVED",
+      "state_label": "spin_down_z",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": -1.0
+    },
+    {
+      "dependencies": [
+        "spin_projection",
+        "omega",
+        "hbar"
+      ],
+      "formula": "E_s = s*hbar*omega/2, s in {-1,+1}",
+      "free_dependencies": [
+        "omega",
+        "hbar"
+      ],
+      "name": "spin_energy[+1]",
+      "provenance": "DERIVED",
+      "state_label": "spin_up_z",
+      "status": "DERIVED",
+      "symbolic": null,
+      "value": 0.5
+    },
+    {
+      "dependencies": [
+        "spin_projection"
+      ],
+      "formula": "E_s/(hbar*omega/2) = s",
+      "free_dependencies": [],
+      "name": "normalized_spin_energy[+1]",
+      "provenance": "DERIVED",
+      "state_label": "spin_up_z",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "(E_+ - E_-)/(hbar*omega) = 1",
+      "free_dependencies": [],
+      "name": "dimensionless_spin_splitting",
+      "provenance": "DERIVED",
+      "state_label": "spin_up_z - spin_down_z",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": null,
+      "value": 1.0
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "omega",
+      "parameter_id": "omega",
+      "provenance": "INPUT",
+      "unit": "inverse_time",
+      "used_by": [
+        "spin-energy-spectrum",
+        "dimensionless-spin-splitting"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "hbar",
+      "parameter_id": "hbar",
+      "provenance": "INPUT",
+      "unit": "action",
+      "used_by": [
+        "spin-energy-spectrum",
+        "dimensionless-spin-splitting"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "pauli-spin-half-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "two-dimensional spin Hilbert space with Pauli matrix algebra",
+    "scope": "QUANTUM_MECHANICS"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "SPIN_ONLY_PAULI_HAMILTONIAN_IN_A_FIXED_Z_FIELD_AXIS",
+    "orbital_motion": "OUT_OF_SCOPE",
+    "relativistic_corrections": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED",
+    "spin_orbit_coupling": "OUT_OF_SCOPE"
+  },
+  "spectrum": [
+    {
+      "eigenvalue": {
+        "formula": "E_s = s*hbar*omega/2, s in {-1,+1}",
+        "free_dependencies": [
+          "omega",
+          "hbar"
+        ],
+        "name": "spin_energy[-1]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": -0.5
+      },
+      "label": "spin_down_z",
+      "quantum_numbers": {
+        "ground_state": true,
+        "spin_projection": -1
+      }
+    },
+    {
+      "eigenvalue": {
+        "formula": "E_s = s*hbar*omega/2, s in {-1,+1}",
+        "free_dependencies": [
+          "omega",
+          "hbar"
+        ],
+        "name": "spin_energy[+1]",
+        "provenance": "DERIVED",
+        "status": "DERIVED",
+        "value": 0.5
+      },
+      "label": "spin_up_z",
+      "quantum_numbers": {
+        "ground_state": false,
+        "spin_projection": 1
+      }
+    }
+  ],
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: a finite spin ground state is not a field-theory vacuum"
+  },
+  "validation": {
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 3,
+    "pauli_check_count": 9,
+    "pauli_failures": []
+  }
+}

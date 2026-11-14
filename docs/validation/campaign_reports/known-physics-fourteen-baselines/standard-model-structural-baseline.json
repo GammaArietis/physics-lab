@@ -1,0 +1,155 @@
+{
+  "action": {
+    "expression": "S = integral d^4x [L_gauge + L_fermion + L_Higgs + L_Yukawa]",
+    "formulation": "LAGRANGIAN",
+    "gauge_group": "SU(3)_C x SU(2)_L x U(1)_Y",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "standard-model-structural-baseline",
+  "checks": {
+    "chiral_matter_content_verified": true,
+    "gauge_boson_count_verified": true,
+    "gauge_group_verified": true,
+    "higgs_doublet_content_verified": true,
+    "perturbative_anomalies_cancelled": true,
+    "structural_scope_only": true,
+    "su2_witten_anomaly_absent": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "external_comparison_not_authorized": true,
+    "gauge_group_verified": true,
+    "known_physics_scope_explicit": true,
+    "matter_content_verified": true,
+    "no_experimental_parameters": true,
+    "no_parameter_fitting": true,
+    "parameter_free_observable_generated": true,
+    "perturbative_anomalies_cancelled": true,
+    "witten_anomaly_absent": true
+  },
+  "derivation": {
+    "anomaly_coefficients": {
+      "SU(2)^2U(1)": "0",
+      "SU(3)^2U(1)": "0",
+      "SU(3)^3": "0",
+      "U(1)^3": "0",
+      "gravity^2U(1)": "0"
+    },
+    "gauge_bosons": "8 gluons + 3 weak bosons + 1 hypercharge boson",
+    "gauge_group": "SU(3)_C x SU(2)_L x U(1)_Y",
+    "global_anomaly_scope": "SU(2) Witten anomaly",
+    "higgs_content": "one complex SU(2) doublet",
+    "matter_content": "Q_L,u^c,d^c,L_L,e^c per generation",
+    "perturbative_anomaly_scope": [
+      "SU(3)^3",
+      "SU(3)^2U(1)",
+      "SU(2)^2U(1)",
+      "U(1)^3",
+      "gravity^2U(1)"
+    ]
+  },
+  "observables": [
+    {
+      "dependencies": [],
+      "formula": "SU(3)xSU(2)xU(1)",
+      "free_dependencies": [],
+      "name": "gauge_factor_count",
+      "provenance": "DERIVED",
+      "state_label": "gauge group structure",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 3
+    },
+    {
+      "dependencies": [],
+      "formula": "dim su(3)+dim su(2)+dim u(1)=8+3+1",
+      "free_dependencies": [],
+      "name": "gauge_boson_count",
+      "provenance": "DERIVED",
+      "state_label": "gauge sector",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 12
+    },
+    {
+      "dependencies": [
+        "generations"
+      ],
+      "formula": "15 Weyl multiplets per generation",
+      "free_dependencies": [],
+      "name": "chiral_multiplet_count",
+      "provenance": "DERIVED",
+      "state_label": "minimal chiral matter content",
+      "status": "DERIVED",
+      "value": 45
+    },
+    {
+      "dependencies": [],
+      "formula": "one complex Higgs doublet",
+      "free_dependencies": [],
+      "name": "higgs_doublet_count",
+      "provenance": "DERIVED",
+      "state_label": "Higgs sector",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 1
+    },
+    {
+      "dependencies": [],
+      "formula": "all declared perturbative and Witten anomaly checks vanish",
+      "free_dependencies": [],
+      "name": "anomaly_cancellation_indicator",
+      "provenance": "DERIVED",
+      "state_label": "gauge consistency",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 1
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": false,
+      "id": "generations",
+      "name": "N_gen",
+      "provenance": "ASSUMED",
+      "unit": "count",
+      "value": 3
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "standard-model-structural-v1",
+  "quantization": {
+    "field_quantization": "PARTIAL",
+    "method": "structural gauge-field and chiral-matter inventory only",
+    "scope": "QUANTUM_FIELD"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_STANDARD_MODEL_STRUCTURAL_REPRODUCTION",
+    "dynamics": "STRUCTURAL_ONLY",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "MINIMAL_STANDARD_MODEL_GAUGE_AND_MATTER_CONTENT",
+    "parameter_fitting": "OUT_OF_SCOPE",
+    "search_status": "NOT_ACTIVATED",
+    "symmetry_breaking_dynamics": "OUT_OF_SCOPE"
+  },
+  "vacuum": {
+    "selected_state": null,
+    "selection_principle": "NOT_APPLICABLE: structural Standard Model record, no Higgs vacuum solution claimed"
+  },
+  "validation": {
+    "anomaly_coefficients": {
+      "SU(2)^2U(1)": "0",
+      "SU(3)^2U(1)": "0",
+      "SU(3)^3": "0",
+      "U(1)^3": "0",
+      "gravity^2U(1)": "0"
+    },
+    "dynamics_claim": "NOT_CLAIMED",
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 5,
+    "standard_model_check_count": 7,
+    "standard_model_failures": []
+  }
+}

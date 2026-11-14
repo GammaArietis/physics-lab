@@ -1,0 +1,126 @@
+{
+  "action": {
+    "bianchi_identity": "partial_[mu F_(nu rho)] = 0",
+    "expression": "S = integral d^4x [-F_(mu nu)*F^(mu nu)/4], quantized U(1) vacuum",
+    "field_equation": "partial_mu F^(mu nu) = 0",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "quantized-maxwell-u1",
+  "checks": {
+    "bianchi_identity_declared": true,
+    "canonical_quantization_declared": true,
+    "dispersion_relation_verified": true,
+    "fock_vacuum_verified": true,
+    "gauge_invariance_declared": true,
+    "parameter_free_dispersion_ratio_verified": true,
+    "positive_input": true,
+    "source_free_field_equation_declared": true,
+    "two_physical_polarizations_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "canonical_field_quantization_in_scope": true,
+    "dispersion_relation_verified": true,
+    "external_comparison_not_authorized": true,
+    "fock_vacuum_selected": true,
+    "gauge_invariance_declared": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "two_physical_polarizations_verified": true
+  },
+  "derivation": {
+    "bianchi_identity": "partial_[mu F_(nu rho)] = 0",
+    "dispersion": "omega_k = |k| in units c=1",
+    "field_equation": "partial_mu F^(mu nu) = 0",
+    "field_strength": "F_(mu nu)=partial_mu A_nu-partial_nu A_mu",
+    "fock_hamiltonian": "H_normal_ordered = sum_{k,lambda} hbar*omega_k*N_{k,lambda}",
+    "gauge_transformation": "A_mu -> A_mu + partial_mu Lambda",
+    "physical_polarizations": [
+      "transverse_x",
+      "transverse_y"
+    ],
+    "quantization_gauge": "Coulomb gauge with transverse canonical modes"
+  },
+  "observables": [
+    {
+      "dependencies": [
+        "wave_number"
+      ],
+      "formula": "omega_k = |k| in units c=1",
+      "free_dependencies": [
+        "wave_number"
+      ],
+      "name": "photon_angular_frequency",
+      "provenance": "DERIVED",
+      "state_label": "one-photon transverse mode",
+      "status": "DERIVED",
+      "value": 1.0
+    },
+    {
+      "dependencies": [
+        "wave_number"
+      ],
+      "formula": "omega_k/|k| = 1",
+      "free_dependencies": [],
+      "name": "photon_dispersion_ratio",
+      "provenance": "DERIVED",
+      "state_label": "one-photon mode",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": "two transverse photon polarizations after gauge reduction",
+      "free_dependencies": [],
+      "name": "physical_polarization_count",
+      "provenance": "DERIVED",
+      "state_label": "photon",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "value": 2
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "free": true,
+      "id": "wave_number",
+      "name": "|k|",
+      "provenance": "INPUT",
+      "unit": "inverse_length",
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "quantized-maxwell-u1-v1",
+  "quantization": {
+    "field_quantization": "VERIFIED",
+    "method": "canonical Coulomb-gauge quantization of transverse U(1) modes",
+    "scope": "QUANTUM_FIELD"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "charges_and_currents": "OUT_OF_SCOPE",
+    "claim_scope": "KNOWN_PHYSICS_QUANTIZED_MAXWELL_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "interactions": "OUT_OF_SCOPE",
+    "matter_coupling": "OUT_OF_SCOPE",
+    "model_scope": "QUANTIZED_FREE_U1_MAXWELL_FIELD_IN_3_PLUS_1_MINKOWSKI_SPACE",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selected_state": "photon Fock vacuum",
+    "selection_principle": "all transverse photon annihilation operators annihilate the vacuum; normal-ordered free Hamiltonian"
+  },
+  "validation": {
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 2,
+    "quantized_maxwell_check_count": 9,
+    "quantized_maxwell_failures": []
+  }
+}

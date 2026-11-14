@@ -1,0 +1,557 @@
+{
+  "action": {
+    "expression": "S = integral dt [m*xdot^2/2 - m*omega^2*x^2/2]",
+    "formulation": "LAGRANGIAN",
+    "hamiltonian": "H = p^2/(2*m) + m*omega^2*x^2/2",
+    "instantiated": true,
+    "provenance": "KNOWN_PHYSICS_REFERENCE"
+  },
+  "candidate_id": "known-physics-quantum-harmonic-oscillator",
+  "checks": {
+    "canonical_commutator_declared": true,
+    "equal_spacing_verified": true,
+    "euler_lagrange_equation_verified": true,
+    "legendre_transform_verified": true,
+    "parameter_free_gap_ratio_verified": true,
+    "positive_excitation_gaps": true,
+    "spectrum_formula_verified": true,
+    "vacuum_is_global_ground_state_within_exact_spectrum": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "canonical_quantization_in_scope": true,
+    "external_comparison_not_authorized": true,
+    "field_quantization_not_claimed": true,
+    "known_physics_scope_explicit": true,
+    "no_experimental_parameters": true,
+    "parameter_free_observable_generated": true,
+    "vacuum_selected_by_spectrum_minimum": true
+  },
+  "derivation": {
+    "canonical_momentum": "p = m*xdot",
+    "display_window_is_not_a_search_bound": true,
+    "euler_lagrange_equation": "m*(xddot + omega^2*x) = 0",
+    "gap_ratio": "(E_n - E_0)/(E_1 - E_0) = n",
+    "n_max": 4,
+    "quantization": "[x,p] = i*hbar",
+    "spectrum": "E_n = hbar*omega*(n + 1/2), n in N_0"
+  },
+  "observables": [
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "hbar*omega*(n + 1/2)",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy[0]",
+      "notes": [
+        "Exact canonical quantum harmonic oscillator spectrum."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "0",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "hbar*omega/2",
+      "value": 0.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "hbar*omega*(n + 1/2)",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy[1]",
+      "notes": [
+        "Exact canonical quantum harmonic oscillator spectrum."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "3*hbar*omega/2",
+      "value": 1.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "hbar*omega*(n + 1/2)",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy[2]",
+      "notes": [
+        "Exact canonical quantum harmonic oscillator spectrum."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "5*hbar*omega/2",
+      "value": 2.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "hbar*omega*(n + 1/2)",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy[3]",
+      "notes": [
+        "Exact canonical quantum harmonic oscillator spectrum."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "3",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "7*hbar*omega/2",
+      "value": 3.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "hbar*omega*(n + 1/2)",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy[4]",
+      "notes": [
+        "Exact canonical quantum harmonic oscillator spectrum."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "4",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "9*hbar*omega/2",
+      "value": 4.5
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "n*hbar*omega",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy_gap[0]",
+      "notes": [
+        "Derived by subtracting the selected ground-state energy."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "0",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "0",
+      "value": 0.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "n*hbar*omega",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy_gap[1]",
+      "notes": [
+        "Derived by subtracting the selected ground-state energy."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "1",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "hbar*omega",
+      "value": 1.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "n*hbar*omega",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy_gap[2]",
+      "notes": [
+        "Derived by subtracting the selected ground-state energy."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "2",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "2*hbar*omega",
+      "value": 2.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "n*hbar*omega",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy_gap[3]",
+      "notes": [
+        "Derived by subtracting the selected ground-state energy."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "3",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "3*hbar*omega",
+      "value": 3.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n",
+        "hbar",
+        "omega"
+      ],
+      "formula": "n*hbar*omega",
+      "free_dependencies": [
+        "hbar",
+        "omega"
+      ],
+      "name": "energy_gap[4]",
+      "notes": [
+        "Derived by subtracting the selected ground-state energy."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "4",
+      "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+      "symbolic": "4*hbar*omega",
+      "value": 4.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_0)/(E_1 - E_0) = n",
+      "free_dependencies": [],
+      "name": "gap_ratio[0]",
+      "notes": [
+        "hbar and omega cancel; this is the first parameter-free baseline observable."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "0",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": "0",
+      "value": 0.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_0)/(E_1 - E_0) = n",
+      "free_dependencies": [],
+      "name": "gap_ratio[1]",
+      "notes": [
+        "hbar and omega cancel; this is the first parameter-free baseline observable."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "1",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": "1",
+      "value": 1.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_0)/(E_1 - E_0) = n",
+      "free_dependencies": [],
+      "name": "gap_ratio[2]",
+      "notes": [
+        "hbar and omega cancel; this is the first parameter-free baseline observable."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "2",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": "2",
+      "value": 2.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_0)/(E_1 - E_0) = n",
+      "free_dependencies": [],
+      "name": "gap_ratio[3]",
+      "notes": [
+        "hbar and omega cancel; this is the first parameter-free baseline observable."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "3",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": "3",
+      "value": 3.0
+    },
+    {
+      "assumption": null,
+      "dependencies": [
+        "n"
+      ],
+      "formula": "(E_n - E_0)/(E_1 - E_0) = n",
+      "free_dependencies": [],
+      "name": "gap_ratio[4]",
+      "notes": [
+        "hbar and omega cancel; this is the first parameter-free baseline observable."
+      ],
+      "provenance": "DERIVED",
+      "state_label": "4",
+      "status": "PREDICTION (DERIVED, no free parameters)",
+      "symbolic": "4",
+      "value": 4.0
+    }
+  ],
+  "parameters": [
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "m",
+      "provenance": "INPUT",
+      "unit": "mass",
+      "used_by": [],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "omega",
+      "provenance": "INPUT",
+      "unit": "angular_frequency",
+      "used_by": [
+        "energy_levels",
+        "energy_gaps"
+      ],
+      "value": 1.0
+    },
+    {
+      "dependencies": [],
+      "formula": null,
+      "free": true,
+      "name": "hbar",
+      "provenance": "INPUT",
+      "unit": "action",
+      "used_by": [
+        "energy_levels",
+        "energy_gaps"
+      ],
+      "value": 1.0
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "quantum-harmonic-oscillator-v1",
+  "quantization": {
+    "field_quantization": "NOT_APPLICABLE",
+    "method": "canonical commutator and ladder-operator spectrum",
+    "scope": "QUANTUM_MECHANICS"
+  },
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "candidate_selected": false,
+    "claim_scope": "KNOWN_PHYSICS_REPRODUCTION",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "spectrum": [
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "omega"
+        ],
+        "formula": "hbar*omega*(n + 1/2)",
+        "free_dependencies": [
+          "hbar",
+          "omega"
+        ],
+        "name": "energy[0]",
+        "notes": [
+          "Exact canonical quantum harmonic oscillator spectrum."
+        ],
+        "provenance": "DERIVED",
+        "state_label": "0",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+        "symbolic": "hbar*omega/2",
+        "value": 0.5
+      },
+      "label": "0",
+      "quantum_numbers": {
+        "n": 0,
+        "vacuum": true
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "omega"
+        ],
+        "formula": "hbar*omega*(n + 1/2)",
+        "free_dependencies": [
+          "hbar",
+          "omega"
+        ],
+        "name": "energy[1]",
+        "notes": [
+          "Exact canonical quantum harmonic oscillator spectrum."
+        ],
+        "provenance": "DERIVED",
+        "state_label": "1",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+        "symbolic": "3*hbar*omega/2",
+        "value": 1.5
+      },
+      "label": "1",
+      "quantum_numbers": {
+        "n": 1,
+        "vacuum": false
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "omega"
+        ],
+        "formula": "hbar*omega*(n + 1/2)",
+        "free_dependencies": [
+          "hbar",
+          "omega"
+        ],
+        "name": "energy[2]",
+        "notes": [
+          "Exact canonical quantum harmonic oscillator spectrum."
+        ],
+        "provenance": "DERIVED",
+        "state_label": "2",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+        "symbolic": "5*hbar*omega/2",
+        "value": 2.5
+      },
+      "label": "2",
+      "quantum_numbers": {
+        "n": 2,
+        "vacuum": false
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "omega"
+        ],
+        "formula": "hbar*omega*(n + 1/2)",
+        "free_dependencies": [
+          "hbar",
+          "omega"
+        ],
+        "name": "energy[3]",
+        "notes": [
+          "Exact canonical quantum harmonic oscillator spectrum."
+        ],
+        "provenance": "DERIVED",
+        "state_label": "3",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+        "symbolic": "7*hbar*omega/2",
+        "value": 3.5
+      },
+      "label": "3",
+      "quantum_numbers": {
+        "n": 3,
+        "vacuum": false
+      }
+    },
+    {
+      "eigenvalue": {
+        "assumption": null,
+        "dependencies": [
+          "n",
+          "hbar",
+          "omega"
+        ],
+        "formula": "hbar*omega*(n + 1/2)",
+        "free_dependencies": [
+          "hbar",
+          "omega"
+        ],
+        "name": "energy[4]",
+        "notes": [
+          "Exact canonical quantum harmonic oscillator spectrum."
+        ],
+        "provenance": "DERIVED",
+        "state_label": "4",
+        "status": "DERIVED FORM, FREE PARAMETERS: hbar, omega",
+        "symbolic": "9*hbar*omega/2",
+        "value": 4.5
+      },
+      "label": "4",
+      "quantum_numbers": {
+        "n": 4,
+        "vacuum": false
+      }
+    }
+  ],
+  "vacuum": {
+    "selected_state": "n=0",
+    "selection_principle": "global minimum of H"
+  },
+  "validation": {
+    "harmonic_oscillator_check_count": 8,
+    "harmonic_oscillator_failures": [],
+    "legacy_validator": "NOT_APPLICABLE_MODEL_SPECIFIC_BASELINE",
+    "parameter_free_observable_count": 5
+  }
+}
