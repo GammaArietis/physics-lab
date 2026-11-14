@@ -1,0 +1,360 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "quantum-hydrogen-coulomb",
+  "title": "Known-physics non-relativistic hydrogen Coulomb baseline",
+  "summary": "A spinless non-relativistic particle in three-dimensional space bound by a fixed attractive Coulomb potential. The exact principal-level spectrum, (n,l,m) quantum numbers, n-squared degeneracy and parameter-free energy ratio are executable without external data, spin, fine structure or Lamb-shift corrections.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "hydrogen-coulomb-v1",
+    "decision_ref": "known-physics-hydrogen-coulomb-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "particle-position",
+      "role": "MATTER",
+      "representation": "three-dimensional position vector r",
+      "domain_ref": "R^3",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["hydrogen-known-physics-scope", "hydrogen-action-code"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 3,
+      "signature": "time + three-dimensional Euclidean space",
+      "manifold": "R_t x R^3",
+      "boundary_conditions": [],
+      "provenance": "ASSUMED",
+      "source_refs": ["hydrogen-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral dt [m*|rdot|^2/2 + g/r], r > 0, fixed central source",
+    "terms": [
+      {
+        "id": "kinetic",
+        "role": "KINETIC",
+        "expression": "m*|rdot|^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": ["mass"],
+        "source_refs": ["hydrogen-action-code"]
+      },
+      {
+        "id": "coulomb-potential",
+        "role": "POTENTIAL",
+        "expression": "+g/r in the Lagrangian, giving V(r)=-g/r",
+        "provenance": "ASSUMED",
+        "depends_on": ["coupling"],
+        "source_refs": ["hydrogen-known-physics-scope"]
+      }
+    ],
+    "symmetry_refs": ["time-translation", "rotational-symmetry"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["hydrogen-known-physics-scope", "hydrogen-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "canonical-momentum",
+      "kind": "CONSISTENCY",
+      "statement": "p = m*rdot",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["mass"],
+      "source_refs": ["hydrogen-pipeline-code"]
+    },
+    {
+      "id": "positive-parameters",
+      "kind": "REGULARITY",
+      "statement": "m > 0, g > 0, hbar > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["mass", "coupling", "hbar"],
+      "source_refs": ["hydrogen-known-physics-scope"]
+    },
+    {
+      "id": "fixed-central-source",
+      "kind": "PRIMARY",
+      "statement": "The Coulomb source is fixed at the origin; recoil and reduced-mass corrections are outside scope.",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["coupling"],
+      "source_refs": ["hydrogen-known-physics-scope"]
+    },
+    {
+      "id": "spherical-quantum-numbers",
+      "kind": "CONSISTENCY",
+      "statement": "n=1,2,...; l=0,...,n-1; m=-l,...,l",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["hbar"],
+      "source_refs": ["hydrogen-pipeline-code"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "mass",
+      "symbol": "m",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "mass",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["hydrogen-known-physics-scope"]
+    },
+    {
+      "id": "coupling",
+      "symbol": "g",
+      "role": "COUPLING",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "energy*length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["hydrogen-known-physics-scope"]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["hydrogen-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "CONVENTION",
+    "source_refs": ["hydrogen-known-physics-scope"]
+  },
+  "quantum": {
+    "status": "VERIFIED",
+    "method": "Schrodinger quantization of the fixed-center Coulomb Hamiltonian in R^3",
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "VERIFIED",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "DERIVED",
+    "source_refs": ["hydrogen-pipeline-code"]
+  },
+  "quantization": {
+    "status": "DISCRETE_SPECTRUM_DERIVED",
+    "mechanism": "p -> -i*hbar*gradient, spherical separation of the Coulomb Schrodinger equation and regular bound-state radial solutions",
+    "scope": "SPECTRAL_PROBLEM",
+    "integer_lattice_derived": true,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "DERIVED",
+    "source_refs": ["hydrogen-pipeline-code"]
+  },
+  "observables": [
+    {
+      "id": "hydrogen-energy-spectrum",
+      "name": "principal energy spectrum",
+      "expression": "E_n = -m*g^2/(2*hbar^2*n^2)",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["principal-quantum-number", "mass", "coupling", "hbar"],
+      "free_parameters": ["mass", "coupling", "hbar"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["hydrogen-pipeline-code"]
+    },
+    {
+      "id": "hydrogen-energy-ratio",
+      "name": "parameter-free principal energy ratio",
+      "expression": "E_n/E_1 = 1/n^2",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["principal-quantum-number"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["hydrogen-pipeline-code"]
+    },
+    {
+      "id": "hydrogen-level-degeneracy",
+      "name": "principal-level degeneracy",
+      "expression": "d_n = sum_(l=0)^(n-1)(2*l+1) = n^2",
+      "dimension": "count",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["principal-quantum-number"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["hydrogen-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "hydrogen-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the known-physics hydrogen baseline",
+        "immutable": true,
+        "notes": "Spin, fine structure, Lamb shift, recoil and external data are outside this controlled baseline."
+      },
+      {
+        "source_id": "hydrogen-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/hydrogen_coulomb_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "Coulomb action, Hamiltonian and exact spectral model",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "hydrogen-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/hydrogen_coulomb_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, derivation runner and closure checks",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "hydrogen-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_hydrogen_coulomb_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-coulomb-eom",
+        "operation": "Euler-Lagrange variation of the kinetic plus attractive central Coulomb action",
+        "inputs": ["kinetic", "coulomb-potential"],
+        "outputs": ["coulomb-equation-of-motion"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/hydrogen_coulomb_model.py",
+        "source_refs": ["hydrogen-action-code", "hydrogen-pipeline-code"]
+      },
+      {
+        "id": "derive-coulomb-hamiltonian",
+        "operation": "Legendre transform p=m*rdot -> H=p^2/(2*m)-g/r",
+        "inputs": ["coulomb-equation-of-motion", "canonical-momentum"],
+        "outputs": ["coulomb-hamiltonian"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/hydrogen_coulomb_model.py",
+        "source_refs": ["hydrogen-action-code", "hydrogen-pipeline-code"]
+      },
+      {
+        "id": "derive-hydrogen-spectrum",
+        "operation": "Spherical Coulomb Schrodinger problem -> E_n proportional to -1/n^2 with l,m degeneracy",
+        "inputs": ["coulomb-hamiltonian", "spherical-quantum-numbers"],
+        "outputs": ["hydrogen-energy-spectrum", "hydrogen-level-degeneracy"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/hydrogen_coulomb_model.py",
+        "source_refs": ["hydrogen-known-physics-scope", "hydrogen-action-code", "hydrogen-pipeline-code"]
+      },
+      {
+        "id": "derive-hydrogen-energy-ratio",
+        "operation": "E_n/E_1 -> 1/n^2 after canceling mass, coupling and hbar",
+        "inputs": ["hydrogen-energy-spectrum"],
+        "outputs": ["hydrogen-energy-ratio"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/hydrogen_coulomb_model.py",
+        "source_refs": ["hydrogen-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "hydrogen-known-physics-scope",
+        "statement": "Use the spinless non-relativistic fixed-center Coulomb problem as the hydrogen baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It adds a central potential, angular quantum numbers and exact degeneracy while keeping the pipeline analytically closed.",
+        "source_refs": ["hydrogen-known-physics-scope"]
+      },
+      {
+        "id": "hydrogen-fine-structure-exclusion",
+        "statement": "Spin, fine structure, Lamb shift and recoil are separate future baselines and do not modify this candidate.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The first Coulomb runner must isolate the exact non-relativistic principal spectrum.",
+        "source_refs": ["hydrogen-known-physics-scope"]
+      },
+      {
+        "id": "hydrogen-display-window",
+        "statement": "The displayed n range is a report window after deriving the analytic spectrum; it is not a search bound.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The Coulomb spectrum is defined for all positive integer n before the finite report window.",
+        "source_refs": ["hydrogen-pipeline-code"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_hydrogen_coulomb_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "hydrogen-comparison-dataset",
+      "question": "Which immutable target-blind hydrogen transition dataset will be registered for a separate empirical comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["hydrogen-energy-spectrum", "hydrogen-energy-ratio"]
+    },
+    {
+      "id": "hydrogen-spin-extension",
+      "question": "Should spin-half, fine structure and Lamb-shift corrections be registered as separate candidates rather than changing this baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["hydrogen-energy-spectrum"]
+    }
+  ]
+}

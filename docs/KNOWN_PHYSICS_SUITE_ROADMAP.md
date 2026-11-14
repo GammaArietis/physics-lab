@@ -22,6 +22,12 @@ explicit record of what remains outside each baseline.
 - Free real scalar field: Klein–Gordon action, canonical field
   quantization, Fock vacuum, periodic mode spectrum and parameter-free
   squared-frequency ratio in the declared 1+1-dimensional scope.
+- Particle in a one-dimensional box: Dirichlet domain, exact n-squared
+  spectrum and parameter-free gap ratio.
+- Non-relativistic hydrogen Coulomb baseline: fixed-center central potential,
+  exact principal spectrum, explicit `(n,l,m)` states, n-squared degeneracy
+  and parameter-free energy ratio. Spin, fine structure and Lamb shift remain
+  separate scopes.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -71,11 +77,11 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The K1 particle-in-a-box baseline is now implemented and validated on the Mac.
-The next controlled step is the three-candidate real campaign combining the
-oscillator, free scalar field and particle in a box. Only after that campaign
-has been reviewed will the suite advance to K2 targets such as the hydrogen
-and spin-1/2 baselines.
+The K1 particle-in-a-box baseline and the first K2 Coulomb baseline are now
+implemented and validated internally. The next controlled step is the
+four-candidate real campaign combining the oscillator, free scalar field,
+particle in a box and hydrogen Coulomb runner. Only after that campaign has
+been reviewed will the suite advance to the spin-1/2 Pauli baseline.
 
 Machine-readable inventory:
 

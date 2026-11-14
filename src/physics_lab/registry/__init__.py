@@ -44,6 +44,15 @@ from physics_lab.registry.particle_in_box_pipeline import (
     run_particle_in_box_pipeline,
     write_particle_in_box_report,
 )
+from physics_lab.registry.hydrogen_coulomb_pipeline import (
+    DEFAULT_HYDROGEN_CANDIDATE_PATH,
+    HYDROGEN_CANDIDATE_ID,
+    HYDROGEN_PIPELINE_REF,
+    HYDROGEN_PIPELINE_VERSION,
+    HydrogenCoulombPipelineError,
+    run_hydrogen_coulomb_pipeline,
+    write_hydrogen_coulomb_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -118,6 +127,13 @@ __all__ = [
     "ParticleInBoxPipelineError",
     "run_particle_in_box_pipeline",
     "write_particle_in_box_report",
+    "DEFAULT_HYDROGEN_CANDIDATE_PATH",
+    "HYDROGEN_CANDIDATE_ID",
+    "HYDROGEN_PIPELINE_REF",
+    "HYDROGEN_PIPELINE_VERSION",
+    "HydrogenCoulombPipelineError",
+    "run_hydrogen_coulomb_pipeline",
+    "write_hydrogen_coulomb_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

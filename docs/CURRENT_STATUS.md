@@ -32,9 +32,11 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics free scalar-field baseline | `COMPLETE` internally; Klein–Gordon action, field quantization, Fock vacuum, dispersion and parameter-free squared-frequency ratio verified |
 | Mac M4 resource benchmark | 64 controlled variants, 4 workers, 64/64 `PASS`, 8.15 s wall time, approximately 111 MiB peak RSS; infrastructure evidence only |
 | Known-physics particle-in-box baseline | `COMPLETE` internally; Dirichlet boundaries, n² spectrum, ground state and parameter-free gap ratio verified; empirical comparison not authorized |
-| Known-physics suite expansion | Roadmap registered; 3 executable baselines complete, first real expansion campaign prepared; no empirical gate activated |
+| Known-physics hydrogen Coulomb baseline | `COMPLETE` internally; fixed-center Coulomb action, inverse-n² spectrum, explicit `(n,l,m)` states, n² degeneracy and parameter-free energy ratio verified; spin/fine structure/Lamb shift out of scope |
+| Known-physics suite expansion | Roadmap registered; 4 executable baselines complete, four-candidate real expansion campaign prepared; no empirical gate activated |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
-| Free scalar-field focused tests | 4/4 passed; current full suite passes 1,536/1,536 |
+| Free scalar-field focused tests | 4/4 passed; pre-hydrogen full suite baseline was 1,536/1,536 |
+| Hydrogen Coulomb focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
@@ -107,12 +109,12 @@ assigned a finite value. The empirical gate has now been exercised with a
 corrected frozen target-blind H₂ scope-control dataset using the allowed
 same-J=1 Q(1)/Q₂(1) pair. Its outside-uncertainty result is not a direct claim
 against the ideal oscillator because molecular anharmonicity is outside that
-baseline. The Mac M4 resource benchmark, the first real two-candidate campaign and
-the particle-in-a-box baseline are now complete. The next controlled step is
-the bounded three-candidate campaign described in
-docs/CAMPAIGN_KNOWN_PHYSICS_THREE.md. It remains limited to the three validated
-known-physics baselines; empirical comparison, fitting, selection and ranking
-remain separate closed gates.
+baseline. The Mac M4 resource benchmark, the first real two-candidate campaign,
+the particle-in-a-box baseline and the internal hydrogen Coulomb runner are now
+complete. The next controlled step is the bounded four-candidate campaign
+described in `docs/CAMPAIGN_KNOWN_PHYSICS_FOUR.md`. It remains limited to the
+four validated known-physics baselines; empirical comparison, fitting,
+selection and ranking remain separate closed gates.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 
