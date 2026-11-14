@@ -1,0 +1,321 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "classical-maxwell-vacuum",
+  "title": "Known-physics classical Maxwell field in vacuum",
+  "summary": "The source-free classical U(1) Maxwell field on four-dimensional Minkowski spacetime. The candidate closes the gauge-invariant action, field equation, Bianchi identity, transverse polarization count and plane-wave dispersion without charges, matter, quantization or external data.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "maxwell-vacuum-v1",
+    "decision_ref": "known-physics-classical-maxwell-vacuum-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "electromagnetic-potential",
+      "role": "GAUGE",
+      "representation": "four-potential A_mu",
+      "domain_ref": "R^1,3",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["maxwell-known-physics-scope", "maxwell-action-code"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 4,
+      "signature": "(-,+,+,+)",
+      "manifold": "R^1,3",
+      "boundary_conditions": [],
+      "provenance": "ASSUMED",
+      "source_refs": ["maxwell-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "DEFINED",
+      "type": "gauge group",
+      "dimension": 1,
+      "group": "U(1)",
+      "bundle": "principal U(1) bundle over R^1,3",
+      "provenance": "ASSUMED",
+      "source_refs": ["maxwell-known-physics-scope"]
+    },
+    "connections": [
+      {
+        "id": "u1-gauge-connection",
+        "type": "GAUGE",
+        "acts_on": ["electromagnetic-potential"],
+        "curvature": "F_(mu nu) = partial_mu A_nu - partial_nu A_mu",
+        "status": "VERIFIED",
+        "provenance": "DERIVED",
+        "source_refs": ["maxwell-action-code"]
+      }
+    ]
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral d^4x [-F_(mu nu)*F^(mu nu)/4], source-free U(1) vacuum",
+    "terms": [
+      {
+        "id": "maxwell-kinetic",
+        "role": "KINETIC",
+        "expression": "-F_(mu nu)*F^(mu nu)/4",
+        "provenance": "ASSUMED",
+        "depends_on": ["electromagnetic-potential"],
+        "source_refs": ["maxwell-action-code"]
+      }
+    ],
+    "symmetry_refs": ["lorentz-symmetry", "u1-gauge-symmetry"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["maxwell-known-physics-scope", "maxwell-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "u1-gauge-symmetry",
+      "kind": "GAUGE",
+      "statement": "A_mu -> A_mu + partial_mu Lambda leaves F_(mu nu) invariant.",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["electromagnetic-potential"],
+      "source_refs": ["maxwell-pipeline-code"]
+    },
+    {
+      "id": "source-free-field-equation",
+      "kind": "PRIMARY",
+      "statement": "partial_mu F^(mu nu) = 0",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["maxwell-kinetic"],
+      "source_refs": ["maxwell-pipeline-code"]
+    },
+    {
+      "id": "bianchi-identity",
+      "kind": "CONSISTENCY",
+      "statement": "partial_[mu F_(nu rho)] = 0",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["u1-gauge-connection"],
+      "source_refs": ["maxwell-pipeline-code"]
+    },
+    {
+      "id": "source-free-sector",
+      "kind": "REGULARITY",
+      "statement": "No electric charges, currents or matter sources enter this baseline.",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [],
+      "source_refs": ["maxwell-known-physics-scope"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "wave_number",
+      "symbol": "|k|",
+      "role": "SCALE",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "inverse_length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["maxwell-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "CONVENTION",
+    "source_refs": ["maxwell-known-physics-scope"]
+  },
+  "quantum": {
+    "status": "CLASSICAL_ONLY",
+    "method": null,
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "NOT_APPLICABLE",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": "two transverse classical wave polarizations",
+    "provenance": "CONVENTION",
+    "source_refs": ["maxwell-known-physics-scope"]
+  },
+  "quantization": {
+    "status": "NOT_APPLICABLE",
+    "mechanism": null,
+    "scope": "NOT_APPLICABLE",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "CONVENTION",
+    "source_refs": ["maxwell-known-physics-scope"]
+  },
+  "observables": [
+    {
+      "id": "maxwell-plane-wave-dispersion",
+      "name": "plane-wave dispersion",
+      "expression": "omega^2 = |k|^2 in units c=1",
+      "dimension": "inverse_time squared",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["wave_number"],
+      "free_parameters": ["wave_number"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["maxwell-pipeline-code"]
+    },
+    {
+      "id": "maxwell-dispersion-ratio",
+      "name": "parameter-free dispersion ratio",
+      "expression": "omega^2/|k|^2 = 1",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": [],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["maxwell-pipeline-code"]
+    },
+    {
+      "id": "maxwell-polarization-count",
+      "name": "physical polarization count",
+      "expression": "two transverse polarizations after gauge reduction",
+      "dimension": "count",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": [],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["maxwell-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "maxwell-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the classical Maxwell vacuum baseline",
+        "immutable": true,
+        "notes": "Source-free classical U(1) field; charges, matter coupling and quantization are separate scopes."
+      },
+      {
+        "source_id": "maxwell-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/maxwell_vacuum_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "Maxwell action, field identities and plane-wave model",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "maxwell-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/maxwell_vacuum_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, gauge constraints and observable runner",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "maxwell-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_maxwell_vacuum_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-maxwell-equation",
+        "operation": "Vary the Maxwell action with respect to A_mu to obtain partial_mu F^(mu nu)=0",
+        "inputs": ["maxwell-kinetic"],
+        "outputs": ["source-free-field-equation"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/maxwell_vacuum_model.py",
+        "source_refs": ["maxwell-action-code", "maxwell-pipeline-code"]
+      },
+      {
+        "id": "derive-maxwell-bianchi",
+        "operation": "Define F=dA so the antisymmetric Bianchi identity is automatic",
+        "inputs": ["u1-gauge-connection"],
+        "outputs": ["bianchi-identity"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/maxwell_vacuum_model.py",
+        "source_refs": ["maxwell-action-code", "maxwell-pipeline-code"]
+      },
+      {
+        "id": "derive-maxwell-waves",
+        "operation": "Insert a source-free plane wave and impose transversality to obtain omega^2=|k|^2 and two physical polarizations",
+        "inputs": ["source-free-field-equation", "bianchi-identity"],
+        "outputs": ["maxwell-plane-wave-dispersion", "maxwell-dispersion-ratio", "maxwell-polarization-count"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/maxwell_vacuum_model.py",
+        "source_refs": ["maxwell-known-physics-scope", "maxwell-action-code", "maxwell-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "maxwell-known-physics-scope",
+        "statement": "Use the source-free classical Maxwell U(1) field as the first K3 baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It introduces gauge redundancy, field equations and physical transverse modes without mixing in matter or quantization.",
+        "source_refs": ["maxwell-known-physics-scope"]
+      },
+      {
+        "id": "maxwell-quantization-exclusion",
+        "statement": "Quantization of the Maxwell field is a separate K4 candidate and does not modify this classical baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The classical gauge and wave-sector closure must remain independently auditable.",
+        "source_refs": ["maxwell-known-physics-scope"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_maxwell_vacuum_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "maxwell-comparison-dataset",
+      "question": "Which immutable target-blind electromagnetic-wave dataset will be registered for a separate empirical comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["maxwell-plane-wave-dispersion", "maxwell-dispersion-ratio"]
+    },
+    {
+      "id": "maxwell-quantized-extension",
+      "question": "Should the quantized Maxwell U(1) field be registered as a separate K4 candidate rather than changing this classical baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["maxwell-kinetic", "maxwell-plane-wave-dispersion"]
+    }
+  ]
+}

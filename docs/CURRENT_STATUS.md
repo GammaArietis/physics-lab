@@ -34,11 +34,13 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics particle-in-box baseline | `COMPLETE` internally; Dirichlet boundaries, n² spectrum, ground state and parameter-free gap ratio verified; empirical comparison not authorized |
 | Known-physics hydrogen Coulomb baseline | `COMPLETE` internally; fixed-center Coulomb action, inverse-n² spectrum, explicit `(n,l,m)` states, n² degeneracy and parameter-free energy ratio verified; spin/fine structure/Lamb shift out of scope |
 | Known-physics Pauli spin-half baseline | `COMPLETE` internally; Pauli matrix algebra, exact two-level spectrum, spin projections and parameter-free normalized splitting verified; orbital and relativistic sectors out of scope |
-| Known-physics suite expansion | Roadmap registered; 5 executable baselines complete, five-candidate real expansion campaign prepared; no empirical gate activated |
+| Known-physics Maxwell vacuum baseline | `COMPLETE` internally; source-free U(1) action, gauge symmetry, field equation, Bianchi identity, two transverse polarizations and parameter-free dispersion verified; quantization out of scope |
+| Known-physics suite expansion | Roadmap registered; 6 executable baselines complete, six-candidate real expansion campaign prepared; no empirical gate activated |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
 | Free scalar-field focused tests | 4/4 passed; pre-hydrogen full suite baseline was 1,536/1,536 |
 | Hydrogen Coulomb focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | Pauli spin-half focused tests | 5/5 passed in the development checkout; full-suite confirmation remains a separate regression gate |
+| Maxwell vacuum focused tests | 6/6 passed in the development checkout; full-suite confirmation remains a separate regression gate |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
 
 ## What has been done
@@ -112,12 +114,12 @@ corrected frozen target-blind H₂ scope-control dataset using the allowed
 same-J=1 Q(1)/Q₂(1) pair. Its outside-uncertainty result is not a direct claim
 against the ideal oscillator because molecular anharmonicity is outside that
 baseline. The Mac M4 resource benchmark, the first real two-candidate campaign,
-the particle-in-a-box baseline, the internal hydrogen Coulomb runner and the
-internal Pauli spin-half runner are now complete. The next controlled step is
-the bounded five-candidate campaign described in
-`docs/CAMPAIGN_KNOWN_PHYSICS_FIVE.md`. It remains limited to the five validated
-known-physics baselines; empirical comparison, fitting, selection and ranking
-remain separate closed gates.
+the particle-in-a-box baseline, the internal hydrogen Coulomb runner, the
+internal Pauli spin-half runner and the internal Maxwell vacuum runner are now
+complete. The next controlled step is the bounded six-candidate campaign
+described in `docs/CAMPAIGN_KNOWN_PHYSICS_SIX.md`. It remains limited to the six
+validated known-physics baselines; empirical comparison, fitting, selection and
+ranking remain separate closed gates.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 

@@ -62,6 +62,15 @@ from physics_lab.registry.pauli_spin_half_pipeline import (
     run_pauli_spin_half_pipeline,
     write_pauli_spin_half_report,
 )
+from physics_lab.registry.maxwell_vacuum_pipeline import (
+    DEFAULT_MAXWELL_CANDIDATE_PATH,
+    MAXWELL_CANDIDATE_ID,
+    MAXWELL_PIPELINE_REF,
+    MAXWELL_PIPELINE_VERSION,
+    MaxwellVacuumPipelineError,
+    run_maxwell_vacuum_pipeline,
+    write_maxwell_vacuum_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -150,6 +159,13 @@ __all__ = [
     "PauliSpinHalfPipelineError",
     "run_pauli_spin_half_pipeline",
     "write_pauli_spin_half_report",
+    "DEFAULT_MAXWELL_CANDIDATE_PATH",
+    "MAXWELL_CANDIDATE_ID",
+    "MAXWELL_PIPELINE_REF",
+    "MAXWELL_PIPELINE_VERSION",
+    "MaxwellVacuumPipelineError",
+    "run_maxwell_vacuum_pipeline",
+    "write_maxwell_vacuum_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",
