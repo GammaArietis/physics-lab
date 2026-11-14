@@ -1,0 +1,89 @@
+{
+  "analysis_version": "free-scalar-field-baseline-analysis-v1",
+  "candidate_id": "known-physics-free-real-scalar-field",
+  "campaign_id": "known-physics-free-scalar-field-baseline",
+  "activation_id": "known-physics-free-scalar-field-baseline-activation",
+  "execution_status": "COMPLETE",
+  "verdict": "KNOWN_PHYSICS_FREE_SCALAR_INTERNAL_BASELINE_PASS",
+  "next_gate": "SEPARATE_TARGET_BLIND_EMPIRICAL_COMPARISON_REVIEW",
+  "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+  "chain": {
+    "action": "S = integral dt dx [phidot^2/2 - (dphidx)^2/2 - mu^2*phi^2/2]",
+    "euler_lagrange": "(d_t^2 - d_x^2 + mu^2) phi = 0",
+    "canonical_momentum": "pi = d_t phi",
+    "hamiltonian_density": "[pi^2 + (dphidx)^2 + mu^2*phi^2]/2",
+    "field_quantization": "[phi(t,x), pi(t,y)] = i*hbar*delta(x-y)",
+    "mode_lattice": "k_n = 2*pi*n/L, n in Z",
+    "dispersion": "omega_n^2 = mu^2 + (2*pi*n/L)^2",
+    "fock_vacuum": "all mode occupations n_k=0",
+    "parameter_free_observable": "(omega_n^2-omega_0^2)/(omega_1^2-omega_0^2) = n^2"
+  },
+  "checks": {
+    "count": 9,
+    "all_passed": true,
+    "names": [
+      "euler_lagrange_equation_verified",
+      "legendre_transform_verified",
+      "periodic_mode_basis_declared",
+      "canonical_field_commutator_declared",
+      "dispersion_relation_verified",
+      "positive_mode_frequencies",
+      "fock_vacuum_is_ground_state",
+      "normal_ordered_vacuum_energy_verified",
+      "parameter_free_dispersion_ratio_verified"
+    ]
+  },
+  "campaign": {
+    "candidate_count": 1,
+    "candidate_records_unchanged": true,
+    "candidate_status": "PASS",
+    "pipeline_status": "COMPLETE",
+    "checkpoint_written": true,
+    "selection_performed": false,
+    "ranking_performed": false,
+    "search_activated": false,
+    "finite_bounds_authorized": false,
+    "external_data_used": false,
+    "empirical_comparison_performed": false
+  },
+  "observables": {
+    "display_n_max": 4,
+    "spectrum_state_count": 6,
+    "rows": 15,
+    "parameter_free_dispersion_ratio_rows": 5,
+    "dimensionful_mode_frequency_free_inputs": ["mass", "length"],
+    "dimensionful_mode_energy_free_inputs": ["mass", "length", "hbar"],
+    "comparison_status": "NOT_AUTHORIZED"
+  },
+  "vacuum_and_zero_point_boundary": {
+    "fock_vacuum": "SELECTED",
+    "normal_ordered_energy": 0.0,
+    "absolute_zero_point_energy": "NOT_ASSIGNED_FINITE_VALUE",
+    "finite_display_window_is_not_renormalization": true
+  },
+  "interpretation": {
+    "internal_mathematical_baseline": "PASSED",
+    "field_quantization": "VERIFIED_IN_FREE_FIELD_SCOPE",
+    "empirical_validation": "NOT_PERFORMED",
+    "fitting": false,
+    "calibration": false,
+    "parameter_updates": false,
+    "higher_dimensional_extension": "DEFERRED",
+    "interactions": "OUT_OF_SCOPE",
+    "wide_campaign": "HELD_UNTIL_EMPIRICAL_GATE_AND_RESOURCE_REVIEW"
+  },
+  "verification_run": {
+    "free_scalar_field_tests": "4_PASS",
+    "full_suite": "1534_PASS_0_FAIL",
+    "artifact_isolation": "PER_TEST_RESTORE_FIXTURE"
+  },
+  "evidence": {
+    "campaign_report": "docs/validation/campaign_reports/free-scalar-field-baseline/campaign_report.json",
+    "checkpoint": "docs/validation/campaign_checkpoints/free-scalar-field-baseline.json",
+    "candidate_record": "schemas/examples/theory_candidate_free_scalar_field.json",
+    "model": "src/physics_lab/models/examples/free_scalar_field_model.py",
+    "pipeline": "src/physics_lab/registry/free_scalar_field_pipeline.py",
+    "tests": "tests/test_free_scalar_field_pipeline.py",
+    "test_isolation": "tests/conftest.py"
+  }
+}

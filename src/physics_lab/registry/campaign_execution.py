@@ -19,6 +19,7 @@ from physics_lab.registry.campaign import (
 )
 from physics_lab.registry.reference_pipeline import run_reference_pipeline
 from physics_lab.registry.harmonic_oscillator_pipeline import run_harmonic_oscillator_pipeline
+from physics_lab.registry.free_scalar_field_pipeline import run_free_scalar_field_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -134,6 +135,8 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_reference_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "quantum-harmonic-oscillator-v1":
             report = run_harmonic_oscillator_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "free-scalar-field-v1":
+            report = run_free_scalar_field_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

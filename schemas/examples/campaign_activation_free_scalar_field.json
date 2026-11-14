@@ -1,0 +1,22 @@
+{
+  "schema_version": "campaign-activation-v1",
+  "activation_id": "known-physics-free-scalar-field-baseline-activation",
+  "campaign_id": "known-physics-free-scalar-field-baseline",
+  "manifest_path": "schemas/examples/campaign_manifest_free_scalar_field_baseline.json",
+  "authorization": {
+    "status": "AUTHORIZED",
+    "authorization_ref": "giovanni-vitale-known-physics-free-scalar-2026-11-14",
+    "human_confirmation": true,
+    "selection_mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "execution_status": "NOT_RUN",
+  "checkpoint_path": "docs/validation/campaign_checkpoints/free-scalar-field-baseline.json",
+  "report_path": null,
+  "activated_at": "2026-11-14T06:00:00+01:00",
+  "completed_at": null
+}

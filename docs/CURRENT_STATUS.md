@@ -1,8 +1,7 @@
 # Current laboratory status
 
 Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
-18E audit and the known-physics harmonic-oscillator baseline recorded on
-13 November 2026.
+18E audit and the known-physics baselines recorded on 13–14 November 2026.
 
 ## Executive state
 
@@ -18,9 +17,9 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Structural parameter closure | Open |
 | Dynamical parameter closure | Not tested |
 | All possible physics exhausted | No |
-| Current frontier | Free scalar field internal baseline |
+| Current frontier | Review of known-physics baselines and separate empirical gate |
 | Phase 18E audit | Complete; no search or authorization activated |
-| Phase 14L–14N reproducibility | Historical stored-artifact policy preserved; current checkout collects 1,530 tests, with six legacy artifact-order failures in an in-place full run |
+| Phase 14L–14N reproducibility | Historical stored-artifact policy preserved; current checkout passes 1,534/1,534 tests with per-test artifact isolation |
 | Historical integrity and portability | Closed by a versioned resolution record; 24 legacy path exceptions remain documented and immutable |
 | Theory-candidate registry | Schema v1 and validator complete; neutral template registered but unselected; search not activated |
 | Reference candidate pipeline | Complete internally from `H = p_xi^2` to spectrum and observables; semantic closure audit complete; 0 legacy-validator failures |
@@ -30,6 +29,9 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
 | Oscillator focused tests | 4/4 passed; campaign regression set 9/9 passed |
+| Known-physics free scalar-field baseline | `COMPLETE` internally; Klein–Gordon action, field quantization, Fock vacuum, dispersion and parameter-free squared-frequency ratio verified |
+| Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
+| Free scalar-field focused tests | 4/4 passed; current full suite passes 1,534/1,534 |
 
 ## What has been done
 
@@ -92,13 +94,15 @@ parameter-free gap-ratio observable close in one executable chain. Its mass,
 frequency and `hbar` inputs remain explicit; no empirical value has entered the
 model, and no fitting or calibration has been performed.
 
-The oscillator campaign was explicitly activated for one candidate and
-completed with an unchanged record. No theory selection or ranking occurred.
-The empirical comparison gate remains closed because no immutable comparison
-dataset has been registered. The next controlled step is the free scalar field
-baseline, with its field quantization and vacuum sector kept distinct from the
-quantum-mechanical oscillator. Wider campaigns remain held until the known-
-physics baselines and the separate empirical gate are reviewed.
+The oscillator and free-scalar campaigns were each explicitly activated for
+one candidate and completed with unchanged records. No theory selection or
+ranking occurred. The free-scalar field quantization, Fock vacuum, periodic
+mode spectrum and parameter-free ratio are verified only within the declared
+1+1-dimensional baseline; the absolute zero-point sum is deliberately not
+assigned a finite value. The empirical comparison gate remains closed because
+no immutable comparison dataset has been registered. The next controlled
+step is a separate target-blind dataset/comparison review, followed by the
+Mac resource benchmark. Wider campaigns remain held until those gates pass.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 

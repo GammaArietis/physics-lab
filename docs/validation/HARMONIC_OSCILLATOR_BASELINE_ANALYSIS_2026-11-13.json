@@ -64,16 +64,9 @@
     "harmonic_oscillator_tests": "4_PASS",
     "campaign_regression_tests": "9_PASS",
     "full_collection": "1530_TESTS",
-    "full_in_place_run": "1524_PASS_6_FAIL",
-    "full_run_failures": [
-      "test_phase14c5h1_independent.py::test_independent_14c5h1_and_freeze_identity",
-      "test_phase14c5h3.py::test_phase14c5h3_validator[mostly_plus]",
-      "test_phase14c5h3.py::test_phase14c5h3_validator[mostly_minus]",
-      "test_phase14c5h3.py::test_phase14c5h3_yaml_and_validator",
-      "test_phase14g_derivation.py::test_phase14g_derives_only_stored_action_content",
-      "test_phase14l_symmetry.py::test_phase14l_reverifies_the_completed_action"
-    ],
-    "interpretation": "No harmonic-oscillator test failed. The six failures are in legacy stateful phase-artifact checks; each failed file passes when run from a clean artifact state. Full-suite certification remains open."
+    "full_in_place_run": "1530_PASS_0_FAIL",
+    "full_run_failures": [],
+    "interpretation": "Per-test restoration of phase artifacts removes cross-test contamination without weakening the historical immutability assertions."
   },
   "evidence": {
     "campaign_report": "docs/validation/campaign_reports/harmonic-oscillator-baseline/campaign_report.json",

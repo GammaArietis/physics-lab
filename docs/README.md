@@ -25,6 +25,9 @@ relative path.
 - [`KNOWN_PHYSICS_HARMONIC_OSCILLATOR.md`](KNOWN_PHYSICS_HARMONIC_OSCILLATOR.md):
   first complete known-physics candidate from action to a parameter-free
   observable.
+- [`KNOWN_PHYSICS_FREE_SCALAR_FIELD.md`](KNOWN_PHYSICS_FREE_SCALAR_FIELD.md):
+  free real scalar-field baseline from the Klein–Gordon action to Fock modes
+  and the parameter-free squared-frequency ratio.
 - [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
   conservative resource plan for the 24 GB MacBook Air.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the

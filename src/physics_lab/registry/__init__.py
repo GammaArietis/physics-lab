@@ -27,6 +27,15 @@ from physics_lab.registry.harmonic_oscillator_pipeline import (
     run_harmonic_oscillator_pipeline,
     write_harmonic_oscillator_report,
 )
+from physics_lab.registry.free_scalar_field_pipeline import (
+    DEFAULT_SCALAR_FIELD_CANDIDATE_PATH,
+    FreeScalarFieldPipelineError,
+    SCALAR_FIELD_CANDIDATE_ID,
+    SCALAR_FIELD_PIPELINE_REF,
+    SCALAR_FIELD_PIPELINE_VERSION,
+    run_free_scalar_field_pipeline,
+    write_free_scalar_field_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -88,6 +97,13 @@ __all__ = [
     "HarmonicOscillatorPipelineError",
     "run_harmonic_oscillator_pipeline",
     "write_harmonic_oscillator_report",
+    "DEFAULT_SCALAR_FIELD_CANDIDATE_PATH",
+    "FreeScalarFieldPipelineError",
+    "SCALAR_FIELD_CANDIDATE_ID",
+    "SCALAR_FIELD_PIPELINE_REF",
+    "SCALAR_FIELD_PIPELINE_VERSION",
+    "run_free_scalar_field_pipeline",
+    "write_free_scalar_field_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

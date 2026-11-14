@@ -1,0 +1,51 @@
+{
+  "schema_version": "campaign-manifest-v1",
+  "campaign_id": "known-physics-free-scalar-field-baseline",
+  "status": "PILOT_READY",
+  "candidate_refs": [
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "record_path": "schemas/examples/theory_candidate_free_scalar_field.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    }
+  ],
+  "scope": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "selection_policy": {
+    "mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "human_review_required": true
+  },
+  "execution": {
+    "max_candidates": 1,
+    "parallelism": 1,
+    "per_candidate_timeout_seconds": 120,
+    "checkpoint_path": "docs/validation/campaign_checkpoints/free-scalar-field-baseline.json",
+    "report_directory": "docs/validation/campaign_reports/free-scalar-field-baseline",
+    "resume": true,
+    "deterministic_seed": 0
+  },
+  "deduplication": {
+    "key": "canonical_record_digest",
+    "on_duplicate": "RETAIN_FIRST_WITH_LINK"
+  },
+  "failure_policy": {
+    "mode": "ISOLATE_AND_CONTINUE",
+    "max_failures": 0
+  },
+  "authorization": {
+    "status": "NOT_ACTIVATED",
+    "authorization_ref": null
+  },
+  "execution_status": "NOT_RUN",
+  "notes": [
+    "Known-physics free scalar field baseline; not a speculative search campaign.",
+    "The absolute zero-point sum is deliberately outside this baseline's finite claims.",
+    "Empirical comparison remains downstream and separately unauthorized."
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "known-physics-free-real-scalar-field",
+  "title": "Known-physics free real scalar field baseline",
+  "summary": "A free real Klein-Gordon field on a 1+1 dimensional periodic cylinder. The candidate closes the classical action, canonical field quantization, Fock vacuum, mode dispersion and a parameter-free squared-frequency ratio without activating search or empirical comparison.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "free-scalar-field-v1",
+    "decision_ref": "known-physics-free-scalar-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "scalar-field",
+      "role": "MATTER",
+      "representation": "real scalar field phi(t,x)",
+      "domain_ref": "R_t x S1_L",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["scalar-known-physics-scope", "scalar-action-code"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 2,
+      "signature": "(-,+)",
+      "manifold": "R_t x S1_L",
+      "boundary_conditions": ["phi(t,x+L) = phi(t,x)"],
+      "provenance": "ASSUMED",
+      "source_refs": ["scalar-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral dt dx [phidot^2/2 - (dphidx)^2/2 - mu^2*phi^2/2]",
+    "terms": [
+      {
+        "id": "time-kinetic",
+        "role": "KINETIC",
+        "expression": "phidot^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": ["scalar-field"],
+        "source_refs": ["scalar-action-code"]
+      },
+      {
+        "id": "spatial-gradient",
+        "role": "KINETIC",
+        "expression": "-(dphidx)^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": ["scalar-field"],
+        "source_refs": ["scalar-action-code"]
+      },
+      {
+        "id": "mass-term",
+        "role": "POTENTIAL",
+        "expression": "-mu^2*phi^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": ["scalar-field", "mass"],
+        "source_refs": ["scalar-action-code"]
+      }
+    ],
+    "symmetry_refs": ["time-translation", "spatial-translation", "z2-field-reflection"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["scalar-known-physics-scope", "scalar-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "periodic-boundary",
+      "kind": "BOUNDARY",
+      "statement": "phi(t,x+L) = phi(t,x)",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["scalar-field", "length"],
+      "source_refs": ["scalar-known-physics-scope"]
+    },
+    {
+      "id": "canonical-momentum",
+      "kind": "CONSISTENCY",
+      "statement": "pi = d_t phi",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["scalar-field"],
+      "source_refs": ["scalar-pipeline-code"]
+    },
+    {
+      "id": "canonical-field-commutator",
+      "kind": "PRIMARY",
+      "statement": "[phi(t,x), pi(t,y)] = i*hbar*delta(x-y)",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["scalar-field", "hbar"],
+      "source_refs": ["scalar-known-physics-scope"]
+    },
+    {
+      "id": "positive-inputs",
+      "kind": "REGULARITY",
+      "statement": "mu > 0, L > 0, hbar > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["mass", "length", "hbar"],
+      "source_refs": ["scalar-known-physics-scope"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "mass",
+      "symbol": "mu",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1.0,
+      "unit": "inverse_length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["scalar-known-physics-scope"]
+    },
+    {
+      "id": "length",
+      "symbol": "L",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 6.283185307179586,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["scalar-known-physics-scope"]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1.0,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["scalar-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "SELECTED",
+    "selection_status": "SELECTED",
+    "selection_principle": "Fock vacuum with all normal-ordered mode occupations equal to zero",
+    "stationarity_status": "STATIONARY",
+    "minimum_status": "GLOBAL_MINIMUM",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": ["mass", "length", "hbar"],
+    "provenance": "DERIVED",
+    "source_refs": ["scalar-pipeline-code"]
+  },
+  "quantum": {
+    "status": "VERIFIED",
+    "method": "canonical equal-time field commutator and Fock mode expansion",
+    "anomalies": "ABSENT_WITHIN_SCOPE",
+    "unitarity": "VERIFIED",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": "NOT_APPLICABLE_REAL_SCALAR",
+    "provenance": "DERIVED",
+    "source_refs": ["scalar-pipeline-code"]
+  },
+  "quantization": {
+    "status": "VERIFIED",
+    "mechanism": "[phi,pi]=i*hbar*delta -> Fourier modes -> Fock operators a_n and a_n^dagger",
+    "scope": "QUANTUM_FIELD",
+    "integer_lattice_derived": true,
+    "field_quantization_status": "VERIFIED",
+    "provenance": "DERIVED",
+    "source_refs": ["scalar-pipeline-code"]
+  },
+  "observables": [
+    {
+      "id": "mode-dispersion",
+      "name": "mode dispersion frequency",
+      "expression": "omega_n = sqrt(mu^2 + (2*pi*n/L)^2)",
+      "dimension": "inverse_length",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["mode-number", "mass", "length"],
+      "free_parameters": ["mass", "length"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["scalar-pipeline-code"]
+    },
+    {
+      "id": "mode-energy",
+      "name": "one-particle mode energy",
+      "expression": "epsilon_n = hbar*omega_n",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["mode-number", "mass", "length", "hbar"],
+      "free_parameters": ["mass", "length", "hbar"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["scalar-pipeline-code"]
+    },
+    {
+      "id": "dimensionless-dispersion-ratio",
+      "name": "dimensionless squared-frequency dispersion ratio",
+      "expression": "(omega_n^2 - omega_0^2)/(omega_1^2 - omega_0^2) = n^2",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["mode-number"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["scalar-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "scalar-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the known-physics free scalar baseline",
+        "immutable": true,
+        "notes": "Controlled reproduction baseline, not a new physical claim."
+      },
+      {
+        "source_id": "scalar-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "70cfdd36c1e47e5be07900fc4464a150275ad52986e5bcb16dee4fffc7b5074b"
+        },
+        "role": "free scalar action, canonical modes, Fock spectrum and observables",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "scalar-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/free_scalar_field_pipeline.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "09cc681e322fca3effeb905eaf77ab0e5aa6197f77ee8be5e42ab3c8d27a0a7d"
+        },
+        "role": "candidate scope, field-quantization runner and closure checks",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "scalar-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_free_scalar_field_pipeline.py",
+        "uri": null,
+        "digest": {
+          "algorithm": "sha256",
+          "value": "58e11d845a7de704ad6c4d313d36f5bc9bc0ce2dc38bfd02ef5a682027be5215"
+        },
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-scalar-eom",
+        "operation": "Euler-Lagrange variation of the free Klein-Gordon action",
+        "inputs": ["time-kinetic", "spatial-gradient", "mass-term"],
+        "outputs": ["eom"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "source_refs": ["scalar-action-code", "scalar-pipeline-code"]
+      },
+      {
+        "id": "derive-field-hamiltonian",
+        "operation": "Legendre transform pi=d_t phi -> H_density",
+        "inputs": ["eom", "canonical-momentum"],
+        "outputs": ["hamiltonian-density"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "source_refs": ["scalar-action-code", "scalar-pipeline-code"]
+      },
+      {
+        "id": "derive-fourier-modes",
+        "operation": "periodic boundary -> k_n=2*pi*n/L and omega_n^2=mu^2+k_n^2",
+        "inputs": ["periodic-boundary", "hamiltonian-density"],
+        "outputs": ["mode-dispersion"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "source_refs": ["scalar-known-physics-scope", "scalar-pipeline-code"]
+      },
+      {
+        "id": "derive-fock-vacuum",
+        "operation": "canonical field commutator -> Fock operators and normal-ordered vacuum",
+        "inputs": ["canonical-field-commutator", "mode-dispersion"],
+        "outputs": ["quantization", "vacuum", "mode-energy"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "source_refs": ["scalar-known-physics-scope", "scalar-pipeline-code"]
+      },
+      {
+        "id": "derive-dispersion-ratio",
+        "operation": "(omega_n^2-omega_0^2)/(omega_1^2-omega_0^2) -> n^2",
+        "inputs": ["mode-dispersion"],
+        "outputs": ["dimensionless-dispersion-ratio"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/free_scalar_field_model.py",
+        "source_refs": ["scalar-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "free-scalar-scope",
+        "statement": "Use the free real scalar field as the first known-physics quantum-field baseline after the quantum harmonic oscillator.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It adds field quantization and a vacuum sector while retaining an exactly solvable action.",
+        "source_refs": ["scalar-known-physics-scope"]
+      },
+      {
+        "id": "normal-ordering-boundary",
+        "statement": "Use the normal-ordered Fock Hamiltonian for the vacuum claim and do not assign a finite absolute zero-point sum.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The displayed finite mode window must not be confused with a renormalized continuum vacuum-energy calculation.",
+        "source_refs": ["scalar-pipeline-code"]
+      },
+      {
+        "id": "mode-window",
+        "statement": "The displayed non-negative mode range is a report cutoff after deriving the analytic Fourier spectrum; it is not a search bound.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The free-field dispersion is defined for all integer Fourier modes before the finite report window.",
+        "source_refs": ["scalar-pipeline-code"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_free_scalar_field_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "scalar-comparison-dataset",
+      "question": "Which immutable real-world field or mode-dispersion dataset will be registered for the separate target-blind comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["dimensionless-dispersion-ratio"]
+    },
+    {
+      "id": "zero-point-renormalization",
+      "question": "What independently authorized renormalization prescription should be used if absolute vacuum energy or stress energy is later compared?",
+      "blocking": false,
+      "status": "OPEN",
+      "related_refs": ["quantization", "vacuum"]
+    },
+    {
+      "id": "higher-dimensional-extension",
+      "question": "How should the 1+1 periodic-cylinder baseline be extended to higher-dimensional Minkowski spacetime without changing the candidate silently?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["geometry", "action"]
+    }
+  ]
+}

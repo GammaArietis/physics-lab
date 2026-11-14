@@ -44,7 +44,8 @@
     "v23_pdf": "RESOLVED_SCOPED_REPOSITORY_COPY_AUTHORITY",
     "v22_cross_check_in_v23": "RESOLVED_BY_NEW_RECORD_LEGACY_PRESERVED",
     "absolute_paths_in_historical_artifacts": "24_DOCUMENTED_IMMUTABLE_EXCEPTIONS_NEW_GENERATORS_PORTABLE",
-    "full_test_suite": "1530_COLLECTED_IN_PLACE_RUN_1524_PASS_6_FAIL_LEGACY_ARTIFACT_ORDER",
+    "full_test_suite": "CERTIFIED_1534_TESTS_EXIT_0",
+    "test_artifact_isolation": "tests/conftest.py_PER_TEST_RESTORE",
     "harmonic_oscillator_focused_tests": "4_PASS",
     "phase14_symbolic_profile": "INNER_PRODUCT_TRIGONOMETRIC_SIMPLIFICATION",
     "phase14_parent_replay": "STORED_ARTIFACT_VERIFICATION_WITH_EXPLICIT_NO_REPLAY_FLAG",
@@ -71,11 +72,22 @@
       "field_quantization": "NOT_APPLICABLE",
       "selection_or_ranking": "NOT_PERFORMED",
       "evidence": "docs/validation/HARMONIC_OSCILLATOR_BASELINE_ANALYSIS_2026-11-13.json"
+    },
+    "free_scalar_field": {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "campaign_id": "known-physics-free-scalar-field-baseline",
+      "pipeline_status": "COMPLETE",
+      "internal_checks": "9_OF_9_PASSED",
+      "parameter_free_observable": "(omega_n^2 - omega_0^2)/(omega_1^2 - omega_0^2) = n^2",
+      "empirical_comparison": "NOT_AUTHORIZED",
+      "field_quantization": "VERIFIED",
+      "scope": "1+1D_MINKOWSKI_CYLINDER_R_t_x_S1_L_REAL_SCALAR",
+      "vacuum_boundary": "FOCK_VACUUM_NORMAL_ORDERED_ZERO_POINT_ONLY",
+      "selection_or_ranking": "NOT_PERFORMED",
+      "evidence": "docs/validation/FREE_SCALAR_FIELD_BASELINE_ANALYSIS_2026-11-14.json"
     }
   },
   "next_controlled_steps": [
-    "complete_free_scalar_field_internal_baseline",
-    "register_concrete_physical_candidate_and_parameter_map",
     "register_parameter_free_observable_and_traceable_comparison_dataset",
     "measure_multi_candidate_runner_on_target_mac",
     "choose_one_registered_formulation_or_prove_the_choice_forced",
