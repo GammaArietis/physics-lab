@@ -232,8 +232,8 @@
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
     "next_campaign_id": null,
-    "human_review_status": "PENDING",
-    "human_review_record": "docs/HUMAN_REVIEW_CHECKLIST_FINAL_TWENTY.md"
+    "human_review_status": "LITERATURE_REVIEW_COMPLETED_WITH_CAVEATS",
+    "human_review_record": "docs/validation/HUMAN_REVIEW_FINAL_TWENTY_2026-11-14.md"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",

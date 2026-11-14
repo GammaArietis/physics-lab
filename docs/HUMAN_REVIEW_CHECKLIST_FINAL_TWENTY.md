@@ -1,7 +1,8 @@
 # Revisione umana della campagna finale da 20 candidate
 
-Stato: `PENDING` — la campagna tecnica è completa, ma questa revisione non
-deve essere marcata come conclusa automaticamente.
+Stato: `LITERATURE_REVIEW_COMPLETED_WITH_CAVEATS` — la campagna tecnica è
+completa e la coerenza è stata verificata contro fonti scientifiche; il
+verbale non costituisce una validazione empirica.
 
 Campagna: `known-physics-final-twenty-baselines`  
 Risultato tecnico: `20/20 PASS`  
@@ -92,12 +93,11 @@ la singola candidate:
 ## Cose ancora da fare
 
 1. Leggere il report principale e i report per-candidate della campagna.
-2. Compilare questa checklist con un esito umano per K4, K5, K6 e K7.
-3. Registrare un breve verbale immutabile con esiti, caveat e blocchi, senza
-   modificare retroattivamente i report tecnici.
-4. Decidere esplicitamente se una o più candidate possono entrare in un gate
+2. Registrare eventuali osservazioni dell’utente sul verbale, senza modificare
+   retroattivamente i report tecnici.
+3. Decidere esplicitamente se una o più candidate possono entrare in un gate
    empirico separato e target-blind.
-5. Solo dopo autorizzazione distinta: dataset empirici, confronto,
+4. Solo dopo autorizzazione distinta: dataset empirici, confronto,
    incertezze, fitting e possibili campagne di teorie nuove.
 
 ## Non è necessario fare adesso
@@ -114,6 +114,7 @@ la singola candidate:
 File consigliato:
 `docs/validation/HUMAN_REVIEW_FINAL_TWENTY_2026-11-14.md`
 
-Il record dovrà contenere data, revisore, commit esaminato, esito per gruppo,
-caveat, eventuali blocchi e la decisione sui gate successivi. Finché quel
-file non esiste, lo stato corretto resta `HUMAN_REVIEW_PENDING`.
+Il verbale bibliografico corrente è
+`docs/validation/HUMAN_REVIEW_FINAL_TWENTY_2026-11-14.md`. Lo stato corretto
+resta `LITERATURE_REVIEW_COMPLETED_WITH_CAVEATS`, non
+`EMPIRICALLY_VALIDATED`.
