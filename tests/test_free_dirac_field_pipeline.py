@@ -18,6 +18,7 @@ def test_dirac_candidate_is_explicit_quantized_free_field() -> None:
     assert candidate["registration"]["pipeline_ref"] == "free-dirac-field-v1"
     assert candidate["registration"]["selected"] is False
     assert candidate["geometry"]["spacetime"]["dimension"] == 4
+    assert candidate["geometry"]["spacetime"]["signature"] == "(+,-,-,-)"
     assert candidate["quantum"]["status"] == "VERIFIED"
     assert candidate["quantization"]["field_quantization_status"] == "VERIFIED"
 

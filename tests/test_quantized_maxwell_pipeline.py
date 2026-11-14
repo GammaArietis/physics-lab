@@ -17,6 +17,7 @@ def test_quantized_maxwell_candidate_is_explicit_u1_field_quantization() -> None
     candidate = load_theory_candidate(CANDIDATE_PATH)
     assert candidate["registration"]["pipeline_ref"] == "quantized-maxwell-u1-v1"
     assert candidate["registration"]["selected"] is False
+    assert candidate["geometry"]["spacetime"]["signature"] == "(+,-,-,-)"
     assert candidate["geometry"]["internal_space"]["group"] == "U(1)"
     assert candidate["quantum"]["status"] == "VERIFIED"
     assert candidate["quantization"]["field_quantization_status"] == "VERIFIED"

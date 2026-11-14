@@ -33,8 +33,8 @@ def _require_scope(candidate: Mapping[str, Any]) -> None:
     if candidate["action"]["expression"] != PROCA_ACTION or candidate["action"]["formulation"] != "LAGRANGIAN":
         raise FreeProcaFieldPipelineError("The baseline requires the free Proca Lagrangian.")
     spacetime = candidate["geometry"]["spacetime"]
-    if spacetime.get("dimension") != 4 or spacetime.get("manifold") != "R^1,3":
-        raise FreeProcaFieldPipelineError("The Proca baseline requires four-dimensional Minkowski spacetime.")
+    if spacetime.get("dimension") != 4 or spacetime.get("manifold") != "R^1,3" or spacetime.get("signature") != "(+,-,-,-)":
+        raise FreeProcaFieldPipelineError("The Proca baseline requires four-dimensional mostly-minus Minkowski spacetime.")
     if not any(field.get("id") == "proca-vector" for field in candidate["fields"]):
         raise FreeProcaFieldPipelineError("The Proca vector field must be explicitly registered.")
 

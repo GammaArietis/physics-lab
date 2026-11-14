@@ -18,6 +18,7 @@ def test_proca_candidate_is_explicit_massive_quantized_vector() -> None:
     assert candidate["registration"]["pipeline_ref"] == "free-proca-field-v1"
     assert candidate["registration"]["selected"] is False
     assert candidate["geometry"]["spacetime"]["dimension"] == 4
+    assert candidate["geometry"]["spacetime"]["signature"] == "(+,-,-,-)"
     assert candidate["quantization"]["field_quantization_status"] == "VERIFIED"
 
 

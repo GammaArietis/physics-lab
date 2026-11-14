@@ -42,8 +42,8 @@ def _require_scope(candidate: Mapping[str, Any]) -> None:
     if candidate["action"]["expression"] != DIRAC_ACTION or candidate["action"]["formulation"] != "LAGRANGIAN":
         raise FreeDiracFieldPipelineError("The baseline requires the free Dirac Lagrangian.")
     spacetime = candidate["geometry"]["spacetime"]
-    if spacetime.get("dimension") != 4 or spacetime.get("manifold") != "R^1,3":
-        raise FreeDiracFieldPipelineError("The Dirac baseline requires four-dimensional Minkowski spacetime.")
+    if spacetime.get("dimension") != 4 or spacetime.get("manifold") != "R^1,3" or spacetime.get("signature") != "(+,-,-,-)":
+        raise FreeDiracFieldPipelineError("The Dirac baseline requires four-dimensional mostly-minus Minkowski spacetime.")
     if not any(field.get("id") == "dirac-spinor" for field in candidate["fields"]):
         raise FreeDiracFieldPipelineError("The Dirac spinor must be explicitly registered.")
 
