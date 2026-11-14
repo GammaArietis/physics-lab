@@ -122,3 +122,76 @@ def test_multi_candidate_pilot_executes_variants_in_isolated_workers(tmp_path) -
     assert all(item["record_unchanged"] for item in report["candidate_results"])
     assert all(report["controls"].values())
     assert report["selection"]["performed"] is False
+
+
+def test_multi_candidate_pilot_deduplicates_same_action_without_selection(tmp_path) -> None:
+    manifest = load_campaign_manifest(
+        "schemas/examples/campaign_manifest_multi_candidate_pilot.json"
+    )
+    first = load_theory_candidate("schemas/examples/theory_candidate_circle_reference.json")
+    second = copy.deepcopy(first)
+    second["candidate_id"] = "circle-reference-internal-spectrum-dedup"
+    second["title"] = "Internal circle spectral reference duplicate-action variant"
+    second["registration"]["decision_ref"] = "reference-scope-dedup"
+    (tmp_path / "candidate1.json").write_text(json.dumps(first), encoding="utf-8")
+    (tmp_path / "candidate2.json").write_text(json.dumps(second), encoding="utf-8")
+    manifest["candidate_refs"][0]["record_path"] = "candidate1.json"
+    manifest["candidate_refs"][1]["candidate_id"] = second["candidate_id"]
+    manifest["candidate_refs"][1]["record_path"] = "candidate2.json"
+    manifest["deduplication"]["key"] = "canonical_action_digest"
+    manifest["execution"]["checkpoint_path"] = "checkpoint.json"
+    manifest["execution"]["report_directory"] = "reports"
+    (tmp_path / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    activation = load_campaign_activation(ACTIVATION_PATH)
+    activation["activation_id"] = "multi-pilot-dedup-test-activation"
+    activation["campaign_id"] = "circle-reference-multi-pilot"
+    activation["manifest_path"] = "manifest.json"
+    activation["checkpoint_path"] = "checkpoint.json"
+
+    report = run_multi_candidate_campaign(activation=activation, repository_root=tmp_path)
+
+    assert report["execution_status"] == "COMPLETE"
+    assert report["executed_candidate_count"] == 1
+    assert [item["status"] for item in report["candidate_results"]] == ["PASS", "DUPLICATE"]
+    assert report["candidate_results"][1]["duplicate_of"] == first["candidate_id"]
+    assert report["controls"]["deduplication_applied"] is True
+    assert report["selection"]["performed"] is False
+
+
+def test_multi_candidate_pilot_isolates_one_failed_candidate(tmp_path) -> None:
+    manifest = load_campaign_manifest(
+        "schemas/examples/campaign_manifest_multi_candidate_pilot.json"
+    )
+    first = load_theory_candidate("schemas/examples/theory_candidate_circle_reference.json")
+    second = copy.deepcopy(first)
+    second["candidate_id"] = "circle-reference-internal-spectrum-fail"
+    second["title"] = "Intentionally invalid-parameter candidate"
+    second["registration"]["decision_ref"] = "reference-scope-fail"
+    for parameter in second["parameters"]:
+        if parameter["id"] == "radius":
+            parameter["value"] = -1.0
+    (tmp_path / "candidate1.json").write_text(json.dumps(first), encoding="utf-8")
+    (tmp_path / "candidate2.json").write_text(json.dumps(second), encoding="utf-8")
+    manifest["candidate_refs"][0]["record_path"] = "candidate1.json"
+    manifest["candidate_refs"][1]["candidate_id"] = second["candidate_id"]
+    manifest["candidate_refs"][1]["record_path"] = "candidate2.json"
+    manifest["failure_policy"]["max_failures"] = 1
+    manifest["execution"]["checkpoint_path"] = "checkpoint.json"
+    manifest["execution"]["report_directory"] = "reports"
+    (tmp_path / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    activation = load_campaign_activation(ACTIVATION_PATH)
+    activation["activation_id"] = "multi-pilot-failure-isolation-test-activation"
+    activation["campaign_id"] = "circle-reference-multi-pilot"
+    activation["manifest_path"] = "manifest.json"
+    activation["checkpoint_path"] = "checkpoint.json"
+
+    report = run_multi_candidate_campaign(activation=activation, repository_root=tmp_path)
+
+    assert report["execution_status"] == "COMPLETE"
+    assert [item["status"] for item in report["candidate_results"]] == ["PASS", "FAIL"]
+    assert "Circle radius R must be positive" in report["candidate_results"][1]["error"]
+    assert report["controls"]["failure_isolation"] is True
+    assert report["controls"]["candidate_records_unchanged"] is True
+    assert report["selection"]["performed"] is False
