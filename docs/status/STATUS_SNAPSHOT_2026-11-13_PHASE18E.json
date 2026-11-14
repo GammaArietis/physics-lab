@@ -44,7 +44,7 @@
     "v23_pdf": "RESOLVED_SCOPED_REPOSITORY_COPY_AUTHORITY",
     "v22_cross_check_in_v23": "RESOLVED_BY_NEW_RECORD_LEGACY_PRESERVED",
     "absolute_paths_in_historical_artifacts": "24_DOCUMENTED_IMMUTABLE_EXCEPTIONS_NEW_GENERATORS_PORTABLE",
-    "full_test_suite": "CERTIFIED_1534_TESTS_EXIT_0",
+    "full_test_suite": "CERTIFIED_1536_TESTS_EXIT_0",
     "test_artifact_isolation": "tests/conftest.py_PER_TEST_RESTORE",
     "harmonic_oscillator_focused_tests": "4_PASS",
     "phase14_symbolic_profile": "INNER_PRODUCT_TRIGONOMETRIC_SIMPLIFICATION",
@@ -55,10 +55,10 @@
     "theory_candidate_registry": "REGISTERED_NOT_SELECTED_NO_SEARCH",
     "reference_pipeline": "CIRCLE_ACTION_TO_OBSERVABLES_AND_SEMANTIC_CLOSURE_COMPLETE_INTERNAL_ONLY",
     "reference_semantic_closure": "PARAMETERS_VACUUM_QUANTIZATION_OBSERVABLES_CLOSED_INTERNAL_ONLY",
-    "experimental_comparison_gate": "ISOLATED_IMPLEMENTED_CURRENT_REFERENCE_BLOCKED_NO_PARAMETER_FREE_OBSERVABLE",
+    "experimental_comparison_gate": "IMPLEMENTED_EXERCISED_TARGET_BLIND_H2_SCOPE_CONTROL_DIRECT_SCOPE_MATCH_PENDING",
     "campaign_readiness": "PHASE7A_ACTIVATION_RECORDS_PRESERVED",
     "campaign_pilot": "COMPLETE_SINGLE_AND_MULTI_INFRASTRUCTURE_PASS",
-    "physical_empirical_gate": "BLOCKED_NO_PARAMETER_FREE_PREDICTION_OR_DATASET",
+    "physical_empirical_gate": "H2_SCOPE_CONTROL_COMPLETE_DIRECT_SCOPE_MATCHED_VALIDATION_PENDING",
     "wide_campaign": "HELD_PENDING_PHYSICAL_AND_MAC_RESOURCE_GATES"
   },
   "known_physics_baselines": {
@@ -71,6 +71,9 @@
       "empirical_comparison": "NOT_AUTHORIZED",
       "field_quantization": "NOT_APPLICABLE",
       "selection_or_ranking": "NOT_PERFORMED",
+      "empirical_control_dataset": "h2-vibrational-gap-ratio-control",
+      "empirical_control_result": "OUTSIDE_UNCERTAINTY_SCOPE_CONTROL_NOT_DIRECT_VALIDATION",
+      "direct_empirical_comparison": "PENDING_SCOPE_MATCHED_DATASET",
       "evidence": "docs/validation/HARMONIC_OSCILLATOR_BASELINE_ANALYSIS_2026-11-13.json"
     },
     "free_scalar_field": {

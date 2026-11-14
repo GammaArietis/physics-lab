@@ -28,6 +28,8 @@ relative path.
 - [`KNOWN_PHYSICS_FREE_SCALAR_FIELD.md`](KNOWN_PHYSICS_FREE_SCALAR_FIELD.md):
   free real scalar-field baseline from the Klein–Gordon action to Fock modes
   and the parameter-free squared-frequency ratio.
+- [`EXPERIMENTAL_COMPARISON_H2_HO_CONTROL.md`](EXPERIMENTAL_COMPARISON_H2_HO_CONTROL.md):
+  first frozen target-blind empirical scope-control comparison.
 - [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
   conservative resource plan for the 24 GB MacBook Air.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the

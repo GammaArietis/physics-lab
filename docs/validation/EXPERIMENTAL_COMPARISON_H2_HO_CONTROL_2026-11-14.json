@@ -1,0 +1,56 @@
+{
+  "authorization": {
+    "authorization_ref": "giovanni-vitale-h2-oscillator-control-2026-11-14",
+    "calibration": false,
+    "candidate_id": "known-physics-quantum-harmonic-oscillator",
+    "dataset_id": "h2-vibrational-gap-ratio-control",
+    "fitting": false,
+    "notes": "Separate comparison-only authorization. The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal.",
+    "parameter_updates": false,
+    "selection_or_ranking": false,
+    "status": "AUTHORIZED",
+    "target_blind": true
+  },
+  "blocked_result_count": 0,
+  "candidate_id": "known-physics-quantum-harmonic-oscillator",
+  "comparable_result_count": 1,
+  "comparison_status": "COMPLETE",
+  "comparison_version": "experimental-comparison-v1",
+  "controls": {
+    "comparison_only_data": true,
+    "dataset_immutable": true,
+    "model_report_unchanged": true,
+    "no_calibration": true,
+    "no_candidate_ranking": true,
+    "no_experimental_values_in_model": true,
+    "no_parameter_fit": true,
+    "no_parameter_updates": true,
+    "target_blind": true
+  },
+  "dataset": {
+    "dataset_id": "h2-vibrational-gap-ratio-control",
+    "dataset_version": "frozen-2026-11-14",
+    "kind": "EXPERIMENTAL_DATA",
+    "observation_count": 3,
+    "source_digest": "af7eae2fc5e1af2c4bf6e6970fc9af3bbdeb044d2db2df55762dedfd04dfaa03"
+  },
+  "fit": {
+    "calibration_performed": false,
+    "parameter_updates": [],
+    "performed": false
+  },
+  "model_report_digest": "3e87a6b6035b183141f6a912da0d2d24cd05451028fda81d7e668d6b3c46d859",
+  "results": [
+    {
+      "experimental_uncertainty": 1.46647529268507e-07,
+      "experimental_value": 1.9434462307192757,
+      "model_observable": "gap_ratio[2]",
+      "model_value": 2.0,
+      "normalized_residual": 385644.2011864799,
+      "observation_id": "h2-vibrational-gap-ratio-2",
+      "residual": 0.05655376928072431,
+      "status": "OUTSIDE_UNCERTAINTY",
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "AUTHORIZED",
+  "authorization_ref": "giovanni-vitale-h2-oscillator-control-2026-11-14",
+  "target_blind": true,
+  "fitting": false,
+  "calibration": false,
+  "parameter_updates": false,
+  "dataset_id": "h2-vibrational-gap-ratio-control",
+  "candidate_id": "known-physics-quantum-harmonic-oscillator",
+  "selection_or_ranking": false,
+  "notes": "Separate comparison-only authorization. The H2 record is frozen independently and is used as a scope-control measurement, not as a parameter source or candidate-selection signal."
+}

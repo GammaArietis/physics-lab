@@ -1,0 +1,52 @@
+{
+  "schema_version": "experimental-comparison-v1",
+  "dataset_id": "h2-vibrational-gap-ratio-control",
+  "dataset_version": "frozen-2026-11-14",
+  "kind": "EXPERIMENTAL_DATA",
+  "immutable": true,
+  "source": {
+    "source_id": "h2-vibrational-transitions-primary-source-set",
+    "uri": "urn:physics-lab:source-set:h2-vibrational-transitions-v1",
+    "digest": {
+      "algorithm": "sha256",
+      "value": "af7eae2fc5e1af2c4bf6e6970fc9af3bbdeb044d2db2df55762dedfd04dfaa03"
+    },
+    "role": "comparison-only",
+    "retrieved_at": "2026-11-14T06:00:00+01:00",
+    "notes": "Frozen extraction manifest for the primary source set: DOI 10.1103/PhysRevLett.110.193601 for H2 v=0 to 1 and DOI 10.1039/D4CP02605E, Table 1, for the H2 v=0 to 2 Q2(0) line. The digest covers the source identifiers, frozen values, uncertainty convention and transformation, not a replacement of the cited publications."
+  },
+  "observations": [
+    {
+      "observation_id": "h2-q1-0-wavenumber",
+      "observable": "h2.vibrational_wavenumber.q1_0",
+      "value": 4161.16632,
+      "uncertainty": 0.00018,
+      "unit": "cm^-1",
+      "provenance": "EXPERIMENTAL",
+      "notes": "Rotationless H2 fundamental vibrational splitting v=0 to 1, Q(0), from the cited precision spectroscopy source."
+    },
+    {
+      "observation_id": "h2-q2-0-wavenumber",
+      "observable": "h2.vibrational_wavenumber.q2_0",
+      "value": 8087.003,
+      "uncertainty": 0.0005,
+      "unit": "cm^-1",
+      "provenance": "EXPERIMENTAL",
+      "notes": "H2 first-overtone Q2(0) line position reported to 0.001 cm^-1. The uncertainty is a conservative half-last-reported-digit bound because the cited table does not state a full uncertainty budget."
+    },
+    {
+      "observation_id": "h2-vibrational-gap-ratio-2",
+      "observable": "gap_ratio[2]",
+      "value": 1.9434462307192757,
+      "uncertainty": 1.46647529268507e-7,
+      "unit": null,
+      "provenance": "EXPERIMENTAL",
+      "notes": "Comparison-only ratio computed from the two frozen experimental line positions: Q2(0)/Q1(0), with first-order independent uncertainty propagation. No model parameter, fit or calibration was used."
+    }
+  ],
+  "notes": [
+    "The record was frozen before the isolated comparison was executed; no observation was removed or selected after inspecting residuals.",
+    "This is an empirical scope-control dataset for the ideal quantum harmonic-oscillator baseline, not a claim that molecular H2 is an exactly harmonic oscillator.",
+    "A deviation from gap_ratio[2]=2 is therefore interpreted as an observed molecular anharmonicity/control outcome, not by itself as a failure of the ideal baseline in its declared scope."
+  ]
+}
