@@ -1,8 +1,8 @@
 """Run the bounded known-physics multi-candidate campaign.
 
 This file is intentionally a real Python entry point. macOS uses the
-multiprocessing \`\`spawn\`\` start method, which cannot reconstruct a program
-launched from \`python - <<'PY'\` because that program has no filesystem path.
+multiprocessing spawn start method, which cannot reconstruct a program
+launched from a heredoc because that program has no filesystem path.
 """
 
 from __future__ import annotations
