@@ -1,0 +1,132 @@
+{
+  "action": {
+    "expression": "S = integral d^4x [-F_(mu nu)F^(mu nu)/4 + psi-bar(i gamma^mu D_mu-m)psi + c1*(F_(mu nu)F^(mu nu))^2/Lambda^4 + c2*(F_(mu nu)*Ftilde^(mu nu))^2/Lambda^4]",
+    "formulation": "LAGRANGIAN",
+    "instantiated": true,
+    "operator_basis": [
+      "(F_(mu nu)F^(mu nu))^2",
+      "(F_(mu nu)*Ftilde^(mu nu))^2"
+    ],
+    "operator_dimensions": {
+      "(F_(mu nu)*Ftilde^(mu nu))^2": 8,
+      "(F_(mu nu)F^(mu nu))^2": 8
+    },
+    "provenance": "KNOWN_MAXWELL_DIRAC_BASE_PLUS_EXPLICIT_EFT_BASIS"
+  },
+  "candidate_id": "maxwell-dirac-f4-eft",
+  "candidate_status": "UNDERDETERMINED",
+  "checks": {
+    "f4_operator_basis_verified": true,
+    "four_dimensional_lorentz_structure_declared": true,
+    "maxwell_dirac_base_action_declared": true,
+    "no_alpha_parameter_used": true,
+    "no_automatic_selection_or_ranking": true,
+    "no_fitting_or_calibration": true,
+    "normalization_undertermination_explicit": true,
+    "operator_mass_dimension_verified": true,
+    "quantization_not_claimed": true,
+    "u1_gauge_invariance_verified": true
+  },
+  "controls": {
+    "action_instantiated": true,
+    "alpha_not_used_as_parameter": true,
+    "external_comparison_not_authorized": true,
+    "f4_operator_basis_verified": true,
+    "no_automatic_selection_or_ranking": true,
+    "no_fitting_or_calibration": true,
+    "normalization_undertermination_explicit": true,
+    "operator_mass_dimension_verified": true,
+    "parameter_free_observable_generated": false,
+    "u1_gauge_invariance_verified": true
+  },
+  "derivation": {
+    "alpha_role": "FORBIDDEN_AS_INPUT_OR_FIT_TARGET",
+    "base_theory": "Maxwell–Dirac in R^1,3",
+    "coefficient_source": "NOT_DERIVED",
+    "f4_basis": [
+      "(F_(mu nu)F^(mu nu))^2",
+      "(F_(mu nu)*Ftilde^(mu nu))^2"
+    ],
+    "gauge_group": "U(1)",
+    "normalization_status": "UNDERDETERMINED",
+    "operator_dimension": 8
+  },
+  "next_gate": "DERIVE_OR_MATCH_WILSON_COEFFICIENTS_AND_SCALE",
+  "observables": [
+    {
+      "expression": "c1*(F^2)^2/Lambda^4 + c2*(F*Ftilde)^2/Lambda^4",
+      "free_dependencies": [
+        "c1",
+        "c2",
+        "lambda-scale"
+      ],
+      "interpretation": "Gauge-invariant four-photon interaction basis; coefficients are not normalized.",
+      "name": "four_photon_invariant_basis",
+      "status": "UNDERDETERMINED"
+    },
+    {
+      "expression": "Delta n proportional to (c2-c1)*B^2/Lambda^4 in the weak-field regime",
+      "free_dependencies": [
+        "c1",
+        "c2",
+        "lambda-scale"
+      ],
+      "interpretation": "Independent observable channel, but no numerical amplitude is claimed.",
+      "name": "vacuum_birefringence_signature",
+      "status": "UNDERDETERMINED"
+    },
+    {
+      "expression": "M_4gamma proportional to c1 and c2 at order Lambda^-4",
+      "free_dependencies": [
+        "c1",
+        "c2",
+        "lambda-scale"
+      ],
+      "interpretation": "Independent scattering channel, pending matching or geometric normalization.",
+      "name": "light_by_light_amplitude_structure",
+      "status": "UNDERDETERMINED"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "c1",
+      "provenance": "NOT_DEFINED",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "c2",
+      "provenance": "NOT_DEFINED",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "lambda-scale",
+      "provenance": "NOT_DEFINED",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "pipeline_status": "COMPLETE",
+  "pipeline_version": "maxwell-dirac-f4-v1",
+  "schema_version": "theory-candidate-v1",
+  "scope": {
+    "claim_scope": "STRUCTURAL_MAXWELL_DIRAC_F4_EFT_PILOT",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "finite_bounds": "NOT_AUTHORIZED",
+    "model_scope": "FOUR_DIMENSIONAL_U1_MAXWELL_DIRAC_WITH_DIMENSION_EIGHT_F4_OPERATORS",
+    "quantization": "NOT_CLAIMED",
+    "renormalization": "NOT_CLAIMED",
+    "search_status": "NOT_ACTIVATED"
+  },
+  "vacuum": {
+    "selection_principle": null,
+    "selection_status": "NOT_APPLICABLE",
+    "status": "NOT_APPLICABLE"
+  },
+  "validation": {
+    "observable_count": 3,
+    "parameter_free_observable_count": 0,
+    "physical_status": "UNDERDETERMINED",
+    "structural_check_count": 10,
+    "structural_failures": []
+  }
+}

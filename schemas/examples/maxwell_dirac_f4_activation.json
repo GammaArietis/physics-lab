@@ -1,0 +1,30 @@
+{
+  "schema_version": "maxwell-dirac-f4-pilot-v1",
+  "activation_id": "w3a-maxwell-dirac-f4-structural-pilot",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "scope": "STRUCTURAL_OPERATOR_BASIS_ONLY",
+  "candidate_path": "schemas/examples/theory_candidate_maxwell_dirac_f4.json",
+  "search_status": "NOT_ACTIVATED",
+  "finite_bounds": "NOT_AUTHORIZED",
+  "empirical_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "target_blind": true,
+  "alpha_as_parameter": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "operator_family": {
+    "base": "Maxwell-Dirac U(1) in R^1,3",
+    "added_terms": [
+      "(F_(mu nu)F^(mu nu))^2/Lambda^4",
+      "(F_(mu nu)*Ftilde^(mu nu))^2/Lambda^4"
+    ],
+    "operator_dimension": 8
+  },
+  "notes": [
+    "The pilot registers symmetry-allowed observables but does not assign Wilson coefficients.",
+    "A candidate without a derived or matched normalization must remain UNDERDETERMINED.",
+    "No comparison with alpha or external data is authorized at this stage."
+  ]
+}

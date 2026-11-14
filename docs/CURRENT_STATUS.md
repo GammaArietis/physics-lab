@@ -29,6 +29,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Alpha-geometry stage-0 pilot | `COMPLETE`; 30 finite grammar records generated, 28 canonical records retained, 2 graph-equivalence duplicates removed; no alpha target, fitting, empirical data, selection or ranking used |
 | Wyler neighborhood stage-1 pilot | `COMPLETE`; exact historical anchor plus 17 pre-registered normalization stress tests; anchor error approximately 0.608 ppm against CODATA 2022; no physical candidate selected |
 | Wyler W2A dimension scan | `COMPLETE`; abstract type-IV dimensions n=3..9 scanned with physical spacetime d=4 fixed; n=5 reproduces the anchor and all dimensions are retained without ranking |
+| W3A Maxwell–Dirac F^4 pilot | `COMPLETE` structurally; U(1)- and Lorentz-invariant dimension-eight F^4 basis registered with birefringence and light-by-light observable channels; Wilson coefficients and EFT scale remain `UNDERDETERMINED`; no alpha fitting or empirical comparison |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -142,6 +143,15 @@ anchor and records the other dimensions as explicit mathematical
 extrapolations. The protocol and report are recorded in
 `docs/WYLER_DIMENSION_SCAN_PROTOCOL.md` and
 `docs/validation/wyler_dimension_scan_2026-11-14.json`.
+
+The W3A pilot starts from the known Maxwell–Dirac U(1) action and adds the two
+parity-even dimension-eight F^4 invariants. It registers vacuum birefringence
+and light-by-light scattering as observable channels, but deliberately leaves
+the Wilson coefficients and EFT scale unresolved. The pilot is therefore
+structurally complete but physically `UNDERDETERMINED`; no value of alpha is
+used as an input or fit target. The protocol and report are recorded in
+`docs/W3A_MAXWELL_DIRAC_F4_PILOT.md` and
+`docs/validation/maxwell_dirac_f4_pilot_2026-11-14.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural
