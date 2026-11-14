@@ -71,11 +71,11 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The next implementation targets are K1 and K2. The first one should be the
-one-dimensional particle-in-a-box baseline because it adds a new boundary
-condition and discrete spectrum while remaining analytically closed. It will
-be implemented as a separate candidate and runner, then tested in isolation
-before being combined with the existing oscillator and scalar baselines.
+The K1 particle-in-a-box baseline is now implemented and validated on the Mac.
+The next controlled step is the three-candidate real campaign combining the
+oscillator, free scalar field and particle in a box. Only after that campaign
+has been reviewed will the suite advance to K2 targets such as the hydrogen
+and spin-1/2 baselines.
 
 Machine-readable inventory:
 

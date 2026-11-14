@@ -31,7 +31,8 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Oscillator focused tests | 4/4 passed; campaign regression set 9/9 passed |
 | Known-physics free scalar-field baseline | `COMPLETE` internally; Klein–Gordon action, field quantization, Fock vacuum, dispersion and parameter-free squared-frequency ratio verified |
 | Mac M4 resource benchmark | 64 controlled variants, 4 workers, 64/64 `PASS`, 8.15 s wall time, approximately 111 MiB peak RSS; infrastructure evidence only |
-| Known-physics suite expansion | Roadmap registered; 2 executable baselines complete, additional canonical families planned; no empirical gate activated |
+| Known-physics particle-in-box baseline | `COMPLETE` internally; Dirichlet boundaries, n² spectrum, ground state and parameter-free gap ratio verified; empirical comparison not authorized |
+| Known-physics suite expansion | Roadmap registered; 3 executable baselines complete, first real expansion campaign prepared; no empirical gate activated |
 | Free scalar-field empirical comparison | Not authorized; no external dataset entered; absolute zero-point energy not assigned a finite value |
 | Free scalar-field focused tests | 4/4 passed; current full suite passes 1,536/1,536 |
 | H₂ empirical scope-control dataset | Corrected to allowed Q(1)/Q₂(1), same J=1; immutable and target-blind; comparison complete with `OUTSIDE_UNCERTAINTY`; not promoted to direct oscillator validation |
@@ -106,15 +107,12 @@ assigned a finite value. The empirical gate has now been exercised with a
 corrected frozen target-blind H₂ scope-control dataset using the allowed
 same-J=1 Q(1)/Q₂(1) pair. Its outside-uncertainty result is not a direct claim
 against the ideal oscillator because molecular anharmonicity is outside that
-baseline. The Mac M4 resource benchmark and the first real two-candidate
-known-physics campaign are now complete. The next controlled step is the
-known-physics suite expansion described in
-docs/KNOWN_PHYSICS_SUITE_ROADMAP.md and
-schemas/examples/known_physics_suite_manifest.json. The current runner
-supports the circle reference, quantum harmonic oscillator and free scalar
-field pipelines; every new family must receive an explicit candidate record,
-validated runner and independent regression tests before entering a broad
-campaign. Empirical comparison remains a separate, target-blind gate.
+baseline. The Mac M4 resource benchmark, the first real two-candidate campaign and
+the particle-in-a-box baseline are now complete. The next controlled step is
+the bounded three-candidate campaign described in
+docs/CAMPAIGN_KNOWN_PHYSICS_THREE.md. It remains limited to the three validated
+known-physics baselines; empirical comparison, fitting, selection and ranking
+remain separate closed gates.
 Before a finite dynamical search can be authorized, the three
 formulations that still require an explicit theory-level choice are:
 
