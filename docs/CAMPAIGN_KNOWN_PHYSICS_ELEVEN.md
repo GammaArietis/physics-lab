@@ -19,7 +19,9 @@ empirical comparison.
 
 ## Readiness and execution
 
-The activation record remains `NOT_RUN`. From the repository root:
+The campaign was executed and recorded on 14 November 2026. The original
+activation record remains unchanged; the completed activation is a separate
+artifact. To reproduce it from the repository root:
 
     git pull --ff-only origin optimize/phase14l-14n
     source .venv/bin/activate
@@ -39,11 +41,12 @@ Expected result:
 - `selection.performed: false`;
 - `selection.ranking_performed: false`.
 
-Evidence will be written under:
+The archived evidence is under:
 
 - `docs/validation/campaign_checkpoints/known-physics-eleven-baselines.json`;
 - `docs/validation/campaign_reports/known-physics-eleven-baselines/`;
 - `schemas/examples/campaign_activation_known_physics_eleven_completed.json`.
 
-Do not edit the original `NOT_RUN` activation record. After inspecting the
-report, commit the generated evidence and completed activation record.
+Do not edit the original activation record. The campaign report records 11/11
+`PASS`, unchanged candidate records, isolated execution, and no empirical
+comparison, selection or ranking.

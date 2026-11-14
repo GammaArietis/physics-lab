@@ -115,10 +115,10 @@ pass the admission requirements below.
 
 The K1 particle-in-a-box baseline, the two K2 baselines, all three K3
 baselines, all three K4 baselines and the three controlled K5 baselines are
-now implemented and validated internally. The next controlled step is the
-fourteen-candidate real campaign combining the existing eleven baselines with
-the three K5 baselines. Only after that campaign has been reviewed will the
-suite advance to the next coverage wave.
+now implemented and validated internally. The eleven-candidate K4 campaign
+and fourteen-candidate K5 campaign are also complete and archived with their
+checkpoints and reports. The next controlled step is human review followed by
+the K6 admission audit; no K6 candidate is activated by this record.
 
 Machine-readable inventory:
 

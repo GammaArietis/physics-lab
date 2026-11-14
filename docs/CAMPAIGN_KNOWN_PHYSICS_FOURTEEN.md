@@ -1,6 +1,6 @@
 # Fourteen-candidate known-physics campaign
 
-Status: prepared, not launched automatically, 14 November 2026.
+Status: executed and archived, 14 November 2026.
 
 ## Purpose
 
@@ -47,3 +47,12 @@ The command writes a completed activation, a checkpoint and one report per
 candidate under `docs/validation/`. Results must be reviewed before any larger
 campaign is authorized. The campaign is an execution/validation record, not a
 physics ranking.
+
+## Archived result
+
+The recorded run completed with 14/14 candidates in `PASS` and
+`execution_status: COMPLETE`. Candidate records were unchanged; deduplication,
+worker isolation, failure isolation and checkpoint writing were active. Search,
+finite bounds, external data, empirical comparison, fitting, selection and
+ranking remained closed. Human review is still required before defining or
+activating K6.
