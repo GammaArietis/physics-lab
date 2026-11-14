@@ -226,12 +226,14 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 20,
-    "next_parallelism": 8,
-    "scale_to_32_or_64_after": "review of the final twenty-candidate known-physics baseline campaign",
+    "next_batch_size": null,
+    "next_parallelism": null,
+    "scale_to_32_or_64_after": "human review and a new explicit campaign authorization",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-final-twenty-baselines"
+    "next_campaign_id": null,
+    "human_review_status": "PENDING",
+    "human_review_record": "docs/HUMAN_REVIEW_CHECKLIST_FINAL_TWENTY.md"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",
