@@ -3,8 +3,8 @@
 This campaign runs the two executable known-physics baselines already closed
 internally by the laboratory:
 
-- `known-physics-quantum-harmonic-oscillator`;
-- `known-physics-free-real-scalar-field`.
+- \`known-physics-quantum-harmonic-oscillator\`;
+- \`known-physics-free-real-scalar-field\`.
 
 It is a reproducibility and pipeline campaign, not a search over speculative
 theories. It does not compare candidates with external data, fit parameters,
@@ -19,49 +19,36 @@ campaign.
 
 From the repository root:
 
-```bash
+\`\`\`bash
 git pull --ff-only origin optimize/phase14l-14n
 source .venv/bin/activate
 export PYTHONPATH="$PWD/src"
 
-python - <<'PY'
-import json
-from pathlib import Path
+python tools/run_known_physics_multi_campaign.py
+\`\`\`
 
-from physics_lab.registry import run_multi_candidate_campaign, write_completed_activation
-
-root = Path.cwd()
-activation_path = root / "schemas/examples/campaign_activation_known_physics_multi.json"
-activation = json.loads(activation_path.read_text(encoding="utf-8"))
-
-report = run_multi_candidate_campaign(
-    activation=activation,
-    repository_root=root,
-)
-print(json.dumps(report, indent=2, sort_keys=True))
-
-write_completed_activation(
-    root / "schemas/examples/campaign_activation_known_physics_multi_completed.json",
-    activation,
-    report,
-)
-PY
-```
+Use the checked-in launcher rather than a \`python - <<'PY'\` heredoc. macOS
+uses multiprocessing \`spawn\`; a heredoc has the synthetic path
+\`<stdin>\`, so worker processes cannot reconstruct the parent program. The
+previous failed run is resumable: the existing checkpoint records isolated
+failures and the launcher will retry them.
 
 The expected first gate is:
 
-- `execution_status: COMPLETE`;
-- both candidates `PASS`;
-- `record_unchanged: true` for both;
+- \`execution_status: COMPLETE\`;
+- both candidates \`PASS\`;
+- \`record_unchanged: true\` for both;
 - all campaign controls true;
-- `selection.performed: false`;
-- `selection.ranking_performed: false`.
+- \`selection.performed: false\`;
+- \`selection.ranking_performed: false\`.
 
 The execution writes only campaign evidence under:
 
-- `docs/validation/campaign_checkpoints/known-physics-multi-baselines.json`;
-- `docs/validation/campaign_reports/known-physics-multi-baselines/`.
+- \`docs/validation/campaign_checkpoints/known-physics-multi-baselines.json\`;
+- \`docs/validation/campaign_reports/known-physics-multi-baselines/\`.
 
-After inspecting the JSON report, commit the generated evidence and the
-completed activation record. Do not edit the original `NOT_RUN` activation
-record: it is the immutable pre-execution authorization.
+It also writes
+\`schemas/examples/campaign_activation_known_physics_multi_completed.json\`
+after the run. After inspecting the JSON report, commit the generated
+evidence and the completed activation record. Do not edit the original
+\`NOT_RUN\` activation record: it is the pre-execution authorization.
