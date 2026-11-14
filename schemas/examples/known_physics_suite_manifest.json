@@ -1,0 +1,231 @@
+{
+  "schema_version": "known-physics-suite-v1",
+  "suite_id": "known-physics-baselines",
+  "status": "ROADMAP",
+  "as_of": "2026-11-14",
+  "coverage_not_claimed_exhaustive": true,
+  "scope": {
+    "purpose": "Canonical executable coverage of known-physics frameworks with explicit scope and provenance.",
+    "empirical_comparison": "SEPARATE_AND_NOT_AUTHORIZED",
+    "external_data_used": false,
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED",
+    "speculative_search": "NOT_ACTIVATED"
+  },
+  "completed": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "domain": "quantum_mechanics",
+      "scope": "one-dimensional quantum harmonic oscillator",
+      "pipeline_ref": "quantum-harmonic-oscillator-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "domain": "quantum_field_theory",
+      "scope": "free real Klein-Gordon field on a 1+1-dimensional periodic cylinder",
+      "pipeline_ref": "free-scalar-field-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    }
+  ],
+  "planned": [
+    {
+      "candidate_id": "classical-free-particle",
+      "domain": "classical_mechanics",
+      "wave": "K1",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "classical-kepler-problem",
+      "domain": "classical_mechanics",
+      "wave": "K1",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "quantum-particle-in-box",
+      "domain": "quantum_mechanics",
+      "wave": "K1",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "quantum-hydrogen-coulomb",
+      "domain": "quantum_mechanics",
+      "wave": "K2",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "quantum-spin-half-pauli",
+      "domain": "quantum_mechanics",
+      "wave": "K2",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "classical-maxwell-vacuum",
+      "domain": "classical_field_theory",
+      "wave": "K3",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "newtonian-gravity",
+      "domain": "gravitation",
+      "wave": "K3",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "einstein-hilbert-vacuum",
+      "domain": "general_relativity",
+      "wave": "K3",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "free-dirac-field",
+      "domain": "quantum_field_theory",
+      "wave": "K4",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "free-proca-field",
+      "domain": "quantum_field_theory",
+      "wave": "K4",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "quantized-maxwell-u1",
+      "domain": "quantum_field_theory",
+      "wave": "K4",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "scalar-phi4-controlled",
+      "domain": "interacting_quantum_field_theory",
+      "wave": "K5",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "classical-yang-mills",
+      "domain": "gauge_field_theory",
+      "wave": "K5",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "standard-model-structural-baseline",
+      "domain": "standard_model",
+      "wave": "K5",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "ising-lattice",
+      "domain": "statistical_physics",
+      "wave": "K6",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "harmonic-lattice-phonons",
+      "domain": "condensed_matter",
+      "wave": "K6",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "ideal-bose-fermi-gas",
+      "domain": "statistical_physics",
+      "wave": "K6",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "frw-background",
+      "domain": "cosmology",
+      "wave": "K7",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    },
+    {
+      "candidate_id": "cosmological-perturbations",
+      "domain": "cosmology",
+      "wave": "K7",
+      "status": "PLANNED",
+      "runner_status": "MISSING",
+      "empirical_status": "NOT_AUTHORIZED",
+      "admission_status": "NOT_AUDITED"
+    }
+  ],
+  "admission_requirements": [
+    "explicit candidate scope and field content",
+    "action or Hamiltonian with provenance",
+    "constraints, symmetries and boundary or initial conditions",
+    "quantization and vacuum status when applicable",
+    "complete parameter inventory",
+    "executable observable with uncertainty status",
+    "independent regression tests",
+    "separate target-blind empirical gate"
+  ],
+  "campaign_gates": {
+    "current_real_campaign": "COMPLETE",
+    "next_batch_size": "8-16",
+    "next_parallelism": 4,
+    "scale_to_32_or_64_after": "review of the first real expansion batch",
+    "selection": "HUMAN_REVIEW_ONLY",
+    "ranking": "DISABLED"
+  },
+  "exclusions_until_dedicated_method": [
+    "nonperturbative QCD without a declared numerical/error model",
+    "turbulence without a controlled discretization and uncertainty model",
+    "unbounded many-body approximations without a declared finite scope"
+  ]
+}
