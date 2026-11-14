@@ -25,6 +25,7 @@ from physics_lab.registry.hydrogen_coulomb_pipeline import run_hydrogen_coulomb_
 from physics_lab.registry.pauli_spin_half_pipeline import run_pauli_spin_half_pipeline
 from physics_lab.registry.maxwell_vacuum_pipeline import run_maxwell_vacuum_pipeline
 from physics_lab.registry.newtonian_gravity_pipeline import run_newtonian_gravity_pipeline
+from physics_lab.registry.einstein_hilbert_vacuum_pipeline import run_einstein_hilbert_vacuum_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -152,6 +153,8 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_maxwell_vacuum_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "newtonian-gravity-v1":
             report = run_newtonian_gravity_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "einstein-hilbert-vacuum-v1":
+            report = run_einstein_hilbert_vacuum_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

@@ -39,6 +39,11 @@ explicit record of what remains outside each baseline.
   isolated point-source solution, attractive inverse-square acceleration and
   parameter-free radial ratios. Relativistic geometry and orbital dynamics
   remain separate scopes.
+- Einstein-Hilbert vacuum: classical four-dimensional Lambda=0 action,
+  vacuum Einstein equation, Ricci-flat asymptotically flat Schwarzschild
+  exterior and parameter-free Kretschmann-curvature ratio. Matter coupling,
+  cosmological constant, quantum gravity and cosmological backgrounds remain
+  separate scopes.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -53,7 +58,7 @@ as a known-physics baseline.
 | K4 | Free relativistic quantum fields | Dirac field, Proca field, quantized Maxwell field | Canonical or covariant quantization, constraints, vacuum and mode spectrum |
 | K5 | Controlled interacting theories | Scalar phi-four theory, classical Yang–Mills, structural Standard Model | Renormalization or truncation scope stated explicitly; no hidden calibration |
 | K6 | Statistical and condensed-matter controls | Ising lattice, harmonic lattice and phonons, ideal Bose/Fermi gas | Finite-size or thermodynamic-limit convention and uncertainty provenance |
-| K7 | Cosmology and gravitation | FRW background and perturbations, Schwarzschild vacuum | Geometric assumptions, constraint closure and observable scope |
+| K7 | Cosmology | FRW background and cosmological perturbations | Geometric assumptions, constraint closure and observable scope |
 
 These waves are a coverage plan, not an authorization to search or rank
 theories. Each target enters the campaign only after its record and runner
@@ -88,12 +93,12 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The K1 particle-in-a-box baseline, the two K2 baselines and the first two K3
+The K1 particle-in-a-box baseline, the two K2 baselines and all three K3
 baselines are now implemented and validated internally. The next controlled
-step is the seven-candidate real campaign combining the oscillator, free scalar
-field, particle in a box, hydrogen Coulomb, Pauli spin-half, classical Maxwell
-and Newtonian gravity runners. Only after that campaign has been reviewed will
-the suite advance to Einstein-Hilbert vacuum.
+step is the eight-candidate real campaign combining the oscillator, free
+scalar field, particle in a box, hydrogen Coulomb, Pauli spin-half, classical
+Maxwell, Newtonian gravity and Einstein-Hilbert vacuum runners. Only after
+that campaign has been reviewed will the suite advance to K4.
 
 Machine-readable inventory:
 

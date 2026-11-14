@@ -1,0 +1,357 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "einstein-hilbert-vacuum",
+  "title": "Known-physics classical Einstein-Hilbert vacuum",
+  "summary": "Classical general relativity in the vacuum Schwarzschild exterior. The candidate closes the Einstein-Hilbert action, vacuum Einstein equation, Bianchi identity, asymptotically flat Ricci-flat solution and parameter-free curvature ratio without matter, cosmological constant, quantization or external data.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "einstein-hilbert-vacuum-v1",
+    "decision_ref": "known-physics-einstein-hilbert-vacuum-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "spacetime-metric",
+      "role": "GEOMETRY",
+      "representation": "Lorentzian metric g_(mu nu)",
+      "domain_ref": "Schwarzschild exterior r>2GM",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["einstein-known-physics-scope", "einstein-action-code"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 4,
+      "signature": "(-,+,+,+)",
+      "manifold": "Schwarzschild exterior r>2GM",
+      "boundary_conditions": ["asymptotically flat as r->infinity"],
+      "provenance": "ASSUMED",
+      "source_refs": ["einstein-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": [
+      {
+        "id": "levi-civita-connection",
+        "type": "CHRISTOFFEL",
+        "acts_on": ["spacetime-metric"],
+        "curvature": "R_(mu nu rho sigma)",
+        "status": "VERIFIED",
+        "provenance": "DERIVED",
+        "source_refs": ["einstein-action-code"]
+      }
+    ]
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral d^4x sqrt(-g)*R/(16*pi*G), Lambda=0, vacuum",
+    "terms": [
+      {
+        "id": "einstein-hilbert-curvature",
+        "role": "KINETIC",
+        "expression": "sqrt(-g)*R/(16*pi*G)",
+        "provenance": "ASSUMED",
+        "depends_on": ["spacetime-metric", "gravitational_constant"],
+        "source_refs": ["einstein-action-code"]
+      }
+    ],
+    "symmetry_refs": ["diffeomorphism-invariance", "local-lorentzian-covariance"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["einstein-known-physics-scope", "einstein-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "vacuum-einstein-equation",
+      "kind": "PRIMARY",
+      "statement": "G_(mu nu) = R_(mu nu) - g_(mu nu)*R/2 = 0",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["einstein-hilbert-curvature"],
+      "source_refs": ["einstein-pipeline-code"]
+    },
+    {
+      "id": "ricci-flat-vacuum-reduction",
+      "kind": "CONSISTENCY",
+      "statement": "R_(mu nu) = 0 in four-dimensional vacuum when Lambda=0",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["vacuum-einstein-equation"],
+      "source_refs": ["einstein-pipeline-code"]
+    },
+    {
+      "id": "contracted-bianchi-identity",
+      "kind": "CONSISTENCY",
+      "statement": "nabla_mu G^(mu nu) = 0",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["levi-civita-connection"],
+      "source_refs": ["einstein-pipeline-code"]
+    },
+    {
+      "id": "schwarzschild-exterior-domain",
+      "kind": "BOUNDARY",
+      "statement": "r > 2*G*M and the metric is asymptotically flat as r -> infinity",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["gravitational_constant", "mass_parameter", "radius"],
+      "source_refs": ["einstein-known-physics-scope"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "gravitational_constant",
+      "symbol": "G",
+      "role": "COUPLING",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "length^3/(mass*time^2)",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["einstein-known-physics-scope"]
+    },
+    {
+      "id": "mass_parameter",
+      "symbol": "M",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "mass",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["einstein-known-physics-scope"]
+    },
+    {
+      "id": "radius",
+      "symbol": "r",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 4,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["einstein-known-physics-scope"]
+    },
+    {
+      "id": "reference_radius",
+      "symbol": "r_ref",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 8,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["einstein-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "CONVENTION",
+    "source_refs": ["einstein-known-physics-scope"]
+  },
+  "quantum": {
+    "status": "CLASSICAL_ONLY",
+    "method": null,
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "NOT_APPLICABLE",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "CONVENTION",
+    "source_refs": ["einstein-known-physics-scope"]
+  },
+  "quantization": {
+    "status": "NOT_APPLICABLE",
+    "mechanism": null,
+    "scope": "NOT_APPLICABLE",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "CONVENTION",
+    "source_refs": ["einstein-known-physics-scope"]
+  },
+  "observables": [
+    {
+      "id": "schwarzschild-compactness",
+      "name": "Schwarzschild compactness",
+      "expression": "2*G*M/r",
+      "dimension": "dimensionless",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["gravitational_constant", "mass_parameter", "radius"],
+      "free_parameters": ["gravitational_constant", "mass_parameter", "radius"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["einstein-pipeline-code"]
+    },
+    {
+      "id": "kretschmann-invariant",
+      "name": "Schwarzschild Kretschmann invariant",
+      "expression": "K(r) = 48*G^2*M^2/r^6",
+      "dimension": "inverse_length^4",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["gravitational_constant", "mass_parameter", "radius"],
+      "free_parameters": ["gravitational_constant", "mass_parameter", "radius"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["einstein-pipeline-code"]
+    },
+    {
+      "id": "kretschmann-ratio",
+      "name": "parameter-free curvature ratio",
+      "expression": "K(r)/K(r_ref) = (r_ref/r)^6",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["radius", "reference_radius"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["einstein-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "einstein-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the Einstein-Hilbert vacuum baseline",
+        "immutable": true,
+        "notes": "Classical Schwarzschild exterior with Lambda=0; matter, quantization and cosmology are separate scopes."
+      },
+      {
+        "source_id": "einstein-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/einstein_hilbert_vacuum_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "Einstein-Hilbert action, vacuum equations and Schwarzschild invariant model",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "einstein-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/einstein_hilbert_vacuum_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, Ricci-flat closure and observable runner",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "einstein-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_einstein_hilbert_vacuum_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-einstein-equation",
+        "operation": "Vary the Einstein-Hilbert action with respect to the metric to obtain G_(mu nu)=0",
+        "inputs": ["einstein-hilbert-curvature"],
+        "outputs": ["vacuum-einstein-equation"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/einstein_hilbert_vacuum_model.py",
+        "source_refs": ["einstein-action-code", "einstein-pipeline-code"]
+      },
+      {
+        "id": "derive-ricci-flat-reduction",
+        "operation": "Take the four-dimensional trace with Lambda=0 to reduce G_(mu nu)=0 to R_(mu nu)=0",
+        "inputs": ["vacuum-einstein-equation"],
+        "outputs": ["ricci-flat-vacuum-reduction"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/einstein_hilbert_vacuum_model.py",
+        "source_refs": ["einstein-action-code", "einstein-pipeline-code"]
+      },
+      {
+        "id": "derive-schwarzschild-invariant",
+        "operation": "Use the Ricci-flat asymptotically flat Schwarzschild exterior and evaluate its Kretschmann invariant",
+        "inputs": ["ricci-flat-vacuum-reduction", "schwarzschild-exterior-domain"],
+        "outputs": ["kretschmann-invariant", "kretschmann-ratio"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/einstein_hilbert_vacuum_model.py",
+        "source_refs": ["einstein-known-physics-scope", "einstein-action-code", "einstein-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "einstein-known-physics-scope",
+        "statement": "Use the classical Lambda=0 Einstein-Hilbert Schwarzschild exterior as the final K3 baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It adds dynamical spacetime geometry and a nontrivial curvature invariant while keeping matter and quantum gravity outside scope.",
+        "source_refs": ["einstein-known-physics-scope"]
+      },
+      {
+        "id": "einstein-quantization-exclusion",
+        "statement": "Quantum gravity, cosmological constant sectors and matter-coupled solutions are separate candidates and do not modify this baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The classical Ricci-flat closure must remain independently auditable before K4 or cosmology is added.",
+        "source_refs": ["einstein-known-physics-scope"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_einstein_hilbert_vacuum_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "einstein-comparison-dataset",
+      "question": "Which immutable target-blind relativistic-gravity dataset will be registered for a separate empirical comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["kretschmann-invariant", "kretschmann-ratio"]
+    },
+    {
+      "id": "einstein-matter-extension",
+      "question": "Should matter-coupled or cosmological Einstein equations be registered as separate candidates rather than changing this vacuum baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["vacuum-einstein-equation", "schwarzschild-exterior-domain"]
+    }
+  ]
+}

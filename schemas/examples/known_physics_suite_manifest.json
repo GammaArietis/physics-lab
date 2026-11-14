@@ -75,6 +75,15 @@
       "status": "COMPLETE",
       "runner_status": "VALIDATED",
       "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "einstein-hilbert-vacuum",
+      "domain": "general_relativity",
+      "scope": "classical Lambda=0 Einstein-Hilbert Ricci-flat Schwarzschild exterior",
+      "pipeline_ref": "einstein-hilbert-vacuum-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
     }
   ],
   "planned": [
@@ -91,15 +100,6 @@
       "candidate_id": "classical-kepler-problem",
       "domain": "classical_mechanics",
       "wave": "K1",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "einstein-hilbert-vacuum",
-      "domain": "general_relativity",
-      "wave": "K3",
       "status": "PLANNED",
       "runner_status": "MISSING",
       "empirical_status": "NOT_AUTHORIZED",
@@ -217,12 +217,12 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 7,
-    "next_parallelism": 7,
-    "scale_to_32_or_64_after": "review of the first seven-candidate real expansion batch",
+    "next_batch_size": 8,
+    "next_parallelism": 8,
+    "scale_to_32_or_64_after": "review of the first eight-candidate real expansion batch",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-seven-baselines"
+    "next_campaign_id": "known-physics-eight-baselines"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",

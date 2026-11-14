@@ -80,6 +80,15 @@ from physics_lab.registry.newtonian_gravity_pipeline import (
     run_newtonian_gravity_pipeline,
     write_newtonian_gravity_report,
 )
+from physics_lab.registry.einstein_hilbert_vacuum_pipeline import (
+    DEFAULT_EINSTEIN_HILBERT_CANDIDATE_PATH,
+    EINSTEIN_HILBERT_CANDIDATE_ID,
+    EINSTEIN_HILBERT_PIPELINE_REF,
+    EINSTEIN_HILBERT_PIPELINE_VERSION,
+    EinsteinHilbertVacuumPipelineError,
+    run_einstein_hilbert_vacuum_pipeline,
+    write_einstein_hilbert_vacuum_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -182,6 +191,13 @@ __all__ = [
     "NewtonianGravityPipelineError",
     "run_newtonian_gravity_pipeline",
     "write_newtonian_gravity_report",
+    "DEFAULT_EINSTEIN_HILBERT_CANDIDATE_PATH",
+    "EINSTEIN_HILBERT_CANDIDATE_ID",
+    "EINSTEIN_HILBERT_PIPELINE_REF",
+    "EINSTEIN_HILBERT_PIPELINE_VERSION",
+    "EinsteinHilbertVacuumPipelineError",
+    "run_einstein_hilbert_vacuum_pipeline",
+    "write_einstein_hilbert_vacuum_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",
