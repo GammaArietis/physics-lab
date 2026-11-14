@@ -1,0 +1,35 @@
+{
+  "schema_version": "campaign-manifest-v1",
+  "campaign_id": "known-physics-fourteen-baselines",
+  "status": "PILOT_READY",
+  "candidate_refs": [
+    {"candidate_id": "known-physics-quantum-harmonic-oscillator", "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "known-physics-free-real-scalar-field", "record_path": "schemas/examples/theory_candidate_free_scalar_field.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "known-physics-quantum-particle-in-box", "record_path": "schemas/examples/theory_candidate_particle_in_box.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "quantum-hydrogen-coulomb", "record_path": "schemas/examples/theory_candidate_hydrogen_coulomb.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "quantum-spin-half-pauli", "record_path": "schemas/examples/theory_candidate_pauli_spin_half.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "classical-maxwell-vacuum", "record_path": "schemas/examples/theory_candidate_maxwell_vacuum.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "newtonian-gravity", "record_path": "schemas/examples/theory_candidate_newtonian_gravity.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "einstein-hilbert-vacuum", "record_path": "schemas/examples/theory_candidate_einstein_hilbert_vacuum.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "free-dirac-field", "record_path": "schemas/examples/theory_candidate_free_dirac_field.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "free-proca-field", "record_path": "schemas/examples/theory_candidate_free_proca_field.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "quantized-maxwell-u1", "record_path": "schemas/examples/theory_candidate_quantized_maxwell_u1.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "scalar-phi4-controlled", "record_path": "schemas/examples/theory_candidate_scalar_phi4_controlled.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "classical-yang-mills", "record_path": "schemas/examples/theory_candidate_classical_yang_mills.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"},
+    {"candidate_id": "standard-model-structural-baseline", "record_path": "schemas/examples/theory_candidate_standard_model_structural.json", "expected_selected": false, "expected_registration_status": "READY_FOR_DERIVATION"}
+  ],
+  "scope": {"search_status": "NOT_ACTIVATED", "finite_bounds": "NOT_AUTHORIZED", "empirical_comparison": "NOT_AUTHORIZED", "external_data_used": false},
+  "selection_policy": {"mode": "NO_AUTO_SELECTION", "ranking": "DISABLED", "human_review_required": true},
+  "execution": {"max_candidates": 14, "parallelism": 8, "per_candidate_timeout_seconds": 120, "checkpoint_path": "docs/validation/campaign_checkpoints/known-physics-fourteen-baselines.json", "report_directory": "docs/validation/campaign_reports/known-physics-fourteen-baselines", "resume": true, "deterministic_seed": 0},
+  "deduplication": {"key": "canonical_record_digest", "on_duplicate": "RETAIN_FIRST_WITH_LINK"},
+  "failure_policy": {"mode": "ISOLATE_AND_CONTINUE", "max_failures": 0},
+  "authorization": {"status": "NOT_ACTIVATED", "authorization_ref": null},
+  "execution_status": "NOT_RUN",
+  "notes": [
+    "First fourteen-candidate real expansion campaign after the internally validated K5 controlled baselines.",
+    "The three K5 candidates are a finite classical scalar phi-four lattice, classical SU(2) Yang-Mills and a structural Standard Model/anomaly baseline.",
+    "The K5 scopes do not claim continuum renormalization, quantum Yang-Mills existence or non-perturbative confinement, or fitted Standard Model parameters and precision agreement.",
+    "Empirical comparison, external data, fitting, finite bounds, selection and ranking remain closed.",
+    "The campaign is a bounded validation run, not a speculative theory search."
+  ]
+}

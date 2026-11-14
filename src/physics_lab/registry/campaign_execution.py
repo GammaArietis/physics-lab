@@ -29,6 +29,9 @@ from physics_lab.registry.einstein_hilbert_vacuum_pipeline import run_einstein_h
 from physics_lab.registry.free_dirac_field_pipeline import run_free_dirac_field_pipeline
 from physics_lab.registry.free_proca_field_pipeline import run_free_proca_field_pipeline
 from physics_lab.registry.quantized_maxwell_pipeline import run_quantized_maxwell_pipeline
+from physics_lab.registry.scalar_phi4_controlled_pipeline import run_scalar_phi4_controlled_pipeline
+from physics_lab.registry.classical_yang_mills_pipeline import run_classical_yang_mills_pipeline
+from physics_lab.registry.standard_model_structural_pipeline import run_standard_model_structural_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -164,6 +167,12 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_free_proca_field_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "quantized-maxwell-u1-v1":
             report = run_quantized_maxwell_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "scalar-phi4-controlled-v1":
+            report = run_scalar_phi4_controlled_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "classical-yang-mills-v1":
+            report = run_classical_yang_mills_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "standard-model-structural-v1":
+            report = run_standard_model_structural_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

@@ -177,7 +177,7 @@
         },
         "pipeline_ref": {
           "type": ["string", "null"],
-          "enum": ["circle-reference-v1", "quantum-harmonic-oscillator-v1", "free-scalar-field-v1", "particle-in-box-v1", "hydrogen-coulomb-v1", "pauli-spin-half-v1", "maxwell-vacuum-v1", "newtonian-gravity-v1", "einstein-hilbert-vacuum-v1", "free-dirac-field-v1", "free-proca-field-v1", "quantized-maxwell-u1-v1", null]
+          "enum": ["circle-reference-v1", "quantum-harmonic-oscillator-v1", "free-scalar-field-v1", "particle-in-box-v1", "hydrogen-coulomb-v1", "pauli-spin-half-v1", "maxwell-vacuum-v1", "newtonian-gravity-v1", "einstein-hilbert-vacuum-v1", "free-dirac-field-v1", "free-proca-field-v1", "quantized-maxwell-u1-v1", "scalar-phi4-controlled-v1", "classical-yang-mills-v1", "standard-model-structural-v1", null]
         },
         "decision_ref": {
           "type": ["string", "null"]

@@ -111,6 +111,33 @@
       "status": "COMPLETE",
       "runner_status": "VALIDATED",
       "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "scalar-phi4-controlled",
+      "domain": "interacting_field_theory",
+      "scope": "controlled classical phi-four interaction on a finite one-dimensional periodic lattice",
+      "pipeline_ref": "scalar-phi4-controlled-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "classical-yang-mills",
+      "domain": "gauge_field_theory",
+      "scope": "classical SU(2) Yang-Mills field strength and homogeneous ansatz in four-dimensional Minkowski spacetime",
+      "pipeline_ref": "classical-yang-mills-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "standard-model-structural-baseline",
+      "domain": "standard_model",
+      "scope": "minimal Standard Model gauge, chiral-matter, Higgs and anomaly structure without parameter fitting",
+      "pipeline_ref": "standard-model-structural-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
     }
   ],
   "planned": [
@@ -127,33 +154,6 @@
       "candidate_id": "classical-kepler-problem",
       "domain": "classical_mechanics",
       "wave": "K1",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "scalar-phi4-controlled",
-      "domain": "interacting_quantum_field_theory",
-      "wave": "K5",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "classical-yang-mills",
-      "domain": "gauge_field_theory",
-      "wave": "K5",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "standard-model-structural-baseline",
-      "domain": "standard_model",
-      "wave": "K5",
       "status": "PLANNED",
       "runner_status": "MISSING",
       "empirical_status": "NOT_AUTHORIZED",
@@ -217,12 +217,12 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 11,
+    "next_batch_size": 14,
     "next_parallelism": 8,
-    "scale_to_32_or_64_after": "review of the first eleven-candidate real expansion batch",
+    "scale_to_32_or_64_after": "review of the first fourteen-candidate real expansion batch",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-eleven-baselines"
+    "next_campaign_id": "known-physics-fourteen-baselines"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",

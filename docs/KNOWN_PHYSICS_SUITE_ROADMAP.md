@@ -53,6 +53,17 @@ explicit record of what remains outside each baseline.
 - Quantized Maxwell U(1): Coulomb-gauge field quantization, photon Fock
   vacuum, two transverse polarizations and parameter-free photon dispersion.
   Charges, matter and QED interactions remain separate.
+- Controlled scalar phi-four interaction: finite one-dimensional periodic
+  classical lattice action, quartic interaction, bounded local potential and
+  an explicit interaction-strength ratio. The continuum limit,
+  renormalization and quantum vacuum remain separate scopes.
+- Classical SU(2) Yang-Mills: non-Abelian field strength, gauge-covariant
+  equation, Bianchi identity and a declared homogeneous ansatz. Quantization,
+  matter coupling, confinement and non-perturbative dynamics remain separate.
+- Standard Model structural baseline: minimal
+  `SU(3)_C x SU(2)_L x U(1)_Y` gauge group, chiral matter, one Higgs doublet,
+  gauge-boson counts and perturbative/global anomaly checks. Couplings,
+  masses, symmetry breaking and precision observables remain separate.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -103,11 +114,11 @@ pass the admission requirements below.
 ## Current frontier
 
 The K1 particle-in-a-box baseline, the two K2 baselines, all three K3
-baselines and all three K4 baselines are now implemented and validated
-internally. The next controlled step is the eleven-candidate real campaign
-combining the existing eight baselines with free Dirac, free Proca and
-quantized Maxwell U(1). Only after that campaign has been reviewed will the
-suite advance to K5.
+baselines, all three K4 baselines and the three controlled K5 baselines are
+now implemented and validated internally. The next controlled step is the
+fourteen-candidate real campaign combining the existing eleven baselines with
+the three K5 baselines. Only after that campaign has been reviewed will the
+suite advance to the next coverage wave.
 
 Machine-readable inventory:
 
