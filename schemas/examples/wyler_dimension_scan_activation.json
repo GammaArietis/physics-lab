@@ -1,0 +1,28 @@
+{
+  "schema_version": "wyler-dimension-scan-activation-v1",
+  "activation_id": "wyler-type-iv-dimension-scan-activation",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "comparison_status": "AUTHORIZED_AFTER_GENERATION",
+  "target_blind_generation": true,
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "dimensions": {
+    "abstract_domain_dimensions": [3, 4, 5, 6, 7, 8, 9],
+    "physical_spacetime_dimension": 4
+  },
+  "target": {
+    "alpha_inverse": 137.035999177,
+    "source_id": "codata-2022-alpha-inverse",
+    "source_uri": "https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf",
+    "role": "post_generation_comparison_only"
+  },
+  "notes": [
+    "Only the n=5 case is the historical Wyler anchor.",
+    "The other dimensions use an explicit mathematical extrapolation of the Wyler form.",
+    "The scan does not vary physical spacetime dimension and does not claim a QED theory in other dimensions."
+  ]
+}

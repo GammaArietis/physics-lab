@@ -1,0 +1,230 @@
+{
+  "assumptions": {
+    "boundary_identification": "(S^1 x S^(n-1))/Z2",
+    "boundary_metric": "product metric convention",
+    "domain_family": "Cartan type-IV / Lie ball",
+    "physical_interpretation": "not established by this scan",
+    "wyler_prefactor_and_exponent": "held fixed from n=5 historical form"
+  },
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "comparison_status": "AUTHORIZED_AFTER_GENERATION",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "search_status": "AUTHORIZED",
+    "target_blind_generation": true
+  },
+  "candidates": [
+    {
+      "abstract_domain_dimension": 3,
+      "alpha": 0.054010705856908967,
+      "alpha_inverse": 18.5148478275642,
+      "candidate_id": "wyler-type-iv-dimension-n3",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": -864890.6277273183,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 1.2919281950124923,
+        "Q_n": 39.47841760435743,
+        "S_(n-1)": 12.566370614359172
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 4,
+      "alpha": 0.017328264578543896,
+      "alpha_inverse": 57.70918348270226,
+      "candidate_id": "wyler-type-iv-dimension-n4",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": -578875.7419270299,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.507339015802096,
+        "Q_n": 62.01255336059963,
+        "S_(n-1)": 19.739208802178716
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 5,
+      "alpha": 0.007297348130031835,
+      "alpha_inverse": 137.03608244816428,
+      "candidate_id": "wyler-type-iv-dimension-n5",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "OPEN",
+      "relative_error_ppm": 0.6076590441317616,
+      "status": "HISTORICAL_ANCHOR_REPRODUCED",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.15938525249233407,
+        "Q_n": 82.68340448079951,
+        "S_(n-1)": 26.31894506957162
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 6,
+      "alpha": 0.0037609273236986454,
+      "alpha_inverse": 265.8918702572961,
+      "candidate_id": "wyler-type-iv-dimension-n6",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": 940306.7212569581,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.041726961526705915,
+        "Q_n": 97.40909103400242,
+        "S_(n-1)": 31.006276680299816
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 7,
+      "alpha": 0.002275060515845113,
+      "alpha_inverse": 439.5487474004759,
+      "candidate_id": "wyler-type-iv-dimension-n7",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": 2207542.178991528,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.009363508270637373,
+        "Q_n": 103.90303043626926,
+        "S_(n-1)": 33.07336179231981
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 8,
+      "alpha": 0.0015712693426987582,
+      "alpha_inverse": 636.4281239538693,
+      "candidate_id": "wyler-type-iv-dimension-n8",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": 3644240.402347406,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.0018385205496788525,
+        "Q_n": 102.0065615950938,
+        "S_(n-1)": 32.46969701133414
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    },
+    {
+      "abstract_domain_dimension": 9,
+      "alpha": 0.0012149435813399996,
+      "alpha_inverse": 823.0834874629063,
+      "candidate_id": "wyler-type-iv-dimension-n9",
+      "comparison_status": "COMPLETE",
+      "continuous_fit_parameters": [],
+      "physical_spacetime_dimension": 4,
+      "physical_status": "NOT_DERIVED",
+      "relative_error_ppm": 5006330.397896291,
+      "status": "MATHEMATICAL_EXTRAPOLATION",
+      "target_alpha_inverse": 137.035999177,
+      "volume_formulas": {
+        "D_n": "pi^n/(2^(n-1)*n!)",
+        "Q_n": "pi*S_(n-1) under (S^1 x S^(n-1))/Z2 product metric",
+        "S_(n-1)": "2*pi^(n/2)/Gamma(n/2)"
+      },
+      "volumes": {
+        "D_n": 0.0003208823695747195,
+        "Q_n": 93.26314202980006,
+        "S_(n-1)": 29.686580124648366
+      },
+      "wyler_form": "8*pi*V(D_n)^(1/4)/(V(Q_n)*V(S_(n-1)))"
+    }
+  ],
+  "controls": {
+    "all_dimensions_recorded": true,
+    "comparison_after_generation": true,
+    "extrapolation_label_explicit": true,
+    "finite_dimension_bound": true,
+    "n5_anchor_present_once": true,
+    "no_auto_selection": true,
+    "no_continuous_fit": true,
+    "no_ranking": true,
+    "physical_spacetime_dimension_fixed_to_four": true,
+    "target_blind_generation": true
+  },
+  "dimensions": {
+    "abstract_domain_dimensions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "physical_dimension_scan": "NOT_PERFORMED",
+    "physical_spacetime_dimension": 4,
+    "reason": "Keep d=4 so the QED coupling remains dimensionless and comparable to alpha."
+  },
+  "execution_status": "COMPLETE",
+  "next_gate": "DERIVE_WYLER_MEASURE_AND_U1_ACTION_OR_KEEP_SCAN_AS_MATHEMATICAL_ONLY",
+  "search_id": "wyler-type-iv-abstract-dimension-scan",
+  "search_version": "wyler-dimension-scan-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W2A_DIMENSION_SCAN",
+  "target": {
+    "alpha_inverse": 137.035999177,
+    "role": "post_generation_comparison_only",
+    "source_id": "codata-2022-alpha-inverse",
+    "source_uri": "https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf"
+  }
+}

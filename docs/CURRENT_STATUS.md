@@ -28,6 +28,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Campaign pilots | Known-physics single/multi-candidate campaigns `COMPLETE`; K4 11-candidate, K5 14-candidate and final 20-candidate campaigns archived; literature review complete with caveats; safety controls preserved |
 | Alpha-geometry stage-0 pilot | `COMPLETE`; 30 finite grammar records generated, 28 canonical records retained, 2 graph-equivalence duplicates removed; no alpha target, fitting, empirical data, selection or ranking used |
 | Wyler neighborhood stage-1 pilot | `COMPLETE`; exact historical anchor plus 17 pre-registered normalization stress tests; anchor error approximately 0.608 ppm against CODATA 2022; no physical candidate selected |
+| Wyler W2A dimension scan | `COMPLETE`; abstract type-IV dimensions n=3..9 scanned with physical spacetime d=4 fixed; n=5 reproduces the anchor and all dimensions are retained without ranking |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -134,6 +135,13 @@ CODATA comparison is post-generation only; no nearest-value selection is
 performed. The protocol and report are recorded in
 `docs/WYLER_NEIGHBORHOOD_PROTOCOL.md` and
 `docs/validation/wyler_neighborhood_stage1_2026-11-14.json`.
+
+The W2A scan varies the abstract type-IV domain dimension from 3 to 9 while
+keeping physical spacetime at four dimensions. It finds the n=5 historical
+anchor and records the other dimensions as explicit mathematical
+extrapolations. The protocol and report are recorded in
+`docs/WYLER_DIMENSION_SCAN_PROTOCOL.md` and
+`docs/validation/wyler_dimension_scan_2026-11-14.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural
