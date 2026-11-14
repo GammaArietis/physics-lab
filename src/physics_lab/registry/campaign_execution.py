@@ -22,6 +22,7 @@ from physics_lab.registry.harmonic_oscillator_pipeline import run_harmonic_oscil
 from physics_lab.registry.free_scalar_field_pipeline import run_free_scalar_field_pipeline
 from physics_lab.registry.particle_in_box_pipeline import run_particle_in_box_pipeline
 from physics_lab.registry.hydrogen_coulomb_pipeline import run_hydrogen_coulomb_pipeline
+from physics_lab.registry.pauli_spin_half_pipeline import run_pauli_spin_half_pipeline
 from physics_lab.registry.theory_candidate import load_theory_candidate
 
 
@@ -143,6 +144,8 @@ def _candidate_worker(candidate_path: str, result_queue: Any) -> None:
             report = run_particle_in_box_pipeline(candidate_path=candidate_path)
         elif pipeline_ref == "hydrogen-coulomb-v1":
             report = run_hydrogen_coulomb_pipeline(candidate_path=candidate_path)
+        elif pipeline_ref == "pauli-spin-half-v1":
+            report = run_pauli_spin_half_pipeline(candidate_path=candidate_path)
         else:
             raise CampaignExecutionError(
                 f"no campaign runner is registered for pipeline_ref={pipeline_ref!r}"

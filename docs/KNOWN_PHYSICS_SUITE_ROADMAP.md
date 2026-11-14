@@ -28,6 +28,10 @@ explicit record of what remains outside each baseline.
   exact principal spectrum, explicit `(n,l,m)` states, n-squared degeneracy
   and parameter-free energy ratio. Spin, fine structure and Lamb shift remain
   separate scopes.
+- Spin-only Pauli system: two-dimensional spin Hilbert space, Pauli matrix
+  algebra, exact two-level spectrum and parameter-free normalized splitting.
+  Orbital motion, spin-orbit coupling and relativistic corrections remain
+  separate scopes.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -77,11 +81,12 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The K1 particle-in-a-box baseline and the first K2 Coulomb baseline are now
+The K1 particle-in-a-box baseline and the first two K2 baselines are now
 implemented and validated internally. The next controlled step is the
-four-candidate real campaign combining the oscillator, free scalar field,
-particle in a box and hydrogen Coulomb runner. Only after that campaign has
-been reviewed will the suite advance to the spin-1/2 Pauli baseline.
+five-candidate real campaign combining the oscillator, free scalar field,
+particle in a box, hydrogen Coulomb and Pauli spin-half runners. Only after
+that campaign has been reviewed will the suite advance to the classical field
+and gravitation targets in K3.
 
 Machine-readable inventory:
 

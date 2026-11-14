@@ -1,0 +1,22 @@
+{
+  "schema_version": "campaign-activation-v1",
+  "activation_id": "known-physics-five-baselines-activation",
+  "campaign_id": "known-physics-five-baselines",
+  "manifest_path": "schemas/examples/campaign_manifest_known_physics_five.json",
+  "authorization": {
+    "status": "AUTHORIZED",
+    "authorization_ref": "giovanni-vitale-known-physics-five-baselines-2026-11-14",
+    "human_confirmation": true,
+    "selection_mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "execution_status": "NOT_RUN",
+  "checkpoint_path": "docs/validation/campaign_checkpoints/known-physics-five-baselines.json",
+  "report_path": null,
+  "activated_at": "2026-11-14T00:00:00+00:00",
+  "completed_at": null
+}

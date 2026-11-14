@@ -1,0 +1,76 @@
+{
+  "schema_version": "campaign-manifest-v1",
+  "campaign_id": "known-physics-five-baselines",
+  "status": "PILOT_READY",
+  "candidate_refs": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    },
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "record_path": "schemas/examples/theory_candidate_free_scalar_field.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    },
+    {
+      "candidate_id": "known-physics-quantum-particle-in-box",
+      "record_path": "schemas/examples/theory_candidate_particle_in_box.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    },
+    {
+      "candidate_id": "quantum-hydrogen-coulomb",
+      "record_path": "schemas/examples/theory_candidate_hydrogen_coulomb.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    },
+    {
+      "candidate_id": "quantum-spin-half-pauli",
+      "record_path": "schemas/examples/theory_candidate_pauli_spin_half.json",
+      "expected_selected": false,
+      "expected_registration_status": "READY_FOR_DERIVATION"
+    }
+  ],
+  "scope": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false
+  },
+  "selection_policy": {
+    "mode": "NO_AUTO_SELECTION",
+    "ranking": "DISABLED",
+    "human_review_required": true
+  },
+  "execution": {
+    "max_candidates": 5,
+    "parallelism": 5,
+    "per_candidate_timeout_seconds": 120,
+    "checkpoint_path": "docs/validation/campaign_checkpoints/known-physics-five-baselines.json",
+    "report_directory": "docs/validation/campaign_reports/known-physics-five-baselines",
+    "resume": true,
+    "deterministic_seed": 0
+  },
+  "deduplication": {
+    "key": "canonical_record_digest",
+    "on_duplicate": "RETAIN_FIRST_WITH_LINK"
+  },
+  "failure_policy": {
+    "mode": "ISOLATE_AND_CONTINUE",
+    "max_failures": 0
+  },
+  "authorization": {
+    "status": "NOT_ACTIVATED",
+    "authorization_ref": null
+  },
+  "execution_status": "NOT_RUN",
+  "notes": [
+    "First five-candidate real expansion campaign after the internally validated Pauli spin-half baseline.",
+    "The Pauli candidate is spin-only and two-level; orbital motion, spin-orbit coupling and relativistic corrections remain out of scope.",
+    "Empirical comparison, external data, fitting, finite bounds, selection and ranking remain closed.",
+    "The campaign is a bounded validation run, not a speculative theory search."
+  ]
+}

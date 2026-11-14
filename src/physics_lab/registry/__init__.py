@@ -53,6 +53,15 @@ from physics_lab.registry.hydrogen_coulomb_pipeline import (
     run_hydrogen_coulomb_pipeline,
     write_hydrogen_coulomb_report,
 )
+from physics_lab.registry.pauli_spin_half_pipeline import (
+    DEFAULT_PAULI_CANDIDATE_PATH,
+    PAULI_CANDIDATE_ID,
+    PAULI_PIPELINE_REF,
+    PAULI_PIPELINE_VERSION,
+    PauliSpinHalfPipelineError,
+    run_pauli_spin_half_pipeline,
+    write_pauli_spin_half_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -134,6 +143,13 @@ __all__ = [
     "HydrogenCoulombPipelineError",
     "run_hydrogen_coulomb_pipeline",
     "write_hydrogen_coulomb_report",
+    "DEFAULT_PAULI_CANDIDATE_PATH",
+    "PAULI_CANDIDATE_ID",
+    "PAULI_PIPELINE_REF",
+    "PAULI_PIPELINE_VERSION",
+    "PauliSpinHalfPipelineError",
+    "run_pauli_spin_half_pipeline",
+    "write_pauli_spin_half_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

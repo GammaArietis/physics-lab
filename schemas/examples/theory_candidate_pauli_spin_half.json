@@ -1,0 +1,314 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "quantum-spin-half-pauli",
+  "title": "Known-physics spin-1/2 Pauli system",
+  "summary": "A spin-only two-level Pauli Hamiltonian in a fixed z-axis field, with explicit Pauli algebra, spin projections, exact two-level spectrum and parameter-free normalized splitting. Orbital motion, spin-orbit coupling and relativistic corrections are separate scopes.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "pauli-spin-half-v1",
+    "decision_ref": "known-physics-pauli-spin-half-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "spinor-state",
+      "role": "MATTER",
+      "representation": "two-component spinor in C^2",
+      "domain_ref": "finite_spin_hilbert_space",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["pauli-known-physics-scope", "pauli-action-code"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 1,
+      "signature": "time-only",
+      "manifold": "R_t",
+      "boundary_conditions": [],
+      "provenance": "ASSUMED",
+      "source_refs": ["pauli-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "DEFINED",
+      "type": "spin Hilbert space",
+      "dimension": 2,
+      "group": "SU(2) representation",
+      "bundle": "C^2",
+      "provenance": "ASSUMED",
+      "source_refs": ["pauli-known-physics-scope"]
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "HAMILTONIAN",
+    "expression": "H = (hbar*omega/2)*sigma_z",
+    "terms": [
+      {
+        "id": "spin-field-coupling",
+        "role": "INTERACTION",
+        "expression": "(hbar*omega/2)*sigma_z",
+        "provenance": "ASSUMED",
+        "depends_on": ["omega", "hbar"],
+        "source_refs": ["pauli-action-code"]
+      }
+    ],
+    "symmetry_refs": ["time-translation", "rotations-about-z-axis"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["pauli-known-physics-scope", "pauli-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "positive-parameters",
+      "kind": "REGULARITY",
+      "statement": "omega > 0 and hbar > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["omega", "hbar"],
+      "source_refs": ["pauli-known-physics-scope"]
+    },
+    {
+      "id": "spin-half-projections",
+      "kind": "PRIMARY",
+      "statement": "The Pauli operator sigma_z has eigenvalues s in {-1,+1}, corresponding to spin projections hbar*s/2.",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["hbar"],
+      "source_refs": ["pauli-pipeline-code"]
+    },
+    {
+      "id": "pauli-algebra",
+      "kind": "CONSISTENCY",
+      "statement": "sigma_i sigma_j = delta_ij I + i epsilon_ijk sigma_k",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": [],
+      "source_refs": ["pauli-pipeline-code"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "omega",
+      "symbol": "omega",
+      "role": "SCALE",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "inverse_time",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["pauli-known-physics-scope"]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["pauli-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "CONVENTION",
+    "source_refs": ["pauli-known-physics-scope"]
+  },
+  "quantum": {
+    "status": "VERIFIED",
+    "method": "two-dimensional spin Hilbert space with Pauli matrix algebra",
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "VERIFIED",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": "two spin projections along z",
+    "provenance": "DERIVED",
+    "source_refs": ["pauli-pipeline-code"]
+  },
+  "quantization": {
+    "status": "VERIFIED",
+    "mechanism": "spin-1/2 representation on C^2 with sigma_z eigenvalues {-1,+1}",
+    "scope": "QUANTUM_MECHANICS",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "DERIVED",
+    "source_refs": ["pauli-pipeline-code"]
+  },
+  "observables": [
+    {
+      "id": "pauli-spin-energy-spectrum",
+      "name": "spin energy spectrum",
+      "expression": "E_s = s*hbar*omega/2",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["spin-projection", "omega", "hbar"],
+      "free_parameters": ["omega", "hbar"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["pauli-pipeline-code"]
+    },
+    {
+      "id": "pauli-normalized-spectrum",
+      "name": "normalized spin spectrum",
+      "expression": "E_s/(hbar*omega/2) = s",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["spin-projection"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["pauli-pipeline-code"]
+    },
+    {
+      "id": "pauli-spin-splitting",
+      "name": "dimensionless spin splitting",
+      "expression": "(E_+ - E_-)/(hbar*omega) = 1",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": [],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["pauli-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "pauli-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the known-physics spin-half baseline",
+        "immutable": true,
+        "notes": "Spin-only two-level model; orbital motion, spin-orbit coupling and relativistic corrections are separate scopes."
+      },
+      {
+        "source_id": "pauli-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/pauli_spin_half_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "Pauli Hamiltonian, matrices and exact two-level spectrum",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "pauli-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/pauli_spin_half_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, Pauli algebra and observable runner",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "pauli-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_pauli_spin_half_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-pauli-algebra",
+        "operation": "Construct sigma_x, sigma_y, sigma_z and verify the Pauli matrix algebra",
+        "inputs": ["spinor-state"],
+        "outputs": ["pauli-algebra"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/pauli_spin_half_model.py",
+        "source_refs": ["pauli-action-code", "pauli-pipeline-code"]
+      },
+      {
+        "id": "derive-pauli-spectrum",
+        "operation": "Diagonalize H=(hbar*omega/2)*sigma_z in the spin-z basis",
+        "inputs": ["pauli-algebra", "spin-half-projections"],
+        "outputs": ["pauli-spin-energy-spectrum"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/pauli_spin_half_model.py",
+        "source_refs": ["pauli-action-code", "pauli-pipeline-code"]
+      },
+      {
+        "id": "derive-pauli-splitting",
+        "operation": "Cancel hbar and omega between the two eigenvalues to obtain the normalized splitting",
+        "inputs": ["pauli-spin-energy-spectrum"],
+        "outputs": ["pauli-spin-splitting", "pauli-normalized-spectrum"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/pauli_spin_half_model.py",
+        "source_refs": ["pauli-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "pauli-known-physics-scope",
+        "statement": "Use the spin-only two-level Pauli Hamiltonian as the first spin-half baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It isolates the spin algebra and exact two-level spectrum before adding orbital or relativistic sectors.",
+        "source_refs": ["pauli-known-physics-scope"]
+      },
+      {
+        "id": "pauli-orbital-exclusion",
+        "statement": "Orbital motion, spin-orbit coupling and relativistic corrections are separate candidates and do not modify this baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The first spin-half runner must keep the finite-dimensional Pauli algebra auditable and parameter-free after normalization.",
+        "source_refs": ["pauli-known-physics-scope"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_pauli_spin_half_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "pauli-comparison-dataset",
+      "question": "Which immutable target-blind spin splitting dataset will be registered for a separate empirical comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["pauli-spin-energy-spectrum", "pauli-spin-splitting"]
+    },
+    {
+      "id": "pauli-full-particle-extension",
+      "question": "Should a full Pauli particle with orbital motion and magnetic vector potential be registered as a separate candidate rather than changing this spin-only baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["pauli-spin-energy-spectrum"]
+    }
+  ]
+}

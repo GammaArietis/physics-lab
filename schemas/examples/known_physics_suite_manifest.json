@@ -48,6 +48,15 @@
       "status": "COMPLETE",
       "runner_status": "VALIDATED",
       "empirical_status": "NOT_AUTHORIZED"
+    },
+    {
+      "candidate_id": "quantum-spin-half-pauli",
+      "domain": "quantum_mechanics",
+      "scope": "spin-only two-level Pauli Hamiltonian in a fixed z-axis field",
+      "pipeline_ref": "pauli-spin-half-v1",
+      "status": "COMPLETE",
+      "runner_status": "VALIDATED",
+      "empirical_status": "NOT_AUTHORIZED"
     }
   ],
   "planned": [
@@ -64,15 +73,6 @@
       "candidate_id": "classical-kepler-problem",
       "domain": "classical_mechanics",
       "wave": "K1",
-      "status": "PLANNED",
-      "runner_status": "MISSING",
-      "empirical_status": "NOT_AUTHORIZED",
-      "admission_status": "NOT_AUDITED"
-    },
-    {
-      "candidate_id": "quantum-spin-half-pauli",
-      "domain": "quantum_mechanics",
-      "wave": "K2",
       "status": "PLANNED",
       "runner_status": "MISSING",
       "empirical_status": "NOT_AUTHORIZED",
@@ -217,12 +217,12 @@
   ],
   "campaign_gates": {
     "current_real_campaign": "COMPLETE",
-    "next_batch_size": 4,
-    "next_parallelism": 4,
-    "scale_to_32_or_64_after": "review of the first four-candidate real expansion batch",
+    "next_batch_size": 5,
+    "next_parallelism": 5,
+    "scale_to_32_or_64_after": "review of the first five-candidate real expansion batch",
     "selection": "HUMAN_REVIEW_ONLY",
     "ranking": "DISABLED",
-    "next_campaign_id": "known-physics-four-baselines"
+    "next_campaign_id": "known-physics-five-baselines"
   },
   "exclusions_until_dedicated_method": [
     "nonperturbative QCD without a declared numerical/error model",
