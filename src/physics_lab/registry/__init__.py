@@ -71,6 +71,15 @@ from physics_lab.registry.maxwell_vacuum_pipeline import (
     run_maxwell_vacuum_pipeline,
     write_maxwell_vacuum_report,
 )
+from physics_lab.registry.newtonian_gravity_pipeline import (
+    DEFAULT_NEWTONIAN_CANDIDATE_PATH,
+    NEWTONIAN_CANDIDATE_ID,
+    NEWTONIAN_PIPELINE_REF,
+    NEWTONIAN_PIPELINE_VERSION,
+    NewtonianGravityPipelineError,
+    run_newtonian_gravity_pipeline,
+    write_newtonian_gravity_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -166,6 +175,13 @@ __all__ = [
     "MaxwellVacuumPipelineError",
     "run_maxwell_vacuum_pipeline",
     "write_maxwell_vacuum_report",
+    "DEFAULT_NEWTONIAN_CANDIDATE_PATH",
+    "NEWTONIAN_CANDIDATE_ID",
+    "NEWTONIAN_PIPELINE_REF",
+    "NEWTONIAN_PIPELINE_VERSION",
+    "NewtonianGravityPipelineError",
+    "run_newtonian_gravity_pipeline",
+    "write_newtonian_gravity_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

@@ -35,6 +35,10 @@ explicit record of what remains outside each baseline.
 - Classical Maxwell vacuum: source-free U(1) action, gauge symmetry, field
   equation, Bianchi identity, two transverse polarizations and parameter-free
   plane-wave dispersion in four-dimensional Minkowski spacetime.
+- Newtonian gravity: static scalar-potential action, Poisson equation,
+  isolated point-source solution, attractive inverse-square acceleration and
+  parameter-free radial ratios. Relativistic geometry and orbital dynamics
+  remain separate scopes.
 
 The circle model remains an internal structural reference and is not counted
 as a known-physics baseline.
@@ -84,12 +88,12 @@ pass the admission requirements below.
 
 ## Current frontier
 
-The K1 particle-in-a-box baseline, the two K2 baselines and the first K3
-Maxwell baseline are now implemented and validated internally. The next
-controlled step is the six-candidate real campaign combining the oscillator,
-free scalar field, particle in a box, hydrogen Coulomb, Pauli spin-half and
-classical Maxwell runners. Only after that campaign has been reviewed will the
-suite advance to Newtonian gravity and Einstein-Hilbert vacuum.
+The K1 particle-in-a-box baseline, the two K2 baselines and the first two K3
+baselines are now implemented and validated internally. The next controlled
+step is the seven-candidate real campaign combining the oscillator, free scalar
+field, particle in a box, hydrogen Coulomb, Pauli spin-half, classical Maxwell
+and Newtonian gravity runners. Only after that campaign has been reviewed will
+the suite advance to Einstein-Hilbert vacuum.
 
 Machine-readable inventory:
 

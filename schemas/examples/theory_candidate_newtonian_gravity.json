@@ -1,0 +1,377 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "newtonian-gravity",
+  "title": "Known-physics classical Newtonian gravitational field",
+  "summary": "A static classical Newtonian gravitational potential on absolute time and three-dimensional Euclidean space, sourced by an isolated point mass. The candidate closes the field action, Poisson equation, asymptotic boundary condition, inverse-square acceleration and parameter-free radial ratios without general relativity, cosmology or external data.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "newtonian-gravity-v1",
+    "decision_ref": "known-physics-newtonian-gravity-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "gravitational-potential",
+      "role": "GEOMETRY",
+      "representation": "scalar potential phi(t,x)",
+      "domain_ref": "R_t x R^3",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["newtonian-known-physics-scope", "newtonian-action-code"]
+    },
+    {
+      "id": "mass-density",
+      "role": "MATTER",
+      "representation": "source density rho(t,x)",
+      "domain_ref": "R_t x R^3",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": ["newtonian-known-physics-scope"]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 3,
+      "signature": "absolute time + Euclidean space",
+      "manifold": "R_t x R^3",
+      "boundary_conditions": ["phi(r)->0 as r->infinity"],
+      "provenance": "ASSUMED",
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral dt d^3x [-|grad phi|^2/(8*pi*G) - rho*phi], Newtonian field",
+    "terms": [
+      {
+        "id": "newtonian-field-kinetic",
+        "role": "KINETIC",
+        "expression": "-|grad phi|^2/(8*pi*G)",
+        "provenance": "ASSUMED",
+        "depends_on": ["gravitational_constant", "gravitational-potential"],
+        "source_refs": ["newtonian-action-code"]
+      },
+      {
+        "id": "mass-density-coupling",
+        "role": "INTERACTION",
+        "expression": "-rho*phi",
+        "provenance": "ASSUMED",
+        "depends_on": ["mass-density", "gravitational-potential"],
+        "source_refs": ["newtonian-action-code"]
+      }
+    ],
+    "symmetry_refs": ["spatial-rotations", "absolute-time-translations"],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": ["newtonian-known-physics-scope", "newtonian-action-code"]
+  },
+  "constraints": [
+    {
+      "id": "poisson-equation",
+      "kind": "PRIMARY",
+      "statement": "nabla^2 phi = 4*pi*G*rho",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": ["newtonian-field-kinetic", "mass-density-coupling"],
+      "source_refs": ["newtonian-pipeline-code"]
+    },
+    {
+      "id": "point-source-density",
+      "kind": "PRIMARY",
+      "statement": "rho(x) = M*delta^3(x) for an isolated point source at the origin",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["source_mass"],
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    {
+      "id": "asymptotic-boundary-condition",
+      "kind": "BOUNDARY",
+      "statement": "phi(r) -> 0 as r -> infinity",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["radius"],
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    {
+      "id": "positive-parameters",
+      "kind": "REGULARITY",
+      "statement": "G > 0, M > 0, r > 0 and r_ref > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": ["gravitational_constant", "source_mass", "radius", "reference_radius"],
+      "source_refs": ["newtonian-known-physics-scope"]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "gravitational_constant",
+      "symbol": "G",
+      "role": "COUPLING",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "length^3/(mass*time^2)",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    {
+      "id": "source_mass",
+      "symbol": "M",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "mass",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    {
+      "id": "radius",
+      "symbol": "r",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 2,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["newtonian-known-physics-scope"]
+    },
+    {
+      "id": "reference_radius",
+      "symbol": "r_ref",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": ["newtonian-known-physics-scope"]
+    }
+  ],
+  "vacuum": {
+    "status": "NOT_APPLICABLE",
+    "selection_status": "NOT_APPLICABLE",
+    "selection_principle": null,
+    "stationarity_status": "NOT_APPLICABLE",
+    "minimum_status": "NOT_APPLICABLE",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [],
+    "provenance": "CONVENTION",
+    "source_refs": ["newtonian-known-physics-scope"]
+  },
+  "quantum": {
+    "status": "CLASSICAL_ONLY",
+    "method": null,
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "NOT_APPLICABLE",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "CONVENTION",
+    "source_refs": ["newtonian-known-physics-scope"]
+  },
+  "quantization": {
+    "status": "NOT_APPLICABLE",
+    "mechanism": null,
+    "scope": "NOT_APPLICABLE",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "CONVENTION",
+    "source_refs": ["newtonian-known-physics-scope"]
+  },
+  "observables": [
+    {
+      "id": "newtonian-potential",
+      "name": "point-source gravitational potential",
+      "expression": "phi(r) = -G*M/r",
+      "dimension": "potential",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["gravitational_constant", "source_mass", "radius"],
+      "free_parameters": ["gravitational_constant", "source_mass", "radius"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["newtonian-pipeline-code"]
+    },
+    {
+      "id": "newtonian-acceleration",
+      "name": "radial acceleration magnitude",
+      "expression": "|a(r)| = G*M/r^2",
+      "dimension": "acceleration",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": ["gravitational_constant", "source_mass", "radius"],
+      "free_parameters": ["gravitational_constant", "source_mass", "radius"],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["newtonian-pipeline-code"]
+    },
+    {
+      "id": "newtonian-potential-ratio",
+      "name": "parameter-free potential ratio",
+      "expression": "phi(r)/phi(r_ref) = r_ref/r",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["radius", "reference_radius"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["newtonian-pipeline-code"]
+    },
+    {
+      "id": "newtonian-acceleration-ratio",
+      "name": "parameter-free inverse-square acceleration ratio",
+      "expression": "|a(r)|/|a(r_ref)| = (r_ref/r)^2",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": ["radius", "reference_radius"],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": ["newtonian-pipeline-code"]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "newtonian-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the Newtonian gravitational field baseline",
+        "immutable": true,
+        "notes": "Static isolated point source; N-body dynamics, cosmology and general relativity are separate scopes."
+      },
+      {
+        "source_id": "newtonian-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/newtonian_gravity_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "Newtonian field action, Poisson equation and point-source model",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "newtonian-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/newtonian_gravity_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, derivation runner and observable closure checks",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "newtonian-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_newtonian_gravity_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-poisson-equation",
+        "operation": "Vary the Newtonian field action with respect to phi to obtain nabla^2 phi = 4*pi*G*rho",
+        "inputs": ["newtonian-field-kinetic", "mass-density-coupling"],
+        "outputs": ["poisson-equation"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/newtonian_gravity_model.py",
+        "source_refs": ["newtonian-action-code", "newtonian-pipeline-code"]
+      },
+      {
+        "id": "derive-point-source-solution",
+        "operation": "Insert rho=M*delta^3(x) with phi->0 at infinity to obtain phi(r)=-G*M/r",
+        "inputs": ["poisson-equation", "point-source-density", "asymptotic-boundary-condition"],
+        "outputs": ["newtonian-potential", "newtonian-acceleration"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/newtonian_gravity_model.py",
+        "source_refs": ["newtonian-known-physics-scope", "newtonian-action-code", "newtonian-pipeline-code"]
+      },
+      {
+        "id": "derive-inverse-square-ratio",
+        "operation": "Differentiate the point-source potential and cancel G and M between two radii",
+        "inputs": ["newtonian-potential", "newtonian-acceleration"],
+        "outputs": ["newtonian-potential-ratio", "newtonian-acceleration-ratio"],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/newtonian_gravity_model.py",
+        "source_refs": ["newtonian-pipeline-code"]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "newtonian-known-physics-scope",
+        "statement": "Use the static isolated Newtonian point-source field as the K3 gravity baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It adds a classical gravitational field action, Poisson constraint and inverse-square observable without mixing in relativistic geometry or orbital dynamics.",
+        "source_refs": ["newtonian-known-physics-scope"]
+      },
+      {
+        "id": "newtonian-kepler-exclusion",
+        "statement": "The Kepler problem is a separate K1 candidate and does not modify this field baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "Field equations and test-particle orbital dynamics must remain independently auditable.",
+        "source_refs": ["newtonian-known-physics-scope"]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": ["tests/test_newtonian_gravity_pipeline.py"]
+  },
+  "open_questions": [
+    {
+      "id": "newtonian-comparison-dataset",
+      "question": "Which immutable target-blind gravitational-field or inverse-square dataset will be registered for a separate empirical comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": ["newtonian-potential", "newtonian-acceleration-ratio"]
+    },
+    {
+      "id": "newtonian-dynamics-extension",
+      "question": "Should time-dependent N-body dynamics be registered as a separate candidate rather than changing this static field baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": ["poisson-equation", "newtonian-acceleration"]
+    }
+  ]
+}
