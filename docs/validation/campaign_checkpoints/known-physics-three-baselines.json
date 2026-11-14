@@ -1,0 +1,71 @@
+{
+  "activation_id": "known-physics-three-baselines-activation",
+  "campaign_id": "known-physics-three-baselines",
+  "candidate_results": [
+    {
+      "candidate_id": "known-physics-quantum-harmonic-oscillator",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-three-baselines/known-physics-quantum-harmonic-oscillator.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true,
+        "vacuum_selected_by_spectrum_minimum": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_quantum_harmonic_oscillator.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-free-real-scalar-field",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-three-baselines/known-physics-free-real-scalar-field.json",
+      "controls": {
+        "absolute_zero_point_energy_not_claimed_finite": true,
+        "action_instantiated": true,
+        "canonical_field_quantization_in_scope": true,
+        "external_comparison_not_authorized": true,
+        "fock_vacuum_selected": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "normal_ordered_vacuum_energy_explicit": true,
+        "parameter_free_observable_generated": true,
+        "periodic_boundary_condition_explicit": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_free_scalar_field.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    },
+    {
+      "candidate_id": "known-physics-quantum-particle-in-box",
+      "candidate_report_path": "docs/validation/campaign_reports/known-physics-three-baselines/known-physics-quantum-particle-in-box.json",
+      "controls": {
+        "action_instantiated": true,
+        "canonical_quantization_in_scope": true,
+        "dirichlet_boundary_conditions_explicit": true,
+        "external_comparison_not_authorized": true,
+        "field_quantization_not_claimed": true,
+        "ground_state_selected_by_spectrum_minimum": true,
+        "known_physics_scope_explicit": true,
+        "no_experimental_parameters": true,
+        "parameter_free_observable_generated": true
+      },
+      "pipeline_status": "COMPLETE",
+      "record_path": "schemas/examples/theory_candidate_particle_in_box.json",
+      "record_unchanged": true,
+      "status": "PASS"
+    }
+  ],
+  "completed_candidate_ids": [
+    "known-physics-quantum-harmonic-oscillator",
+    "known-physics-free-real-scalar-field",
+    "known-physics-quantum-particle-in-box"
+  ],
+  "execution_status": "COMPLETE",
+  "execution_version": "campaign-execution-v1",
+  "failed_candidate_ids": []
+}
