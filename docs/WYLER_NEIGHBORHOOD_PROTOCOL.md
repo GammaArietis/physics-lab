@@ -10,6 +10,14 @@ exact historical anchor and diagnostic stress tests. The stress tests are not
 treated as physical theories unless an independent derivation supplies their
 normalization.
 
+## Visual map
+
+![Conceptual map from Wyler geometry to a transverse electromagnetic wave](figures/wyler_em_geometry.svg)
+
+The left panel is a human-readable projection of the abstract domains; the
+right panel is the local Maxwell plane-wave geometry. The bridge between them
+is precisely the part that still requires a physical derivation.
+
 ## Historical anchor
 
 The anchor is:

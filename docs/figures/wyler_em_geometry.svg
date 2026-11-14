@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Conceptual map from Wyler geometry to a transverse electromagnetic wave</title>
+  <desc id="desc">Left: a conceptual projection of the bounded domain D5, its boundary Q5, and an S4 fibre. Right: orthogonal electric, magnetic, and propagation vectors for a vacuum plane wave. The bottom bridge states that the volume ratio is not yet a physical derivation of alpha.</desc>
+  <defs>
+    <linearGradient id="domain" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dbeafe" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#93c5fd" stop-opacity="0.50"/>
+    </linearGradient>
+    <linearGradient id="boundary" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.80"/>
+      <stop offset="1" stop-color="#1d4ed8" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="fiber" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0.55"/>
+    </linearGradient>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#7c3aed"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+    <style>
+      .title { font: 700 27px Inter, Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 16px Inter, Arial, sans-serif; fill: #475569; }
+      .panel-title { font: 700 21px Inter, Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 18px Inter, Arial, sans-serif; fill: #0f172a; }
+      .small { font: 400 15px Inter, Arial, sans-serif; fill: #334155; }
+      .math { font: 600 18px Georgia, serif; fill: #0f172a; }
+      .white { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="820" fill="#f8fafc"/>
+  <text x="60" y="55" class="title">Dalla geometria di Wyler alla struttura di un’onda elettromagnetica</text>
+  <text x="60" y="84" class="subtitle">Schema concettuale: il ponte tra i due pannelli è ancora un problema fisico da derivare, non un’identità già dimostrata.</text>
+
+  <!-- panels -->
+  <rect x="45" y="120" width="610" height="520" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="745" y="120" width="610" height="520" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="75" y="165" class="panel-title">1. Costruzione geometrica astratta</text>
+  <text x="775" y="165" class="panel-title">2. Onda piana nel vuoto</text>
+
+  <!-- left: domain -->
+  <ellipse cx="340" cy="365" rx="215" ry="145" fill="url(#domain)" stroke="#2563eb" stroke-width="3"/>
+  <path d="M125 365 C165 235 515 235 555 365 C515 495 165 495 125 365Z" fill="none" stroke="#1d4ed8" stroke-width="3" stroke-dasharray="8 8"/>
+  <ellipse cx="340" cy="365" rx="170" ry="108" fill="url(#boundary)" stroke="#1e40af" stroke-width="2" opacity="0.92"/>
+  <ellipse cx="340" cy="365" rx="116" ry="72" fill="#dbeafe" stroke="#60a5fa" stroke-width="2" opacity="0.95"/>
+  <text x="306" y="375" class="label white">D⁵</text>
+  <text x="264" y="398" class="small white">dominio interno</text>
+  <text x="474" y="315" class="label" fill="#1d4ed8">Q⁵</text>
+  <text x="455" y="337" class="small">bordo</text>
+
+  <!-- fibre S4 -->
+  <circle cx="197" cy="285" r="48" fill="url(#fiber)" stroke="#d97706" stroke-width="3"/>
+  <ellipse cx="197" cy="285" rx="29" ry="48" fill="none" stroke="#b45309" stroke-width="2"/>
+  <ellipse cx="197" cy="285" rx="48" ry="18" fill="none" stroke="#b45309" stroke-width="2"/>
+  <text x="176" y="291" class="label">S⁴</text>
+  <line x1="233" y1="301" x2="275" y2="331" stroke="#b45309" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <text x="82" y="235" class="small">fibra / orientazioni</text>
+
+  <!-- volume formula -->
+  <rect x="90" y="535" width="525" height="74" rx="14" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="118" y="565" class="math">α<tspan baseline-shift="sub" font-size="13">W</tspan> ∝ V(D⁵)<tspan baseline-shift="super" font-size="13">1/4</tspan> / [V(Q⁵)V(S⁴)]</text>
+  <text x="118" y="590" class="small">volumi geometrici normalizzati; la giustificazione fisica resta da costruire</text>
+
+  <!-- right: triad -->
+  <line x1="1045" y1="430" x2="1285" y2="430" stroke="#059669" stroke-width="6" marker-end="url(#arrow-green)"/>
+  <line x1="1045" y1="430" x2="1045" y2="235" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow-blue)"/>
+  <line x1="1045" y1="430" x2="900" y2="430" stroke="#dc2626" stroke-width="6" marker-end="url(#arrow-red)"/>
+  <circle cx="1045" cy="430" r="9" fill="#0f172a"/>
+  <text x="1289" y="438" class="label" fill="#059669">k</text>
+  <text x="1060" y="232" class="label" fill="#2563eb">E</text>
+  <text x="870" y="438" class="label" fill="#dc2626">B</text>
+  <text x="1080" y="475" class="small">direzione di propagazione</text>
+  <text x="1070" y="515" class="math">E ⟂ B,  E ⟂ k,  B ⟂ k</text>
+  <text x="1070" y="546" class="math">B = (1/ω) k × E</text>
+  <text x="1070" y="577" class="math">ω = c |k|</text>
+
+  <!-- energy flow -->
+  <path d="M930 600 C1010 620 1120 620 1235 600" fill="none" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+  <text x="835" y="620" class="small">S = E × H ∥ k</text>
+
+  <!-- bridge -->
+  <rect x="120" y="690" width="1160" height="82" rx="18" fill="#fff7ed" stroke="#fdba74" stroke-width="2"/>
+  <text x="160" y="723" class="label">Ponte da dimostrare</text>
+  <text x="160" y="750" class="small">La geometria D⁵/Q⁵/S⁴ deve generare un’azione U(1), due polarizzazioni, c e il coupling α senza inserire il valore sperimentale.</text>
+</svg>
