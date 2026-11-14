@@ -1,0 +1,462 @@
+{
+  "schema_version": "theory-candidate-v1",
+  "candidate_id": "known-physics-quantum-particle-in-box",
+  "title": "Known-physics quantum particle in a one-dimensional box",
+  "summary": "A non-relativistic quantum particle on a one-dimensional interval with infinite-wall Dirichlet boundary conditions. The candidate closes the free-particle action, canonical Hamiltonian, discrete spectrum, ground state and a parameter-free gap ratio without activating search or empirical comparison.",
+  "registration": {
+    "status": "READY_FOR_DERIVATION",
+    "selected": false,
+    "origin": "HUMAN_REGISTRATION",
+    "pipeline_ref": "particle-in-box-v1",
+    "decision_ref": "known-physics-particle-in-box-baseline",
+    "registered_at": null
+  },
+  "fields": [
+    {
+      "id": "position",
+      "role": "OTHER",
+      "representation": "one-dimensional position coordinate x",
+      "domain_ref": "open_interval_(0,L)",
+      "status": "COMPLETE",
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "box-known-physics-scope",
+        "box-action-code"
+      ]
+    }
+  ],
+  "geometry": {
+    "spacetime": {
+      "status": "DEFINED",
+      "dimension": 1,
+      "signature": "time-only",
+      "manifold": "R_t",
+      "boundary_conditions": [
+        "psi(0)=0",
+        "psi(L)=0"
+      ],
+      "provenance": "ASSUMED",
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    },
+    "internal_space": {
+      "status": "NOT_DEFINED",
+      "type": null,
+      "dimension": null,
+      "group": null,
+      "bundle": null,
+      "provenance": "NOT_DEFINED",
+      "source_refs": []
+    },
+    "connections": []
+  },
+  "action": {
+    "status": "COMPLETE",
+    "formulation": "LAGRANGIAN",
+    "expression": "S = integral dt [m*xdot^2/2], 0 < x < L, Dirichlet psi(0)=psi(L)=0",
+    "terms": [
+      {
+        "id": "kinetic",
+        "role": "KINETIC",
+        "expression": "m*xdot^2/2",
+        "provenance": "ASSUMED",
+        "depends_on": [
+          "mass"
+        ],
+        "source_refs": [
+          "box-action-code"
+        ]
+      },
+      {
+        "id": "hard-wall-boundary",
+        "role": "BOUNDARY",
+        "expression": "0 < x < L; psi(0)=psi(L)=0",
+        "provenance": "ASSUMED",
+        "depends_on": [
+          "length",
+          "position"
+        ],
+        "source_refs": [
+          "box-known-physics-scope"
+        ]
+      }
+    ],
+    "symmetry_refs": [
+      "time-translation"
+    ],
+    "action_hash": null,
+    "frozen": false,
+    "source_refs": [
+      "box-known-physics-scope",
+      "box-action-code"
+    ]
+  },
+  "constraints": [
+    {
+      "id": "canonical-momentum",
+      "kind": "CONSISTENCY",
+      "statement": "p = m*xdot",
+      "status": "VERIFIED",
+      "provenance": "DERIVED",
+      "depends_on": [
+        "mass"
+      ],
+      "source_refs": [
+        "box-pipeline-code"
+      ]
+    },
+    {
+      "id": "dirichlet-boundaries",
+      "kind": "BOUNDARY",
+      "statement": "psi(0)=0 and psi(L)=0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "length",
+        "position"
+      ],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    },
+    {
+      "id": "positive-parameters",
+      "kind": "REGULARITY",
+      "statement": "m > 0, L > 0, hbar > 0",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    },
+    {
+      "id": "canonical-commutator",
+      "kind": "PRIMARY",
+      "statement": "[x,p] = i*hbar on the Dirichlet domain",
+      "status": "VERIFIED",
+      "provenance": "ASSUMED",
+      "depends_on": [
+        "hbar"
+      ],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    }
+  ],
+  "parameters": [
+    {
+      "id": "mass",
+      "symbol": "m",
+      "role": "MASS",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "mass",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    },
+    {
+      "id": "length",
+      "symbol": "L",
+      "role": "GEOMETRY",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "length",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    },
+    {
+      "id": "hbar",
+      "symbol": "hbar",
+      "role": "NORMALIZATION",
+      "status": "FREE",
+      "provenance": "INPUT",
+      "value": 1,
+      "unit": "action",
+      "formula": null,
+      "dependencies": [],
+      "source_refs": [
+        "box-known-physics-scope"
+      ]
+    }
+  ],
+  "vacuum": {
+    "status": "SELECTED",
+    "selection_status": "SELECTED",
+    "selection_principle": "global minimum of the exact Dirichlet Hamiltonian spectrum",
+    "stationarity_status": "STATIONARY",
+    "minimum_status": "GLOBAL_MINIMUM",
+    "moduli_status": "NOT_APPLICABLE",
+    "parameter_refs": [
+      "mass",
+      "length",
+      "hbar"
+    ],
+    "provenance": "DERIVED",
+    "source_refs": [
+      "box-pipeline-code"
+    ]
+  },
+  "quantum": {
+    "status": "VERIFIED",
+    "method": "canonical quantization on the Dirichlet domain with [x,p] = i*hbar",
+    "anomalies": "NOT_APPLICABLE",
+    "unitarity": "VERIFIED",
+    "renormalization": "NOT_APPLICABLE",
+    "polarizations": null,
+    "provenance": "DERIVED",
+    "source_refs": [
+      "box-pipeline-code"
+    ]
+  },
+  "quantization": {
+    "status": "VERIFIED",
+    "mechanism": "[x,p] = i*hbar on the Dirichlet domain -> H = -hbar^2/(2*m)*d^2/dx^2",
+    "scope": "QUANTUM_MECHANICS",
+    "integer_lattice_derived": false,
+    "field_quantization_status": "NOT_APPLICABLE",
+    "provenance": "DERIVED",
+    "source_refs": [
+      "box-pipeline-code"
+    ]
+  },
+  "observables": [
+    {
+      "id": "energy-spectrum",
+      "name": "energy spectrum",
+      "expression": "E_n = pi^2*hbar^2*n^2/(2*m*L^2)",
+      "dimension": "energy",
+      "status": "DERIVED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "quantum-number",
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "free_parameters": [
+        "mass",
+        "length",
+        "hbar"
+      ],
+      "uncertainty_status": "SYMBOLIC_ONLY",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "box-pipeline-code"
+      ]
+    },
+    {
+      "id": "dimensionless-gap-ratio",
+      "name": "dimensionless gap ratio",
+      "expression": "(E_n - E_1)/(E_2 - E_1) = (n^2 - 1)/3",
+      "dimension": "dimensionless",
+      "status": "PREDICTED",
+      "provenance": "DERIVED",
+      "dependencies": [
+        "quantum-number"
+      ],
+      "free_parameters": [],
+      "uncertainty_status": "DERIVED",
+      "comparison_status": "NOT_AUTHORIZED",
+      "source_refs": [
+        "box-pipeline-code"
+      ]
+    }
+  ],
+  "provenance": {
+    "sources": [
+      {
+        "source_id": "box-known-physics-scope",
+        "kind": "HUMAN_INPUT",
+        "repository_path": null,
+        "uri": null,
+        "digest": null,
+        "role": "explicit scope decision for the known-physics particle-in-a-box baseline",
+        "immutable": true,
+        "notes": "Controlled reproduction baseline, not a new physical claim."
+      },
+      {
+        "source_id": "box-action-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/models/examples/particle_in_box_model.py",
+        "uri": null,
+        "digest": null,
+        "role": "free-particle action and Dirichlet spectral model",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "box-pipeline-code",
+        "kind": "CODE",
+        "repository_path": "src/physics_lab/registry/particle_in_box_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "candidate scope, derivation runner and closure checks",
+        "immutable": true,
+        "notes": null
+      },
+      {
+        "source_id": "box-tests",
+        "kind": "CODE",
+        "repository_path": "tests/test_particle_in_box_pipeline.py",
+        "uri": null,
+        "digest": null,
+        "role": "independent regression and provenance-control evidence",
+        "immutable": true,
+        "notes": null
+      }
+    ],
+    "derivation_steps": [
+      {
+        "id": "derive-eom",
+        "operation": "Euler-Lagrange variation of the free-particle action inside the interval",
+        "inputs": [
+          "kinetic"
+        ],
+        "outputs": [
+          "eom"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/particle_in_box_model.py",
+        "source_refs": [
+          "box-action-code",
+          "box-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-hamiltonian",
+        "operation": "Legendre transform p=m*xdot -> H=p^2/(2*m)",
+        "inputs": [
+          "eom",
+          "canonical-momentum"
+        ],
+        "outputs": [
+          "hamiltonian"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/particle_in_box_model.py",
+        "source_refs": [
+          "box-action-code",
+          "box-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-dirichlet-spectrum",
+        "operation": "Dirichlet domain -> psi_n and E_n proportional to n^2",
+        "inputs": [
+          "hamiltonian",
+          "dirichlet-boundaries"
+        ],
+        "outputs": [
+          "energy-spectrum"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/particle_in_box_model.py",
+        "source_refs": [
+          "box-known-physics-scope",
+          "box-action-code",
+          "box-pipeline-code"
+        ]
+      },
+      {
+        "id": "derive-gap-ratio",
+        "operation": "(E_n-E_1)/(E_2-E_1) -> (n^2-1)/3",
+        "inputs": [
+          "energy-spectrum"
+        ],
+        "outputs": [
+          "dimensionless-gap-ratio"
+        ],
+        "provenance": "DERIVED",
+        "code_ref": "src/physics_lab/models/examples/particle_in_box_model.py",
+        "source_refs": [
+          "box-pipeline-code"
+        ]
+      }
+    ],
+    "decisions": [
+      {
+        "id": "known-physics-scope",
+        "statement": "Use the one-dimensional infinite square well as the next known-physics reproduction baseline.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "It adds explicit boundary conditions and a discrete n^2 spectrum while remaining analytically closed.",
+        "source_refs": [
+          "box-known-physics-scope"
+        ]
+      },
+      {
+        "id": "ground-state-selection",
+        "statement": "Select n=1 as the ground state because it is the global minimum of the exact Dirichlet Hamiltonian spectrum.",
+        "status": "RESOLVED",
+        "provenance": "DERIVED",
+        "rationale": "The spectrum is strictly increasing for positive m, L and hbar.",
+        "source_refs": [
+          "box-pipeline-code"
+        ]
+      },
+      {
+        "id": "display-window",
+        "statement": "The displayed n range is a report cutoff after deriving the spectrum; it is not a search bound.",
+        "status": "RESOLVED",
+        "provenance": "CONVENTION",
+        "rationale": "The analytic formula is defined for all positive integer n before the finite report window.",
+        "source_refs": [
+          "box-pipeline-code"
+        ]
+      }
+    ]
+  },
+  "authorization": {
+    "search_status": "NOT_ACTIVATED",
+    "finite_bounds": "NOT_AUTHORIZED",
+    "empirical_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "target_blind": true,
+    "authorization_ref": null
+  },
+  "validation": {
+    "schema_status": "VALID",
+    "mathematical_consistency": "NOT_RUN",
+    "reproducibility": "NOT_RUN",
+    "provenance_audit": "NOT_RUN",
+    "physical_claim_status": "QUANTITATIVE_CLAIM_PENDING_COMPARISON",
+    "validation_refs": [
+      "tests/test_particle_in_box_pipeline.py"
+    ]
+  },
+  "open_questions": [
+    {
+      "id": "baseline-comparison-dataset",
+      "question": "Which immutable real-world particle-in-a-box or quantum confinement dataset will be registered for the separate target-blind comparison?",
+      "blocking": true,
+      "status": "OPEN",
+      "related_refs": [
+        "dimensionless-gap-ratio"
+      ]
+    },
+    {
+      "id": "finite-well-extension",
+      "question": "Should a finite square-well extension be registered as a separate candidate rather than changing this infinite-well baseline?",
+      "blocking": false,
+      "status": "DEFERRED",
+      "related_refs": [
+        "action",
+        "dirichlet-boundaries"
+      ]
+    }
+  ]
+}

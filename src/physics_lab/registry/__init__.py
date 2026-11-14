@@ -36,6 +36,14 @@ from physics_lab.registry.free_scalar_field_pipeline import (
     run_free_scalar_field_pipeline,
     write_free_scalar_field_report,
 )
+from physics_lab.registry.particle_in_box_pipeline import (
+    BOX_CANDIDATE_ID,
+    BOX_PIPELINE_REF,
+    DEFAULT_BOX_CANDIDATE_PATH,
+    ParticleInBoxPipelineError,
+    run_particle_in_box_pipeline,
+    write_particle_in_box_report,
+)
 from physics_lab.registry.reference_closure import (
     REFERENCE_CLOSURE_VERSION,
     ReferenceClosureError,
@@ -104,6 +112,12 @@ __all__ = [
     "SCALAR_FIELD_PIPELINE_VERSION",
     "run_free_scalar_field_pipeline",
     "write_free_scalar_field_report",
+    "BOX_CANDIDATE_ID",
+    "BOX_PIPELINE_REF",
+    "DEFAULT_BOX_CANDIDATE_PATH",
+    "ParticleInBoxPipelineError",
+    "run_particle_in_box_pipeline",
+    "write_particle_in_box_report",
     "REFERENCE_CLOSURE_VERSION",
     "ReferenceClosureError",
     "audit_reference_closure",

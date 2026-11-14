@@ -177,7 +177,7 @@
         },
         "pipeline_ref": {
           "type": ["string", "null"],
-          "enum": ["circle-reference-v1", "quantum-harmonic-oscillator-v1", "free-scalar-field-v1", null]
+          "enum": ["circle-reference-v1", "quantum-harmonic-oscillator-v1", "free-scalar-field-v1", "particle-in-box-v1", null]
         },
         "decision_ref": {
           "type": ["string", "null"]
