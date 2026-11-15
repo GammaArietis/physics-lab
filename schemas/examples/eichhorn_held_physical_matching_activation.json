@@ -1,7 +1,7 @@
 {
   "activation_id": "eichhorn-held-physical-matching-2026-11-15",
   "campaign_id": "eichhorn-held-physical-matching",
-  "matching_version": "eichhorn-held-physical-matching-v1",
+  "matching_version": "eichhorn-held-physical-matching-v2",
   "authorization": {
     "all_declared_variants": true,
     "experimental_comparison": "AFTER_GENERATION_ONLY",
@@ -17,7 +17,8 @@
   "gravity_transition_log_offsets": [-2.0, -4.0, -6.0],
   "sm_loop_modes": [
     "one-loop-sm",
-    "two-loop-gauge-control"
+    "two-loop-gauge-control",
+    "two-loop-sm-top-dominance"
   ],
   "threshold_schedules": [
     {"id": "no-decoupling", "top_over_v": null, "higgs_over_v": null, "ew_over_v": null},
@@ -26,7 +27,7 @@
     {"id": "threshold-high", "top_over_v": 1.25, "higgs_over_v": 1.0, "ew_over_v": 0.8}
   ],
   "conversion_controls": {
-    "top": "one-loop-qcd",
+    "top": "four-loop-pure-qcd-control",
     "higgs": "tree-level",
     "full_nnlo_pole_matching": "NOT_IMPLEMENTED"
   },

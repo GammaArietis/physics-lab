@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from physics_lab.search.eichhorn_held_physical_matching import (
     ELECTROWEAK_VEV_GEV,
+    ThresholdSchedule,
     run_physical_matching_campaign,
+    sm_matching_beta,
 )
 
 
@@ -33,3 +35,22 @@ def test_physical_matching_retains_comparison_separate_from_selection() -> None:
     assert report["experimental_comparison"]["performed_after_generation"] is True
     assert report["experimental_comparison"]["used_for_fit"] is False
     assert report["selection"]["performed"] is False
+
+
+def test_two_loop_top_dominance_is_distinct_from_gauge_only_control() -> None:
+    state = (0.35, 0.65, 1.10, 0.90, 0.02, 0.065)
+    schedule = ThresholdSchedule("no-decoupling", None, None, None)
+    gauge_only = sm_matching_beta(
+        state,
+        loop_mode="two-loop-gauge-control",
+        scale_gev=ELECTROWEAK_VEV_GEV,
+        thresholds=schedule,
+    )
+    full_top = sm_matching_beta(
+        state,
+        loop_mode="two-loop-sm-top-dominance",
+        scale_gev=ELECTROWEAK_VEV_GEV,
+        thresholds=schedule,
+    )
+    assert full_top[3] != gauge_only[3]
+    assert full_top[5] != gauge_only[5]

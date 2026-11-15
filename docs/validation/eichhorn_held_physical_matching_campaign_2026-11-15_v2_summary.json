@@ -1,0 +1,356 @@
+{
+  "bibliography": [
+    {
+      "citation": "A. Eichhorn and A. Held, Top mass from asymptotic safety, Phys. Lett. B 777 (2018) 217--221.",
+      "doi": "10.1016/j.physletb.2017.12.040",
+      "id": "eichhorn-held-2018",
+      "role": "UV truncation and matching setup."
+    },
+    {
+      "citation": "G. Degrassi et al., Higgs mass and vacuum stability in the Standard Model at NNLO, JHEP 08 (2012) 098.",
+      "doi": "10.1007/JHEP08(2012)098",
+      "id": "degrassi-et-al-2012",
+      "role": "NNLO running and threshold precision requirement."
+    },
+    {
+      "citation": "M. Luo and Y. Xiao, Two-loop Renormalization Group Equations in the Standard Model, Phys. Rev. Lett. 90 (2003) 011601.",
+      "doi": "10.1103/PhysRevLett.90.011601",
+      "id": "luo-xiao-2003",
+      "role": "Two-loop SM beta-function control."
+    },
+    {
+      "citation": "D. Buttazzo et al., Investigating the near-criticality of the Higgs boson, JHEP 12 (2013) 089.",
+      "doi": "10.1007/JHEP12(2013)089",
+      "id": "buttazzo-et-al-2013",
+      "role": "Explicit two-loop top/Higgs beta polynomials and precision matching context."
+    },
+    {
+      "citation": "S. P. Martin and D. G. Robertson, Standard Model parameters in the tadpole-free pure MSbar scheme, Phys. Rev. D 100 (2019) 073004.",
+      "doi": "10.1103/PhysRevD.100.073004",
+      "id": "martin-robertson-2019",
+      "role": "Authoritative external SMDR implementation for full pole and decoupling matching."
+    },
+    {
+      "citation": "Particle Data Group, Review of Particle Physics 2025, Top Quark review.",
+      "id": "pdg-2025-top",
+      "role": "Late comparison reference and pole/MS scheme caveats.",
+      "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-top-quark.pdf"
+    },
+    {
+      "citation": "Particle Data Group, Review of Particle Physics 2025, Higgs listing.",
+      "id": "pdg-2025-higgs",
+      "role": "Late comparison reference.",
+      "url": "https://pdg.lbl.gov/2025/web/viewer.html?file=..%2Flistings%2Frpp2025-list-higgs-boson.pdf"
+    }
+  ],
+  "campaign_id": "eichhorn-held-physical-matching",
+  "case_preview": [
+    {
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=no-decoupling",
+      "electroweak_observables": {
+        "alpha_em_at_evaluation_scale": 0.0,
+        "alpha_s": 0.0,
+        "conversion_scope": "top four-loop pure-QCD control; Higgs tree-level only",
+        "evaluation_scale_gev": 246.21965,
+        "higgs_pole_two_loop_status": "EXTERNAL_SMDR_REQUIRED",
+        "higgs_running_tree_control_gev": 72.03951510532373,
+        "top_pole_one_loop_qcd_gev": 55.98712357801052,
+        "top_pole_qcd_four_loop_control_gev": 55.98712357801052,
+        "top_running_at_mt_qcd_control_gev": 55.98712357801052,
+        "top_running_gev": 55.98712357801052
+      },
+      "error": null,
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "initial_state": [
+        3.29,
+        -4.51,
+        0.0,
+        0.0,
+        0.0,
+        -0.360510715494886,
+        7.033049308639597e-21,
+        0.010100512913437
+      ],
+      "initialization_id": "published-rounded-anchor-matter-branch-000",
+      "loop_mode": "one-loop-sm",
+      "low_probe_error": null,
+      "low_probe_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.3171074706816964,
+        6.774664176166255e-21,
+        0.02214323892816542
+      ],
+      "low_probe_status": "COMPLETE",
+      "status": "COMPLETE",
+      "threshold_schedule": {
+        "electroweak_gev": null,
+        "higgs_gev": null,
+        "identifier": "no-decoupling",
+        "top_gev": null
+      },
+      "transition_offset": -2.0,
+      "transition_scale_gev": 3.2954141468115194e+17
+    },
+    {
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=threshold-low",
+      "electroweak_observables": {
+        "alpha_em_at_evaluation_scale": 0.0,
+        "alpha_s": 0.0,
+        "conversion_scope": "top four-loop pure-QCD control; Higgs tree-level only",
+        "evaluation_scale_gev": 246.21965,
+        "higgs_pole_two_loop_status": "EXTERNAL_SMDR_REQUIRED",
+        "higgs_running_tree_control_gev": 72.03951510532373,
+        "top_pole_one_loop_qcd_gev": 55.98712357801052,
+        "top_pole_qcd_four_loop_control_gev": 55.98712357801052,
+        "top_running_at_mt_qcd_control_gev": 55.98712357801052,
+        "top_running_gev": 55.98712357801052
+      },
+      "error": null,
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "initial_state": [
+        3.29,
+        -4.51,
+        0.0,
+        0.0,
+        0.0,
+        -0.360510715494886,
+        7.033049308639597e-21,
+        0.010100512913437
+      ],
+      "initialization_id": "published-rounded-anchor-matter-branch-000",
+      "loop_mode": "one-loop-sm",
+      "low_probe_error": null,
+      "low_probe_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.3209294388818241,
+        6.801772995966884e-21,
+        0.021497660172028688
+      ],
+      "low_probe_status": "COMPLETE",
+      "status": "COMPLETE",
+      "threshold_schedule": {
+        "electroweak_gev": 73.865895,
+        "higgs_gev": 98.48786000000001,
+        "identifier": "threshold-low",
+        "top_gev": 123.109825
+      },
+      "transition_offset": -2.0,
+      "transition_scale_gev": 3.2954141468115194e+17
+    },
+    {
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=threshold-central",
+      "electroweak_observables": {
+        "alpha_em_at_evaluation_scale": 0.0,
+        "alpha_s": 0.0,
+        "conversion_scope": "top four-loop pure-QCD control; Higgs tree-level only",
+        "evaluation_scale_gev": 246.21965,
+        "higgs_pole_two_loop_status": "EXTERNAL_SMDR_REQUIRED",
+        "higgs_running_tree_control_gev": 72.03951510532373,
+        "top_pole_one_loop_qcd_gev": 55.98712357801052,
+        "top_pole_qcd_four_loop_control_gev": 55.98712357801052,
+        "top_running_at_mt_qcd_control_gev": 55.98712357801052,
+        "top_running_gev": 55.98712357801052
+      },
+      "error": null,
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "initial_state": [
+        3.29,
+        -4.51,
+        0.0,
+        0.0,
+        0.0,
+        -0.360510715494886,
+        7.033049308639597e-21,
+        0.010100512913437
+      ],
+      "initialization_id": "published-rounded-anchor-matter-branch-000",
+      "loop_mode": "one-loop-sm",
+      "low_probe_error": null,
+      "low_probe_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32130790821324173,
+        6.804445703165638e-21,
+        0.021420170126136027
+      ],
+      "low_probe_status": "COMPLETE",
+      "status": "COMPLETE",
+      "threshold_schedule": {
+        "electroweak_gev": 98.48786000000001,
+        "higgs_gev": 123.109825,
+        "identifier": "threshold-central",
+        "top_gev": 184.6647375
+      },
+      "transition_offset": -2.0,
+      "transition_scale_gev": 3.2954141468115194e+17
+    }
+  ],
+  "conclusions": {
+    "dimensionful_flow_executed": true,
+    "gravity_decoupling_executed": true,
+    "physical_sm_matching_completed": false,
+    "reason": "A complete SM two-loop/NNLO threshold and pole-mass matching layer is not implemented; the report records the controlled partial result and the missing gates.",
+    "threshold_sensitivity_executed": true,
+    "two_loop_gauge_control_executed": true,
+    "two_loop_top_dominance_control_executed": true
+  },
+  "controls": {
+    "all_declared_variants_executed": true,
+    "all_negative_results_retained": true,
+    "comparison_last": true,
+    "comparison_not_used_for_fit": true,
+    "comparison_not_used_for_selection": true,
+    "full_sm_nnlo_not_claimed": true,
+    "full_sm_two_loop_not_claimed": true,
+    "low_scale_probe_is_diagnostic_only": true,
+    "nnlo_pole_conversion_not_claimed": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_fitting": true,
+    "regulator_shape_uncertainty_not_claimed": true,
+    "two_loop_top_dominance_implemented": true
+  },
+  "execution_status": "PARTIAL_FAILURES_RETAINED",
+  "experimental_comparison": {
+    "comparison_count": 28692,
+    "comparison_summary": {
+      "higgs_pull_using_tree_control": {
+        "count": 28692,
+        "finite_count": 26964,
+        "max": 453.06023723808823,
+        "mean": -483.6717080843235,
+        "min": -1138.1818181818182
+      },
+      "top_pull_using_control_conversion": {
+        "count": 28692,
+        "finite_count": 27060,
+        "max": -229.23051513370663,
+        "mean": -375.7648325985718,
+        "min": -556.6451612903226
+      }
+    },
+    "interpretation": "Descriptive comparison only; the implemented conversions are not NNLO precision relations.",
+    "observed_inputs": {
+      "higgs_mass_gev": {
+        "source": "PDG 2025 Higgs listing",
+        "uncertainty": 0.11,
+        "value": 125.2
+      },
+      "top_pole_gev": {
+        "source": "PDG 2025 top review",
+        "uncertainty": 0.31,
+        "value": 172.56
+      }
+    },
+    "performed_after_generation": true,
+    "used_for_fit": false,
+    "used_for_selection": false
+  },
+  "inputs": {
+    "dimensionful_inputs_are_calibration_inputs": true,
+    "experimental_targets_used_before_comparison": false,
+    "include_source_neighborhood": true,
+    "initialization_count": 797,
+    "loop_modes": [
+      "one-loop-sm",
+      "two-loop-gauge-control",
+      "two-loop-sm-top-dominance"
+    ],
+    "steps_per_unit": 4,
+    "threshold_schedules": [
+      {
+        "electroweak_gev": null,
+        "higgs_gev": null,
+        "identifier": "no-decoupling",
+        "top_gev": null
+      },
+      {
+        "electroweak_gev": 73.865895,
+        "higgs_gev": 98.48786000000001,
+        "identifier": "threshold-low",
+        "top_gev": 123.109825
+      },
+      {
+        "electroweak_gev": 98.48786000000001,
+        "higgs_gev": 123.109825,
+        "identifier": "threshold-central",
+        "top_gev": 184.6647375
+      },
+      {
+        "electroweak_gev": 196.97572000000002,
+        "higgs_gev": 246.21965,
+        "identifier": "threshold-high",
+        "top_gev": 307.7745625
+      }
+    ],
+    "transition_offsets": [
+      -2.0,
+      -4.0,
+      -6.0
+    ]
+  },
+  "matching_version": "eichhorn-held-physical-matching-v2",
+  "next_gate": "IMPLEMENT_FULL_TWO_LOOP_SM_AND_NNLO_THRESHOLD_POLE_MATCHING_BEFORE_PHENOMENOLOGICAL_CLAIM",
+  "scan": {
+    "case_count": 28692,
+    "complete_count": 27060,
+    "low_probe_status_counts": {
+      "COMPLETE": 27060
+    },
+    "status_counts": {
+      "BOUND_REACHED": 1452,
+      "COMPLETE": 27060,
+      "NUMERICAL_FAILURE": 180
+    }
+  },
+  "scope": {
+    "electroweak_matching_scale_gev": 246.21965,
+    "external_precision_backend": {
+      "name": "SMDR",
+      "not_invoked": true,
+      "status": "REQUIRED_FOR_FULL_EFT_AND_HIGGS_POLE_MATCHING"
+    },
+    "full_sm_nnlo": "NOT_IMPLEMENTED",
+    "full_sm_two_loop": "NOT_IMPLEMENTED; bottom/tau/light-family terms require the complete matrix system",
+    "gravity_system": "corrected Eichhorn--Held Einstein--Hilbert truncation",
+    "low_scale_probe_gev": 2.0,
+    "pole_conversion": "top four-loop pure-QCD control and Higgs tree-level control",
+    "regulator_uncertainty": "represented by declared transition and threshold ensemble; regulator-shape family not implemented",
+    "sm_loop_control": "one-loop W11, two-loop gauge, and two-loop top-dominance controls",
+    "thresholds": "pre-registered step-function sensitivity controls; full EFT matching NOT_IMPLEMENTED",
+    "truncation_uncertainty": "one-loop versus two-loop-gauge-control spread",
+    "two_loop_top_dominance": "IMPLEMENTED_WITH_LAMBDA4_CONVENTION_MAP",
+    "uv_scale_gev": 2.435e+18
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}

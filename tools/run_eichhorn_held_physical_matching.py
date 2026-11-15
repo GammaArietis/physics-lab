@@ -47,11 +47,11 @@ def main() -> int:
         }
     summary["experimental_comparison"] = comparison
     summary_path = write_physical_matching_report(
-        root / "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_summary.json",
+        root / "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2_summary.json",
         summary,
     )
     archive_path = write_physical_matching_report(
-        root / "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15.json.gz",
+        root / "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2.json.gz",
         report,
         gzip_full=True,
     )

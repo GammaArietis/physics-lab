@@ -319,3 +319,19 @@ one of:
 Until this schema and closure step is complete, a new batch would mix
 formalization with physical selection and would not be a comparable
 continuation of the record.
+
+
+## W12 dimensionful physical matching — 2026-11-15
+
+The corrected v2 physical-matching campaign is recorded as
+`CONTROLLED_MATCHING_COMPLETE`: 797 UV initializations, 3 gravity transitions,
+3 loop controls and 4 threshold schedules produced 28,692 configurations,
+27,060 complete, 1,452 bound-reached and 180 numerical-failure cases. The
+lambda convention map `lambda_SM = 2 lambda_4` is explicit, the two-loop
+top-dominance control and four-loop pure-QCD top pole control are implemented,
+and no comparison was used for fitting, ranking or selection. Full SM NNLO
+threshold/Higgs-pole matching remains an explicit external SMDR backend gate;
+no phenomenological claim is made before that gate is connected. The v2
+closeout is in `docs/PHYSICAL_MATCHING_CLOSEOUT_2026-11-15.md` and the
+machine-readable summary is in
+`docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2_summary.json`.
