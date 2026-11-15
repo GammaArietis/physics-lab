@@ -42,6 +42,13 @@ from physics_lab.search.eichhorn_held_anchor_audit import (
     run_anchor_audit,
     write_anchor_audit_report,
 )
+from physics_lab.search.eichhorn_held_ir_matching import (
+    IR_MATCHING_VERSION,
+    dimensionless_ir_observables,
+    integrate_target_blind_trajectory,
+    run_ir_matching_campaign,
+    write_ir_matching_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -72,4 +79,9 @@ __all__ = [
     "ANCHOR_AUDIT_VERSION",
     "run_anchor_audit",
     "write_anchor_audit_report",
+    "IR_MATCHING_VERSION",
+    "dimensionless_ir_observables",
+    "integrate_target_blind_trajectory",
+    "run_ir_matching_campaign",
+    "write_ir_matching_report",
 ]

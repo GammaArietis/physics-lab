@@ -1,0 +1,25 @@
+{
+  "campaign_id": "eichhorn-held-target-blind-ir-matching",
+  "matching_version": "eichhorn-held-ir-matching-v1",
+  "execution_status": "COMPLETE",
+  "initialization_count": 797,
+  "trajectory_count": 7173,
+  "window_combination_count": 9,
+  "status_counts": {
+    "COMPLETE": 6901,
+    "BOUND_REACHED": 204,
+    "THRESHOLD_POLE": 68
+  },
+  "complete_nonnegative_quartic_count": 6741,
+  "complete_nonzero_gauge_count": 6478,
+  "source_neighborhood_size": 729,
+  "target_blind": true,
+  "measured_masses_used": false,
+  "electroweak_vev_used": false,
+  "alpha_fit": false,
+  "automatic_selection": false,
+  "automatic_ranking": false,
+  "physical_sm_mass_matching_completed": false,
+  "interpretation": "Dimensionless UV-to-IR flow atlas completed; physical SM mass matching remains outside scope until relevant dimensionful inputs and higher-loop threshold prescriptions are explicitly authorized.",
+  "full_report_artifact": "eichhorn_held_ir_matching_campaign_2026-11-15.json.gz"
+}

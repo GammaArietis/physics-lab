@@ -38,6 +38,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | W9 gravity-dressed Standard Model fixed-point campaign | `IMPLEMENTED`; all three SM gauge couplings plus parametrized top-Yukawa/Higgs gravity terms scanned across 96 coefficient slices and 384 trajectories; algebraic branches retained without selection; common quantum-gravity derivation and 1/137 prediction remain open |
 | W10 correlated gravity–matter single-truncation campaign | `COMPLETE`; \(f_g,f_y,f_\lambda\) derived from one published Einstein–Hilbert matter truncation across 2 gravity settings, 2 regulators and 10 regulator values: 40 slices, 114 branches and 80 trajectories; source explicitly sets Λ=0, so the nonzero-Λ closure gate remains open and no 1/137 prediction is obtained |
 | W11 Eichhorn–Held full gravity–matter reproduction | `COMPLETE`; Einstein–Hilbert \(G_N,\Lambda\), all three SM gauge couplings, top/bottom Yukawas and Higgs quartic executed across 45 \((G_N,\Lambda)\) slices, 780 retained matter branches and 3 full trajectories; anchor audit corrected a \(\beta_\Lambda\) transcription error and reproduces the published anchor to displayed precision; no alpha target, ranking or selection |
+| W11 target-blind UV–IR matching | `COMPLETE`; 797 UV initializations and 7,173 declared UV→IR trajectories executed: 6,901 `COMPLETE`, 204 `BOUND_REACHED`, 68 `THRESHOLD_POLE`; dimensionless states and ratios only, no masses, vev, alpha target, ranking or selection |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -248,6 +249,16 @@ and report are recorded in
 The complete version/count audit is in
 `docs/EICHHORN_HELD_ANCHOR_AUDIT.md` and
 `docs/validation/eichhorn_held_anchor_audit_2026-11-15.json`.
+
+The target-blind UV-to-IR flow atlas is recorded in
+`docs/EICHHORN_HELD_IR_MATCHING.md` and
+`docs/validation/eichhorn_held_ir_matching_campaign_2026-11-15_summary.json`,
+with the compressed full case archive in
+`docs/validation/eichhorn_held_ir_matching_campaign_2026-11-15.json.gz`. It
+connects the corrected UV truncation to a declared matter-only IR window, but
+does not claim physical Standard Model mass matching: the electroweak vev,
+dimensionful inputs, pole-mass conversion and higher-loop threshold matching
+remain outside scope.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural
