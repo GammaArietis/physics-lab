@@ -12,9 +12,10 @@ The campaign keeps two gravitational references separate:
 * the numerical root obtained by solving the printed beta functions with the
   stated Standard Model field counts.
 
-That comparison is a reproducibility audit, not a fit.  The source paper
-itself warns that the fixed point is truncation and regulator dependent.  No
-experimental mass, alpha value, ranking or automatic selection is used.
+That comparison is a reproducibility audit, not a fit.  The anchor is quoted
+to two decimal places, so the exact numerical zero is expected to differ at
+the last digits.  No experimental mass, alpha value, ranking or automatic
+selection is used.
 """
 
 from __future__ import annotations
@@ -129,7 +130,8 @@ def beta_gravity(state: Sequence[float]) -> tuple[float, float]:
     G_N, Lambda = _gravity_state(state)
     fg = f_gravity(Lambda)
     bracket = (
-        3.0 / (7.0 - 2.0 * (3.0 - 4.0 * Lambda))
+        7.0
+        - 3.0 / (2.0 * (3.0 - 4.0 * Lambda))
         + N_WEYL_FERMIONS
         - N_SCALARS / 2.0
         - N_VECTORS
@@ -411,7 +413,8 @@ def run_eichhorn_held_campaign(*, G_N_values: Sequence[float] = DEFAULT_G_N_VALU
             "all_three_sm_gauge_couplings_included": True,
             "top_and_bottom_yukawa_included": True,
             "higgs_quartic_included": True,
-            "literature_anchor_reproduced_without_adjustment": anchor_audit["anchor_max_residual"] < 1e-6,
+            "literature_anchor_reproduced_without_adjustment": anchor_audit["anchor_max_residual"] < 1e-2,
+            "literature_anchor_is_exact_zero": anchor_audit["anchor_max_residual"] < 1e-8,
             "alpha_one_over_137_derived": False,
             "interpretation": "The published Eichhorn--Held truncation is executable. The campaign preserves both the printed-equation root and the paper's quoted gravity fixed-point anchor without fitting one to the other.",
         },

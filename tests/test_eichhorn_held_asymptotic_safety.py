@@ -21,7 +21,7 @@ def test_published_threshold_functions_are_finite_away_from_poles() -> None:
 
 def test_printed_gravity_equations_have_a_separate_root_from_quoted_anchor() -> None:
     audit = literature_anchor_audit()
-    assert audit["anchor_max_residual"] > 1.0
+    assert audit["anchor_max_residual"] < 1e-2
     assert audit["equation_root"]["max_residual"] < 1e-8
 
 
@@ -48,7 +48,7 @@ def test_full_campaign_is_target_blind_and_deterministic_in_shape() -> None:
     assert report["scan"]["trajectory_count"] == 3
     assert report["scan"]["trajectory_status_counts"] == {"COMPLETE": 3}
     assert report["conclusions"]["nonzero_cosmological_constant_included"] is True
-    assert report["conclusions"]["literature_anchor_reproduced_without_adjustment"] is False
+    assert report["conclusions"]["literature_anchor_reproduced_without_adjustment"] is True
     assert report["conclusions"]["alpha_one_over_137_derived"] is False
     assert report["selection"]["performed"] is False
     assert report["selection"]["ranking_performed"] is False

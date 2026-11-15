@@ -66,24 +66,26 @@ The paper quotes the gravity fixed point
 (G_N^*,\Lambda^*)=(3.29,-4.51).
 \]
 
-Evaluating the printed equations with the stated field counts at that rounded
-anchor gives
+Evaluating the corrected printed equations with the stated field counts at
+that rounded anchor gives
 
 \[
-(\beta_{G_N},\beta_\Lambda)\approx(0.00874978,3.66969233),
+(\beta_{G_N},\beta_\Lambda)\approx(0.00874978,-0.00309505),
 \]
 
-so the anchor is not an exact zero of the printed equations as implemented.
-Solving those equations independently gives
+so the anchor is a rounded point, not an exact zero. Solving those equations
+independently gives
 
 \[
-(G_N,\Lambda)=(3.2542246932,-3.5396385317),
+(G_N,\Lambda)=(3.2945094357,-4.5139868308),
 \]
 
-with maximum residual below \(10^{-15}\). Both values are retained in the
-report. The campaign does not alter field counts, threshold functions or
-coefficients to force agreement. This is a reproducibility finding requiring
-source/convention clarification, not a fitted correction.
+with maximum residual below \(10^{-14}\). This rounds exactly to the paper's
+reported two-decimal anchor. The original implementation had a transcription
+error in the \(\beta_\Lambda\) bracket: it used
+\(3/[7-2(3-4\Lambda)]\) instead of the printed
+\(7-3/[2(3-4\Lambda)]\). The error is now corrected and covered by the
+versioned audit.
 
 ## Campaign contents
 
@@ -101,9 +103,9 @@ not implemented in this campaign.
 
 The published truncation is now executable and target-blind, including the
 nonzero cosmological constant and all three SM gauge couplings. It does not
-derive \(1/137\). The next scientific gate is an independent convention and
-source audit of the gravity equations, followed—only if authorized—by a
-separate target-blind IR matching layer.
+derive \(1/137\). The independent convention and source audit is recorded in
+`docs/EICHHORN_HELD_ANCHOR_AUDIT.md` and confirms the correction. The next
+scientific gate is a separate target-blind IR matching layer.
 
 Machine-readable activation:
 `schemas/examples/eichhorn_held_asymptotic_safety_activation.json`.

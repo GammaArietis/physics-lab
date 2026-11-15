@@ -1,0 +1,3554 @@
+{
+  "audit_version": "eichhorn-held-anchor-audit-v1",
+  "bibliography": [
+    {
+      "citation": "A. Eichhorn and A. Held, Top mass from asymptotic safety, arXiv:1707.01107, versions v1 (2017-07-04), v2 (2017-07-07), v3 (2017-12-15); Phys. Lett. B 777, 217--221 (2018).",
+      "doi": "10.1016/j.physletb.2017.12.040",
+      "id": "eichhorn-held-v1-v2-v3",
+      "role": "Primary source for both printed beta-function versions and quoted anchors."
+    },
+    {
+      "citation": "M. Donà, A. Eichhorn and R. Percacci, Matter matters in asymptotically safe quantum gravity, Phys. Rev. D 89, 084035 (2014).",
+      "doi": "10.1103/PhysRevD.89.084035",
+      "id": "dona-eichhorn-percacci-2014",
+      "role": "Referenced gravity--matter calculation underlying the field-count and truncation context."
+    },
+    {
+      "citation": "A. Eichhorn and S. Lippoldt, Quantum gravity and Standard-Model-like fermions, Phys. Lett. B 767, 142--146 (2017).",
+      "doi": "10.1016/j.physletb.2017.01.064",
+      "id": "eichhorn-lippoldt-2017",
+      "role": "Referenced gravity--fermion context for the truncation family."
+    }
+  ],
+  "controls": {
+    "all_count_grid_cases_retained": true,
+    "both_arxiv_versions_reproduced": true,
+    "negative_results_recorded": true,
+    "no_anchor_adjustment": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_empirical_data": true,
+    "no_parameter_fitting": true,
+    "source_field_counts_preserved": true
+  },
+  "count_grid": {
+    "case_count": 54,
+    "cases": [
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              3.552713678800501e-15
+            ],
+            "state": [
+              3.355047456290609,
+              -4.46300530569761
+            ]
+          }
+        ],
+        "anchor_max_residual": 21.176602514755835,
+        "anchor_residual": [
+          -1.4504718298933614,
+          21.176602514755835
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 8.881784197001252e-15,
+          "residual": [
+            8.881784197001252e-16,
+            8.881784197001252e-15
+          ],
+          "state": [
+            3.3550474562906087,
+            -4.463005305697611
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 1.0658141036401503e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              8.881784197001252e-16,
+              -1.0658141036401503e-14
+            ],
+            "state": [
+              -3.023066889948455,
+              6.798062053631346
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 41.95618453622175,
+        "anchor_residual": [
+          18.61498762041734,
+          -41.95618453622175
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV6-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "message": "xtol=0.000000 is too small, no further improvement in the approximate\n solution is possible.",
+          "status": "NO_ROOT"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -8.881784197001252e-16
+            ],
+            "state": [
+              -0.64962262699,
+              2.6374891812050754
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 168.22175863817694,
+        "anchor_residual": [
+          58.74590652103875,
+          -168.22175863817694
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV6-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 4.440892098500626e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              4.440892098500626e-16,
+              -4.440892098500626e-16
+            ],
+            "state": [
+              1.031045499840373,
+              -1.599995988374042
+            ]
+          }
+        ],
+        "anchor_max_residual": 68.94218403549547,
+        "anchor_residual": [
+          -22.85362857689145,
+          68.94218403549547
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 4.440892098500626e-16,
+          "residual": [
+            0.0,
+            4.440892098500626e-16
+          ],
+          "state": [
+            1.0310454998403733,
+            -1.5999959883740424
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              3.032759925071755,
+              -7.488069761588457
+            ]
+          }
+        ],
+        "anchor_max_residual": 5.809396984517878,
+        "anchor_residual": [
+          -2.7881691265807422,
+          5.809396984517878
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV12-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.7763568394002505e-15,
+          "residual": [
+            -8.881784197001252e-16,
+            1.7763568394002505e-15
+          ],
+          "state": [
+            3.0327599250717556,
+            -7.4880697615884575
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 3.1086244689504383e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              3.1086244689504383e-15,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -1.1205285965897873,
+              4.799051195578287
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 120.45617711743729,
+        "anchor_residual": [
+          37.34274977404067,
+          -120.45617711743729
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV12-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.43803622385580465,
+              -0.8822904183910386
+            ]
+          }
+        ],
+        "anchor_max_residual": 164.4733470769747,
+        "anchor_residual": [
+          -65.65994207088761,
+          164.4733470769747
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 2.220446049250313e-16,
+          "residual": [
+            0.0,
+            2.220446049250313e-16
+          ],
+          "state": [
+            0.4380362238558047,
+            -0.8822904183910386
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 4.440892098500626e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              2.220446049250313e-16,
+              4.440892098500626e-16
+            ],
+            "state": [
+              0.6094517109308379,
+              -1.7838024453647603
+            ]
+          }
+        ],
+        "anchor_max_residual": 101.34056002599712,
+        "anchor_residual": [
+          -45.59448262057691,
+          101.34056002599712
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV24-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.7763568394002505e-15,
+          "residual": [
+            -6.661338147750939e-16,
+            1.7763568394002505e-15
+          ],
+          "state": [
+            0.6094517109308383,
+            -1.783802445364761
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -8.881784197001252e-16,
+              3.552713678800501e-15
+            ],
+            "state": [
+              2.4689413920268035,
+              -11.702244895369212
+            ]
+          }
+        ],
+        "anchor_max_residual": 24.92501407595804,
+        "anchor_residual": [
+          -5.463563719955502,
+          -24.92501407595804
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV24-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 3.552713678800501e-15,
+          "residual": [
+            -8.881784197001252e-16,
+            3.552713678800501e-15
+          ],
+          "state": [
+            2.4689413920268035,
+            -11.702244895369212
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              8.881784197001252e-16,
+              -1.7763568394002505e-15
+            ],
+            "state": [
+              3.7051516842547407,
+              -4.858503295591937
+            ]
+          }
+        ],
+        "anchor_max_residual": 19.349503768060877,
+        "anchor_residual": [
+          -0.558673632101776,
+          19.349503768060877
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 3.552713678800501e-15,
+          "residual": [
+            0.0,
+            -3.552713678800501e-15
+          ],
+          "state": [
+            3.705151684254741,
+            -4.858503295591937
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              3.552713678800501e-15
+            ],
+            "state": [
+              -2.7904293363938963,
+              6.2223503421490305
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 43.7832832829167,
+        "anchor_residual": [
+          19.506785818208925,
+          -43.7832832829167
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV6-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 4.218847493575595e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -4.218847493575595e-15,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -0.6384652782076407,
+              2.580056700186062
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 170.04885738487187,
+        "anchor_residual": [
+          59.637704718830335,
+          -170.04885738487187
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV6-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 4.440892098500626e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              -4.440892098500626e-16
+            ],
+            "state": [
+              1.060976248466075,
+              -1.6257125556940826
+            ]
+          }
+        ],
+        "anchor_max_residual": 67.11508528880051,
+        "anchor_residual": [
+          -21.961830379099865,
+          67.11508528880051
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.3322676295501878e-15,
+          "residual": [
+            4.440892098500626e-16,
+            -1.3322676295501878e-15
+          ],
+          "state": [
+            1.0609762484660747,
+            -1.6257125556940824
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.0658141036401503e-14,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              8.881784197001252e-16,
+              -1.0658141036401503e-14
+            ],
+            "state": [
+              3.307954752834397,
+              -8.10362308316135
+            ]
+          }
+        ],
+        "anchor_max_residual": 3.982298237822924,
+        "anchor_residual": [
+          -1.896370928789155,
+          3.982298237822924
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV12-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 7.105427357601002e-15,
+          "residual": [
+            0.0,
+            -7.105427357601002e-15
+          ],
+          "state": [
+            3.307954752834398,
+            -8.103623083161352
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -1.0875658343263692,
+              4.636900691727352
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 122.28327586413226,
+        "anchor_residual": [
+          38.23454797183226,
+          -122.28327586413226
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV12-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "message": "xtol=0.000000 is too small, no further improvement in the approximate\n solution is possible.",
+          "status": "NO_ROOT"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.443215387805105,
+              -0.8839277015538594
+            ]
+          }
+        ],
+        "anchor_max_residual": 162.64624833027975,
+        "anchor_residual": [
+          -64.76814387309602,
+          162.64624833027975
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.443215387805105,
+            -0.8839277015538594
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 6.661338147750939e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              6.661338147750939e-16,
+              -4.440892098500626e-16
+            ],
+            "state": [
+              0.6196469397176801,
+              -1.8014440176021302
+            ]
+          }
+        ],
+        "anchor_max_residual": 99.51346127930216,
+        "anchor_residual": [
+          -44.702684422785325,
+          99.51346127930216
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV24-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.5543122344752192e-15,
+          "residual": [
+            1.5543122344752192e-15,
+            4.440892098500626e-16
+          ],
+          "state": [
+            0.6196469397176797,
+            -1.8014440176021298
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              -3.552713678800501e-15
+            ],
+            "state": [
+              2.6452845634230053,
+              -12.48628560388797
+            ]
+          }
+        ],
+        "anchor_max_residual": 26.752112822652993,
+        "anchor_residual": [
+          -4.571765522163917,
+          -26.752112822652993
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV24-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            2.6452845634230053,
+            -12.486285603887971
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -1.7763568394002505e-15,
+              0.0
+            ],
+            "state": [
+              4.685791981357777,
+              -5.967474254097707
+            ]
+          }
+        ],
+        "anchor_max_residual": 15.695306274670962,
+        "anchor_residual": [
+          1.2249227634813984,
+          15.695306274670962
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 5.329070518200751e-15,
+          "residual": [
+            0.0,
+            5.329070518200751e-15
+          ],
+          "state": [
+            4.685791981357777,
+            -5.967474254097708
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -8.881784197001252e-16,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -2.4182268513352567,
+              5.301526293612497
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 47.437480776306614,
+        "anchor_residual": [
+          21.2903822137921,
+          -47.437480776306614
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV6-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -8.881784197001252e-16
+            ],
+            "state": [
+              -0.6172773568935906,
+              2.471010472199751
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 173.70305487826175,
+        "anchor_residual": [
+          61.42130111441351,
+          -173.70305487826175
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV6-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.3322676295501878e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              1.3322676295501878e-15
+            ],
+            "state": [
+              1.1264714922228967,
+              -1.6820937327863323
+            ]
+          }
+        ],
+        "anchor_max_residual": 63.4608877954106,
+        "anchor_residual": [
+          -20.17823398351669,
+          63.4608877954106
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.7763568394002505e-15,
+          "residual": [
+            1.7763568394002505e-15,
+            -1.3322676295501878e-15
+          ],
+          "state": [
+            1.1264714922228958,
+            -1.682093732786331
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              4.042058877945258,
+              -9.745968917863365
+            ]
+          }
+        ],
+        "anchor_max_residual": 0.3281007444330051,
+        "anchor_residual": [
+          -0.11277453320598241,
+          0.3281007444330051
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV12-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 3.552713678800501e-15,
+          "residual": [
+            1.7763568394002505e-15,
+            3.552713678800501e-15
+          ],
+          "state": [
+            4.042058877945257,
+            -9.745968917863365
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 2.220446049250313e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              2.220446049250313e-15,
+              0.0
+            ],
+            "state": [
+              -1.0271393530394002,
+              4.339682616991225
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 125.93747335752217,
+        "anchor_residual": [
+          40.01814436741543,
+          -125.93747335752217
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV12-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "message": "xtol=0.000000 is too small, no further improvement in the approximate\n solution is possible.",
+          "status": "NO_ROOT"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.9984014443252818e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              1.1102230246251565e-16,
+              1.9984014443252818e-15
+            ],
+            "state": [
+              0.4539521067463444,
+              -0.8873269020083951
+            ]
+          }
+        ],
+        "anchor_max_residual": 158.99205083688983,
+        "anchor_residual": [
+          -62.98454747751285,
+          158.99205083688983
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 6.661338147750939e-16,
+          "residual": [
+            6.661338147750939e-16,
+            0.0
+          ],
+          "state": [
+            0.453952106746344,
+            -0.8873269020083943
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 2.220446049250313e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -2.220446049250313e-16,
+              0.0
+            ],
+            "state": [
+              0.6411052260535927,
+              -1.8385928930987503
+            ]
+          }
+        ],
+        "anchor_max_residual": 95.85926378591226,
+        "anchor_residual": [
+          -42.91908802720215,
+          95.85926378591226
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV24-NW45",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 3.552713678800501e-15,
+          "residual": [
+            -3.552713678800501e-15,
+            1.3322676295501878e-15
+          ],
+          "state": [
+            0.6411052260535944,
+            -1.8385928930987536
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 7.105427357601002e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -8.881784197001252e-16,
+              -7.105427357601002e-15
+            ],
+            "state": [
+              3.0862350017406883,
+              -14.446863957753479
+            ]
+          }
+        ],
+        "anchor_max_residual": 30.406310316042905,
+        "anchor_residual": [
+          -2.7881691265807422,
+          -30.406310316042905
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV24-NW90",
+        "published_anchor": {
+          "G_N": 4.1,
+          "Lambda": -9.9
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.0658141036401503e-14,
+          "residual": [
+            -8.881784197001252e-16,
+            1.0658141036401503e-14
+          ],
+          "state": [
+            3.0862350017406883,
+            -14.446863957753482
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v1-v2"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -1.7763568394002505e-15,
+              0.0
+            ],
+            "state": [
+              2.7834282581634793,
+              -2.1206985643910157
+            ]
+          }
+        ],
+        "anchor_max_residual": 9.031963957529774,
+        "anchor_residual": [
+          -0.8526047341989536,
+          9.031963957529774
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            2.7834282581634784,
+            -2.1206985643910152
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 1.0658141036401503e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              1.7763568394002505e-15,
+              -1.0658141036401503e-14
+            ],
+            "state": [
+              -3.683084209721231,
+              6.234421914320087
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 20.46091918062203,
+        "anchor_residual": [
+          12.06771291220843,
+          -20.46091918062203
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV6-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              -0.6832018616056674,
+              2.3960658951677494
+            ]
+          },
+          {
+            "max_residual": 3.774758283725532e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -3.774758283725532e-15,
+              -3.552713678800501e-15
+            ],
+            "state": [
+              -0.3616931543921803,
+              0.7408464219193026
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 79.44668545692565,
+        "anchor_residual": [
+          37.90834820502319,
+          -79.44668545692565
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV6-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.9116619178444988,
+              -0.4392824251012495
+            ]
+          },
+          {
+            "max_residual": 5.773159728050814e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              -5.773159728050814e-14,
+              2.886579864025407e-14
+            ],
+            "state": [
+              2.289861017340286,
+              0.7361771273636551
+            ]
+          }
+        ],
+        "anchor_max_residual": 31.06588357498966,
+        "anchor_residual": [
+          -14.634276890366829,
+          31.06588357498966
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.9116619178444988,
+            -0.4392824251012495
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 2.6645352591003757e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -8.881784197001252e-16,
+              -2.6645352591003757e-15
+            ],
+            "state": [
+              2.5898606197891483,
+              -3.6967280506115507
+            ]
+          }
+        ],
+        "anchor_max_residual": 1.7139592439594455,
+        "anchor_residual": [
+          -1.7139592439594455,
+          1.5730004368378552
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV12-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 8.881784197001252e-16,
+          "residual": [
+            -8.881784197001252e-16,
+            -8.881784197001252e-16
+          ],
+          "state": [
+            2.589860619789148,
+            -3.6967280506115503
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              4.440892098500626e-16,
+              -8.881784197001252e-16
+            ],
+            "state": [
+              -1.20470446336453,
+              3.918114513321185
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 57.412765839465756,
+        "anchor_residual": [
+          24.126676048855316,
+          -57.412765839465756
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV12-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.3306690738754696e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              -3.3306690738754696e-16,
+              3.3306690738754696e-16
+            ],
+            "state": [
+              0.3786944714396374,
+              0.020568648000603373
+            ]
+          },
+          {
+            "max_residual": 2.2870594307278225e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              2.2870594307278225e-14,
+              8.43769498715119e-15
+            ],
+            "state": [
+              0.7198425996425821,
+              0.7385609028280591
+            ]
+          }
+        ],
+        "anchor_max_residual": 75.13372280990941,
+        "anchor_residual": [
+          -42.19762120270258,
+          75.13372280990941
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS1-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 1.1102230246251565e-16,
+          "residual": [
+            -1.1102230246251565e-16,
+            -6.938893903907228e-18
+          ],
+          "state": [
+            0.3786944714396373,
+            0.020568648000603457
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              8.881784197001252e-16
+            ],
+            "state": [
+              0.568707105035658,
+              -0.514275543609023
+            ]
+          },
+          {
+            "max_residual": 3.885780586188048e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              2.3092638912203256e-14,
+              3.885780586188048e-14
+            ],
+            "state": [
+              2.0818970298636255,
+              0.7402332761477184
+            ]
+          }
+        ],
+        "anchor_max_residual": 45.640839671757625,
+        "anchor_residual": [
+          -29.2773035562952,
+          45.640839671757625
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS1-NV24-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 6.661338147750939e-16,
+          "residual": [
+            -2.220446049250313e-16,
+            6.661338147750939e-16
+          ],
+          "state": [
+            0.5687071050356581,
+            -0.514275543609023
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              2.1764226413466785,
+              -5.975849685080575
+            ]
+          }
+        ],
+        "anchor_max_residual": 13.34492660454599,
+        "anchor_residual": [
+          -3.4366682634804295,
+          -13.34492660454599
+        ],
+        "counts": {
+          "N_S": 1.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS1-NV24-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            2.1764226413466785,
+            -5.975849685080575
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              3.0208371192222554,
+              -2.2447239290781167
+            ]
+          }
+        ],
+        "anchor_max_residual": 8.506598795548197,
+        "anchor_residual": [
+          -0.27836839435862615,
+          8.506598795548197
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            3.0208371192222554,
+            -2.2447239290781162
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 4.440892098500626e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              4.440892098500626e-15,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -3.350512409258728,
+              5.609541443758899
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 20.98628434260361,
+        "anchor_residual": [
+          12.641949252048757,
+          -20.98628434260361
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV6-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              -0.6712602062838483,
+              2.3415603944831815
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 79.97205061890722,
+        "anchor_residual": [
+          38.48258454486352,
+          -79.97205061890722
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV6-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "message": "xtol=0.000000 is too small, no further improvement in the approximate\n solution is possible.",
+          "status": "NO_ROOT"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -3.552713678800501e-15,
+              -2.220446049250313e-16
+            ],
+            "state": [
+              0.9324791245312185,
+              -0.43018925490491977
+            ]
+          },
+          {
+            "max_residual": 4.618527782440651e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              2.7533531010703882e-14,
+              4.618527782440651e-14
+            ],
+            "state": [
+              2.2844376507929804,
+              0.7359292148906682
+            ]
+          }
+        ],
+        "anchor_max_residual": 30.540518413008083,
+        "anchor_residual": [
+          -14.060040550526503,
+          30.540518413008083
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.9324791245312166,
+            -0.4301892549049194
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              2.7885278534043048,
+              -3.927006366904182
+            ]
+          }
+        ],
+        "anchor_max_residual": 1.1397229041191173,
+        "anchor_residual": [
+          -1.1397229041191173,
+          1.0476352748562778
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV12-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 2.6645352591003757e-15,
+          "residual": [
+            -8.881784197001252e-16,
+            2.6645352591003757e-15
+          ],
+          "state": [
+            2.788527853404305,
+            -3.927006366904183
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -8.881784197001252e-16,
+              0.0
+            ],
+            "state": [
+              -1.167339409724165,
+              3.7743739288519977
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 57.93813100144733,
+        "anchor_residual": [
+          24.70091238869564,
+          -57.93813100144733
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV12-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.1102230246251565e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              1.1102230246251565e-16,
+              -6.245004513516506e-17
+            ],
+            "state": [
+              0.3806932511282881,
+              0.029054095320775516
+            ]
+          }
+        ],
+        "anchor_max_residual": 74.60835764792785,
+        "anchor_residual": [
+          -41.623384862862245,
+          74.60835764792785
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS2-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.457167719820518e-16,
+          "residual": [
+            -1.1102230246251565e-16,
+            -1.457167719820518e-16
+          ],
+          "state": [
+            0.3806932511282882,
+            0.02905409532077554
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 4.6629367034256575e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              2.220446049250313e-16,
+              4.6629367034256575e-15
+            ],
+            "state": [
+              0.5771804902872095,
+              -0.5103232114057153
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              1.7763568394002505e-14,
+              1.7763568394002505e-14
+            ],
+            "state": [
+              2.0797218603699443,
+              0.740107168315564
+            ]
+          }
+        ],
+        "anchor_max_residual": 45.11547450977605,
+        "anchor_residual": [
+          -28.70306721645487,
+          45.11547450977605
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS2-NV24-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 1.5543122344752192e-15,
+          "residual": [
+            1.5543122344752192e-15,
+            2.220446049250313e-16
+          ],
+          "state": [
+            0.5771804902872086,
+            -0.5103232114057136
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              8.881784197001252e-16,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              2.312470689142882,
+              -6.304491315110274
+            ]
+          }
+        ],
+        "anchor_max_residual": 13.87029176652757,
+        "anchor_residual": [
+          -2.862431923640102,
+          -13.87029176652757
+        ],
+        "counts": {
+          "N_S": 2.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS2-NV24-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 3.552713678800501e-15,
+          "residual": [
+            0.0,
+            3.552713678800501e-15
+          ],
+          "state": [
+            2.3124706891428826,
+            -6.304491315110275
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 2.913225216616411e-13,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -2.913225216616411e-13,
+              6.23945339839338e-14
+            ],
+            "state": [
+              -28.30619968294861,
+              0.7336632955759159
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              -8.881784197001252e-16,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              3.645944945009006,
+              -2.573014071903487
+            ]
+          }
+        ],
+        "anchor_max_residual": 7.455868471585043,
+        "anchor_residual": [
+          0.8701042853220313,
+          7.455868471585043
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV6-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            3.6459449450090053,
+            -2.573014071903486
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 8.881784197001252e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -8.881784197001252e-16,
+              0.0
+            ],
+            "state": [
+              -2.83931865208338,
+              4.649253988679017
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 22.03701466656676,
+        "anchor_residual": [
+          13.790421931729412,
+          -22.03701466656676
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV6-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 1.7763568394002505e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -8.881784197001252e-16,
+              1.7763568394002505e-15
+            ],
+            "state": [
+              -0.6486484822366637,
+              2.238336900367919
+            ]
+          },
+          {
+            "max_residual": 2.1094237467877974e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              7.993605777301127e-15,
+              -2.1094237467877974e-14
+            ],
+            "state": [
+              -0.3617718294834348,
+              0.7405086210881893
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 81.02278094287036,
+        "anchor_residual": [
+          39.63105722454417,
+          -81.02278094287036
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 6.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV6-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 2.220446049250313e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              -2.220446049250313e-16
+            ],
+            "state": [
+              0.9765538037043154,
+              -0.4103153779882249
+            ]
+          },
+          {
+            "max_residual": 7.283063041541027e-14,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              -7.283063041541027e-14,
+              -1.3322676295501878e-15
+            ],
+            "state": [
+              2.2730381753567097,
+              0.7354071672949221
+            ]
+          }
+        ],
+        "anchor_max_residual": 29.48978808904493,
+        "anchor_residual": [
+          -12.911567870845845,
+          29.48978808904493
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV12-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 0.0,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.9765538037043154,
+            -0.410315377988225
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              -3.552713678800501e-15
+            ],
+            "state": [
+              3.294509435681549,
+              -4.513986830790519
+            ]
+          }
+        ],
+        "anchor_max_residual": 0.00874977556153933,
+        "anchor_residual": [
+          0.00874977556153933,
+          -0.003095049106876857
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV12-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": true,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 1.7763568394002505e-15,
+          "residual": [
+            -1.7763568394002505e-15,
+            -1.7763568394002505e-15
+          ],
+          "state": [
+            3.29450943568155,
+            -4.51398683079052
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 4.440892098500626e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              -4.440892098500626e-16,
+              0.0
+            ],
+            "state": [
+              -1.0992448774803352,
+              3.5124315139338798
+            ]
+          },
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "anchor_max_residual": 58.9888613254105,
+        "anchor_residual": [
+          25.8493850683763,
+          -58.9888613254105
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 12.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV12-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "message": "The iteration is not making good progress, as measured by the \n improvement from the last ten iterations.",
+          "status": "NO_ROOT"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 2.220446049250313e-16,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              -2.220446049250313e-16,
+              -8.326672684688674e-17
+            ],
+            "state": [
+              0.38436425369794197,
+              0.04637320741908591
+            ]
+          },
+          {
+            "max_residual": 1.3322676295501878e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              1.3322676295501878e-15,
+              2.220446049250313e-16
+            ],
+            "state": [
+              0.7185469208627997,
+              0.7380275426230238
+            ]
+          }
+        ],
+        "anchor_max_residual": 73.5576273239647,
+        "anchor_residual": [
+          -40.474912183181594,
+          73.5576273239647
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 22.5
+        },
+        "label": "grid-NS4-NV24-NW22.5",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 2.7755575615628914e-17,
+          "residual": [
+            0.0,
+            2.7755575615628914e-17
+          ],
+          "state": [
+            0.38436425369794186,
+            0.04637320741908587
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 6.661338147750939e-16,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              2.220446049250313e-16,
+              6.661338147750939e-16
+            ],
+            "state": [
+              0.5948728923778066,
+              -0.5020071672951579
+            ]
+          },
+          {
+            "max_residual": 7.105427357601002e-15,
+            "negative_cosmological_constant": false,
+            "positive_newton": true,
+            "residual": [
+              -2.6645352591003757e-15,
+              -7.105427357601002e-15
+            ],
+            "state": [
+              2.0752049096360814,
+              0.7398451634535335
+            ]
+          }
+        ],
+        "anchor_max_residual": 44.0647441858129,
+        "anchor_residual": [
+          -27.554594536774218,
+          44.0647441858129
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 45.0
+        },
+        "label": "grid-NS4-NV24-NW45",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 3,
+        "root_from_published_anchor": {
+          "max_residual": 2.220446049250313e-16,
+          "residual": [
+            -2.220446049250313e-16,
+            0.0
+          ],
+          "state": [
+            0.5948728923778067,
+            -0.5020071672951578
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      },
+      {
+        "all_roots_from_declared_seeds": [
+          {
+            "max_residual": 0.0,
+            "negative_cosmological_constant": false,
+            "positive_newton": false,
+            "residual": [
+              0.0,
+              -0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_residual": 3.552713678800501e-15,
+            "negative_cosmological_constant": true,
+            "positive_newton": true,
+            "residual": [
+              0.0,
+              -3.552713678800501e-15
+            ],
+            "state": [
+              2.642954017471842,
+              -7.102925649290454
+            ]
+          }
+        ],
+        "anchor_max_residual": 14.921022090490727,
+        "anchor_residual": [
+          -1.7139592439594455,
+          -14.921022090490727
+        ],
+        "counts": {
+          "N_S": 4.0,
+          "N_V": 24.0,
+          "N_W": 90.0
+        },
+        "label": "grid-NS4-NV24-NW90",
+        "published_anchor": {
+          "G_N": 3.29,
+          "Lambda": -4.51
+        },
+        "reproduced_to_reported_precision": false,
+        "root_count": 2,
+        "root_from_published_anchor": {
+          "max_residual": 7.105427357601002e-15,
+          "residual": [
+            0.0,
+            -7.105427357601002e-15
+          ],
+          "state": [
+            2.6429540174718418,
+            -7.102925649290453
+          ],
+          "status": "COMPLETE"
+        },
+        "version": "arxiv-v3-final"
+      }
+    ],
+    "grid_is_diagnostic_only": true,
+    "ranking_performed": false,
+    "selection_performed": false
+  },
+  "exact_source_cases": [
+    {
+      "all_roots_from_declared_seeds": [
+        {
+          "max_residual": 0.0,
+          "negative_cosmological_constant": false,
+          "positive_newton": false,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "max_residual": 0.0,
+          "negative_cosmological_constant": true,
+          "positive_newton": true,
+          "residual": [
+            0.0,
+            0.0
+          ],
+          "state": [
+            4.042058877945258,
+            -9.745968917863365
+          ]
+        }
+      ],
+      "anchor_max_residual": 0.3281007444330051,
+      "anchor_residual": [
+        -0.11277453320598241,
+        0.3281007444330051
+      ],
+      "counts": {
+        "N_S": 4.0,
+        "N_V": 12.0,
+        "N_W": 45.0
+      },
+      "label": "source-paper-counts",
+      "published_anchor": {
+        "G_N": 4.1,
+        "Lambda": -9.9
+      },
+      "reproduced_to_reported_precision": false,
+      "root_count": 2,
+      "root_from_published_anchor": {
+        "max_residual": 3.552713678800501e-15,
+        "residual": [
+          1.7763568394002505e-15,
+          3.552713678800501e-15
+        ],
+        "state": [
+          4.042058877945257,
+          -9.745968917863365
+        ],
+        "status": "COMPLETE"
+      },
+      "version": "arxiv-v1-v2"
+    },
+    {
+      "all_roots_from_declared_seeds": [
+        {
+          "max_residual": 0.0,
+          "negative_cosmological_constant": false,
+          "positive_newton": false,
+          "residual": [
+            0.0,
+            -0.0
+          ],
+          "state": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "max_residual": 3.552713678800501e-15,
+          "negative_cosmological_constant": true,
+          "positive_newton": true,
+          "residual": [
+            0.0,
+            -3.552713678800501e-15
+          ],
+          "state": [
+            3.294509435681549,
+            -4.513986830790519
+          ]
+        }
+      ],
+      "anchor_max_residual": 0.00874977556153933,
+      "anchor_residual": [
+        0.00874977556153933,
+        -0.003095049106876857
+      ],
+      "counts": {
+        "N_S": 4.0,
+        "N_V": 12.0,
+        "N_W": 45.0
+      },
+      "label": "source-paper-counts",
+      "published_anchor": {
+        "G_N": 3.29,
+        "Lambda": -4.51
+      },
+      "reproduced_to_reported_precision": true,
+      "root_count": 2,
+      "root_from_published_anchor": {
+        "max_residual": 1.7763568394002505e-15,
+        "residual": [
+          -1.7763568394002505e-15,
+          -1.7763568394002505e-15
+        ],
+        "state": [
+          3.29450943568155,
+          -4.51398683079052
+        ],
+        "status": "COMPLETE"
+      },
+      "version": "arxiv-v3-final"
+    }
+  ],
+  "execution_status": "COMPLETE",
+  "headline_diagnostics": {
+    "v1_v2_anchor_max_residual": 0.3281007444330051,
+    "v1_v2_root_from_anchor": [
+      4.042058877945257,
+      -9.745968917863365
+    ],
+    "v3_anchor_is_zero_with_source_counts": false,
+    "v3_anchor_max_residual": 0.00874977556153933,
+    "v3_anchor_reproduced_to_reported_precision": true,
+    "v3_root_from_anchor": [
+      3.29450943568155,
+      -4.51398683079052
+    ]
+  },
+  "interpretation": {
+    "conclusion": "The v1/v2 and v3 equations are materially different. For v3, the exact zero of the printed equations is (3.2945094357,-4.5139868308), which rounds to the published (3.29,-4.51). The apparent W11 discrepancy was caused by a transcription error in the laboratory implementation, not by a need to alter the source counts or fit the anchor.",
+    "count_conventions_exhaustively_grid_scanned": true,
+    "implementation_transcription_error": "The v3 beta_Lambda bracket was initially encoded as 3/(7-2*(3-4*Lambda)) instead of 7-3/(2*(3-4*Lambda)).",
+    "resolved_in_laboratory": true,
+    "rounding_alone_tested": true,
+    "unique_physical_convention_selected": false,
+    "version_change_is_material": true
+  },
+  "source_counts": {
+    "N_S": 4.0,
+    "N_V": 12.0,
+    "N_W": 45.0
+  },
+  "source_versions": {
+    "arxiv-v1-v2": {
+      "equation_label": "v1/v2 Eqs. (7)-(8)",
+      "quoted_anchor": {
+        "G_N": 4.1,
+        "Lambda": -9.9
+      },
+      "source_note": "v1 and v2 share the printed gravity equations and quoted gravity anchor; other phenomenological outputs differ."
+    },
+    "arxiv-v3-final": {
+      "equation_label": "v3 final Eqs. (7)-(8)",
+      "quoted_anchor": {
+        "G_N": 3.29,
+        "Lambda": -4.51
+      },
+      "source_note": "Final accepted version; the source notes a changed degree-of-freedom counting in Eq. (7)."
+    }
+  }
+}

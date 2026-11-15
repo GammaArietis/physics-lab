@@ -37,6 +37,11 @@ from physics_lab.search.eichhorn_held_asymptotic_safety import (
     run_eichhorn_held_campaign,
     write_eichhorn_held_report,
 )
+from physics_lab.search.eichhorn_held_anchor_audit import (
+    ANCHOR_AUDIT_VERSION,
+    run_anchor_audit,
+    write_anchor_audit_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -64,4 +69,7 @@ __all__ = [
     "literature_anchor_audit",
     "run_eichhorn_held_campaign",
     "write_eichhorn_held_report",
+    "ANCHOR_AUDIT_VERSION",
+    "run_anchor_audit",
+    "write_anchor_audit_report",
 ]
