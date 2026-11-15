@@ -1,0 +1,4506 @@
+{
+  "activation_id": "w5-qed-threshold-rg-broad-run",
+  "activation_path": "schemas/examples/qed_threshold_rg_campaign_activation.json",
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "external_data_used": false,
+    "f4_promotion": "DISABLED",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "target_blind_generation": true,
+    "target_comparison": "NOT_AUTHORIZED"
+  },
+  "campaign_id": "qed-threshold-rg-broad-run",
+  "controls": {
+    "all_points_completed": true,
+    "alpha_not_used_as_fit_target": true,
+    "f4_operators_not_promoted": true,
+    "known_one_loop_beta_reproduced": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_external_data": true,
+    "no_fitting": true,
+    "only_gaussian_fixed_point_claimed": true,
+    "threshold_continuity_rule_explicit": true,
+    "threshold_schedules_executed": true,
+    "trajectories_integrated": true
+  },
+  "equations": {
+    "matching_rule": "alpha(mu_threshold^-) = alpha(mu_threshold^+)",
+    "piecewise_solution": "1/alpha_2 = 1/alpha_1 - N_f*2*Delta_log_scale/(3*pi)",
+    "regime_beta_function": "d alpha/d log(mu) = N_f*2*alpha^2/(3*pi)"
+  },
+  "execution_status": "COMPLETE",
+  "next_gate": "ACTIVATE_COUPLED_BETA_SYSTEM_OR_IMPORT_EXPLICIT_PHYSICAL_THRESHOLD_DATA",
+  "point_count": 680,
+  "scenario_count": 5,
+  "scenarios": [
+    {
+      "fixed_points": [
+        {
+          "coupling": "alpha",
+          "finite_fixed_point": true,
+          "interacting": false,
+          "label": "GAUSSIAN",
+          "value": 0.0
+        }
+      ],
+      "initial_fermion_flavours": 1,
+      "scenario_id": "no-threshold-control",
+      "status": "COMPLETE",
+      "thresholds": [],
+      "trajectories": [
+        {
+          "initial_alpha": 0.005,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049579159027542796,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004963137631922923,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004968370371848361,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049736141573939645,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004978869023570444,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00498413500553663,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004989412138600254,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004994700458218741,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005005310799703227,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005010632893239706,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005015966316673621,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00502131110622287,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0050266672982598815,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005032034929312447,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005037414036064541,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005042804655357169,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.01,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009833068642116822,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009853629639313929,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009874276802987749,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009895010675931891,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009915831805508559,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009936740743696722,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009957738047140887,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009978824277200508,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010021265786479413,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01004262221244574,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010064069858624894,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010085609310714339,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010107241159436411,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010128966000592321,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010150784435116852,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010172697069133768,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.02,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019343237985948458,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01942296464456606,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019503351238954084,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01958440599707297,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019666137284233644,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019748553605975497,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019831663611017118,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019915476094281775,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02008524442489148,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.020171218621428677,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.020257932001184642,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.020345394138267536,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.020433614772844503,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.020522603814757644,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02061237134723486,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02070292763069855,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.04,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.037456476427022635,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03775658506498487,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038061541603855546,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03837146446831792,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038686475971896915,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03900670247790817,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03933227456846729,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.039663327222034236,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.040342437242857354,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04069078827653507,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04104520762951529,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0414058552613971,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04177289680361687,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04214650381308611,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0425268540395631,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04291413170763373,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.06,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05445342016771126,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05509000582451738,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.055741651501190294,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05640889801840188,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057092312405783316,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057792489509051505,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05851005371686225,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05924566081792649,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.060773796003553926,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.061567811444272924,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.062382849320025344,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06321975571962915,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06407942275262202,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06496279172136192,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06587085655916988,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0668046675609155,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.08,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07043417804878596,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07150290311153575,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07260456022361501,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07374069537298937,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07491295285404527,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07612308320771109,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07737295194379383,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07866454913693458,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08138157655307014,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0828117105227942,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08429300762617221,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08582826341526746,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08742048088554975,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0890728900812207,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09078896996683813,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09257247287688208,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.1,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08548723606322552,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08706670931197101,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08870564632568469,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09040746955222252,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09217586921623672,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09401483003066982,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0959286611707948,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09792202998536485,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10216807386422253,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10443224200904218,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10679903792103672,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1092756011069372,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1118697490266993,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1145900595216524,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11744596556869437,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12044786456589343,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.12,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09969109657353094,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10184565232081125,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10409539517292046,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10644677559082162,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10890684033542251,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11148330300238059,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11418462481156663,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1170201074337245,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12313562288854585,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1264395114392583,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12992558344272384,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.133609335121831,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.13750807142598287,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.14164117785729255,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.14603044283789546,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.15070044193237928,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 0
+            }
+          ],
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "fixed_points": [
+        {
+          "coupling": "alpha",
+          "finite_fixed_point": true,
+          "interacting": false,
+          "label": "GAUSSIAN",
+          "value": 0.0
+        }
+      ],
+      "initial_fermion_flavours": 1,
+      "scenario_id": "one-threshold-control",
+      "status": "COMPLETE",
+      "thresholds": [
+        {
+          "fermion_flavours_after": 2,
+          "log_scale_offset": 2.0
+        }
+      ],
+      "trajectories": [
+        {
+          "initial_alpha": 0.005,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049579159027542796,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004963137631922923,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004968370371848361,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049736141573939645,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004978869023570444,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00498413500553663,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004989412138600254,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004994700458218741,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005005310799703227,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005010632893239706,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.00502131110622287,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005032034929312447,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005042804655357169,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005053620579718206,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005064483000296161,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005075392217558426,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.01,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009833068642116822,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009853629639313929,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009874276802987749,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009895010675931891,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009915831805508559,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009936740743696722,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009957738047140887,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009978824277200508,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010021265786479413,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.01004262221244574,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010085609310714339,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010128966000592321,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010172697069133768,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010216807386422251,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010261301907378822,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010306185673617432,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.02,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019343237985948458,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01942296464456606,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019503351238954084,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01958440599707297,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019666137284233644,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019748553605975497,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019831663611017118,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019915476094281775,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02008524442489148,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020171218621428677,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.02034539413826754,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020522603814757644,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020702927630698552,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020886448401808436,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.021073251906543054,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.02126342701978155,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.04,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.037456476427022635,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03775658506498487,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038061541603855546,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03837146446831792,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038686475971896915,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03900670247790817,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03933227456846729,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.039663327222034236,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.040342437242857354,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04069078827653507,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.041405855261397104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.0421465038130861,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04291413170763373,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04371024044277488,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04453644504061034,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04539448498341907,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.06,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05445342016771126,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05509000582451738,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.055741651501190294,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05640889801840188,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057092312405783316,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057792489509051505,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05851005371686225,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05924566081792649,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.060773796003553926,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.061567811444272924,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06321975571962915,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06496279172136192,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06680466756091552,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06875403571299143,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.07082058892864629,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.07301522141894773,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.08,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07043417804878596,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07150290311153575,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07260456022361501,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07374069537298937,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07491295285404527,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07612308320771109,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07737295194379383,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07866454913693458,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08138157655307014,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.0828117105227942,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08582826341526745,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08907289008122068,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.09257247287688207,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.09635829165271473,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10046696128825283,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10494161976590997,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.1,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08548723606322552,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08706670931197101,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08870564632568469,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09040746955222252,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09217586921623672,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09401483003066982,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0959286611707948,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09792202998536485,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10216807386422253,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10443224200904218,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10927560110693721,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1145900595216524,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.12044786456589344,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1269368324624317,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.13416478091411652,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1422655674889188,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.12,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09969109657353094,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10184565232081125,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10409539517292046,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10644677559082162,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10890684033542251,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11148330300238059,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11418462481156663,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1170201074337245,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12313562288854585,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1264395114392583,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.13360933512183104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.14164117785729258,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.15070044193237928,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.16099773709693982,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.17280545834734057,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.18648223605351083,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 1
+            }
+          ],
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "fixed_points": [
+        {
+          "coupling": "alpha",
+          "finite_fixed_point": true,
+          "interacting": false,
+          "label": "GAUSSIAN",
+          "value": 0.0
+        }
+      ],
+      "initial_fermion_flavours": 1,
+      "scenario_id": "two-threshold-control",
+      "status": "COMPLETE",
+      "thresholds": [
+        {
+          "fermion_flavours_after": 2,
+          "log_scale_offset": 2.0
+        },
+        {
+          "fermion_flavours_after": 3,
+          "log_scale_offset": 5.0
+        }
+      ],
+      "trajectories": [
+        {
+          "initial_alpha": 0.005,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049579159027542796,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004963137631922923,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004968370371848361,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049736141573939645,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004978869023570444,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00498413500553663,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004989412138600254,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004994700458218741,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005005310799703227,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005010632893239706,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.00502131110622287,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005032034929312447,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005042804655357169,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005059045959261339,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005075392217558426,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005091844450899105,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.01,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009833068642116822,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009853629639313929,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009874276802987749,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009895010675931891,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009915831805508559,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009936740743696722,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009957738047140887,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009978824277200508,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010021265786479413,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.01004262221244574,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010085609310714339,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010128966000592321,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010172697069133768,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010239006308395093,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.01030618567361743,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010374252404921964,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.02,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019343237985948458,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01942296464456606,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019503351238954084,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01958440599707297,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019666137284233644,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019748553605975497,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019831663611017118,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019915476094281775,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02008524442489148,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020171218621428677,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.02034539413826754,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020522603814757644,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.020702927630698552,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.020979434331980584,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.02126342701978155,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.021555213872897862,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.04,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.037456476427022635,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03775658506498487,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038061541603855546,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03837146446831792,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038686475971896915,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03900670247790817,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03933227456846729,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.039663327222034236,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.040342437242857354,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04069078827653507,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.041405855261397104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.0421465038130861,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04291413170763373,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04411947509480171,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04539448498341907,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04674538099680184,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.06,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05445342016771126,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05509000582451738,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.055741651501190294,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05640889801840188,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057092312405783316,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057792489509051505,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05851005371686225,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05924566081792649,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.060773796003553926,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.061567811444272924,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06321975571962915,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06496279172136192,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.06680466756091552,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.06977201354353718,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.07301522141894774,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.0765746351007753,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.08,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07043417804878596,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07150290311153575,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07260456022361501,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07374069537298937,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07491295285404527,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07612308320771109,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07737295194379383,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07866454913693458,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08138157655307014,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.0828117105227942,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08582826341526745,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08907289008122068,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.09257247287688207,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.09836974283151531,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.10494161976590997,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.11245446773527903,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.1,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08548723606322552,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08706670931197101,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08870564632568469,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09040746955222252,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09217586921623672,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09401483003066982,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0959286611707948,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09792202998536485,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10216807386422253,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10443224200904218,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10927560110693721,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1145900595216524,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.12044786456589344,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.13045076280469828,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.1422655674889188,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.15643361501683978,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.12,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09969109657353094,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10184565232081125,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10409539517292046,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10644677559082162,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10890684033542251,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11148330300238059,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11418462481156663,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1170201074337245,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12313562288854585,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1264395114392583,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.13360933512183104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.14164117785729258,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.15070044193237928,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.16669275867711308,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.18648223605351086,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.2116034311609686,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 2
+            }
+          ],
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "fixed_points": [
+        {
+          "coupling": "alpha",
+          "finite_fixed_point": true,
+          "interacting": false,
+          "label": "GAUSSIAN",
+          "value": 0.0
+        }
+      ],
+      "initial_fermion_flavours": 1,
+      "scenario_id": "three-threshold-control",
+      "status": "COMPLETE",
+      "thresholds": [
+        {
+          "fermion_flavours_after": 2,
+          "log_scale_offset": 2.0
+        },
+        {
+          "fermion_flavours_after": 3,
+          "log_scale_offset": 4.0
+        },
+        {
+          "fermion_flavours_after": 4,
+          "log_scale_offset": 6.0
+        }
+      ],
+      "trajectories": [
+        {
+          "initial_alpha": 0.005,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049579159027542796,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004963137631922923,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004968370371848361,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049736141573939645,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004978869023570444,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00498413500553663,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004989412138600254,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004994700458218741,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005005310799703227,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005010632893239706,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.00502131110622287,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005032034929312447,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005048206824189197,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.005064483000296161,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.005086348534566885,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.005108403693211127,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.01,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009833068642116822,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009853629639313929,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009874276802987749,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009895010675931891,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009915831805508559,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009936740743696722,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009957738047140887,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009978824277200508,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010021265786479413,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.01004262221244574,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010085609310714339,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010128966000592321,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010194704514011952,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.010261301907378822,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.010351463815349276,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.010443224200904218,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.02,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019343237985948458,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01942296464456606,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019503351238954084,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01958440599707297,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019666137284233644,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019748553605975497,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019831663611017118,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019915476094281775,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02008524442489148,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020171218621428677,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.02034539413826754,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.020522603814757644,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.020794283106675113,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.021073251906543054,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.021457065853816865,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.021855120221387442,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.04,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.037456476427022635,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03775658506498487,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038061541603855546,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03837146446831792,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038686475971896915,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03900670247790817,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03933227456846729,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.039663327222034236,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.040342437242857354,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.04069078827653507,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.041405855261397104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.0421465038130861,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04330852781424128,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.04453644504061034,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.04628623643844104,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.048179145826357364,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.06,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05445342016771126,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05509000582451738,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.055741651501190294,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05640889801840188,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057092312405783316,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057792489509051505,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05851005371686225,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05924566081792649,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.060773796003553926,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.061567811444272924,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06321975571962915,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.06496279172136192,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.06776533543548299,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.07082058892864627,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.07535022096618962,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.0804988685484699,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.08,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07043417804878596,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07150290311153575,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07260456022361501,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07374069537298937,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07491295285404527,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07612308320771109,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07737295194379383,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07866454913693458,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08138157655307014,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.0828117105227942,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08582826341526745,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.08907289008122068,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.09442745190486171,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.10046696128825283,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.10983344853546387,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.12112596491206545,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.1,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08548723606322552,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08706670931197101,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08870564632568469,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09040746955222252,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09217586921623672,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09401483003066982,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0959286611707948,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09792202998536485,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10216807386422253,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10443224200904218,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10927560110693721,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.1145900595216524,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.12360724481763626,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.13416478091411652,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.15140745614008186,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.17373573681590265,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.12,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09969109657353094,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10184565232081125,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10409539517292046,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10644677559082162,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10890684033542251,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11148330300238059,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11418462481156663,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1170201074337245,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12313562288854585,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.1264395114392583,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.13360933512183104,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.14164117785729258,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.15567899822949982,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.17280545834734057,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.20250999471007053,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.2445465198299329,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 3
+            }
+          ],
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "fixed_points": [
+        {
+          "coupling": "alpha",
+          "finite_fixed_point": true,
+          "interacting": false,
+          "label": "GAUSSIAN",
+          "value": 0.0
+        }
+      ],
+      "initial_fermion_flavours": 1,
+      "scenario_id": "four-threshold-control",
+      "status": "COMPLETE",
+      "thresholds": [
+        {
+          "fermion_flavours_after": 2,
+          "log_scale_offset": 1.5
+        },
+        {
+          "fermion_flavours_after": 3,
+          "log_scale_offset": 3.0
+        },
+        {
+          "fermion_flavours_after": 4,
+          "log_scale_offset": 4.5
+        },
+        {
+          "fermion_flavours_after": 5,
+          "log_scale_offset": 6.0
+        }
+      ],
+      "trajectories": [
+        {
+          "initial_alpha": 0.005,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049579159027542796,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004963137631922923,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004968370371848361,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0049736141573939645,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004978869023570444,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.00498413500553663,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004989412138600254,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.004994700458218741,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.005005310799703227,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.005013298186459478,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.00502398777465107,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.005040107904334569,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.005059045959261339,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.005080864469550901,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.005108403693211127,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.005136243079161687,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.01,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009833068642116822,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009853629639313929,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009874276802987749,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009895010675931891,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009915831805508559,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009936740743696722,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009957738047140887,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.009978824277200508,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.010021265786479413,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.010053334596519761,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.010096413648378393,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.0101617289391018,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.01023900630839509,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.010328775123394567,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.010443224200904216,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.010560238027430875,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.02,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019343237985948458,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01942296464456606,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019503351238954084,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.01958440599707297,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019666137284233644,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019748553605975497,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019831663611017118,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.019915476094281775,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.02008524442489148,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.020214482318872826,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.020389409028023907,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.02065755024678914,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.020979434331980587,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.021359807584207347,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.021855120221387445,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.022373949805339865,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.04,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.037456476427022635,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03775658506498487,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038061541603855546,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03837146446831792,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.038686475971896915,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03900670247790817,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.03933227456846729,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.039663327222034236,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.04,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.040342437242857354,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.040867229545689006,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04158856621335023,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.04271961516841468,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.04411947509480171,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.04583602380866096,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.04817914582635738,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.05077473298497268,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.06,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05445342016771126,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05509000582451738,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.055741651501190294,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05640889801840188,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057092312405783316,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.057792489509051505,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05851005371686225,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.05924566081792649,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.06,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.060773796003553926,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.06197265074036741,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.0636466865174416,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.06633447583602826,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.06977201354353718,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.07416434689058175,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.08049886854846991,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.0880165324154556,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.08,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07043417804878596,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07150290311153575,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07260456022361501,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07374069537298937,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07491295285404527,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07612308320771109,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07737295194379383,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.07866454913693458,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08138157655307014,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.08354579360723374,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.08661705562848257,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.09167204761732192,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.09836974283151534,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.10733182473129323,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.1211259649120655,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.13898858945272213,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.1,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08548723606322552,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08706670931197101,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.08870564632568469,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09040746955222252,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09217586921623672,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09401483003066982,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.0959286611707948,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09792202998536485,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10216807386422253,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.10560238027430878,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.11055745972671381,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.11892797511079255,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.1304507628046983,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.14669422069242605,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.17373573681590274,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.21300002043787541,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        },
+        {
+          "initial_alpha": 0.12,
+          "points": [
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.09969109657353094,
+              "log_scale_offset": -8.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10184565232081125,
+              "log_scale_offset": -7.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10409539517292046,
+              "log_scale_offset": -6.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10644677559082162,
+              "log_scale_offset": -5.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.10890684033542251,
+              "log_scale_offset": -4.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11148330300238059,
+              "log_scale_offset": -3.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.11418462481156663,
+              "log_scale_offset": -2.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.1170201074337245,
+              "log_scale_offset": -1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12,
+              "log_scale_offset": 0.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 1,
+              "alpha": 0.12313562288854585,
+              "log_scale_offset": 1.0,
+              "threshold_crossings": 0
+            },
+            {
+              "active_fermion_flavours": 2,
+              "alpha": 0.12815884550524406,
+              "log_scale_offset": 2.0,
+              "threshold_crossings": 1
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.135530670870966,
+              "log_scale_offset": 3.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 3,
+              "alpha": 0.14832869378116353,
+              "log_scale_offset": 4.0,
+              "threshold_crossings": 2
+            },
+            {
+              "active_fermion_flavours": 4,
+              "alpha": 0.1666927586771131,
+              "log_scale_offset": 5.0,
+              "threshold_crossings": 3
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.1941659172091323,
+              "log_scale_offset": 6.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.24454651982993292,
+              "log_scale_offset": 7.0,
+              "threshold_crossings": 4
+            },
+            {
+              "active_fermion_flavours": 5,
+              "alpha": 0.33023260726609316,
+              "log_scale_offset": 8.0,
+              "threshold_crossings": 4
+            }
+          ],
+          "status": "COMPLETE"
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+    "base_theory": "one-loop QED with piecewise active Dirac-fermion counts",
+    "beta_function_order": "ONE_LOOP",
+    "external_particle_masses": "NOT_USED",
+    "f4_operators": "NOT_ACTIVATED",
+    "thresholds": "NORMALIZED_MATHEMATICAL_SCHEDULES",
+    "ultraviolet_completion": "NOT_CLAIMED"
+  },
+  "search_version": "qed-threshold-rg-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W5_QED_THRESHOLD_RG_CAMPAIGN",
+  "trajectory_count": 40
+}

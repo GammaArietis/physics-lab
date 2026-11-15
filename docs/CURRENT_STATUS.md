@@ -31,6 +31,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Wyler W2A dimension scan | `COMPLETE`; abstract type-IV dimensions n=3..9 scanned with physical spacetime d=4 fixed; n=5 reproduces the anchor and all dimensions are retained without ranking |
 | W3A Maxwell–Dirac F^4 pilot | `COMPLETE` structurally; U(1)- and Lorentz-invariant dimension-eight F^4 basis registered with birefringence and light-by-light observable channels; Wilson coefficients and EFT scale remain `UNDERDETERMINED`; no alpha fitting or empirical comparison |
 | W4 one-loop QED RG pilot | `COMPLETE`; known beta function, Gaussian fixed point and bounded analytic trajectories verified; alpha is a dynamical state variable only; no interacting fixed point, alpha fit, F^4 activation or empirical comparison |
+| W5 QED threshold RG campaign | `COMPLETE`; 5 normalized threshold schedules, 40 trajectories and 680 points executed with continuous matching; only Gaussian fixed point retained; no physical masses, alpha fit, ranking or F^4 activation |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -161,6 +162,15 @@ Landau-pole crossings. It does not derive the low-energy value of alpha, claim
 an interacting fixed point or activate the unresolved W3A operators. The
 protocol and report are recorded in `docs/W4_QED_RG_PILOT.md` and
 `docs/validation/qed_rg_pilot_2026-11-15.json`.
+
+The W5 campaign extends W4 to five normalized piecewise-threshold schedules,
+eight initial alpha seeds and seventeen scale offsets: 40 trajectories and
+680 points in total. It verifies continuous matching and records the changed
+slope when the active fermion count increases. Since every regime retains a
+positive one-loop QED beta function, no non-zero fixed point appears. The
+schedules are mathematical controls, not physical particle-mass inputs. The
+protocol and report are recorded in `docs/W5_QED_THRESHOLD_RG_CAMPAIGN.md` and
+`docs/validation/qed_threshold_rg_campaign_2026-11-15.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

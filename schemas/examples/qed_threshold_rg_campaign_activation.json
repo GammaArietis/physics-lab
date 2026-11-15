@@ -1,0 +1,57 @@
+{
+  "schema_version": "qed-threshold-rg-v1",
+  "activation_id": "w5-qed-threshold-rg-broad-run",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "stage": "W5_QED_THRESHOLD_RG_CAMPAIGN",
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "target_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+  "alpha_as_fit_target": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "f4_operators": "NOT_ACTIVATED",
+  "initial_fermion_flavours": 1,
+  "initial_alpha_values": [0.005, 0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12],
+  "log_scale_offsets": [-8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "threshold_schedules": [
+    {"scenario_id": "no-threshold-control", "thresholds": []},
+    {
+      "scenario_id": "one-threshold-control",
+      "thresholds": [{"log_scale_offset": 2, "fermion_flavours_after": 2}]
+    },
+    {
+      "scenario_id": "two-threshold-control",
+      "thresholds": [
+        {"log_scale_offset": 2, "fermion_flavours_after": 2},
+        {"log_scale_offset": 5, "fermion_flavours_after": 3}
+      ]
+    },
+    {
+      "scenario_id": "three-threshold-control",
+      "thresholds": [
+        {"log_scale_offset": 2, "fermion_flavours_after": 2},
+        {"log_scale_offset": 4, "fermion_flavours_after": 3},
+        {"log_scale_offset": 6, "fermion_flavours_after": 4}
+      ]
+    },
+    {
+      "scenario_id": "four-threshold-control",
+      "thresholds": [
+        {"log_scale_offset": 1.5, "fermion_flavours_after": 2},
+        {"log_scale_offset": 3, "fermion_flavours_after": 3},
+        {"log_scale_offset": 4.5, "fermion_flavours_after": 4},
+        {"log_scale_offset": 6, "fermion_flavours_after": 5}
+      ]
+    }
+  ],
+  "notes": [
+    "Threshold locations are normalized mathematical schedules, not imported particle masses.",
+    "Every schedule and trajectory is retained; no candidate is ranked or selected.",
+    "The run tests matching and flow structure before any coupled or speculative beta system.",
+    "The W3A F^4 operators remain inactive."
+  ]
+}
