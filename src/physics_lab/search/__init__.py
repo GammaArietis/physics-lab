@@ -49,6 +49,12 @@ from physics_lab.search.eichhorn_held_ir_matching import (
     run_ir_matching_campaign,
     write_ir_matching_report,
 )
+from physics_lab.search.eichhorn_held_physical_matching import (
+    PHYSICAL_MATCHING_VERSION,
+    run_physical_matching_campaign,
+    sm_matching_beta,
+    write_physical_matching_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -84,4 +90,8 @@ __all__ = [
     "integrate_target_blind_trajectory",
     "run_ir_matching_campaign",
     "write_ir_matching_report",
+    "PHYSICAL_MATCHING_VERSION",
+    "run_physical_matching_campaign",
+    "sm_matching_beta",
+    "write_physical_matching_report",
 ]

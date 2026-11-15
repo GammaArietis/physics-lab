@@ -1,0 +1,42 @@
+{
+  "activation_id": "eichhorn-held-physical-matching-2026-11-15",
+  "campaign_id": "eichhorn-held-physical-matching",
+  "matching_version": "eichhorn-held-physical-matching-v1",
+  "authorization": {
+    "all_declared_variants": true,
+    "experimental_comparison": "AFTER_GENERATION_ONLY",
+    "fitting": false,
+    "automatic_ranking": false,
+    "automatic_selection": false
+  },
+  "dimensionful_scales_gev": {
+    "reduced_planck": 2.435e18,
+    "electroweak_vev_calibration": 246.21965,
+    "low_scale_probe": 2.0
+  },
+  "gravity_transition_log_offsets": [-2.0, -4.0, -6.0],
+  "sm_loop_modes": [
+    "one-loop-sm",
+    "two-loop-gauge-control"
+  ],
+  "threshold_schedules": [
+    {"id": "no-decoupling", "top_over_v": null, "higgs_over_v": null, "ew_over_v": null},
+    {"id": "threshold-low", "top_over_v": 0.5, "higgs_over_v": 0.4, "ew_over_v": 0.3},
+    {"id": "threshold-central", "top_over_v": 0.75, "higgs_over_v": 0.5, "ew_over_v": 0.4},
+    {"id": "threshold-high", "top_over_v": 1.25, "higgs_over_v": 1.0, "ew_over_v": 0.8}
+  ],
+  "conversion_controls": {
+    "top": "one-loop-qcd",
+    "higgs": "tree-level",
+    "full_nnlo_pole_matching": "NOT_IMPLEMENTED"
+  },
+  "uncertainty_controls": {
+    "truncation": ["one-loop-sm", "two-loop-gauge-control"],
+    "regulator_shape_family": "NOT_IMPLEMENTED",
+    "transition_and_threshold_ensemble": true
+  },
+  "source_data": {
+    "experimental_values_before_comparison": false,
+    "pdg_comparison": "late descriptive block only"
+  }
+}
