@@ -1,0 +1,1764 @@
+{
+  "activation_id": "w6-gauge-yukawa-em-broad-run",
+  "activation_path": "schemas/examples/gauge_yukawa_em_rg_activation.json",
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "external_data_used": false,
+    "f4_promotion": "DISABLED",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "target_blind_generation": true,
+    "target_comparison": "NOT_AUTHORIZED"
+  },
+  "bibliography": [
+    {
+      "citation": "D. F. Litim and F. Sannino, Asymptotic safety guaranteed, JHEP 12 (2014) 178",
+      "doi": "10.1007/JHEP12(2014)178",
+      "id": "litim-sannino-2014",
+      "role": "source of the coupled gauge-Yukawa beta functions",
+      "url": "https://arxiv.org/abs/1406.2337"
+    },
+    {
+      "citation": "A. D. Bond and D. F. Litim, Theorems for Asymptotic Safety of Gauge Theories, Eur. Phys. J. C 77 (2017) 429",
+      "doi": "10.1140/epjc/s10052-017-4976-5",
+      "id": "bond-litim-2017",
+      "role": "fixed-point sign conditions and weak-coupling classification",
+      "url": "https://arxiv.org/abs/1608.00519"
+    },
+    {
+      "citation": "A. Held, Effective asymptotic safety and its predictive power: Gauge-Yukawa theories, Front. Phys. 8 (2020) 341",
+      "doi": "10.3389/fphy.2020.00341",
+      "id": "held-2020",
+      "role": "predictivity and Abelian-sector caveats",
+      "url": "https://arxiv.org/abs/2003.13642"
+    }
+  ],
+  "campaign_id": "gauge-yukawa-electromagnetic-rg-broad-run",
+  "controls": {
+    "alpha_em_nonzero_fixed_point_found": false,
+    "alpha_em_not_used_as_fit_target": true,
+    "f4_operators_not_promoted": true,
+    "fixed_point_residuals_recorded": true,
+    "interacting_gauge_yukawa_fixed_points_found": true,
+    "literature_beta_functions_transcribed": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_external_data": true,
+    "no_fitting": true,
+    "perturbative_validity_flagged": true,
+    "stability_matrix_recorded": true
+  },
+  "electromagnetic_conclusion": {
+    "alpha_em_fixed_point_value": 0.0,
+    "alpha_em_is_constrained_by_gauge_yukawa_fixed_point": false,
+    "nonzero_alpha_em_fixed_point_found": false,
+    "reason": "The Abelian beta function is positive and decoupled at this truncation."
+  },
+  "epsilon_count": 8,
+  "equations": {
+    "beta_alpha_em": "b_em*alpha_em^2 with b_em=2/(3*pi)",
+    "beta_alpha_g": "alpha_g^2*[4*epsilon/3+(25+26*epsilon/3)*alpha_g-2*(11/2+epsilon)^2*alpha_y]",
+    "beta_alpha_y": "alpha_y*[(13+2*epsilon)*alpha_y-6*alpha_g]",
+    "interacting_fixed_point": "alpha_em*=0, alpha_y*=6*alpha_g*/(13+2*epsilon)"
+  },
+  "execution_status": "COMPLETE",
+  "fixed_point_count": 8,
+  "fixed_points": [
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.9202682664205533,
+      "epsilon": 0.001,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0004565790577067886,
+        "alpha_y": 0.00021069638103681984,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -6.074812865601223e-07,
+        0.0,
+        0.00274529524511748
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.9090340763515243,
+      "epsilon": 0.005,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0022917114381237912,
+        "alpha_y": 0.001056899971463701,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        -7.288532715737117e-23,
+        1.8334291922572996e-21
+      ],
+      "interacting_stability_eigenvalues": [
+        -1.5116858954034008e-05,
+        0.0,
+        0.01389691160471115
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.8949923195084466,
+      "epsilon": 0.01,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.004605654130231771,
+        "alpha_y": 0.0021224212581713235,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        -5.887526568304761e-22,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -6.012020471965235e-05,
+        0.0,
+        0.02822618461295714
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.8669120654396707,
+      "epsilon": 0.02,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.009301529331202929,
+        "alpha_y": 0.004279844784295827,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        -4.802738645627769e-21,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -0.00023774975301277907,
+        0.0,
+        0.058224883468680266
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.782697201017811,
+      "epsilon": 0.05,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.023957571324067305,
+        "alpha_y": 0.01097293343087052,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        6.372294067389062e-20,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -0.001436887305641012,
+        0.0,
+        0.15978016410736318
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.6424242424242372,
+      "epsilon": 0.1,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.050458715596330375,
+        "alpha_y": 0.02293577981651381,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": true,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        -1.1306875345479713e-18,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -0.005445345057675355,
+        0.0,
+        0.37405629250878863
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -2.3621890547263646,
+      "epsilon": 0.2,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.11288963774220741,
+        "alpha_y": 0.05054759898904809,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": false,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        -5.659504114049172e-18,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -0.01965010794288019,
+        0.0,
+        1.0376794140052108
+      ],
+      "interacting_uv_attractive_directions": 1
+    },
+    {
+      "alpha_em_nonzero_fixed_point": false,
+      "effective_gauge_coefficient": -1.5238095238095255,
+      "epsilon": 0.5,
+      "gaussian": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.0,
+        "alpha_y": 0.0,
+        "label": "GAUSSIAN"
+      },
+      "interacting": {
+        "alpha_em": 0.0,
+        "alpha_g": 0.4374999999999995,
+        "alpha_y": 0.18749999999999978,
+        "label": "GAUGE_YUKAWA_INTERACTING",
+        "perturbative": false,
+        "physical": true
+      },
+      "interacting_ir_attractive_directions": 1,
+      "interacting_marginal_directions": 1,
+      "interacting_residual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "interacting_stability_eigenvalues": [
+        -0.09189545095450313,
+        0.0,
+        8.33147878428782
+      ],
+      "interacting_uv_attractive_directions": 1
+    }
+  ],
+  "next_gate": "ADD_SCALAR_QUARTIC_AND_FULL_ABELIAN_MIXING_OR_IMPORT_GRAVITY_BETA_FUNCTIONS",
+  "perturbative_interacting_fixed_point_count": 6,
+  "physical_interacting_fixed_point_count": 8,
+  "scope": {
+    "abelian_order": "QED one-loop",
+    "alpha_em_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+    "base_theory": "Litim-Sannino gauge-Yukawa truncation plus decoupled one-loop QED spectator",
+    "epsilon_role": "VENEZIANO_EXPANSION_CONTROL_PARAMETER",
+    "f4_operators": "NOT_ACTIVATED",
+    "full_standard_model": "NOT_CLAIMED",
+    "gauge_yukawa_order": "gauge two-loop plus Yukawa one-loop",
+    "quantum_gravity": "NOT_INCLUDED"
+  },
+  "search_version": "gauge-yukawa-em-rg-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W6_COUPLED_GAUGE_YUKAWA_EM_RG",
+  "trajectories": [
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.001,
+        0.0004565790577067886,
+        0.00021069638103681984
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0004565790577067886,
+          0.00021069638103681984
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.01,
+        0.0004565790577067886,
+        0.00021069638103681984
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0004565790577067886,
+          0.00021069638103681984
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.1,
+        0.0004565790577067886,
+        0.00021069638103681984
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0004565790577067886,
+          0.00021069638103681984
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0004565790577067886,
+              0.00021069638103681984
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.001,
+        0.0022917114381237912,
+        0.001056899971463701
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0022917114381237912,
+          0.001056899971463701
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.01,
+        0.0022917114381237912,
+        0.001056899971463701
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0022917114381237912,
+          0.001056899971463701
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.1,
+        0.0022917114381237912,
+        0.001056899971463701
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0022917114381237912,
+          0.001056899971463701
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0022917114381237912,
+              0.001056899971463701
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.001,
+        0.004605654130231771,
+        0.0021224212581713235
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.004605654130231771,
+          0.0021224212581713235
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.01,
+        0.004605654130231771,
+        0.0021224212581713235
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.004605654130231771,
+          0.0021224212581713235
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.1,
+        0.004605654130231771,
+        0.0021224212581713235
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.004605654130231771,
+          0.0021224212581713235
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.004605654130231771,
+              0.0021224212581713235
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.001,
+        0.009301529331202929,
+        0.004279844784295827
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.009301529331202929,
+          0.004279844784295827
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.01,
+        0.009301529331202929,
+        0.004279844784295827
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.009301529331202929,
+          0.004279844784295827
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.1,
+        0.009301529331202929,
+        0.004279844784295827
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.009301529331202929,
+          0.004279844784295827
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.009301529331202929,
+              0.004279844784295827
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.001,
+        0.023957571324067305,
+        0.01097293343087052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.023957571324067305,
+          0.01097293343087052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.01,
+        0.023957571324067305,
+        0.01097293343087052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.023957571324067305,
+          0.01097293343087052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.1,
+        0.023957571324067305,
+        0.01097293343087052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.023957571324067305,
+          0.01097293343087052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.023957571324067305,
+              0.01097293343087052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.001,
+        0.050458715596330375,
+        0.02293577981651381
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.050458715596330375,
+          0.02293577981651381
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.01,
+        0.050458715596330375,
+        0.02293577981651381
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.050458715596330375,
+          0.02293577981651381
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.1,
+        0.050458715596330375,
+        0.02293577981651381
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.050458715596330375,
+          0.02293577981651381
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.050458715596330375,
+              0.02293577981651381
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.001,
+        0.11288963774220741,
+        0.05054759898904809
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.11288963774220741,
+          0.05054759898904809
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.01,
+        0.11288963774220741,
+        0.05054759898904809
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.11288963774220741,
+          0.05054759898904809
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.1,
+        0.11288963774220741,
+        0.05054759898904809
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.11288963774220741,
+          0.05054759898904809
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.11288963774220741,
+              0.05054759898904809
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.001,
+        0.4374999999999995,
+        0.18749999999999978
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.4374999999999995,
+          0.18749999999999978
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.01,
+        0.4374999999999995,
+        0.18749999999999978
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.4374999999999995,
+          0.18749999999999978
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "background_fixed_point": "GAUGE_YUKAWA_INTERACTING",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.1,
+        0.4374999999999995,
+        0.18749999999999978
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.4374999999999995,
+          0.18749999999999978
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.4374999999999995,
+              0.18749999999999978
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    }
+  ],
+  "trajectory_count": 24
+}

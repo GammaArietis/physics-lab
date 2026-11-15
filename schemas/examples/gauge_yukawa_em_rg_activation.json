@@ -1,0 +1,31 @@
+{
+  "schema_version": "gauge-yukawa-em-rg-v1",
+  "activation_id": "w6-gauge-yukawa-em-broad-run",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "stage": "W6_COUPLED_GAUGE_YUKAWA_EM_RG",
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "target_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+  "alpha_as_fit_target": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "f4_operators": "NOT_ACTIVATED",
+  "epsilon_values": [0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5],
+  "alpha_em_values": [0.001, 0.01, 0.1],
+  "log_scale_offsets": [-4, -2, 0, 2, 4],
+  "bibliography": [
+    "https://arxiv.org/abs/1406.2337",
+    "https://arxiv.org/abs/1608.00519",
+    "https://arxiv.org/abs/2003.13642"
+  ],
+  "notes": [
+    "The gauge-Yukawa beta functions are transcribed from the cited primary paper.",
+    "The Abelian coupling is a one-loop QED spectator at this truncation.",
+    "Epsilon values above the perturbative small-epsilon regime are retained as stress diagnostics and flagged.",
+    "No experimental alpha value or particle mass is used."
+  ]
+}
