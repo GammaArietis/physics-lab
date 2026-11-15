@@ -1,0 +1,31 @@
+{
+  "schema_version": "gauge-yukawa-scalar-em-rg-v1",
+  "activation_id": "w7-gauge-yukawa-scalar-em-broad-run",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "stage": "W7_COUPLED_GAUGE_YUKAWA_SCALAR_EM_RG",
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "target_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+  "alpha_as_fit_target": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "f4_operators": "NOT_ACTIVATED",
+  "epsilon_values": [0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5],
+  "alpha_em_values": [0.001, 0.01, 0.1],
+  "log_scale_offsets": [-4, -2, 0, 2, 4],
+  "bibliography": [
+    "https://arxiv.org/abs/1406.2337",
+    "https://arxiv.org/abs/2312.12128",
+    "https://doi.org/10.1007/JHEP01(2022)051"
+  ],
+  "notes": [
+    "The scalar quartic beta functions are the one-loop equations used in the cited model analysis.",
+    "Both scalar fixed-point branches are retained; no automatic potential-stability selection is performed.",
+    "The truncation is mixed-order and higher-loop control is recorded as an open gate.",
+    "No experimental alpha value or particle mass is used."
+  ]
+}

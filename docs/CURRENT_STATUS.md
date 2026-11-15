@@ -33,6 +33,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | W4 one-loop QED RG pilot | `COMPLETE`; known beta function, Gaussian fixed point and bounded analytic trajectories verified; alpha is a dynamical state variable only; no interacting fixed point, alpha fit, F^4 activation or empirical comparison |
 | W5 QED threshold RG campaign | `COMPLETE`; 5 normalized threshold schedules, 40 trajectories and 680 points executed with continuous matching; only Gaussian fixed point retained; no physical masses, alpha fit, ranking or F^4 activation |
 | W6 coupled gauge–Yukawa/Abelian RG campaign | `COMPLETE`; literature-anchored non-Gaussian gauge–Yukawa fixed points found across 8 epsilon values, while the Abelian coordinate remains Gaussian; 24 trajectories; no alpha prediction, fitting, ranking or F^4 activation |
+| W7 scalar-completed gauge–Yukawa/Abelian RG campaign | `COMPLETE`; both scalar quartic branches retained across 8 epsilon values and 48 trajectories; interacting gauge–Yukawa–scalar fixed-point structure survives, while the Abelian coordinate remains Gaussian; no alpha prediction or automatic branch selection |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -182,6 +183,15 @@ order. This is a mechanism demonstration, not a derivation of 1/137. The
 protocol, bibliography and report are recorded in
 `docs/W6_COUPLED_GAUGE_YUKAWA_EM_RG.md` and
 `docs/validation/gauge_yukawa_em_rg_campaign_2026-11-15.json`.
+
+W7 closes the scalar quartic sector at the mixed order used in the original
+model analysis. Both scalar branches are retained with their stability
+matrices, and the interacting gauge–Yukawa–scalar structure persists across
+the scan. The Abelian coordinate remains alpha_em*=0, so scalar completion
+still does not derive 1/137. Higher-loop comparison and gravity/matter beta
+functions remain separate gates. The protocol and report are recorded in
+`docs/W7_COUPLED_GAUGE_YUKAWA_SCALAR_EM_RG.md` and
+`docs/validation/gauge_yukawa_scalar_em_rg_campaign_2026-11-15.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

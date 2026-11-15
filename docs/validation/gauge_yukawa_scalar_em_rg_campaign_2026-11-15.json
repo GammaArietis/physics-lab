@@ -1,0 +1,4162 @@
+{
+  "activation_id": "w7-gauge-yukawa-scalar-em-broad-run",
+  "activation_path": "schemas/examples/gauge_yukawa_scalar_em_rg_activation.json",
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "external_data_used": false,
+    "f4_promotion": "DISABLED",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "target_blind_generation": true,
+    "target_comparison": "NOT_AUTHORIZED"
+  },
+  "bibliography": [
+    {
+      "citation": "D. F. Litim and F. Sannino, Asymptotic safety guaranteed, JHEP 12 (2014) 178",
+      "doi": "10.1007/JHEP12(2014)178",
+      "id": "litim-sannino-2014",
+      "role": "gauge-Yukawa and scalar beta functions",
+      "url": "https://arxiv.org/abs/1406.2337"
+    },
+    {
+      "citation": "A. V. Bednyakov and I. A. Mukhaeva, Asymptotic safety in the Litim-Sannino model at four loops, Phys. Rev. D 109, 065030 (2024)",
+      "doi": "10.1103/PhysRevD.109.065030",
+      "id": "bednyakov-mukhaeva-2024",
+      "role": "higher-loop confirmation and perturbative-control caveat",
+      "url": "https://arxiv.org/abs/2312.12128"
+    },
+    {
+      "citation": "J. Davies, F. Herren and A. E. Thomsen, General gauge-Yukawa-quartic beta-functions at 4-3-2-loop order, JHEP 01 (2022) 051",
+      "doi": "10.1007/JHEP01(2022)051",
+      "id": "davies-herren-thomsen-2022",
+      "role": "general higher-loop beta-function framework",
+      "url": "https://doi.org/10.1007/JHEP01(2022)051"
+    }
+  ],
+  "campaign_id": "gauge-yukawa-scalar-electromagnetic-rg-broad-run",
+  "controls": {
+    "alpha_em_nonzero_fixed_point_found": false,
+    "alpha_em_not_used_as_fit_target": true,
+    "f4_operators_not_promoted": true,
+    "fixed_point_residuals_recorded": true,
+    "higher_loop_caveat_recorded": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_external_data": true,
+    "no_fitting": true,
+    "scalar_beta_functions_transcribed": true,
+    "stability_matrices_recorded": true,
+    "two_scalar_branches_recorded": true
+  },
+  "electromagnetic_conclusion": {
+    "alpha_em_constrained_by_scalar_completed_system": false,
+    "alpha_em_fixed_point_value": 0.0,
+    "nonzero_alpha_em_fixed_point_found": false,
+    "reason": "The Abelian beta function remains positive and decoupled in this truncation."
+  },
+  "epsilon_count": 8,
+  "equations": {
+    "beta_alpha_em": "2*alpha_em^2/(3*pi)",
+    "beta_alpha_h": "-(11+2*epsilon)*alpha_y^2 + 4*alpha_h*(alpha_y+2*alpha_h)",
+    "beta_alpha_v": "12*alpha_h^2 + 4*alpha_v*(alpha_v+4*alpha_h+alpha_y)",
+    "fixed_point_scalar_branches": "alpha_h*=(sqrt(23)-1)*epsilon/19; alpha_v solves beta_v=0"
+  },
+  "execution_status": "COMPLETE",
+  "fixed_point_count": 8,
+  "fixed_points": [
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.0004565790577067886,
+          "alpha_h": 0.00019996395690809798,
+          "alpha_v": -0.0001373804813319334,
+          "alpha_y": 0.00021069638103681984,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            0.0,
+            0.0,
+            1.0587911840678754e-22,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -6.074812865601223e-07,
+            0.0,
+            0.00274529524511748,
+            0.00294316498402138,
+            0.004042208834676847
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.0004565790577067886,
+          "alpha_h": 0.00019996395690809798,
+          "alpha_v": -0.0008731717273372784,
+          "alpha_y": 0.00021069638103681984,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            0.0,
+            0.0,
+            1.0587911840678754e-22,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.00294316498402138,
+            -6.074812865601223e-07,
+            0.0,
+            0.00274529524511748,
+            0.004042208834676847
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.001,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.0022917114381237912,
+          "alpha_h": 0.0010035043846441409,
+          "alpha_v": -0.0006895205251738052,
+          "alpha_y": 0.001056899971463701,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            -7.288532715737117e-23,
+            1.8334291922572996e-21,
+            1.6940658945086007e-21,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -1.5116858954034008e-05,
+            0.0,
+            0.01389691160471115,
+            0.014767505838770616,
+            0.02028367004016106
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.0022917114381237912,
+          "alpha_h": 0.0010035043846441409,
+          "alpha_v": -0.004381396984866459,
+          "alpha_y": 0.001056899971463701,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            -7.288532715737117e-23,
+            1.8334291922572996e-21,
+            1.6940658945086007e-21,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.014767505838770616,
+            -1.5116858954034008e-05,
+            0.0,
+            0.01389691160471115,
+            0.02028367004016106
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.005,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.004605654130231771,
+          "alpha_h": 0.0020163001952627573,
+          "alpha_v": -0.0013856428369012344,
+          "alpha_y": 0.0021224212581713235,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            -5.887526568304761e-22,
+            0.0,
+            -6.776263578034403e-21,
+            6.776263578034403e-21
+          ],
+          "stability_eigenvalues": [
+            -6.012020471965235e-05,
+            0.0,
+            0.02822618461295714,
+            0.029665345461679538,
+            0.04075048815688941
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.004605654130231771,
+          "alpha_h": 0.0020163001952627573,
+          "alpha_v": -0.00880197920232112,
+          "alpha_y": 0.0021224212581713235,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            -5.887526568304761e-22,
+            0.0,
+            -6.776263578034403e-21,
+            4.0657581468206416e-20
+          ],
+          "stability_eigenvalues": [
+            -0.029665345461679545,
+            -6.012020471965235e-05,
+            0.0,
+            0.02822618461295714,
+            0.04075048815688941
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.01,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.009301529331202929,
+          "alpha_h": 0.00407030878343885,
+          "alpha_v": -0.00279807638935125,
+          "alpha_y": 0.004279844784295827,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            -4.802738645627769e-21,
+            0.0,
+            2.710505431213761e-20,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.00023774975301277907,
+            0.0,
+            0.058224883468680266,
+            0.059859708557394906,
+            0.08224431967220491
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.009301529331202929,
+          "alpha_h": 0.00407030878343885,
+          "alpha_v": -0.01776300352869998,
+          "alpha_y": 0.004279844784295827,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            -4.802738645627769e-21,
+            0.0,
+            2.710505431213761e-20,
+            1.0842021724855044e-19
+          ],
+          "stability_eigenvalues": [
+            -0.05985970855739492,
+            -0.00023774975301277907,
+            0.0,
+            0.058224883468680266,
+            0.08224431967220491
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.02,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.023957571324067305,
+          "alpha_h": 0.01046992821374429,
+          "alpha_v": -0.007204138968086787,
+          "alpha_y": 0.01097293343087052,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            6.372294067389062e-20,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.001436887305641012,
+            0.0,
+            0.1537774733986964,
+            0.15978016410736318,
+            0.21141058514339073
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.023957571324067305,
+          "alpha_h": 0.01046992821374429,
+          "alpha_v": -0.04564850731776089,
+          "alpha_y": 0.01097293343087052,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            6.372294067389062e-20,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.1537774733986964,
+            -0.001436887305641012,
+            0.0,
+            0.15978016410736318,
+            0.21141058514339073
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.05,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.050458715596330375,
+          "alpha_h": 0.022003180326715242,
+          "alpha_v": -0.01516330115695335,
+          "alpha_y": 0.02293577981651381,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            -1.1306875345479713e-18,
+            0.0,
+            8.673617379884035e-19,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.005445345057675355,
+            0.0,
+            0.3224875952378723,
+            0.37405629250878863,
+            0.44379400449349915
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.050458715596330375,
+          "alpha_h": 0.022003180326715242,
+          "alpha_v": -0.09578519996642143,
+          "alpha_y": 0.02293577981651381,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": true,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            -1.1306875345479713e-18,
+            0.0,
+            8.673617379884035e-19,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.3224875952378723,
+            -0.005445345057675355,
+            0.0,
+            0.37405629250878863,
+            0.44379400449349915
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.1,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.11288963774220741,
+          "alpha_h": 0.049012523593852476,
+          "alpha_v": -0.03387892056923125,
+          "alpha_y": 0.05054759898904809,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": false,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            -5.659504114049172e-18,
+            0.0,
+            -3.469446951953614e-18,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.01965010794288019,
+            0.0,
+            0.715359408903982,
+            0.986390773457832,
+            1.0376794140052108
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.11288963774220741,
+          "alpha_h": 0.049012523593852476,
+          "alpha_v": -0.21271877279522675,
+          "alpha_y": 0.05054759898904809,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": false,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            -5.659504114049172e-18,
+            0.0,
+            -3.469446951953614e-18,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.715359408903982,
+            -0.01965010794288019,
+            0.0,
+            0.986390773457832,
+            1.0376794140052108
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.2,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "branches": [
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.4374999999999995,
+          "alpha_h": 0.18749999999999978,
+          "alpha_v": -0.13072956792525087,
+          "alpha_y": 0.18749999999999978,
+          "ir_attractive_directions": 3,
+          "label": "FP1_STABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": false,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": true,
+          "residual": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stability_eigenvalues": [
+            -0.09189545095450313,
+            0.0,
+            2.7041634565979886,
+            3.7499999999999956,
+            8.33147878428782
+          ],
+          "uv_attractive_directions": 1
+        },
+        {
+          "alpha_em": 0.0,
+          "alpha_g": 0.4374999999999995,
+          "alpha_h": 0.18749999999999978,
+          "alpha_v": -0.806770432074748,
+          "alpha_y": 0.18749999999999978,
+          "ir_attractive_directions": 2,
+          "label": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+          "marginal_directions": 1,
+          "perturbative": false,
+          "physical_gauge_yukawa": true,
+          "quartic_potential_proxy_stable": false,
+          "residual": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.220446049250313e-16
+          ],
+          "stability_eigenvalues": [
+            -2.704163456597988,
+            -0.09189545095450313,
+            0.0,
+            3.7499999999999956,
+            8.33147878428782
+          ],
+          "uv_attractive_directions": 2
+        }
+      ],
+      "epsilon": 0.5,
+      "gaussian": {
+        "label": "GAUSSIAN",
+        "state": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "next_gate": "COMPARE_MIXED_ORDER_RUN_WITH_HIGHER_LOOP_LITERATURE_OR_ACTIVATE_GRAVITY_MATTER_BETA_SYSTEM",
+  "scope": {
+    "abelian_order": "ONE_LOOP",
+    "base_theory": "Litim-Sannino gauge-Yukawa-scalar truncation plus decoupled one-loop QED spectator",
+    "f4_operators": "NOT_ACTIVATED",
+    "full_standard_model": "NOT_CLAIMED",
+    "gauge_order": "TWO_LOOP",
+    "quantum_gravity": "NOT_INCLUDED",
+    "scalar_quartic_order": "ONE_LOOP",
+    "yukawa_order": "ONE_LOOP"
+  },
+  "search_version": "gauge-yukawa-scalar-em-rg-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W7_COUPLED_GAUGE_YUKAWA_SCALAR_EM_RG",
+  "trajectories": [
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.001,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0001373804813319334
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0001373804813319334
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.01,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0001373804813319334
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0001373804813319334
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.1,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0001373804813319334
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0001373804813319334
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0001373804813319334
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.001,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0008731717273372784
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0008731717273372784
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.01,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0008731717273372784
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0008731717273372784
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.001,
+      "initial_state": [
+        0.1,
+        0.0004565790577067886,
+        0.00021069638103681984,
+        0.00019996395690809798,
+        -0.0008731717273372784
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0004565790577067886,
+          0.00021069638103681984,
+          0.00019996395690809798,
+          -0.0008731717273372784
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0004565790577067886,
+              0.00021069638103681984,
+              0.00019996395690809798,
+              -0.0008731717273372784
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.001,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.0006895205251738052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.0006895205251738052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.01,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.0006895205251738052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.0006895205251738052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.1,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.0006895205251738052
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.0006895205251738052
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.0006895205251738052
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.001,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.004381396984866459
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.004381396984866459
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.01,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.004381396984866459
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.004381396984866459
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.005,
+      "initial_state": [
+        0.1,
+        0.0022917114381237912,
+        0.001056899971463701,
+        0.0010035043846441409,
+        -0.004381396984866459
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.0022917114381237912,
+          0.001056899971463701,
+          0.0010035043846441409,
+          -0.004381396984866459
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.0022917114381237912,
+              0.001056899971463701,
+              0.0010035043846441409,
+              -0.004381396984866459
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.001,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.0013856428369012344
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.0013856428369012344
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.01,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.0013856428369012344
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.0013856428369012344
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.1,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.0013856428369012344
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.0013856428369012344
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.0013856428369012344
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.001,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.00880197920232112
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.00880197920232112
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.01,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.00880197920232112
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.00880197920232112
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.01,
+      "initial_state": [
+        0.1,
+        0.004605654130231771,
+        0.0021224212581713235,
+        0.0020163001952627573,
+        -0.00880197920232112
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.004605654130231771,
+          0.0021224212581713235,
+          0.0020163001952627573,
+          -0.00880197920232112
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.004605654130231771,
+              0.0021224212581713235,
+              0.0020163001952627573,
+              -0.00880197920232112
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.001,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.00279807638935125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.00279807638935125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.01,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.00279807638935125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.00279807638935125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.1,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.00279807638935125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.00279807638935125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.00279807638935125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.001,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.01776300352869998
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.01776300352869998
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.01,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.01776300352869998
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.01776300352869998
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.02,
+      "initial_state": [
+        0.1,
+        0.009301529331202929,
+        0.004279844784295827,
+        0.00407030878343885,
+        -0.01776300352869998
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.009301529331202929,
+          0.004279844784295827,
+          0.00407030878343885,
+          -0.01776300352869998
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.009301529331202929,
+              0.004279844784295827,
+              0.00407030878343885,
+              -0.01776300352869998
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.001,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.007204138968086787
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.007204138968086787
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.01,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.007204138968086787
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.007204138968086787
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.1,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.007204138968086787
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.007204138968086787
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.007204138968086787
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.001,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.04564850731776089
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.04564850731776089
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.01,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.04564850731776089
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.04564850731776089
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.05,
+      "initial_state": [
+        0.1,
+        0.023957571324067305,
+        0.01097293343087052,
+        0.01046992821374429,
+        -0.04564850731776089
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.023957571324067305,
+          0.01097293343087052,
+          0.01046992821374429,
+          -0.04564850731776089
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.023957571324067305,
+              0.01097293343087052,
+              0.01046992821374429,
+              -0.04564850731776089
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.001,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.01516330115695335
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.01516330115695335
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.01,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.01516330115695335
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.01516330115695335
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.1,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.01516330115695335
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.01516330115695335
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.01516330115695335
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.001,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.09578519996642143
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.09578519996642143
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.01,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.09578519996642143
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.09578519996642143
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.1,
+      "initial_state": [
+        0.1,
+        0.050458715596330375,
+        0.02293577981651381,
+        0.022003180326715242,
+        -0.09578519996642143
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.050458715596330375,
+          0.02293577981651381,
+          0.022003180326715242,
+          -0.09578519996642143
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.050458715596330375,
+              0.02293577981651381,
+              0.022003180326715242,
+              -0.09578519996642143
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.001,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.03387892056923125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.03387892056923125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.01,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.03387892056923125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.03387892056923125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.1,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.03387892056923125
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.03387892056923125
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.03387892056923125
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.001,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.21271877279522675
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.21271877279522675
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.01,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.21271877279522675
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.21271877279522675
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.2,
+      "initial_state": [
+        0.1,
+        0.11288963774220741,
+        0.05054759898904809,
+        0.049012523593852476,
+        -0.21271877279522675
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.11288963774220741,
+          0.05054759898904809,
+          0.049012523593852476,
+          -0.21271877279522675
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.11288963774220741,
+              0.05054759898904809,
+              0.049012523593852476,
+              -0.21271877279522675
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.001,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.13072956792525087
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.13072956792525087
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.01,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.13072956792525087
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.13072956792525087
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP1_STABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.1,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.13072956792525087
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.13072956792525087
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.13072956792525087
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.001,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.806770432074748
+      ],
+      "trajectory": {
+        "final_state": [
+          0.0010017005396520914,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.806770432074748
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.001,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.0010004245933846075,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.001000849547481456,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.0010012748627504038,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.0010017005396520914,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.01,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.806770432074748
+      ],
+      "trajectory": {
+        "final_state": [
+          0.01017269706913377,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.806770432074748
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.01,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.010042622212445737,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.010085609310714337,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.010128966000592323,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.01017269706913377,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "branch": "FP2_UNSTABLE_POTENTIAL_CANDIDATE",
+      "epsilon": 0.5,
+      "initial_state": [
+        0.1,
+        0.4374999999999995,
+        0.18749999999999978,
+        0.18749999999999978,
+        -0.806770432074748
+      ],
+      "trajectory": {
+        "final_state": [
+          0.12044786456589315,
+          0.4374999999999995,
+          0.18749999999999978,
+          0.18749999999999978,
+          -0.806770432074748
+        ],
+        "points": [
+          {
+            "log_scale_offset": -4.0,
+            "state": [
+              0.1,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": -2.0,
+            "state": [
+              0.10443224200904212,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 0.0,
+            "state": [
+              0.10927560110693714,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 2.0,
+            "state": [
+              0.11459005952165226,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          },
+          {
+            "log_scale_offset": 4.0,
+            "state": [
+              0.12044786456589315,
+              0.4374999999999995,
+              0.18749999999999978,
+              0.18749999999999978,
+              -0.806770432074748
+            ]
+          }
+        ],
+        "status": "COMPLETE"
+      }
+    }
+  ],
+  "trajectory_count": 48
+}
