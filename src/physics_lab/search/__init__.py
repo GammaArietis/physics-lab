@@ -56,6 +56,13 @@ from physics_lab.search.eichhorn_held_physical_matching import (
     write_physical_matching_report,
 )
 
+from physics_lab.search.smdr_backend import (
+    SMDR_BRIDGE_VERSION,
+    run_smdr_calc_all,
+    target_blind_input_text,
+    write_smdr_report,
+)
+
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
     "DEFAULT_ACTIONS",
@@ -94,4 +101,8 @@ __all__ = [
     "run_physical_matching_campaign",
     "sm_matching_beta",
     "write_physical_matching_report",
+    "SMDR_BRIDGE_VERSION",
+    "run_smdr_calc_all",
+    "target_blind_input_text",
+    "write_smdr_report",
 ]

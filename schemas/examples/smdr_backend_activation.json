@@ -1,0 +1,31 @@
+{
+  "activation_id": "smdr-backend-closeout-2026-11-15",
+  "backend": {
+    "name": "SMDR",
+    "repository": "https://github.com/davidgrobertson/SMDR",
+    "commit": "5c4dd92c918cadb7f91ad3795694f8398b5c287a",
+    "version": "1.3",
+    "build_command": "make smdr && make apps",
+    "executable": "calc_all"
+  },
+  "input_policy": {
+    "generation": "TARGET_BLIND",
+    "reference_model_smoke_separate": true,
+    "experimental_comparison": "NOT_AUTHORIZED",
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED"
+  },
+  "conventions": {
+    "g1_to_gp": "sqrt(3/5)*g1",
+    "lambda4_to_lambda_sm": "2*lambda_4",
+    "lower_family_yukawas": "ZERO_CONTROL",
+    "delta_alpha_had_5_mz": 0.0,
+    "pole_mass_targets": "ABSENT"
+  },
+  "declared_case_id": "source-neighborhood-0357|transition=-2|loop=one-loop-sm|threshold=no-decoupling",
+  "execution_status": "COMPLETE",
+  "all_28692_cases_replayed": false,
+  "remaining_gate": "OPTIONAL_BATCH_SMDR_REPLAY_WITH_EXPLICIT_COMPUTE_BUDGET",
+  "report": "docs/validation/smdr_backend_audit_2026-11-15.json"
+}

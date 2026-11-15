@@ -335,3 +335,10 @@ no phenomenological claim is made before that gate is connected. The v2
 closeout is in `docs/PHYSICAL_MATCHING_CLOSEOUT_2026-11-15.md` and the
 machine-readable summary is in
 `docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2_summary.json`.
+
+
+## W13 SMDR backend closeout — 2026-11-15
+
+The full-SM precision backend gate is now closed at the executable integration level. The official SMDR v1.3 repository was audited at commit `5c4dd92c918cadb7f91ad3795694f8398b5c287a`, built with the reproducible sequence `make smdr && make apps`, and `calc_all` completed successfully. A separate target-blind W11 state was passed through the bridge with explicit convention maps `g1 -> sqrt(3/5) gp` and `lambda_SM = 2 lambda_4`; the parsed pole/EFT observables and raw output tail are archived in `docs/validation/smdr_backend_audit_2026-11-15.json`. The reference-model smoke test remains separate because it contains reference/experimental inputs. No fit, ranking, selection or experimental comparison was performed.
+
+This closes the missing backend dependency for per-state SMDR evaluation, but it does not claim that all 28,692 W11 states were replayed through the external executable. The optional full replay is intentionally recorded as a compute campaign rather than silently replaced by a sample. The complete scope and residual limitations are in `docs/SMDR_BACKEND_CLOSEOUT_2026-11-15.md`; activation metadata are in `schemas/examples/smdr_backend_activation.json`.
