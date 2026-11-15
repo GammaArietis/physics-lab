@@ -1,0 +1,39 @@
+{
+  "schema_version": "gravity-sm-fixed-point-rg-v1",
+  "activation_id": "w9-gravity-dressed-sm-fixed-point-broad-run",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "stage": "W9_GRAVITY_DRESSED_SM_FIXED_POINT_RG",
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "target_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "alpha_as_fit_target": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "f4_operators": "NOT_ACTIVATED",
+  "f_g_values": [0.0, 0.0001, 0.0005, 0.001, 0.002, 0.01],
+  "f_y_values": [0.0, 0.0005, 0.001, 0.002],
+  "f_lambda_values": [0.0, 0.0005, 0.001, 0.002],
+  "initial_states": [
+    [0.36, 0.65, 1.16, 0.93, 0.13],
+    [0.10, 0.20, 0.30, 0.10, 0.01],
+    [0.50, 0.50, 0.50, 0.50, 0.05],
+    [0.70, 0.70, 0.70, 0.40, -0.05]
+  ],
+  "log_scale_offsets": [-4, -2, 0, 2, 4],
+  "bibliography": [
+    "https://doi.org/10.1103/PhysRevD.109.055022",
+    "https://doi.org/10.1103/PhysRevD.97.106012",
+    "https://doi.org/10.1103/PhysRevLett.121.151302",
+    "https://doi.org/10.1103/PhysRevD.99.086010",
+    "https://doi.org/10.1103/gxm2-trn6"
+  ],
+  "notes": [
+    "f_g follows the literature-shaped universal gravitational gauge term.",
+    "f_y and f_lambda are independent minimal closure controls and are not claimed to come from one common quantum-gravity calculation.",
+    "All algebraic fixed-point branches are retained; no candidate is ranked or selected.",
+    "No experimental value of alpha or any mass is used."
+  ]
+}

@@ -25,6 +25,11 @@ from physics_lab.search.sm_gravity_mixing_rg import (
     run_sm_gravity_mixing_campaign,
     write_sm_gravity_mixing_report,
 )
+from physics_lab.search.gravity_sm_fixed_point_rg import (
+    GRAVITY_SM_FIXED_POINT_RG_VERSION,
+    run_gravity_sm_fixed_point_campaign,
+    write_gravity_sm_fixed_point_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -44,4 +49,7 @@ __all__ = [
     "SM_GRAVITY_MIXING_RG_VERSION",
     "run_sm_gravity_mixing_campaign",
     "write_sm_gravity_mixing_report",
+    "GRAVITY_SM_FIXED_POINT_RG_VERSION",
+    "run_gravity_sm_fixed_point_campaign",
+    "write_gravity_sm_fixed_point_report",
 ]
