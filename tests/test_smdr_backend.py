@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from physics_lab.search.smdr_backend import parse_calc_all_output, target_blind_input_text
+from physics_lab.search.smdr_backend import SMDRBackendError, parse_calc_all_output, target_blind_input_text
 
 
 def test_target_blind_input_maps_w11_conventions() -> None:
@@ -25,3 +25,8 @@ Sommerfeld fine structure and Fermi constants:
     assert parsed["top_pole_gev"] == 172.4
     assert parsed["higgs_pole_gev"] == 125.2
     assert parsed["alpha_sommerfeld_inverse"] == 137.03599918
+
+
+def test_missing_headline_observables_are_not_a_success() -> None:
+    error = SMDRBackendError("SMDR exited successfully but did not produce required headline observables")
+    assert "required headline observables" in str(error)

@@ -159,6 +159,20 @@ def run_smdr_calc_all(
             f"SMDR calc_all failed with exit code {completed.returncode}: {completed.stderr[-1000:]}"
         )
     parsed = parse_calc_all_output(completed.stdout)
+    required = (
+        "top_pole_gev",
+        "higgs_pole_gev",
+        "z_pole_gev",
+        "w_pole_gev",
+        "alpha_sommerfeld_inverse",
+        "gf_gev_minus_two",
+    )
+    missing = [name for name in required if parsed.get(name) is None]
+    if missing:
+        raise SMDRBackendError(
+            "SMDR exited successfully but did not produce required headline "
+            f"observables: {', '.join(missing)}; stderr: {completed.stderr[-1000:]}"
+        )
     input_sha256 = None if input_text is None else hashlib.sha256(input_text.encode("utf-8")).hexdigest()
     return {
         "status": "COMPLETE",

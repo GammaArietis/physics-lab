@@ -63,7 +63,8 @@ The bridge converts the W11 conventions explicitly:
 - `Delta_alpha_had_5_MZ = 0`;
 - no pole mass, alpha, or Fermi-constant target is supplied.
 
-SMDR completed this target-blind input with exit code `0` and returned:
+SMDR completed this target-blind input with exit code `0`, produced all
+required headline observables, and returned:
 
 | quantity | value |
 |---|---:|
@@ -79,6 +80,12 @@ prediction. They show that the candidate reaches the full external backend;
 the large displacement from known low-energy values is a negative diagnostic
 for this particular target-blind trajectory. SMDR warnings about small
 couplings are retained verbatim in the JSON report.
+
+The batch runner applies a stricter rule than the executable exit code alone:
+if SMDR exits with code `0` but fails to print one of the six required headline
+observables, the case is recorded as `BACKEND_FAILURE`. This occurred in the
+smoke run for zero-coupling states and is deliberately not counted as a
+successful observable evaluation.
 
 ## What is closed and what is not
 

@@ -1,0 +1,26 @@
+{
+  "activation_id": "smdr-full-batch-replay-2026-11-15",
+  "source_archive": "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2.json.gz",
+  "backend": {
+    "name": "SMDR",
+    "executable": "calc_all",
+    "repository": "https://github.com/davidgrobertson/SMDR",
+    "version": "1.3"
+  },
+  "execution": {
+    "all_archive_order_retained": true,
+    "non_eligible_cases_recorded": true,
+    "checkpoint_and_resume": true,
+    "target_blind": true,
+    "comparison": "NOT_AUTHORIZED",
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED"
+  },
+  "default_command": "python tools/run_smdr_full_batch_replay.py --smdr-root /absolute/path/to/SMDR --workers 8",
+  "outputs": {
+    "records": "docs/validation/smdr_full_batch_replay_2026-11-15.jsonl.gz",
+    "checkpoint": "docs/validation/smdr_full_batch_replay_2026-11-15.checkpoint.json",
+    "summary": "docs/validation/smdr_full_batch_replay_2026-11-15.summary.json"
+  }
+}
