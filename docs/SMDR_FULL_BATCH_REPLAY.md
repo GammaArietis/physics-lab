@@ -58,13 +58,19 @@ scientific sample and must not be used for selection.
 
 ## Expected cost
 
-The validated single-case execution took roughly 2.7 seconds in the audit
-environment. The full archive contains 28,692 source cases, of which the
-completed W11 electroweak states are the replayable subset. Therefore serial
-execution would take on the order of 20--22 hours; eight workers are expected
-to reduce wall time substantially, subject to thermal throttling and process
-overhead on the Mac. The estimate is only a scheduling estimate, not a
-physical result.
+The validated ordinary single-case execution took roughly 2.7 seconds in the
+audit environment. The full archive contains 28,692 source cases, of which
+the completed W11 electroweak states are the replayable subset. The archive
+also contains 1,404 complete states with all three gauge couplings numerically
+zero; a two-case smoke test showed that these pathological inputs can take
+roughly 30 seconds each and may return no headline observables. They remain
+in the record as `BACKEND_FAILURE` rather than being silently removed.
+
+The optimistic serial estimate is therefore about 20--22 hours for ordinary
+states and potentially about 30 hours including the pathological subset. With
+eight workers, a practical wall-time estimate is a few hours, subject to
+thermal throttling and process overhead on the Mac. The estimate is only a
+scheduling estimate, not a physical result.
 
 ## Interpretation boundary
 
