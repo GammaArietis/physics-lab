@@ -1,0 +1,45 @@
+{
+  "schema_version": "sm-gravity-mixing-rg-v1",
+  "activation_id": "w8-sm-gravity-mixing-broad-run",
+  "status": "AUTHORIZED",
+  "human_confirmation": true,
+  "stage": "W8_SM_GRAVITY_MIXING_RG",
+  "search_status": "AUTHORIZED",
+  "finite_bounds": "AUTHORIZED",
+  "target_comparison": "NOT_AUTHORIZED",
+  "external_data_used": false,
+  "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY_WHEN_PRESENT",
+  "alpha_as_fit_target": "FORBIDDEN",
+  "fitting": "DISABLED",
+  "automatic_selection": "DISABLED",
+  "automatic_ranking": "DISABLED",
+  "f4_operators": "NOT_ACTIVATED",
+  "sm_initial_states": [
+    [0.36, 0.65, 1.16, 0.93, 0.13],
+    [0.10, 0.20, 0.30, 0.10, 0.01],
+    [0.50, 0.50, 0.50, 0.50, 0.05],
+    [0.70, 0.70, 0.70, 0.40, -0.05]
+  ],
+  "gravity_coefficients": [0.0, 0.0001, 0.0005, 0.001, 0.002, 0.01],
+  "gravity_initial_g1_values": [0.05, 0.10, 0.20],
+  "mixing_matrices": [
+    [[4.10, 0.50], [0.50, 3.00]],
+    [[2.00, 0.25], [0.25, 1.50]],
+    [[6.00, 1.00], [1.00, 4.00]]
+  ],
+  "mixing_initial_states": [[0.10, 0.20], [0.20, 0.10], [0.30, 0.30]],
+  "log_scale_offsets": [-4, -2, 0, 2, 4],
+  "bibliography": [
+    "https://doi.org/10.1016/0550-3213(83)90610-7",
+    "https://doi.org/10.1103/PhysRevLett.90.011601",
+    "https://doi.org/10.1016/S0370-2693(03)00076-5",
+    "https://doi.org/10.1007/JHEP01(2018)030",
+    "https://doi.org/10.1103/gxm2-trn6"
+  ],
+  "notes": [
+    "The reduced Standard Model uses the one-loop GUT-normalized g1, g2, g3, top Yukawa and Higgs quartic beta functions.",
+    "The gravity sector is a background-gravity control ansatz, not a quantized gravity-matter calculation.",
+    "The U(1) matrices are positive-semidefinite mathematical controls; no physical charge assignment is claimed.",
+    "All branches and negative findings are retained without ranking or selection."
+  ]
+}

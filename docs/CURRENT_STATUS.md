@@ -34,6 +34,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | W5 QED threshold RG campaign | `COMPLETE`; 5 normalized threshold schedules, 40 trajectories and 680 points executed with continuous matching; only Gaussian fixed point retained; no physical masses, alpha fit, ranking or F^4 activation |
 | W6 coupled gauge–Yukawa/Abelian RG campaign | `COMPLETE`; literature-anchored non-Gaussian gauge–Yukawa fixed points found across 8 epsilon values, while the Abelian coordinate remains Gaussian; 24 trajectories; no alpha prediction, fitting, ranking or F^4 activation |
 | W7 scalar-completed gauge–Yukawa/Abelian RG campaign | `COMPLETE`; both scalar quartic branches retained across 8 epsilon values and 48 trajectories; interacting gauge–Yukawa–scalar fixed-point structure survives, while the Abelian coordinate remains Gaussian; no alpha prediction or automatic branch selection |
+| W8 Standard Model/gravity/U(1)-mixing RG campaign | `COMPLETE`; reduced one-loop SM, background-gravity Abelian control and 2x2 positive-semidefinite U(1)-mixing control executed in 31 trajectories; only Gaussian UV structure survives the stated controls; no 1/137 fit, ranking or selection |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -192,6 +193,20 @@ still does not derive 1/137. Higher-loop comparison and gravity/matter beta
 functions remain separate gates. The protocol and report are recorded in
 `docs/W7_COUPLED_GAUGE_YUKAWA_SCALAR_EM_RG.md` and
 `docs/validation/gauge_yukawa_scalar_em_rg_campaign_2026-11-15.json`.
+
+W8 now executes one broad campaign over three distinct controls: a reduced
+one-loop Standard Model \((g_1,g_2,g_3,y_t,\lambda)\) system, a
+literature-shaped background-gravity deformation of the Abelian beta function,
+and a charge-agnostic positive-semidefinite two-U(1) mixing control. The
+reduced Standard Model has only its Gaussian real perturbative fixed point in
+this truncation. The gravity ansatz records a nonzero algebraic root for
+positive background coefficient, but that root is UV-repulsive while the
+Gaussian point is UV-attractive. The positive mixing controls likewise retain
+only the Gaussian point in the nonnegative quadrant. These results are
+controls, not a full quantum-gravity or multi-U(1) prediction, and they still
+do not derive 1/137. The report, equations, caveats and bibliography are
+recorded in `docs/W8_SM_GRAVITY_MIXING_RG.md` and
+`docs/validation/sm_gravity_mixing_rg_campaign_2026-11-15.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

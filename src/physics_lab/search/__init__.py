@@ -20,6 +20,11 @@ from physics_lab.search.wyler_dimension_scan import (
     run_wyler_dimension_scan,
     write_wyler_dimension_report,
 )
+from physics_lab.search.sm_gravity_mixing_rg import (
+    SM_GRAVITY_MIXING_RG_VERSION,
+    run_sm_gravity_mixing_campaign,
+    write_sm_gravity_mixing_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -36,4 +41,7 @@ __all__ = [
     "WYLER_DIMENSION_SCAN_VERSION",
     "run_wyler_dimension_scan",
     "write_wyler_dimension_report",
+    "SM_GRAVITY_MIXING_RG_VERSION",
+    "run_sm_gravity_mixing_campaign",
+    "write_sm_gravity_mixing_report",
 ]

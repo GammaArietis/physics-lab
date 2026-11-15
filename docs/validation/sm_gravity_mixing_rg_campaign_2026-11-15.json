@@ -1,0 +1,1945 @@
+{
+  "activation_id": "w8-sm-gravity-mixing-broad-run",
+  "activation_path": "schemas/examples/sm_gravity_mixing_rg_activation.json",
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "external_data_used": false,
+    "f4_promotion": "DISABLED",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "target_blind_generation": true,
+    "target_comparison": "NOT_AUTHORIZED"
+  },
+  "bibliography": [
+    {
+      "citation": "M. E. Machacek and M. T. Vaughn, two-loop renormalization-group equations for the Standard Model and general gauge theories, Nucl. Phys. B 222, 83 (1983) and companion papers",
+      "doi": "10.1016/0550-3213(83)90610-7",
+      "id": "machacek-vaughn-1983-1985",
+      "role": "one-loop and general gauge/Yukawa beta-function framework"
+    },
+    {
+      "citation": "M.-x. Luo and Y. Xiao, Two-loop renormalization group equations in the Standard Model, Phys. Rev. Lett. 90, 011601 (2003)",
+      "doi": "10.1103/PhysRevLett.90.011601",
+      "id": "luo-xiao-2003",
+      "role": "Standard Model two-loop RG control and normalization reference"
+    },
+    {
+      "citation": "M.-x. Luo and Y. Xiao, Renormalization group equations in gauge theories with multiple U(1) groups, Phys. Lett. B 555, 279 (2003)",
+      "doi": "10.1016/S0370-2693(03)00076-5",
+      "id": "luo-xiao-kinetic-mixing-2003",
+      "role": "multiple-U(1) kinetic-mixing caveat"
+    },
+    {
+      "citation": "A. Eichhorn and F. Versteegen, Upper bound on the Abelian gauge coupling from asymptotic safety, JHEP 01 (2018) 030",
+      "doi": "10.1007/JHEP01(2018)030",
+      "id": "eichhorn-versteegen-2018",
+      "role": "gravity-induced Abelian fixed-point and upper-bound caveat"
+    },
+    {
+      "citation": "A. Riabokon, M. Schiffer and F. Wagner, regulator and gauge dependence of the Abelian coupling in asymptotically safe gravity, Phys. Rev. D 112 (2025)",
+      "doi": "10.1103/gxm2-trn6",
+      "id": "riabokon-schiffer-wagner-2025",
+      "role": "recent scheme and truncation dependence caveat"
+    }
+  ],
+  "campaign_id": "sm-gravity-mixing-broad-run",
+  "controls": {
+    "alpha_not_used_as_fit_target": true,
+    "f4_operators_not_promoted": true,
+    "gravity_abelian_nonzero_root_recorded": true,
+    "gravity_abelian_nonzero_uv_fixed_point_found": false,
+    "gravity_is_background_control_only": true,
+    "mixing_charge_assignments_missing": true,
+    "mixing_control_only": true,
+    "negative_results_recorded": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_external_data": true,
+    "no_fitting": true,
+    "sm_beta_functions_transcribed": true,
+    "sm_physical_non_gaussian_fixed_point_found": false
+  },
+  "equations": {
+    "gravity_abelian_control": "beta_g1 = -A*g1 + (41/10)/(16*pi^2)*g1^3",
+    "sm_beta_g1": "16*pi^2 beta_g1 = (41/10) g1^3",
+    "sm_beta_g2": "16*pi^2 beta_g2 = -(19/6) g2^3",
+    "sm_beta_g3": "16*pi^2 beta_g3 = -7 g3^3",
+    "sm_beta_lambda": "16*pi^2 beta_lambda = 24*lambda^2 - 6*yt^4 + (12*yt^2 - 9*g2^2 - 9/5*g1^2)*lambda + 9/8*g2^4 + 9/20*g1^2*g2^2 + 27/200*g1^4",
+    "sm_beta_yt": "16*pi^2 beta_yt = yt*(9/2*yt^2 - 17/20*g1^2 - 9/4*g2^2 - 8*g3^2)",
+    "u1_mixing_control": "beta_i = g_i * sum_j B_ij*g_j^2/(16*pi^2), B positive semidefinite"
+  },
+  "execution_status": "COMPLETE",
+  "next_gate": "DERIVE_OR_IMPORT_A_SPECIFIC_GRAVITY_MATTER_OR_MULTI_U1_MODEL_BEFORE_ANY_1_OVER_137_SEARCH",
+  "scope": {
+    "f4_operators": "NOT_ACTIVATED",
+    "full_quantum_gravity": "NOT_INCLUDED",
+    "full_standard_model_precision_running": "NOT_CLAIMED",
+    "g1_convention": "GUT_NORMALIZED",
+    "gravity_sector": "BACKGROUND_GRAVITY_LINEAR_ABELIAN_CONTROL_ONLY",
+    "reduced_standard_model": "ONE_LOOP_G1_G2_G3_TOP_HIGGS_CONTROL",
+    "u1_mixing": "POSITIVE_SEMIDEFINITE_CHARGE_AGNOSTIC_CONTROL_ONLY"
+  },
+  "search_version": "sm-gravity-mixing-rg-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W8_SM_GRAVITY_MIXING_RG",
+  "subcampaigns": {
+    "gravity_abelian_control": {
+      "conclusion": "A nonzero root exists for positive background coefficient A, but it is UV-repulsive in this ansatz; the UV-attractive root is Gaussian.",
+      "fixed_points": [
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": 0.0,
+              "marginal_at_linear_order": true,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": false
+            }
+          ],
+          "gravity_coefficient": 0.0
+        },
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": -0.0001,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": true,
+              "uv_repulsive": false
+            },
+            {
+              "beta_residual": 0.0,
+              "g1": 0.06206088089135121,
+              "label": "NONZERO_GRAVITY_BACKGROUND_ROOT",
+              "linear_stability": 0.00019999999999999998,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": true
+            }
+          ],
+          "gravity_coefficient": 0.0001
+        },
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": -0.0005,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": true,
+              "uv_repulsive": false
+            },
+            {
+              "beta_residual": 0.0,
+              "g1": 0.13877234841657904,
+              "label": "NONZERO_GRAVITY_BACKGROUND_ROOT",
+              "linear_stability": 0.001,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": true
+            }
+          ],
+          "gravity_coefficient": 0.0005
+        },
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": -0.001,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": true,
+              "uv_repulsive": false
+            },
+            {
+              "beta_residual": 0.0,
+              "g1": 0.19625373721309058,
+              "label": "NONZERO_GRAVITY_BACKGROUND_ROOT",
+              "linear_stability": 0.002,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": true
+            }
+          ],
+          "gravity_coefficient": 0.001
+        },
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": -0.002,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": true,
+              "uv_repulsive": false
+            },
+            {
+              "beta_residual": 0.0,
+              "g1": 0.2775446968331581,
+              "label": "NONZERO_GRAVITY_BACKGROUND_ROOT",
+              "linear_stability": 0.004,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": true
+            }
+          ],
+          "gravity_coefficient": 0.002
+        },
+        {
+          "fixed_points": [
+            {
+              "beta_residual": 0.0,
+              "g1": 0.0,
+              "label": "GAUSSIAN",
+              "linear_stability": -0.01,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": true,
+              "uv_repulsive": false
+            },
+            {
+              "beta_residual": -1.734723475976807e-18,
+              "g1": 0.620608808913512,
+              "label": "NONZERO_GRAVITY_BACKGROUND_ROOT",
+              "linear_stability": 0.019999999999999997,
+              "marginal_at_linear_order": false,
+              "perturbative": true,
+              "uv_attractive": false,
+              "uv_repulsive": true
+            }
+          ],
+          "gravity_coefficient": 0.01
+        }
+      ],
+      "gravity_coefficient_count": 6,
+      "initial_g1_count": 3,
+      "status": "COMPLETE",
+      "trajectories": [
+        {
+          "gravity_coefficient": 0.0,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.05002598379400949
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.05000649215254958
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.05001298683463873
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.05001948404791051
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.05002598379400949
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.10020835781677716
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10005196758801894
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10010401627924242
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.1001561462848463
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.10020835781677716
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.20168266693964368
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.20041671563355443
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.20083604694774831
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.2012580214215148
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20168266693964368
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0001,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.04998595823550989
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.049996490555931666
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.04999298044711649
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.04998946967362052
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.04998595823550989
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0001,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.1001280562042786
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10003194879725463
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10006394103633084
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.10009597680824518
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.1001280562042786
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0001,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.20152002398798194
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.2003765527226245
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.20075539230019626
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.20113654164415498
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20152002398798194
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0005,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.0498261762086903
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.049956504172707604
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.04991303492297989
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.04986959226395669
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.0498261762086903
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0005,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.09980749451063411
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.0999519137082817
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.0999038006579817
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.09985566090632006
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.09980749451063411
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.0005,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.20087077735518058
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.20021598177133312
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.2004330992847841
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.2006513614703608
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20087077735518058
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.001,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.049627167217531735
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.04990656617096938
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.04981328283596355
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.04972014988754165
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.049627167217531735
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.001,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.09940823918766828
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.09985195995349198
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.09970398603574031
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.09955607889759123
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.09940823918766828
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.001,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.20006219238990652
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.20001544951776484
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.20003096455978783
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.20004654541903466
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20006219238990652
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.002,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.04923153224141969
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.04980683990189486
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.04961437653732238
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.0494226079647875
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.04923153224141969
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.002,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.0986145265415633
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.09965235241738063
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.09930555656637087
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.09895961407865336
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.0986145265415633
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.002,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.19845488111519025
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.19961498902126856
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.19922912727694223
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.19884242215821535
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.19845488111519025
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.01,
+          "initial_g1": 0.05,
+          "trajectory": {
+            "final_state": [
+              0.046177981562081576
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.049016171648813466
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.04805146333210432
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.04710551726690973
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.046177981562081576
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.01,
+          "initial_g1": 0.1,
+          "trajectory": {
+            "final_state": [
+              0.09248933272611963
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.09806979980083333
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.09617498281097854
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.09431500707351846
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.09248933272611963
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "gravity_coefficient": 0.01,
+          "initial_g1": 0.2,
+          "trajectory": {
+            "final_state": [
+              0.1860572961395226
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.1964401126202972
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.1929296734838437
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.1894687328160038
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.1860572961395226
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        }
+      ],
+      "trajectory_count": 18
+    },
+    "multi_u1_mixing_control": {
+      "conclusion": "For the positive-semidefinite normalized controls, the nonnegative fixed point is Gaussian; physical charge assignments and full kinetic-mixing RGEs are not specified.",
+      "fixed_points": [
+        {
+          "gaussian": {
+            "only_nonnegative_fixed_point_in_control": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          "matrix": [
+            [
+              4.1,
+              0.5
+            ],
+            [
+              0.5,
+              3.0
+            ]
+          ],
+          "matrix_eigenvalues": [
+            2.806696562634075,
+            4.293303437365925
+          ]
+        },
+        {
+          "gaussian": {
+            "only_nonnegative_fixed_point_in_control": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          "matrix": [
+            [
+              2.0,
+              0.25
+            ],
+            [
+              0.25,
+              1.5
+            ]
+          ],
+          "matrix_eigenvalues": [
+            1.396446609406726,
+            2.103553390593274
+          ]
+        },
+        {
+          "gaussian": {
+            "only_nonnegative_fixed_point_in_control": true,
+            "residual": [
+              0.0,
+              0.0
+            ],
+            "state": [
+              0.0,
+              0.0
+            ]
+          },
+          "matrix": [
+            [
+              6.0,
+              1.0
+            ],
+            [
+              1.0,
+              4.0
+            ]
+          ],
+          "matrix_eigenvalues": [
+            3.585786437626905,
+            6.414213562373095
+          ]
+        }
+      ],
+      "initial_state_count": 3,
+      "matrix_count": 3,
+      "status": "COMPLETE",
+      "trajectories": [
+        {
+          "initial_state": [
+            0.1,
+            0.2
+          ],
+          "matrix": [
+            [
+              4.1,
+              0.5
+            ],
+            [
+              0.5,
+              3.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.10031080364232851,
+              0.20127850566263997
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1,
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10007736766739223,
+                  0.20031737226795238
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10015495667721047,
+                  0.2006362394446638
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.1002327682563604,
+                  0.20095661328227016
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.10031080364232851,
+                  0.20127850566263997
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.2,
+            0.1
+          ],
+          "matrix": [
+            [
+              4.1,
+              0.5
+            ],
+            [
+              0.5,
+              3.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.2017343228487305,
+              0.10025489156589834
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2,
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.2004294421050947,
+                  0.10006342430625181
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.20086162370528554,
+                  0.10012704670161031
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.201296574055158,
+                  0.10019086863326278
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.2017343228487305,
+                  0.10025489156589834
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.3,
+            0.3
+          ],
+          "matrix": [
+            [
+              4.1,
+              0.5
+            ],
+            [
+              0.5,
+              3.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.30649345212030743,
+              0.30490885237603127
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.3,
+                  0.3
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.3015852735204247,
+                  0.3012042851040427
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.3031954977695043,
+                  0.3024236382475819
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.3048313300562345,
+                  0.3036583828684881
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.30649345212030743,
+                  0.30490885237603127
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.1,
+            0.2
+          ],
+          "matrix": [
+            [
+              2.0,
+              0.25
+            ],
+            [
+              0.25,
+              1.5
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.10015241324509938,
+              0.2006362387972607
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1,
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10003802233649998,
+                  0.2001584999596806
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10007609855701366,
+                  0.20031737210682649
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.10011422881013578,
+                  0.20047661789787677
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.10015241324509938,
+                  0.2006362387972607
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.2,
+            0.1
+          ],
+          "matrix": [
+            [
+              2.0,
+              0.25
+            ],
+            [
+              0.25,
+              1.5
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.20084110218491527,
+              0.1001270415013774
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2,
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.20020929841399981,
+                  0.10003168715990633
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.2004192460033749,
+                  0.10006342301464102
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.20062984613117843,
+                  0.10009520773714652
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20084110218491527,
+                  0.1001270415013774
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.3,
+            0.3
+          ],
+          "matrix": [
+            [
+              2.0,
+              0.25
+            ],
+            [
+              0.25,
+              1.5
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.303125002961154,
+              0.3024235571259431
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.3,
+                  0.3
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.3007723311760602,
+                  0.30060027396239475
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.30155055853837326,
+                  0.30120426522485577
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.30233475703757867,
+                  0.3018120130088137
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.303125002961154,
+                  0.3024235571259431
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.1,
+            0.2
+          ],
+          "matrix": [
+            [
+              6.0,
+              1.0
+            ],
+            [
+              1.0,
+              4.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.10051122537663668,
+              0.2017446652456844
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1,
+                  0.2
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10012693779314351,
+                  0.20043198812833446
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10025445139696186,
+                  0.20086674193600146
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.1003825456313678,
+                  0.20130429097616048
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.10051122537663668,
+                  0.2017446652456844
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.2,
+            0.1
+          ],
+          "matrix": [
+            [
+              6.0,
+              1.0
+            ],
+            [
+              1.0,
+              4.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.20258127997489328,
+              0.1004095593658533
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.2,
+                  0.1
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.2006362258583976,
+                  0.10010158526005784
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.20127845086254417,
+                  0.1002037027525058
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.2019267699002517,
+                  0.10030635868136613
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.20258127997489328,
+                  0.1004095593658533
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.3,
+            0.3
+          ],
+          "matrix": [
+            [
+              6.0,
+              1.0
+            ],
+            [
+              1.0,
+              4.0
+            ]
+          ],
+          "trajectory": {
+            "final_state": [
+              0.31004495440216306,
+              0.3070961960175348
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.3,
+                  0.3
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.3024219451580367,
+                  0.30172535262068223
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.3049018445944195,
+                  0.30348247957122676
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.3074420271606514,
+                  0.30527240373306963
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.31004495440216306,
+                  0.3070961960175348
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        }
+      ],
+      "trajectory_count": 9
+    },
+    "reduced_standard_model": {
+      "conclusion": "The reduced one-loop Standard Model control has no non-Gaussian real perturbative fixed point.",
+      "fixed_points": [
+        {
+          "interpretation": "only real perturbative fixed point of this reduced one-loop polynomial control",
+          "label": "GAUSSIAN",
+          "perturbative": true,
+          "physical": true,
+          "residual": [
+            0.0,
+            -0.0,
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "state": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "initial_state_count": 4,
+      "status": "COMPLETE",
+      "trajectories": [
+        {
+          "initial_state": [
+            0.36,
+            0.65,
+            1.16,
+            0.93,
+            0.13
+          ],
+          "trajectory": {
+            "final_state": [
+              0.37010057122462675,
+              0.6099699601632959,
+              0.8297651820526459,
+              0.697051767716911,
+              0.037317588517377
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.36,
+                  0.65,
+                  1.16,
+                  0.93,
+                  0.13
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.36244744503624376,
+                  0.6392580799102288,
+                  1.0423030476804647,
+                  0.8494739376966303,
+                  0.09718760506878617
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.3649454951000573,
+                  0.6290317065569008,
+                  0.9544231163572156,
+                  0.7877388177481931,
+                  0.07245744078241431
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.3674959184868633,
+                  0.6192809183912511,
+                  0.8855804647625012,
+                  0.7381737863143822,
+                  0.05301293767008922
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.37010057122462675,
+                  0.6099699601632959,
+                  0.8297651820526459,
+                  0.697051767716911,
+                  0.037317588517377
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.1,
+            0.2,
+            0.3,
+            0.1,
+            0.01
+          ],
+          "trajectory": {
+            "final_state": [
+              0.10020835781677716,
+              0.19872882108614318,
+              0.29086044169234526,
+              0.09625911788942584,
+              0.010061713343176064
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.1,
+                  0.2,
+                  0.3,
+                  0.1,
+                  0.01
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.10005196758801894,
+                  0.19967991961395543,
+                  0.2976345605996731,
+                  0.09903189169834271,
+                  0.010015386381960291
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.10010401627924242,
+                  0.19936137109715277,
+                  0.29532420612968513,
+                  0.09808627123128483,
+                  0.010030803796890113
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.1001561462848463,
+                  0.19904434226952117,
+                  0.2930668312794687,
+                  0.09716228336773562,
+                  0.010046247524189771
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.10020835781677716,
+                  0.19872882108614318,
+                  0.29086044169234526,
+                  0.09625911788942584,
+                  0.010061713343176064
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.05
+          ],
+          "trajectory": {
+            "final_state": [
+              0.5281784414066498,
+              0.4810778752916605,
+              0.46081245181189345,
+              0.461823530369693,
+              0.04184287963623209
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.5066200815528035,
+                  0.49506087315370456,
+                  0.4892733257560576,
+                  0.48980137018459474,
+                  0.04766429537932217
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.5135102767875144,
+                  0.49026528266325026,
+                  0.4792086646245599,
+                  0.4800688926289786,
+                  0.04553686217518056
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.5206894686523287,
+                  0.48560640835609237,
+                  0.4697406081153656,
+                  0.4707564193623555,
+                  0.04360118575503283
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.5281784414066498,
+                  0.4810778752916605,
+                  0.46081245181189345,
+                  0.461823530369693,
+                  0.04184287963623209
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        },
+        {
+          "initial_state": [
+            0.7,
+            0.7,
+            0.7,
+            0.4,
+            -0.05
+          ],
+          "trajectory": {
+            "final_state": [
+              0.7843681359046522,
+              0.6507148129781245,
+              0.6030156051861282,
+              0.32213208361179213,
+              -0.0269445510071902
+            ],
+            "points": [
+              {
+                "log_scale_offset": -4.0,
+                "state": [
+                  0.7,
+                  0.7,
+                  0.7,
+                  0.4,
+                  -0.05
+                ]
+              },
+              {
+                "log_scale_offset": -2.0,
+                "state": [
+                  0.7185209525441348,
+                  0.6866362124168658,
+                  0.6714391479821769,
+                  0.3774171357960351,
+                  -0.04392894403096113
+                ]
+              },
+              {
+                "log_scale_offset": 0.0,
+                "state": [
+                  0.7385943573831654,
+                  0.6740097061186306,
+                  0.6461112586705808,
+                  0.3571620000738786,
+                  -0.03805059977578525
+                ]
+              },
+              {
+                "log_scale_offset": 2.0,
+                "state": [
+                  0.7604499660805422,
+                  0.662055089541087,
+                  0.6234490853438184,
+                  0.3388376177882015,
+                  -0.032389667981391236
+                ]
+              },
+              {
+                "log_scale_offset": 4.0,
+                "state": [
+                  0.7843681359046522,
+                  0.6507148129781245,
+                  0.6030156051861282,
+                  0.32213208361179213,
+                  -0.0269445510071902
+                ]
+              }
+            ],
+            "status": "COMPLETE"
+          }
+        }
+      ],
+      "trajectory_count": 4
+    }
+  }
+}
