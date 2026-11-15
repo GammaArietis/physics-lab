@@ -1,0 +1,145 @@
+{
+  "activation_id": "w4-qed-one-loop-rg-control",
+  "activation_path": "schemas/examples/qed_rg_pilot_activation.json",
+  "authorization": {
+    "automatic_ranking": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "external_data_used": false,
+    "f4_promotion": "DISABLED",
+    "finite_bounds": "AUTHORIZED",
+    "fitting": "DISABLED",
+    "target_blind_generation": true,
+    "target_comparison": "NOT_AUTHORIZED"
+  },
+  "controls": {
+    "alpha_not_used_as_fit_target": true,
+    "f4_operators_not_promoted": true,
+    "gaussian_fixed_point_recorded": true,
+    "known_one_loop_beta_reproduced": true,
+    "landau_pole_formula_recorded": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_external_data": true,
+    "no_fitting": true,
+    "no_interacting_fixed_point_claimed": true,
+    "trajectories_integrated": true
+  },
+  "equations": {
+    "beta_coefficient_for_Nf_1": 0.2122065907891938,
+    "beta_function": "d alpha/d log(mu) = N_f*2*alpha^2/(3*pi)",
+    "landau_scale": "log(mu_L/mu_0) = 3*pi/(2*N_f*alpha(mu_0))",
+    "trajectory": "alpha(mu)/alpha(mu_0) = 1/[1 - N_f*2*alpha(mu_0)*log(mu/mu_0)/(3*pi)]"
+  },
+  "execution_status": "COMPLETE",
+  "fixed_points": [
+    {
+      "coupling": "alpha",
+      "finite_fixed_point": true,
+      "infrared_behavior": "ATTRACTIVE",
+      "interacting": false,
+      "label": "GAUSSIAN",
+      "ultraviolet_behavior": "REPULSIVE_AT_ONE_LOOP",
+      "value": 0.0
+    }
+  ],
+  "next_gate": "ADD_KNOWN_ONE_LOOP_THRESHOLD_CONTROL_BEFORE_SPECULATIVE_FIXED_POINT_SEARCH",
+  "scope": {
+    "alpha_role": "DYNAMICAL_STATE_VARIABLE_ONLY",
+    "base_theory": "QED with one charged Dirac fermion",
+    "beta_function_order": "ONE_LOOP",
+    "f4_operators": "NOT_ACTIVATED",
+    "fermion_flavours": 1,
+    "ultraviolet_completion": "NOT_CLAIMED"
+  },
+  "search_id": "qed-one-loop-rg-control",
+  "search_version": "qed-rg-pilot-v1",
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "stage": "W4_QED_RG_CONTROL",
+  "trajectories": [
+    {
+      "initial_alpha": 0.01,
+      "landau_log_scale_offset": 471.2388980384689,
+      "points": [
+        {
+          "alpha": 0.009957738047140887,
+          "log_scale_offset": -2.0
+        },
+        {
+          "alpha": 0.009978824277200508,
+          "log_scale_offset": -1.0
+        },
+        {
+          "alpha": 0.01,
+          "log_scale_offset": 0.0
+        },
+        {
+          "alpha": 0.010021265786479413,
+          "log_scale_offset": 1.0
+        },
+        {
+          "alpha": 0.01004262221244574,
+          "log_scale_offset": 2.0
+        }
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "initial_alpha": 0.05,
+      "landau_log_scale_offset": 94.24777960769379,
+      "points": [
+        {
+          "alpha": 0.048961014992682426,
+          "log_scale_offset": -2.0
+        },
+        {
+          "alpha": 0.049475053379659455,
+          "log_scale_offset": -1.0
+        },
+        {
+          "alpha": 0.05,
+          "log_scale_offset": 0.0
+        },
+        {
+          "alpha": 0.05053620579718206,
+          "log_scale_offset": 1.0
+        },
+        {
+          "alpha": 0.05108403693211126,
+          "log_scale_offset": 2.0
+        }
+      ],
+      "status": "COMPLETE"
+    },
+    {
+      "initial_alpha": 0.1,
+      "landau_log_scale_offset": 47.12388980384689,
+      "points": [
+        {
+          "alpha": 0.0959286611707948,
+          "log_scale_offset": -2.0
+        },
+        {
+          "alpha": 0.09792202998536485,
+          "log_scale_offset": -1.0
+        },
+        {
+          "alpha": 0.1,
+          "log_scale_offset": 0.0
+        },
+        {
+          "alpha": 0.10216807386422253,
+          "log_scale_offset": 1.0
+        },
+        {
+          "alpha": 0.10443224200904218,
+          "log_scale_offset": 2.0
+        }
+      ],
+      "status": "COMPLETE"
+    }
+  ]
+}

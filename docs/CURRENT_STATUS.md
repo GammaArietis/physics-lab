@@ -30,6 +30,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | Wyler neighborhood stage-1 pilot | `COMPLETE`; exact historical anchor plus 17 pre-registered normalization stress tests; anchor error approximately 0.608 ppm against CODATA 2022; no physical candidate selected |
 | Wyler W2A dimension scan | `COMPLETE`; abstract type-IV dimensions n=3..9 scanned with physical spacetime d=4 fixed; n=5 reproduces the anchor and all dimensions are retained without ranking |
 | W3A Maxwell–Dirac F^4 pilot | `COMPLETE` structurally; U(1)- and Lorentz-invariant dimension-eight F^4 basis registered with birefringence and light-by-light observable channels; Wilson coefficients and EFT scale remain `UNDERDETERMINED`; no alpha fitting or empirical comparison |
+| W4 one-loop QED RG pilot | `COMPLETE`; known beta function, Gaussian fixed point and bounded analytic trajectories verified; alpha is a dynamical state variable only; no interacting fixed point, alpha fit, F^4 activation or empirical comparison |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -152,6 +153,14 @@ structurally complete but physically `UNDERDETERMINED`; no value of alpha is
 used as an input or fit target. The protocol and report are recorded in
 `docs/W3A_MAXWELL_DIRAC_F4_PILOT.md` and
 `docs/validation/maxwell_dirac_f4_pilot_2026-11-14.json`.
+
+The W4 pilot then moves from static operator geometry to a controlled dynamic
+flow. It reproduces the one-loop QED beta function, records the Gaussian fixed
+point and integrates three bounded mathematical trajectories while rejecting
+Landau-pole crossings. It does not derive the low-energy value of alpha, claim
+an interacting fixed point or activate the unresolved W3A operators. The
+protocol and report are recorded in `docs/W4_QED_RG_PILOT.md` and
+`docs/validation/qed_rg_pilot_2026-11-15.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural
