@@ -34,6 +34,8 @@ relative path.
   conservative resource plan for the 24 GB MacBook Air.
 - [`W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md`](W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md):
   correlated gravity–matter coefficients and the explicit cosmological-constant closure audit.
+- [`EICHHORN_HELD_ASYMPTOTIC_SAFETY.md`](EICHHORN_HELD_ASYMPTOTIC_SAFETY.md):
+  full Einstein–Hilbert plus Standard Model gauge–Yukawa–Higgs reproduction.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):

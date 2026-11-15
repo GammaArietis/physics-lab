@@ -30,6 +30,13 @@ from physics_lab.search.gravity_sm_fixed_point_rg import (
     run_gravity_sm_fixed_point_campaign,
     write_gravity_sm_fixed_point_report,
 )
+from physics_lab.search.eichhorn_held_asymptotic_safety import (
+    EICHHORN_HELD_AS_VERSION,
+    gravity_equation_fixed_point,
+    literature_anchor_audit,
+    run_eichhorn_held_campaign,
+    write_eichhorn_held_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -52,4 +59,9 @@ __all__ = [
     "GRAVITY_SM_FIXED_POINT_RG_VERSION",
     "run_gravity_sm_fixed_point_campaign",
     "write_gravity_sm_fixed_point_report",
+    "EICHHORN_HELD_AS_VERSION",
+    "gravity_equation_fixed_point",
+    "literature_anchor_audit",
+    "run_eichhorn_held_campaign",
+    "write_eichhorn_held_report",
 ]

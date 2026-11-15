@@ -1,0 +1,40 @@
+{
+  "activation_id": "eichhorn-held-asymptotic-safety-full-activation",
+  "campaign_id": "eichhorn-held-top-mass-asymptotic-safety-reproduction",
+  "stage": "EH_AS_REPRODUCTION_FULL_TRUNCATION",
+  "source": {
+    "primary": "Eichhorn and Held, Top mass from asymptotic safety, Phys. Lett. B 777, 217--221 (2018)",
+    "doi": "10.1016/j.physletb.2017.12.040",
+    "scope": "Einstein--Hilbert gravity with G_N and Lambda, SM gauge couplings g1/g2/g3, top and bottom Yukawas, and Higgs quartic",
+    "regulator_and_gauge": "Landau gauge and optimized cutoff as stated by the source"
+  },
+  "scan": {
+    "G_N_values": [0.5, 1.0, 2.0, 3.29, 5.0],
+    "Lambda_values": [-10.0, -5.0, -4.51, -4.0, -3.0, -1.0, 0.0, 0.25, 0.4],
+    "initial_states": [
+      [3.29, -4.51, 0.4, 0.6, 1.0, 0.36, 0.02, 0.01],
+      [1.0, -1.0, 0.2, 0.4, 0.8, 0.3, 0.05, 0.1],
+      [0.5, -0.5, 0.1, 0.2, 0.3, 0.2, 0.01, 0.05]
+    ],
+    "log_scale_offsets": [-2.0, -1.0, 0.0, 1.0, 2.0]
+  },
+  "authorization": {
+    "finite_bounds": "AUTHORIZED",
+    "target_blind_generation": true,
+    "alpha_as_target": "DISABLED",
+    "target_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED"
+  },
+  "expected_controls": {
+    "published_equations_reproduced": true,
+    "nonzero_cosmological_constant_explicitly_included": true,
+    "published_anchor_and_printed_equation_root_kept_separate": true,
+    "all_gauge_yukawa_higgs_branches_retained": true,
+    "trajectory_integration_recorded": true,
+    "alpha_derivation_not_claimed": true,
+    "negative_results_recorded": true
+  }
+}
