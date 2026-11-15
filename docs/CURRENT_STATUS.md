@@ -37,7 +37,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | W8 Standard Model/gravity/U(1)-mixing RG campaign | `COMPLETE`; reduced one-loop SM, background-gravity Abelian control and 2x2 positive-semidefinite U(1)-mixing control executed in 31 trajectories; only Gaussian UV structure survives the stated controls; no 1/137 fit, ranking or selection |
 | W9 gravity-dressed Standard Model fixed-point campaign | `IMPLEMENTED`; all three SM gauge couplings plus parametrized top-Yukawa/Higgs gravity terms scanned across 96 coefficient slices and 384 trajectories; algebraic branches retained without selection; common quantum-gravity derivation and 1/137 prediction remain open |
 | W10 correlated gravity–matter single-truncation campaign | `COMPLETE`; \(f_g,f_y,f_\lambda\) derived from one published Einstein–Hilbert matter truncation across 2 gravity settings, 2 regulators and 10 regulator values: 40 slices, 114 branches and 80 trajectories; source explicitly sets Λ=0, so the nonzero-Λ closure gate remains open and no 1/137 prediction is obtained |
-| W11 Eichhorn–Held full gravity–matter reproduction | `COMPLETE`; Einstein–Hilbert \\(G_N,\\Lambda\\), all three SM gauge couplings, top/bottom Yukawas and Higgs quartic executed across 45 \\((G_N,\\Lambda)\\) slices, 780 retained matter branches and 3 full trajectories; the published rounded gravity anchor is kept separate from the exact root of the printed equations; no alpha target, ranking or selection |
+| W11 Eichhorn–Held full gravity–matter reproduction | `COMPLETE`; Einstein–Hilbert \(G_N,\Lambda\), all three SM gauge couplings, top/bottom Yukawas and Higgs quartic executed across 45 \((G_N,\Lambda)\) slices, 780 retained matter branches and 3 full trajectories; the published rounded gravity anchor is kept separate from the exact root of the printed equations; no alpha target, ranking or selection |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -234,18 +234,17 @@ are recorded in `docs/W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md` and
 `docs/validation/gravity_matter_single_truncation_rg_campaign_2026-11-15.json`.
 
 W11 reproduces the explicit Eichhorn–Held Einstein–Hilbert plus Standard Model
-truncation with nonzero \\(\\Lambda\\), \\(g_1,g_2,g_3\\), \\(y_t,y_b\\) and
-\\(\\lambda_4\\). The broad target-blind run contains 45 gravity slices, 780
+truncation with nonzero \(\Lambda\), \(g_1,g_2,g_3\), \(y_t,y_b\) and
+\(\lambda_4\). The broad target-blind run contains 45 gravity slices, 780
 retained matter fixed-point branches and 3 complete eight-dimensional
 trajectories. A reproducibility audit finds that the paper's rounded anchor
-\\((3.29,-4.51)\\) is not an exact zero of the printed beta functions with the
-stated field counts; the independent root \\((3.2542246932,-3.5396385317)\\) is
+\((3.29,-4.51)\) is not an exact zero of the printed beta functions with the
+stated field counts; the independent root \((3.2542246932,-3.5396385317)\) is
 recorded alongside it, without fitting or adjusting any coefficient. The
 source mass claims are not used as targets and no value of 1/137 is derived.
 The equations, caveat and report are recorded in
 `docs/EICHHORN_HELD_ASYMPTOTIC_SAFETY.md` and
 `docs/validation/eichhorn_held_asymptotic_safety_campaign_2026-11-15.json`.
-
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural
