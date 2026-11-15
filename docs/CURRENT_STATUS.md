@@ -36,6 +36,7 @@ Status baseline: report v23, dated 26 October 2026, plus the post-v23 Phase
 | W7 scalar-completed gauge–Yukawa/Abelian RG campaign | `COMPLETE`; both scalar quartic branches retained across 8 epsilon values and 48 trajectories; interacting gauge–Yukawa–scalar fixed-point structure survives, while the Abelian coordinate remains Gaussian; no alpha prediction or automatic branch selection |
 | W8 Standard Model/gravity/U(1)-mixing RG campaign | `COMPLETE`; reduced one-loop SM, background-gravity Abelian control and 2x2 positive-semidefinite U(1)-mixing control executed in 31 trajectories; only Gaussian UV structure survives the stated controls; no 1/137 fit, ranking or selection |
 | W9 gravity-dressed Standard Model fixed-point campaign | `IMPLEMENTED`; all three SM gauge couplings plus parametrized top-Yukawa/Higgs gravity terms scanned across 96 coefficient slices and 384 trajectories; algebraic branches retained without selection; common quantum-gravity derivation and 1/137 prediction remain open |
+| W10 correlated gravity–matter single-truncation campaign | `COMPLETE`; \(f_g,f_y,f_\lambda\) derived from one published Einstein–Hilbert matter truncation across 2 gravity settings, 2 regulators and 10 regulator values: 40 slices, 114 branches and 80 trajectories; source explicitly sets Λ=0, so the nonzero-Λ closure gate remains open and no 1/137 prediction is obtained |
 | Speculative-framework catalog | Registered as `CATALOG_ONLY`; string theory, loop quantum gravity, causal dynamical triangulations, asymptotic safety, noncommutative geometry and emergent gravity require explicit actions and observables before execution |
 | Known-physics oscillator baseline | `COMPLETE` internally; action, canonical quantization, vacuum, exact spectrum and parameter-free gap ratio verified |
 | Oscillator empirical comparison | Not authorized; no external dataset entered |
@@ -218,6 +219,18 @@ records residuals and stability eigenvalues, and executes 96 coefficient
 slices with 384 trajectories. It does not derive 1/137. The protocol and
 report are recorded in `docs/W9_GRAVITY_DRESSED_SM_FIXED_POINT_RG.md` and
 `docs/validation/gravity_sm_fixed_point_rg_campaign_2026-11-15.json`.
+
+W10 removes the independent-coefficient gap in W9 for the published
+Einstein–Hilbert matter truncation of de Brito and Eichhorn. The three
+coefficients \(f_g,f_y,f_\lambda\) are evaluated from the same threshold
+integrals and the same Newton fixed point, with standard and unimodular
+gravity plus Litim and exponential regulator controls. The run contains 40
+correlated slices, 114 retained branches and 80 target-blind trajectories.
+The source truncation explicitly omits the cosmological constant, so W10
+records the requested nonzero-Λ extension as an open closure gate rather than
+adding an arbitrary term. It does not derive 1/137. The protocol and report
+are recorded in `docs/W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md` and
+`docs/validation/gravity_matter_single_truncation_rg_campaign_2026-11-15.json`.
 
 The candidate-theory schema and complete internal reference pipelines are now
 defined and validated. The circle benchmark remains an internal structural

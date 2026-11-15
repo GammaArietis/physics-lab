@@ -1,0 +1,37 @@
+{
+  "activation_id": "w10-gravity-matter-single-truncation-correlated-activation",
+  "campaign_id": "w10-gravity-matter-single-truncation-correlated-run",
+  "stage": "W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG",
+  "source": {
+    "primary": "de Brito and Eichhorn, Eur. Phys. J. C 83, 161 (2023)",
+    "doi": "10.1140/epjc/s10052-023-11172-z",
+    "scope": "Einstein-Hilbert gravity with one Abelian gauge field, one Dirac fermion and one real scalar",
+    "cosmological_constant": "EXPLICITLY_OMITTED_BY_SOURCE"
+  },
+  "scan": {
+    "a_values": [0.0, 0.001, 0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0],
+    "gravity_settings": ["standard", "unimodular"],
+    "regulators": ["litim", "exponential"],
+    "initial_states": [[0.2, 0.3, 0.1], [0.5, 0.7, 0.2]],
+    "log_scale_offsets": [-2.0, 0.0, 2.0]
+  },
+  "authorization": {
+    "finite_bounds": "AUTHORIZED",
+    "target_blind_generation": true,
+    "alpha_as_target": "DISABLED",
+    "target_comparison": "NOT_AUTHORIZED",
+    "external_data_used": false,
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED",
+    "nonzero_cosmological_constant_extension": "NOT_AUTHORIZED_WITHOUT_SOURCE_EQUATIONS"
+  },
+  "expected_controls": {
+    "coefficients_derived_from_common_threshold_set": true,
+    "newton_fixed_point_used": true,
+    "universal_limit_regulator_agreement_checked": true,
+    "cosmological_constant_omission_exposed": true,
+    "nonzero_lambda_extension_not_invented": true,
+    "negative_results_recorded": true
+  }
+}

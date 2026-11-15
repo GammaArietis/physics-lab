@@ -32,6 +32,8 @@ relative path.
   first frozen target-blind empirical scope-control comparison.
 - [`CAMPAIGN_RESOURCE_PLAN_MAC_M4.md`](CAMPAIGN_RESOURCE_PLAN_MAC_M4.md):
   conservative resource plan for the 24 GB MacBook Air.
+- [`W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md`](W10_GRAVITY_MATTER_SINGLE_TRUNCATION_RG.md):
+  correlated gravity–matter coefficients and the explicit cosmological-constant closure audit.
 - [`INTEGRITY_AUDIT.md`](INTEGRITY_AUDIT.md): baseline cleanup checks and the
   preserved historical findings.
 - [`validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json`](validation/HISTORICAL_INTEGRITY_PORTABILITY_2026-11-13.json):
