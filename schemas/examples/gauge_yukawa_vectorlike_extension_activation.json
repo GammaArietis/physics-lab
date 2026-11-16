@@ -1,0 +1,44 @@
+{
+  "activation_id": "w13-gauge-yukawa-vectorlike-extension",
+  "campaign_id": "w13-gauge-yukawa-vectorlike-extension-2026-11-16",
+  "uv_scale_gev": 10000000000000000.0,
+  "ir_scale_gev": 91.1876,
+  "scope": {
+    "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+    "new_fields": "real singlet S plus anomaly-free vector-like Dirac multiplets",
+    "generation": "target-blind",
+    "loop_order": "one-loop reduced gauge-Yukawa-scalar control"
+  },
+  "candidates": [
+    {
+      "candidate_id": "vl-Q-singlet-portal",
+      "multiplicities": {"Q": 1},
+      "yukawa_multiplet": "Q",
+      "initial_state": [0.30, 0.40, 0.50, 0.30, 0.10, 0.05, 0.03, 0.01]
+    },
+    {
+      "candidate_id": "vl-U-singlet-portal",
+      "multiplicities": {"U": 1},
+      "yukawa_multiplet": "U",
+      "initial_state": [0.30, 0.40, 0.50, 0.30, 0.10, 0.05, 0.03, 0.01]
+    },
+    {
+      "candidate_id": "vl-L-singlet-portal",
+      "multiplicities": {"L": 1},
+      "yukawa_multiplet": "L",
+      "initial_state": [0.30, 0.40, 0.50, 0.30, 0.10, 0.05, 0.03, 0.01]
+    },
+    {
+      "candidate_id": "vl-E-singlet-portal",
+      "multiplicities": {"E": 1},
+      "yukawa_multiplet": "E",
+      "initial_state": [0.30, 0.40, 0.50, 0.30, 0.10, 0.05, 0.03, 0.01]
+    },
+    {
+      "candidate_id": "exact-zero-gauge-control",
+      "multiplicities": {"Q": 1, "U": 1, "L": 1},
+      "yukawa_multiplet": "Q",
+      "initial_state": [0.0, 0.0, 0.0, 0.0, 0.20, 0.10, 0.10, 0.02]
+    }
+  ]
+}

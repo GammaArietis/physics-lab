@@ -1,0 +1,28 @@
+{
+  "branch": "feature/eichhorn-held-asymptotic-safety",
+  "observed_runs": [
+    {
+      "run_number": 86,
+      "head_sha": "a7823137c352679d64b99ff321eca20dc9f92da7",
+      "conclusion": "failure",
+      "python_3_11": "failure",
+      "python_3_12": "cancelled",
+      "pytest_exit_code": 2,
+      "installation_steps": "success",
+      "logs_available_in_current_view": false
+    },
+    {
+      "run_number": 87,
+      "head_sha": "5bf08fcec13416f04444bd96330fc9736e27be99",
+      "conclusion": "failure",
+      "python_3_11": "cancelled",
+      "python_3_12": "failure",
+      "pytest_exit_code": 2,
+      "installation_steps": "success",
+      "logs_available_in_current_view": false
+    }
+  ],
+  "interpretation": "CI is not green. Exit code 2 is recorded without inventing an assertion or collection root cause; targeted local tests pass, but the full suite still requires a completed remote run.",
+  "workflow": ".github/workflows/ci.yml",
+  "matrix": ["3.11", "3.12"]
+}

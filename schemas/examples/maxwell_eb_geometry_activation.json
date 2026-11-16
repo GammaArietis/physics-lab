@@ -1,0 +1,13 @@
+{
+  "activation_id": "w13-maxwell-eb-geometry",
+  "campaign_id": "w13-maxwell-eb-geometry-2026-11-16",
+  "action": "-1/4 F_mu_nu F^mu_nu",
+  "amplitudes": [1.0],
+  "magnetic_ratios": [0.25, 0.5, 1.0, 2.0, 4.0],
+  "angles_degrees": [0.0, 30.0, 60.0, 90.0],
+  "controls": {
+    "alpha_target_during_generation": false,
+    "area_volume_ratio_as_invariant": false,
+    "field_lines_as_physical_objects": false
+  }
+}

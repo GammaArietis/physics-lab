@@ -1,0 +1,596 @@
+{
+  "campaign_id": "w13-gauge-yukawa-vectorlike-extension-2026-11-16",
+  "candidate_results": [
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "Q_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,2)_0.166667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "Q",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "vl-Q-singlet-portal",
+      "controls": {
+        "exact_zero_gauge_seed_inserted": false,
+        "gauge_coefficients_derived_from_representations": true,
+        "interacting_fixed_point_claimed": false,
+        "ir_boundary_condition_inserted": false,
+        "target_blind_generation": true,
+        "two_loop_precision_matching_claimed": false,
+        "vectorlike_anomaly_cancellation_explicit": true
+      },
+      "final_state": [
+        0.27902469763522686,
+        0.41622196798941546,
+        0.7715593582279816,
+        0.5251934399211593,
+        0.2126182144489039,
+        0.059668485249653416,
+        0.02692152981802216,
+        0.009605198316031797
+      ],
+      "gauge_coefficients": {
+        "g1": 4.2333333333333325,
+        "g2": -1.1666666666666665,
+        "g3": -5.666666666666667
+      },
+      "initial_state": [
+        0.3,
+        0.4,
+        0.5,
+        0.3,
+        0.1,
+        0.05,
+        0.03,
+        0.01
+      ],
+      "integration": {
+        "max_abs_coupling": 0.7715593582279816,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "steps": 132,
+        "success": true
+      },
+      "ir_observables": {
+        "alpha_em": 0.002927828333206781,
+        "alpha_s": 0.047372774648946056,
+        "e": 0.1918128669570889,
+        "g1_gut": 0.27902469763522686,
+        "g2": 0.41622196798941546,
+        "g3": 0.7715593582279816,
+        "lambda_h": 0.059668485249653416,
+        "lambda_hs": 0.009605198316031797,
+        "lambda_s": 0.02692152981802216,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.2126182144489039,
+        "y_top_control": 0.5251934399211593
+      },
+      "status": "COMPLETE",
+      "target_blind": true,
+      "uv_observables": {
+        "alpha_em": 0.003212847449331719,
+        "alpha_s": 0.019894367886486918,
+        "e": 0.20093240598694112,
+        "g1_gut": 0.3,
+        "g2": 0.4,
+        "g3": 0.5,
+        "lambda_h": 0.05,
+        "lambda_hs": 0.01,
+        "lambda_s": 0.03,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.1,
+        "y_top_control": 0.3
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "U_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,1)_0.666667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "U",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "vl-U-singlet-portal",
+      "controls": {
+        "exact_zero_gauge_seed_inserted": false,
+        "gauge_coefficients_derived_from_representations": true,
+        "interacting_fixed_point_claimed": false,
+        "ir_boundary_condition_inserted": false,
+        "target_blind_generation": true,
+        "two_loop_precision_matching_claimed": false,
+        "vectorlike_anomaly_cancellation_explicit": true
+      },
+      "final_state": [
+        0.27496429967676234,
+        0.4493111255176079,
+        0.8430937679935376,
+        0.5512638610343289,
+        0.19646225742624607,
+        0.06174302056854139,
+        0.02681990087578789,
+        0.009780606875037349
+      ],
+      "gauge_coefficients": {
+        "g1": 5.166666666666666,
+        "g2": -3.1666666666666665,
+        "g3": -6.333333333333333
+      },
+      "initial_state": [
+        0.3,
+        0.4,
+        0.5,
+        0.3,
+        0.1,
+        0.05,
+        0.03,
+        0.01
+      ],
+      "integration": {
+        "max_abs_coupling": 0.8430937679935376,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "steps": 132,
+        "success": true
+      },
+      "ir_observables": {
+        "alpha_em": 0.0029475630596474587,
+        "alpha_s": 0.05656423190458234,
+        "e": 0.1924582287581501,
+        "g1_gut": 0.27496429967676234,
+        "g2": 0.4493111255176079,
+        "g3": 0.8430937679935376,
+        "lambda_h": 0.06174302056854139,
+        "lambda_hs": 0.009780606875037349,
+        "lambda_s": 0.02681990087578789,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.19646225742624607,
+        "y_top_control": 0.5512638610343289
+      },
+      "status": "COMPLETE",
+      "target_blind": true,
+      "uv_observables": {
+        "alpha_em": 0.003212847449331719,
+        "alpha_s": 0.019894367886486918,
+        "e": 0.20093240598694112,
+        "g1_gut": 0.3,
+        "g2": 0.4,
+        "g3": 0.5,
+        "lambda_h": 0.05,
+        "lambda_hs": 0.01,
+        "lambda_s": 0.03,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.1,
+        "y_top_control": 0.3
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "L_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,2)_-0.5",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "L",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "vl-L-singlet-portal",
+      "controls": {
+        "exact_zero_gauge_seed_inserted": false,
+        "gauge_coefficients_derived_from_representations": true,
+        "interacting_fixed_point_claimed": false,
+        "ir_boundary_condition_inserted": false,
+        "target_blind_generation": true,
+        "two_loop_precision_matching_claimed": false,
+        "vectorlike_anomaly_cancellation_explicit": true
+      },
+      "final_state": [
+        0.277846268054172,
+        0.4374205131011388,
+        0.9391064766737762,
+        0.5815303183521808,
+        0.11841668081566377,
+        0.06403391940509132,
+        0.026692138147943346,
+        0.009687017798957264
+      ],
+      "gauge_coefficients": {
+        "g1": 4.5,
+        "g2": -2.5,
+        "g3": -7.0
+      },
+      "initial_state": [
+        0.3,
+        0.4,
+        0.5,
+        0.3,
+        0.1,
+        0.05,
+        0.03,
+        0.01
+      ],
+      "integration": {
+        "max_abs_coupling": 0.9391064766737762,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "steps": 132,
+        "success": true
+      },
+      "ir_observables": {
+        "alpha_em": 0.0029675656312680623,
+        "alpha_s": 0.07018104125648596,
+        "e": 0.19311014873628266,
+        "g1_gut": 0.277846268054172,
+        "g2": 0.4374205131011388,
+        "g3": 0.9391064766737762,
+        "lambda_h": 0.06403391940509132,
+        "lambda_hs": 0.009687017798957264,
+        "lambda_s": 0.026692138147943346,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.11841668081566377,
+        "y_top_control": 0.5815303183521808
+      },
+      "status": "COMPLETE",
+      "target_blind": true,
+      "uv_observables": {
+        "alpha_em": 0.003212847449331719,
+        "alpha_s": 0.019894367886486918,
+        "e": 0.20093240598694112,
+        "g1_gut": 0.3,
+        "g2": 0.4,
+        "g3": 0.5,
+        "lambda_h": 0.05,
+        "lambda_hs": 0.01,
+        "lambda_s": 0.03,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.1,
+        "y_top_control": 0.3
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "E_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,1)_-1",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "E",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "vl-E-singlet-portal",
+      "controls": {
+        "exact_zero_gauge_seed_inserted": false,
+        "gauge_coefficients_derived_from_representations": true,
+        "interacting_fixed_point_claimed": false,
+        "ir_boundary_condition_inserted": false,
+        "target_blind_generation": true,
+        "two_loop_precision_matching_claimed": false,
+        "vectorlike_anomaly_cancellation_explicit": true
+      },
+      "final_state": [
+        0.2761062882716776,
+        0.4493111255176075,
+        0.9391064766737786,
+        0.5825653817072298,
+        0.10559878039368806,
+        0.06416915934346956,
+        0.026699993064128763,
+        0.009773475983997021
+      ],
+      "gauge_coefficients": {
+        "g1": 4.8999999999999995,
+        "g2": -3.1666666666666665,
+        "g3": -7.0
+      },
+      "initial_state": [
+        0.3,
+        0.4,
+        0.5,
+        0.3,
+        0.1,
+        0.05,
+        0.03,
+        0.01
+      ],
+      "integration": {
+        "max_abs_coupling": 0.9391064766737786,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "steps": 132,
+        "success": true
+      },
+      "ir_observables": {
+        "alpha_em": 0.0029675656312680592,
+        "alpha_s": 0.0701810412564863,
+        "e": 0.19311014873628254,
+        "g1_gut": 0.2761062882716776,
+        "g2": 0.4493111255176075,
+        "g3": 0.9391064766737786,
+        "lambda_h": 0.06416915934346956,
+        "lambda_hs": 0.009773475983997021,
+        "lambda_s": 0.026699993064128763,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.10559878039368806,
+        "y_top_control": 0.5825653817072298
+      },
+      "status": "COMPLETE",
+      "target_blind": true,
+      "uv_observables": {
+        "alpha_em": 0.003212847449331719,
+        "alpha_s": 0.019894367886486918,
+        "e": 0.20093240598694112,
+        "g1_gut": 0.3,
+        "g2": 0.4,
+        "g3": 0.5,
+        "lambda_h": 0.05,
+        "lambda_hs": 0.01,
+        "lambda_s": 0.03,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.1,
+        "y_top_control": 0.3
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "Q_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,2)_0.166667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          },
+          {
+            "field": "U_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,1)_0.666667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          },
+          {
+            "field": "L_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,2)_-0.5",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "Q",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "exact-zero-gauge-control",
+      "controls": {
+        "exact_zero_gauge_seed_inserted": false,
+        "gauge_coefficients_derived_from_representations": true,
+        "interacting_fixed_point_claimed": false,
+        "ir_boundary_condition_inserted": false,
+        "target_blind_generation": true,
+        "two_loop_precision_matching_claimed": false,
+        "vectorlike_anomaly_cancellation_explicit": true
+      },
+      "final_state": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.19526061425831515,
+        0.06703457642914062,
+        0.0708884512488276,
+        0.014116430477807418
+      ],
+      "gauge_coefficients": {
+        "g1": 5.699999999999999,
+        "g2": -0.4999999999999999,
+        "g3": -5.0
+      },
+      "initial_state": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2,
+        0.1,
+        0.1,
+        0.02
+      ],
+      "integration": {
+        "max_abs_coupling": 0.2,
+        "message": "The solver successfully reached the end of the integration interval.",
+        "steps": 132,
+        "success": true
+      },
+      "ir_observables": {
+        "alpha_em": 0.0,
+        "alpha_s": 0.0,
+        "e": 0.0,
+        "g1_gut": 0.0,
+        "g2": 0.0,
+        "g3": 0.0,
+        "lambda_h": 0.06703457642914062,
+        "lambda_hs": 0.014116430477807418,
+        "lambda_s": 0.0708884512488276,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.19526061425831515,
+        "y_top_control": 0.0
+      },
+      "status": "ZERO_PROTECTED",
+      "target_blind": true,
+      "uv_observables": {
+        "alpha_em": 0.0,
+        "alpha_s": 0.0,
+        "e": 0.0,
+        "g1_gut": 0.0,
+        "g2": 0.0,
+        "g3": 0.0,
+        "lambda_h": 0.1,
+        "lambda_hs": 0.02,
+        "lambda_s": 0.1,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.2,
+        "y_top_control": 0.0
+      }
+    }
+  ],
+  "controls": {
+    "all_candidates_retained": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_exact_zero_gauge_rescue_claimed": true,
+    "no_fitting": true,
+    "no_interacting_fixed_point_claimed": true,
+    "no_two_loop_precision_matching_claimed": true,
+    "target_blind_generation": true
+  },
+  "execution_status": "COMPLETE",
+  "extension_version": "gauge-yukawa-vectorlike-extension-v1",
+  "late_comparison": {
+    "alpha_em_ir_values": [
+      0.002927828333206781,
+      0.0029475630596474587,
+      0.0029675656312680623,
+      0.0029675656312680592,
+      0.0
+    ],
+    "automatic_ranking": false,
+    "candidate_count": 5,
+    "interpretation": "Descriptive late comparison only; no candidate is promoted and no parameter is adjusted.",
+    "performed_after_generation": true,
+    "reference_alpha_zero": 0.0072973525643314245,
+    "used_for_fit": false,
+    "used_for_selection": false
+  },
+  "literature_position": {
+    "this_campaign": "finite reduced EFT control and IR observable generator; not a publication-level full SM matching result",
+    "vectorlike_gauge_yukawa_asymptotic_safety": "known research direction"
+  },
+  "scan": {
+    "candidate_count": 5,
+    "status_counts": {
+      "COMPLETE": 4,
+      "ZERO_PROTECTED": 1
+    }
+  },
+  "scope": {
+    "ir_scale_gev": 91.1876,
+    "loop_order": "one-loop reduced gauge-Yukawa-scalar control",
+    "model": "SM + real singlet S + anomaly-free vector-like Dirac multiplets",
+    "uv_scale_gev": 1e+16
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}

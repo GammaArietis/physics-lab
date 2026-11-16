@@ -1,0 +1,1039 @@
+{
+  "campaign_id": "w13-maxwell-eb-geometry-2026-11-16",
+  "controls": {
+    "all_geometries_retained": true,
+    "alpha_not_used_during_generation": true,
+    "area_volume_ratio_treated_as_non_invariant": true,
+    "lorentz_invariant_quantities_used": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_fitting": true
+  },
+  "execution_status": "COMPLETE",
+  "geometry_version": "maxwell-eb-geometry-v1",
+  "late_comparison": {
+    "contains_ratio_within_1e-6_of_alpha": false,
+    "electric_to_magnetic_energy_ratios": [
+      16.000000000000004,
+      16.0,
+      16.0,
+      16.000000000000004,
+      4.000000000000001,
+      4.0,
+      4.0,
+      4.000000000000001,
+      1.0000000000000002,
+      1.0,
+      1.0,
+      1.0000000000000002,
+      0.25000000000000006,
+      0.25,
+      0.25,
+      0.25000000000000006,
+      0.06250000000000001,
+      0.0625,
+      0.0625,
+      0.06250000000000001
+    ],
+    "interpretation": "The ratio is continuously adjustable through the amplitude ratio; a numerical coincidence is not a derivation of alpha.",
+    "performed_after_generation": true,
+    "reference_alpha_zero": 0.0072973525643,
+    "used_for_selection": false
+  },
+  "records": [
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 0.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.0,
+        "E_dot_cB_over_energy": 0.0,
+        "electric_action_fraction": 0.9411764705882353,
+        "electric_to_magnetic_energy_ratio": 16.000000000000004,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.0588235294117647,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          8.339102379953801e-10
+        ]
+      },
+      "magnetic": [
+        0.0,
+        8.339102379953801e-10,
+        0.0
+      ],
+      "magnetic_ratio": 0.25,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": true,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.8823529411764706,
+        "I2_normalized": 0.0
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 30.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.49999999999999994,
+        "E_dot_cB_over_energy": 0.1176470588235294,
+        "electric_action_fraction": 0.9411764705882353,
+        "electric_to_magnetic_energy_ratio": 16.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.058823529411764705,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          7.221874505799265e-10
+        ]
+      },
+      "magnetic": [
+        4.1695511899769e-10,
+        7.221874505799265e-10,
+        0.0
+      ],
+      "magnetic_ratio": 0.25,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.8823529411764706,
+        "I2_normalized": 0.1176470588235294
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 60.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.8660254037844386,
+        "E_dot_cB_over_energy": 0.2037706832433973,
+        "electric_action_fraction": 0.9411764705882353,
+        "electric_to_magnetic_energy_ratio": 16.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.058823529411764705,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          4.1695511899769016e-10
+        ]
+      },
+      "magnetic": [
+        7.221874505799264e-10,
+        4.1695511899769016e-10,
+        0.0
+      ],
+      "magnetic_ratio": 0.25,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.8823529411764706,
+        "I2_normalized": 0.2037706832433973
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 90.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 1.0,
+        "E_dot_cB_over_energy": 0.23529411764705882,
+        "electric_action_fraction": 0.9411764705882353,
+        "electric_to_magnetic_energy_ratio": 16.000000000000004,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.0588235294117647,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          5.106227518686249e-26
+        ]
+      },
+      "magnetic": [
+        8.339102379953801e-10,
+        5.106227518686249e-26,
+        0.0
+      ],
+      "magnetic_ratio": 0.25,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.8823529411764706,
+        "I2_normalized": 0.23529411764705882
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 0.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.0,
+        "E_dot_cB_over_energy": 0.0,
+        "electric_action_fraction": 0.8,
+        "electric_to_magnetic_energy_ratio": 4.000000000000001,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.19999999999999998,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.6678204759907602e-09
+        ]
+      },
+      "magnetic": [
+        0.0,
+        1.6678204759907602e-09,
+        0.0
+      ],
+      "magnetic_ratio": 0.5,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": true,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.6,
+        "I2_normalized": 0.0
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 30.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.49999999999999994,
+        "E_dot_cB_over_energy": 0.19999999999999998,
+        "electric_action_fraction": 0.8,
+        "electric_to_magnetic_energy_ratio": 4.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.2,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.444374901159853e-09
+        ]
+      },
+      "magnetic": [
+        8.3391023799538e-10,
+        1.444374901159853e-09,
+        0.0
+      ],
+      "magnetic_ratio": 0.5,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.6,
+        "I2_normalized": 0.19999999999999998
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 60.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.8660254037844386,
+        "E_dot_cB_over_energy": 0.34641016151377546,
+        "electric_action_fraction": 0.8,
+        "electric_to_magnetic_energy_ratio": 4.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.2,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          8.339102379953803e-10
+        ]
+      },
+      "magnetic": [
+        1.4443749011598528e-09,
+        8.339102379953803e-10,
+        0.0
+      ],
+      "magnetic_ratio": 0.5,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.6,
+        "I2_normalized": 0.34641016151377546
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 90.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 1.0,
+        "E_dot_cB_over_energy": 0.4,
+        "electric_action_fraction": 0.8,
+        "electric_to_magnetic_energy_ratio": 4.000000000000001,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.19999999999999998,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.0212455037372498e-25
+        ]
+      },
+      "magnetic": [
+        1.6678204759907602e-09,
+        1.0212455037372498e-25,
+        0.0
+      ],
+      "magnetic_ratio": 0.5,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": -0.6,
+        "I2_normalized": 0.4
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 0.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.0,
+        "E_dot_cB_over_energy": 0.0,
+        "electric_action_fraction": 0.5,
+        "electric_to_magnetic_energy_ratio": 1.0000000000000002,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.49999999999999994,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          3.3356409519815204e-09
+        ]
+      },
+      "magnetic": [
+        0.0,
+        3.3356409519815204e-09,
+        0.0
+      ],
+      "magnetic_ratio": 1.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": true,
+        "F_squared_zero_for_null_wave": true,
+        "I1_normalized": -5.551115123125783e-17,
+        "I2_normalized": 0.0
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 30.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.49999999999999994,
+        "E_dot_cB_over_energy": 0.24999999999999997,
+        "electric_action_fraction": 0.5,
+        "electric_to_magnetic_energy_ratio": 1.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.5,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          2.888749802319706e-09
+        ]
+      },
+      "magnetic": [
+        1.66782047599076e-09,
+        2.888749802319706e-09,
+        0.0
+      ],
+      "magnetic_ratio": 1.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": true,
+        "I1_normalized": 0.0,
+        "I2_normalized": 0.24999999999999997
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 60.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.8660254037844386,
+        "E_dot_cB_over_energy": 0.4330127018922193,
+        "electric_action_fraction": 0.5,
+        "electric_to_magnetic_energy_ratio": 1.0,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.5,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.6678204759907606e-09
+        ]
+      },
+      "magnetic": [
+        2.8887498023197055e-09,
+        1.6678204759907606e-09,
+        0.0
+      ],
+      "magnetic_ratio": 1.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": true,
+        "I1_normalized": 0.0,
+        "I2_normalized": 0.4330127018922193
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 90.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 1.0,
+        "E_dot_cB_over_energy": 0.5,
+        "electric_action_fraction": 0.5,
+        "electric_to_magnetic_energy_ratio": 1.0000000000000002,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.49999999999999994,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          2.0424910074744996e-25
+        ]
+      },
+      "magnetic": [
+        3.3356409519815204e-09,
+        2.0424910074744996e-25,
+        0.0
+      ],
+      "magnetic_ratio": 1.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": true,
+        "I1_normalized": -5.551115123125783e-17,
+        "I2_normalized": 0.5
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 0.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.0,
+        "E_dot_cB_over_energy": 0.0,
+        "electric_action_fraction": 0.2,
+        "electric_to_magnetic_energy_ratio": 0.25000000000000006,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.7999999999999999,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          6.671281903963041e-09
+        ]
+      },
+      "magnetic": [
+        0.0,
+        6.671281903963041e-09,
+        0.0
+      ],
+      "magnetic_ratio": 2.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": true,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.5999999999999999,
+        "I2_normalized": 0.0
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 30.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.49999999999999994,
+        "E_dot_cB_over_energy": 0.19999999999999998,
+        "electric_action_fraction": 0.2,
+        "electric_to_magnetic_energy_ratio": 0.25,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.8,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          5.777499604639412e-09
+        ]
+      },
+      "magnetic": [
+        3.33564095198152e-09,
+        5.777499604639412e-09,
+        0.0
+      ],
+      "magnetic_ratio": 2.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.6,
+        "I2_normalized": 0.19999999999999998
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 60.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.8660254037844386,
+        "E_dot_cB_over_energy": 0.34641016151377546,
+        "electric_action_fraction": 0.2,
+        "electric_to_magnetic_energy_ratio": 0.25,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.8,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          3.3356409519815213e-09
+        ]
+      },
+      "magnetic": [
+        5.777499604639411e-09,
+        3.3356409519815213e-09,
+        0.0
+      ],
+      "magnetic_ratio": 2.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.6,
+        "I2_normalized": 0.34641016151377546
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 90.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 1.0,
+        "E_dot_cB_over_energy": 0.4,
+        "electric_action_fraction": 0.2,
+        "electric_to_magnetic_energy_ratio": 0.25000000000000006,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.7999999999999999,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          4.084982014948999e-25
+        ]
+      },
+      "magnetic": [
+        6.671281903963041e-09,
+        4.084982014948999e-25,
+        0.0
+      ],
+      "magnetic_ratio": 2.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.5999999999999999,
+        "I2_normalized": 0.4
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 0.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.0,
+        "E_dot_cB_over_energy": 0.0,
+        "electric_action_fraction": 0.058823529411764705,
+        "electric_to_magnetic_energy_ratio": 0.06250000000000001,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.9411764705882352,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.3342563807926082e-08
+        ]
+      },
+      "magnetic": [
+        0.0,
+        1.3342563807926082e-08,
+        0.0
+      ],
+      "magnetic_ratio": 4.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": true,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.8823529411764705,
+        "I2_normalized": 0.0
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 30.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.49999999999999994,
+        "E_dot_cB_over_energy": 0.1176470588235294,
+        "electric_action_fraction": 0.058823529411764705,
+        "electric_to_magnetic_energy_ratio": 0.0625,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.9411764705882353,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          1.1554999209278824e-08
+        ]
+      },
+      "magnetic": [
+        6.67128190396304e-09,
+        1.1554999209278824e-08,
+        0.0
+      ],
+      "magnetic_ratio": 4.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.8823529411764706,
+        "I2_normalized": 0.1176470588235294
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 60.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 0.8660254037844386,
+        "E_dot_cB_over_energy": 0.2037706832433973,
+        "electric_action_fraction": 0.058823529411764705,
+        "electric_to_magnetic_energy_ratio": 0.0625,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.9411764705882353,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          6.6712819039630425e-09
+        ]
+      },
+      "magnetic": [
+        1.1554999209278822e-08,
+        6.6712819039630425e-09,
+        0.0
+      ],
+      "magnetic_ratio": 4.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.8823529411764706,
+        "I2_normalized": 0.2037706832433973
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    },
+    {
+      "amplitude": 1.0,
+      "angle_degrees": 90.0,
+      "electric": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "geometry": {
+        "B_divergence_constraint": "zero away from magnetic monopoles; closed field lines are a topology constraint",
+        "E_B_cosine": 1.0,
+        "E_dot_cB_over_energy": 0.23529411764705882,
+        "electric_action_fraction": 0.058823529411764705,
+        "electric_to_magnetic_energy_ratio": 0.06250000000000001,
+        "field_lines_are_physical_tubes": false,
+        "magnetic_action_fraction": 0.9411764705882352,
+        "poynting_parallel_to_propagation": 1.0,
+        "poynting_vector": [
+          0.0,
+          0.0,
+          8.169964029897998e-25
+        ]
+      },
+      "magnetic": [
+        1.3342563807926082e-08,
+        8.169964029897998e-25,
+        0.0
+      ],
+      "magnetic_ratio": 4.0,
+      "maxwell_action_invariants": {
+        "F_dual_F_zero_for_orthogonal_wave": false,
+        "F_squared_zero_for_null_wave": false,
+        "I1_normalized": 0.8823529411764705,
+        "I2_normalized": 0.23529411764705882
+      },
+      "propagation": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "support": {
+        "area_or_volume_ratio_is_lorentz_invariant": false,
+        "electric_area_scaling": 1.0,
+        "length_m": 1.0,
+        "magnetic_area_scaling": 1.0,
+        "volume_scaling": 1.0
+      }
+    }
+  ],
+  "scan": {
+    "amplitudes": [
+      1.0
+    ],
+    "angles_degrees": [
+      0.0,
+      30.0,
+      60.0,
+      90.0
+    ],
+    "candidate_count": 20,
+    "magnetic_ratios": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ]
+  },
+  "scope": {
+    "action": "-1/4 F_mu_nu F^mu_nu",
+    "field_lines": "topological visualisation only",
+    "generation": "target-blind",
+    "invariants": [
+      "F_squared",
+      "F_dual_F",
+      "E x H Poynting direction"
+    ]
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}
