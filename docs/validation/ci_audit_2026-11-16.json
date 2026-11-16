@@ -74,15 +74,26 @@
       "installation_steps": "success",
       "logs_available_in_current_view": true,
       "diagnosis": "Full suite completed successfully after adding the threshold-resolved IR/EFT campaign."
+    },
+    {
+      "run_number": 93,
+      "head_sha": "bf202ed509164e58fe79a57c36daaf6818096e3f",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full pytest suite completed successfully after adding the W15 precision-control pipeline."
     }
   ],
   "latest_green_run": {
-    "run_number": 92,
-    "run_id": 43832753269,
-    "head_sha": "2e9fb8b981dbfad2656d54deacbb8bd7961daa3a",
+    "run_number": 93,
+    "run_id": 43846895236,
+    "head_sha": "bf202ed509164e58fe79a57c36daaf6818096e3f",
     "conclusion": "success"
   },
-  "interpretation": "The CI failure was in the test harness: tests/conftest.py scanned interpreter-generated __pycache__ bytecode as if it were a physics artifact, allowing an importlib replacement race to raise FileNotFoundError. The harness now excludes __pycache__ and .pyc files; CI also sets PYTHONDONTWRITEBYTECODE=1 and publishes a bounded failure annotation. Full pytest is green on Python 3.11 and 3.12, including W14.",
+  "interpretation": "The test harness excludes interpreter-generated __pycache__ and .pyc artifacts; full pytest is green on Python 3.11 and 3.12 through W15. GitHub annotations for run #93 are infrastructure warnings only (Node.js 20 action deprecation and Ubuntu image migration).",
   "workflow": ".github/workflows/ci.yml",
   "matrix": [
     "3.11",
