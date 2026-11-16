@@ -149,6 +149,7 @@ def beta_state(
     multiplicities: Mapping[str, Any],
     yukawa_multiplet: str,
     top_yukawa: float = 0.0,
+    gauge_coefficients_override: Mapping[str, float] | None = None,
 ) -> tuple[float, ...]:
     """Reduced one-loop beta vector for (g1,g2,g3,yt,yS,lambdaH,lambdaS,lambdaHS).
 
@@ -168,7 +169,9 @@ def beta_state(
     if counts.get(yukawa_multiplet, 0) < 1:
         raise GaugeYukawaExtensionError("Yukawa multiplet is absent")
     multiplet = MULTIPLETS[yukawa_multiplet]
-    coefficients = gauge_coefficients(counts)
+    coefficients = dict(gauge_coefficients_override) if gauge_coefficients_override is not None else gauge_coefficients(counts)
+    if set(coefficients) != {"g1", "g2", "g3"} or not all(math.isfinite(float(value)) for value in coefficients.values()):
+        raise GaugeYukawaExtensionError("gauge_coefficients_override must contain finite g1,g2,g3")
     gauge = tuple(coefficients[name] * coupling**3 / LOOP_FACTOR for name, coupling in (("g1", g1), ("g2", g2), ("g3", g3)))
     gauge_penalty = 6.0 * (multiplet.casimir_u1 * g1**2 + multiplet.casimir_su2 * g2**2 + multiplet.casimir_su3 * g3**2)
     beta_ys = ys * (3.0 * ys**2 - gauge_penalty) / LOOP_FACTOR

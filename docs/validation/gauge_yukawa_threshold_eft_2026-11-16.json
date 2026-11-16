@@ -1,0 +1,916 @@
+{
+  "campaign_id": "w14-gauge-yukawa-threshold-eft-2026-11-16",
+  "candidate_results": [
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "Q_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,2)_0.166667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "Q",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "threshold-Q-1e8",
+      "controls": {
+        "all_present_multiplet_thresholds_declared": true,
+        "continuous_dimensionless_matching": true,
+        "exact_zero_gauge_seed_inserted": false,
+        "finite_threshold_corrections_claimed": false,
+        "gauge_coefficients_derived_from_active_representations": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_fitting": true,
+        "reduced_yukawa_scalar_block_explicit": true,
+        "target_blind_generation": true
+      },
+      "final_state": [
+        0.009999145194997845,
+        0.020003320718782962,
+        0.030034552697287508,
+        0.04996878955877888,
+        0.010017862692095451,
+        0.00486164569688242,
+        0.004908366165615362,
+        0.0009788429406956721
+      ],
+      "initial_state": [
+        0.01,
+        0.02,
+        0.03,
+        0.05,
+        0.01,
+        0.005,
+        0.005,
+        0.001
+      ],
+      "integration": {
+        "max_abs_coupling": 0.05,
+        "segment_count": 2
+      },
+      "ir_observables": {
+        "alpha_em": 4.151430611763552e-06,
+        "alpha_s": 7.1784796375126e-05,
+        "e": 0.007222770635096799,
+        "g1_gut": 0.009999145194997845,
+        "g2": 0.020003320718782962,
+        "g3": 0.030034552697287508,
+        "lambda_h": 0.00486164569688242,
+        "lambda_hs": 0.0009788429406956721,
+        "lambda_s": 0.004908366165615362,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.010017862692095451,
+        "y_top_control": 0.04996878955877888
+      },
+      "segments": [
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 1,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.2333333333333325,
+            "g2": -1.1666666666666665,
+            "g3": -5.666666666666667
+          },
+          "high_scale_gev": 1e+16,
+          "low_scale_gev": 100000000.0,
+          "matching": "continuous_state",
+          "steps": 76
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 100000000.0,
+          "low_scale_gev": 91.1876,
+          "matching": "continuous_state",
+          "steps": 58
+        }
+      ],
+      "status": "COMPLETE",
+      "target_blind": true,
+      "threshold_events": [
+        {
+          "coefficients_above": {
+            "g1": 4.2333333333333325,
+            "g2": -1.1666666666666665,
+            "g3": -5.666666666666667
+          },
+          "coefficients_below": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "Q",
+          "threshold_gev": 100000000.0
+        }
+      ],
+      "thresholds_gev": {
+        "Q": 100000000.0
+      },
+      "uv_observables": {
+        "alpha_em": 4.15186808065814e-06,
+        "alpha_s": 7.16197243913529e-05,
+        "e": 0.0072231511851461525,
+        "g1_gut": 0.01,
+        "g2": 0.02,
+        "g3": 0.03,
+        "lambda_h": 0.005,
+        "lambda_hs": 0.001,
+        "lambda_s": 0.005,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.01,
+        "y_top_control": 0.05
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "U_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,1)_0.666667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "U",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "threshold-U-1e6",
+      "controls": {
+        "all_present_multiplet_thresholds_declared": true,
+        "continuous_dimensionless_matching": true,
+        "exact_zero_gauge_seed_inserted": false,
+        "finite_threshold_corrections_claimed": false,
+        "gauge_coefficients_derived_from_active_representations": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_fitting": true,
+        "reduced_yukawa_scalar_block_explicit": true,
+        "target_blind_generation": true
+      },
+      "final_state": [
+        0.009999005253441174,
+        0.02000518831530259,
+        0.030036133048935244,
+        0.04996879722354042,
+        0.01001448031948373,
+        0.004861646155743579,
+        0.004908366425029089,
+        0.000978843062582076
+      ],
+      "initial_state": [
+        0.01,
+        0.02,
+        0.03,
+        0.05,
+        0.01,
+        0.005,
+        0.005,
+        0.001
+      ],
+      "integration": {
+        "max_abs_coupling": 0.05,
+        "segment_count": 2
+      },
+      "ir_observables": {
+        "alpha_em": 4.151430611763552e-06,
+        "alpha_s": 7.179235088788971e-05,
+        "e": 0.007222770635096799,
+        "g1_gut": 0.009999005253441174,
+        "g2": 0.02000518831530259,
+        "g3": 0.030036133048935244,
+        "lambda_h": 0.004861646155743579,
+        "lambda_hs": 0.000978843062582076,
+        "lambda_s": 0.004908366425029089,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.01001448031948373,
+        "y_top_control": 0.04996879722354042
+      },
+      "segments": [
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 1
+          },
+          "gauge_coefficients": {
+            "g1": 5.166666666666666,
+            "g2": -3.1666666666666665,
+            "g3": -6.333333333333333
+          },
+          "high_scale_gev": 1e+16,
+          "low_scale_gev": 1000000.0,
+          "matching": "continuous_state",
+          "steps": 94
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 1000000.0,
+          "low_scale_gev": 91.1876,
+          "matching": "continuous_state",
+          "steps": 39
+        }
+      ],
+      "status": "COMPLETE",
+      "target_blind": true,
+      "threshold_events": [
+        {
+          "coefficients_above": {
+            "g1": 5.166666666666666,
+            "g2": -3.1666666666666665,
+            "g3": -6.333333333333333
+          },
+          "coefficients_below": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "U",
+          "threshold_gev": 1000000.0
+        }
+      ],
+      "thresholds_gev": {
+        "U": 1000000.0
+      },
+      "uv_observables": {
+        "alpha_em": 4.15186808065814e-06,
+        "alpha_s": 7.16197243913529e-05,
+        "e": 0.0072231511851461525,
+        "g1_gut": 0.01,
+        "g2": 0.02,
+        "g3": 0.03,
+        "lambda_h": 0.005,
+        "lambda_hs": 0.001,
+        "lambda_s": 0.005,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.01,
+        "y_top_control": 0.05
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "L_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,2)_-0.5",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "L",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "threshold-L-1e4",
+      "controls": {
+        "all_present_multiplet_thresholds_declared": true,
+        "continuous_dimensionless_matching": true,
+        "exact_zero_gauge_seed_inserted": false,
+        "finite_threshold_corrections_claimed": false,
+        "gauge_coefficients_derived_from_active_representations": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_fitting": true,
+        "reduced_yukawa_scalar_block_explicit": true,
+        "target_blind_generation": true
+      },
+      "final_state": [
+        0.00999909077258319,
+        0.02000425445165826,
+        0.030038767522802927,
+        0.049968805053418885,
+        0.010003256155789427,
+        0.004861645970327442,
+        0.004908367285366938,
+        0.0009788431138490275
+      ],
+      "initial_state": [
+        0.01,
+        0.02,
+        0.03,
+        0.05,
+        0.01,
+        0.005,
+        0.005,
+        0.001
+      ],
+      "integration": {
+        "max_abs_coupling": 0.05,
+        "segment_count": 2
+      },
+      "ir_observables": {
+        "alpha_em": 4.151441839960852e-06,
+        "alpha_s": 7.180494527655743e-05,
+        "e": 0.0072227804026500225,
+        "g1_gut": 0.00999909077258319,
+        "g2": 0.02000425445165826,
+        "g3": 0.030038767522802927,
+        "lambda_h": 0.004861645970327442,
+        "lambda_hs": 0.0009788431138490275,
+        "lambda_s": 0.004908367285366938,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.010003256155789427,
+        "y_top_control": 0.049968805053418885
+      },
+      "segments": [
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 1,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.5,
+            "g2": -2.5,
+            "g3": -7.0
+          },
+          "high_scale_gev": 1e+16,
+          "low_scale_gev": 10000.0,
+          "matching": "continuous_state",
+          "steps": 113
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 10000.0,
+          "low_scale_gev": 91.1876,
+          "matching": "continuous_state",
+          "steps": 21
+        }
+      ],
+      "status": "COMPLETE",
+      "target_blind": true,
+      "threshold_events": [
+        {
+          "coefficients_above": {
+            "g1": 4.5,
+            "g2": -2.5,
+            "g3": -7.0
+          },
+          "coefficients_below": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "L",
+          "threshold_gev": 10000.0
+        }
+      ],
+      "thresholds_gev": {
+        "L": 10000.0
+      },
+      "uv_observables": {
+        "alpha_em": 4.15186808065814e-06,
+        "alpha_s": 7.16197243913529e-05,
+        "e": 0.0072231511851461525,
+        "g1_gut": 0.01,
+        "g2": 0.02,
+        "g3": 0.03,
+        "lambda_h": 0.005,
+        "lambda_hs": 0.001,
+        "lambda_s": 0.005,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.01,
+        "y_top_control": 0.05
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "E_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,1)_-1",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "E",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "threshold-E-1e3",
+      "controls": {
+        "all_present_multiplet_thresholds_declared": true,
+        "continuous_dimensionless_matching": true,
+        "exact_zero_gauge_seed_inserted": false,
+        "finite_threshold_corrections_claimed": false,
+        "gauge_coefficients_derived_from_active_representations": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_fitting": true,
+        "reduced_yukawa_scalar_block_explicit": true,
+        "target_blind_generation": true
+      },
+      "final_state": [
+        0.009999009140627305,
+        0.020005188315302583,
+        0.03003876752280294,
+        0.04996880553778253,
+        0.010000122752709876,
+        0.004861646154669367,
+        0.004908367525581384,
+        0.0009788431769566898
+      ],
+      "initial_state": [
+        0.01,
+        0.02,
+        0.03,
+        0.05,
+        0.01,
+        0.005,
+        0.005,
+        0.001
+      ],
+      "integration": {
+        "max_abs_coupling": 0.05,
+        "segment_count": 2
+      },
+      "ir_observables": {
+        "alpha_em": 4.151433418807181e-06,
+        "alpha_s": 7.180494527655751e-05,
+        "e": 0.007222773076981389,
+        "g1_gut": 0.009999009140627305,
+        "g2": 0.020005188315302583,
+        "g3": 0.03003876752280294,
+        "lambda_h": 0.004861646154669367,
+        "lambda_hs": 0.0009788431769566898,
+        "lambda_s": 0.004908367525581384,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.010000122752709876,
+        "y_top_control": 0.04996880553778253
+      },
+      "segments": [
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 1,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.8999999999999995,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 1e+16,
+          "low_scale_gev": 1000.0,
+          "matching": "continuous_state",
+          "steps": 122
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 1000.0,
+          "low_scale_gev": 91.1876,
+          "matching": "continuous_state",
+          "steps": 12
+        }
+      ],
+      "status": "COMPLETE",
+      "target_blind": true,
+      "threshold_events": [
+        {
+          "coefficients_above": {
+            "g1": 4.8999999999999995,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "coefficients_below": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "E",
+          "threshold_gev": 1000.0
+        }
+      ],
+      "thresholds_gev": {
+        "E": 1000.0
+      },
+      "uv_observables": {
+        "alpha_em": 4.15186808065814e-06,
+        "alpha_s": 7.16197243913529e-05,
+        "e": 0.0072231511851461525,
+        "g1_gut": 0.01,
+        "g2": 0.02,
+        "g3": 0.03,
+        "lambda_h": 0.005,
+        "lambda_hs": 0.001,
+        "lambda_s": 0.005,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.01,
+        "y_top_control": 0.05
+      }
+    },
+    {
+      "action": {
+        "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+        "lagrangian_terms": [
+          "-1/4 F^a_mu_nu F^a_mu_nu",
+          "i bar(Psi) slash(D) Psi - M_Psi bar(Psi) Psi",
+          "1/2 (partial S)^2 - m_S^2 S^2/2 - lambda_S S^4/4",
+          "- y_S S bar(Psi) Psi - lambda_HS S^2 H^dagger H"
+        ],
+        "new_fields": [
+          {
+            "field": "S",
+            "reality": "real",
+            "representation": "(1,1)_0",
+            "spin": 0,
+            "symmetry": "Z2-even"
+          },
+          {
+            "field": "Q_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,2)_0.166667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          },
+          {
+            "field": "U_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(3,1)_0.666667",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          },
+          {
+            "field": "L_VL",
+            "gauge_anomaly_cancelled_pairwise": true,
+            "multiplicity": 1,
+            "representation": "(1,2)_-0.5",
+            "spin": "1/2",
+            "vectorlike_pair": true
+          }
+        ],
+        "normalisation": {
+          "hypercharge": "GUT-normalised g1; gY=sqrt(3/5)*g1",
+          "potential": "lambda_S*S^4/4"
+        },
+        "yukawa_multiplet": "Q",
+        "z2_condition": "S -> -S, cubic S term omitted"
+      },
+      "candidate_id": "threshold-zero-gauge-control",
+      "controls": {
+        "all_present_multiplet_thresholds_declared": true,
+        "continuous_dimensionless_matching": true,
+        "exact_zero_gauge_seed_inserted": false,
+        "finite_threshold_corrections_claimed": false,
+        "gauge_coefficients_derived_from_active_representations": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_fitting": true,
+        "reduced_yukawa_scalar_block_explicit": true,
+        "target_blind_generation": true
+      },
+      "final_state": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999385889811961,
+        0.004880013880445141,
+        0.004908366684628431,
+        0.0009810687194758457
+      ],
+      "initial_state": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01,
+        0.005,
+        0.005,
+        0.001
+      ],
+      "integration": {
+        "max_abs_coupling": 0.01,
+        "segment_count": 4
+      },
+      "ir_observables": {
+        "alpha_em": 0.0,
+        "alpha_s": 0.0,
+        "e": 0.0,
+        "g1_gut": 0.0,
+        "g2": 0.0,
+        "g3": 0.0,
+        "lambda_h": 0.004880013880445141,
+        "lambda_hs": 0.0009810687194758457,
+        "lambda_s": 0.004908366684628431,
+        "scale_gev": 91.1876,
+        "y_new_scalar": 0.009999385889811961,
+        "y_top_control": 0.0
+      },
+      "segments": [
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 1,
+            "Q": 1,
+            "U": 1
+          },
+          "gauge_coefficients": {
+            "g1": 5.699999999999999,
+            "g2": -0.4999999999999999,
+            "g3": -5.0
+          },
+          "high_scale_gev": 1e+16,
+          "low_scale_gev": 1000000.0,
+          "matching": "continuous_state",
+          "steps": 94
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 1,
+            "Q": 1,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.633333333333333,
+            "g2": -0.4999999999999999,
+            "g3": -5.666666666666667
+          },
+          "high_scale_gev": 1000000.0,
+          "low_scale_gev": 100000.0,
+          "matching": "continuous_state",
+          "steps": 11
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 1,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.5,
+            "g2": -2.5,
+            "g3": -7.0
+          },
+          "high_scale_gev": 100000.0,
+          "low_scale_gev": 10000.0,
+          "matching": "continuous_state",
+          "steps": 11
+        },
+        {
+          "active_multiplicities": {
+            "D": 0,
+            "E": 0,
+            "L": 0,
+            "Q": 0,
+            "U": 0
+          },
+          "gauge_coefficients": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "high_scale_gev": 10000.0,
+          "low_scale_gev": 91.1876,
+          "matching": "continuous_state",
+          "steps": 21
+        }
+      ],
+      "status": "ZERO_PROTECTED",
+      "target_blind": true,
+      "threshold_events": [
+        {
+          "coefficients_above": {
+            "g1": 4.5,
+            "g2": -2.5,
+            "g3": -7.0
+          },
+          "coefficients_below": {
+            "g1": 4.1,
+            "g2": -3.1666666666666665,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "L",
+          "threshold_gev": 10000.0
+        },
+        {
+          "coefficients_above": {
+            "g1": 4.633333333333333,
+            "g2": -0.4999999999999999,
+            "g3": -5.666666666666667
+          },
+          "coefficients_below": {
+            "g1": 4.5,
+            "g2": -2.5,
+            "g3": -7.0
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "Q",
+          "threshold_gev": 100000.0
+        },
+        {
+          "coefficients_above": {
+            "g1": 5.699999999999999,
+            "g2": -0.4999999999999999,
+            "g3": -5.0
+          },
+          "coefficients_below": {
+            "g1": 4.633333333333333,
+            "g2": -0.4999999999999999,
+            "g3": -5.666666666666667
+          },
+          "matching": "continuous_dimensionless_state_at_declared_threshold",
+          "multiplet": "U",
+          "threshold_gev": 1000000.0
+        }
+      ],
+      "thresholds_gev": {
+        "L": 10000.0,
+        "Q": 100000.0,
+        "U": 1000000.0
+      },
+      "uv_observables": {
+        "alpha_em": 0.0,
+        "alpha_s": 0.0,
+        "e": 0.0,
+        "g1_gut": 0.0,
+        "g2": 0.0,
+        "g3": 0.0,
+        "lambda_h": 0.005,
+        "lambda_hs": 0.001,
+        "lambda_s": 0.005,
+        "scale_gev": 1e+16,
+        "y_new_scalar": 0.01,
+        "y_top_control": 0.0
+      }
+    }
+  ],
+  "controls": {
+    "all_candidates_retained": true,
+    "no_alpha_target_used": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_fitting": true,
+    "no_precision_sm_matching_claimed": true,
+    "target_blind_generation": true
+  },
+  "execution_status": "COMPLETE",
+  "extension_version": "gauge-yukawa-threshold-eft-v1",
+  "interpretation": "Threshold-resolved EFT control only; no candidate is promoted and no alpha target is used.",
+  "scan": {
+    "candidate_count": 5,
+    "status_counts": {
+      "COMPLETE": 4,
+      "ZERO_PROTECTED": 1
+    }
+  },
+  "scope": {
+    "gauge_loop_order": "one-loop",
+    "ir_scale_gev": 91.1876,
+    "matching": "continuous dimensionless one-loop control; finite threshold corrections not included",
+    "matter_block": "reduced one-loop Yukawa-scalar control",
+    "model": "W13 SM + singlet S + anomaly-free vector-like Dirac multiplets with explicit thresholds",
+    "uv_scale_gev": 1e+16
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  }
+}

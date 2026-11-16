@@ -62,6 +62,15 @@ from physics_lab.search.smdr_backend import (
     target_blind_input_text,
     write_smdr_report,
 )
+from physics_lab.search.gauge_yukawa_threshold_eft import (
+    THRESHOLD_EFT_VERSION,
+    active_multiplicities,
+    run_threshold_candidate,
+    run_threshold_campaign,
+    threshold_map,
+    thresholded_gauge_coefficients,
+    write_threshold_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -105,4 +114,11 @@ __all__ = [
     "run_smdr_calc_all",
     "target_blind_input_text",
     "write_smdr_report",
+    "THRESHOLD_EFT_VERSION",
+    "active_multiplicities",
+    "run_threshold_candidate",
+    "run_threshold_campaign",
+    "threshold_map",
+    "thresholded_gauge_coefficients",
+    "write_threshold_report",
 ]
