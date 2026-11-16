@@ -1,0 +1,28 @@
+{
+  "activation_id": "w11-ir-eft-rescue-audit-2026-11-16",
+  "source_archive": "docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2.json.gz",
+  "scope": {
+    "known_sm_running": true,
+    "threshold_coefficient_controls": true,
+    "qed_qcd_low_energy_control": true,
+    "multiple_u1_kinetic_mixing": "catalogue_only",
+    "new_nonabelian_matter": "catalogue_only",
+    "gravity_residual_additive_term": "not_derived",
+    "ir_boundary_condition": "disallowed"
+  },
+  "controls": {
+    "target_blind": true,
+    "no_fitting": true,
+    "no_automatic_selection": true,
+    "no_automatic_ranking": true,
+    "no_new_fields_added": true,
+    "no_hand_seeded_couplings": true,
+    "late_reference_comparison_only": true
+  },
+  "outputs": {
+    "summary": "docs/validation/w11_ir_eft_rescue_audit_2026-11-16_summary.json",
+    "full_report": "docs/validation/w11_ir_eft_rescue_audit_2026-11-16.json.gz",
+    "protocol": "docs/W12_IR_EFT_RESCUE_AUDIT_2026-11-16.md"
+  },
+  "conclusion": "NO_KNOWN_SM_QCD_QED_IR_EFT_RESCUE_FOUND"
+}

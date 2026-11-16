@@ -1,0 +1,379 @@
+{
+  "bibliography": [
+    {
+      "citation": "S. P. Martin and D. G. Robertson, Standard Model parameters in the tadpole-free pure MSbar scheme, Phys. Rev. D 100 (2019) 073004.",
+      "id": "martin-robertson-2019",
+      "role": "SMDR, running couplings, pole observables and threshold matching.",
+      "url": "https://arxiv.org/abs/1907.02500"
+    },
+    {
+      "citation": "S. P. Martin, Matching relations for decoupling in the Standard Model at two loops and beyond, Phys. Rev. D 99 (2019) 033003.",
+      "id": "martin-2018-decoupling",
+      "role": "Heavy-particle decoupling and low-energy EFT matching.",
+      "url": "https://arxiv.org/abs/1812.04100"
+    },
+    {
+      "citation": "M. Luo and Y. Xiao, Two-loop Renormalization Group Equations in the Standard Model, Phys. Rev. Lett. 90 (2003) 011601.",
+      "id": "luo-xiao-2003",
+      "role": "Two-loop SM beta functions.",
+      "url": "https://arxiv.org/abs/hep-ph/0207271"
+    },
+    {
+      "citation": "M. Luo and Y. Xiao, Renormalization Group Equations in Gauge Theories with Multiple U(1) Groups, Phys. Lett. B 555 (2003) 279--286.",
+      "id": "luo-xiao-multiple-u1-2002",
+      "role": "Kinetic-mixing control and its Abelian-only scope.",
+      "url": "https://arxiv.org/abs/hep-ph/0212152"
+    },
+    {
+      "citation": "W. Dekens and P. Stoffer, Low-energy effective field theory below the electroweak scale: matching at one loop, JHEP 10 (2019) 197.",
+      "id": "dekens-stoffer-2019",
+      "role": "SMEFT-to-low-energy EFT matching structure.",
+      "url": "https://arxiv.org/abs/1908.05295"
+    },
+    {
+      "citation": "A. Eichhorn and A. Held, Top mass from asymptotic safety, Phys. Lett. B 777 (2018) 217--221.",
+      "id": "eichhorn-held-2018",
+      "role": "W11 UV gravity-matter truncation and its IR matching context.",
+      "url": "https://doi.org/10.1016/j.physletb.2017.12.040"
+    }
+  ],
+  "campaign_id": "w11-ir-eft-rescue-audit-2026-11-16",
+  "conclusion": {
+    "interpretation": "Within the declared SM/QCD+QED running and threshold controls, no mechanism generates the missing W11 gauge couplings. A compatible trajectory must already enter the IR matching window with nonzero gauge couplings, or the theory must be extended with a derived new interaction and field content.",
+    "known_ir_eft_rescue_found": false,
+    "next_theory_gate": "DERIVE_A_NEW_IR_COMPLETION_OR_RETAIN_ONLY_W11_BRANCHES_WITH_NONZERO_GAUGE_COUPLINGS"
+  },
+  "controls": {
+    "all_source_cases_retained": true,
+    "full_low_energy_matrix_matching_not_claimed": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_fitting": true,
+    "no_ir_boundary_condition_inserted": true,
+    "no_new_fields_added": true,
+    "target_blind_generation": true,
+    "thresholds_only_tested_as_beta_coefficient_controls": true
+  },
+  "execution_status": "COMPLETE",
+  "late_comparison": {
+    "complete_case_count": 27060,
+    "interpretation": "Descriptive reference comparison after target-blind generation; no candidate promotion.",
+    "max_absolute_ew_gauge_couplings": {
+      "g1_gut": 0.6948338692777797,
+      "g2": 0.06987185555250917,
+      "g3": 0.07016541967005514
+    },
+    "max_absolute_low_probe_controls": {
+      "qcd_g3": 0.07024627883506321,
+      "qed_e": 0.04255667949450351,
+      "sm_g1_gut": 0.6563616630461317,
+      "sm_g2": 0.0699048028155785,
+      "sm_g3": 0.07023923650354037
+    },
+    "performed_after_generation": true,
+    "reference": {
+      "g1_gut": 0.4629441543444162,
+      "g2": 0.647593,
+      "g3": 1.163501,
+      "gp": 0.358595,
+      "source": "official SMDR ReferenceModel.dat; descriptive comparison only"
+    },
+    "used_for_fit": false,
+    "used_for_selection": false
+  },
+  "mechanisms": {
+    "gravity_residual_term": {
+      "reason": "requires a new IR-complete gravity-matter truncation; the current W11 gravity contribution is not activated as an IR additive source",
+      "status": "NOT_DERIVED"
+    },
+    "ir_boundary_condition": {
+      "reason": "would be a new dimensionless physical input or target leakage, not a derived EFT consequence",
+      "status": "DISALLOWED_AS_RESCUE"
+    },
+    "known_sm_running": {
+      "equation": "beta_gi = b_i*g_i^3/(16*pi^2) at one loop",
+      "status": "NO_RESCUE_FROM_EXACT_ZERO"
+    },
+    "known_threshold_decoupling": {
+      "reason": "matching changes coefficients and finite corrections but does not supply a nonzero gauge seed in the declared SM EFT",
+      "status": "NO_RESCUE_FROM_EXACT_ZERO"
+    },
+    "multiple_u1_kinetic_mixing": {
+      "reason": "can source an Abelian mixing coordinate only when a second U(1) and bi-charged matter are added; cannot generate SU(2) or SU(3) couplings",
+      "status": "U1_ONLY_AND_NEW_FIELD_CONTENT_REQUIRED"
+    },
+    "new_nonabelian_matter": {
+      "reason": "changes beta coefficients but preserves the multiplicative zero surface unless an additional interaction is introduced",
+      "status": "NO_SEED"
+    }
+  },
+  "record_preview": [
+    {
+      "audit_status": "COMPLETE",
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=no-decoupling",
+      "case_index": 0,
+      "conventions": {
+        "evaluation_scale_gev": 246.21965,
+        "g1_to_gp": "sqrt(3/5)*g1",
+        "lambda4_to_lambda_sm": "2*lambda_4",
+        "low_probe_scale_gev": 2.0
+      },
+      "derived": {
+        "bottom_running_control_gev": 1.1850048841974373e-18,
+        "e": 0.0,
+        "gp": 0.0,
+        "lambda_sm": 0.04280220541823551,
+        "top_running_control_gev": 55.98712357801052
+      },
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "known_eft_rescue": false,
+      "mechanism_controls": {
+        "gravity_term_at_ir_is_not_activated": true,
+        "ir_boundary_condition_is_new_input": true,
+        "new_nonabelian_matter_can_seed_zero": false,
+        "ordinary_running_can_seed_zero": false,
+        "threshold_matching_can_seed_zero": false,
+        "u1_kinetic_mixing_can_seed_u1_only": true
+      },
+      "qed_qcd_5q3l_one_loop_control": {
+        "e": {
+          "beta_b": 8.88888888888889,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.666666666666666,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "rescue_class": "ALL_GAUGE_ZERO_PROTECTED",
+      "sm_unbroken_one_loop_control": {
+        "g1_gut": {
+          "beta_b": 4.1,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g2": {
+          "beta_b": -3.1666666666666665,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.0,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "source_error": null,
+      "source_status": "COMPLETE",
+      "zero_pattern": {
+        "all_gauge_zero": true,
+        "g1_zero": true,
+        "g2_zero": true,
+        "g3_zero": true
+      }
+    },
+    {
+      "audit_status": "COMPLETE",
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=threshold-low",
+      "case_index": 1,
+      "conventions": {
+        "evaluation_scale_gev": 246.21965,
+        "g1_to_gp": "sqrt(3/5)*g1",
+        "lambda4_to_lambda_sm": "2*lambda_4",
+        "low_probe_scale_gev": 2.0
+      },
+      "derived": {
+        "bottom_running_control_gev": 1.1850048841974373e-18,
+        "e": 0.0,
+        "gp": 0.0,
+        "lambda_sm": 0.04280220541823551,
+        "top_running_control_gev": 55.98712357801052
+      },
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "known_eft_rescue": false,
+      "mechanism_controls": {
+        "gravity_term_at_ir_is_not_activated": true,
+        "ir_boundary_condition_is_new_input": true,
+        "new_nonabelian_matter_can_seed_zero": false,
+        "ordinary_running_can_seed_zero": false,
+        "threshold_matching_can_seed_zero": false,
+        "u1_kinetic_mixing_can_seed_u1_only": true
+      },
+      "qed_qcd_5q3l_one_loop_control": {
+        "e": {
+          "beta_b": 8.88888888888889,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.666666666666666,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "rescue_class": "ALL_GAUGE_ZERO_PROTECTED",
+      "sm_unbroken_one_loop_control": {
+        "g1_gut": {
+          "beta_b": 4.1,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g2": {
+          "beta_b": -3.1666666666666665,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.0,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "source_error": null,
+      "source_status": "COMPLETE",
+      "zero_pattern": {
+        "all_gauge_zero": true,
+        "g1_zero": true,
+        "g2_zero": true,
+        "g3_zero": true
+      }
+    },
+    {
+      "audit_status": "COMPLETE",
+      "case_id": "published-rounded-anchor-matter-branch-000|transition=-2|loop=one-loop-sm|threshold=threshold-central",
+      "case_index": 2,
+      "conventions": {
+        "evaluation_scale_gev": 246.21965,
+        "g1_to_gp": "sqrt(3/5)*g1",
+        "lambda4_to_lambda_sm": "2*lambda_4",
+        "low_probe_scale_gev": 2.0
+      },
+      "derived": {
+        "bottom_running_control_gev": 1.1850048841974373e-18,
+        "e": 0.0,
+        "gp": 0.0,
+        "lambda_sm": 0.04280220541823551,
+        "top_running_control_gev": 55.98712357801052
+      },
+      "ew_state": [
+        0.0,
+        0.0,
+        0.0,
+        -0.32157364159310986,
+        6.806321017475148e-21,
+        0.021401102709117756
+      ],
+      "known_eft_rescue": false,
+      "mechanism_controls": {
+        "gravity_term_at_ir_is_not_activated": true,
+        "ir_boundary_condition_is_new_input": true,
+        "new_nonabelian_matter_can_seed_zero": false,
+        "ordinary_running_can_seed_zero": false,
+        "threshold_matching_can_seed_zero": false,
+        "u1_kinetic_mixing_can_seed_u1_only": true
+      },
+      "qed_qcd_5q3l_one_loop_control": {
+        "e": {
+          "beta_b": 8.88888888888889,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.666666666666666,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "rescue_class": "ALL_GAUGE_ZERO_PROTECTED",
+      "sm_unbroken_one_loop_control": {
+        "g1_gut": {
+          "beta_b": 4.1,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g2": {
+          "beta_b": -3.1666666666666665,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        },
+        "g3": {
+          "beta_b": -7.0,
+          "input": 0.0,
+          "output": 0.0,
+          "pole": false,
+          "status": "ZERO_PROTECTED"
+        }
+      },
+      "source_error": null,
+      "source_status": "COMPLETE",
+      "zero_pattern": {
+        "all_gauge_zero": true,
+        "g1_zero": true,
+        "g2_zero": true,
+        "g3_zero": true
+      }
+    }
+  ],
+  "rescue_version": "w11-ir-eft-rescue-v1",
+  "scan": {
+    "case_count": 28692,
+    "complete_count": 27060,
+    "known_eft_rescue_count": 0,
+    "rescue_class_counts": {
+      "ALL_GAUGE_ZERO_PROTECTED": 1404,
+      "NONZERO_MULTIPLICATIVE_FLOW": 7776,
+      "NO_EW_STATE": 1632,
+      "PARTIAL_GAUGE_ZERO_PROTECTED": 17880
+    },
+    "status_counts": {
+      "COMPLETE": 27060,
+      "NOT_ELIGIBLE": 1632
+    },
+    "zero_or_partial_zero_count": 19284
+  },
+  "source_archive": "/workspace/scratch/d5cfd4e8cd8f/wyler-neighborhood-worktree/docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2.json.gz"
+}
