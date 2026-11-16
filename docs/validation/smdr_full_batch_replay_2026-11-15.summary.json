@@ -1,0 +1,33 @@
+{
+  "bridge_version": "smdr-bridge-v1",
+  "campaign_id": "smdr-full-batch-replay-2026-11-15",
+  "checkpoint": "/Users/giovanni/Desktop/physics-lab/docs/validation/smdr_full_batch_replay_2026-11-15.checkpoint.json",
+  "controls": {
+    "all_selected_cases_retained": true,
+    "archive_order_preserved_in_source_index": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_experimental_comparison": true,
+    "no_fitting": true,
+    "resume_supported": true,
+    "target_blind_generation": true
+  },
+  "elapsed_seconds": 19708.099455624997,
+  "execution_status": "COMPLETE",
+  "explicit_case_ids": [],
+  "interpretation": "SMDR per-state backend replay only; no candidate is promoted by this campaign.",
+  "limit": null,
+  "output": "/Users/giovanni/Desktop/physics-lab/docs/validation/smdr_full_batch_replay_2026-11-15.jsonl.gz",
+  "processed_count": 28692,
+  "replay_submitted_count": 27060,
+  "resume": false,
+  "selected_case_count": 28692,
+  "source_archive": "/Users/giovanni/Desktop/physics-lab/docs/validation/eichhorn_held_physical_matching_campaign_2026-11-15_v2.json.gz",
+  "source_archive_sha256": "f8d52bc26d75c86fa2f27bfeeecba8b4cb68a086a736004dbf38eb2ce395e9ca",
+  "source_case_count": 28692,
+  "status_counts": {
+    "BACKEND_FAILURE": 27060,
+    "NOT_ELIGIBLE": 1632
+  },
+  "workers": 8
+}

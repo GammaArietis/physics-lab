@@ -1,0 +1,22 @@
+{
+  "checkpoint_version": "smdr-full-batch-v1",
+  "controls": {
+    "all_negative_results_retained": true,
+    "archive_order_preserved": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_fitting": true,
+    "target_blind_generation": true
+  },
+  "expected_count": 28692,
+  "output_path": "/Users/giovanni/Desktop/physics-lab/docs/validation/smdr_full_batch_replay_2026-11-15.jsonl.gz",
+  "processed_count": 28692,
+  "source_archive_sha256": "f8d52bc26d75c86fa2f27bfeeecba8b4cb68a086a736004dbf38eb2ce395e9ca",
+  "status": "COMPLETE",
+  "status_counts": {
+    "BACKEND_FAILURE": 27060,
+    "NOT_ELIGIBLE": 1632
+  },
+  "updated_at_utc": "2026-11-15T21:28:26.084158+00:00",
+  "workers": 8
+}
