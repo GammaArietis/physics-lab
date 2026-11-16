@@ -121,15 +121,27 @@
       "installation_steps": "success",
       "logs_available_in_current_view": true,
       "diagnosis": "Full pytest suite completed successfully after correcting W17 to canonical MSbar threshold scales."
+    },
+    {
+      "run_number": 97,
+      "run_id": 43928892762,
+      "head_sha": "0f2def586dd9bfdfe894895dd304a1f7301913fd",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full pytest suite completed successfully after adding the W18 one-loop BSM self-energy backend."
     }
   ],
   "latest_green_run": {
-    "run_number": 96,
-    "run_id": 43919612671,
-    "head_sha": "8031dfbace8af6056445f603996bf91e64923d1b",
+    "run_number": 97,
+    "run_id": 43928892762,
+    "head_sha": "0f2def586dd9bfdfe894895dd304a1f7301913fd",
     "conclusion": "success"
   },
-  "interpretation": "The test harness excludes interpreter-generated __pycache__ and .pyc artifacts; full pytest is green on Python 3.11 and 3.12 through W17. W17 canonical threshold matching is recorded separately from the pure-SM SMDR projection, with no fitting, ranking or selection.",
+  "interpretation": "The test harness excludes interpreter-generated __pycache__ and .pyc artifacts; full pytest is green on Python 3.11 and 3.12 through W18. W18 records finite one-loop BSM two-point channels with explicit mass-parameter subtraction and no fitting, ranking or selection.",
   "workflow": ".github/workflows/ci.yml",
   "matrix": [
     "3.11",
