@@ -1,0 +1,26 @@
+{
+  "activation_id": "w17-gauge-yukawa-bsm-threshold-matching-2026-11-16",
+  "campaign_id": "w17-gauge-yukawa-bsm-threshold-matching-2026-11-16",
+  "source_precision_report": "docs/validation/gauge_yukawa_precision_pipeline_2026-11-16.json",
+  "backend": {
+    "name": "SMDR after explicit BSM threshold control",
+    "official_repository": "https://github.com/davidgrobertson/SMDR",
+    "reference_commit": "5c4dd92c918cadb7f91ad3795694f8398b5c287a",
+    "required_executable": "calc_all"
+  },
+  "threshold_control": {
+    "singlet_mass_grid_gev": [1000.0, 100000.0, 100000000.0],
+    "gauge_matching": "1/g_i^2 -> 1/g_i^2 + Delta_b_i/(16*pi^2)*log(mu^2/M^2)",
+    "portal_matching": "lambda_h -> lambda_h + lambda_hs^2/(16*pi^2)*log(m_S^2/mu^2)",
+    "top_yukawa_matching": "zero at this order for the registered action",
+    "order": "one-loop logarithmic MSbar control"
+  },
+  "authorization": {
+    "target_blind_generation": true,
+    "experimental_comparison": "NOT_AUTHORIZED",
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED",
+    "complete_bsm_self_energies": "NOT_CLAIMED"
+  }
+}

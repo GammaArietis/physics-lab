@@ -91,6 +91,15 @@ from physics_lab.search.gauge_yukawa_smdr_matching import (
     w15_state_to_smdr_input,
     write_smdr_matching_report,
 )
+from physics_lab.search.gauge_yukawa_bsm_threshold_matching import (
+    BSM_THRESHOLD_MATCHING_VERSION,
+    DEFAULT_SINGLET_MASS_GRID_GEV,
+    apply_one_loop_bsm_thresholds,
+    run_bsm_threshold_matching_campaign,
+    vectorlike_threshold_delta_b,
+    w15_threshold_events,
+    write_bsm_threshold_matching_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -157,4 +166,11 @@ __all__ = [
     "run_smdr_matching_campaign",
     "w15_state_to_smdr_input",
     "write_smdr_matching_report",
+    "BSM_THRESHOLD_MATCHING_VERSION",
+    "DEFAULT_SINGLET_MASS_GRID_GEV",
+    "apply_one_loop_bsm_thresholds",
+    "run_bsm_threshold_matching_campaign",
+    "vectorlike_threshold_delta_b",
+    "w15_threshold_events",
+    "write_bsm_threshold_matching_report",
 ]
