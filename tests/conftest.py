@@ -30,7 +30,11 @@ def _files(root: Path) -> dict[Path, tuple[int, int, str]]:
             hashlib.sha256(path.read_bytes()).hexdigest(),
         )
         for path in root.rglob("*")
-        # Python bytecode is an interpreter cache, not a phase artifact.  It\n        # may be atomically replaced by importlib while pytest is scanning the\n        # tree, which would make the isolation fixture race with the runtime.\n        if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc"\n    }
+        # Python bytecode is an interpreter cache, not a phase artifact.  It
+        # may be atomically replaced by importlib while pytest is scanning the
+        # tree, which would make the isolation fixture race with the runtime.
+        if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc"
+    }
 
 
 def _restore_artifacts(backup: Path, baseline: dict[Path, tuple[int, int, str]]) -> None:
