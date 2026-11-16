@@ -20,9 +20,61 @@
       "pytest_exit_code": 2,
       "installation_steps": "success",
       "logs_available_in_current_view": false
+    },
+    {
+      "run_number": 88,
+      "head_sha": "54ee455ea15b6d487dc4fcd8b9c7964009bf1d8b",
+      "conclusion": "failure",
+      "python_3_11": "failure",
+      "python_3_12": "cancelled",
+      "pytest_exit_code": 2,
+      "installation_steps": "success",
+      "logs_available_in_current_view": false
+    },
+    {
+      "run_number": 89,
+      "head_sha": "69d35d55f55a520a47e3679fd0f18f8969450ea1",
+      "conclusion": "failure",
+      "python_3_11": "failure",
+      "python_3_12": "cancelled",
+      "pytest_exit_code": 4,
+      "installation_steps": "success",
+      "logs_available_in_current_view": false,
+      "diagnosis": "The first fixture patch encoded literal newline markers in tests/conftest.py; corrected in the next commit."
+    },
+    {
+      "run_number": 90,
+      "head_sha": "d077db0450b83619daabc629c7a80fc388c4c0a7",
+      "conclusion": "failure",
+      "python_3_11": "cancelled",
+      "python_3_12": "failure",
+      "pytest_exit_code": 2,
+      "installation_steps": "success",
+      "logs_available_in_current_view": false,
+      "diagnosis": "The corrected fixture was accepted, but the uninstrumented run still exposed only pytest exit code 2."
+    },
+    {
+      "run_number": 91,
+      "head_sha": "dae7b51a6c488eea8734df7e41286be1103360bf",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full pytest suite completed successfully on both matrix versions."
     }
   ],
-  "interpretation": "CI is not green. Exit code 2 is recorded without inventing an assertion or collection root cause; targeted local tests pass, but the full suite still requires a completed remote run.",
+  "latest_green_run": {
+    "run_number": 91,
+    "run_id": 43824287509,
+    "head_sha": "dae7b51a6c488eea8734df7e41286be1103360bf",
+    "conclusion": "success"
+  },
+  "interpretation": "The CI failure was in the test harness: tests/conftest.py scanned interpreter-generated __pycache__ bytecode as if it were a physics artifact, allowing an importlib replacement race to raise FileNotFoundError. The harness now excludes __pycache__ and .pyc files; CI also sets PYTHONDONTWRITEBYTECODE=1 and publishes a bounded failure annotation. The full suite is green on Python 3.11 and 3.12.",
   "workflow": ".github/workflows/ci.yml",
-  "matrix": ["3.11", "3.12"]
+  "matrix": [
+    "3.11",
+    "3.12"
+  ]
 }
