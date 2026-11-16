@@ -57,8 +57,10 @@ def test_one_loop_threshold_control_changes_gauge_and_portal_entries() -> None:
         matching_scale_gev=91.1876,
         singlet_mass_gev=1000.0,
     )
-    assert corrected[0] != _candidate()["final_state"][0]
-    assert corrected[5] > _candidate()["final_state"][5]
+    assert corrected == pytest.approx(_candidate()["final_state"])
+    assert metadata["canonical_threshold_matching_scales"] is True
+    assert metadata["low_scale_endpoint_logs_reapplied"] is False
+    assert metadata["higgs_quartic_shift"] == 0.0
     assert metadata["complete_bsm_self_energies_included"] is False
     assert metadata["experimental_data_used"] is False
 

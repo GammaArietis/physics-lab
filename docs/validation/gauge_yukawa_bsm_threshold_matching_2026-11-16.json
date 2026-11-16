@@ -13,17 +13,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "cfa2546aa0d85d73751044866e176dba6abf3b5fc4be51a233fc39e18362b690",
+        "input_sha256": "b24042c04aa63572335281b1c50cee12207192dd661259a8e945177539722902",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240968.76759293,
-          "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.262964,
+          "alpha_sommerfeld_inverse": 240973.68734563,
+          "gf_gev_minus_two": 1.16610384,
+          "higgs_pole_gev": 24.262891,
           "top_pole_gev": 8.70058,
           "version": "1.3",
-          "w_pole_gev": 2.463148,
-          "z_pole_gev": 2.641274
+          "w_pole_gev": 2.462975,
+          "z_pole_gev": 2.641112
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-Q",
       "case_id": "precision-Q|singlet-mass=1000",
@@ -96,29 +96,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999156927800623,
-        0.020004730521674945,
-        0.030037735210905893,
+        0.00999914518786701,
+        0.020003320519732734,
+        0.030034553147774343,
         0.04996878955926411,
         0.01001786269217056,
-        0.004861674757946019,
+        0.004861645696840166,
         0.004908366165615363,
         0.0009788429406869356
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.1333333333333333,
-            "delta_inverse_g2": -0.023485848158705247,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.023485848158705247,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -126,12 +128,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.3522877223805788,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.3522877223805788,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -139,18 +142,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 1.3333333333333333,
-            "delta_inverse_g2": -0.23485848158705253,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.23485848158705253,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 2.906110585305351e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 1000.0,
@@ -188,17 +193,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "89943ad28073d26ebd05822f219745cad60ae78807da0df460206aa199abdfd6",
+        "input_sha256": "b24042c04aa63572335281b1c50cee12207192dd661259a8e945177539722902",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240968.76759279,
-          "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263103,
+          "alpha_sommerfeld_inverse": 240973.68734563,
+          "gf_gev_minus_two": 1.16610384,
+          "higgs_pole_gev": 24.262891,
           "top_pole_gev": 8.70058,
           "version": "1.3",
-          "w_pole_gev": 2.463148,
-          "z_pole_gev": 2.641274
+          "w_pole_gev": 2.462975,
+          "z_pole_gev": 2.641112
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-Q",
       "case_id": "precision-Q|singlet-mass=100000",
@@ -271,29 +276,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999156927800623,
-        0.020004730521674945,
-        0.030037735210905893,
+        0.00999914518786701,
+        0.020003320519732734,
+        0.030034553147774343,
         0.04996878955926411,
         0.01001786269217056,
-        0.0048617306412375464,
+        0.004861645696840166,
         0.004908366165615363,
         0.0009788429406869356
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.1333333333333333,
-            "delta_inverse_g2": -0.023485848158705247,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.023485848158705247,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -301,12 +308,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.3522877223805788,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.3522877223805788,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -314,18 +322,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 1.3333333333333333,
-            "delta_inverse_g2": -0.23485848158705253,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.23485848158705253,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 8.494439738058271e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000.0,
@@ -363,17 +373,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "820152401cefc459ab94ab3b4adc54827501461ee754155465858302a0865387",
+        "input_sha256": "b24042c04aa63572335281b1c50cee12207192dd661259a8e945177539722902",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240968.76759259,
-          "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263312,
+          "alpha_sommerfeld_inverse": 240973.68734563,
+          "gf_gev_minus_two": 1.16610384,
+          "higgs_pole_gev": 24.262891,
           "top_pole_gev": 8.70058,
           "version": "1.3",
-          "w_pole_gev": 2.463148,
-          "z_pole_gev": 2.641274
+          "w_pole_gev": 2.462975,
+          "z_pole_gev": 2.641112
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-Q",
       "case_id": "precision-Q|singlet-mass=1e+08",
@@ -446,29 +456,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999156927800623,
-        0.020004730521674945,
-        0.030037735210905893,
+        0.00999914518786701,
+        0.020003320519732734,
+        0.030034553147774343,
         0.04996878955926411,
         0.01001786269217056,
-        0.004861814466174837,
+        0.004861645696840166,
         0.004908366165615363,
         0.0009788429406869356
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.1333333333333333,
-            "delta_inverse_g2": -0.023485848158705247,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.023485848158705247,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -476,12 +488,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.3522877223805788,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.3522877223805788,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -489,18 +502,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 1.3333333333333333,
-            "delta_inverse_g2": -0.23485848158705253,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.23485848158705253,
-                "mass_gev": 100000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000000.0,
+                "matching_scale_gev": 100000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 1.687693346718765e-07,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000000.0,
@@ -538,17 +553,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "30203df4185ac41d270a1f0158bc90970385a5b87f67807f4f124591d6a395ba",
+        "input_sha256": "f39c334440304d340acb2a9b7360e47baad7089ed216f1eca93f271686c4b97d",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240971.05544543,
+          "alpha_sommerfeld_inverse": 240973.6885954,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.262965,
-          "top_pole_gev": 8.700582,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700581,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641323
+          "z_pole_gev": 2.641321
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-U",
       "case_id": "precision-U|singlet-mass=1000",
@@ -621,29 +636,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999068061608322,
+        0.009999005243126939,
         0.020005188216812173,
-        0.030037197954532833,
+        0.030036133693557204,
         0.04996879722487111,
         0.010014480319759694,
-        0.004861675216839113,
+        0.004861646155726022,
         0.0049083664250290805,
         0.0009788430625784475
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.0666666666666664,
-            "delta_inverse_g2": -0.12567327938714626,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -655,8 +672,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -664,18 +682,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.07854579961696644,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 2.906111309078737e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 1000.0,
@@ -713,17 +733,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "a1df216b24ff3dd7192a86618640b4a9e8e9d6e2291d65161561a9c0962a2a71",
+        "input_sha256": "f39c334440304d340acb2a9b7360e47baad7089ed216f1eca93f271686c4b97d",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240971.0554453,
+          "alpha_sommerfeld_inverse": 240973.6885954,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263104,
-          "top_pole_gev": 8.700582,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700581,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641323
+          "z_pole_gev": 2.641321
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-U",
       "case_id": "precision-U|singlet-mass=100000",
@@ -796,29 +816,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999068061608322,
+        0.009999005243126939,
         0.020005188216812173,
-        0.030037197954532833,
+        0.030036133693557204,
         0.04996879722487111,
         0.010014480319759694,
-        0.004861731100144559,
+        0.004861646155726022,
         0.0049083664250290805,
         0.0009788430625784475
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.0666666666666664,
-            "delta_inverse_g2": -0.12567327938714626,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -830,8 +852,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -839,18 +862,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.07854579961696644,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 8.49444185361762e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000.0,
@@ -888,17 +913,17 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "756eefcfb7d58e3d17ce472ffb2809165b51455e0d263e2e61a4ffd4bac7d531",
+        "input_sha256": "f39c334440304d340acb2a9b7360e47baad7089ed216f1eca93f271686c4b97d",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240971.0554451,
+          "alpha_sommerfeld_inverse": 240973.6885954,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263313,
-          "top_pole_gev": 8.700582,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700581,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641323
+          "z_pole_gev": 2.641321
         },
-        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030037, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030036, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
       "candidate_id": "precision-U",
       "case_id": "precision-U|singlet-mass=1e+08",
@@ -971,29 +996,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999068061608322,
+        0.009999005243126939,
         0.020005188216812173,
-        0.030037197954532833,
+        0.030036133693557204,
         0.04996879722487111,
         0.010014480319759694,
-        0.004861814925102726,
+        0.004861646155726022,
         0.0049083664250290805,
         0.0009788430625784475
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.0666666666666664,
-            "delta_inverse_g2": -0.12567327938714626,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1005,8 +1032,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1014,18 +1042,20 @@
           {
             "coupling": "g3",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.07854579961696644,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 1.687693767042594e-07,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000000.0,
@@ -1063,15 +1093,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "99ea41abac7e97041d9836423d0ecc7cc95643020e68e325e68cfacc6ce6f18f",
+        "input_sha256": "81f74697a57f6697c6a6ec6207f440332528d644b020e8872d96ddcf793511e3",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240972.03897225,
+          "alpha_sommerfeld_inverse": 240973.03607371,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.262964,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
-          "w_pole_gev": 2.463109,
-          "z_pole_gev": 2.641236
+          "w_pole_gev": 2.46309,
+          "z_pole_gev": 2.641217
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -1146,29 +1176,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999102660958735,
-        0.020004413076510637,
+        0.009999090765475296,
+        0.02000425432392367,
         0.030038768454579794,
         0.04996880505564005,
         0.01000325615576497,
-        0.0048616750314200985,
+        0.004861645970303963,
         0.004908367285366941,
         0.0009788431138441746
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.39999999999999997,
-            "delta_inverse_g2": -0.023797415064243946,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1176,12 +1208,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.039662358440406574,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1193,14 +1226,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 2.9061116134869084e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 1000.0,
@@ -1238,15 +1273,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "6bb2a9636aa36b1f7f0fd838acac332a67859297a6efdb88e732474a8f91ef13",
+        "input_sha256": "81f74697a57f6697c6a6ec6207f440332528d644b020e8872d96ddcf793511e3",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240972.03897212,
+          "alpha_sommerfeld_inverse": 240973.03607371,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263104,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
-          "w_pole_gev": 2.463109,
-          "z_pole_gev": 2.641236
+          "w_pole_gev": 2.46309,
+          "z_pole_gev": 2.641217
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -1321,29 +1356,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999102660958735,
-        0.020004413076510637,
+        0.009999090765475296,
+        0.02000425432392367,
         0.030038768454579794,
         0.04996880505564005,
         0.01000325615576497,
-        0.004861730914731397,
+        0.004861645970303963,
         0.004908367285366941,
         0.0009788431138441746
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.39999999999999997,
-            "delta_inverse_g2": -0.023797415064243946,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1351,12 +1388,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.039662358440406574,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1368,14 +1406,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 8.494442743389977e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000.0,
@@ -1413,15 +1453,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "fdf65dd03237b28fc86cdcd054d80febb19e41dbbfcaad1f7ccba7a87c95e7fa",
+        "input_sha256": "81f74697a57f6697c6a6ec6207f440332528d644b020e8872d96ddcf793511e3",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240972.03897191,
+          "alpha_sommerfeld_inverse": 240973.03607371,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263313,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
-          "w_pole_gev": 2.463109,
-          "z_pole_gev": 2.641236
+          "w_pole_gev": 2.46309,
+          "z_pole_gev": 2.641217
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -1496,29 +1536,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999102660958735,
-        0.020004413076510637,
+        0.009999090765475296,
+        0.02000425432392367,
         0.030038768454579794,
         0.04996880505564005,
         0.01000325615576497,
-        0.004861814739698346,
+        0.004861645970303963,
         0.004908367285366941,
         0.0009788431138441746
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.39999999999999997,
-            "delta_inverse_g2": -0.023797415064243946,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1526,12 +1568,13 @@
           {
             "coupling": "g2",
             "delta_b_total": 0.6666666666666666,
-            "delta_inverse_g2": -0.039662358440406574,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1543,14 +1586,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 1.6876939438244577e-07,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000000.0,
@@ -1588,15 +1633,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "9d7b315dfae1bfc3554f4c94e810a1b5fc134258b0706845f1a54e5d9c47cec2",
+        "input_sha256": "f1b1c9c4a2f4f3ce52805223d618bb3dbd7f556a37d744893201d93f4e5568eb",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240973.01710449,
+          "alpha_sommerfeld_inverse": 240973.52550831,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.262965,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641322
+          "z_pole_gev": 2.641321
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -1671,29 +1716,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999021262564188,
+        0.009999009133765521,
         0.020005188216799516,
         0.03003876845457645,
         0.049968805540019035,
         0.010000122752709367,
-        0.004861675215771584,
+        0.004861646154651702,
         0.0049083675255813825,
         0.0009788431769530393
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.7999999999999999,
-            "delta_inverse_g2": -0.024264765422551977,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.7999999999999999,
-                "delta_inverse_g2": -0.024264765422551977,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1705,8 +1752,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1718,14 +1766,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 2.9061119882178696e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 1000.0,
@@ -1763,15 +1813,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "d6d3b909eec02bf051a8177125bb94d6ae6c90ab0614f793a21c45afdea37a4a",
+        "input_sha256": "f1b1c9c4a2f4f3ce52805223d618bb3dbd7f556a37d744893201d93f4e5568eb",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240973.01710435,
+          "alpha_sommerfeld_inverse": 240973.52550831,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263104,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641322
+          "z_pole_gev": 2.641321
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -1846,29 +1896,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999021262564188,
+        0.009999009133765521,
         0.020005188216799516,
         0.03003876845457645,
         0.049968805540019035,
         0.010000122752709367,
-        0.004861731099090089,
+        0.004861646154651702,
         0.0049083675255813825,
         0.0009788431769530393
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.7999999999999999,
-            "delta_inverse_g2": -0.024264765422551977,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.7999999999999999,
-                "delta_inverse_g2": -0.024264765422551977,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1880,8 +1932,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -1893,14 +1946,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 8.494443838712909e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000.0,
@@ -1938,15 +1993,15 @@
     {
       "backend": {
         "bridge_version": "smdr-bridge-v1",
-        "input_sha256": "9a91c75ffd821a8bc0d9f4d843ad43616472e9c1fcdb0c63e1a3859ab0106075",
+        "input_sha256": "f1b1c9c4a2f4f3ce52805223d618bb3dbd7f556a37d744893201d93f4e5568eb",
         "parsed": {
-          "alpha_sommerfeld_inverse": 240973.01710415,
+          "alpha_sommerfeld_inverse": 240973.52550831,
           "gf_gev_minus_two": 1.16610385,
-          "higgs_pole_gev": 24.263313,
+          "higgs_pole_gev": 24.262892,
           "top_pole_gev": 8.700583,
           "version": "1.3",
           "w_pole_gev": 2.463205,
-          "z_pole_gev": 2.641322
+          "z_pole_gev": 2.641321
         },
         "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n"
       },
@@ -2021,29 +2076,31 @@
         "yb_control_value": 0.0
       },
       "matched_state": [
-        0.009999021262564188,
+        0.009999009133765521,
         0.020005188216799516,
         0.03003876845457645,
         0.049968805540019035,
         0.010000122752709367,
-        0.0048618149240678464,
+        0.004861646154651702,
         0.0049083675255813825,
         0.0009788431769530393
       ],
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 0.7999999999999999,
-            "delta_inverse_g2": -0.024264765422551977,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.7999999999999999,
-                "delta_inverse_g2": -0.024264765422551977,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -2055,8 +2112,9 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
@@ -2068,14 +2126,16 @@
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000.0,
+                "matching_scale_gev": 1000.0
               }
             ],
             "transformation": "INVERSE_SQUARED_MATCHED"
           }
         ],
-        "higgs_quartic_shift": 1.6876941614455466e-07,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000000.0,
@@ -2116,29 +2176,33 @@
       "error": "SMDR timed out after 10s",
       "error_type": "SMDRBackendError",
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.5999999999999996,
-            "delta_inverse_g2": -0.1612915102571275,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.011820815805737296,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2146,22 +2210,25 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.6666666666666665,
-            "delta_inverse_g2": -0.21697459552646606,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.17731223708605948,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2169,28 +2236,32 @@
           {
             "coupling": "g3",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.19675395767433942,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.11820815805737299,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
           }
         ],
-        "higgs_quartic_shift": 2.9193419489709802e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 1000.0,
@@ -2233,29 +2304,33 @@
       "error": "SMDR timed out after 10s",
       "error_type": "SMDRBackendError",
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.5999999999999996,
-            "delta_inverse_g2": -0.1612915102571275,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.011820815805737296,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2263,22 +2338,25 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.6666666666666665,
-            "delta_inverse_g2": -0.21697459552646606,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.17731223708605948,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2286,28 +2364,32 @@
           {
             "coupling": "g3",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.19675395767433942,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.11820815805737299,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
           }
         ],
-        "higgs_quartic_shift": 8.533114460857305e-08,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000.0,
@@ -2350,29 +2432,33 @@
       "error": "SMDR timed out after 10s",
       "error_type": "SMDRBackendError",
       "matching": {
+        "canonical_threshold_matching_scales": true,
         "complete_bsm_self_energies_included": false,
         "experimental_data_used": false,
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "gauge_matching": [
           {
             "coupling": "g1",
             "delta_b_total": 1.5999999999999996,
-            "delta_inverse_g2": -0.1612915102571275,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 1.0666666666666664,
-                "delta_inverse_g2": -0.12567327938714626,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 0.1333333333333333,
-                "delta_inverse_g2": -0.011820815805737296,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.39999999999999997,
-                "delta_inverse_g2": -0.023797415064243946,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2380,22 +2466,25 @@
           {
             "coupling": "g2",
             "delta_b_total": 2.6666666666666665,
-            "delta_inverse_g2": -0.21697459552646606,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 2.0,
-                "delta_inverse_g2": -0.17731223708605948,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.039662358440406574,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
@@ -2403,28 +2492,32 @@
           {
             "coupling": "g3",
             "delta_b_total": 2.0,
-            "delta_inverse_g2": -0.19675395767433942,
+            "delta_inverse_g2": 0.0,
             "event_terms": [
               {
                 "delta_b": 0.6666666666666666,
-                "delta_inverse_g2": -0.07854579961696644,
-                "mass_gev": 1000000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 1000000.0,
+                "matching_scale_gev": 1000000.0
               },
               {
                 "delta_b": 1.3333333333333333,
-                "delta_inverse_g2": -0.11820815805737299,
-                "mass_gev": 100000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 100000.0,
+                "matching_scale_gev": 100000.0
               },
               {
                 "delta_b": 0.0,
-                "delta_inverse_g2": -0.0,
-                "mass_gev": 10000.0
+                "delta_inverse_g2": 0.0,
+                "mass_gev": 10000.0,
+                "matching_scale_gev": 10000.0
               }
             ],
             "transformation": "ZERO_PROTECTED"
           }
         ],
-        "higgs_quartic_shift": 1.695377322868679e-07,
+        "higgs_quartic_shift": 0.0,
+        "low_scale_endpoint_logs_reapplied": false,
         "matching_scale_gev": 91.1876,
         "portal_convention": "V contains lambda_h*(H^dagger H)^2 + lambda_hs*S^2*H^dagger H",
         "singlet_mass_gev": 100000000.0,

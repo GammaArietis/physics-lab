@@ -20,11 +20,11 @@ multiplets. W15 already contains the piecewise running across the vector-like
 thresholds. W17 adds the corresponding one-loop logarithmic matching control
 and scans a declared singlet-mass grid.
 
-## Matching equations
+## Matching equations and consistency
 
 For each vector-like threshold, the heavy-field contribution \(\Delta b_i\)
-is derived from the registered representation. At the declared matching scale
-\(\mu\), the gauge projection uses
+is derived from the registered representation. The generic decoupling
+relation is
 
 \[
 \frac{1}{g_i^2}\longrightarrow
@@ -32,7 +32,7 @@ is derived from the registered representation. At the declared matching scale
 \log\frac{\mu^2}{M_\Psi^2}.
 \]
 
-For the unbroken \(Z_2\) singlet and the W15 portal convention, the
+For the unbroken \(Z_2\) singlet and the W15 portal convention, the generic
 one-loop effective-potential threshold control is
 
 \[
@@ -45,6 +45,14 @@ At this order the registered vector-like Yukawa \(y_S\) has no direct Higgs
 or top-Yukawa matching term, because it couples the singlet to \(\Psi\), not
 the Higgs doublet to the SM top sector. That zero is recorded as a structural
 control, not inserted to improve agreement.
+
+The actual campaign evaluates these logarithms at their canonical matching
+scales, \(\mu=M_\Psi\) and \(\mu=m_S\). They therefore vanish in this
+specific \(\overline{\mathrm{MS}}\) convention. This is intentional: W15
+already performs piecewise running across the vector-like thresholds, so
+reapplying the same logarithms at the IR endpoint would double-count the
+running. The W17 result records the zero threshold shift rather than inventing
+a finite constant.
 
 ## Reproduced campaign
 
@@ -63,12 +71,12 @@ for 15 cases in source order:
   because SMDR does not complete on exactly vanishing gauge inputs within the
   declared 10-second per-case timeout.
 
-The corrected projections remain far from the Standard Model regime. The
-successful cases give approximately \(M_W=2.463\) GeV, \(M_Z=2.641\) GeV,
-\(M_t=8.701\) GeV and \(1/\alpha\simeq 240,969\text{--}240,973\). The portal
-shift is only \(2.9\times10^{-8}\) to \(1.7\times10^{-7}\) over the declared
-mass grid. This is a useful negative result: the one-loop threshold layer does
-not rescue the weak-coupling W15 IR trajectories.
+The canonical threshold shifts are zero for all 15 cases. The successful
+projections reproduce the W16 diagnostic values, approximately \(M_W=2.463\)
+GeV, \(M_Z=2.641\) GeV, \(M_t=8.701\) GeV and
+\(1/\alpha\simeq 240,973\). This is a useful negative result: the correctly
+matched one-loop threshold layer does not rescue the weak-coupling W15 IR
+trajectories.
 
 ## Boundary of the claim
 

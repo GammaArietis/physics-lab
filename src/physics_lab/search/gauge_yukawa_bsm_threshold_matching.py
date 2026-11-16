@@ -107,10 +107,17 @@ def apply_one_loop_bsm_thresholds(
     matching_scale_gev: float,
     singlet_mass_gev: float,
 ) -> tuple[list[float], dict[str, Any]]:
-    """Apply explicit one-loop logarithmic gauge and portal thresholds.
+    r"""Apply explicit one-loop logarithmic gauge and portal thresholds.
 
-    The state is the W15 IR state.  Gauge matching is performed in inverse
-    squared coupling form,
+    The state is the W15 EFT IR state.  Canonical \(\overline{MS}\) matching
+    is performed at each heavy mass, so the one-loop logarithm is evaluated
+    at ``mu=M`` for each vector-like field.  For the unbroken singlet portal
+    the analogous canonical scale is ``mu=m_S``.  Both logarithms therefore
+    vanish in this specific scheme; recording that zero is important because
+    applying the same logarithms again at the IR endpoint would double-count
+    the W15 piecewise running.
+
+    The generic decoupling relation is
 
     ``1/g_i^2 -> 1/g_i^2 + Δb_i/(16π²) log(μ²/M²)``.
 
@@ -133,16 +140,17 @@ def apply_one_loop_bsm_thresholds(
     gauge_logs: list[dict[str, Any]] = []
     for index, key in enumerate(("g1", "g2", "g3")):
         coupling = values[index]
-        # The vector-like event logs are accumulated separately because each
-        # representation can carry a distinct W15 threshold.
+        # The vector-like event logs are evaluated at each event's canonical
+        # matching scale M.  W15 already contains the running below M, so
+        # evaluating these logs at the IR endpoint would double-count it.
         delta_inverse = 0.0
         event_terms = []
         for event in events:
             mass = float(event["mass_gev"])
             contribution = MULTIPLETS[str(event["multiplet"])].gauge_b_delta(int(event["multiplicity_decoupled"]))[key]
-            term = float(contribution) / LOOP_FACTOR * math.log((matching_scale / mass) ** 2)
+            term = float(contribution) / LOOP_FACTOR * math.log((mass / mass) ** 2)
             delta_inverse += term
-            event_terms.append({"mass_gev": mass, "delta_b": float(contribution), "delta_inverse_g2": term})
+            event_terms.append({"mass_gev": mass, "matching_scale_gev": mass, "delta_b": float(contribution), "delta_inverse_g2": term})
         if abs(coupling) <= 1.0e-14:
             values[index] = 0.0
             transformed = "ZERO_PROTECTED"
@@ -162,11 +170,13 @@ def apply_one_loop_bsm_thresholds(
             }
         )
     portal = values[7]
-    portal_shift = portal**2 / LOOP_FACTOR * math.log((singlet_mass / matching_scale) ** 2)
+    portal_shift = portal**2 / LOOP_FACTOR * math.log((singlet_mass / singlet_mass) ** 2)
     values[5] += portal_shift
     metadata = {
         "matching_scale_gev": matching_scale,
         "singlet_mass_gev": singlet_mass,
+        "canonical_threshold_matching_scales": True,
+        "low_scale_endpoint_logs_reapplied": False,
         "vectorlike_threshold_events": events,
         "vectorlike_delta_b": delta_b,
         "gauge_matching": gauge_logs,
@@ -174,7 +184,7 @@ def apply_one_loop_bsm_thresholds(
         "higgs_quartic_shift": portal_shift,
         "top_yukawa_shift": 0.0,
         "top_yukawa_shift_reason": "zero at this order for the registered Z2 singlet plus Psi-only Yukawa action",
-        "finite_matching_order": "one-loop logarithmic control",
+        "finite_matching_order": "one-loop logarithmic control at canonical MSbar thresholds",
         "complete_bsm_self_energies_included": False,
         "experimental_data_used": False,
     }
