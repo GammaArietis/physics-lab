@@ -71,6 +71,17 @@ from physics_lab.search.gauge_yukawa_threshold_eft import (
     thresholded_gauge_coefficients,
     write_threshold_report,
 )
+from physics_lab.search.gauge_yukawa_precision_pipeline import (
+    PRECISION_PIPELINE_VERSION,
+    critical_exponents,
+    precision_beta_state,
+    run_precision_campaign,
+    run_precision_candidate,
+    search_fixed_points,
+    two_loop_gauge_matrix,
+    vacuum_stability,
+    write_precision_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -121,4 +132,13 @@ __all__ = [
     "threshold_map",
     "thresholded_gauge_coefficients",
     "write_threshold_report",
+    "PRECISION_PIPELINE_VERSION",
+    "critical_exponents",
+    "precision_beta_state",
+    "run_precision_campaign",
+    "run_precision_candidate",
+    "search_fixed_points",
+    "two_loop_gauge_matrix",
+    "vacuum_stability",
+    "write_precision_report",
 ]

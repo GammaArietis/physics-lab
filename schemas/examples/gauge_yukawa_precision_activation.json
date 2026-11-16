@@ -1,0 +1,56 @@
+{
+  "activation_id": "w15-gauge-yukawa-precision-control",
+  "campaign_id": "w15-gauge-yukawa-precision-control-2026-11-16",
+  "uv_scale_gev": 10000000000000000.0,
+  "ir_scale_gev": 91.1876,
+  "scope": {
+    "gauge_group": "SU(3)c x SU(2)L x U(1)Y",
+    "model": "SM + real singlet S + anomaly-free vector-like Dirac multiplets",
+    "generation": "target-blind",
+    "gauge_beta_order": "two-loop SM plus representation-derived vector-like gauge control",
+    "matter_beta_order": "reduced one-loop Yukawa-scalar control",
+    "pole_matching": "SMDR deferred to external backend"
+  },
+  "fixed_point_seeds": [
+    [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    [0.005, 0.005, 0.005, 0.005, 0.005, 0.005, 0.005, 0.005],
+    [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+  ],
+  "candidates": [
+    {
+      "candidate_id": "precision-Q",
+      "multiplicities": {"Q": 1},
+      "yukawa_multiplet": "Q",
+      "thresholds_gev": {"Q": 100000000.0},
+      "initial_state": [0.01, 0.02, 0.03, 0.05, 0.01, 0.005, 0.005, 0.001]
+    },
+    {
+      "candidate_id": "precision-U",
+      "multiplicities": {"U": 1},
+      "yukawa_multiplet": "U",
+      "thresholds_gev": {"U": 1000000.0},
+      "initial_state": [0.01, 0.02, 0.03, 0.05, 0.01, 0.005, 0.005, 0.001]
+    },
+    {
+      "candidate_id": "precision-L",
+      "multiplicities": {"L": 1},
+      "yukawa_multiplet": "L",
+      "thresholds_gev": {"L": 10000.0},
+      "initial_state": [0.01, 0.02, 0.03, 0.05, 0.01, 0.005, 0.005, 0.001]
+    },
+    {
+      "candidate_id": "precision-E",
+      "multiplicities": {"E": 1},
+      "yukawa_multiplet": "E",
+      "thresholds_gev": {"E": 1000.0},
+      "initial_state": [0.01, 0.02, 0.03, 0.05, 0.01, 0.005, 0.005, 0.001]
+    },
+    {
+      "candidate_id": "precision-zero-gauge-control",
+      "multiplicities": {"Q": 1, "U": 1, "L": 1},
+      "yukawa_multiplet": "Q",
+      "thresholds_gev": {"Q": 100000.0, "U": 1000000.0, "L": 10000.0},
+      "initial_state": [0.0, 0.0, 0.0, 0.0, 0.01, 0.005, 0.005, 0.001]
+    }
+  ]
+}
