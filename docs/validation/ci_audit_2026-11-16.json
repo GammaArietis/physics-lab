@@ -97,15 +97,39 @@
       "installation_steps": "success",
       "logs_available_in_current_view": true,
       "diagnosis": "Full pytest suite completed successfully after adding the W16 target-blind SMDR matching bridge."
+    },
+    {
+      "run_number": 95,
+      "run_id": 43918043334,
+      "head_sha": "570f4bf13a45a7de04c0b7c44dbe6c89799a4de4",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full pytest suite completed successfully after the initial W17 BSM threshold control."
+    },
+    {
+      "run_number": 96,
+      "run_id": 43919612671,
+      "head_sha": "8031dfbace8af6056445f603996bf91e64923d1b",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full pytest suite completed successfully after correcting W17 to canonical MSbar threshold scales."
     }
   ],
   "latest_green_run": {
-    "run_number": 94,
-    "run_id": 43909173242,
-    "head_sha": "ca611b3680b8aebc3b73397d5c0e42930c3a32e5",
+    "run_number": 96,
+    "run_id": 43919612671,
+    "head_sha": "8031dfbace8af6056445f603996bf91e64923d1b",
     "conclusion": "success"
   },
-  "interpretation": "The test harness excludes interpreter-generated __pycache__ and .pyc artifacts; full pytest is green on Python 3.11 and 3.12 through W16. GitHub annotations for run #94 were checked as CI infrastructure notices only; no test failure was reported.",
+  "interpretation": "The test harness excludes interpreter-generated __pycache__ and .pyc artifacts; full pytest is green on Python 3.11 and 3.12 through W17. W17 canonical threshold matching is recorded separately from the pure-SM SMDR projection, with no fitting, ranking or selection.",
   "workflow": ".github/workflows/ci.yml",
   "matrix": [
     "3.11",
