@@ -63,15 +63,26 @@
       "installation_steps": "success",
       "logs_available_in_current_view": true,
       "diagnosis": "Full pytest suite completed successfully on both matrix versions."
+    },
+    {
+      "run_number": 92,
+      "head_sha": "2e9fb8b981dbfad2656d54deacbb8bd7961daa3a",
+      "conclusion": "success",
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "pytest_exit_code": 0,
+      "installation_steps": "success",
+      "logs_available_in_current_view": true,
+      "diagnosis": "Full suite completed successfully after adding the threshold-resolved IR/EFT campaign."
     }
   ],
   "latest_green_run": {
-    "run_number": 91,
-    "run_id": 43824287509,
-    "head_sha": "dae7b51a6c488eea8734df7e41286be1103360bf",
+    "run_number": 92,
+    "run_id": 43832753269,
+    "head_sha": "2e9fb8b981dbfad2656d54deacbb8bd7961daa3a",
     "conclusion": "success"
   },
-  "interpretation": "The CI failure was in the test harness: tests/conftest.py scanned interpreter-generated __pycache__ bytecode as if it were a physics artifact, allowing an importlib replacement race to raise FileNotFoundError. The harness now excludes __pycache__ and .pyc files; CI also sets PYTHONDONTWRITEBYTECODE=1 and publishes a bounded failure annotation. The full suite is green on Python 3.11 and 3.12.",
+  "interpretation": "The CI failure was in the test harness: tests/conftest.py scanned interpreter-generated __pycache__ bytecode as if it were a physics artifact, allowing an importlib replacement race to raise FileNotFoundError. The harness now excludes __pycache__ and .pyc files; CI also sets PYTHONDONTWRITEBYTECODE=1 and publishes a bounded failure annotation. Full pytest is green on Python 3.11 and 3.12, including W14.",
   "workflow": ".github/workflows/ci.yml",
   "matrix": [
     "3.11",
