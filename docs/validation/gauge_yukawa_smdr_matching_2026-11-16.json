@@ -1,0 +1,521 @@
+{
+  "backend": {
+    "calc_all_sha256": "7c02dc81855688911654fe49c743c4e526d2f9afa4a204c04b88a20c866e554f",
+    "known_reference_commit": "5c4dd92c918cadb7f91ad3795694f8398b5c287a",
+    "name": "SMDR",
+    "official_repository": "https://github.com/davidgrobertson/SMDR",
+    "resolved_commit": "5c4dd92c918cadb7f91ad3795694f8398b5c287a",
+    "scale_gev": 91.1876,
+    "timeout_seconds": 15,
+    "vev_gev": 246.21965
+  },
+  "campaign_id": "w16-gauge-yukawa-smdr-matching-2026-11-16",
+  "candidate_results": [
+    {
+      "backend": {
+        "bridge_version": "smdr-bridge-v1",
+        "input_sha256": "732b07107ff43c7e89a7e3deb0f1c13882b7911bd25bdc8e99f031e49942584b",
+        "parsed": {
+          "alpha_sommerfeld_inverse": 240973.68734563,
+          "gf_gev_minus_two": 1.16610384,
+          "higgs_pole_gev": 24.262891,
+          "top_pole_gev": 8.70058,
+          "version": "1.3",
+          "w_pole_gev": 2.462975,
+          "z_pole_gev": 2.641112
+        },
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030034, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020003, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n",
+        "target_blind_input": true
+      },
+      "candidate_id": "precision-Q",
+      "mapping": {
+        "delta_alpha_hadronic_control_value": 0.0,
+        "experimental_data_used": false,
+        "external_bsm_sector": [
+          "yS",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "external_bsm_sector_values": {
+          "lambda_hs": 0.0009788429406869356,
+          "lambda_s": 0.004908366165615363,
+          "yS": 0.01001786269217056
+        },
+        "g1_to_smdr_hypercharge": "gp = sqrt(3/5) * g1",
+        "lambda_h_to_smdr_lambda4": "lambda_4 = lambda_h / 2",
+        "new_sector_omitted_from_pure_smdr": true,
+        "pole_targets_supplied": false,
+        "scale_gev": 91.1876,
+        "smdr_bridge_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yb",
+          "lambda_4"
+        ],
+        "thresholds": {
+          "finite_bsm_threshold_corrections_in_smdr": false,
+          "thresholds_applied_before_smdr": true,
+          "w15_segments": [
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 1,
+                "U": 0
+              },
+              "high_scale_gev": 1e+16,
+              "low_scale_gev": 100000000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 100000000.0,
+              "low_scale_gev": 91.1876
+            }
+          ],
+          "w15_segments_count": 2
+        },
+        "vev_gev": 246.21965,
+        "w15_state_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yS",
+          "lambda_h",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "yb_control_value": 0.0
+      },
+      "pole_comparison": "NOT_AUTHORIZED",
+      "status": "SMDR_COMPLETE",
+      "target_blind_input": true,
+      "w15_status": "COMPLETE"
+    },
+    {
+      "backend": {
+        "bridge_version": "smdr-bridge-v1",
+        "input_sha256": "f39c334440304d340acb2a9b7360e47baad7089ed216f1eca93f271686c4b97d",
+        "parsed": {
+          "alpha_sommerfeld_inverse": 240973.6885954,
+          "gf_gev_minus_two": 1.16610385,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700581,
+          "version": "1.3",
+          "w_pole_gev": 2.463205,
+          "z_pole_gev": 2.641321
+        },
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030035, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n",
+        "target_blind_input": true
+      },
+      "candidate_id": "precision-U",
+      "mapping": {
+        "delta_alpha_hadronic_control_value": 0.0,
+        "experimental_data_used": false,
+        "external_bsm_sector": [
+          "yS",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "external_bsm_sector_values": {
+          "lambda_hs": 0.0009788430625784475,
+          "lambda_s": 0.0049083664250290805,
+          "yS": 0.010014480319759694
+        },
+        "g1_to_smdr_hypercharge": "gp = sqrt(3/5) * g1",
+        "lambda_h_to_smdr_lambda4": "lambda_4 = lambda_h / 2",
+        "new_sector_omitted_from_pure_smdr": true,
+        "pole_targets_supplied": false,
+        "scale_gev": 91.1876,
+        "smdr_bridge_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yb",
+          "lambda_4"
+        ],
+        "thresholds": {
+          "finite_bsm_threshold_corrections_in_smdr": false,
+          "thresholds_applied_before_smdr": true,
+          "w15_segments": [
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 1
+              },
+              "high_scale_gev": 1e+16,
+              "low_scale_gev": 1000000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 1000000.0,
+              "low_scale_gev": 91.1876
+            }
+          ],
+          "w15_segments_count": 2
+        },
+        "vev_gev": 246.21965,
+        "w15_state_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yS",
+          "lambda_h",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "yb_control_value": 0.0
+      },
+      "pole_comparison": "NOT_AUTHORIZED",
+      "status": "SMDR_COMPLETE",
+      "target_blind_input": true,
+      "w15_status": "COMPLETE"
+    },
+    {
+      "backend": {
+        "bridge_version": "smdr-bridge-v1",
+        "input_sha256": "7ac88e86d33ca72db84086736afe7c805a66b791d4e907586e3692f42f93ae8e",
+        "parsed": {
+          "alpha_sommerfeld_inverse": 240973.03607371,
+          "gf_gev_minus_two": 1.16610385,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700583,
+          "version": "1.3",
+          "w_pole_gev": 2.46309,
+          "z_pole_gev": 2.641217
+        },
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020004, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n",
+        "target_blind_input": true
+      },
+      "candidate_id": "precision-L",
+      "mapping": {
+        "delta_alpha_hadronic_control_value": 0.0,
+        "experimental_data_used": false,
+        "external_bsm_sector": [
+          "yS",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "external_bsm_sector_values": {
+          "lambda_hs": 0.0009788431138441746,
+          "lambda_s": 0.004908367285366941,
+          "yS": 0.01000325615576497
+        },
+        "g1_to_smdr_hypercharge": "gp = sqrt(3/5) * g1",
+        "lambda_h_to_smdr_lambda4": "lambda_4 = lambda_h / 2",
+        "new_sector_omitted_from_pure_smdr": true,
+        "pole_targets_supplied": false,
+        "scale_gev": 91.1876,
+        "smdr_bridge_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yb",
+          "lambda_4"
+        ],
+        "thresholds": {
+          "finite_bsm_threshold_corrections_in_smdr": false,
+          "thresholds_applied_before_smdr": true,
+          "w15_segments": [
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 1,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 1e+16,
+              "low_scale_gev": 10000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 10000.0,
+              "low_scale_gev": 91.1876
+            }
+          ],
+          "w15_segments_count": 2
+        },
+        "vev_gev": 246.21965,
+        "w15_state_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yS",
+          "lambda_h",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "yb_control_value": 0.0
+      },
+      "pole_comparison": "NOT_AUTHORIZED",
+      "status": "SMDR_COMPLETE",
+      "target_blind_input": true,
+      "w15_status": "COMPLETE"
+    },
+    {
+      "backend": {
+        "bridge_version": "smdr-bridge-v1",
+        "input_sha256": "f1b1c9c4a2f4f3ce52805223d618bb3dbd7f556a37d744893201d93f4e5568eb",
+        "parsed": {
+          "alpha_sommerfeld_inverse": 240973.52550831,
+          "gf_gev_minus_two": 1.16610385,
+          "higgs_pole_gev": 24.262892,
+          "top_pole_gev": 8.700583,
+          "version": "1.3",
+          "w_pole_gev": 2.463205,
+          "z_pole_gev": 2.641321
+        },
+        "stderr": "WARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\nWARNING: the input Higgs self coupling, lambda = 0.004864, seems too low.\nWARNING: the input QCD gauge coupling, g3 = 0.030038, seems too low.\nWARNING: the input SU(2)_L gauge coupling, g = 0.020005, seems too low.\nWARNING: the input U(1)_Y gauge coupling, gp = 0.007745, seems too low.\nWARNING: the input top-quark Yukawa coupling, yt = 0.049969, seems too low.\n",
+        "target_blind_input": true
+      },
+      "candidate_id": "precision-E",
+      "mapping": {
+        "delta_alpha_hadronic_control_value": 0.0,
+        "experimental_data_used": false,
+        "external_bsm_sector": [
+          "yS",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "external_bsm_sector_values": {
+          "lambda_hs": 0.0009788431769530393,
+          "lambda_s": 0.0049083675255813825,
+          "yS": 0.010000122752709367
+        },
+        "g1_to_smdr_hypercharge": "gp = sqrt(3/5) * g1",
+        "lambda_h_to_smdr_lambda4": "lambda_4 = lambda_h / 2",
+        "new_sector_omitted_from_pure_smdr": true,
+        "pole_targets_supplied": false,
+        "scale_gev": 91.1876,
+        "smdr_bridge_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yb",
+          "lambda_4"
+        ],
+        "thresholds": {
+          "finite_bsm_threshold_corrections_in_smdr": false,
+          "thresholds_applied_before_smdr": true,
+          "w15_segments": [
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 1,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 1e+16,
+              "low_scale_gev": 1000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 1000.0,
+              "low_scale_gev": 91.1876
+            }
+          ],
+          "w15_segments_count": 2
+        },
+        "vev_gev": 246.21965,
+        "w15_state_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yS",
+          "lambda_h",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "yb_control_value": 0.0
+      },
+      "pole_comparison": "NOT_AUTHORIZED",
+      "status": "SMDR_COMPLETE",
+      "target_blind_input": true,
+      "w15_status": "COMPLETE"
+    },
+    {
+      "candidate_id": "precision-zero-gauge-control",
+      "error": "SMDR timed out after 15s",
+      "error_type": "SMDRBackendError",
+      "mapping": {
+        "delta_alpha_hadronic_control_value": 0.0,
+        "experimental_data_used": false,
+        "external_bsm_sector": [
+          "yS",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "external_bsm_sector_values": {
+          "lambda_hs": 0.0009810687194758457,
+          "lambda_s": 0.004908366684628431,
+          "yS": 0.009999385889811961
+        },
+        "g1_to_smdr_hypercharge": "gp = sqrt(3/5) * g1",
+        "lambda_h_to_smdr_lambda4": "lambda_4 = lambda_h / 2",
+        "new_sector_omitted_from_pure_smdr": true,
+        "pole_targets_supplied": false,
+        "scale_gev": 91.1876,
+        "smdr_bridge_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yb",
+          "lambda_4"
+        ],
+        "thresholds": {
+          "finite_bsm_threshold_corrections_in_smdr": false,
+          "thresholds_applied_before_smdr": true,
+          "w15_segments": [
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 1,
+                "Q": 1,
+                "U": 1
+              },
+              "high_scale_gev": 1e+16,
+              "low_scale_gev": 1000000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 1,
+                "Q": 1,
+                "U": 0
+              },
+              "high_scale_gev": 1000000.0,
+              "low_scale_gev": 100000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 1,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 100000.0,
+              "low_scale_gev": 10000.0
+            },
+            {
+              "active_multiplicities": {
+                "D": 0,
+                "E": 0,
+                "L": 0,
+                "Q": 0,
+                "U": 0
+              },
+              "high_scale_gev": 10000.0,
+              "low_scale_gev": 91.1876
+            }
+          ],
+          "w15_segments_count": 4
+        },
+        "vev_gev": 246.21965,
+        "w15_state_order": [
+          "g1",
+          "g2",
+          "g3",
+          "yt",
+          "yS",
+          "lambda_h",
+          "lambda_s",
+          "lambda_hs"
+        ],
+        "yb_control_value": 0.0
+      },
+      "pole_comparison": "NOT_AUTHORIZED",
+      "status": "BACKEND_FAILURE",
+      "target_blind_input": true,
+      "w15_status": "ZERO_PROTECTED"
+    }
+  ],
+  "controls": {
+    "all_selected_candidates_retained": true,
+    "candidate_order_preserved": true,
+    "new_bsm_sector_omitted_from_pure_smdr": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_experimental_comparison": true,
+    "no_fitting": true,
+    "pole_observables_generated": true,
+    "target_blind_generation": true,
+    "thresholds_applied_before_smdr": true
+  },
+  "execution_status": "COMPLETE",
+  "interpretation": "W16 target-blind projection of W15 IR states through the pure-SM SMDR backend. Pole outputs do not constitute a full BSM matching result because finite BSM threshold corrections and new-sector contributions are outside this SMDR call.",
+  "matching_version": "gauge-yukawa-smdr-matching-v1",
+  "scan": {
+    "selected_case_count": 5,
+    "status_counts": {
+      "BACKEND_FAILURE": 1,
+      "SMDR_COMPLETE": 4
+    }
+  },
+  "scope": {
+    "finite_bsm_threshold_corrections_included": false,
+    "new_singlet_and_vectorlike_sector_included_in_smdr": false,
+    "pole_observables_are_diagnostic": true,
+    "pure_smdr_standard_model_projection": true,
+    "thresholds_applied_before_smdr": true
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "source": {
+    "selected_candidate_count": 5,
+    "selected_candidate_ids": [
+      "precision-Q",
+      "precision-U",
+      "precision-L",
+      "precision-E",
+      "precision-zero-gauge-control"
+    ],
+    "w15_candidate_count": 5,
+    "w15_pipeline_version": "gauge-yukawa-precision-control-v1",
+    "w15_report_sha256_canonical_json": "4bdffe43c43161a93bb2bc45f96544540321e8315a2649e1a27150cfbeabdefb"
+  }
+}

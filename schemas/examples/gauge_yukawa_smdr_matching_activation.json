@@ -1,0 +1,28 @@
+{
+  "activation_id": "w16-gauge-yukawa-smdr-matching-2026-11-16",
+  "campaign_id": "w16-gauge-yukawa-smdr-matching-2026-11-16",
+  "source_precision_report": "docs/validation/gauge_yukawa_precision_pipeline_2026-11-16.json",
+  "backend": {
+    "name": "SMDR",
+    "official_repository": "https://github.com/davidgrobertson/SMDR",
+    "reference_commit": "5c4dd92c918cadb7f91ad3795694f8398b5c287a",
+    "required_executable": "calc_all"
+  },
+  "matching": {
+    "g1_to_hypercharge": "gp = sqrt(3/5) * g1",
+    "lambda_h_to_lambda4": "lambda_4 = lambda_h / 2",
+    "yb": 0.0,
+    "delta_alpha_hadronic": 0.0,
+    "thresholds_applied_before_smdr": true,
+    "new_sector": ["yS", "lambda_s", "lambda_hs"],
+    "new_sector_in_pure_smdr": false
+  },
+  "authorization": {
+    "target_blind_generation": true,
+    "pole_observables": "DIAGNOSTIC_ONLY",
+    "experimental_comparison": "NOT_AUTHORIZED",
+    "fitting": "DISABLED",
+    "automatic_selection": "DISABLED",
+    "automatic_ranking": "DISABLED"
+  }
+}

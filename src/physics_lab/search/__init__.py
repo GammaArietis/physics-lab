@@ -82,6 +82,15 @@ from physics_lab.search.gauge_yukawa_precision_pipeline import (
     vacuum_stability,
     write_precision_report,
 )
+from physics_lab.search.gauge_yukawa_smdr_matching import (
+    SMDR_KNOWN_COMMIT,
+    SMDR_MATCHING_VERSION,
+    SMDR_OFFICIAL_REPOSITORY,
+    run_smdr_for_w15_candidate,
+    run_smdr_matching_campaign,
+    w15_state_to_smdr_input,
+    write_smdr_matching_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -141,4 +150,11 @@ __all__ = [
     "two_loop_gauge_matrix",
     "vacuum_stability",
     "write_precision_report",
+    "SMDR_KNOWN_COMMIT",
+    "SMDR_MATCHING_VERSION",
+    "SMDR_OFFICIAL_REPOSITORY",
+    "run_smdr_for_w15_candidate",
+    "run_smdr_matching_campaign",
+    "w15_state_to_smdr_input",
+    "write_smdr_matching_report",
 ]
