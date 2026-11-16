@@ -1,0 +1,24 @@
+{
+  "activation_id": "w18-gauge-yukawa-bsm-self-energy-2026-11-16",
+  "campaign_id": "w18-gauge-yukawa-bsm-self-energy-2026-11-16",
+  "source_w17_report": "docs/validation/gauge_yukawa_bsm_threshold_matching_2026-11-16.json",
+  "scheme": {
+    "renormalization": "MSbar finite two-point insertion with zero-momentum mass-parameter subtraction",
+    "scale_gev": 91.1876,
+    "vev_gev": 246.21965,
+    "pole_shift_convention": "m_BSM^2 = m_SMDR^2 + Re(Pi)/(1 - dPi/dp2)"
+  },
+  "implemented_channels": [
+    "Higgs self-energy from real-singlet portal",
+    "zero-momentum subtraction of the Higgs mass-parameter/tadpole piece",
+    "W/Z/photon/Zgamma vector-like Dirac vacuum polarizations",
+    "singlet zero-momentum self-energy from vector-like Yukawa",
+    "finite wave-function derivatives for H/W/Z/photon"
+  ],
+  "not_claimed": [
+    "full BSM tadpole/counterterm on-shell scheme",
+    "two-loop BSM pole matching",
+    "experimental comparison",
+    "automatic fitting, ranking or selection"
+  ]
+}

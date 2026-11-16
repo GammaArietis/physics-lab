@@ -1,0 +1,1848 @@
+{
+  "backend_version": "gauge-yukawa-bsm-self-energy-v1",
+  "campaign_id": "w18-gauge-yukawa-bsm-self-energy-2026-11-16",
+  "candidate_results": [
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.262891,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "case_id": "precision-Q|singlet-mass=1000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.26289100148754,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 7.218402999817284e-08,
+          "delta_mass_gev": 1.4875397576936078e-09,
+          "residue_factor": 1.0000000001226257
+        },
+        "higgs_decoupling_subtracted_gev2": 7.218402998932123e-08,
+        "higgs_raw_msbar_unsubtracted_gev2": -23.49417112773843,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 3.2041500084268206e-21,
+          "delta_mass_gev": 6.504633641078006e-22,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 4.4193904757627304e-21,
+          "delta_mass_gev": 8.366533633868481e-22,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 2.076961923411699e-22,
+                "transverse_gev2": 7.343606289264523e-22
+              },
+              "w": {
+                "derivative_dimensionless": 1.1430365520235078e-21,
+                "transverse_gev2": 3.2041500084268206e-21
+              },
+              "z": {
+                "derivative_dimensionless": 1.2499180077594804e-21,
+                "transverse_gev2": 4.4193904757627304e-21
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 4.747217186625008e-22,
+                "transverse_gev2": 1.6784946125029995e-21
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770621246868,
+            "g2": 0.020003320519732734,
+            "gZ": 0.02145046793214514,
+            "gy": 0.007745304557783792,
+            "sw2": 0.1303777428372731
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 2.076961923411699e-22,
+              "residue_factor": 1.0,
+              "transverse_gev2": 7.343606289264523e-22
+            },
+            "w": {
+              "derivative_dimensionless": 1.1430365520235078e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 3.2041500084268206e-21
+            },
+            "z": {
+              "derivative_dimensionless": 1.2499180077594804e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 4.4193904757627304e-21
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 4.747217186625008e-22,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": 1.6784946125029995e-21
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.0035235355232983417,
+          "bubble_zero_gev2": -0.003523607707328331,
+          "decoupling_subtracted_self_energy_gev2": 7.218402998932123e-08,
+          "derivative_dimensionless": 1.226257280511098e-10,
+          "higgs_residue_factor": 1.0000000001226257,
+          "mass_parameter_subtraction_gev2": -23.49417119992246,
+          "self_energy_gev2": -23.49417112773843,
+          "tadpole_gev2": -23.49064759221513
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -6287590731154.1875
+            }
+          ],
+          "self_energy_gev2": -6287590731154.1875,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.226257280511098e-10,
+          "residue_factor": 1.0000000001226257
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.262891,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "case_id": "precision-Q|singlet-mass=100000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.26289100000015,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 7.217979106215373e-12,
+          "delta_mass_gev": 1.4874524033874144e-13,
+          "residue_factor": 1.0000000000000122
+        },
+        "higgs_decoupling_subtracted_gev2": 7.217979106215285e-12,
+        "higgs_raw_msbar_unsubtracted_gev2": -805818.2148008791,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 3.2041500084268206e-21,
+          "delta_mass_gev": 6.504633641078006e-22,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 4.4193904757627304e-21,
+          "delta_mass_gev": 8.366533633868481e-22,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 2.076961923411699e-22,
+                "transverse_gev2": 7.343606289264523e-22
+              },
+              "w": {
+                "derivative_dimensionless": 1.1430365520235078e-21,
+                "transverse_gev2": 3.2041500084268206e-21
+              },
+              "z": {
+                "derivative_dimensionless": 1.2499180077594804e-21,
+                "transverse_gev2": 4.4193904757627304e-21
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 4.747217186625008e-22,
+                "transverse_gev2": 1.6784946125029995e-21
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770621246868,
+            "g2": 0.020003320519732734,
+            "gZ": 0.02145046793214514,
+            "gy": 0.007745304557783792,
+            "sw2": 0.1303777428372731
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 2.076961923411699e-22,
+              "residue_factor": 1.0,
+              "transverse_gev2": 7.343606289264523e-22
+            },
+            "w": {
+              "derivative_dimensionless": 1.1430365520235078e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 3.2041500084268206e-21
+            },
+            "z": {
+              "derivative_dimensionless": 1.2499180077594804e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 4.4193904757627304e-21
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 4.747217186625008e-22,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": 1.6784946125029995e-21
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.0102993580013188,
+          "bubble_zero_gev2": -0.01029935800853678,
+          "decoupling_subtracted_self_energy_gev2": 7.217979106215285e-12,
+          "derivative_dimensionless": 1.2261129171730961e-14,
+          "higgs_residue_factor": 1.0000000000000122,
+          "mass_parameter_subtraction_gev2": -805818.2148008791,
+          "self_energy_gev2": -805818.2148008791,
+          "tadpole_gev2": -805818.2045015211
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -6287590731154.1875
+            }
+          ],
+          "self_energy_gev2": -6287590731154.1875,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261129171730961e-14,
+          "residue_factor": 1.0000000000000122
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.262891,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "case_id": "precision-Q|singlet-mass=1e+08",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.68734563,
+        "gf_gev_minus_two": 1.16610384,
+        "higgs_pole_gev": 24.262891,
+        "top_pole_gev": 8.70058,
+        "version": "1.3",
+        "w_pole_gev": 2.462975,
+        "z_pole_gev": 2.641112
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 8.436683322149789e-18,
+          "delta_mass_gev": 1.7385981172131936e-19,
+          "residue_factor": 1.0
+        },
+        "higgs_decoupling_subtracted_gev2": 8.436683322149789e-18,
+        "higgs_raw_msbar_unsubtracted_gev2": -1662185797370.5962,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 3.2041500084268206e-21,
+          "delta_mass_gev": 6.504633641078006e-22,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 4.4193904757627304e-21,
+          "delta_mass_gev": 8.366533633868481e-22,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 2.076961923411699e-22,
+                "transverse_gev2": 7.343606289264523e-22
+              },
+              "w": {
+                "derivative_dimensionless": 1.1430365520235078e-21,
+                "transverse_gev2": 3.2041500084268206e-21
+              },
+              "z": {
+                "derivative_dimensionless": 1.2499180077594804e-21,
+                "transverse_gev2": 4.4193904757627304e-21
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 4.747217186625008e-22,
+                "transverse_gev2": 1.6784946125029995e-21
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770621246868,
+            "g2": 0.020003320519732734,
+            "gZ": 0.02145046793214514,
+            "gy": 0.007745304557783792,
+            "sw2": 0.1303777428372731
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 2.076961923411699e-22,
+              "residue_factor": 1.0,
+              "transverse_gev2": 7.343606289264523e-22
+            },
+            "w": {
+              "derivative_dimensionless": 1.1430365520235078e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 3.2041500084268206e-21
+            },
+            "z": {
+              "derivative_dimensionless": 1.2499180077594804e-21,
+              "residue_factor": 1.0,
+              "transverse_gev2": 4.4193904757627304e-21
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 4.747217186625008e-22,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": 1.6784946125029995e-21
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.020462983460349447,
+          "bubble_zero_gev2": -0.020462983460349454,
+          "decoupling_subtracted_self_energy_gev2": 8.436683322149789e-18,
+          "derivative_dimensionless": 1.2261129027371542e-20,
+          "higgs_residue_factor": 1.0,
+          "mass_parameter_subtraction_gev2": -1662185797370.5964,
+          "self_energy_gev2": -1662185797370.5962,
+          "tadpole_gev2": -1662185797370.576
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 100000000.0,
+              "multiplet": "Q",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -6287590731154.1875
+            }
+          ],
+          "self_energy_gev2": -6287590731154.1875,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261129027371542e-20,
+          "residue_factor": 1.0
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-U|singlet-mass=1000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200148754,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 7.218405392671594e-08,
+          "delta_mass_gev": 1.4875401894942273e-09,
+          "residue_factor": 1.000000000122626
+        },
+        "higgs_decoupling_subtracted_gev2": 7.21840539178643e-08,
+        "higgs_raw_msbar_unsubtracted_gev2": -23.49417405381513,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 8.569658447477908e-19,
+          "delta_mass_gev": 1.6222296433258033e-19,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 1.6389649499866468e-18,
+                "transverse_gev2": 5.7172074888930974e-18
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 2.456683591781376e-19,
+                "transverse_gev2": 8.569658447477908e-19
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -6.345406448870693e-19,
+                "transverse_gev2": -2.213470475366154e-18
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770623982221,
+            "g2": 0.020005188216812173,
+            "gZ": 0.02145217049860756,
+            "gy": 0.007745196157054256,
+            "sw2": 0.1303533997746282
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.6389649499866468e-18,
+              "residue_factor": 1.0,
+              "transverse_gev2": 5.7172074888930974e-18
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 2.456683591781376e-19,
+              "residue_factor": 1.0,
+              "transverse_gev2": 8.569658447477908e-19
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -6.345406448870693e-19,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": -2.213470475366154e-18
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.003523536400836849,
+          "bubble_zero_gev2": -0.0035236085848907666,
+          "decoupling_subtracted_self_energy_gev2": 7.21840539178643e-08,
+          "derivative_dimensionless": 1.226257585925138e-10,
+          "higgs_residue_factor": 1.000000000122626,
+          "mass_parameter_subtraction_gev2": -23.494174125999184,
+          "self_energy_gev2": -23.49417405381513,
+          "tadpole_gev2": -23.49065051741429
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -417755452.8860651
+            }
+          ],
+          "self_energy_gev2": -417755452.8860651,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.226257585925138e-10,
+          "residue_factor": 1.000000000122626
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-U|singlet-mass=100000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200000015,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 7.2179805123292605e-12,
+          "delta_mass_gev": 1.4874526318481037e-13,
+          "residue_factor": 1.0000000000000122
+        },
+        "higgs_decoupling_subtracted_gev2": 7.2179805123291725e-12,
+        "higgs_raw_msbar_unsubtracted_gev2": -805818.3151462948,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 8.569658447477908e-19,
+          "delta_mass_gev": 1.6222296433258033e-19,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 1.6389649499866468e-18,
+                "transverse_gev2": 5.7172074888930974e-18
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 2.456683591781376e-19,
+                "transverse_gev2": 8.569658447477908e-19
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -6.345406448870693e-19,
+                "transverse_gev2": -2.213470475366154e-18
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770623982221,
+            "g2": 0.020005188216812173,
+            "gZ": 0.02145217049860756,
+            "gy": 0.007745196157054256,
+            "sw2": 0.1303533997746282
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.6389649499866468e-18,
+              "residue_factor": 1.0,
+              "transverse_gev2": 5.7172074888930974e-18
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 2.456683591781376e-19,
+              "residue_factor": 1.0,
+              "transverse_gev2": 8.569658447477908e-19
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -6.345406448870693e-19,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": -2.213470475366154e-18
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.010299360566397107,
+          "bubble_zero_gev2": -0.010299360573615086,
+          "decoupling_subtracted_self_energy_gev2": 7.2179805123291725e-12,
+          "derivative_dimensionless": 1.2261132225392807e-14,
+          "higgs_residue_factor": 1.0000000000000122,
+          "mass_parameter_subtraction_gev2": -805818.3151462948,
+          "self_energy_gev2": -805818.3151462948,
+          "tadpole_gev2": -805818.3048469342
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -417755452.8860651
+            }
+          ],
+          "self_energy_gev2": -417755452.8860651,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261132225392807e-14,
+          "residue_factor": 1.0000000000000122
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-U|singlet-mass=1e+08",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.6885954,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700581,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "finite_shifts": {
+        "alpha_inverse": 0.0,
+        "higgs": {
+          "delta_mass2_gev2": 5.624455548099859e-18,
+          "delta_mass_gev": 1.159065363704347e-19,
+          "residue_factor": 1.0
+        },
+        "higgs_decoupling_subtracted_gev2": 5.624455548099859e-18,
+        "higgs_raw_msbar_unsubtracted_gev2": -1662186004356.1416,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 8.569658447477908e-19,
+          "delta_mass_gev": 1.6222296433258033e-19,
+          "residue_factor": 1.0
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "photon": {
+                "derivative_dimensionless": 1.6389649499866468e-18,
+                "transverse_gev2": 5.7172074888930974e-18
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 2.456683591781376e-19,
+                "transverse_gev2": 8.569658447477908e-19
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -6.345406448870693e-19,
+                "transverse_gev2": -2.213470475366154e-18
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222770623982221,
+            "g2": 0.020005188216812173,
+            "gZ": 0.02145217049860756,
+            "gy": 0.007745196157054256,
+            "sw2": 0.1303533997746282
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.6389649499866468e-18,
+              "residue_factor": 1.0,
+              "transverse_gev2": 5.7172074888930974e-18
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 2.456683591781376e-19,
+              "residue_factor": 1.0,
+              "transverse_gev2": 8.569658447477908e-19
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -6.345406448870693e-19,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0,
+              "transverse_gev2": -2.213470475366154e-18
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.02046298855670156,
+          "bubble_zero_gev2": -0.020462988556701568,
+          "decoupling_subtracted_self_energy_gev2": 5.624455548099859e-18,
+          "derivative_dimensionless": 1.226113208103334e-20,
+          "higgs_residue_factor": 1.0,
+          "mass_parameter_subtraction_gev2": -1662186004356.1416,
+          "self_energy_gev2": -1662186004356.1416,
+          "tadpole_gev2": -1662186004356.121
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000000.0,
+              "multiplet": "U",
+              "multiplicity_with_color": 3,
+              "self_energy_gev2": -417755452.8860651
+            }
+          ],
+          "self_energy_gev2": -417755452.8860651,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.226113208103334e-20,
+          "residue_factor": 1.0
+        },
+        "photon": 1.0,
+        "w": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607371,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.46309,
+        "z_pole_gev": 2.641217
+      },
+      "case_id": "precision-L|singlet-mass=1000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607370853,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200148754,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463090000000025,
+        "z_pole_gev": 2.6412170000000277
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4842953532934189e-09,
+        "higgs": {
+          "delta_mass2_gev2": 7.218406148739032e-08,
+          "delta_mass_gev": 1.4875403453015888e-09,
+          "residue_factor": 1.000000000122626
+        },
+        "higgs_decoupling_subtracted_gev2": 7.218406147853868e-08,
+        "higgs_raw_msbar_unsubtracted_gev2": -23.494175284478754,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 1.2436119031298077e-13,
+          "delta_mass_gev": 2.524495457189562e-14,
+          "residue_factor": 1.000000000000041
+        },
+        "z": {
+          "delta_mass2_gev2": 1.4620706134516808e-13,
+          "delta_mass_gev": 2.767797218955657e-14,
+          "residue_factor": 1.000000000000042
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.229124833281101e-14,
+                "transverse_gev2": 4.287204142823469e-14
+              },
+              "w": {
+                "derivative_dimensionless": 4.0997210252745335e-14,
+                "transverse_gev2": 1.2436119031297567e-13
+              },
+              "z": {
+                "derivative_dimensionless": 4.191699856448648e-14,
+                "transverse_gev2": 1.4620706134516194e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 1.349328449902685e-14,
+                "transverse_gev2": 4.7064759931747033e-14
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.0072227803921725295,
+            "g2": 0.02000425432392367,
+            "gZ": 0.021451323519492846,
+            "gy": 0.007745262402380439,
+            "sw2": 0.130365923698257
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.229124833281101e-14,
+              "residue_factor": 1.0000000000000124,
+              "transverse_gev2": 4.287204142823469e-14
+            },
+            "w": {
+              "derivative_dimensionless": 4.0997210252745335e-14,
+              "residue_factor": 1.000000000000041,
+              "transverse_gev2": 1.2436119031297567e-13
+            },
+            "z": {
+              "derivative_dimensionless": 4.191699856448648e-14,
+              "residue_factor": 1.000000000000042,
+              "transverse_gev2": 1.4620706134516194e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 1.349328449902685e-14,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0000000000000135,
+              "transverse_gev2": 4.7064759931747033e-14
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.003523536769918814,
+          "bubble_zero_gev2": -0.0035236089539802925,
+          "decoupling_subtracted_self_energy_gev2": 7.218406147853868e-08,
+          "derivative_dimensionless": 1.2262577143726713e-10,
+          "higgs_residue_factor": 1.000000000122626,
+          "mass_parameter_subtraction_gev2": -23.494175356662815,
+          "self_energy_gev2": -23.494175284478754,
+          "tadpole_gev2": -23.490651747708835
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -6890.406616887696
+            }
+          ],
+          "self_energy_gev2": -6890.406616887696,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2262577143726713e-10,
+          "residue_factor": 1.000000000122626
+        },
+        "photon": 1.0000000000000124,
+        "w": 1.000000000000041,
+        "z": 1.000000000000042
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607371,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.46309,
+        "z_pole_gev": 2.641217
+      },
+      "case_id": "precision-L|singlet-mass=100000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607370853,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200000015,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463090000000025,
+        "z_pole_gev": 2.6412170000000277
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4842953532934189e-09,
+        "higgs": {
+          "delta_mass2_gev2": 7.217981918443147e-12,
+          "delta_mass_gev": 1.4874529216144445e-13,
+          "residue_factor": 1.0000000000000122
+        },
+        "higgs_decoupling_subtracted_gev2": 7.217981918443059e-12,
+        "higgs_raw_msbar_unsubtracted_gev2": -805818.3573500597,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 1.2436119031298077e-13,
+          "delta_mass_gev": 2.524495457189562e-14,
+          "residue_factor": 1.000000000000041
+        },
+        "z": {
+          "delta_mass2_gev2": 1.4620706134516808e-13,
+          "delta_mass_gev": 2.767797218955657e-14,
+          "residue_factor": 1.000000000000042
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.229124833281101e-14,
+                "transverse_gev2": 4.287204142823469e-14
+              },
+              "w": {
+                "derivative_dimensionless": 4.0997210252745335e-14,
+                "transverse_gev2": 1.2436119031297567e-13
+              },
+              "z": {
+                "derivative_dimensionless": 4.191699856448648e-14,
+                "transverse_gev2": 1.4620706134516194e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 1.349328449902685e-14,
+                "transverse_gev2": 4.7064759931747033e-14
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.0072227803921725295,
+            "g2": 0.02000425432392367,
+            "gZ": 0.021451323519492846,
+            "gy": 0.007745262402380439,
+            "sw2": 0.130365923698257
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.229124833281101e-14,
+              "residue_factor": 1.0000000000000124,
+              "transverse_gev2": 4.287204142823469e-14
+            },
+            "w": {
+              "derivative_dimensionless": 4.0997210252745335e-14,
+              "residue_factor": 1.000000000000041,
+              "transverse_gev2": 1.2436119031297567e-13
+            },
+            "z": {
+              "derivative_dimensionless": 4.191699856448648e-14,
+              "residue_factor": 1.000000000000042,
+              "transverse_gev2": 1.4620706134516194e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 1.349328449902685e-14,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0000000000000135,
+              "transverse_gev2": 4.7064759931747033e-14
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.01029936164523036,
+          "bubble_zero_gev2": -0.010299361652448342,
+          "decoupling_subtracted_self_energy_gev2": 7.217981918443059e-12,
+          "derivative_dimensionless": 1.2261133509716923e-14,
+          "higgs_residue_factor": 1.0000000000000122,
+          "mass_parameter_subtraction_gev2": -805818.3573500597,
+          "self_energy_gev2": -805818.3573500597,
+          "tadpole_gev2": -805818.347050698
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -6890.406616887696
+            }
+          ],
+          "self_energy_gev2": -6890.406616887696,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261133509716923e-14,
+          "residue_factor": 1.0000000000000122
+        },
+        "photon": 1.0000000000000124,
+        "w": 1.000000000000041,
+        "z": 1.000000000000042
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607371,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.46309,
+        "z_pole_gev": 2.641217
+      },
+      "case_id": "precision-L|singlet-mass=1e+08",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.03607370853,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463090000000025,
+        "z_pole_gev": 2.6412170000000277
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4842953532934189e-09,
+        "higgs": {
+          "delta_mass2_gev2": 8.436683322149789e-18,
+          "delta_mass_gev": 1.7385980455565207e-19,
+          "residue_factor": 1.0
+        },
+        "higgs_decoupling_subtracted_gev2": 8.436683322149789e-18,
+        "higgs_raw_msbar_unsubtracted_gev2": -1662186091411.1326,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 1.2436119031298077e-13,
+          "delta_mass_gev": 2.524495457189562e-14,
+          "residue_factor": 1.000000000000041
+        },
+        "z": {
+          "delta_mass2_gev2": 1.4620706134516808e-13,
+          "delta_mass_gev": 2.767797218955657e-14,
+          "residue_factor": 1.000000000000042
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.229124833281101e-14,
+                "transverse_gev2": 4.287204142823469e-14
+              },
+              "w": {
+                "derivative_dimensionless": 4.0997210252745335e-14,
+                "transverse_gev2": 1.2436119031297567e-13
+              },
+              "z": {
+                "derivative_dimensionless": 4.191699856448648e-14,
+                "transverse_gev2": 1.4620706134516194e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": 1.349328449902685e-14,
+                "transverse_gev2": 4.7064759931747033e-14
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.0072227803921725295,
+            "g2": 0.02000425432392367,
+            "gZ": 0.021451323519492846,
+            "gy": 0.007745262402380439,
+            "sw2": 0.130365923698257
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.229124833281101e-14,
+              "residue_factor": 1.0000000000000124,
+              "transverse_gev2": 4.287204142823469e-14
+            },
+            "w": {
+              "derivative_dimensionless": 4.0997210252745335e-14,
+              "residue_factor": 1.000000000000041,
+              "transverse_gev2": 1.2436119031297567e-13
+            },
+            "z": {
+              "derivative_dimensionless": 4.191699856448648e-14,
+              "residue_factor": 1.000000000000042,
+              "transverse_gev2": 1.4620706134516194e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": 1.349328449902685e-14,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 1.0000000000000135,
+              "transverse_gev2": 4.7064759931747033e-14
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.020462990700150407,
+          "bubble_zero_gev2": -0.020462990700150414,
+          "decoupling_subtracted_self_energy_gev2": 8.436683322149789e-18,
+          "derivative_dimensionless": 1.2261133365357441e-20,
+          "higgs_residue_factor": 1.0,
+          "mass_parameter_subtraction_gev2": -1662186091411.1326,
+          "self_energy_gev2": -1662186091411.1326,
+          "tadpole_gev2": -1662186091411.112
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 10000.0,
+              "multiplet": "L",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -6890.406616887696
+            }
+          ],
+          "self_energy_gev2": -6890.406616887696,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261133365357441e-20,
+          "residue_factor": 1.0
+        },
+        "photon": 1.0000000000000124,
+        "w": 1.000000000000041,
+        "z": 1.000000000000042
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.52550831,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-E|singlet-mass=1000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.5255081619,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200148754,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.6413210000001217
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4810939319431782e-07,
+        "higgs": {
+          "delta_mass2_gev2": 7.218407079516119e-08,
+          "delta_mass_gev": 1.487540537112418e-09,
+          "residue_factor": 1.000000000122626
+        },
+        "higgs_decoupling_subtracted_gev2": 7.218407078630955e-08,
+        "higgs_raw_msbar_unsubtracted_gev2": -23.494176799443792,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 6.427201311169491e-13,
+          "delta_mass_gev": 1.2166641826513118e-13,
+          "residue_factor": 1.0000000000001843
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.2292205025097142e-12,
+                "transverse_gev2": 4.287873909837256e-12
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 1.8425093161718598e-13,
+                "transverse_gev2": 6.427201311168307e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -4.759044260672098e-13,
+                "transverse_gev2": -1.6600912268737036e-12
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222773068035003,
+            "g2": 0.020005188216799516,
+            "gZ": 0.021452171586668095,
+            "gy": 0.007745199170729943,
+            "sw2": 0.1303534879931957
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.2292205025097142e-12,
+              "residue_factor": 1.0000000000012292,
+              "transverse_gev2": 4.287873909837256e-12
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 1.8425093161718598e-13,
+              "residue_factor": 1.0000000000001843,
+              "transverse_gev2": 6.427201311168307e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -4.759044260672098e-13,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 0.9999999999995242,
+              "transverse_gev2": -1.6600912268737036e-12
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.0035235372242641717,
+          "bubble_zero_gev2": -0.003523609408334958,
+          "decoupling_subtracted_self_energy_gev2": 7.218407078630955e-08,
+          "derivative_dimensionless": 1.2262578724934848e-10,
+          "higgs_residue_factor": 1.000000000122626,
+          "mass_parameter_subtraction_gev2": -23.494176871627868,
+          "self_energy_gev2": -23.494176799443792,
+          "tadpole_gev2": -23.49065326221953
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -33.864949930332536
+            }
+          ],
+          "self_energy_gev2": -33.864949930332536,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2262578724934848e-10,
+          "residue_factor": 1.000000000122626
+        },
+        "photon": 1.0000000000012292,
+        "w": 1.0,
+        "z": 1.0000000000001843
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.52550831,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-E|singlet-mass=100000",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.5255081619,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.26289200000015,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.6413210000001217
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4810939319431782e-07,
+        "higgs": {
+          "delta_mass2_gev2": 7.217981918443147e-12,
+          "delta_mass_gev": 1.4874529216144445e-13,
+          "residue_factor": 1.0000000000000122
+        },
+        "higgs_decoupling_subtracted_gev2": 7.217981918443059e-12,
+        "higgs_raw_msbar_unsubtracted_gev2": -805818.4093035153,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 6.427201311169491e-13,
+          "delta_mass_gev": 1.2166641826513118e-13,
+          "residue_factor": 1.0000000000001843
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.2292205025097142e-12,
+                "transverse_gev2": 4.287873909837256e-12
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 1.8425093161718598e-13,
+                "transverse_gev2": 6.427201311168307e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -4.759044260672098e-13,
+                "transverse_gev2": -1.6600912268737036e-12
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222773068035003,
+            "g2": 0.020005188216799516,
+            "gZ": 0.021452171586668095,
+            "gy": 0.007745199170729943,
+            "sw2": 0.1303534879931957
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.2292205025097142e-12,
+              "residue_factor": 1.0000000000012292,
+              "transverse_gev2": 4.287873909837256e-12
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 1.8425093161718598e-13,
+              "residue_factor": 1.0000000000001843,
+              "transverse_gev2": 6.427201311168307e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -4.759044260672098e-13,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 0.9999999999995242,
+              "transverse_gev2": -1.6600912268737036e-12
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.010299362973290049,
+          "bubble_zero_gev2": -0.010299362980508032,
+          "decoupling_subtracted_self_energy_gev2": 7.217981918443059e-12,
+          "derivative_dimensionless": 1.2261135090738906e-14,
+          "higgs_residue_factor": 1.0000000000000122,
+          "mass_parameter_subtraction_gev2": -805818.4093035152,
+          "self_energy_gev2": -805818.4093035153,
+          "tadpole_gev2": -805818.3990041523
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -33.864949930332536
+            }
+          ],
+          "self_energy_gev2": -33.864949930332536,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261135090738906e-14,
+          "residue_factor": 1.0000000000000122
+        },
+        "photon": 1.0000000000012292,
+        "w": 1.0,
+        "z": 1.0000000000001843
+      }
+    },
+    {
+      "baseline_observables": {
+        "alpha_sommerfeld_inverse": 240973.52550831,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.641321
+      },
+      "case_id": "precision-E|singlet-mass=1e+08",
+      "controls": {
+        "finite_bsm_two_point_insertions": true,
+        "full_bsm_tadpole_counterterm_scheme": false,
+        "higgs_mass_parameter_zero_momentum_subtracted": true,
+        "higgs_portal_self_energy": true,
+        "no_automatic_ranking": true,
+        "no_automatic_selection": true,
+        "no_experimental_comparison": true,
+        "no_fitting": true,
+        "top_bsm_self_energy_zero_by_registered_action": true,
+        "two_loop_bsm_pole_matching": false,
+        "vectorlike_gauge_polarizations": true,
+        "wavefunction_derivatives_recorded": true,
+        "z_gamma_mixing_recorded": true
+      },
+      "corrected_observables": {
+        "alpha_sommerfeld_inverse": 240973.5255081619,
+        "gf_gev_minus_two": 1.16610385,
+        "higgs_pole_gev": 24.262892,
+        "top_pole_gev": 8.700583,
+        "version": "1.3",
+        "w_pole_gev": 2.463205,
+        "z_pole_gev": 2.6413210000001217
+      },
+      "finite_shifts": {
+        "alpha_inverse": -1.4810939319431782e-07,
+        "higgs": {
+          "delta_mass2_gev2": 8.436683322149789e-18,
+          "delta_mass_gev": 1.7385980455565207e-19,
+          "residue_factor": 1.0
+        },
+        "higgs_decoupling_subtracted_gev2": 8.436683322149789e-18,
+        "higgs_raw_msbar_unsubtracted_gev2": -1662186198577.108,
+        "top_pole_gev": 0.0,
+        "w": {
+          "delta_mass2_gev2": 0.0,
+          "delta_mass_gev": 0.0,
+          "residue_factor": 1.0
+        },
+        "z": {
+          "delta_mass2_gev2": 6.427201311169491e-13,
+          "delta_mass_gev": 1.2166641826513118e-13,
+          "residue_factor": 1.0000000000001843
+        }
+      },
+      "self_energies": {
+        "gauge": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "photon": {
+                "derivative_dimensionless": 1.2292205025097142e-12,
+                "transverse_gev2": 4.287873909837256e-12
+              },
+              "w": {
+                "derivative_dimensionless": 0.0,
+                "transverse_gev2": 0.0
+              },
+              "z": {
+                "derivative_dimensionless": 1.8425093161718598e-13,
+                "transverse_gev2": 6.427201311168307e-13
+              },
+              "z_gamma": {
+                "derivative_dimensionless": -4.759044260672098e-13,
+                "transverse_gev2": -1.6600912268737036e-12
+              }
+            }
+          ],
+          "couplings": {
+            "e": 0.007222773068035003,
+            "g2": 0.020005188216799516,
+            "gZ": 0.021452171586668095,
+            "gy": 0.007745199170729943,
+            "sw2": 0.1303534879931957
+          },
+          "totals": {
+            "photon": {
+              "derivative_dimensionless": 1.2292205025097142e-12,
+              "residue_factor": 1.0000000000012292,
+              "transverse_gev2": 4.287873909837256e-12
+            },
+            "w": {
+              "derivative_dimensionless": 0.0,
+              "residue_factor": 1.0,
+              "transverse_gev2": 0.0
+            },
+            "z": {
+              "derivative_dimensionless": 1.8425093161718598e-13,
+              "residue_factor": 1.0000000000001843,
+              "transverse_gev2": 6.427201311168307e-13
+            },
+            "z_gamma": {
+              "derivative_dimensionless": -4.759044260672098e-13,
+              "mixing_deferred_from_one_loop_mass_shift": true,
+              "residue_factor": 0.9999999999995242,
+              "transverse_gev2": -1.6600912268737036e-12
+            }
+          }
+        },
+        "higgs": {
+          "bubble_gev2": -0.020462993338767634,
+          "bubble_zero_gev2": -0.02046299333876764,
+          "decoupling_subtracted_self_energy_gev2": 8.436683322149789e-18,
+          "derivative_dimensionless": 1.2261134946379406e-20,
+          "higgs_residue_factor": 1.0,
+          "mass_parameter_subtraction_gev2": -1662186198577.1082,
+          "self_energy_gev2": -1662186198577.108,
+          "tadpole_gev2": -1662186198577.0876
+        },
+        "singlet_zero_momentum": {
+          "contributions": [
+            {
+              "mass_gev": 1000.0,
+              "multiplet": "E",
+              "multiplicity_with_color": 1,
+              "self_energy_gev2": -33.864949930332536
+            }
+          ],
+          "self_energy_gev2": -33.864949930332536,
+          "wavefunction_derivative_dimensionless": 0.0
+        }
+      },
+      "source_status": "SMDR_COMPLETE",
+      "status": "BSM_ONE_LOOP_COMPLETE",
+      "target_blind": true,
+      "wavefunction": {
+        "higgs": {
+          "derivative_dimensionless": 1.2261134946379406e-20,
+          "residue_factor": 1.0
+        },
+        "photon": 1.0000000000012292,
+        "w": 1.0,
+        "z": 1.0000000000001843
+      }
+    },
+    {
+      "case_id": "precision-zero-gauge-control|singlet-mass=1000",
+      "source_status": "BACKEND_FAILURE",
+      "status": "UPSTREAM_FAILURE",
+      "target_blind": true
+    },
+    {
+      "case_id": "precision-zero-gauge-control|singlet-mass=100000",
+      "source_status": "BACKEND_FAILURE",
+      "status": "UPSTREAM_FAILURE",
+      "target_blind": true
+    },
+    {
+      "case_id": "precision-zero-gauge-control|singlet-mass=1e+08",
+      "source_status": "BACKEND_FAILURE",
+      "status": "UPSTREAM_FAILURE",
+      "target_blind": true
+    }
+  ],
+  "controls": {
+    "all_w17_cases_retained": true,
+    "finite_self_energy_backend_executed": true,
+    "full_bsm_renormalization_claimed": false,
+    "higgs_mass_parameter_subtraction_executed": true,
+    "no_automatic_ranking": true,
+    "no_automatic_selection": true,
+    "no_experimental_comparison": true,
+    "no_fitting": true,
+    "target_blind_generation": true,
+    "wavefunction_factors_executed": true
+  },
+  "execution_status": "COMPLETE",
+  "interpretation": "W18 computes finite one-loop BSM two-point insertions for every W17 case and applies them target-blindly to the SMDR projection. It is complete for the registered new-sector two-point channels, but not a two-loop or fully on-shell BSM renormalization calculation.",
+  "scan": {
+    "case_count": 15,
+    "status_counts": {
+      "BSM_ONE_LOOP_COMPLETE": 12,
+      "UPSTREAM_FAILURE": 3
+    }
+  },
+  "scheme": {
+    "pole_shift_convention": "m_BSM^2 = m_SMDR^2 + Re(Pi)/(1 - dPi/dp2)",
+    "renormalization": "MSbar finite two-point insertion with zero-momentum mass-parameter subtraction",
+    "scale_gev": 91.1876,
+    "vev_gev": 246.21965
+  },
+  "scope": {
+    "full_bsm_tadpole_counterterm_scheme": false,
+    "implemented_channels": [
+      "Higgs self-energy from real-singlet portal",
+      "W/Z/photon/Zgamma vector-like Dirac vacuum polarizations",
+      "singlet zero-momentum self-energy from vector-like Yukawa",
+      "finite wave-function derivatives for H/W/Z/photon"
+    ],
+    "pure_smdr_baseline_used": true,
+    "two_loop_bsm_pole_matching": false
+  },
+  "selection": {
+    "human_review_required": true,
+    "performed": false,
+    "ranking_performed": false
+  },
+  "source": {
+    "case_count": 15,
+    "w17_matching_version": "gauge-yukawa-bsm-threshold-matching-v1",
+    "w17_report_sha256_canonical_json": "6a422ad33667b7a3d735519e9e3829f66d99b1c8805b638db996626f2af56135"
+  }
+}

@@ -100,6 +100,19 @@ from physics_lab.search.gauge_yukawa_bsm_threshold_matching import (
     w15_threshold_events,
     write_bsm_threshold_matching_report,
 )
+from physics_lab.search.gauge_yukawa_bsm_self_energy import (
+    BSM_SELF_ENERGY_VERSION,
+    a0_msbar,
+    b0_msbar,
+    db0_dp2,
+    run_bsm_self_energy_campaign,
+    run_bsm_self_energy_case,
+    scalar_higgs_self_energy,
+    singlet_zero_momentum_self_energy,
+    vector_transverse_self_energy,
+    vectorlike_gauge_self_energies,
+    write_bsm_self_energy_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -173,4 +186,15 @@ __all__ = [
     "vectorlike_threshold_delta_b",
     "w15_threshold_events",
     "write_bsm_threshold_matching_report",
+    "BSM_SELF_ENERGY_VERSION",
+    "a0_msbar",
+    "b0_msbar",
+    "db0_dp2",
+    "run_bsm_self_energy_campaign",
+    "run_bsm_self_energy_case",
+    "scalar_higgs_self_energy",
+    "singlet_zero_momentum_self_energy",
+    "vector_transverse_self_energy",
+    "vectorlike_gauge_self_energies",
+    "write_bsm_self_energy_report",
 ]
