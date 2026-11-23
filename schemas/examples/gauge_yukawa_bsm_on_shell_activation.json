@@ -1,0 +1,32 @@
+{
+  "activation_id": "w19-gauge-yukawa-bsm-on-shell-2026-11-23",
+  "campaign_id": "w19-gauge-yukawa-bsm-on-shell-2026-11-23",
+  "source_w17_report": "docs/validation/gauge_yukawa_bsm_threshold_matching_2026-11-16.json",
+  "source_w18_backend": "gauge-yukawa-bsm-self-energy-v1",
+  "scheme": {
+    "mass_and_field_scheme": "on-shell",
+    "tadpole_scheme": "renormalized tadpole equals zero",
+    "charge_scheme": "Thomson limit",
+    "coupling_scheme": "MSbar at declared scale",
+    "scale_gev": 91.1876,
+    "vev_gev": 246.21965,
+    "absorptive_parts": "not included in real-pole control"
+  },
+  "on_shell_sector": [
+    "tadpole",
+    "Higgs mass and residue",
+    "W/Z masses and residues",
+    "photon residue",
+    "Z-gamma mixing",
+    "Thomson electric charge",
+    "singlet mass and residue",
+    "vector-like fermion masses and residues"
+  ],
+  "not_claimed": [
+    "pure on-shell renormalization of every coupling",
+    "all one-loop three-point amplitudes",
+    "two-loop BSM renormalization",
+    "experimental comparison",
+    "automatic fitting, ranking or selection"
+  ]
+}

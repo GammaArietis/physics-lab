@@ -113,6 +113,16 @@ from physics_lab.search.gauge_yukawa_bsm_self_energy import (
     vectorlike_gauge_self_energies,
     write_bsm_self_energy_report,
 )
+from physics_lab.search.gauge_yukawa_bsm_on_shell import (
+    ON_SHELL_VERSION,
+    OnShellRenormalizationError,
+    run_on_shell_campaign,
+    run_on_shell_case,
+    singlet_scalar_self_energy,
+    vectorlike_fermion_self_energy,
+    vectorlike_gauge_msbar_self_energies,
+    write_on_shell_report,
+)
 
 __all__ = [
     "ALPHA_GEOMETRY_SEARCH_VERSION",
@@ -197,4 +207,12 @@ __all__ = [
     "vector_transverse_self_energy",
     "vectorlike_gauge_self_energies",
     "write_bsm_self_energy_report",
+    "ON_SHELL_VERSION",
+    "OnShellRenormalizationError",
+    "run_on_shell_campaign",
+    "run_on_shell_case",
+    "singlet_scalar_self_energy",
+    "vectorlike_fermion_self_energy",
+    "vectorlike_gauge_msbar_self_energies",
+    "write_on_shell_report",
 ]
